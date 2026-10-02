@@ -59,23 +59,62 @@
    Tools strip
    ======================================================================== */
 .tools {
-  --tool-chip: 100px;
-  --tool-divider-w: 22px;
-  --tool-divider-h: 24px;
-  --tool-gap: 16px;
-  --tool-padding: 12px;
-  --tool-icon-max-w: 74px;
-  --tool-icon-max-h: 32px;
-  --tool-label-size: 14px;
+  /* Default (below 1180px): small chips, auto-scrolling marquee. */
+  --tool-chip: 64px;
+  --tool-divider-w: 14px;
+  --tool-divider-h: 16px;
+  --tool-gap: 10px;
+  --tool-padding: 8px;
+  --tool-inner-gap: 6px;
+  --tool-icon-max-w: 46px;
+  --tool-icon-max-h: 20px;
+  --tool-label-size: 10px;
+  --tools-speed: 32s;
 }
 
-.tools__row {
+.tools__marquee {
+  overflow: hidden;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 32px, #000 calc(100% - 32px), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 32px, #000 calc(100% - 32px), transparent);
+}
+
+.tools__marquee-track {
+  display: flex;
+  width: max-content;
+  animation: tools-scroll var(--tools-speed) linear infinite;
+}
+
+.tools__marquee:hover .tools__marquee-track,
+.tools__marquee:focus-within .tools__marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes tools-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tools__marquee-track {
+    animation: none;
+  }
+
+  .tools__marquee {
+    overflow-x: auto;
+  }
+}
+
+.tools__track {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   gap: var(--tool-gap);
-  row-gap: 24px;
+  flex-shrink: 0;
+  padding-right: var(--tool-gap);
 }
 
 .tools__divider {
@@ -92,7 +131,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: var(--tool-inner-gap);
   padding: var(--tool-padding);
   border-radius: 12px;
   border: 3px solid #fff;
@@ -107,33 +146,52 @@
   object-fit: contain;
 }
 
-/* Keep the row on a single line (matching the Figma desktop layout) for
-   any screen wide enough to fit it without crowding; chips, dividers,
-   icons and gaps shrink fluidly together so nothing is cut or wrapped
-   awkwardly. Below this, it falls back to wrapping onto multiple rows. */
-@media (min-width: 1180px) {
-  .tools__row {
-    flex-wrap: nowrap;
-  }
-
-  .tools {
-    --tool-chip: clamp(70px, 5.8vw, 100px);
-    --tool-divider-w: clamp(9px, 1.27vw, 22px);
-    --tool-divider-h: clamp(10px, 1.38vw, 24px);
-    --tool-gap: clamp(2px, 0.45vw, 16px);
-    --tool-padding: clamp(6px, 0.7vw, 12px);
-    --tool-icon-max-w: clamp(52px, 4.29vw, 74px);
-    --tool-icon-max-h: clamp(22px, 1.86vw, 32px);
-    --tool-label-size: clamp(11px, 0.9vw, 14px);
-  }
-}
-
 .tool-chip span {
   font-weight: 600;
   font-size: var(--tool-label-size);
   color: var(--color-netros-700);
   text-align: center;
   white-space: nowrap;
+}
+
+/* At 1180px+ there's room to show every tool at once (matching the
+   Figma desktop layout), so the marquee stops: the animation is
+   switched off, the duplicated track is hidden, and the single
+   remaining track is centered as a static single-line row. Chips,
+   dividers, icons and gaps shrink fluidly between 1180px and ~1728px
+   so nothing is cut or wrapped awkwardly. */
+@media (min-width: 1180px) {
+  .tools {
+    --tool-chip: clamp(70px, 5.8vw, 100px);
+    --tool-divider-w: clamp(9px, 1.27vw, 22px);
+    --tool-divider-h: clamp(10px, 1.38vw, 24px);
+    --tool-gap: clamp(2px, 0.45vw, 16px);
+    --tool-padding: clamp(6px, 0.7vw, 12px);
+    --tool-inner-gap: 12px;
+    --tool-icon-max-w: clamp(52px, 4.29vw, 74px);
+    --tool-icon-max-h: clamp(22px, 1.86vw, 32px);
+    --tool-label-size: clamp(11px, 0.9vw, 14px);
+  }
+
+  .tools__marquee {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .tools__marquee-track {
+    animation: none;
+    width: 100%;
+  }
+
+  .tools__track {
+    width: 100%;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .tools__track[aria-hidden] {
+    display: none;
+  }
 }
 
 /* ========================================================================
@@ -220,9 +278,12 @@
 }
 
 @media (max-width: 599px) {
-  .tool-chip {
-    width: 84px;
-    height: 84px;
+  .tools {
+    --tool-chip: 56px;
+    --tool-icon-max-w: 40px;
+    --tool-icon-max-h: 18px;
+    --tool-label-size: 9px;
+    --tools-speed: 24s;
   }
 
   .about-intro__photo {
