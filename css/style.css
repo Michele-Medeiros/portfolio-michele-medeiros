@@ -205,11 +205,11 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 24px;
+  padding: clamp(2px, 0.9cqi, 8px) clamp(6px, 2.6cqi, 24px);
   background: var(--color-badge-bg);
   border: 2px solid var(--color-badge-border);
   border-radius: 200px;
-  font-size: clamp(12px, 1.2vw, 14px);
+  font-size: clamp(7px, 2.1cqi, 14px);
   color: var(--color-netros-900);
   white-space: nowrap;
 }
@@ -225,6 +225,8 @@ main {
    Project card (reused on Home and Projetos)
    ======================================================================== */
 .project-card {
+  container-type: inline-size;
+  container-name: project-card;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -269,7 +271,7 @@ main {
 .project-card__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: clamp(3px, 1.3cqi, 16px);
   padding-block: 12px;
 }
 
@@ -295,31 +297,13 @@ main {
   }
 }
 
-/* Below 460px the clamp() floors above are as small as they get, but
-   the card itself is narrower than the content wants, so shrink
-   everything further here, including the tag pills. */
-@media (max-width: 550px) {
-  .badge {
-    padding: 6px 14px;
-    font-size: 11px;
-  }
-
-  .project-card__tags {
-    gap: 8px;
-  }
-}
-
-@media (max-width: 452px) {
-  .badge {
-    padding: 3px 8px;
-    font-size: 8px;
-  }
-
-  .project-card__tags {
-    gap: 4px;
-  }
-}
-
+/* Tag pills (.badge / .project-card__tags gap above) shrink fluidly
+   via container query units against the card's own width — relevant
+   whenever the card is narrow, whether that's because the viewport is
+   small or because the grid has it in a multi-column layout (e.g. a
+   750px-ish card at 1024px-1500px viewports). Below 460px the clamp()
+   floors on title/description/link are as small as they get, so
+   shrink those further here. */
 @media (max-width: 460px) {
   .project-card__title {
     font-size: 20px;
