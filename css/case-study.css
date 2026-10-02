@@ -316,16 +316,81 @@
   margin-bottom: 8px;
 }
 
-.cs-swatch-groups {
+.cs-ds-row {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 32px;
-  border-bottom: 1px solid #d7d7d7;
-  padding-bottom: 32px;
 }
 
-.cs-swatch-group {
-  flex: 1 1 220px;
+.cs-ds-card {
+  background: #fefefe;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.cs-ds-card--typography {
+  flex: 1.7 1 600px;
+}
+
+.cs-ds-card--palette {
+  flex: 1 1 390px;
+  max-width: 454px;
+}
+
+.cs-ds-card__title {
+  font-weight: 700;
+  font-size: clamp(20px, 2vw, 26px);
+  color: var(--cs-navy);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.cs-typo-box {
+  background: #efefef;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.cs-typo-box + .cs-typo-box {
+  margin-top: 24px;
+}
+
+.cs-typo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.cs-typo-row > .cs-typo-box {
+  flex: 1.7 1 420px;
+  margin-top: 0;
+}
+
+.cs-typo-row > .cs-typo-box--narrow {
+  flex: 1 1 260px;
+}
+
+.cs-typo-box__title {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--cs-text);
+  margin-bottom: 16px;
+}
+
+.cs-typo-box__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cs-type-spec--boxed {
+  flex: 1 1 200px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 16px;
+  border-top: none;
 }
 
 .cs-swatch-group__title {
@@ -367,8 +432,6 @@
 }
 
 .cs-palette-slider {
-  max-width: 390px;
-  background: #fefefe;
   border: 1px solid var(--cs-card-border);
   border-radius: 12px;
   padding: 8px 24px 32px;
@@ -417,23 +480,6 @@
 
 .cs-palette-dot.is-active {
   background: #5b4fe0;
-}
-
-.cs-type-groups {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-}
-
-.cs-type-group {
-  flex: 1 1 220px;
-}
-
-.cs-type-group__title {
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--cs-text);
-  margin-bottom: 16px;
 }
 
 .cs-type-spec {

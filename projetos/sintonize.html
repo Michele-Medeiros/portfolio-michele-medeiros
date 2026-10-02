@@ -276,76 +276,88 @@
           Grid: 4 colunas | Margens laterais: 16px | Margem superior: 32px
         </div>
 
-        <div>
-          <h3 class="cs-card__title" style="margin-bottom:24px;">Paleta de cores</h3>
-          <div class="cs-palette-slider" data-palette-slider>
-            <div class="cs-palette-slider__panel is-active" data-panel>
-              <p class="cs-swatch-group__title">Humor</p>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FFA300;"></span><div><p class="cs-swatch__name">Primary</p><p class="cs-swatch__hex">#FFA300</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FF89B2;"></span><div><p class="cs-swatch__name">Neutro</p><p class="cs-swatch__hex">#FF89B2</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#00A166;"></span><div><p class="cs-swatch__name">Ótimo</p><p class="cs-swatch__hex">#00A166</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#419DEE;"></span><div><p class="cs-swatch__name">Mal</p><p class="cs-swatch__hex">#419DEE</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#9071E4;"></span><div><p class="cs-swatch__name">Péssimo</p><p class="cs-swatch__hex">#9071E4</p></div></div>
+        <div class="cs-ds-row">
+          <div class="cs-ds-card cs-ds-card--typography">
+            <h3 class="cs-ds-card__title">Tipografia</h3>
+
+            <div class="cs-typo-box">
+              <p class="cs-typo-box__title">Títulos</p>
+              <div class="cs-typo-box__grid">
+                <div class="cs-type-spec cs-type-spec--boxed"><p class="cs-type-spec__label">H1</p><p class="cs-type-spec__sample" style="font-size:28px;font-weight:600;">Registro salvo</p><p class="cs-type-spec__meta">28px · altura de linha 34 · SemiBold · título de tela</p></div>
+                <div class="cs-type-spec cs-type-spec--boxed"><p class="cs-type-spec__label">H2</p><p class="cs-type-spec__sample" style="font-size:22px;font-weight:600;">Como você influenciou?</p><p class="cs-type-spec__meta">22px · altura de linha 28 · SemiBold · título de card/modal</p></div>
+                <div class="cs-type-spec cs-type-spec--boxed"><p class="cs-type-spec__label">H3</p><p class="cs-type-spec__sample" style="font-size:18px;font-weight:500;">Emoções específicas</p><p class="cs-type-spec__meta">18px · altura de linha 24 · Medium · subtítulo de seção</p></div>
+              </div>
             </div>
-            <div class="cs-palette-slider__panel" data-panel>
-              <p class="cs-swatch-group__title">Fundos</p>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FFFFFF;"></span><div><p class="cs-swatch__name">Surface</p><p class="cs-swatch__hex">#FFFFFF</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FAFAF7;"></span><div><p class="cs-swatch__name">Base</p><p class="cs-swatch__hex">#FAFAF7</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#F1EFEA;"></span><div><p class="cs-swatch__name">Subtle</p><p class="cs-swatch__hex">#F1EFEA</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#16171B;"></span><div><p class="cs-swatch__name">Inverse</p><p class="cs-swatch__hex">#16171B</p></div></div>
+
+            <div class="cs-typo-box">
+              <p class="cs-typo-box__title">Corpo e labels</p>
+              <div class="cs-typo-box__grid">
+                <div class="cs-type-spec cs-type-spec--boxed"><p class="cs-type-spec__label">Body</p><p class="cs-type-spec__sample" style="font-size:16px;">Registre seu humor:</p><p class="cs-type-spec__meta">16px · altura de linha 24 · Regular · texto corrido</p></div>
+                <div class="cs-type-spec cs-type-spec--boxed"><p class="cs-type-spec__label">Body medium</p><p class="cs-type-spec__sample" style="font-size:16px;font-weight:500;">3 emoções por registro</p><p class="cs-type-spec__meta">16px · altura de linha 24 · Medium · destaque no corpo</p></div>
+                <div class="cs-type-spec cs-type-spec--boxed"><p class="cs-type-spec__label">Label</p><p class="cs-type-spec__sample" style="font-size:14px;font-weight:500;">Nota (opcional)</p><p class="cs-type-spec__meta">14px · altura de linha 20 · Medium · rótulo de campo, chip</p></div>
+                <div class="cs-type-spec cs-type-spec--boxed"><p class="cs-type-spec__label">Placeholder</p><p class="cs-type-spec__sample" style="font-size:16px;color:#A0A4AB;">O que aconteceu...</p><p class="cs-type-spec__meta">16px · altura de linha 24 · Regular · mesmo tamanho do input</p></div>
+              </div>
             </div>
-            <div class="cs-palette-slider__panel" data-panel>
-              <p class="cs-swatch-group__title">Textos</p>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#1E2025;"></span><div><p class="cs-swatch__name">Primary</p><p class="cs-swatch__hex">#1E2025</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#6B6F76;"></span><div><p class="cs-swatch__name">Secondary</p><p class="cs-swatch__hex">#6B6F76</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#A0A4AB;"></span><div><p class="cs-swatch__name">Placeholder</p><p class="cs-swatch__hex">#A0A4AB</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#5B4FE0;"></span><div><p class="cs-swatch__name">Accent</p><p class="cs-swatch__hex">#5B4FE0</p></div></div>
-            </div>
-            <div class="cs-palette-slider__panel" data-panel>
-              <p class="cs-swatch-group__title">Campos</p>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#D9D6CF;"></span><div><p class="cs-swatch__name">Border - Default</p><p class="cs-swatch__hex">#D9D6CF</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#B8B4AA;"></span><div><p class="cs-swatch__name">Border - Filled</p><p class="cs-swatch__hex">#B8B4AA</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#5B4FE0;"></span><div><p class="cs-swatch__name">Border - Focus</p><p class="cs-swatch__hex">#5B4FE0</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#EDEBFC;"></span><div><p class="cs-swatch__name">Border - Highlight</p><p class="cs-swatch__hex">#EDEBFC</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#D6453D;"></span><div><p class="cs-swatch__name">Border - Error</p><p class="cs-swatch__hex">#D6453D</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FEF4F3;"></span><div><p class="cs-swatch__name">BG - Error</p><p class="cs-swatch__hex">#FEF4F3</p></div></div>
-              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#E4E1D9;"></span><div><p class="cs-swatch__name">Border - Disabled</p><p class="cs-swatch__hex">#E4E1D9</p></div></div>
-            </div>
-            <div class="cs-palette-dots" role="tablist" aria-label="Grupos da paleta de cores">
-              <button class="cs-palette-dot is-active" type="button" aria-label="Humor"></button>
-              <button class="cs-palette-dot" type="button" aria-label="Fundos"></button>
-              <button class="cs-palette-dot" type="button" aria-label="Textos"></button>
-              <button class="cs-palette-dot" type="button" aria-label="Campos"></button>
+
+            <div class="cs-typo-row">
+              <div class="cs-typo-box">
+                <p class="cs-typo-box__title">Estados e metadados</p>
+                <div class="cs-typo-box__grid">
+                  <div class="cs-type-spec cs-type-spec--boxed"><p class="cs-type-spec__label">Helper text</p><p class="cs-type-spec__sample" style="font-size:13px;">0/3 selecionados</p><p class="cs-type-spec__meta">13px · altura de linha 18 · Regular · ajuda abaixo de inputs</p></div>
+                  <div class="cs-type-spec cs-type-spec--boxed"><p class="cs-type-spec__label">Error message</p><p class="cs-type-spec__sample" style="font-size:13px;font-weight:500;color:#D6453D;">Senha incorreta</p><p class="cs-type-spec__meta">13px · altura de linha 18 · Medium · mesma cor do input em erro</p></div>
+                  <div class="cs-type-spec cs-type-spec--boxed"><p class="cs-type-spec__label">Caption</p><p class="cs-type-spec__sample" style="font-size:12px;">Hoje, 14:32 · 210/1000</p><p class="cs-type-spec__meta">12px · altura de linha 16 · Regular · timestamp, contador</p></div>
+                </div>
+              </div>
+              <div class="cs-typo-box cs-typo-box--narrow">
+                <p class="cs-typo-box__title">Botões e navegação</p>
+                <div class="cs-typo-box__grid">
+                  <div class="cs-type-spec cs-type-spec--boxed"><p class="cs-type-spec__label">Tab bar</p><p class="cs-type-spec__sample" style="font-size:11px;font-weight:500;text-transform:uppercase;">Histórico</p><p class="cs-type-spec__meta">11px · altura de linha 14 · Medium · navegação inferior</p></div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div>
-          <h3 class="cs-card__title" style="margin-bottom:24px;">Tipografia</h3>
-          <div class="cs-type-groups">
-            <div class="cs-type-group">
-              <p class="cs-type-group__title">Títulos</p>
-              <div class="cs-type-spec"><p class="cs-type-spec__label">H1</p><p class="cs-type-spec__sample" style="font-size:28px;font-weight:600;">Registro salvo</p><p class="cs-type-spec__meta">28px · altura de linha 34 · SemiBold · título de tela</p></div>
-              <div class="cs-type-spec"><p class="cs-type-spec__label">H2</p><p class="cs-type-spec__sample" style="font-size:22px;font-weight:600;">Como você influenciou?</p><p class="cs-type-spec__meta">22px · altura de linha 28 · SemiBold · título de card/modal</p></div>
-              <div class="cs-type-spec"><p class="cs-type-spec__label">H3</p><p class="cs-type-spec__sample" style="font-size:18px;font-weight:500;">Emoções específicas</p><p class="cs-type-spec__meta">18px · altura de linha 24 · Medium · subtítulo de seção</p></div>
-            </div>
-            <div class="cs-type-group">
-              <p class="cs-type-group__title">Corpo e labels</p>
-              <div class="cs-type-spec"><p class="cs-type-spec__label">Body</p><p class="cs-type-spec__sample" style="font-size:16px;">O que pode ter influenciado você hoje?</p><p class="cs-type-spec__meta">16px · altura de linha 24 · Regular · texto corrido</p></div>
-              <div class="cs-type-spec"><p class="cs-type-spec__label">Body medium</p><p class="cs-type-spec__sample" style="font-size:16px;font-weight:500;">Até 3 emoções por registro</p><p class="cs-type-spec__meta">16px · altura de linha 24 · Medium · destaque no corpo</p></div>
-              <div class="cs-type-spec"><p class="cs-type-spec__label">Label</p><p class="cs-type-spec__sample" style="font-size:14px;font-weight:500;">Nota (opcional)</p><p class="cs-type-spec__meta">14px · altura de linha 20 · Medium · rótulo de campo, chip</p></div>
-              <div class="cs-type-spec"><p class="cs-type-spec__label">Placeholder</p><p class="cs-type-spec__sample" style="font-size:16px;color:#A0A4AB;">Escreva o que aconteceu...</p><p class="cs-type-spec__meta">16px · altura de linha 24 · Regular · mesmo tamanho do input</p></div>
-            </div>
-            <div class="cs-type-group">
-              <p class="cs-type-group__title">Estados e metadados</p>
-              <div class="cs-type-spec"><p class="cs-type-spec__label">Helper text</p><p class="cs-type-spec__sample" style="font-size:13px;">Notas podem ter até 1.000 caracteres.</p><p class="cs-type-spec__meta">13px · altura de linha 18 · Regular · ajuda abaixo de inputs</p></div>
-              <div class="cs-type-spec"><p class="cs-type-spec__label">Error message</p><p class="cs-type-spec__sample" style="font-size:13px;font-weight:500;color:#D6453D;">Selecione um humor para continuar.</p><p class="cs-type-spec__meta">13px · altura de linha 18 · Medium · mesma cor do input em erro</p></div>
-              <div class="cs-type-spec"><p class="cs-type-spec__label">Caption</p><p class="cs-type-spec__sample" style="font-size:12px;">Hoje, 14:32 · 210/1000</p><p class="cs-type-spec__meta">12px · altura de linha 16 · Regular · timestamp, contador</p></div>
-            </div>
-            <div class="cs-type-group">
-              <p class="cs-type-group__title">Botões e navegação</p>
-              <div class="cs-type-spec"><p class="cs-type-spec__label">Button</p><p class="cs-type-spec__sample" style="font-size:16px;font-weight:500;">Salvar registro</p><p class="cs-type-spec__meta">16px · altura de linha 20 · Medium · texto de botão</p></div>
-              <div class="cs-type-spec"><p class="cs-type-spec__label">Tab bar</p><p class="cs-type-spec__sample" style="font-size:11px;font-weight:500;text-transform:uppercase;">Histórico</p><p class="cs-type-spec__meta">11px · altura de linha 14 · Medium · navegação inferior</p></div>
+          <div class="cs-ds-card cs-ds-card--palette">
+            <h3 class="cs-ds-card__title">Paleta de cores</h3>
+            <div class="cs-palette-slider" data-palette-slider>
+              <div class="cs-palette-slider__panel is-active" data-panel>
+                <p class="cs-swatch-group__title">Humor</p>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FFA300;"></span><div><p class="cs-swatch__name">Primary</p><p class="cs-swatch__hex">#FFA300</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FF89B2;"></span><div><p class="cs-swatch__name">Neutro</p><p class="cs-swatch__hex">#FF89B2</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#00A166;"></span><div><p class="cs-swatch__name">Ótimo</p><p class="cs-swatch__hex">#00A166</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#419DEE;"></span><div><p class="cs-swatch__name">Mal</p><p class="cs-swatch__hex">#419DEE</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#9071E4;"></span><div><p class="cs-swatch__name">Péssimo</p><p class="cs-swatch__hex">#9071E4</p></div></div>
+              </div>
+              <div class="cs-palette-slider__panel" data-panel>
+                <p class="cs-swatch-group__title">Fundos</p>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FFFFFF;"></span><div><p class="cs-swatch__name">Surface</p><p class="cs-swatch__hex">#FFFFFF</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FAFAF7;"></span><div><p class="cs-swatch__name">Base</p><p class="cs-swatch__hex">#FAFAF7</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#F1EFEA;"></span><div><p class="cs-swatch__name">Subtle</p><p class="cs-swatch__hex">#F1EFEA</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#16171B;"></span><div><p class="cs-swatch__name">Inverse</p><p class="cs-swatch__hex">#16171B</p></div></div>
+              </div>
+              <div class="cs-palette-slider__panel" data-panel>
+                <p class="cs-swatch-group__title">Textos</p>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#1E2025;"></span><div><p class="cs-swatch__name">Primary</p><p class="cs-swatch__hex">#1E2025</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#6B6F76;"></span><div><p class="cs-swatch__name">Secondary</p><p class="cs-swatch__hex">#6B6F76</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#A0A4AB;"></span><div><p class="cs-swatch__name">Placeholder</p><p class="cs-swatch__hex">#A0A4AB</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#5B4FE0;"></span><div><p class="cs-swatch__name">Accent</p><p class="cs-swatch__hex">#5B4FE0</p></div></div>
+              </div>
+              <div class="cs-palette-slider__panel" data-panel>
+                <p class="cs-swatch-group__title">Campos</p>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#D9D6CF;"></span><div><p class="cs-swatch__name">Border - Default</p><p class="cs-swatch__hex">#D9D6CF</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#B8B4AA;"></span><div><p class="cs-swatch__name">Border - Filled</p><p class="cs-swatch__hex">#B8B4AA</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#5B4FE0;"></span><div><p class="cs-swatch__name">Border - Focus</p><p class="cs-swatch__hex">#5B4FE0</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#EDEBFC;"></span><div><p class="cs-swatch__name">Border - Highlight</p><p class="cs-swatch__hex">#EDEBFC</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#D6453D;"></span><div><p class="cs-swatch__name">Border - Error</p><p class="cs-swatch__hex">#D6453D</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FEF4F3;"></span><div><p class="cs-swatch__name">BG - Error</p><p class="cs-swatch__hex">#FEF4F3</p></div></div>
+                <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#E4E1D9;"></span><div><p class="cs-swatch__name">Border - Disabled</p><p class="cs-swatch__hex">#E4E1D9</p></div></div>
+              </div>
+              <div class="cs-palette-dots" role="tablist" aria-label="Grupos da paleta de cores">
+                <button class="cs-palette-dot is-active" type="button" aria-label="Humor"></button>
+                <button class="cs-palette-dot" type="button" aria-label="Fundos"></button>
+                <button class="cs-palette-dot" type="button" aria-label="Textos"></button>
+                <button class="cs-palette-dot" type="button" aria-label="Campos"></button>
+              </div>
             </div>
           </div>
         </div>
