@@ -422,9 +422,9 @@
 }
 
 .cs-swatch__dot {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
   border: 1px solid #0000001a;
   flex-shrink: 0;
 }
@@ -467,7 +467,7 @@
 
 .cs-palette-slider__panel > .cs-swatch-group__title {
   flex: 0 0 auto;
-  text-align: center;
+  text-align: left;
   padding: 10px 0;
 }
 
