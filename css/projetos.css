@@ -1,0 +1,36 @@
+/* ========================================================================
+   Page header
+   ======================================================================== */
+.projects-header {
+  padding-top: 65px;
+  padding-bottom: var(--space-title-content);
+}
+
+/* ========================================================================
+   Grid
+   ======================================================================== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+
+.projects-grid .project-card {
+  width: 100%;
+}
+
+/* Minimal cards (no description/tags/link yet) skip the extra bottom
+   padding used to balance the "Ver mais" link on full cards. */
+.project-card--minimal {
+  padding-bottom: 24px;
+}
+
+.project-card--minimal .project-card__body {
+  padding-bottom: 8px;
+}
+
+.project-card__title--minimal {
+  font-size: clamp(20px, 2.4vw, 28px);
+  text-align: center;
+}

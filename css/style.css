@@ -222,6 +222,80 @@ main {
 }
 
 /* ========================================================================
+   Project card (reused on Home and Projetos)
+   ======================================================================== */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 0 44px;
+  border-radius: var(--radius-lg);
+  border: 12px solid #fff;
+}
+
+.project-card__thumb-wrap {
+  padding: 24px 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.project-card__thumb {
+  width: 100%;
+  aspect-ratio: 1920 / 1080;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 22px 4px rgba(61, 61, 61, 0.25);
+  overflow: hidden;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-inline: 32px;
+}
+
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-block: 12px;
+}
+
+.project-card__title {
+  font-weight: 600;
+  font-size: clamp(24px, 3.2vw, 36px);
+}
+
+.project-card__desc {
+  font-size: clamp(16px, 1.6vw, 24px);
+  line-height: 1.5;
+}
+
+.project-card__link {
+  padding: 24px 32px 0;
+}
+
+@media (max-width: 599px) {
+  .project-card__body,
+  .project-card__thumb-wrap,
+  .project-card__link {
+    padding-inline: 16px;
+  }
+}
+
+/* ========================================================================
    Responsive helpers
    ======================================================================== */
 @media (max-width: 1023px) {
