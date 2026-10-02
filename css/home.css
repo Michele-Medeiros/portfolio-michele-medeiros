@@ -215,6 +215,7 @@
   }
 
   .how-i-work__card {
+    flex-basis: auto;
     width: 100%;
   }
 
@@ -223,6 +224,7 @@
   }
 
   .project-card {
+    flex-basis: auto;
     max-width: none;
     width: 100%;
   }
