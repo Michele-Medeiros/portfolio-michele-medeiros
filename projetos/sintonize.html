@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sintonize — Case Study | Michele Medeiros</title>
+  <meta name="description" content="Do conceito à Play Store: case completo do Sintonize, app de registro emocional — estratégia, UX, design system, documentação e desenvolvimento assistido por IA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=23">
+  <link rel="stylesheet" href="../css/case-study.css?v=1">
+</head>
+<body>
+
+  <header class="navbar-wrap">
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a href="../index.html" class="navbar__brand">Michele Medeiros</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="navbar__links" id="navLinks">
+        <a href="../index.html">Home</a>
+        <a href="../sobre-mim.html">Sobre mim</a>
+        <a href="../projetos.html" class="is-active">Projetos</a>
+        <a href="../index.html#contato">Contatos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="cs-page">
+
+    <!-- Hero -->
+    <section class="cs-section" style="border-top:none;">
+      <div class="cs-hero" style="max-width:1598px;width:100%;">
+        <div class="cs-hero__main">
+          <p class="cs-hero__kicker">Product Strategy · UX/UI · Design System · AI-assisted Development</p>
+          <div class="cs-hero__titles">
+            <p class="cs-hero__title">SINTONIZE.</p>
+            <p class="cs-hero__subtitle">Do conceito à Play Store.</p>
+          </div>
+          <p class="cs-hero__desc">Um aplicativo de registro emocional pensado, especificado, desenhado e conduzido até um produto funcional em React Native.</p>
+          <p class="cs-hero__quote">O diferencial deste case está na continuidade entre estratégia, experiência, system design, documentação técnica e execução, não apenas na interface final.</p>
+          <div class="cs-hero__stats">
+            <div class="cs-stat">
+              <p class="cs-stat__value">4 DIAS</p>
+              <p class="cs-stat__label">mockups → app submetido</p>
+            </div>
+            <div class="cs-stat">
+              <p class="cs-stat__value">144 RF's</p>
+              <p class="cs-stat__label">requisitos funcionais</p>
+            </div>
+            <div class="cs-stat">
+              <p class="cs-stat__value">87 RNF's</p>
+              <p class="cs-stat__label">requisitos não funcionais</p>
+            </div>
+            <div class="cs-stat">
+              <p class="cs-stat__value">REACT NATIVE</p>
+              <p class="cs-stat__label">aplicativo funcional</p>
+            </div>
+          </div>
+        </div>
+        <div class="cs-hero__aside">
+          <img class="cs-hero__phone" src="../assets/images/sintonize/hero-login.png" alt="Tela de login do app Sintonize">
+          <a class="cs-hero__cta" href="https://sintonize-app-demo-michele-medeiros.netlify.app/" target="_blank" rel="noopener">Explorar versão web</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- O projeto em 30 segundos + Problema/Desafio -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__head">
+          <h2 class="cs-section__title">O projeto em 30 segundos</h2>
+          <p class="cs-section__desc">O Sintonize parte de um check-in que pode durar poucos segundos e permite aprofundamento apenas quando o usuário quiser. Com o histórico acumulado, organiza momentos do dia e revela associações entre humor, emoções, fatores e horários, sem transformar a experiência em diagnóstico, terapia ou gamificação obrigatória.</p>
+        </div>
+        <div class="cs-cards-row">
+          <article class="cs-card">
+            <span class="cs-pill">Problema</span>
+            <h3 class="cs-card__title">Registrar sem transformar reflexão em tarefa</h3>
+            <p class="cs-card__text">Diários longos exigem esforço. Trackers simples demais guardam pouco contexto. O desafio era encontrar profundidade sem sacrificar recorrência.</p>
+          </article>
+          <article class="cs-card cs-card--dark">
+            <span class="cs-pill">Desafio</span>
+            <h3 class="cs-card__title">Baixa fricção + profundidade opcional</h3>
+            <p class="cs-card__text">O registro precisava caber na rotina e, ao mesmo tempo, acumular informação suficiente para gerar histórico e padrões compreensíveis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meu papel no projeto -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__head">
+          <h2 class="cs-section__title">Meu papel no projeto</h2>
+          <p class="cs-section__desc">Atuei de ponta a ponta: da definição do produto à execução técnica assistida por IA.</p>
+        </div>
+        <div class="cs-cards-row">
+          <article class="cs-card">
+            <h3 class="cs-card__title">Product Strategy</h3>
+            <p class="cs-card__text">Problema, posicionamento, benchmark, escopo e MVP.</p>
+          </article>
+          <article class="cs-card">
+            <h3 class="cs-card__title">UX</h3>
+            <p class="cs-card__text">Arquitetura, jornadas, fluxos, estados e exceções.</p>
+          </article>
+          <article class="cs-card">
+            <h3 class="cs-card__title">UI &amp; System Design</h3>
+            <p class="cs-card__text">Identidade, componentes, variantes e alta fidelidade.</p>
+          </article>
+        </div>
+        <div class="cs-cards-row">
+          <article class="cs-card">
+            <h3 class="cs-card__title">Product Documentation</h3>
+            <p class="cs-card__text">RFs, RNFs, edge cases e critérios de aceite.</p>
+          </article>
+          <article class="cs-card">
+            <h3 class="cs-card__title">AI Orchestration</h3>
+            <p class="cs-card__text">Direção técnica da IA com base em requisitos.</p>
+          </article>
+          <article class="cs-card">
+            <h3 class="cs-card__title">Technical Validation</h3>
+            <p class="cs-card__text">QA, debug funcional e preparação para publicação.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Antes de desenhar, estruturei o produto (01-08) -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__head">
+          <h2 class="cs-section__title">Antes de desenhar, estruturei o produto</h2>
+          <p class="cs-section__desc">A interface foi consequência de decisões anteriores. O produto foi primeiro decomposto em problema, escopo, regras, estados, prioridades e comportamento esperado.</p>
+        </div>
+        <div class="cs-cards-row">
+          <article class="cs-card cs-step"><span class="cs-pill">01</span><p class="cs-card__text">Cadastro, acompanhamento, filtros, status e histórico.</p></article>
+          <article class="cs-card cs-step"><span class="cs-pill">02</span><p class="cs-card__text">Estratégia &amp; MVP</p></article>
+          <article class="cs-card cs-step"><span class="cs-pill">03</span><p class="cs-card__text">Regras de negócio</p></article>
+          <article class="cs-card cs-step"><span class="cs-pill">04</span><p class="cs-card__text">Arquitetura de informação</p></article>
+        </div>
+        <div class="cs-cards-row">
+          <article class="cs-card cs-step"><span class="cs-pill">05</span><p class="cs-card__text">Fluxos &amp; estados</p></article>
+          <article class="cs-card cs-step"><span class="cs-pill">06</span><p class="cs-card__text">Design System</p></article>
+          <article class="cs-card cs-step"><span class="cs-pill">07</span><p class="cs-card__text">High fidelity</p></article>
+          <article class="cs-card cs-step"><span class="cs-pill">08</span><p class="cs-card__text">Spec técnica → React Native</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetando a experiência completa -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__head">
+          <h2 class="cs-section__title">Projetando a experiência completa</h2>
+          <p class="cs-section__desc">Os mockups foram tratados como especificação visual do produto, cobrindo diferentes perfis, estados, ações críticas e momentos de uso, não apenas o happy path.</p>
+        </div>
+        <div class="cs-cards-row">
+          <article class="cs-card">
+            <h3 class="cs-card__title">Acesso &amp; onboarding</h3>
+            <ul class="cs-card__list"><li>boas-vindas</li><li>modo convidado</li><li>login por e-mail</li><li>Google / Apple</li><li>criação de conta</li><li>primeiro acesso</li></ul>
+          </article>
+          <article class="cs-card">
+            <h3 class="cs-card__title">Registro</h3>
+            <ul class="cs-card__list"><li>novo registro</li><li>seleção de humor</li><li>emoções e fatores</li><li>adicionar / editar nota</li><li>editar registro</li><li>excluir registro</li></ul>
+          </article>
+          <article class="cs-card">
+            <h3 class="cs-card__title">Histórico</h3>
+            <ul class="cs-card__list"><li>semanal</li><li>mensal</li><li>dia selecionado</li><li>detalhe</li><li>filtros</li><li>estado vazio</li></ul>
+          </article>
+        </div>
+        <div class="cs-cards-row">
+          <article class="cs-card">
+            <h3 class="cs-card__title">Insights</h3>
+            <ul class="cs-card__list"><li>em formação</li><li>completos</li><li>períodos</li><li>humor</li><li>emoções</li><li>fatores e horários</li></ul>
+          </article>
+          <article class="cs-card">
+            <h3 class="cs-card__title">Perfil</h3>
+            <ul class="cs-card__list"><li>convidado</li><li>autenticado</li><li>notificações</li><li>privacidade</li><li>exportação</li><li>exclusão de conta</li></ul>
+          </article>
+          <article class="cs-card">
+            <h3 class="cs-card__title">Estados críticos</h3>
+            <ul class="cs-card__list"><li>ações destrutivas</li><li>sem dados</li><li>dados insuficientes</li><li>campos com erro</li><li>ações desabilitadas</li><li>confirmações</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design orientado por estados (tabela) -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__head">
+          <h2 class="cs-section__title">Design orientado por estados</h2>
+          <p class="cs-section__desc">Mais do que desenhar páginas, estruturei como a mesma funcionalidade deveria se comportar em contextos diferentes.</p>
+        </div>
+        <div class="cs-table">
+          <div class="cs-table__row cs-table__row--head">
+            <div class="cs-table__cell cs-table__cell--area">Área</div>
+            <div class="cs-table__cell cs-table__cell--states">Estados considerados</div>
+            <div class="cs-table__cell cs-table__cell--why">Porque importa</div>
+          </div>
+          <div class="cs-table__row">
+            <div class="cs-table__cell cs-table__cell--area">Home</div>
+            <div class="cs-table__cell cs-table__cell--states">primeiro acesso · recorrente · período vazio/preenchido · convidado/logado</div>
+            <div class="cs-table__cell cs-table__cell--why">Evita uma experiência dependente de uma única condição de dados.</div>
+          </div>
+          <div class="cs-table__row">
+            <div class="cs-table__cell cs-table__cell--area">Registro</div>
+            <div class="cs-table__cell cs-table__cell--states">criar · editar · nota fechada/aberta · seleção vazia/preenchida · confirmação</div>
+            <div class="cs-table__cell cs-table__cell--why">Transforma o core flow em comportamento previsível e testável.</div>
+          </div>
+          <div class="cs-table__row">
+            <div class="cs-table__cell cs-table__cell--area">Histórico</div>
+            <div class="cs-table__cell cs-table__cell--states">sem registros · com dados · filtrado · dia selecionado · detalhe · exclusão</div>
+            <div class="cs-table__cell cs-table__cell--why">Garante continuidade entre descoberta, leitura e gestão.</div>
+          </div>
+          <div class="cs-table__row">
+            <div class="cs-table__cell cs-table__cell--area">Insights</div>
+            <div class="cs-table__cell cs-table__cell--states">em formação · completos · diferentes períodos · cards com dados</div>
+            <div class="cs-table__cell cs-table__cell--why">Evita conclusões prematuras e estados que pareçam quebrados.</div>
+          </div>
+          <div class="cs-table__row">
+            <div class="cs-table__cell cs-table__cell--area">Conta</div>
+            <div class="cs-table__cell cs-table__cell--states">convidado · login · criar conta · autenticado · exclusão</div>
+            <div class="cs-table__cell cs-table__cell--why">Separa claramente experiência local, autenticada e ações sensíveis.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Decisões de UX -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__head">
+          <h2 class="cs-section__title">Decisões de UX</h2>
+          <p class="cs-section__desc">Algumas escolhas foram usadas para reduzir fricção sem simplificar demais o produto.</p>
+        </div>
+        <div class="cs-cards-row">
+          <article class="cs-card">
+            <span class="cs-pill">Problema</span>
+            <h3 class="cs-card__title">Formulários longos aumentam abandono</h3>
+            <p class="cs-card__text"><strong>Decisão:</strong> aprofundamento progressivo, deixando contexto adicional para quando fizer sentido.</p>
+          </article>
+          <article class="cs-card">
+            <span class="cs-pill">Problema</span>
+            <h3 class="cs-card__title">Um único "humor do dia" apaga variações</h3>
+            <p class="cs-card__text"><strong>Decisão:</strong> preservar registros por períodos e manter os momentos separados.</p>
+          </article>
+        </div>
+        <div class="cs-cards-row">
+          <article class="cs-card">
+            <span class="cs-pill">Problema</span>
+            <h3 class="cs-card__title">Uma nota sempre aberta pesa visualmente</h3>
+            <p class="cs-card__text"><strong>Decisão:</strong> acesso colapsado e bottom sheet para aprofundamento opcional.</p>
+          </article>
+          <article class="cs-card">
+            <span class="cs-pill">Problema</span>
+            <h3 class="cs-card__title">Insights podem soar clínicos</h3>
+            <p class="cs-card__text"><strong>Decisão:</strong> linguagem associativa e rastreável aos registros, sem diagnóstico ou causalidade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design System -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__head">
+          <h2 class="cs-section__title">Design System</h2>
+          <p class="cs-section__desc">O sistema visual foi criado para sustentar diferentes estados e fluxos. No arquivo, componentes como inputs, botões, dropdowns, multi-selects, date picker, nav bar, escala de humor, chips, radio e switch possuem variações e estados documentados.</p>
+        </div>
+
+        <div class="cs-ds-meta">
+          <strong>Layout:</strong>
+          Grid: 4 colunas | Margens laterais: 16px | Margem superior: 32px
+        </div>
+
+        <div>
+          <h3 class="cs-card__title" style="margin-bottom:24px;">Paleta de cores</h3>
+          <div class="cs-swatch-groups">
+            <div class="cs-swatch-group">
+              <p class="cs-swatch-group__title">Background</p>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FFFFFF;"></span><div><p class="cs-swatch__name">Surface</p><p class="cs-swatch__hex">#FFFFFF</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FAFAF7;"></span><div><p class="cs-swatch__name">Base</p><p class="cs-swatch__hex">#FAFAF7</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#F1EFEA;"></span><div><p class="cs-swatch__name">Subtle</p><p class="cs-swatch__hex">#F1EFEA</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#16171B;"></span><div><p class="cs-swatch__name">Inverse</p><p class="cs-swatch__hex">#16171B</p></div></div>
+            </div>
+            <div class="cs-swatch-group">
+              <p class="cs-swatch-group__title">Texts</p>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#1E2025;"></span><div><p class="cs-swatch__name">Primary</p><p class="cs-swatch__hex">#1E2025</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#6B6F76;"></span><div><p class="cs-swatch__name">Secondary</p><p class="cs-swatch__hex">#6B6F76</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#A0A4AB;"></span><div><p class="cs-swatch__name">Placeholder</p><p class="cs-swatch__hex">#A0A4AB</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#5B4FE0;"></span><div><p class="cs-swatch__name">Accent</p><p class="cs-swatch__hex">#5B4FE0</p></div></div>
+            </div>
+            <div class="cs-swatch-group">
+              <p class="cs-swatch-group__title">Inputs</p>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#D9D6CF;"></span><div><p class="cs-swatch__name">Border - Default</p><p class="cs-swatch__hex">#D9D6CF</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#B8B4AA;"></span><div><p class="cs-swatch__name">Border - Filled</p><p class="cs-swatch__hex">#B8B4AA</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#5B4FE0;"></span><div><p class="cs-swatch__name">Border - Focus</p><p class="cs-swatch__hex">#5B4FE0</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#EDEBFC;"></span><div><p class="cs-swatch__name">Border - Highlight</p><p class="cs-swatch__hex">#EDEBFC</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#D6453D;"></span><div><p class="cs-swatch__name">Border - Error</p><p class="cs-swatch__hex">#D6453D</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FEF4F3;"></span><div><p class="cs-swatch__name">BG - Error</p><p class="cs-swatch__hex">#FEF4F3</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#E4E1D9;"></span><div><p class="cs-swatch__name">Border - Disabled</p><p class="cs-swatch__hex">#E4E1D9</p></div></div>
+            </div>
+            <div class="cs-swatch-group">
+              <p class="cs-swatch-group__title">Emoções</p>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FFA300;"></span><div><p class="cs-swatch__name">Bem</p><p class="cs-swatch__hex">#FFA300</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#FF89B2;"></span><div><p class="cs-swatch__name">Neutro</p><p class="cs-swatch__hex">#FF89B2</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#00A166;"></span><div><p class="cs-swatch__name">Ótimo</p><p class="cs-swatch__hex">#00A166</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#3582F0;"></span><div><p class="cs-swatch__name">Mal</p><p class="cs-swatch__hex">#3582F0</p></div></div>
+              <div class="cs-swatch"><span class="cs-swatch__dot" style="background:#8D80EF;"></span><div><p class="cs-swatch__name">Péssimo</p><p class="cs-swatch__hex">#8D80EF</p></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="cs-card__title" style="margin-bottom:24px;">Tipografia</h3>
+          <div class="cs-type-groups">
+            <div class="cs-type-group">
+              <p class="cs-type-group__title">Títulos</p>
+              <div class="cs-type-spec"><p class="cs-type-spec__label">H1</p><p class="cs-type-spec__sample" style="font-size:28px;font-weight:600;">Registro salvo</p><p class="cs-type-spec__meta">28px · altura de linha 34 · SemiBold · título de tela</p></div>
+              <div class="cs-type-spec"><p class="cs-type-spec__label">H2</p><p class="cs-type-spec__sample" style="font-size:22px;font-weight:600;">Como você influenciou?</p><p class="cs-type-spec__meta">22px · altura de linha 28 · SemiBold · título de card/modal</p></div>
+              <div class="cs-type-spec"><p class="cs-type-spec__label">H3</p><p class="cs-type-spec__sample" style="font-size:18px;font-weight:500;">Emoções específicas</p><p class="cs-type-spec__meta">18px · altura de linha 24 · Medium · subtítulo de seção</p></div>
+            </div>
+            <div class="cs-type-group">
+              <p class="cs-type-group__title">Corpo e labels</p>
+              <div class="cs-type-spec"><p class="cs-type-spec__label">Body</p><p class="cs-type-spec__sample" style="font-size:16px;">O que pode ter influenciado você hoje?</p><p class="cs-type-spec__meta">16px · altura de linha 24 · Regular · texto corrido</p></div>
+              <div class="cs-type-spec"><p class="cs-type-spec__label">Body medium</p><p class="cs-type-spec__sample" style="font-size:16px;font-weight:500;">Até 3 emoções por registro</p><p class="cs-type-spec__meta">16px · altura de linha 24 · Medium · destaque no corpo</p></div>
+              <div class="cs-type-spec"><p class="cs-type-spec__label">Label</p><p class="cs-type-spec__sample" style="font-size:14px;font-weight:500;">Nota (opcional)</p><p class="cs-type-spec__meta">14px · altura de linha 20 · Medium · rótulo de campo, chip</p></div>
+              <div class="cs-type-spec"><p class="cs-type-spec__label">Placeholder</p><p class="cs-type-spec__sample" style="font-size:16px;color:#A0A4AB;">Escreva o que aconteceu...</p><p class="cs-type-spec__meta">16px · altura de linha 24 · Regular · mesmo tamanho do input</p></div>
+            </div>
+            <div class="cs-type-group">
+              <p class="cs-type-group__title">Estados e metadados</p>
+              <div class="cs-type-spec"><p class="cs-type-spec__label">Helper text</p><p class="cs-type-spec__sample" style="font-size:13px;">Notas podem ter até 1.000 caracteres.</p><p class="cs-type-spec__meta">13px · altura de linha 18 · Regular · ajuda abaixo de inputs</p></div>
+              <div class="cs-type-spec"><p class="cs-type-spec__label">Error message</p><p class="cs-type-spec__sample" style="font-size:13px;font-weight:500;color:#D6453D;">Selecione um humor para continuar.</p><p class="cs-type-spec__meta">13px · altura de linha 18 · Medium · mesma cor do input em erro</p></div>
+              <div class="cs-type-spec"><p class="cs-type-spec__label">Caption</p><p class="cs-type-spec__sample" style="font-size:12px;">Hoje, 14:32 · 210/1000</p><p class="cs-type-spec__meta">12px · altura de linha 16 · Regular · timestamp, contador</p></div>
+            </div>
+            <div class="cs-type-group">
+              <p class="cs-type-group__title">Botões e navegação</p>
+              <div class="cs-type-spec"><p class="cs-type-spec__label">Button</p><p class="cs-type-spec__sample" style="font-size:16px;font-weight:500;">Salvar registro</p><p class="cs-type-spec__meta">16px · altura de linha 20 · Medium · texto de botão</p></div>
+              <div class="cs-type-spec"><p class="cs-type-spec__label">Tab bar</p><p class="cs-type-spec__sample" style="font-size:11px;font-weight:500;text-transform:uppercase;">Histórico</p><p class="cs-type-spec__meta">11px · altura de linha 14 · Medium · navegação inferior</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-ds-components">
+          <div>
+            <p class="cs-ds-components__title">Componentes recorrentes</p>
+            <p class="cs-card__text" style="margin-top:16px;">Escala de humor com estados Ótimo, Bem, Neutro, Mal, Péssimo e Default; Nav Bar com Home, Histórico, Insights e Perfil; Dropdown e Multi-select em Default, Open e Filled; botões Primary, Secondary, Destructive e Tertiary com estados de interação.</p>
+          </div>
+          <img src="../assets/images/sintonize/components-screenshot.png" alt="Documentação visual dos componentes do design system: inputs, botões, dropdowns, chips e escala de humor em seus diferentes estados">
+        </div>
+      </div>
+    </section>
+
+    <!-- Do sistema para a interface -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__head">
+          <h2 class="cs-section__title">Do sistema para a interface</h2>
+          <p class="cs-section__desc">O case conecta componente, estado e aplicação real, em vez de mostrar uma prancha isolada de UI kit.</p>
+        </div>
+        <div class="cs-pair-row">
+          <article class="cs-card">
+            <span class="cs-pill">Componente</span>
+            <h3 class="cs-card__title">Escala de Humor</h3>
+            <p class="cs-card__text">Default + cinco estados documentados.</p>
+          </article>
+          <div class="cs-pair-arrow"><img src="../assets/images/sintonize/arrow-connector.svg" alt=""></div>
+          <article class="cs-card">
+            <span class="cs-pill">Aplicação</span>
+            <h3 class="cs-card__title">Registro na Home</h3>
+            <p class="cs-card__text">O mesmo componente sustenta o core flow em diferentes estados.</p>
+          </article>
+        </div>
+        <div class="cs-pair-row">
+          <article class="cs-card">
+            <span class="cs-pill">Componente</span>
+            <h3 class="cs-card__title">Input</h3>
+            <p class="cs-card__text">Default → Focus → Filled → Error.</p>
+          </article>
+          <div class="cs-pair-arrow"><img src="../assets/images/sintonize/arrow-connector.svg" alt=""></div>
+          <article class="cs-card">
+            <span class="cs-pill">Aplicação</span>
+            <h3 class="cs-card__title">Login &amp; Criar conta</h3>
+            <p class="cs-card__text">Estados previsíveis facilitam implementação e QA.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- High fidelity -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__head">
+          <h2 class="cs-section__title">High fidelity</h2>
+          <p class="cs-section__desc">Os protótipos finais cobrem navegação territorial, consulta pública, operações administrativas e gestão de dados.</p>
+        </div>
+        <div class="cs-screens-row">
+          <article class="cs-screen-card">
+            <img src="../assets/images/sintonize/screen-home.png" alt="Tela Home do Sintonize">
+            <div class="cs-screen-card__body">
+              <p class="cs-screen-card__title">Home</p>
+              <p class="cs-screen-card__text">Registro protagonista e leitura rápida da semana.</p>
+            </div>
+          </article>
+          <article class="cs-screen-card">
+            <img src="../assets/images/sintonize/screen-registro.png" alt="Tela de Registro do Sintonize">
+            <div class="cs-screen-card__body">
+              <p class="cs-screen-card__title">Registro</p>
+              <p class="cs-screen-card__text">Aprofundamento progressivo por emoções, fatores e nota.</p>
+            </div>
+          </article>
+          <article class="cs-screen-card">
+            <img src="../assets/images/sintonize/screen-historico.png" alt="Tela de Histórico do Sintonize">
+            <div class="cs-screen-card__body">
+              <p class="cs-screen-card__title">Histórico</p>
+              <p class="cs-screen-card__text">Momentos permanecem separados para preservar a variação do dia.</p>
+            </div>
+          </article>
+        </div>
+        <div class="cs-screens-row">
+          <article class="cs-screen-card">
+            <img src="../assets/images/sintonize/screen-insights.png" alt="Tela de Insights do Sintonize">
+            <div class="cs-screen-card__body">
+              <p class="cs-screen-card__title">Insights</p>
+              <p class="cs-screen-card__text">Padrões apresentados de forma descritiva, não clínica.</p>
+            </div>
+          </article>
+          <article class="cs-screen-card">
+            <img src="../assets/images/sintonize/screen-dia.png" alt="Visualização completa de um dia no Sintonize">
+            <div class="cs-screen-card__body">
+              <p class="cs-screen-card__title">Visualização completa do dia</p>
+              <p class="cs-screen-card__text">Aprofundamento dos registros de um dia</p>
+            </div>
+          </article>
+          <article class="cs-screen-card">
+            <img src="../assets/images/sintonize/screen-perfil.png" alt="Tela de Perfil do Sintonize">
+            <div class="cs-screen-card__body">
+              <p class="cs-screen-card__title">Perfil</p>
+              <p class="cs-screen-card__text">Página de configuração de conta, privacidade e segurança</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Documentação como parte do design -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__head">
+          <h2 class="cs-section__title">Documentação como parte do design</h2>
+          <p class="cs-section__desc">O handoff não terminou em mockups. A documentação formalizou comportamento, limites, exceções, acessibilidade e critérios necessários para implementação.</p>
+        </div>
+        <div class="cs-cards-row">
+          <article class="cs-card">
+            <span class="cs-pill">Produto</span>
+            <h3 class="cs-card__title">Especificação do MVP</h3>
+            <p class="cs-card__text">Escopo, regras de negócio, arquitetura e priorização.</p>
+          </article>
+          <article class="cs-card">
+            <span class="cs-pill">Comportamento</span>
+            <h3 class="cs-card__title">RFs + critérios de aceite</h3>
+            <p class="cs-card__text">O que cada fluxo precisa fazer e como validar se está correto.</p>
+          </article>
+          <article class="cs-card">
+            <span class="cs-pill">Técnico</span>
+            <h3 class="cs-card__title">RNFs + edge cases</h3>
+            <p class="cs-card__text">Offline, sincronização, segurança, acessibilidade, crashes, conflitos e migração.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design -> software -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__head">
+          <h2 class="cs-section__title">Design → software</h2>
+          <p class="cs-section__desc">Com produto, estados e requisitos suficientemente maduros, usei IA como camada de execução técnica para acelerar a implementação em React Native, sem transferir à ferramenta as decisões de produto.</p>
+        </div>
+
+        <div class="cs-principle-row">
+          <div class="cs-principle">
+            <p class="cs-principle__label">Princípio de execução do projeto</p>
+            <p class="cs-principle__quote">"A velocidade não veio de pular etapas. Veio de tomar as decisões antes do código."</p>
+          </div>
+          <div class="cs-decomp">
+            <div class="cs-decomp__list">
+              <div class="cs-decomp__row"><p class="cs-decomp__term">Decomposição</p><p class="cs-decomp__def">Quebrei o produto em módulos, estados e regras antes de solicitar implementação.</p></div>
+              <div class="cs-decomp__row"><p class="cs-decomp__term">Direção da IA</p><p class="cs-decomp__def">Prompts técnicos foram guiados por documentação e critérios de aceite.</p></div>
+              <div class="cs-decomp__row"><p class="cs-decomp__term">Debug</p><p class="cs-decomp__def">Diferenciei problemas de UI, navegação, persistência e regra de negócio.</p></div>
+              <div class="cs-decomp__row"><p class="cs-decomp__term">Validação</p><p class="cs-decomp__def">Comparei o comportamento implementado com requisitos e edge cases.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="cs-section__desc">Depois que as decisões mais caras já estavam resolvidas fora do código, o ciclo de implementação pôde acontecer com velocidade.</p>
+
+        <div class="cs-cards-row">
+          <article class="cs-card"><span class="cs-pill">01</span><h3 class="cs-card__title">Setup &amp; arquitetura</h3><p class="cs-card__text">Base React Native, navegação e estrutura inicial.</p></article>
+          <article class="cs-card"><span class="cs-pill">02</span><h3 class="cs-card__title">Fluxos principais</h3><p class="cs-card__text">Registro, histórico, persistência e estados centrais.</p></article>
+          <article class="cs-card"><span class="cs-pill">03</span><h3 class="cs-card__title">Integrações &amp; QA</h3><p class="cs-card__text">Conta, exceções, refinamentos e correções.</p></article>
+          <article class="cs-card"><span class="cs-pill">04</span><h3 class="cs-card__title">Build &amp; Play Store</h3><p class="cs-card__text">Validações finais, build e submissão.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experimente o Sintonize -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__head">
+          <h2 class="cs-section__title">Experimente o Sintonize</h2>
+          <p class="cs-section__desc">Além do aplicativo mobile, desenvolvi uma versão web navegável para tornar a experiência acessível diretamente pelo navegador e permitir que os principais fluxos e interações sejam explorados sem necessidade de instalação.</p>
+        </div>
+        <div class="cs-cta">
+          <div class="cs-cta__content">
+            <span class="cs-cta__pill">Interactive demo</span>
+            <p class="cs-cta__title">O case também pode ser vivido.</p>
+            <p class="cs-cta__desc">A demonstração web funciona como uma forma prática de apresentar o comportamento do produto, conectando as decisões documentadas neste case à experiência real de uso.</p>
+            <a class="cs-cta__button" href="https://sintonize-app-demo-michele-medeiros.netlify.app/" target="_blank" rel="noopener">Abrir versão navegável</a>
+          </div>
+          <div class="cs-cta__art" aria-hidden="true">
+            <img class="cs-cta__art-layer" style="top:2.32%;left:4.48%;width:91.04%;height:89.84%;" src="../assets/images/sintonize/cta-blob-vector.svg" alt="">
+            <img class="cs-cta__art-layer" style="top:27.98%;left:33.65%;width:18.47%;height:18.48%;" src="../assets/images/sintonize/cta-blob-group1.svg" alt="">
+            <img class="cs-cta__art-layer" style="top:27.98%;left:47.88%;width:18.47%;height:18.48%;" src="../assets/images/sintonize/cta-blob-group2.svg" alt="">
+            <img class="cs-cta__art-layer" style="top:50.12%;left:47.86%;width:4.28%;height:11.06%;" src="../assets/images/sintonize/cta-blob-vector2.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contato">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">2026 MICHELE MEDEIROS | Entre em contato: <a href="mailto:michelefmedeiros@gmail.com?subject=Contato%20via%20portf%C3%B3lio">michelefmedeiros@gmail.com</a></p>
+      <a href="https://www.linkedin.com/in/michele-franca-medeiros/" target="_blank" rel="noopener"><img class="site-footer__icon" src="../assets/images/icons/linkedin-box-fill.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
