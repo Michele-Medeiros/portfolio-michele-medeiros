@@ -5,6 +5,12 @@
   padding-top: 65px;
 }
 
+/* The gap from the page title straight into the first category is
+   tighter than the full inter-section gap used elsewhere. */
+.projects-header + .projects-category {
+  margin-top: var(--space-title-content);
+}
+
 /* ========================================================================
    Category sections
    ======================================================================== */
