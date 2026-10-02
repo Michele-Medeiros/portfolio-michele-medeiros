@@ -171,7 +171,7 @@ main {
   width: 100%;
   background: var(--color-blue-dark);
   border-top: 1px solid var(--color-netros-800);
-  padding: 32px 24px;
+  padding: 16px 24px;
 }
 
 .site-footer__inner {
@@ -185,7 +185,7 @@ main {
 
 .site-footer__text {
   color: var(--color-netros-0);
-  font-size: 24px;
+  font-size: 13px;
 }
 
 .site-footer__text a {
@@ -193,8 +193,8 @@ main {
 }
 
 .site-footer__icon {
-  width: 56px;
-  height: 56px;
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
 }
 
@@ -273,7 +273,16 @@ main {
     padding-inline: 16px;
   }
 
+  .site-footer {
+    padding: 14px 16px;
+  }
+
   .site-footer__text {
-    font-size: 16px;
+    font-size: 11px;
+  }
+
+  .site-footer__icon {
+    width: 18px;
+    height: 18px;
   }
 }
