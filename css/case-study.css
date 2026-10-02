@@ -42,14 +42,14 @@
 
 .cs-section__title {
   font-weight: 600;
-  font-size: clamp(26px, 3.4vw, 40px);
+  font-size: clamp(20px, 3vw, 28px);
   color: var(--cs-text);
 }
 
 .cs-section__desc {
-  font-size: clamp(16px, 1.8vw, 24px);
+  font-size: clamp(14px, 1.6vw, 16px);
   line-height: 1.6;
-  text-align: justify;
+  text-align: left;
   color: var(--cs-text);
 }
 
@@ -74,7 +74,7 @@
 
 .cs-hero__kicker {
   font-weight: 600;
-  font-size: clamp(14px, 1.6vw, 20px);
+  font-size: clamp(12px, 1.4vw, 14px);
   color: var(--cs-navy);
 }
 
@@ -86,33 +86,33 @@
 
 .cs-hero__title {
   font-weight: 900;
-  font-size: clamp(36px, 6vw, 65px);
+  font-size: clamp(28px, 4.5vw, 44px);
   line-height: 1.2;
   color: var(--cs-text);
 }
 
 .cs-hero__subtitle {
   font-weight: 700;
-  font-size: clamp(26px, 4.2vw, 50px);
-  line-height: 1.2;
+  font-size: clamp(18px, 2.6vw, 28px);
+  line-height: 1.3;
   color: var(--cs-text-body);
 }
 
 .cs-hero__desc {
-  font-size: clamp(16px, 1.8vw, 24px);
-  line-height: 1.7;
-  text-align: justify;
+  font-size: clamp(14px, 1.6vw, 16px);
+  line-height: 1.6;
+  text-align: left;
   color: var(--cs-text-body);
 }
 
 .cs-hero__quote {
   border-left: 4px solid var(--cs-orange);
   padding-left: 12px;
-  font-size: clamp(15px, 1.6vw, 24px);
+  font-size: clamp(13px, 1.4vw, 16px);
   font-style: italic;
   font-weight: 500;
   line-height: 1.55;
-  text-align: justify;
+  text-align: left;
   color: var(--cs-text-body);
 }
 
@@ -138,13 +138,13 @@
 
 .cs-stat__value {
   font-weight: 600;
-  font-size: clamp(15px, 1.6vw, 20px);
+  font-size: clamp(13px, 1.4vw, 16px);
   text-transform: uppercase;
   color: var(--cs-text);
 }
 
 .cs-stat__label {
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.32px;
   color: var(--cs-text-secondary);
 }
@@ -164,7 +164,7 @@
 
 .cs-hero__cta {
   font-weight: 600;
-  font-size: clamp(18px, 2.4vw, 28px);
+  font-size: clamp(14px, 1.6vw, 16px);
   color: var(--cs-orange-cta);
   text-decoration: underline;
 }
@@ -207,22 +207,22 @@
   border-radius: 900px;
   background: var(--cs-pill-bg);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 13px;
   text-transform: uppercase;
   color: var(--cs-text);
 }
 
 .cs-card__title {
   font-weight: 600;
-  font-size: clamp(16px, 1.7vw, 20px);
+  font-size: clamp(14px, 1.5vw, 16px);
   text-transform: uppercase;
   color: var(--cs-text);
 }
 
 .cs-card__text {
-  font-size: clamp(14px, 1.6vw, 20px);
+  font-size: clamp(13px, 1.4vw, 15px);
   line-height: 1.6;
-  text-align: justify;
+  text-align: left;
   color: var(--cs-text-secondary);
 }
 
@@ -234,7 +234,7 @@
 .cs-card__list {
   list-style: disc;
   padding-left: 22px;
-  font-size: clamp(14px, 1.6vw, 20px);
+  font-size: clamp(13px, 1.4vw, 15px);
   line-height: 1.6;
   color: var(--cs-text-secondary);
   display: flex;
@@ -246,7 +246,7 @@
    Numbered step cards
    ======================================================================== */
 .cs-step .cs-pill {
-  font-size: 16px;
+  font-size: 13px;
   padding: 6px 16px;
 }
 
@@ -275,14 +275,14 @@
 
 .cs-table__cell {
   padding: 16px;
-  font-size: clamp(13px, 1.4vw, 16px);
+  font-size: clamp(12px, 1.3vw, 14px);
   color: var(--cs-text);
 }
 
 .cs-table__row--head .cs-table__cell {
   font-weight: 600;
   text-transform: uppercase;
-  font-size: clamp(14px, 1.6vw, 20px);
+  font-size: clamp(13px, 1.4vw, 15px);
 }
 
 .cs-table__cell--area {
@@ -302,7 +302,7 @@
    Design system — palette & typography
    ======================================================================== */
 .cs-ds-meta {
-  font-size: clamp(14px, 1.5vw, 16px);
+  font-size: clamp(13px, 1.4vw, 14px);
   color: var(--cs-text-secondary);
   border-bottom: 1px solid #d7d7d7;
   padding-bottom: 32px;
@@ -311,7 +311,7 @@
 .cs-ds-meta strong {
   display: block;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 15px;
   color: var(--cs-text);
   margin-bottom: 8px;
 }
@@ -340,7 +340,7 @@
 
 .cs-ds-card__title {
   font-weight: 700;
-  font-size: clamp(20px, 2vw, 26px);
+  font-size: clamp(16px, 1.8vw, 20px);
   color: var(--cs-navy);
   text-transform: uppercase;
   margin-bottom: 24px;
@@ -374,7 +374,7 @@
 
 .cs-typo-box__title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 15px;
   color: var(--cs-text);
   margin-bottom: 16px;
 }
@@ -395,7 +395,7 @@
 
 .cs-swatch-group__title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 15px;
   color: var(--cs-text);
   margin-bottom: 16px;
 }
@@ -422,12 +422,12 @@
 
 .cs-swatch__name {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 13px;
   color: var(--cs-text);
 }
 
 .cs-swatch__hex {
-  font-size: 13px;
+  font-size: 11px;
   color: var(--cs-text-secondary);
 }
 
@@ -492,7 +492,7 @@
 }
 
 .cs-type-spec__label {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--cs-text-secondary);
@@ -517,7 +517,7 @@
 
 .cs-ds-components__title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 15px;
   text-transform: uppercase;
   color: var(--cs-text);
 }
@@ -576,14 +576,14 @@
 
 .cs-principle__label {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
 .cs-principle__quote {
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(20px, 2.6vw, 32px);
+  font-size: clamp(16px, 2vw, 22px);
   line-height: 1.5;
 }
 
@@ -617,14 +617,14 @@
 .cs-decomp__term {
   flex: 0 0 160px;
   font-weight: 600;
-  font-size: clamp(14px, 1.6vw, 20px);
+  font-size: clamp(13px, 1.4vw, 15px);
   text-transform: uppercase;
   color: var(--cs-text);
 }
 
 .cs-decomp__def {
   flex: 1 1 300px;
-  font-size: clamp(14px, 1.6vw, 20px);
+  font-size: clamp(13px, 1.4vw, 15px);
   color: var(--cs-text-body);
 }
 
@@ -663,13 +663,13 @@
 
 .cs-screen-card__title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 15px;
   text-transform: uppercase;
   color: var(--cs-text);
 }
 
 .cs-screen-card__text {
-  font-size: clamp(14px, 1.6vw, 18px);
+  font-size: clamp(13px, 1.4vw, 15px);
   color: var(--cs-text-secondary);
 }
 
@@ -701,22 +701,22 @@
   padding: 4px 16px;
   border-radius: 99px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 13px;
   text-transform: uppercase;
 }
 
 .cs-cta__title {
   font-weight: 700;
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(22px, 3vw, 32px);
   color: #fff;
   line-height: 1.3;
 }
 
 .cs-cta__desc {
-  font-size: clamp(16px, 1.8vw, 24px);
+  font-size: clamp(14px, 1.6vw, 16px);
   color: #efefef;
   line-height: 1.5;
-  text-align: justify;
+  text-align: left;
   max-width: 760px;
 }
 
@@ -725,7 +725,7 @@
   background: var(--cs-orange-btn);
   color: var(--cs-text);
   font-weight: 600;
-  font-size: clamp(18px, 2vw, 28px);
+  font-size: clamp(14px, 1.6vw, 16px);
   padding: 20px 36px;
   border-radius: 24px;
   text-decoration: underline;
