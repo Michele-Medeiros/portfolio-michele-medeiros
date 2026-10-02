@@ -309,6 +309,17 @@ main {
   }
 }
 
+@media (max-width: 452px) {
+  .badge {
+    padding: 3px 8px;
+    font-size: 8px;
+  }
+
+  .project-card__tags {
+    gap: 4px;
+  }
+}
+
 @media (max-width: 460px) {
   .project-card__title {
     font-size: 20px;
