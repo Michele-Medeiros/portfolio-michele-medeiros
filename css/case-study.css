@@ -388,12 +388,12 @@
   gap: 16px;
 }
 
-.cs-type-spec--boxed {
+.cs-type-spec.cs-type-spec--boxed {
   flex: 1 1 auto;
   min-width: 160px;
   background: #fff;
   border-radius: 10px;
-  padding: 16px 20px;
+  padding: 12px;
   border-top: none;
   white-space: nowrap;
 }
