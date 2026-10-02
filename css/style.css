@@ -295,6 +295,32 @@ main {
   }
 }
 
+/* Below 460px the clamp() floors above are as small as they get, but
+   the card itself is narrower than the content wants, so shrink
+   everything further here, including the tag pills. */
+@media (max-width: 460px) {
+  .badge {
+    padding: 6px 14px;
+    font-size: 11px;
+  }
+
+  .project-card__tags {
+    gap: 8px;
+  }
+
+  .project-card__title {
+    font-size: 20px;
+  }
+
+  .project-card__desc {
+    font-size: 14px;
+  }
+
+  .link-arrow {
+    font-size: 15px;
+  }
+}
+
 /* ========================================================================
    Responsive helpers
    ======================================================================== */
