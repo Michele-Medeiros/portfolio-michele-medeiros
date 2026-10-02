@@ -319,7 +319,7 @@
 .cs-ds-row {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 32px;
 }
 
@@ -330,13 +330,16 @@
 }
 
 .cs-ds-card--typography {
-  flex: 1.7 1 600px;
+  flex: 3 1 600px;
 }
 
 .cs-ds-card--palette {
-  flex: 1 1 390px;
-  max-width: 454px;
+  flex: 1 1 320px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .cs-ds-card__title {
   font-weight: 700;
@@ -386,11 +389,17 @@
 }
 
 .cs-type-spec--boxed {
-  flex: 1 1 200px;
+  flex: 1 1 auto;
+  min-width: 160px;
   background: #fff;
   border-radius: 10px;
-  padding: 12px 16px;
+  padding: 16px 20px;
   border-top: none;
+  white-space: nowrap;
+}
+
+.cs-type-spec--boxed .cs-type-spec__meta {
+  white-space: normal;
 }
 
 .cs-swatch-group__title {
@@ -432,9 +441,12 @@
 }
 
 .cs-palette-slider {
+  flex: 1 1 auto;
   border: 1px solid var(--cs-card-border);
   border-radius: 12px;
   padding: 8px 24px 32px;
+  display: flex;
+  flex-direction: column;
 }
 
 .cs-palette-slider__panel {
@@ -442,7 +454,9 @@
 }
 
 .cs-palette-slider__panel.is-active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
   animation: cs-palette-fade 0.35s ease;
 }
 
@@ -452,11 +466,20 @@
 }
 
 .cs-palette-slider__panel > .cs-swatch-group__title {
+  flex: 0 0 auto;
   text-align: center;
   padding: 10px 0;
 }
 
+.cs-swatch-list {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .cs-palette-dots {
+  flex: 0 0 auto;
   display: flex;
   justify-content: center;
   gap: 17px;
