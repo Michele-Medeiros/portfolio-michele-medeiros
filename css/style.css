@@ -271,7 +271,7 @@ main {
 .project-card__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: clamp(4px, 0.7cqi, 10px);
+  gap: clamp(4px, 2cqi, 16px);
   padding-block: 12px;
 }
 
