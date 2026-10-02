@@ -24,7 +24,7 @@
 }
 
 .about-intro__body p {
-  font-size: 18px;
+  font-size: clamp(15px, 1.6vw, 18px);
   line-height: 1.9;
 }
 
@@ -159,14 +159,14 @@
 
 .info-card__title {
   font-weight: 600;
-  font-size: 24px;
+  font-size: clamp(18px, 2vw, 24px);
 }
 
 .info-entry {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  font-size: 18px;
+  font-size: clamp(14px, 1.6vw, 18px);
 }
 
 .info-entry__role {
