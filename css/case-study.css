@@ -366,6 +366,59 @@
   color: var(--cs-text-secondary);
 }
 
+.cs-palette-slider {
+  max-width: 390px;
+  background: #fefefe;
+  border: 1px solid var(--cs-card-border);
+  border-radius: 12px;
+  padding: 8px 24px 32px;
+}
+
+.cs-palette-slider__panel {
+  display: none;
+}
+
+.cs-palette-slider__panel.is-active {
+  display: block;
+  animation: cs-palette-fade 0.35s ease;
+}
+
+@keyframes cs-palette-fade {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cs-palette-slider__panel > .cs-swatch-group__title {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.cs-palette-dots {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  padding-top: 16px;
+}
+
+.cs-palette-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: #a0a4ab;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.cs-palette-dot:hover {
+  background: #8d92a0;
+}
+
+.cs-palette-dot.is-active {
+  background: #5b4fe0;
+}
+
 .cs-type-groups {
   display: flex;
   flex-wrap: wrap;
