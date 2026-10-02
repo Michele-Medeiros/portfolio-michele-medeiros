@@ -3,7 +3,6 @@
    ======================================================================== */
 .hero {
   padding-top: 65px;
-  padding-bottom: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,11 +76,10 @@
    How I work
    ======================================================================== */
 .how-i-work {
-  padding-block: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: var(--space-title-content);
 }
 
 .section-title {
@@ -126,10 +124,9 @@
 .recent-work {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: var(--space-title-content);
   align-items: flex-start;
   width: 100%;
-  padding-bottom: 100px;
 }
 
 .recent-work__grid {

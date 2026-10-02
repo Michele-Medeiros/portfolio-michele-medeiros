@@ -3,7 +3,6 @@
    ======================================================================== */
 .about-intro {
   padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,7 +14,7 @@
   flex: 1 1 420px;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: var(--space-title-content);
 }
 
 .about-intro__title {
@@ -59,10 +58,6 @@
 /* ========================================================================
    Tools strip
    ======================================================================== */
-.tools {
-  padding-block: 24px;
-}
-
 .tools__row {
   display: flex;
   align-items: center;
@@ -112,7 +107,6 @@
   display: flex;
   gap: 80px;
   flex-wrap: wrap;
-  padding-block: 32px 65px;
   align-items: flex-start;
 }
 

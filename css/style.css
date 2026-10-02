@@ -33,6 +33,11 @@
   --radius-lg: 24px;
   --radius-md: 18px;
   --radius-sm: 16px;
+
+  /* spacing rhythm: gap from a section's title to its content, vs. the
+     larger gap that separates one whole section from the next */
+  --space-title-content: 50px;
+  --space-section: 130px;
 }
 
 html {
@@ -71,6 +76,18 @@ ul {
 .page-section {
   width: 100%;
   padding-inline: var(--container-padding);
+}
+
+/* Consistent, larger gap between whole sections (title-to-content gap
+   within a section is set locally by each section via gap/margin using
+   --space-title-content). The first section keeps its own top padding
+   for the navbar-to-content distance. */
+.page-section + .page-section {
+  margin-top: var(--space-section);
+}
+
+main {
+  padding-bottom: var(--space-section);
 }
 
 /* ========================================================================
