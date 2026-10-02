@@ -205,11 +205,11 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(2px, 0.9cqi, 8px) clamp(6px, 2.6cqi, 24px);
+  padding: clamp(3px, 1cqi, 8px) clamp(8px, 2.9cqi, 24px);
   background: var(--color-badge-bg);
   border: 2px solid var(--color-badge-border);
   border-radius: 200px;
-  font-size: clamp(7px, 2.1cqi, 14px);
+  font-size: clamp(8px, 2.4cqi, 14px);
   color: var(--color-netros-900);
   white-space: nowrap;
 }
@@ -271,7 +271,8 @@ main {
 .project-card__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: clamp(3px, 1.3cqi, 16px);
+  justify-content: space-between;
+  gap: clamp(4px, 1.3cqi, 16px);
   padding-block: 12px;
 }
 
