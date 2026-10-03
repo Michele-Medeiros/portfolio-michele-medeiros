@@ -354,6 +354,7 @@ main {
 
   .navbar {
     position: relative;
+    z-index: 50;
   }
 
   .page-section {
