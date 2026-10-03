@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css?v=24">
-  <link rel="stylesheet" href="../css/case-study.css?v=17">
+  <link rel="stylesheet" href="../css/case-study.css?v=18">
 </head>
 <body>
 
@@ -33,7 +33,7 @@
     <!-- Hero -->
     <section class="cs-section" style="border-top:none;">
       <div class="cs-hero" style="max-width:1598px;width:100%;">
-        <div class="cs-hero__main">
+        <div class="cs-hero__main" style="max-width:780px;">
           <p class="cs-hero__kicker" style="color:#991f65;">Aprova Quest</p>
           <div class="cs-hero__titles">
             <p class="cs-hero__title">Domine conteúdos com estratégia e diversão</p>
@@ -41,7 +41,7 @@
           <p class="cs-hero__desc">Revise conteúdos com desafios, duelos e trilhas personalizadas. O Aprova Quest foi feito para quem quer transformar estudo em conquista.</p>
         </div>
         <div class="cs-hero__aside">
-          <img class="cs-hero__phone" src="../assets/images/aprova-quest/hero-logo.png" alt="Composição da marca Aprova Quest em moldura de polaroid">
+          <img class="cs-hero__phone" style="max-width:608px;" src="../assets/images/aprova-quest/hero-logo.png" alt="Composição da marca Aprova Quest em moldura de polaroid">
         </div>
       </div>
     </section>
@@ -55,7 +55,7 @@
             <p class="cs-section__desc">Aplicativo gamificado de revisão de conteúdos criado para concurseiros que desejam estudar com mais leveza, constância e motivação. Com ele, o usuário transforma o estudo em uma jornada interativa, com desafios diários, trilhas por disciplinas, duelos com amigos e acompanhamento de desempenho em tempo real.</p>
             <p class="cs-section__desc" style="margin-top:16px;">A proposta é unir diversão, estratégia e conteúdo para tornar o aprendizado mais eficiente, sem perder o ritmo.</p>
           </div>
-          <div class="cs-meta-panel">
+          <div class="cs-meta-panel cs-meta-panel--plain">
             <div class="cs-meta-panel__item">
               <p class="cs-meta-panel__label">Ano</p>
               <p class="cs-meta-panel__value">2024</p>
@@ -82,12 +82,12 @@
       <div class="cs-section__inner">
         <h2 class="cs-section__title">O projeto em 30 segundos</h2>
         <div class="cs-cards-row" style="align-items:stretch;">
-          <article class="cs-card" style="background:#dfdfdf;flex:1.2 1 400px;">
+          <article class="cs-card" style="background:#dfdfdf;flex:0 1 35%;min-width:320px;">
             <h3 class="cs-card__title" style="font-size:clamp(16px,1.8vw,20px);">O problema</h3>
             <p class="cs-card__text">Preparar-se para um concurso exige constância durante longos períodos. Além de estudar o conteúdo, o próprio candidato precisa decidir o que estudar, organizar sua rotina, identificar pontos de dificuldade e encontrar motivação para continuar.</p>
             <p class="cs-card__text">A pesquisa mostrou que o desafio não estava apenas no acesso ao conteúdo, mas principalmente em manter uma rotina consistente e perceber evolução ao longo da preparação.</p>
           </article>
-          <article class="cs-card" style="background:#dfdfdf;flex:1 1 320px;">
+          <article class="cs-card" style="background:#dfdfdf;flex:1 1 0;min-width:320px;">
             <h3 class="cs-card__title" style="font-size:clamp(16px,1.8vw,20px);">Solução</h3>
             <div class="cs-feature-list">
               <div class="cs-feature-list__item">
@@ -127,7 +127,8 @@
           <h2 class="cs-section__title">Entendendo os usuários</h2>
           <p class="cs-section__desc">Para investigar esses comportamentos, combinei métodos quantitativos e qualitativos.</p>
         </div>
-        <div class="cs-fact-row">
+        <div class="cs-divider-line"></div>
+        <div class="cs-fact-row cs-fact-row--stack">
           <div class="cs-fact">
             <p class="cs-fact__value">50 participantes</p>
             <p class="cs-fact__label">Responderam a um questionário sobre hábitos, dificuldades e comportamentos relacionados à preparação para concursos.</p>
@@ -151,26 +152,26 @@
           <h2 class="cs-section__title">O que descobri</h2>
           <p class="cs-section__desc">A pesquisa começou a revelar que o problema ia além da quantidade ou qualidade do conteúdo disponível.</p>
         </div>
-        <div class="cs-cards-row" style="flex-wrap:wrap;">
-          <article class="cs-card" style="flex:1 1 45%;background:rgba(255,255,255,0.5);">
+        <div class="cs-grid-2">
+          <article class="cs-card" style="background:rgba(255,255,255,0.5);">
             <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">01. Manter constância é um dos maiores desafios</p>
             <p class="cs-card__text">Uma preparação longa exige disciplina durante meses ou anos. Quando o objetivo parece distante, manter uma rotina consistente torna-se mais difícil.</p>
             <p class="cs-card__text" style="color:#5029de;font-weight:500;">Oportunidade</p>
             <p class="cs-card__text">Transformar grandes metas em objetivos menores e recorrentes.</p>
           </article>
-          <article class="cs-card" style="flex:1 1 45%;background:rgba(255,255,255,0.5);">
+          <article class="cs-card" style="background:rgba(255,255,255,0.5);">
             <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">02. O usuário precisa saber onde concentrar seus esforços</p>
             <p class="cs-card__text">Estudar muitas disciplinas simultaneamente aumenta a dificuldade de identificar prioridades e entender onde existem maiores lacunas de conhecimento.</p>
             <p class="cs-card__text" style="color:#5029de;font-weight:500;">Oportunidade</p>
             <p class="cs-card__text">Tornar desempenho, erros e evolução mais visíveis para orientar os próximos passos.</p>
           </article>
-          <article class="cs-card" style="flex:1 1 45%;background:rgba(255,255,255,0.5);">
+          <article class="cs-card" style="background:rgba(255,255,255,0.5);">
             <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">03. Progresso pouco perceptível reduz a motivação</p>
             <p class="cs-card__text">Quando a evolução não é facilmente percebida, existe uma sensação de esforço sem recompensa imediata.</p>
             <p class="cs-card__text" style="color:#5029de;font-weight:500;">Oportunidade</p>
             <p class="cs-card__text">Criar feedbacks constantes capazes de tornar pequenas conquistas visíveis durante a jornada.</p>
           </article>
-          <article class="cs-card" style="flex:1 1 45%;background:rgba(255,255,255,0.5);">
+          <article class="cs-card" style="background:rgba(255,255,255,0.5);">
             <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">04. A experiência precisa reduzir decisões, não criar novas tarefas</p>
             <p class="cs-card__text">Organizar cronogramas, revisar resultados e escolher conteúdos também exige esforço cognitivo.</p>
             <p class="cs-card__text" style="color:#5029de;font-weight:500;">Oportunidade</p>
@@ -188,7 +189,8 @@
           <p class="cs-section__desc">As descobertas também ajudaram a aproximar as necessidades do usuário dos objetivos do produto. Afinal a solução precisava funcionar justamente na interseção entre esses dois lados.</p>
         </div>
 
-        <div class="cs-cards-row">
+        <div class="cs-personas-panel">
+          <div class="cs-personas-top">
           <article class="cs-card" style="flex-direction:row;align-items:center;gap:24px;">
             <img src="../assets/images/aprova-quest/persona-lucas.png" alt="Foto ilustrativa da persona Lucas Ribeiro" style="width:96px;height:96px;border-radius:50%;object-fit:cover;flex-shrink:0;">
             <div>
@@ -203,36 +205,33 @@
             <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">Cenário</p>
             <p class="cs-card__text">Lucas pega metrô todos os dias. Ele abre o app Aprova Quest durante o trajeto, faz uma missão de 5 a 10 minutos, revisa rapidamente o que errou, ganha recompensa e volta motivado para estudar mais no dia seguinte.</p>
           </article>
-        </div>
+          </div>
 
-        <div class="cs-table">
-          <div class="cs-table__row cs-table__row--head">
-            <div class="cs-table__cell" style="flex:0 0 160px;">Estágio</div>
-            <div class="cs-table__cell">Instalação &amp; Primeiro Contato</div>
-            <div class="cs-table__cell">Uso Recorrente (Missão Diária)</div>
-            <div class="cs-table__cell">Revisão &amp; Profundidade</div>
-            <div class="cs-table__cell">Fidelização &amp; Compartilhamento</div>
-          </div>
-          <div class="cs-table__row" style="background:#fff6d6;">
-            <div class="cs-table__cell" style="flex:0 0 160px;font-weight:600;">Ação do usuário</div>
-            <div class="cs-table__cell">Usuário baixa o app e faz o primeiro login</div>
-            <div class="cs-table__cell">Usuário abre app no dia seguinte para cumprir missão</div>
-            <div class="cs-table__cell">Usuário revisita a área de erros ou trilha de estudo</div>
-            <div class="cs-table__cell">Usuário completou 7 dias, vê conquistas, compartilha ou recomenda</div>
-          </div>
-          <div class="cs-table__row" style="background:#f7e6fb;">
-            <div class="cs-table__cell" style="flex:0 0 160px;font-weight:600;">Dor/chave</div>
-            <div class="cs-table__cell">“Será que vale meu tempo?”</div>
-            <div class="cs-table__cell">Falta de continuidade / motivação</div>
-            <div class="cs-table__cell">Sensação de estudar sem progresso</div>
-            <div class="cs-table__cell">Perda de engajamento ou isolamento</div>
-          </div>
-          <div class="cs-table__row" style="background:#e9f7d6;">
-            <div class="cs-table__cell" style="flex:0 0 160px;font-weight:600;">Solução proposta</div>
-            <div class="cs-table__cell">Onboarding em 1 passo, missão inicial de 5 minutos para engajar imediatamente</div>
-            <div class="cs-table__cell">Sistema de micro-metas, streak visual, feedback imediato</div>
-            <div class="cs-table__cell">Tela de "revisão de erros" destacada, relatório rápido de evolução</div>
-            <div class="cs-table__cell">Badges visíveis, ranking entre amigos, convite integrado</div>
+          <div class="cs-journey">
+            <div class="cs-journey__cell cs-journey__cell--head">Estágio</div>
+            <div class="cs-journey__cell cs-journey__cell--head cs-journey__cell--acao">Ação principal do usuário</div>
+            <div class="cs-journey__cell cs-journey__cell--head cs-journey__cell--dor">Dor/chave</div>
+            <div class="cs-journey__cell cs-journey__cell--head cs-journey__cell--solucao">Solução proposta</div>
+
+            <div class="cs-journey__cell cs-journey__cell--stage">Instalação &amp; Primeiro Contato</div>
+            <div class="cs-journey__cell cs-journey__cell--acao">Usuário baixa o app e faz o primeiro login</div>
+            <div class="cs-journey__cell cs-journey__cell--dor">“Será que vale meu tempo?”</div>
+            <div class="cs-journey__cell cs-journey__cell--solucao">Onboarding em 1 passo, missão inicial de 5 minutos para engajar imediatamente</div>
+
+            <div class="cs-journey__cell cs-journey__cell--stage">Uso Recorrente (Missão Diária)</div>
+            <div class="cs-journey__cell cs-journey__cell--acao">Usuário abre app no dia seguinte para cumprir missão</div>
+            <div class="cs-journey__cell cs-journey__cell--dor">Falta de continuidade / motivação</div>
+            <div class="cs-journey__cell cs-journey__cell--solucao">Sistema de micro-metas, streak visual, feedback imediato</div>
+
+            <div class="cs-journey__cell cs-journey__cell--stage">Revisão &amp; Profundidade</div>
+            <div class="cs-journey__cell cs-journey__cell--acao">Usuário revisita a área de erros ou trilha de estudo</div>
+            <div class="cs-journey__cell cs-journey__cell--dor">Sensação de estudar sem progresso</div>
+            <div class="cs-journey__cell cs-journey__cell--solucao">Tela de "revisão de erros" destacada, relatório rápido de evolução</div>
+
+            <div class="cs-journey__cell cs-journey__cell--stage">Fidelização &amp; Compartilhamento</div>
+            <div class="cs-journey__cell cs-journey__cell--acao">Usuário completou 7 dias, vê conquistas, compartilha ou recomenda</div>
+            <div class="cs-journey__cell cs-journey__cell--dor">Perda de engajamento ou isolamento</div>
+            <div class="cs-journey__cell cs-journey__cell--solucao">Badges visíveis, ranking entre amigos, convite integrado</div>
           </div>
         </div>
       </div>
@@ -273,7 +272,7 @@
           <h2 class="cs-section__title">Dos insights às decisões de produto</h2>
           <p class="cs-section__desc">Em vez de transformar cada descoberta em uma funcionalidade isolada, agrupei as oportunidades em alguns princípios para orientar o produto.</p>
         </div>
-        <div class="cs-cards-row">
+        <div class="cs-grid-4">
           <article class="cs-card" style="align-items:center;text-align:center;background:rgba(255,255,255,0.5);">
             <p class="cs-card__text" style="color:#5029de;font-weight:600;">Se o problema é manter a constância</p>
             <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">Missões diárias</p>
@@ -341,15 +340,17 @@
           </ul>
         </div>
         <p class="cs-section__desc">Uma das decisões foi utilizar uma navegação inferior para as áreas mais recorrentes, mantendo as principais ações próximas à área natural de interação em dispositivos móveis e facilitando o acesso durante o uso com uma mão.</p>
-        <div class="cs-screens-row">
-          <img src="../assets/images/aprova-quest/wireframe-1.png" alt="Wireframe de tela do Aprova Quest" style="flex:0 0 calc(25% - 24px);min-width:0;width:calc(25% - 24px);border-radius:12px;border:1px solid var(--cs-card-border);">
-          <img src="../assets/images/aprova-quest/wireframe-2.png" alt="Wireframe de tela do Aprova Quest" style="flex:0 0 calc(25% - 24px);min-width:0;width:calc(25% - 24px);border-radius:12px;border:1px solid var(--cs-card-border);">
-          <img src="../assets/images/aprova-quest/wireframe-3.png" alt="Wireframe de tela do Aprova Quest" style="flex:0 0 calc(25% - 24px);min-width:0;width:calc(25% - 24px);border-radius:12px;border:1px solid var(--cs-card-border);">
-          <img src="../assets/images/aprova-quest/wireframe-4.png" alt="Wireframe de tela do Aprova Quest" style="flex:0 0 calc(25% - 24px);min-width:0;width:calc(25% - 24px);border-radius:12px;border:1px solid var(--cs-card-border);">
-          <img src="../assets/images/aprova-quest/wireframe-5.png" alt="Wireframe de tela do Aprova Quest" style="flex:0 0 calc(25% - 24px);min-width:0;width:calc(25% - 24px);border-radius:12px;border:1px solid var(--cs-card-border);">
-          <img src="../assets/images/aprova-quest/wireframe-6.png" alt="Wireframe de tela do Aprova Quest" style="flex:0 0 calc(25% - 24px);min-width:0;width:calc(25% - 24px);border-radius:12px;border:1px solid var(--cs-card-border);">
-          <img src="../assets/images/aprova-quest/wireframe-7.png" alt="Wireframe de tela do Aprova Quest" style="flex:0 0 calc(25% - 24px);min-width:0;width:calc(25% - 24px);border-radius:12px;border:1px solid var(--cs-card-border);">
-          <img src="../assets/images/aprova-quest/wireframe-8.png" alt="Wireframe de tela do Aprova Quest" style="flex:0 0 calc(25% - 24px);min-width:0;width:calc(25% - 24px);border-radius:12px;border:1px solid var(--cs-card-border);">
+        <div class="cs-wire-panel">
+        <div class="cs-wire-track">
+          <img src="../assets/images/aprova-quest/wireframe-1.png" alt="Wireframe de tela do Aprova Quest" class="cs-wire">
+          <img src="../assets/images/aprova-quest/wireframe-2.png" alt="Wireframe de tela do Aprova Quest" class="cs-wire">
+          <img src="../assets/images/aprova-quest/wireframe-3.png" alt="Wireframe de tela do Aprova Quest" class="cs-wire">
+          <img src="../assets/images/aprova-quest/wireframe-4.png" alt="Wireframe de tela do Aprova Quest" class="cs-wire">
+          <img src="../assets/images/aprova-quest/wireframe-5.png" alt="Wireframe de tela do Aprova Quest" class="cs-wire">
+          <img src="../assets/images/aprova-quest/wireframe-6.png" alt="Wireframe de tela do Aprova Quest" class="cs-wire">
+          <img src="../assets/images/aprova-quest/wireframe-7.png" alt="Wireframe de tela do Aprova Quest" class="cs-wire">
+          <img src="../assets/images/aprova-quest/wireframe-8.png" alt="Wireframe de tela do Aprova Quest" class="cs-wire">
+        </div>
         </div>
       </div>
     </section>
@@ -361,7 +362,15 @@
           <h2 class="cs-section__title">Criando consistência</h2>
           <p class="cs-section__desc">Com a estrutura principal definida, desenvolvi uma linguagem visual capaz de sustentar diferentes estados, funcionalidades e níveis de informação da aplicação.</p>
         </div>
-        <p class="cs-section__desc">O Design System reuniu elementos como: cores; tipografia; espaçamentos; componentes; estados; padrões de interação.</p>
+        <p class="cs-section__desc">O Design System reuniu elementos como:</p>
+        <ul class="cs-card__list">
+          <li>cores;</li>
+          <li>tipografia;</li>
+          <li>espaçamentos;</li>
+          <li>componentes;</li>
+          <li>estados;</li>
+          <li>padrões de interação.</li>
+        </ul>
         <p class="cs-section__desc">Mais do que padronizar a interface, o sistema ajudou a garantir consistência durante a evolução do produto.</p>
         <img src="../assets/images/aprova-quest/design-system-showcase.png" alt="Design system do Aprova Quest: logomarca, paleta de cores, tipografias, mascote e componentes de botões e modais" style="width:100%;border-radius:24px;">
       </div>
@@ -377,9 +386,11 @@
         <p class="cs-card__text" style="font-style:italic;color:#5029de;font-weight:500;font-size:clamp(16px,2vw,22px);">O usuário deve conseguir entender rapidamente onde está, como está evoluindo e qual é o próximo passo.</p>
         <p class="cs-section__desc">Os elementos de progressão foram utilizados como apoio à experiência, e não como um fim em si mesmos. Pontuação, conquistas e recompensas ajudam a tornar avanços menores mais perceptíveis durante uma preparação que naturalmente possui resultados de longo prazo.</p>
         <p class="cs-section__desc">Já os resultados ajudam a transformar dados de uso em uma visão mais clara da evolução e dos pontos que precisam de atenção.</p>
-        <div class="cs-screen-card" style="background:#151414;">
-          <img src="../assets/images/aprova-quest/screen-home.png" alt="Tela Home do Aprova Quest" style="max-width:420px;border-radius:12px;">
-          <p class="cs-screen-card__title" style="color:#fff;">Home</p>
+        <div class="cs-showcase">
+          <div class="cs-showcase__stage">
+            <img src="../assets/images/aprova-quest/screen-home.png" alt="Tela Home do Aprova Quest">
+          </div>
+          <p class="cs-showcase__title">Home</p>
         </div>
       </div>
     </section>

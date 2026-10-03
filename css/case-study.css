@@ -164,6 +164,9 @@
 }
 
 .cs-hero__cta {
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
   font-weight: 600;
   font-size: clamp(14px, 1.6vw, 16px);
   color: var(--cs-orange-cta);
@@ -945,6 +948,201 @@
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/* Aprova Quest — layout alinhado ao Figma */
+.cs-meta-panel--plain {
+  flex: 0 1 692px;
+  max-width: 692px;
+  background: none;
+  padding: 0;
+  gap: 24px;
+}
+
+.cs-meta-panel--plain .cs-meta-panel__value {
+  color: #5029de;
+}
+
+.cs-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 64px;
+}
+
+.cs-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 53px;
+}
+
+.cs-personas-panel {
+  background: #c4bfbe;
+  border-radius: 24px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cs-personas-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.cs-personas-top > :first-child {
+  flex: 1.9 1 480px;
+}
+
+.cs-personas-top > :last-child {
+  flex: 1 1 260px;
+}
+
+.cs-journey {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.cs-journey__cell {
+  border: 1px solid #d7d7d7;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: clamp(12px, 1.3vw, 14px);
+  line-height: 1.5;
+  color: var(--cs-text);
+  background: #fff;
+}
+
+.cs-journey__cell--head {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: clamp(13px, 1.4vw, 15px);
+}
+
+.cs-journey__cell--stage {
+  background: #efefef;
+}
+
+.cs-journey__cell--acao {
+  background: #fff0a8;
+  border-color: #e0b43a;
+}
+
+.cs-journey__cell--dor {
+  background: #f0d2f5;
+  border-color: #c48fd6;
+}
+
+.cs-journey__cell--solucao {
+  background: #d3f3a8;
+  border-color: #8cc35a;
+}
+
+.cs-fact-row--stack {
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cs-fact-row--stack .cs-fact {
+  flex: none;
+}
+
+.cs-divider-line {
+  height: 1px;
+  background: #c3c3c4;
+}
+
+.cs-wire-panel {
+  background: #fff;
+  border-radius: 32px;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.cs-wire-track {
+  display: flex;
+  gap: 64px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.cs-wire-track::-webkit-scrollbar {
+  display: none;
+}
+
+.cs-wire {
+  flex: 0 0 270px;
+  width: 270px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--cs-card-border);
+}
+
+.cs-showcase {
+  background: #fff;
+  border-radius: 32px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.cs-showcase__stage {
+  width: 100%;
+  background: #beb9b8;
+  border-radius: 24px;
+  padding: 56px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.cs-showcase__stage img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cs-showcase__title {
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+@media (max-width: 1200px) {
+  .cs-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1023px) {
+  .cs-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .cs-personas-panel {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 599px) {
+  .cs-grid-4,
+  .cs-journey {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-wire-panel,
+  .cs-showcase {
+    padding: 24px;
+  }
 }
 
 /* ========================================================================
