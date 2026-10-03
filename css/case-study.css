@@ -1387,6 +1387,36 @@
     flex-basis: calc(50% - 8px);
   }
 
+  /* "Antes de desenhar" numbered steps — horizontal badge+label card, matching Figma */
+  .cs-step {
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    height: 85px;
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(59, 59, 62, 0.12);
+    border-radius: 16px;
+  }
+
+  .cs-step .cs-pill {
+    flex: none;
+    align-self: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 16px;
+    background: #122f5d;
+    color: #fff;
+    text-transform: none;
+  }
+
+  .cs-step .cs-card__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cs-text);
+  }
+
   /* Hero — stacked single column, matching Figma tablet frame exactly */
   .cs-hero {
     flex-direction: column;
