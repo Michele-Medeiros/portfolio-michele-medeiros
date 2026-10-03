@@ -1643,6 +1643,44 @@
     color: var(--cs-orange-cta);
     margin-bottom: 10px;
   }
+
+  /* "Decisões de UX" — navy cards, matching Figma */
+  .page-sintonize .cs-cards-row--decisions {
+    gap: 16px;
+  }
+
+  .page-sintonize .cs-cards-row--decisions .cs-card {
+    height: 190px;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--cs-navy);
+  }
+
+  .page-sintonize .cs-cards-row--decisions .cs-pill {
+    align-self: flex-start;
+    padding: 0;
+    background: transparent;
+    color: var(--cs-orange-cta);
+    font-size: 12px;
+  }
+
+  .page-sintonize .cs-cards-row--decisions .cs-card__title {
+    font-size: 18px;
+    text-transform: none;
+    color: #fff;
+  }
+
+  .page-sintonize .cs-cards-row--decisions .cs-card__text {
+    font-size: 15px;
+    color: #dce2f0;
+  }
+
+  .page-sintonize .cs-cards-row--decisions .cs-card__text strong {
+    font-weight: 400;
+    color: #dce2f0;
+  }
 }
 
 @media (max-width: 1200px) {
