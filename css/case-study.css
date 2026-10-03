@@ -151,7 +151,7 @@
 }
 
 .cs-hero__aside {
-  flex: 1 1 300px;
+  flex: 1 1 340px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,7 +160,7 @@
 
 .cs-hero__phone {
   width: 100%;
-  max-width: 300px;
+  max-width: 340px;
 }
 
 .cs-hero__cta {
