@@ -793,6 +793,26 @@
 /* ========================================================================
    Responsive
    ======================================================================== */
+@media (max-width: 750px) {
+  .cs-cta__art {
+    display: none;
+  }
+
+  .cs-cta {
+    justify-content: center;
+  }
+
+  .cs-cta__content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .cs-cta__pill,
+  .cs-cta__button {
+    align-self: center;
+  }
+}
+
 @media (max-width: 1200px) {
   .cs-ds-col-right {
     flex: 1 1 100%;
