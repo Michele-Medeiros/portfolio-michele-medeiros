@@ -333,11 +333,35 @@
   flex: 3 1 600px;
 }
 
-.cs-ds-card--palette {
+.cs-ds-col-right {
   flex: 1 1 320px;
   max-width: 360px;
   display: flex;
   flex-direction: column;
+  gap: 32px;
+}
+
+.cs-ds-card--mascotes {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.cs-mascotes-box {
+  flex: 1 1 auto;
+  background: #fff;
+  border: 1px solid var(--cs-card-border);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs-mascotes-box img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
 }
 
 
