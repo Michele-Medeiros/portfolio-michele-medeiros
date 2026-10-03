@@ -590,6 +590,13 @@
 /* ========================================================================
    Component → application pairs
    ======================================================================== */
+.cs-pair-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+
 .cs-pair-row {
   display: flex;
   align-items: stretch;
@@ -1795,6 +1802,73 @@
     height: 260px;
     object-fit: contain;
   }
+
+  /* "Do sistema para a interface" — merged component→application card, matching Figma */
+  .page-sintonize .cs-pair-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .page-sintonize .cs-pair-row {
+    flex: 1 1 calc(50% - 8px);
+    flex-direction: column;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .page-sintonize .cs-pair-row .cs-card {
+    flex: none;
+    gap: 4px;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+  }
+
+  .page-sintonize .cs-pair-row .cs-pill {
+    align-self: flex-start;
+    padding: 0;
+    background: transparent;
+    font-size: 12px;
+  }
+
+  .page-sintonize .cs-pair-row .cs-card:first-child .cs-pill {
+    color: #5029de;
+  }
+
+  .page-sintonize .cs-pair-row .cs-card:last-child .cs-pill {
+    color: var(--cs-orange-cta);
+  }
+
+  .page-sintonize .cs-pair-row .cs-card__title {
+    font-size: 20px;
+    text-transform: none;
+  }
+
+  .page-sintonize .cs-pair-row .cs-card__text {
+    font-size: 15px;
+  }
+
+  .page-sintonize .cs-pair-arrow {
+    width: auto;
+    justify-content: flex-start;
+    transform: none;
+  }
+
+  .page-sintonize .cs-pair-arrow img {
+    display: none;
+  }
+
+  .page-sintonize .cs-pair-arrow::before {
+    content: '↓';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--cs-orange-cta);
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1992,7 +2066,6 @@
 /* ========================================================================
    Aprova Quest — tablet fiel ao Figma (telas entre 500px e 980px)
    ======================================================================== */
-.cs-hide-tablet,
 .cs-tablet-only,
 .cs-track-dots {
   display: none;
@@ -2061,6 +2134,18 @@
   .page-aprova-quest .cs-hero__aside {
     width: 100%;
     flex: none;
+  }
+
+  .page-aprova-quest .cs-hero__main {
+    flex: none;
+  }
+
+  .page-aprova-quest .cs-page {
+    padding-bottom: 0;
+  }
+
+  .page-aprova-quest .cs-hero__aside .cs-hero__phone {
+    display: none !important;
   }
 
   .page-aprova-quest .cs-page .cs-hero__logo-tablet {
