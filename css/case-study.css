@@ -791,6 +791,48 @@
 }
 
 /* ========================================================================
+   Chapter nav (sticky) — tablet/narrow layout only, see <=1350px query
+   ======================================================================== */
+.cs-chapter-nav {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  gap: 8px;
+  align-items: center;
+  overflow-x: auto;
+  scrollbar-width: none;
+  background: rgba(248, 248, 248, 0.92);
+  backdrop-filter: blur(6px);
+  padding: 8px 24px 12px;
+  border-bottom: 1px solid var(--cs-card-border);
+}
+
+.cs-chapter-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.cs-chapter-nav a {
+  flex: 0 0 auto;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #3b3b3e;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(59, 59, 62, 0.18);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cs-chapter-nav a.is-active {
+  font-weight: 600;
+  color: #fff;
+  background: #5029de;
+  border-color: #5029de;
+}
+
+/* ========================================================================
    Aprova Quest — page-specific components
    ======================================================================== */
 .cs-meta-panel {
@@ -924,6 +966,87 @@
   .cs-cta__pill,
   .cs-cta__button {
     align-self: center;
+  }
+}
+
+@media (max-width: 1350px) {
+  .cs-chapter-nav {
+    display: flex;
+  }
+
+  #contexto,
+  #produto,
+  #design,
+  #sistema,
+  #entrega {
+    scroll-margin-top: 70px;
+  }
+
+  .cs-section__head::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--cs-orange-cta);
+  }
+
+  .cs-section__title {
+    font-size: 28px;
+  }
+
+  .cs-section__desc {
+    font-size: 16px;
+  }
+
+  .cs-cards-row > * {
+    flex-basis: calc(50% - 16px);
+  }
+
+  .cs-screens-row--carousel {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+  }
+
+  .cs-screens-row--carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cs-screens-row--carousel .cs-screen-card {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+  }
+
+  .cs-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 24px;
+  }
+
+  .cs-carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+    border: none;
+    padding: 0;
+    background: var(--cs-card-border);
+    cursor: pointer;
+    transition: width 0.2s ease, background 0.2s ease;
+  }
+
+  .cs-carousel-dot.is-active {
+    width: 20px;
+    background: var(--cs-orange-cta);
+  }
+}
+
+@media (min-width: 1351px) {
+  .cs-carousel-dots {
+    display: none;
   }
 }
 

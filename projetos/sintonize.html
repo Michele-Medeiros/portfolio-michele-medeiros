@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css?v=24">
-  <link rel="stylesheet" href="../css/case-study.css?v=7">
+  <link rel="stylesheet" href="../css/case-study.css?v=9">
 </head>
 <body>
 
@@ -28,10 +28,18 @@
     </nav>
   </header>
 
+  <nav class="cs-chapter-nav" aria-label="Capítulos do case" id="chapterNav">
+    <a href="#contexto" class="is-active">Contexto</a>
+    <a href="#produto">Produto</a>
+    <a href="#design">Design</a>
+    <a href="#sistema">Sistema</a>
+    <a href="#entrega">Entrega</a>
+  </nav>
+
   <main class="cs-page">
 
     <!-- Hero -->
-    <section class="cs-section" style="border-top:none;">
+    <section class="cs-section" id="contexto" style="border-top:none;">
       <div class="cs-hero" style="max-width:1598px;width:100%;">
         <div class="cs-hero__main">
           <p class="cs-hero__kicker">Product Strategy · UX/UI · Design System · AI-assisted Development</p>
@@ -128,7 +136,7 @@
     </section>
 
     <!-- Antes de desenhar, estruturei o produto (01-08) -->
-    <section class="cs-section">
+    <section class="cs-section" id="produto">
       <div class="cs-section__inner">
         <div class="cs-section__head">
           <h2 class="cs-section__title">Antes de desenhar, estruturei o produto</h2>
@@ -264,7 +272,7 @@
     </section>
 
     <!-- Design System -->
-    <section class="cs-section">
+    <section class="cs-section" id="design">
       <div class="cs-section__inner">
         <div class="cs-section__head">
           <h2 class="cs-section__title">Design System</h2>
@@ -432,7 +440,7 @@
           <h2 class="cs-section__title">High fidelity</h2>
           <p class="cs-section__desc">Os protótipos finais cobrem navegação territorial, consulta pública, operações administrativas e gestão de dados.</p>
         </div>
-        <div class="cs-screens-row">
+        <div class="cs-screens-row cs-screens-row--carousel" id="highFidelityCarousel">
           <article class="cs-screen-card">
             <img src="../assets/images/sintonize/screen-home.png" alt="Tela Home do Sintonize">
             <div class="cs-screen-card__body">
@@ -454,8 +462,6 @@
               <p class="cs-screen-card__text">Momentos permanecem separados para preservar a variação do dia.</p>
             </div>
           </article>
-        </div>
-        <div class="cs-screens-row">
           <article class="cs-screen-card">
             <img src="../assets/images/sintonize/screen-insights.png" alt="Tela de Insights do Sintonize">
             <div class="cs-screen-card__body">
@@ -478,11 +484,19 @@
             </div>
           </article>
         </div>
+        <div class="cs-carousel-dots" id="highFidelityDots">
+          <button class="cs-carousel-dot is-active" type="button" aria-label="Home"></button>
+          <button class="cs-carousel-dot" type="button" aria-label="Registro"></button>
+          <button class="cs-carousel-dot" type="button" aria-label="Histórico"></button>
+          <button class="cs-carousel-dot" type="button" aria-label="Insights"></button>
+          <button class="cs-carousel-dot" type="button" aria-label="Visualização completa do dia"></button>
+          <button class="cs-carousel-dot" type="button" aria-label="Perfil"></button>
+        </div>
       </div>
     </section>
 
     <!-- Documentação como parte do design -->
-    <section class="cs-section">
+    <section class="cs-section" id="sistema">
       <div class="cs-section__inner">
         <div class="cs-section__head">
           <h2 class="cs-section__title">Documentação como parte do design</h2>
@@ -543,7 +557,7 @@
     </section>
 
     <!-- Experimente o Sintonize -->
-    <section class="cs-section">
+    <section class="cs-section" id="entrega">
       <div class="cs-section__inner">
         <div class="cs-section__head">
           <h2 class="cs-section__title">Experimente o Sintonize</h2>
@@ -628,6 +642,65 @@
       lockPanelHeights();
       window.addEventListener('resize', lockPanelHeights);
       startAutoplay();
+    })();
+  </script>
+  <script>
+    (function () {
+      var chapterLinks = Array.prototype.slice.call(document.querySelectorAll('.cs-chapter-nav a'));
+      if (chapterLinks.length) {
+        var chapterSections = chapterLinks.map(function (link) {
+          return document.getElementById(link.getAttribute('href').slice(1));
+        });
+
+        chapterLinks.forEach(function (link) {
+          link.addEventListener('click', function () {
+            chapterLinks.forEach(function (l) { l.classList.remove('is-active'); });
+            link.classList.add('is-active');
+          });
+        });
+
+        if ('IntersectionObserver' in window) {
+          var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (!entry.isIntersecting) return;
+              var index = chapterSections.indexOf(entry.target);
+              if (index === -1) return;
+              chapterLinks.forEach(function (l) { l.classList.remove('is-active'); });
+              chapterLinks[index].classList.add('is-active');
+            });
+          }, { rootMargin: '-45% 0px -50% 0px' });
+          chapterSections.forEach(function (section) {
+            if (section) observer.observe(section);
+          });
+        }
+      }
+
+      var carousel = document.getElementById('highFidelityCarousel');
+      var carouselDots = document.getElementById('highFidelityDots');
+      if (carousel && carouselDots) {
+        var cards = Array.prototype.slice.call(carousel.children);
+        var dots = Array.prototype.slice.call(carouselDots.children);
+
+        dots.forEach(function (dot, i) {
+          dot.addEventListener('click', function () {
+            cards[i].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+          });
+        });
+
+        if ('IntersectionObserver' in window) {
+          var carouselObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              var index = cards.indexOf(entry.target);
+              if (index === -1) return;
+              if (entry.intersectionRatio > 0.6) {
+                dots.forEach(function (d) { d.classList.remove('is-active'); });
+                dots[index].classList.add('is-active');
+              }
+            });
+          }, { root: carousel, threshold: [0.6] });
+          cards.forEach(function (card) { carouselObserver.observe(card); });
+        }
+      }
     })();
   </script>
 </body>
