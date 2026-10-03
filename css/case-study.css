@@ -1871,6 +1871,40 @@
     line-height: 1;
     color: var(--cs-orange-cta);
   }
+
+  /* "Documentação como parte do design" — single-column stacked cards, matching Figma */
+  .page-sintonize .cs-cards-row--docs {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .page-sintonize .cs-cards-row--docs > * {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .page-sintonize .cs-cards-row--docs .cs-card {
+    gap: 8px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .page-sintonize .cs-cards-row--docs .cs-pill {
+    align-self: flex-start;
+    padding: 0;
+    background: transparent;
+    color: #5029de;
+    font-size: 12px;
+  }
+
+  .page-sintonize .cs-cards-row--docs .cs-card__title {
+    font-size: 20px;
+    text-transform: none;
+  }
+
+  .page-sintonize .cs-cards-row--docs .cs-card__text {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -3068,5 +3102,162 @@
   .page-aprova-quest .cs-opp .cs-card__text {
     color: #151414;
     font-size: 15px;
+  }
+}
+
+/* Aprova Quest — mobile: Usuário e produto precisavam avançar juntos */
+@media (max-width: 499px) {
+  .page-aprova-quest .cs-page .cs-personas-panel {
+    background: none;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .page-aprova-quest .cs-page .cs-personas-top {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .page-aprova-quest .cs-page .cs-personas-top > * {
+    flex: none !important;
+    width: 100%;
+  }
+
+  .page-aprova-quest .cs-persona {
+    display: grid !important;
+    grid-template-columns: 88px 1fr;
+    column-gap: 16px;
+    row-gap: 8px;
+    align-items: start !important;
+    background: #fbfbfb !important;
+    border: 2px solid #fff;
+    padding: 20px;
+  }
+
+  .page-aprova-quest .cs-persona > img {
+    grid-row: 1 / span 2;
+    width: 88px !important;
+    height: 88px !important;
+  }
+
+  .page-aprova-quest .cs-persona > div {
+    display: contents;
+  }
+
+  .page-aprova-quest .cs-persona__name {
+    grid-column: 2;
+    font-size: 20px !important;
+    text-transform: none;
+    margin-bottom: 0 !important;
+  }
+
+  .page-aprova-quest .cs-persona__age {
+    grid-column: 2;
+    margin-top: -6px;
+  }
+
+  .page-aprova-quest .cs-persona .cs-card__text:not(.cs-persona__age) {
+    grid-column: 1 / -1;
+  }
+
+  .page-aprova-quest .cs-persona strong {
+    display: block;
+    color: #5029de;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .page-aprova-quest .cs-persona strong::after {
+    content: none;
+  }
+
+  .page-aprova-quest .cs-scenario {
+    background: #e9e6f6 !important;
+    border: 2px solid #fff;
+    padding: 20px;
+  }
+
+  .page-aprova-quest .cs-scenario .cs-card__title {
+    color: #5029de;
+    font-size: 14px !important;
+    text-transform: none;
+  }
+
+  .page-aprova-quest .cs-journey-title {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #151414;
+    margin-top: 8px;
+  }
+
+  .page-aprova-quest .cs-stage {
+    border-color: #fff;
+    background: #fbfbfb;
+  }
+
+  .page-aprova-quest .cs-stage[open] {
+    border-color: #a797e8;
+  }
+
+  .page-aprova-quest .cs-stage__head {
+    font-size: 16px;
+    padding: 16px 18px;
+  }
+
+  .page-aprova-quest .cs-stage__body {
+    padding: 0 18px 18px;
+  }
+
+  .page-aprova-quest .cs-stage__body p {
+    font-size: 15px;
+  }
+
+  .page-aprova-quest .cs-page .cs-arrow-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .page-aprova-quest .cs-page .cs-arrow-row > .cs-arrow-col {
+    flex: none;
+    align-items: flex-start;
+    text-align: left;
+    padding: 24px;
+    gap: 12px;
+    background: #fbfbfb;
+    border: 2px solid #fff !important;
+    border-radius: 24px;
+  }
+
+  .page-aprova-quest .cs-page .cs-arrow-row > .cs-arrow-col:last-child {
+    background: #e9e6f6;
+  }
+
+  .page-aprova-quest .cs-arrow-col__title {
+    color: #5029de;
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .page-aprova-quest .cs-arrow-item {
+    position: relative;
+    padding-left: 22px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .page-aprova-quest .cs-arrow-item::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 7px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #5029de;
+  }
+
+  .page-aprova-quest .cs-arrow-icon {
+    display: none;
   }
 }
