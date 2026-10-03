@@ -67,7 +67,7 @@
 
 .cs-hero__main {
   flex: 1 1 560px;
-  max-width: 700px;
+  max-width: 736px;
   display: flex;
   flex-direction: column;
   gap: 40px;
