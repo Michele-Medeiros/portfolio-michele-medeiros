@@ -60,7 +60,7 @@
   padding-block: 65px 56px;
   display: flex;
   gap: 48px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
 }
