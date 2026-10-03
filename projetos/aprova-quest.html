@@ -9,9 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css?v=24">
-  <link rel="stylesheet" href="../css/case-study.css?v=19">
+  <link rel="stylesheet" href="../css/case-study.css?v=26">
 </head>
-<body>
+<body class="page-aprova-quest">
 
   <header class="navbar-wrap">
     <nav class="navbar container" aria-label="Navegação principal">
@@ -41,7 +41,7 @@
           <p class="cs-hero__desc">Revise conteúdos com desafios, duelos e trilhas personalizadas. O Aprova Quest foi feito para quem quer transformar estudo em conquista.</p>
         </div>
         <div class="cs-hero__aside">
-          <img class="cs-hero__phone" style="max-width:608px;" src="../assets/images/aprova-quest/hero-logo.png" alt="Composição da marca Aprova Quest em moldura de polaroid">
+          <img class="cs-hero__phone" style="max-width:608px;mix-blend-mode:darken;" src="../assets/images/aprova-quest/hero-logo.png" alt="Composição da marca Aprova Quest em moldura de polaroid">
         </div>
       </div>
     </section>
@@ -81,7 +81,7 @@
     <section class="cs-section">
       <div class="cs-section__inner">
         <h2 class="cs-section__title">O projeto em 30 segundos</h2>
-        <div class="cs-cards-row" style="align-items:stretch;">
+        <div class="cs-cards-row cs-carousel-tablet" style="align-items:stretch;">
           <article class="cs-card" style="background:#dfdfdf;flex:0 1 35%;min-width:320px;">
             <h3 class="cs-card__title" style="font-size:clamp(16px,1.8vw,20px);">O problema</h3>
             <p class="cs-card__text">Preparar-se para um concurso exige constância durante longos períodos. Além de estudar o conteúdo, o próprio candidato precisa decidir o que estudar, organizar sua rotina, identificar pontos de dificuldade e encontrar motivação para continuar.</p>
@@ -233,6 +233,53 @@
             <div class="cs-journey__cell cs-journey__cell--dor">Perda de engajamento ou isolamento</div>
             <div class="cs-journey__cell cs-journey__cell--solucao">Badges visíveis, ranking entre amigos, convite integrado</div>
           </div>
+
+          <div class="cs-stage-list">
+            <details class="cs-stage">
+              <summary class="cs-stage__head"><span class="cs-stage__num">1</span><span>Instalação &amp; Primeiro Contato</span></summary>
+              <div class="cs-stage__body">
+                <span class="cs-stage__label cs-stage__label--acao">Ação principal do usuário</span>
+                <p>Usuário baixa o app e faz o primeiro login</p>
+                <span class="cs-stage__label cs-stage__label--dor">Dor/chave</span>
+                <p>“Será que vale meu tempo?”</p>
+                <span class="cs-stage__label cs-stage__label--solucao">Solução proposta</span>
+                <p>Onboarding em 1 passo, missão inicial de 5 minutos para engajar imediatamente</p>
+              </div>
+            </details>
+            <details class="cs-stage" open>
+              <summary class="cs-stage__head"><span class="cs-stage__num">2</span><span>Uso Recorrente (Missão Diária)</span></summary>
+              <div class="cs-stage__body">
+                <span class="cs-stage__label cs-stage__label--acao">Ação principal do usuário</span>
+                <p>Usuário abre app no dia seguinte para cumprir missão</p>
+                <span class="cs-stage__label cs-stage__label--dor">Dor/chave</span>
+                <p>Falta de continuidade / motivação</p>
+                <span class="cs-stage__label cs-stage__label--solucao">Solução proposta</span>
+                <p>Sistema de micro-metas, streak visual, feedback imediato</p>
+              </div>
+            </details>
+            <details class="cs-stage" open>
+              <summary class="cs-stage__head"><span class="cs-stage__num">3</span><span>Revisão &amp; Profundidade</span></summary>
+              <div class="cs-stage__body">
+                <span class="cs-stage__label cs-stage__label--acao">Ação principal do usuário</span>
+                <p>Usuário revisita a área de erros ou trilha de estudo</p>
+                <span class="cs-stage__label cs-stage__label--dor">Dor/chave</span>
+                <p>Sensação de estudar sem progresso</p>
+                <span class="cs-stage__label cs-stage__label--solucao">Solução proposta</span>
+                <p>Tela de "revisão de erros" destacada, relatório rápido de evolução</p>
+              </div>
+            </details>
+            <details class="cs-stage" open>
+              <summary class="cs-stage__head"><span class="cs-stage__num">4</span><span>Fidelização &amp; Compartilhamento</span></summary>
+              <div class="cs-stage__body">
+                <span class="cs-stage__label cs-stage__label--acao">Ação principal do usuário</span>
+                <p>Usuário completou 7 dias, vê conquistas, compartilha ou recomenda</p>
+                <span class="cs-stage__label cs-stage__label--dor">Dor/chave</span>
+                <p>Perda de engajamento ou isolamento</p>
+                <span class="cs-stage__label cs-stage__label--solucao">Solução proposta</span>
+                <p>Badges visíveis, ranking entre amigos, convite integrado</p>
+              </div>
+            </details>
+          </div>
         </div>
       </div>
     </section>
@@ -272,27 +319,23 @@
           <h2 class="cs-section__title">Dos insights às decisões de produto</h2>
           <p class="cs-section__desc">Em vez de transformar cada descoberta em uma funcionalidade isolada, agrupei as oportunidades em alguns princípios para orientar o produto.</p>
         </div>
-        <div class="cs-grid-4">
+        <div class="cs-grid-4 cs-carousel-tablet">
           <article class="cs-card" style="align-items:center;text-align:center;background:rgba(255,255,255,0.5);">
-            <p class="cs-card__text" style="color:#5029de;font-weight:600;">Se o problema é manter a constância</p>
             <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">Missões diárias</p>
-            <img src="../assets/images/aprova-quest/decision-missoes.svg" alt="" style="width:100%;max-width:200px;">
+            <img src="../assets/images/aprova-quest/decision-missoes.svg" alt="" style="width:100%;max-width:240px;">
             <p class="cs-card__text">Objetivos menores transformam uma preparação extensa em uma sequência de ações possíveis de concluir diariamente.</p>
           </article>
           <article class="cs-card" style="align-items:center;text-align:center;background:rgba(255,255,255,0.5);">
-            <p class="cs-card__text" style="color:#5029de;font-weight:600;">Se há necessidade de entender onde melhorar...</p>
             <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">Questões + desempenho</p>
             <img src="../assets/images/aprova-quest/decision-questoes.svg" alt="" style="width:100%;max-width:200px;">
             <p class="cs-card__text">A resolução de questões deixa de ser apenas uma atividade de estudo e passa a gerar informações que ajudam o usuário a direcionar sua preparação.</p>
           </article>
           <article class="cs-card" style="align-items:center;text-align:center;background:rgba(255,255,255,0.5);">
-            <p class="cs-card__text" style="color:#5029de;font-weight:600;">Se a evolução parece muito distante...</p>
             <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">Progressão e recompensas</p>
             <img src="../assets/images/aprova-quest/decision-progressao.svg" alt="" style="width:100%;max-width:200px;">
             <p class="cs-card__text">Pontuação, conquistas entre outros feedbacks tornam as pequenas evoluções mais perceptíveis durante a jornada, o que se transforma em incentivo.</p>
           </article>
           <article class="cs-card" style="align-items:center;text-align:center;background:rgba(255,255,255,0.5);">
-            <p class="cs-card__text" style="color:#5029de;font-weight:600;">Se decidir o que fazer também gera esforço...</p>
             <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">Experiência orientada à próxima ação</p>
             <img src="../assets/images/aprova-quest/decision-experiencia.svg" alt="" style="width:100%;max-width:200px;">
             <p class="cs-card__text">A arquitetura e a hierarquia da interface foram pensadas para destacar rapidamente as atividades mais relevantes para aquele momento.</p>
@@ -387,10 +430,27 @@
         <p class="cs-section__desc">Os elementos de progressão foram utilizados como apoio à experiência, e não como um fim em si mesmos. Pontuação, conquistas e recompensas ajudam a tornar avanços menores mais perceptíveis durante uma preparação que naturalmente possui resultados de longo prazo.</p>
         <p class="cs-section__desc">Já os resultados ajudam a transformar dados de uso em uma visão mais clara da evolução e dos pontos que precisam de atenção.</p>
         <div class="cs-showcase">
-          <div class="cs-showcase__stage">
-            <img src="../assets/images/aprova-quest/screen-home.png" alt="Tela Home do Aprova Quest">
+          <div class="cs-showcase__track" id="solutionCarousel">
+            <figure class="cs-showcase__slide" data-title="Home">
+              <img src="../assets/images/aprova-quest/screen-home.png" alt="Tela Home do Aprova Quest">
+            </figure>
+            <figure class="cs-showcase__slide" data-title="Questões">
+              <img src="../assets/images/aprova-quest/solution-questoes.png" alt="Telas de questões do Aprova Quest">
+            </figure>
+            <figure class="cs-showcase__slide" data-title="Duelos">
+              <img src="../assets/images/aprova-quest/solution-geral.png" alt="Telas de duelos, ranking e mensagens do Aprova Quest">
+            </figure>
+            <figure class="cs-showcase__slide" data-title="Planos">
+              <img src="../assets/images/aprova-quest/solution-planos.png" alt="Telas de planos de estudo do Aprova Quest">
+            </figure>
           </div>
-          <p class="cs-showcase__title">Home</p>
+          <p class="cs-showcase__title" id="solutionTitle">Home</p>
+          <div class="cs-showcase__dots" id="solutionDots">
+            <button class="cs-showcase__dot is-active" type="button" aria-label="Home"></button>
+            <button class="cs-showcase__dot" type="button" aria-label="Questões"></button>
+            <button class="cs-showcase__dot" type="button" aria-label="Duelos"></button>
+            <button class="cs-showcase__dot" type="button" aria-label="Planos"></button>
+          </div>
         </div>
       </div>
     </section>
@@ -420,5 +480,32 @@
   </footer>
 
   <script src="../js/main.js"></script>
+  <script>
+    (function () {
+      var track = document.getElementById('solutionCarousel');
+      var dotsWrap = document.getElementById('solutionDots');
+      var title = document.getElementById('solutionTitle');
+      if (!track || !dotsWrap) return;
+
+      var slides = track.querySelectorAll('.cs-showcase__slide');
+      var dots = dotsWrap.querySelectorAll('.cs-showcase__dot');
+
+      function setActive(index) {
+        dots.forEach(function (dot, i) { dot.classList.toggle('is-active', i === index); });
+        if (title) title.textContent = slides[index].getAttribute('data-title');
+      }
+
+      dots.forEach(function (dot, i) {
+        dot.addEventListener('click', function () {
+          track.scrollTo({ left: i * track.clientWidth, behavior: 'smooth' });
+        });
+      });
+
+      track.addEventListener('scroll', function () {
+        var index = Math.round(track.scrollLeft / track.clientWidth);
+        setActive(Math.min(index, slides.length - 1));
+      }, { passive: true });
+    })();
+  </script>
 </body>
 </html>

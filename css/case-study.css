@@ -795,7 +795,7 @@
 }
 
 /* ========================================================================
-   Chapter nav (sticky) — tablet/narrow layout only, see <=1350px query
+   Chapter nav (sticky) — tablet layout only, see 500–900px query
    ======================================================================== */
 .cs-chapter-nav {
   display: none;
@@ -834,6 +834,13 @@
   color: #fff;
   background: #5029de;
   border-color: #5029de;
+}
+
+.cs-carousel-dots {
+  display: none;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 24px;
 }
 
 /* ========================================================================
@@ -975,6 +982,10 @@
   gap: 53px;
 }
 
+.cs-grid-4 .cs-card__text {
+  text-align: center;
+}
+
 .cs-personas-panel {
   background: #c4bfbe;
   border-radius: 24px;
@@ -1043,6 +1054,108 @@
   border-color: #8cc35a;
 }
 
+/* Jornada em acordeão (tablet) */
+.cs-stage-list {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cs-stage {
+  background: #fff;
+  border: 2px solid #e4e3e3;
+  border-radius: 20px;
+}
+
+.cs-stage[open] {
+  border-color: #a797e8;
+}
+
+.cs-stage__head {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: clamp(15px, 1.6vw, 18px);
+  color: var(--cs-text);
+}
+
+.cs-stage__head::-webkit-details-marker {
+  display: none;
+}
+
+.cs-stage__head::after {
+  content: '';
+  margin-left: auto;
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid var(--cs-text);
+  border-bottom: 2px solid var(--cs-text);
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.cs-stage[open] .cs-stage__head::after {
+  transform: rotate(-135deg);
+}
+
+.cs-stage__num {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  border-radius: 50%;
+  background: #5029de;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.cs-stage__body {
+  padding: 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cs-stage__body p {
+  font-size: clamp(14px, 1.4vw, 15px);
+  line-height: 1.5;
+  color: var(--cs-text-body);
+  margin-bottom: 12px;
+}
+
+.cs-stage__body p:last-child {
+  margin-bottom: 0;
+}
+
+.cs-stage__label {
+  align-self: flex-start;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cs-stage__label--acao {
+  background: #fff0a8;
+  color: var(--cs-text);
+}
+
+.cs-stage__label--dor {
+  background: #f0d2f5;
+  color: #8a2a5a;
+}
+
+.cs-stage__label--solucao {
+  background: #e6e0fb;
+  color: #4a3ac0;
+}
+
 .cs-fact-row--stack {
   flex-direction: column;
   gap: 24px;
@@ -1093,6 +1206,57 @@
   gap: 24px;
 }
 
+.cs-showcase__track {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.cs-showcase__track::-webkit-scrollbar {
+  display: none;
+}
+
+.cs-showcase__slide {
+  flex: 0 0 100%;
+  margin: 0;
+  scroll-snap-align: start;
+  background: #beb9b8;
+  border-radius: 24px;
+  padding: 56px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.cs-showcase__slide img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cs-showcase__dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.cs-showcase__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #d7d7d7;
+  background: #fff;
+  padding: 0;
+  cursor: pointer;
+}
+
+.cs-showcase__dot.is-active {
+  border-color: #5b4fe0;
+  background: #5b4fe0;
+}
+
 .cs-showcase__stage {
   width: 100%;
   background: #beb9b8;
@@ -1126,6 +1290,14 @@
   .cs-grid-2 {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .cs-journey {
+    display: none;
+  }
+
+  .cs-stage-list {
+    display: flex;
   }
 
   .cs-personas-panel {
@@ -1168,9 +1340,10 @@
   }
 }
 
-@media (max-width: 1350px) {
+@media (min-width: 500px) and (max-width: 900px) {
   .cs-chapter-nav {
     display: flex;
+    padding-inline: 48px;
   }
 
   #contexto,
@@ -1198,8 +1371,102 @@
     font-size: 16px;
   }
 
+  .cs-section {
+    padding-block: 40px;
+  }
+
+  #contexto.cs-section {
+    padding-block: 0;
+  }
+
+  .cs-cards-row {
+    gap: 16px;
+  }
+
   .cs-cards-row > * {
-    flex-basis: calc(50% - 16px);
+    flex-basis: calc(50% - 8px);
+  }
+
+  /* Hero — stacked single column, matching Figma tablet frame exactly */
+  .cs-hero {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding-block: 20px 32px;
+  }
+
+  .cs-hero__main {
+    max-width: none;
+    gap: 14px;
+  }
+
+  .cs-hero__titles {
+    gap: 0;
+  }
+
+  .cs-hero__title {
+    font-size: 52px;
+    line-height: 55px;
+  }
+
+  .cs-hero__subtitle {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .cs-hero__desc {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .cs-hero__quote {
+    font-size: 16px;
+    line-height: 25px;
+    border-left-color: var(--cs-orange-cta);
+  }
+
+  .cs-hero__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .cs-stat {
+    flex: none;
+    align-items: flex-start;
+    text-align: left;
+    gap: 6px;
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .cs-stat__value {
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .cs-stat__label {
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+
+  /* Aside only wraps the phone (hidden at this width) and the CTA link;
+     unwrap it so the CTA flows full-width right after the stats, as in Figma */
+  .cs-hero__aside {
+    display: contents;
+  }
+
+  .cs-hero__cta {
+    max-width: none;
+    margin-top: 10px;
+    background: var(--cs-orange-cta);
+    color: #151414;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 15px 24px;
+    border-radius: 16px;
   }
 
   .cs-screens-row--carousel {
@@ -1221,9 +1488,6 @@
 
   .cs-carousel-dots {
     display: flex;
-    justify-content: center;
-    gap: 6px;
-    margin-top: 24px;
   }
 
   .cs-carousel-dot {
@@ -1243,12 +1507,6 @@
   }
 }
 
-@media (min-width: 1351px) {
-  .cs-carousel-dots {
-    display: none;
-  }
-}
-
 @media (max-width: 1200px) {
   .cs-ds-col-right {
     flex: 1 1 100%;
@@ -1264,7 +1522,7 @@
 }
 
 @media (max-width: 1120px) {
-  .cs-hero__phone {
+  .page-sintonize .cs-hero__phone {
     display: none;
   }
 }
@@ -1305,5 +1563,37 @@
 
   .cs-hero {
     padding-top: 40px;
+  }
+}
+
+/* Aprova Quest — tablet (768px do Figma) */
+@media (max-width: 1023px) {
+  .page-aprova-quest .cs-hero__phone {
+    display: block;
+    max-width: 360px;
+  }
+
+  .cs-meta-panel--plain {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+
+  .cs-carousel-tablet {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    gap: 16px;
+  }
+
+  .cs-carousel-tablet::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cs-carousel-tablet > * {
+    flex: 0 0 300px !important;
+    min-width: 0;
+    scroll-snap-align: start;
   }
 }
