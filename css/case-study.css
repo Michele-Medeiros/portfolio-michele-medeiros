@@ -793,6 +793,20 @@
 /* ========================================================================
    Responsive
    ======================================================================== */
+@media (max-width: 1200px) {
+  .cs-ds-col-right {
+    flex: 1 1 100%;
+    max-width: none;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .cs-ds-card--palette,
+  .cs-ds-card--mascotes {
+    flex: 1 1 0;
+  }
+}
+
 @media (max-width: 1120px) {
   .cs-hero__phone {
     display: none;
