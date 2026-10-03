@@ -3688,6 +3688,33 @@
     font-size: 14px;
     letter-spacing: normal;
   }
+
+  /* "O projeto em 30 segundos" — stacked PROBLEMA/DESAFIO cards, matching Figma */
+  .page-sintonize .cs-cards-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .page-sintonize .cs-cards-row .cs-card {
+    padding: 22px;
+  }
+
+  .page-sintonize .cs-cards-row .cs-card__title {
+    font-size: 21px;
+    line-height: 1.25;
+    text-transform: none;
+  }
+
+  .page-sintonize .cs-cards-row .cs-pill {
+    background: transparent;
+    padding: 0;
+    font-size: 13px;
+    color: var(--cs-navy);
+  }
+
+  .page-sintonize .cs-cards-row .cs-card--dark .cs-pill {
+    color: #fff;
+  }
 }
 
 /* Aprova Quest — mobile: Criando consistência */
