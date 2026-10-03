@@ -791,6 +791,120 @@
 }
 
 /* ========================================================================
+   Aprova Quest — page-specific components
+   ======================================================================== */
+.cs-meta-panel {
+  flex: 1 1 320px;
+  max-width: 420px;
+  background: #f5f5f5;
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cs-meta-panel__label {
+  font-weight: 600;
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: #5029de;
+  margin-bottom: 4px;
+}
+
+.cs-meta-panel__value {
+  font-size: clamp(13px, 1.4vw, 15px);
+  color: var(--cs-text-secondary);
+}
+
+.cs-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.cs-feature-list__title {
+  font-weight: 500;
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: var(--cs-text);
+}
+
+.cs-divider-squiggle {
+  width: 100%;
+  height: 12px;
+  object-fit: contain;
+}
+
+.cs-fact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.cs-fact {
+  flex: 1 1 220px;
+}
+
+.cs-fact__value {
+  font-weight: 600;
+  font-size: clamp(16px, 1.8vw, 20px);
+  color: #5029de;
+  margin-bottom: 8px;
+}
+
+.cs-fact__label {
+  font-size: clamp(13px, 1.4vw, 15px);
+  color: var(--cs-text-secondary);
+  line-height: 1.5;
+}
+
+.cs-arrow-row {
+  display: flex;
+}
+
+.cs-arrow-col {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 40px 48px;
+}
+
+.cs-arrow-col__title {
+  font-weight: 600;
+  font-size: clamp(16px, 1.8vw, 20px);
+  color: #5029de;
+  margin-bottom: 8px;
+}
+
+.cs-arrow-item {
+  font-weight: 500;
+  font-size: clamp(13px, 1.4vw, 15px);
+  color: var(--cs-text-body);
+}
+
+.cs-arrow-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.cs-video-box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.cs-video-box iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ========================================================================
    Responsive
    ======================================================================== */
 @media (max-width: 750px) {
@@ -845,6 +959,19 @@
   .cs-pair-arrow {
     width: 48px;
     transform: rotate(90deg);
+  }
+
+  .cs-arrow-row {
+    flex-direction: column;
+  }
+
+  .cs-arrow-col {
+    padding: 32px 16px;
+  }
+
+  .cs-arrow-col:first-child {
+    border-right: none !important;
+    border-bottom: 1px dashed #3b3b3e;
   }
 }
 
