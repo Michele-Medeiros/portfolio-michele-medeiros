@@ -1396,6 +1396,7 @@
   }
 
   .cs-hero__main {
+    flex: 1 1 auto;
     max-width: none;
     gap: 14px;
   }
@@ -1458,7 +1459,6 @@
 
   .cs-hero__cta {
     max-width: none;
-    margin-top: 10px;
     background: var(--cs-orange-cta);
     color: #151414;
     text-decoration: none;
@@ -1566,6 +1566,83 @@
   }
 }
 
+/* Design system em acordeão (tablet) */
+.cs-ds-accordion {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cs-ds-item {
+  background: rgba(255, 255, 255, 0.55);
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.cs-ds-item[open] {
+  background: rgba(255, 255, 255, 0.75);
+  border-color: rgba(80, 41, 222, 0.5);
+}
+
+.cs-ds-item .cs-stage__head {
+  padding: 16px 18px;
+  font-size: 18px;
+}
+
+.cs-ds-swatches {
+  padding: 0 18px 18px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px 8px;
+}
+
+.cs-ds-swatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #3b3b3e;
+}
+
+.cs-ds-swatch__dot {
+  width: 100%;
+  height: 56px;
+  border-radius: 14px;
+  border: 1px solid rgba(59, 59, 62, 0.15);
+}
+
+.cs-ds-tiles {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 0 18px 18px;
+  scrollbar-width: none;
+}
+
+.cs-ds-tiles::-webkit-scrollbar {
+  display: none;
+}
+
+.cs-ds-tile {
+  flex: 0 0 180px;
+  height: 200px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(59, 59, 62, 0.12);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.cs-ds-tile img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 /* Aprova Quest — tablet (768px do Figma) */
 @media (max-width: 1023px) {
   .page-aprova-quest .cs-hero__phone {
@@ -1595,5 +1672,13 @@
     flex: 0 0 300px !important;
     min-width: 0;
     scroll-snap-align: start;
+  }
+
+  .cs-ds-desktop {
+    display: none;
+  }
+
+  .cs-ds-accordion {
+    display: flex;
   }
 }
