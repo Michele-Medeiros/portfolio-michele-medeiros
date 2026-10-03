@@ -3692,27 +3692,47 @@
   /* "O projeto em 30 segundos" — stacked PROBLEMA/DESAFIO cards, matching Figma */
   .page-sintonize .cs-cards-row {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
   }
 
   .page-sintonize .cs-cards-row .cs-card {
-    padding: 22px;
+    padding: 20px;
+  }
+
+  .page-sintonize .cs-cards-row .cs-card:not(.cs-card--dark) {
+    border: 1px solid rgba(59, 59, 62, 0.12);
   }
 
   .page-sintonize .cs-cards-row .cs-card__title {
+    font-size: 16px;
+  }
+
+  .page-sintonize .cs-cards-row .cs-card__text {
+    font-size: 15px;
+  }
+
+  .page-sintonize .cs-cards-row--intro {
+    gap: 12px;
+  }
+
+  .page-sintonize .cs-cards-row--intro .cs-card {
+    padding: 22px;
+  }
+
+  .page-sintonize .cs-cards-row--intro .cs-card__title {
     font-size: 21px;
     line-height: 1.25;
     text-transform: none;
   }
 
-  .page-sintonize .cs-cards-row .cs-pill {
+  .page-sintonize .cs-cards-row--intro .cs-pill {
     background: transparent;
     padding: 0;
     font-size: 13px;
     color: var(--cs-navy);
   }
 
-  .page-sintonize .cs-cards-row .cs-card--dark .cs-pill {
+  .page-sintonize .cs-cards-row--intro .cs-card--dark .cs-pill {
     color: #fff;
   }
 }
