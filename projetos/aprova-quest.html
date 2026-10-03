@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css?v=24">
-  <link rel="stylesheet" href="../css/case-study.css?v=29">
+  <link rel="stylesheet" href="../css/case-study.css?v=30">
 </head>
 <body class="page-aprova-quest">
 
@@ -81,7 +81,7 @@
     <section class="cs-section">
       <div class="cs-section__inner">
         <h2 class="cs-section__title">O projeto em 30 segundos</h2>
-        <div class="cs-cards-row cs-carousel-tablet" style="align-items:stretch;">
+        <div id="track-30s" data-dots class="cs-cards-row cs-carousel-tablet" style="align-items:stretch;">
           <article class="cs-card" style="background:#dfdfdf;flex:0 1 35%;min-width:320px;">
             <h3 class="cs-card__title" style="font-size:clamp(16px,1.8vw,20px);">O problema</h3>
             <p class="cs-card__text">Preparar-se para um concurso exige constância durante longos períodos. Além de estudar o conteúdo, o próprio candidato precisa decidir o que estudar, organizar sua rotina, identificar pontos de dificuldade e encontrar motivação para continuar.</p>
@@ -111,11 +111,12 @@
           <h3 class="cs-card__title" style="font-size:clamp(16px,1.8vw,20px);">O desafio</h3>
           <p class="cs-card__text" style="font-style:italic;color:#5029de;font-weight:500;"><strong>Estudar muitas vezes é difícil, porém continuar estudando é muito mais desafiador.</strong></p>
           <p class="cs-card__text">A preparação para concursos costuma acontecer paralelamente ao trabalho, estudos e outras responsabilidades do dia a dia. Nesse contexto, oferecer apenas conteúdo não resolve todo o problema.</p>
-          <p class="cs-card__text">O desafio era entender:</p>
-          <ul class="cs-card__list">
+          <p class="cs-card__text cs-hide-tablet">O desafio era entender:</p>
+          <ul class="cs-card__list cs-hide-tablet">
             <li>Como podemos ajudar concurseiros a transformar objetivos de longo prazo em uma rotina de estudos mais clara, sustentável e motivadora?</li>
             <li>A partir dessa pergunta, busquei compreender não apenas como as pessoas estudavam, mas principalmente o que dificultava sua constância e evolução.</li>
           </ul>
+          <p class="cs-card__text cs-tablet-only">O desafio era entender: Como podemos ajudar concurseiros a transformar objetivos de longo prazo em uma rotina de estudos mais clara, sustentável e motivadora? A partir dessa pergunta, busquei compreender não apenas como as pessoas estudavam, mas principalmente o que dificultava sua constância e evolução.</p>
         </article>
       </div>
     </section>
@@ -130,11 +131,11 @@
         <div class="cs-divider-line"></div>
         <div class="cs-fact-row cs-fact-row--stack">
           <div class="cs-fact">
-            <p class="cs-fact__value">50 participantes</p>
+            <p class="cs-fact__value"><span class="cs-fact__num">50</span> participantes</p>
             <p class="cs-fact__label">Responderam a um questionário sobre hábitos, dificuldades e comportamentos relacionados à preparação para concursos.</p>
           </div>
           <div class="cs-fact">
-            <p class="cs-fact__value">5 entrevistas</p>
+            <p class="cs-fact__value"><span class="cs-fact__num">5</span> entrevistas</p>
             <p class="cs-fact__label">Aprofundaram as motivações, frustrações e estratégias adotadas pelos candidatos durante a rotina de estudos.</p>
           </div>
           <div class="cs-fact">
@@ -154,28 +155,28 @@
         </div>
         <div class="cs-grid-2">
           <article class="cs-card" style="background:rgba(255,255,255,0.5);">
-            <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">01. Manter constância é um dos maiores desafios</p>
+            <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);"><span class="cs-num">01.</span> Manter constância é um dos maiores desafios</p>
             <p class="cs-card__text">Uma preparação longa exige disciplina durante meses ou anos. Quando o objetivo parece distante, manter uma rotina consistente torna-se mais difícil.</p>
-            <p class="cs-card__text" style="color:#5029de;font-weight:500;">Oportunidade</p>
-            <p class="cs-card__text">Transformar grandes metas em objetivos menores e recorrentes.</p>
+            <div class="cs-opp"><p class="cs-card__text" style="color:#5029de;font-weight:500;">Oportunidade</p>
+            <p class="cs-card__text">Transformar grandes metas em objetivos menores e recorrentes.</p></div>
           </article>
           <article class="cs-card" style="background:rgba(255,255,255,0.5);">
-            <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">02. O usuário precisa saber onde concentrar seus esforços</p>
+            <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);"><span class="cs-num">02.</span> O usuário precisa saber onde concentrar seus esforços</p>
             <p class="cs-card__text">Estudar muitas disciplinas simultaneamente aumenta a dificuldade de identificar prioridades e entender onde existem maiores lacunas de conhecimento.</p>
-            <p class="cs-card__text" style="color:#5029de;font-weight:500;">Oportunidade</p>
-            <p class="cs-card__text">Tornar desempenho, erros e evolução mais visíveis para orientar os próximos passos.</p>
+            <div class="cs-opp"><p class="cs-card__text" style="color:#5029de;font-weight:500;">Oportunidade</p>
+            <p class="cs-card__text">Tornar desempenho, erros e evolução mais visíveis para orientar os próximos passos.</p></div>
           </article>
           <article class="cs-card" style="background:rgba(255,255,255,0.5);">
-            <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">03. Progresso pouco perceptível reduz a motivação</p>
+            <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);"><span class="cs-num">03.</span> Progresso pouco perceptível reduz a motivação</p>
             <p class="cs-card__text">Quando a evolução não é facilmente percebida, existe uma sensação de esforço sem recompensa imediata.</p>
-            <p class="cs-card__text" style="color:#5029de;font-weight:500;">Oportunidade</p>
-            <p class="cs-card__text">Criar feedbacks constantes capazes de tornar pequenas conquistas visíveis durante a jornada.</p>
+            <div class="cs-opp"><p class="cs-card__text" style="color:#5029de;font-weight:500;">Oportunidade</p>
+            <p class="cs-card__text">Criar feedbacks constantes capazes de tornar pequenas conquistas visíveis durante a jornada.</p></div>
           </article>
           <article class="cs-card" style="background:rgba(255,255,255,0.5);">
-            <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">04. A experiência precisa reduzir decisões, não criar novas tarefas</p>
+            <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);"><span class="cs-num">04.</span> A experiência precisa reduzir decisões, não criar novas tarefas</p>
             <p class="cs-card__text">Organizar cronogramas, revisar resultados e escolher conteúdos também exige esforço cognitivo.</p>
-            <p class="cs-card__text" style="color:#5029de;font-weight:500;">Oportunidade</p>
-            <p class="cs-card__text">Ajudar o usuário a entender rapidamente o que fazer agora e o que fazer depois.</p>
+            <div class="cs-opp"><p class="cs-card__text" style="color:#5029de;font-weight:500;">Oportunidade</p>
+            <p class="cs-card__text">Ajudar o usuário a entender rapidamente o que fazer agora e o que fazer depois.</p></div>
           </article>
         </div>
       </div>
@@ -191,22 +192,23 @@
 
         <div class="cs-personas-panel">
           <div class="cs-personas-top">
-          <article class="cs-card" style="flex-direction:row;align-items:center;gap:24px;">
+          <article class="cs-card cs-persona" style="flex-direction:row;align-items:center;gap:24px;">
             <img src="../assets/images/aprova-quest/persona-lucas.png" alt="Foto ilustrativa da persona Lucas Ribeiro" style="width:96px;height:96px;border-radius:50%;object-fit:cover;flex-shrink:0;">
             <div>
-              <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);margin-bottom:8px;">Lucas Ribeiro, 28 anos — Contador</p>
-              <p class="cs-card__text"><strong>Objetivo:</strong> criar hábito diário de estudo enquanto anda de transporte público.</p>
-              <p class="cs-card__text"><strong>Contexto:</strong> deslocamento ~45 min por dia; estuda pelo celular.</p>
-              <p class="cs-card__text"><strong>Dor principal:</strong> apps longos ou pouco focados que levam à desistência.</p>
-              <p class="cs-card__text"><strong>Necessita:</strong> sessão rápida, interface simples, progresso visível.</p>
+              <div class="cs-persona__head"><p class="cs-card__title cs-persona__name" style="font-size:clamp(14px,1.5vw,16px);margin-bottom:8px;">Lucas Ribeiro</p><p class="cs-card__text cs-persona__age">28 anos, Contador</p></div>
+              <p class="cs-card__text"><strong>Objetivo</strong> criar hábito diário de estudo enquanto anda de transporte público.</p>
+              <p class="cs-card__text"><strong>Contexto</strong> deslocamento ~45 min por dia; estuda pelo celular.</p>
+              <p class="cs-card__text"><strong>Dor principal</strong> apps longos ou pouco focados que levam à desistência.</p>
+              <p class="cs-card__text"><strong>Necessita</strong> sessão rápida, interface simples, progresso visível.</p>
             </div>
           </article>
-          <article class="cs-card">
+          <article class="cs-card cs-scenario">
             <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">Cenário</p>
             <p class="cs-card__text">Lucas pega metrô todos os dias. Ele abre o app Aprova Quest durante o trajeto, faz uma missão de 5 a 10 minutos, revisa rapidamente o que errou, ganha recompensa e volta motivado para estudar mais no dia seguinte.</p>
           </article>
           </div>
 
+          <h3 class="cs-journey-title">Jornada do usuário</h3>
           <div class="cs-journey">
             <div class="cs-journey__cell cs-journey__cell--head">Estágio</div>
             <div class="cs-journey__cell cs-journey__cell--head cs-journey__cell--acao">Ação principal do usuário</div>
@@ -235,7 +237,7 @@
           </div>
 
           <div class="cs-stage-list">
-            <details class="cs-stage">
+            <details class="cs-stage" open>
               <summary class="cs-stage__head"><span class="cs-stage__num">1</span><span>Instalação &amp; Primeiro Contato</span></summary>
               <div class="cs-stage__body">
                 <span class="cs-stage__label cs-stage__label--acao">Ação principal do usuário</span>
@@ -246,7 +248,7 @@
                 <p>Onboarding em 1 passo, missão inicial de 5 minutos para engajar imediatamente</p>
               </div>
             </details>
-            <details class="cs-stage" open>
+            <details class="cs-stage">
               <summary class="cs-stage__head"><span class="cs-stage__num">2</span><span>Uso Recorrente (Missão Diária)</span></summary>
               <div class="cs-stage__body">
                 <span class="cs-stage__label cs-stage__label--acao">Ação principal do usuário</span>
@@ -257,7 +259,7 @@
                 <p>Sistema de micro-metas, streak visual, feedback imediato</p>
               </div>
             </details>
-            <details class="cs-stage" open>
+            <details class="cs-stage">
               <summary class="cs-stage__head"><span class="cs-stage__num">3</span><span>Revisão &amp; Profundidade</span></summary>
               <div class="cs-stage__body">
                 <span class="cs-stage__label cs-stage__label--acao">Ação principal do usuário</span>
@@ -268,7 +270,7 @@
                 <p>Tela de "revisão de erros" destacada, relatório rápido de evolução</p>
               </div>
             </details>
-            <details class="cs-stage" open>
+            <details class="cs-stage">
               <summary class="cs-stage__head"><span class="cs-stage__num">4</span><span>Fidelização &amp; Compartilhamento</span></summary>
               <div class="cs-stage__body">
                 <span class="cs-stage__label cs-stage__label--acao">Ação principal do usuário</span>
@@ -319,7 +321,7 @@
           <h2 class="cs-section__title">Dos insights às decisões de produto</h2>
           <p class="cs-section__desc">Em vez de transformar cada descoberta em uma funcionalidade isolada, agrupei as oportunidades em alguns princípios para orientar o produto.</p>
         </div>
-        <div class="cs-grid-4 cs-carousel-tablet">
+        <div id="track-insights" data-dots class="cs-grid-4 cs-carousel-tablet">
           <article class="cs-card" style="align-items:center;text-align:center;background:rgba(255,255,255,0.5);">
             <p class="cs-card__title" style="font-size:clamp(14px,1.5vw,16px);">Missões diárias</p>
             <img src="../assets/images/aprova-quest/decision-missoes.svg" alt="" style="width:100%;max-width:240px;">
@@ -356,12 +358,15 @@
           <h3 class="cs-card__title" style="font-size:clamp(16px,1.8vw,20px);margin-bottom:16px;">Arquitetura da informação</h3>
           <p class="cs-section__desc">Organizei as principais áreas da aplicação buscando equilibrar acesso rápido às tarefas recorrentes e profundidade suficiente para funcionalidades mais específicas. A navegação principal foi concentrada nas áreas de maior recorrência da experiência.</p>
           <img src="../assets/images/aprova-quest/sitemap.png" alt="Mapa da arquitetura de informação do Aprova Quest, com as telas organizadas por área" style="width:100%;border-radius:24px;margin-top:24px;">
+          <span class="cs-sitemap-pill cs-tablet-only">Toque para ampliar</span>
+          <p class="cs-chips-title cs-tablet-only">Áreas do app</p>
+          <div class="cs-chips cs-tablet-only"><span class="cs-chip">Home</span><span class="cs-chip">Missões</span><span class="cs-chip">Mensagens</span><span class="cs-chip">Ajustes</span><span class="cs-chip">Planos</span><span class="cs-chip">Jogar</span><span class="cs-chip">Duelos</span><span class="cs-chip">Ranking</span><span class="cs-chip">Desafio do dia</span><span class="cs-chip">Desempenho</span><span class="cs-chip">Dicas</span></div>
         </div>
 
         <div>
           <h3 class="cs-card__title" style="font-size:clamp(16px,1.8vw,20px);margin-bottom:16px;">Projetando a jornada</h3>
-          <p class="cs-section__desc">Organizei as principais áreas da aplicação buscando equilibrar acesso rápido às tarefas recorrentes e profundidade suficiente para funcionalidades mais específicas. A navegação principal foi concentrada nas áreas de maior recorrência da experiência.</p>
-          <img src="../assets/images/aprova-quest/journey-flow.png" alt="Fluxo da jornada principal: entrar, entender o que fazer, estudar, acompanhar evolução e receber feedback" style="width:100%;border-radius:24px;margin-top:24px;">
+          <p class="cs-section__desc cs-hide-tablet">Organizei as principais áreas da aplicação buscando equilibrar acesso rápido às tarefas recorrentes e profundidade suficiente para funcionalidades mais específicas. A navegação principal foi concentrada nas áreas de maior recorrência da experiência.</p>
+          <img class="cs-hide-tablet" src="../assets/images/aprova-quest/journey-flow.png" alt="Fluxo da jornada principal: entrar, entender o que fazer, estudar, acompanhar evolução e receber feedback" style="width:100%;border-radius:24px;margin-top:24px;"><div class="cs-steps cs-tablet-only"><div class="cs-step cs-step--active"><span class="cs-step__num">1</span><span>Entrar</span></div><span class="cs-step-arrow">↓</span><div class="cs-step"><span class="cs-step__num">2</span><span>Entender o que fazer</span></div><span class="cs-step-arrow">↓</span><div class="cs-step"><span class="cs-step__num">3</span><span>Estudar</span></div><span class="cs-step-arrow">↓</span><div class="cs-step"><span class="cs-step__num">4</span><span>Receber feedback</span></div><span class="cs-step-arrow">↓</span><div class="cs-step"><span class="cs-step__num">5</span><span>Acompanhar evolução</span></div><span class="cs-step-arrow">↓</span><div class="cs-step"><span class="cs-step__num">6</span><span>Retornar</span></div></div>
         </div>
       </div>
     </section>
@@ -373,8 +378,8 @@
           <h2 class="cs-section__title">Do fluxo à interface</h2>
           <p class="cs-section__desc">Antes de trabalhar a camada visual, explorei diferentes formas de organizar conteúdos, ações e hierarquias através de wireframes.</p>
         </div>
-        <div>
-          <p class="cs-section__desc">O objetivo era validar principalmente:</p>
+        <div class="cs-goals">
+          <p class="cs-section__desc cs-goals__title">O objetivo era validar principalmente:</p>
           <ul class="cs-card__list" style="margin-top:8px;">
             <li>Prioridade das informações;</li>
             <li>Facilidade para encontrar as principais funcionalidades;</li>
@@ -384,7 +389,7 @@
         </div>
         <p class="cs-section__desc">Uma das decisões foi utilizar uma navegação inferior para as áreas mais recorrentes, mantendo as principais ações próximas à área natural de interação em dispositivos móveis e facilitando o acesso durante o uso com uma mão.</p>
         <div class="cs-wire-panel">
-        <div class="cs-wire-track">
+        <div id="track-wires" data-dots class="cs-wire-track">
           <img src="../assets/images/aprova-quest/wireframe-1.png" alt="Wireframe de tela do Aprova Quest" class="cs-wire">
           <img src="../assets/images/aprova-quest/wireframe-2.png" alt="Wireframe de tela do Aprova Quest" class="cs-wire">
           <img src="../assets/images/aprova-quest/wireframe-3.png" alt="Wireframe de tela do Aprova Quest" class="cs-wire">
@@ -406,7 +411,7 @@
           <p class="cs-section__desc">Com a estrutura principal definida, desenvolvi uma linguagem visual capaz de sustentar diferentes estados, funcionalidades e níveis de informação da aplicação.</p>
         </div>
         <p class="cs-section__desc">O Design System reuniu elementos como:</p>
-        <ul class="cs-card__list">
+        <ul class="cs-card__list cs-hide-tablet">
           <li>cores;</li>
           <li>tipografia;</li>
           <li>espaçamentos;</li>
@@ -414,6 +419,7 @@
           <li>estados;</li>
           <li>padrões de interação.</li>
         </ul>
+        <div class="cs-chips cs-tablet-only"><span class="cs-chip">Cores</span><span class="cs-chip">Tipografia</span><span class="cs-chip">Espaçamentos</span><span class="cs-chip">Componentes</span><span class="cs-chip">Estados</span><span class="cs-chip">Padrões de interação</span></div>
         <p class="cs-section__desc">Mais do que padronizar a interface, o sistema ajudou a garantir consistência durante a evolução do produto.</p>
         <img class="cs-ds-desktop" src="../assets/images/aprova-quest/design-system-showcase.png" alt="Design system do Aprova Quest: logomarca, paleta de cores, tipografias, mascote e componentes de botões e modais" style="width:100%;border-radius:24px;">
 
@@ -469,20 +475,20 @@
         <p class="cs-section__desc">Já os resultados ajudam a transformar dados de uso em uma visão mais clara da evolução e dos pontos que precisam de atenção.</p>
         <div class="cs-showcase">
           <div class="cs-showcase__track" id="solutionCarousel">
-            <figure class="cs-showcase__slide" data-title="Home">
+            <figure class="cs-showcase__slide" data-title="Home" data-tablet="HOME">
               <img src="../assets/images/aprova-quest/screen-home.png" alt="Tela Home do Aprova Quest">
             </figure>
-            <figure class="cs-showcase__slide" data-title="Questões">
+            <figure class="cs-showcase__slide" data-title="Questões" data-tablet="QUESTÕES">
               <img src="../assets/images/aprova-quest/solution-questoes.png" alt="Telas de questões do Aprova Quest">
             </figure>
-            <figure class="cs-showcase__slide" data-title="Duelos">
+            <figure class="cs-showcase__slide" data-title="Duelos" data-tablet="MÚLTIPLAS TELAS">
               <img src="../assets/images/aprova-quest/solution-geral.png" alt="Telas de duelos, ranking e mensagens do Aprova Quest">
             </figure>
-            <figure class="cs-showcase__slide" data-title="Planos">
+            <figure class="cs-showcase__slide" data-title="Planos" data-tablet="MÚLTIPLAS TELAS">
               <img src="../assets/images/aprova-quest/solution-planos.png" alt="Telas de planos de estudo do Aprova Quest">
             </figure>
           </div>
-          <p class="cs-showcase__title" id="solutionTitle">Home</p>
+          <p class="cs-showcase__title cs-hide-tablet" id="solutionTitle">Home</p>
           <div class="cs-showcase__dots" id="solutionDots">
             <button class="cs-showcase__dot is-active" type="button" aria-label="Home"></button>
             <button class="cs-showcase__dot" type="button" aria-label="Questões"></button>
@@ -543,6 +549,28 @@
         var index = Math.round(track.scrollLeft / track.clientWidth);
         setActive(Math.min(index, slides.length - 1));
       }, { passive: true });
+    })();
+  </script>
+  <script>
+    (function () {
+      document.querySelectorAll('[data-dots]').forEach(function (track) {
+        var count = track.children.length;
+        var wrap = document.createElement('div');
+        wrap.className = 'cs-track-dots';
+        for (var i = 0; i < count; i++) {
+          var dot = document.createElement('span');
+          dot.className = 'cs-track-dot' + (i === 0 ? ' is-active' : '');
+          wrap.appendChild(dot);
+        }
+        track.insertAdjacentElement('afterend', wrap);
+        track.addEventListener('scroll', function () {
+          var max = track.scrollWidth - track.clientWidth;
+          var index = max > 0 ? Math.round((track.scrollLeft / max) * (count - 1)) : 0;
+          wrap.querySelectorAll('.cs-track-dot').forEach(function (d, i) {
+            d.classList.toggle('is-active', i === index);
+          });
+        }, { passive: true });
+      });
     })();
   </script>
 </body>

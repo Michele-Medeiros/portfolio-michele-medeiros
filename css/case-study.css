@@ -1412,7 +1412,7 @@
   }
 
   .cs-step .cs-card__text {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--cs-text);
   }
@@ -1710,5 +1710,682 @@
 
   .cs-ds-accordion {
     display: flex;
+  }
+}
+
+/* ========================================================================
+   Aprova Quest — tablet fiel ao Figma (telas entre 500px e 980px)
+   ======================================================================== */
+.cs-hide-tablet,
+.cs-tablet-only,
+.cs-track-dots {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 980px) {
+  .cs-hide-tablet {
+    display: none !important;
+  }
+
+  .cs-tablet-only {
+    display: revert;
+  }
+
+  .cs-page .cs-section {
+    padding-inline: 48px;
+    padding-block: 40px;
+  }
+
+  .cs-page .cs-section__inner {
+    gap: 32px;
+  }
+
+  .cs-page .cs-section__head::before,
+  .cs-page .cs-section__inner > .cs-section__title::before,
+  .cs-page .cs-ds-row h2::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background: #5029de;
+    margin-bottom: 16px;
+  }
+
+  .cs-page .cs-ds-row h2 {
+    margin-bottom: 16px !important;
+  }
+
+  /* Hero */
+  .cs-hero__kicker {
+    display: none;
+  }
+
+  .cs-page .cs-hero {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    padding-block: 24px 40px;
+  }
+
+  .cs-page .cs-hero__main {
+    max-width: none !important;
+    gap: 16px;
+  }
+
+  .cs-hero__title {
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .cs-hero__desc {
+    font-size: 15px;
+  }
+
+  .cs-hero__aside {
+    width: 100%;
+  }
+
+  .cs-page .cs-hero__phone {
+    display: block;
+    width: 100%;
+    max-width: 330px !important;
+    margin: 0 auto;
+  }
+
+  /* Visão geral + metadados */
+  .cs-page .cs-ds-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .cs-page .cs-meta-panel--plain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    flex: none !important;
+    max-width: none !important;
+  }
+
+  .cs-page .cs-meta-panel--plain .cs-meta-panel__item {
+    background: rgba(255, 255, 255, 0.75);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 16px 18px;
+  }
+
+  .cs-page .cs-meta-panel--plain .cs-meta-panel__item:nth-child(n + 3) {
+    grid-column: 1 / -1;
+  }
+
+  .cs-page .cs-meta-panel--plain .cs-meta-panel__label {
+    color: #5029de;
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .cs-page .cs-meta-panel--plain .cs-meta-panel__value {
+    color: #151414;
+    font-size: 15px;
+  }
+
+  /* O projeto em 30 segundos */
+  .cs-page #track-30s {
+    gap: 20px;
+  }
+
+  .cs-page #track-30s > * {
+    flex: 0 0 calc(50% - 10px) !important;
+    min-width: 0 !important;
+  }
+
+  .cs-card[style*="#dfdfdf"] {
+    background: #ebe8f7 !important;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+  }
+
+  .cs-card[style*="#dfdfdf"] .cs-card__title {
+    font-size: 20px !important;
+    text-transform: none;
+    font-weight: 600;
+    color: #151414;
+  }
+
+  .cs-card[style*="#dfdfdf"] p[style*="italic"] {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .cs-feature-list__title {
+    color: #5029de;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .cs-divider-squiggle {
+    display: none;
+  }
+
+  /* Entendendo os usuários */
+  .cs-divider-line {
+    display: none;
+  }
+
+  .cs-fact-row--stack {
+    gap: 0;
+  }
+
+  .cs-fact-row--stack .cs-fact + .cs-fact {
+    border-top: 1px solid #d7d7d7;
+    padding-top: 24px;
+    margin-top: 24px;
+  }
+
+  .cs-fact__num {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    color: #5029de;
+  }
+
+  .cs-fact__value {
+    font-size: 22px;
+    color: #151414;
+    margin-bottom: 8px;
+  }
+
+  .cs-fact:last-child .cs-fact__value {
+    color: #5029de;
+    font-size: 26px;
+  }
+
+  .cs-fact__label {
+    font-size: 15px;
+  }
+
+  /* O que descobri */
+  .cs-page .cs-grid-2 {
+    gap: 16px;
+  }
+
+  .cs-page .cs-grid-2 > .cs-card {
+    background: #fbfbfb !important;
+    border: 2px solid #fff;
+    padding: 24px;
+    gap: 14px;
+  }
+
+  .cs-num {
+    display: block;
+    color: #5029de;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .cs-page .cs-grid-2 .cs-card__title {
+    font-size: 20px !important;
+    line-height: 1.3;
+    text-transform: none;
+    font-weight: 600;
+    color: #151414;
+  }
+
+  .cs-opp {
+    background: #ebe8f7;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .cs-opp .cs-card__text {
+    color: #151414;
+  }
+
+  .cs-opp > p:first-child {
+    color: #5029de !important;
+    font-weight: 600 !important;
+  }
+
+  /* Usuário e produto */
+  .cs-page .cs-personas-panel {
+    background: none;
+    padding: 0;
+    gap: 24px;
+  }
+
+  .cs-page .cs-personas-top {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cs-page .cs-personas-top > * {
+    flex: none !important;
+    width: 100%;
+  }
+
+  .cs-persona {
+    display: grid !important;
+    grid-template-columns: 96px 1fr;
+    column-gap: 16px;
+    row-gap: 8px;
+    align-items: start !important;
+    background: #fbfbfb !important;
+    border: 2px solid #fff;
+    padding: 24px;
+  }
+
+  .cs-persona > img {
+    grid-row: 1 / span 2;
+    width: 96px !important;
+    height: 96px !important;
+  }
+
+  .cs-persona__head {
+    display: contents;
+  }
+
+  .cs-persona__name {
+    grid-column: 2;
+    font-size: 20px !important;
+    text-transform: none;
+    margin-bottom: 0 !important;
+  }
+
+  .cs-persona__age {
+    grid-column: 2;
+    margin-top: -6px;
+  }
+
+  .cs-persona > .cs-card__text:not(.cs-persona__age) {
+    grid-column: 1 / -1;
+  }
+
+  .cs-persona strong {
+    display: block;
+    color: #5029de;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .cs-persona strong::after {
+    content: none;
+  }
+
+  .cs-scenario {
+    background: #e9e6f6 !important;
+    border: 2px solid #fff;
+    padding: 24px;
+  }
+
+  .cs-scenario .cs-card__title {
+    color: #5029de;
+    font-size: 14px !important;
+    text-transform: none;
+  }
+
+  .cs-journey-title {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #151414;
+    margin-top: 8px;
+  }
+
+  .cs-stage {
+    border-color: #fff;
+    background: #fbfbfb;
+  }
+
+  .cs-stage[open] {
+    border-color: #a797e8;
+  }
+
+  .cs-stage__head {
+    font-size: 17px;
+  }
+
+  .cs-stage__body p {
+    font-size: 15px;
+  }
+
+  /* Para o usuário / produto */
+  .cs-page .cs-arrow-row {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .cs-page .cs-arrow-row > .cs-arrow-col {
+    flex: 1 1 0;
+    align-items: flex-start;
+    text-align: left;
+    padding: 24px;
+    gap: 12px;
+    background: #fbfbfb;
+    border: 2px solid #fff !important;
+    border-radius: 24px;
+  }
+
+  .cs-page .cs-arrow-row > .cs-arrow-col:last-child {
+    background: #e9e6f6;
+  }
+
+  .cs-arrow-col__title {
+    color: #5029de;
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .cs-arrow-item {
+    position: relative;
+    padding-left: 22px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .cs-arrow-item::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 7px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #5029de;
+  }
+
+  .cs-arrow-icon {
+    display: none;
+  }
+
+  /* Dos insights (carrossel) */
+  .cs-page #track-insights {
+    gap: 16px;
+  }
+
+  .cs-page #track-insights > .cs-card {
+    flex: 0 0 300px !important;
+    background: #fbfbfb !important;
+    border: 2px solid #fff;
+    padding: 24px;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 16px;
+  }
+
+  .cs-page #track-insights .cs-card__title {
+    font-size: 20px !important;
+    text-transform: none;
+    text-align: left;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #151414;
+  }
+
+  .cs-page #track-insights .cs-card__text {
+    text-align: left !important;
+  }
+
+  .cs-page #track-insights img {
+    align-self: center;
+  }
+
+  /* Definindo a experiência */
+  .cs-sitemap-pill {
+    align-self: center;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 16px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: #e9e6f6;
+    color: #5029de;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .cs-chips-title {
+    color: #5029de;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 24px 0 12px;
+  }
+
+  .cs-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .cs-chip {
+    padding: 8px 16px;
+    border: 1px solid #dcdae3;
+    border-radius: 999px;
+    background: #fff;
+    font-size: 14px;
+    color: #151414;
+  }
+
+  .cs-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 16px;
+  }
+
+  .cs-step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    background: #fbfbfb;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .cs-step__num {
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    border-radius: 50%;
+    background: #5029de;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .cs-step--active {
+    background: #5029de;
+    color: #fff;
+  }
+
+  .cs-step--active .cs-step__num {
+    background: #fff;
+    color: #5029de;
+  }
+
+  .cs-step-arrow {
+    align-self: center;
+    color: #5029de;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  /* Do fluxo à interface */
+  .cs-page .cs-wire-panel {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .cs-page .cs-wire-track {
+    gap: 12px;
+  }
+
+  .cs-page .cs-wire {
+    flex: 0 0 220px;
+    width: 220px;
+    border-radius: 14px;
+  }
+
+  .cs-goals {
+    background: #e9e6f6;
+    border-radius: 24px;
+    padding: 24px;
+  }
+
+  .cs-goals__title {
+    color: #5029de !important;
+    font-size: 17px !important;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .cs-goals .cs-card__list {
+    list-style: none;
+    padding-left: 0;
+    gap: 12px;
+    color: #151414;
+  }
+
+  .cs-goals .cs-card__list li {
+    position: relative;
+    padding-left: 22px;
+    font-size: 15px;
+  }
+
+  .cs-goals .cs-card__list li::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 7px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #5029de;
+  }
+
+  /* Criando consistência */
+  .cs-chips .cs-chip {
+    background: #e9e6f6;
+    border-color: transparent;
+    color: #5029de;
+    font-weight: 600;
+  }
+
+  .cs-ds-item {
+    border-width: 2px;
+  }
+
+  /* Ajustes compartilhados dos carrosséis de tablet */
+  .cs-track-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .cs-track-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+    background: #c9c7d3;
+  }
+
+  .cs-track-dot.is-active {
+    width: 24px;
+    background: #5029de;
+  }
+
+  /* A solução */
+  .cs-showcase {
+    background: none;
+    padding: 0;
+    gap: 16px;
+  }
+
+  .cs-showcase__track {
+    gap: 16px;
+  }
+
+  .cs-showcase__slide {
+    flex: 0 0 340px;
+    background: none;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-align: start;
+  }
+
+  .cs-showcase__slide img {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .cs-showcase__slide::after {
+    content: attr(data-tablet);
+    margin-top: 12px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    color: #151414;
+  }
+
+  .cs-showcase__dots {
+    gap: 8px;
+  }
+
+  .cs-showcase__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+    border: none;
+    background: #c9c7d3;
+  }
+
+  .cs-showcase__dot.is-active {
+    width: 24px;
+    background: #5029de;
+  }
+
+  .cs-page .cs-section__desc[style*="#5029de"] {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  /* O que aprendi */
+  .cs-video-box {
+    aspect-ratio: auto;
+    height: 420px;
+  }
+
+  /* Rodapé */
+  .cs-page ~ .site-footer {
+    background: #3f10dc;
+    color: #fff;
+  }
+
+  .cs-page ~ .site-footer a {
+    color: #fff;
+  }
+
+  .cs-page ~ .site-footer .site-footer__icon {
+    filter: brightness(0) invert(1);
+  }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+  .cs-page .cs-section {
+    padding-inline: 24px;
   }
 }
