@@ -3364,3 +3364,442 @@
     display: none;
   }
 }
+
+/* Aprova Quest — mobile: Dos insights às decisões de produto */
+.cs-kicker-mobile {
+  display: none;
+}
+
+@media (max-width: 499px) {
+  .page-aprova-quest .cs-page .cs-kicker-mobile {
+    display: block;
+    background: #ebe8f7;
+    color: #5029de;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin: 0;
+  }
+
+  .page-aprova-quest .cs-page #track-insights {
+    gap: 16px;
+  }
+
+  .page-aprova-quest .cs-page #track-insights > .cs-card {
+    flex: 0 0 280px !important;
+    background: #fbfbfb !important;
+    border: 2px solid #fff;
+    padding: 20px;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 14px;
+  }
+
+  .page-aprova-quest .cs-page #track-insights .cs-card__title {
+    font-size: 20px !important;
+    text-transform: none;
+    text-align: left;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #151414;
+  }
+
+  .page-aprova-quest .cs-page #track-insights .cs-card__text {
+    text-align: left !important;
+    font-size: 15px;
+  }
+
+  .page-aprova-quest .cs-page #track-insights img {
+    align-self: center;
+  }
+}
+
+/* Aprova Quest — mobile: Definindo a experiência */
+@media (max-width: 499px) {
+  .page-aprova-quest .cs-hide-tablet {
+    display: none !important;
+  }
+
+  .page-aprova-quest .cs-tablet-only {
+    display: block;
+  }
+
+  .page-aprova-quest .cs-sitemap-pill {
+    display: inline-flex;
+    align-self: center;
+    align-items: center;
+    margin-top: 16px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: #e9e6f6;
+    color: #5029de;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .page-aprova-quest .cs-chips-title {
+    color: #5029de;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 24px 0 12px;
+  }
+
+  .page-aprova-quest .cs-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .page-aprova-quest .cs-chip {
+    padding: 8px 14px;
+    border: 1px solid #dcdae3;
+    border-radius: 999px;
+    background: #fff;
+    font-size: 14px;
+    color: #151414;
+  }
+
+  .page-aprova-quest .cs-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 16px;
+  }
+
+  .page-aprova-quest .cs-step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px;
+    background: #fbfbfb;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .page-aprova-quest .cs-step__num {
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    border-radius: 50%;
+    background: #5029de;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .page-aprova-quest .cs-step--active {
+    background: #5029de;
+    color: #fff;
+  }
+
+  .page-aprova-quest .cs-step--active .cs-step__num {
+    background: #fff;
+    color: #5029de;
+  }
+
+  .page-aprova-quest .cs-step-arrow {
+    align-self: center;
+    color: #5029de;
+    font-size: 18px;
+    line-height: 1;
+  }
+}
+
+/* Aprova Quest — mobile: Do fluxo à interface */
+@media (max-width: 499px) {
+  .page-aprova-quest .cs-wire-panel {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .page-aprova-quest .cs-wire-track {
+    gap: 12px;
+  }
+
+  .page-aprova-quest .cs-wire {
+    flex: 0 0 220px;
+    width: 220px;
+    border-radius: 14px;
+  }
+
+  .page-aprova-quest .cs-goals {
+    background: #e9e6f6;
+    border-radius: 24px;
+    padding: 20px;
+  }
+
+  .page-aprova-quest .cs-goals__title {
+    color: #5029de !important;
+    font-size: 16px !important;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .page-aprova-quest .cs-goals .cs-card__list {
+    list-style: none;
+    padding-left: 0;
+    gap: 12px;
+    color: #151414;
+  }
+
+  .page-aprova-quest .cs-goals .cs-card__list li {
+    position: relative;
+    padding-left: 22px;
+    font-size: 15px;
+  }
+
+  .page-aprova-quest .cs-goals .cs-card__list li::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 7px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #5029de;
+  }
+}
+
+/* ========================================================================
+   Sintonize — mobile (<500px), matching the dedicated Figma "Mobile" frame
+   ======================================================================== */
+@media (max-width: 499px) {
+  .page-sintonize .cs-chapter-nav {
+    display: flex;
+    padding-inline: 20px;
+  }
+
+  .page-sintonize #contexto,
+  .page-sintonize #produto,
+  .page-sintonize #design,
+  .page-sintonize #sistema,
+  .page-sintonize #entrega {
+    scroll-margin-top: 70px;
+  }
+
+  .page-sintonize .cs-section {
+    padding-block: 32px;
+    padding-inline: 20px;
+  }
+
+  .page-sintonize #contexto.cs-section {
+    padding-block: 0;
+  }
+
+  /* Hero — stacked, in Figma's mobile order: kicker, titles, desc, CTA, phone, quote, stats */
+  .page-sintonize .cs-hero {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding-block: 20px 32px;
+  }
+
+  .page-sintonize .cs-hero__main {
+    display: contents;
+  }
+
+  .page-sintonize .cs-hero__aside {
+    display: contents;
+  }
+
+  .page-sintonize .cs-hero__kicker {
+    order: 1;
+  }
+
+  .page-sintonize .cs-hero__titles {
+    order: 2;
+    gap: 0;
+  }
+
+  .page-sintonize .cs-hero__title {
+    font-size: 52px;
+    line-height: 55px;
+  }
+
+  .page-sintonize .cs-hero__subtitle {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .page-sintonize .cs-hero__desc {
+    order: 3;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .page-sintonize .cs-hero__cta {
+    order: 4;
+    max-width: none;
+    background: var(--cs-orange-cta);
+    color: #151414;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 15px 24px;
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .page-sintonize .cs-hero__phone {
+    order: 5;
+    display: block;
+    width: 260px;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .page-sintonize .cs-hero__quote {
+    order: 6;
+    font-size: 16px;
+    line-height: 25px;
+    border-left-color: var(--cs-orange-cta);
+  }
+
+  .page-sintonize .cs-hero__stats {
+    order: 7;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .page-sintonize .cs-stat {
+    flex: none;
+    align-items: flex-start;
+    text-align: left;
+    gap: 6px;
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .page-sintonize .cs-stat__value {
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .page-sintonize .cs-stat__label {
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+}
+
+/* Aprova Quest — mobile: Criando consistência */
+@media (max-width: 499px) {
+  .page-aprova-quest .cs-chips .cs-chip {
+    background: #e9e6f6;
+    border-color: transparent;
+    color: #5029de;
+    font-weight: 600;
+  }
+}
+
+/* Aprova Quest — mobile: A solução */
+@media (max-width: 499px) {
+  .page-aprova-quest .cs-showcase {
+    background: none;
+    padding: 0;
+    gap: 16px;
+  }
+
+  .page-aprova-quest .cs-showcase__track {
+    gap: 16px;
+  }
+
+  .page-aprova-quest .cs-showcase__slide {
+    flex: 0 0 300px;
+    background: none;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-align: start;
+  }
+
+  .page-aprova-quest .cs-showcase__slide img {
+    width: 280px;
+    max-width: 100%;
+  }
+
+  .page-aprova-quest .cs-showcase__slide::after {
+    content: attr(data-tablet);
+    margin-top: 12px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    color: #151414;
+  }
+
+  .page-aprova-quest .cs-showcase__dots {
+    gap: 8px;
+  }
+
+  .page-aprova-quest .cs-showcase__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+    border: none;
+    background: #c9c7d3;
+  }
+
+  .page-aprova-quest .cs-showcase__dot.is-active {
+    width: 24px;
+    background: #5029de;
+  }
+
+  .page-aprova-quest .cs-page .cs-section__desc[style*="#5029de"] {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+/* Aprova Quest — mobile: O que aprendi e rodapé */
+.cs-footer-br {
+  display: none;
+}
+
+@media (max-width: 499px) {
+  .page-aprova-quest .cs-page .cs-section__desc[style*="#5029de"] {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .page-aprova-quest .cs-video-box {
+    aspect-ratio: auto;
+    height: 220px;
+  }
+
+  .page-aprova-quest .cs-footer-sep {
+    display: none;
+  }
+
+  .page-aprova-quest .cs-footer-br {
+    display: block;
+  }
+
+  .page-aprova-quest .cs-page ~ .site-footer {
+    background: #3f10dc;
+    color: #fff;
+    padding: 28px 20px;
+  }
+
+  .page-aprova-quest .cs-page ~ .site-footer .site-footer__text {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .page-aprova-quest .cs-page ~ .site-footer a {
+    color: #fff;
+  }
+
+  .page-aprova-quest .cs-page ~ .site-footer .site-footer__icon {
+    filter: brightness(0) invert(1);
+  }
+}
