@@ -3283,4 +3283,109 @@ body {
     line-height: 1.5;
     color: #56565a;
   }
+
+  /* Seção 9 (mobile): Quando deveríamos fundir ou não fluxos
+     Dois cards empilhados com padding de 20px, listas com marcadores SVG
+     de 8 × 16px e gap de 12px entre os cards. */
+  .seplag-mobile__flows {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__flows-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__flows-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__flows-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__flows-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__flows-card--light {
+    background: #fff;
+    border: 1px solid #e4e4e8;
+  }
+
+  .seplag-mobile__flows-card--dark {
+    background: #122f5d;
+  }
+
+  .seplag-mobile__flows-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .seplag-mobile__flows-label--light {
+    color: #5029de;
+  }
+
+  .seplag-mobile__flows-label--dark {
+    color: #f79c05;
+  }
+
+  .seplag-mobile__flows-heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__flows-heading--light {
+    color: #fff;
+  }
+
+  .seplag-mobile__flows-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-mobile__flows-items li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .seplag-mobile__flows-items img {
+    width: 8px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+  .seplag-mobile__flows-items--light {
+    color: #dce2f0;
+  }
 }
