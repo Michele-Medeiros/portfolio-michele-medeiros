@@ -2603,4 +2603,73 @@ body {
     text-align: center;
     color: #56565a;
   }
+
+  /* Seção 16 (tablet): High fidelity
+     Três cards de largura total com padding de 24px. Capturas com 1440 / 1024
+     e altura de 443px (a da tela de início, 456px). */
+  .seplag-tablet__hifi {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__hifi-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__hifi-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__hifi-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 24px;
+  }
+
+  .seplag-tablet__hifi-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__hifi-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__hifi-media {
+    width: 100%;
+    height: 443px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .seplag-tablet__hifi-media--home {
+    height: 456px;
+  }
+
+  .seplag-tablet__hifi-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
