@@ -3595,4 +3595,64 @@ body {
     height: 100%;
     object-fit: contain;
   }
+
+  /* Seção 14 (mobile): Design orientado por estados
+     Cards brancos de 169 × 135px em grade de duas colunas, com ícone de
+     32px e rótulo em caixa-alta centralizados. */
+  .seplag-mobile__states {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__states-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__states-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__states-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .seplag-mobile__state-card {
+    flex: 0 0 calc(50% - 6px);
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 24px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-mobile__state-card img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .seplag-mobile__state-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
 }
