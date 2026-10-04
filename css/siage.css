@@ -1,0 +1,246 @@
+/* ========================================================================
+   SIAGE case study
+   ======================================================================== */
+
+/* Hero
+   ======================================================================== */
+.siage-hero {
+  width: 100%;
+  max-width: 1598px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.siage-hero__main {
+  flex: 0 1 816px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.siage-hero__kicker {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  color: var(--cs-navy);
+}
+
+.siage-hero__title {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 1.45;
+  color: var(--cs-text-body);
+}
+
+.siage-hero__desc {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: var(--cs-text-body);
+}
+
+.siage-hero__quote {
+  padding-left: 12px;
+  border-left: 4px solid var(--cs-orange);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.55;
+  text-align: justify;
+  color: var(--cs-text-body);
+}
+
+.siage-facts {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.siage-fact {
+  width: 231px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid var(--cs-card-border);
+  border-radius: 24px;
+}
+
+.siage-fact__label {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+.siage-fact__text {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: var(--cs-text-secondary);
+}
+
+.siage-hero__aside {
+  position: relative;
+  flex: 0 1 649.5px;
+  min-width: 0;
+}
+
+.siage-hero__frame {
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.siage-hero__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1440 / 1299;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.siage-hero__badge {
+  position: absolute;
+  left: 52.5%;
+  bottom: 0;
+  width: 294px;
+  height: 112px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #022859;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.siage-hero__badge-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.siage-hero__badge-text {
+  font-size: 14px;
+  line-height: 2;
+}
+
+/* Cards (O projeto em 30 segundos)
+   ======================================================================== */
+.siage-cards {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+}
+
+.siage-card {
+  flex: 1 0 0;
+  min-width: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.siage-card--dark {
+  background: #022859;
+}
+
+.siage-card__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+.siage-card--dark .siage-card__title {
+  color: #fff;
+}
+
+.siage-card__text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: var(--cs-text-body);
+}
+
+.siage-card--dark .siage-card__text {
+  color: #fff;
+}
+
+.siage-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: var(--cs-pill-bg);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+/* Responsivo
+   ======================================================================== */
+@media (max-width: 1400px) {
+  .siage-hero {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .siage-hero__main,
+  .siage-hero__aside {
+    flex: none;
+    width: 100%;
+  }
+
+  .siage-hero__title {
+    font-size: 48px;
+  }
+
+  .siage-hero__aside {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .siage-facts,
+  .siage-cards {
+    flex-direction: column;
+  }
+
+  .siage-fact {
+    width: 100%;
+  }
+
+  .siage-hero__title {
+    font-size: 40px;
+  }
+
+  .siage-hero__badge {
+    left: auto;
+    right: 16px;
+    width: 60%;
+    max-width: 294px;
+  }
+
+  .siage-hero__desc,
+  .siage-hero__quote {
+    font-size: 18px;
+  }
+}
