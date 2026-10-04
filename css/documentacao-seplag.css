@@ -2425,4 +2425,182 @@ body {
     color: #151414;
     white-space: nowrap;
   }
+
+  /* Seção 15 (tablet): Design System para escalar
+     Cartão branco (padding 24px, raio 24px) com blocos separados por divisores
+     de 1px e gap de 16px. Os chips de componentes formam duas colunas de 304px. */
+  .seplag-tablet__ds {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__ds-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__ds-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__ds-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 24px;
+  }
+
+  .seplag-tablet__ds-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-tablet__ds-heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-tablet__ds-body {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-tablet__ds-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.32px;
+    color: #3b3b3e;
+    white-space: nowrap;
+  }
+
+  .seplag-tablet__ds-value {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  .seplag-tablet__ds-swatches {
+    display: flex;
+    gap: 15px;
+  }
+
+  .seplag-tablet__ds-swatch {
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+  }
+
+  .seplag-tablet__ds-divider {
+    height: 1px;
+    border: 0;
+    background: #e4e4e8;
+  }
+
+  .seplag-tablet__ds-specimen {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 247px;
+    padding: 10px 6px;
+    background: #f6f1f5;
+    border-radius: 6px;
+    color: #56565a;
+    line-height: 18px;
+  }
+
+  .seplag-tablet__ds-specimen-line--semibold {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .seplag-tablet__ds-specimen-line--medium {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .seplag-tablet__ds-specimen-line--regular {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .seplag-tablet__ds-status-row {
+    display: flex;
+    gap: 50px;
+  }
+
+  .seplag-tablet__ds-status {
+    flex: 1 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #fefefe;
+    white-space: nowrap;
+  }
+
+  .seplag-tablet__ds-status--review {
+    background: #311e3b;
+  }
+
+  .seplag-tablet__ds-status--fix {
+    background: #9e76b3;
+  }
+
+  .seplag-tablet__ds-status--approved {
+    background: #0b7816;
+  }
+
+  .seplag-tablet__ds-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .seplag-tablet__ds-chip {
+    flex: 0 1 304px;
+    min-width: 0;
+    padding: 10px 0;
+    border-radius: 8px;
+    background: #f5f0f5;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.3;
+    text-align: center;
+    color: #56565a;
+  }
 }
