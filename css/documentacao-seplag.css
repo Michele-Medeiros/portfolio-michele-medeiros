@@ -616,4 +616,90 @@ body {
     letter-spacing: 0.4px;
     color: #56565a;
   }
+
+  /* Seção 7: Princípios de design
+     Figma: frame 1728 × 744, padding lateral 65px, gap vertical 50px.
+     Linha 1 com 3 cards; linha 2 com 2 cards centralizados (largura 1049px). */
+  .seplag-principles {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-principles__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-principles__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-principles__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-principles__rows {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .seplag-principles__row {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+  }
+
+  .seplag-principles__row--centered {
+    justify-content: center;
+    width: 1049px;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .seplag-principles__card {
+    flex: 1 0 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-principles__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-principles__card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
 }
