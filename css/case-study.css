@@ -3752,6 +3752,31 @@
   .page-sintonize .cs-cards-row--intro .cs-card--dark .cs-pill {
     color: #fff;
   }
+
+  /* "Projetando a experiência completa" — chip-tag cards, matching Figma mobile */
+  .page-sintonize .cs-cards-row--exp .cs-card__title {
+    font-size: 18px;
+    text-transform: none;
+  }
+
+  .page-sintonize .cs-cards-row--exp .cs-card__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .page-sintonize .cs-cards-row--exp .cs-card__list li {
+    background: #edebfc;
+    color: #5029de;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 6px 12px;
+    border-radius: 100px;
+  }
 }
 
 /* Aprova Quest — mobile: Criando consistência */
