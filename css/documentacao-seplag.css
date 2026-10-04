@@ -1889,4 +1889,65 @@ body {
     line-height: 1.5;
     color: #252628;
   }
+
+  /* Seção 6 (tablet): Princípios de design
+     Cards de 328px com altura de 142px em grade que quebra linha; o último
+     card da grade fica na primeira coluna, como no frame. */
+  .seplag-tablet__principles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__principles-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__principles-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__principles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__principle-card {
+    flex: 0 1 328px;
+    max-width: 328px;
+    min-height: 142px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-tablet__principle-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__principle-text-small {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
 }
