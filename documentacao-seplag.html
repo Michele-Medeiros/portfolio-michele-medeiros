@@ -16,14 +16,17 @@
   <div class="seplag-doc">
 
     <!-- Seção 1: Cabeçalho -->
-    <header class="seplag-doc__header">
-      <nav class="seplag-doc__nav" aria-label="Navegação principal">
-        <p class="seplag-doc__brand">Michele Medeiros</p>
-        <div class="seplag-doc__links">
-          <a href="index.html" class="seplag-doc__link">Home</a>
-          <a href="sobre-mim.html" class="seplag-doc__link">Sobre mim</a>
-          <a href="projetos.html" class="seplag-doc__link is-active" aria-current="page">Projetos</a>
-          <a href="index.html#contato" class="seplag-doc__link">Contatos</a>
+    <header class="navbar-wrap">
+      <nav class="navbar container" aria-label="Navegação principal">
+        <a href="index.html" class="navbar__brand">Michele Medeiros</a>
+        <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="navbar__links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="sobre-mim.html">Sobre mim</a>
+          <a href="projetos.html" class="is-active">Projetos</a>
+          <a href="index.html#contato">Contatos</a>
         </div>
       </nav>
     </header>
@@ -547,5 +550,13 @@
 
   </div>
 
+  <footer class="site-footer" id="contato">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">2026 MICHELE MEDEIROS | Entre em contato: <a href="mailto:michelefmedeiros@gmail.com?subject=Contato%20via%20portf%C3%B3lio">michelefmedeiros@gmail.com</a></p>
+      <a href="https://www.linkedin.com/in/michele-franca-medeiros/" target="_blank" rel="noopener"><img class="site-footer__icon" src="assets/images/icons/linkedin-box-fill.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
