@@ -1,0 +1,1677 @@
+/* ========================================================================
+   SIAGE case study
+   ======================================================================== */
+
+/* Hero
+   ======================================================================== */
+.siage-hero {
+  width: 100%;
+  max-width: 1598px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.siage-hero__main {
+  flex: 0 1 816px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.siage-hero__kicker {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  color: var(--cs-navy);
+}
+
+.siage-hero__title {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 1.45;
+  color: var(--cs-text-body);
+}
+
+.siage-hero__desc {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: var(--cs-text-body);
+}
+
+.siage-hero__quote {
+  padding-left: 12px;
+  border-left: 4px solid var(--cs-orange);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.55;
+  text-align: justify;
+  color: var(--cs-text-body);
+}
+
+.siage-facts {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.siage-fact {
+  width: 231px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid var(--cs-card-border);
+  border-radius: 24px;
+}
+
+.siage-fact__label {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+.siage-fact__text {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: var(--cs-text-secondary);
+}
+
+.siage-hero__aside {
+  position: relative;
+  flex: 0 1 649.5px;
+  min-width: 0;
+}
+
+.siage-hero__frame {
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.siage-hero__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1440 / 1299;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.siage-hero__badge {
+  position: absolute;
+  left: 52.5%;
+  bottom: 0;
+  width: 294px;
+  height: 112px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #022859;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.siage-hero__badge-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.siage-hero__badge-text {
+  font-size: 14px;
+  line-height: 2;
+}
+
+/* Cards (O projeto em 30 segundos)
+   ======================================================================== */
+.siage-cards {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+}
+
+.siage-card {
+  flex: 1 0 0;
+  min-width: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.siage-card--dark {
+  background: #022859;
+}
+
+.siage-card__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+.siage-card--dark .siage-card__title {
+  color: #fff;
+}
+
+.siage-card__text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: var(--cs-text-body);
+}
+
+.siage-card--dark .siage-card__text {
+  color: #fff;
+}
+
+.siage-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: var(--cs-pill-bg);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+/* Responsivo
+   ======================================================================== */
+@media (max-width: 1400px) {
+  .siage-hero {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .siage-hero__main,
+  .siage-hero__aside {
+    flex: none;
+    width: 100%;
+  }
+
+  .siage-hero__title {
+    font-size: 48px;
+  }
+
+  .siage-hero__aside {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .siage-facts,
+  .siage-cards {
+    flex-direction: column;
+  }
+
+  .siage-fact {
+    width: 100%;
+  }
+
+  .siage-hero__title {
+    font-size: 40px;
+  }
+
+  .siage-hero__badge {
+    left: auto;
+    right: 16px;
+    width: 60%;
+    max-width: 294px;
+  }
+
+  .siage-hero__desc,
+  .siage-hero__quote {
+    font-size: 18px;
+  }
+}
+
+/* Seções de texto (O projeto em 30 segundos)
+   ======================================================================== */
+.siage-intro {
+  gap: 32px;
+}
+
+.siage-section-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: var(--cs-text);
+}
+
+.siage-section-desc {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: var(--cs-text-body);
+}
+
+/* Meu papel no projeto
+   ======================================================================== */
+.siage-role {
+  gap: 32px;
+}
+
+.siage-role__head {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.siage-role__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+.siage-role__desc {
+  font-size: 24px;
+  line-height: 55px;
+  text-align: justify;
+  color: var(--cs-text);
+}
+
+.siage-role__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px 50px;
+}
+
+.siage-role__card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.siage-role__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+.siage-role__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: var(--cs-text-secondary);
+}
+
+@media (max-width: 1000px) {
+  .siage-role__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .siage-role__title {
+    font-size: 32px;
+  }
+
+  .siage-role__desc {
+    line-height: 1.8;
+    font-size: 18px;
+  }
+}
+
+/* Cards numerados (Projetando para múltiplos contextos e Entendendo quem usaria o sistema)
+   ======================================================================== */
+.siage-steps {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+}
+
+.siage-step {
+  flex: 1 0 0;
+  min-width: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.siage-step__head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.siage-step__num {
+  flex-shrink: 0;
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: var(--cs-pill-bg);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  color: var(--cs-text);
+}
+
+.siage-step__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+.siage-step__title--lg {
+  font-size: 20px;
+}
+
+.siage-step__text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: var(--cs-text-secondary);
+}
+
+@media (max-width: 800px) {
+  .siage-steps {
+    flex-direction: column;
+  }
+}
+
+/* Design orientado por estados (A solução)
+   ======================================================================== */
+.siage-solution {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.siage-solution-lead {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: var(--cs-text);
+}
+
+.siage-states {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+}
+
+.siage-state {
+  flex: 1 0 0;
+  min-width: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.siage-state__dot {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.siage-state__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+.siage-state__text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: var(--cs-text-secondary);
+}
+
+@media (max-width: 1000px) {
+  .siage-states {
+    flex-wrap: wrap;
+  }
+
+  .siage-state {
+    flex: 1 1 calc(50% - 25px);
+  }
+}
+
+@media (max-width: 800px) {
+  .siage-states {
+    flex-direction: column;
+  }
+
+  .siage-state {
+    flex: none;
+  }
+}
+
+/* Uma jornada em destaque
+   ======================================================================== */
+.siage-journey__lead {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: var(--cs-text);
+}
+
+.siage-journey {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.siage-journey__step {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #c3c3c4;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.siage-journey__text {
+  flex: 0 0 36%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #fff;
+}
+
+.siage-journey__label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #022859;
+}
+
+.siage-journey__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.siage-journey__desc {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: var(--cs-text-secondary);
+}
+
+.siage-journey__screen {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  background: #d7d7d7;
+}
+
+.siage-journey__img {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+  width: calc(100% - 64px);
+  height: calc(100% - 48px);
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+}
+
+@media (max-width: 1000px) {
+  .siage-journey__step {
+    flex-direction: column;
+  }
+
+  .siage-journey__text {
+    flex: none;
+  }
+
+  .siage-journey__screen {
+    aspect-ratio: auto !important;
+    padding: 24px 32px;
+  }
+
+  .siage-journey__img {
+    position: static;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* High fidelity
+   ======================================================================== */
+.siage-hifi__lead {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: var(--cs-text);
+}
+
+.siage-hifi {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 49px;
+}
+
+.siage-hifi__card {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 500px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #fefefe;
+  border-radius: 12px;
+}
+
+.siage-hifi__shot {
+  position: relative;
+  width: 100%;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.siage-hifi__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.siage-hifi__caption {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+}
+
+.siage-hifi__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+.siage-hifi__text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: var(--cs-text-secondary);
+}
+
+@media (max-width: 1100px) {
+  .siage-hifi {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .siage-hifi__card {
+    max-width: none;
+  }
+}
+
+/* Tablet (500px a 999px)
+   ======================================================================== */
+@media (min-width: 500px) and (max-width: 999px) {
+  .siage-hero-section {
+    padding: 0;
+  }
+
+  .siage-hero {
+    padding: 40px 48px 48px;
+    gap: 16px;
+  }
+
+  .siage-hero__main {
+    gap: 16px;
+  }
+
+  .siage-hero__kicker {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #022859;
+  }
+
+  .siage-hero__title {
+    font-size: 52px;
+    line-height: 1.1;
+  }
+
+  .siage-hero__title br {
+    display: none;
+  }
+
+  .siage-hero__desc {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .siage-hero__quote {
+    font-size: 17px;
+    line-height: 1.5;
+    padding-left: 14px;
+    border-left-color: #f79c05;
+    text-align: left;
+  }
+
+  .siage-facts {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .siage-fact {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    padding: 18px 16px;
+    gap: 8px;
+    border-color: #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-fact__label {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .siage-fact__text {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+
+  .siage-hero__aside {
+    flex: none;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .siage-hero__frame {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .siage-hero__img {
+    height: 605px;
+    aspect-ratio: auto;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  .siage-hero__badge {
+    position: static;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    margin-top: 16px;
+    padding: 18px 24px;
+    gap: 6px;
+    align-items: flex-start;
+    text-align: left;
+    border-radius: 20px;
+  }
+
+  .siage-hero__badge-title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .siage-hero__badge-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #e1e6f5;
+  }
+}
+
+/* Tablet (500px a 999px): seções de texto e cards
+   ======================================================================== */
+@media (min-width: 500px) and (max-width: 999px) {
+  .cs-section:not(.siage-hero-section) {
+    padding: 48px;
+  }
+
+  .cs-section__inner.siage-intro,
+  .cs-section__inner.siage-role {
+    gap: 16px;
+  }
+
+  .siage-intro > .cs-section__head,
+  .siage-role__head {
+    position: relative;
+    padding-top: 20px;
+    gap: 16px;
+  }
+
+  .siage-intro > .cs-section__head::before,
+  .siage-role__head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    background: #f79c05;
+  }
+
+  .siage-section-title,
+  .siage-role__title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .siage-section-desc,
+  .siage-role__desc {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    color: #56565a;
+  }
+
+  .siage-cards {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .siage-card {
+    flex: 1 1 calc(50% - 8px);
+    padding: 20px;
+    gap: 10px;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-card--dark {
+    background: #022859;
+    border-color: #022859;
+  }
+
+  .siage-pill {
+    padding: 5px 12px;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .siage-card__title {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .siage-card__text {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-align: left;
+    color: #262626;
+  }
+
+  .siage-card--dark .siage-card__text {
+    color: #e1e6f5;
+  }
+
+  .siage-role__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .siage-role__card {
+    padding: 20px;
+    gap: 8px;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-role__card-title {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .siage-role__card-text {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-align: left;
+    color: #56565a;
+  }
+}
+
+/* Tablet (500px a 999px): cards numerados em coluna
+   ======================================================================== */
+@media (min-width: 500px) and (max-width: 999px) {
+  .siage-steps {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .siage-step {
+    padding: 20px;
+    gap: 8px;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-step__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .siage-step__num {
+    padding: 5px 12px;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .siage-step__title,
+  .siage-step__title--lg {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .siage-step__text {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-align: left;
+    color: #56565a;
+  }
+}
+
+/* Tablet (500px a 999px): Definindo a experiência e A solução
+   ======================================================================== */
+@media (min-width: 500px) and (max-width: 999px) {
+  .siage-steps--grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .siage-steps--grid .siage-step {
+    flex: 1 1 calc(50% - 8px);
+  }
+
+  .siage-solution > .cs-section__head {
+    position: relative;
+    padding-top: 20px;
+    gap: 16px;
+  }
+
+  .siage-solution > .cs-section__head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    background: #f79c05;
+  }
+
+  .siage-solution-lead {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    color: #56565a;
+  }
+
+  .siage-solution {
+    gap: 16px;
+  }
+
+  .siage-states {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .siage-state {
+    flex: 1 1 calc(50% - 8px);
+    padding: 20px;
+    gap: 10px;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-state__dot {
+    width: 18px;
+    height: 18px;
+  }
+
+  .siage-state__title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .siage-state__text {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+}
+
+/* Tablet (500px a 999px): Uma jornada em destaque
+   ======================================================================== */
+@media (min-width: 500px) and (max-width: 999px) {
+  .siage-journey {
+    gap: 16px;
+  }
+
+  .siage-journey__lead {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    color: #56565a;
+  }
+
+  .siage-journey__step {
+    flex-direction: column;
+    padding: 24px;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-journey__text {
+    flex: none;
+    padding: 0;
+    gap: 10px;
+    background: none;
+  }
+
+  .siage-journey__label {
+    align-self: flex-start;
+    padding: 5px 12px;
+    border-radius: 100px;
+    background: #e1e8fc;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .siage-journey__title {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .siage-journey__desc {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: #56565a;
+  }
+
+  .siage-journey__screen {
+    flex: none;
+    width: 100%;
+    aspect-ratio: auto !important;
+    padding: 16px;
+    background: #d9d9d9;
+    border-radius: 14px;
+  }
+
+  .siage-journey__screen picture {
+    display: block;
+  }
+
+  .siage-journey__img {
+    position: static;
+    width: 100%;
+    height: 534px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  .siage-journey__step:nth-child(2) .siage-journey__img {
+    height: 361px;
+  }
+
+  .siage-journey__step:nth-child(3) .siage-journey__img {
+    height: 319px;
+  }
+
+  .siage-journey__step:nth-child(4) .siage-journey__img {
+    height: 377px;
+  }
+}
+
+/* Tablet (500px a 999px): High fidelity
+   ======================================================================== */
+@media (min-width: 500px) and (max-width: 999px) {
+  .siage-hifi {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .siage-hifi__lead {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    color: #56565a;
+  }
+
+  .siage-hifi__card {
+    flex: 0 0 calc(50% - 8px);
+    max-width: none;
+    padding: 16px;
+    gap: 16px;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  .siage-hifi__shot {
+    aspect-ratio: auto !important;
+    height: 348px;
+    box-shadow: none;
+  }
+
+  .siage-hifi__card:nth-child(2) .siage-hifi__shot {
+    height: 259px;
+  }
+
+  .siage-hifi__card:nth-child(3) .siage-hifi__shot {
+    height: 159px;
+  }
+
+  .siage-hifi__shot picture {
+    display: block;
+    position: absolute;
+    inset: 0;
+  }
+
+  .siage-hifi__img {
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+  }
+
+  .siage-hifi__caption {
+    gap: 0;
+    background: none;
+  }
+
+  .siage-hifi__title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .siage-hifi__text {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: #56565a;
+  }
+}
+
+@media (max-width: 499px) {
+  .siage-hifi__card {
+    flex: 1 1 100%;
+  }
+}
+
+/* Mobile (até 499px): hero
+   ======================================================================== */
+@media (max-width: 499px) {
+  .siage-hero-section {
+    padding: 0;
+  }
+
+  .siage-hero {
+    padding: 28px 20px 36px;
+    gap: 16px;
+  }
+
+  .siage-hero__main {
+    gap: 16px;
+  }
+
+  .siage-hero__kicker {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #022859;
+  }
+
+  .siage-hero__title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .siage-hero__title br {
+    display: none;
+  }
+
+  .siage-hero__desc {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .siage-hero__quote {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 14px;
+    border-left-color: #f79c05;
+    text-align: left;
+  }
+
+  .siage-facts {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .siage-fact {
+    width: 100%;
+    padding: 18px 16px;
+    gap: 8px;
+    border-color: #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-fact__label {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .siage-fact__text {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+
+  .siage-hero__aside {
+    flex: none;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .siage-hero__frame {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .siage-hero__img {
+    height: 315px;
+    aspect-ratio: auto;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  .siage-hero__badge {
+    position: static;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    margin-top: 16px;
+    padding: 18px 24px;
+    gap: 6px;
+    align-items: flex-start;
+    text-align: left;
+    border-radius: 20px;
+  }
+
+  .siage-hero__badge-title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .siage-hero__badge-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #e1e6f5;
+  }
+}
+
+/* Mobile (até 499px): seções de texto e cards
+   ======================================================================== */
+@media (max-width: 499px) {
+  .cs-section:not(.siage-hero-section) {
+    padding: 36px 20px;
+  }
+
+  .siage-intro,
+  .siage-role {
+    gap: 16px;
+  }
+
+  .siage-intro > .cs-section__head,
+  .siage-role__head {
+    position: relative;
+    padding-top: 20px;
+    gap: 16px;
+  }
+
+  .siage-intro > .cs-section__head::before,
+  .siage-role__head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    background: #f79c05;
+  }
+
+  .siage-section-title,
+  .siage-role__title {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .siage-section-desc,
+  .siage-role__desc {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #56565a;
+  }
+
+  .siage-cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .siage-card {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-card--dark {
+    background: #022859;
+    border-color: #022859;
+  }
+
+  .siage-pill {
+    padding: 5px 12px;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .siage-card__title {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .siage-card__text {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-align: left;
+    color: #262626;
+  }
+
+  .siage-card--dark .siage-card__text {
+    color: #e1e6f5;
+  }
+
+  .siage-role__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .siage-role__card {
+    padding: 20px;
+    gap: 8px;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-role__card-title {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .siage-role__card-text {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-align: left;
+    color: #56565a;
+  }
+}
+
+/* Mobile (até 499px): cards numerados em coluna
+   ======================================================================== */
+@media (max-width: 499px) {
+  .siage-steps {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .siage-step {
+    padding: 20px;
+    gap: 8px;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-step__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .siage-step__num {
+    padding: 5px 12px;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .siage-step__title,
+  .siage-step__title--lg {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .siage-step__text {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-align: left;
+    color: #56565a;
+  }
+}
+
+/* Mobile (até 499px): A solução
+   ======================================================================== */
+@media (max-width: 499px) {
+  .siage-solution {
+    gap: 16px;
+  }
+
+  .siage-solution > .cs-section__head {
+    position: relative;
+    padding-top: 20px;
+    gap: 16px;
+  }
+
+  .siage-solution > .cs-section__head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    background: #f79c05;
+  }
+
+  .siage-solution-lead {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #56565a;
+  }
+
+  .siage-states {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .siage-state {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-state__dot {
+    width: 18px;
+    height: 18px;
+  }
+
+  .siage-state__title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .siage-state__text {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+}
+
+/* Mobile (até 499px): Uma jornada em destaque
+   ======================================================================== */
+@media (max-width: 499px) {
+  .siage-journey {
+    gap: 16px;
+  }
+
+  .siage-journey__lead {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #56565a;
+  }
+
+  .siage-journey__step {
+    padding: 16px;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-journey__label {
+    padding: 5px 12px;
+    border-radius: 100px;
+    background: #e1e8fc;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .siage-journey__title {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .siage-journey__desc {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+
+  .siage-journey__screen {
+    padding: 8px;
+    background: #d9d9d9;
+    border-radius: 14px;
+  }
+
+  .siage-journey__img {
+    height: 272px;
+  }
+
+  .siage-journey__step:nth-child(2) .siage-journey__img {
+    height: 184px;
+  }
+
+  .siage-journey__step:nth-child(3) .siage-journey__img {
+    height: 162px;
+  }
+
+  .siage-journey__step:nth-child(4) .siage-journey__img {
+    height: 192px;
+  }
+}
+
+/* Mobile (até 499px): High fidelity
+   ======================================================================== */
+@media (max-width: 499px) {
+  .siage-hifi {
+    gap: 16px;
+  }
+
+  .siage-hifi__lead {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #56565a;
+  }
+
+  .siage-hifi__card {
+    flex: 0 0 100%;
+    padding: 16px;
+    gap: 10px;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  .siage-hifi__card:nth-child(2) {
+    height: auto;
+  }
+
+  .siage-hifi__shot {
+    height: 374px;
+  }
+
+  .siage-hifi__card:nth-child(2) .siage-hifi__shot {
+    height: 278px;
+  }
+
+  .siage-hifi__card:nth-child(3) .siage-hifi__shot {
+    height: 171px;
+  }
+
+  .siage-hifi__title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .siage-hifi__text {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+}
+
+/* Desktop (1000px ou mais): textos de corpo em 18px
+   ======================================================================== */
+@media (min-width: 1000px) {
+  .siage-hero__desc,
+  .siage-hero__quote,
+  .siage-section-desc,
+  .siage-solution-lead,
+  .siage-journey__lead,
+  .siage-hifi__lead,
+  .siage-role__desc,
+  .siage-fact__text,
+  .siage-card__text,
+  .siage-role__card-text,
+  .siage-step__text,
+  .siage-journey__desc,
+  .siage-state__text,
+  .siage-hifi__text {
+    font-size: 18px;
+  }
+
+  .siage-hero__desc,
+  .siage-hero__quote,
+  .siage-section-desc,
+  .siage-solution-lead,
+  .siage-journey__lead,
+  .siage-hifi__lead,
+  .siage-role__desc {
+    line-height: 1.6;
+  }
+}
+
+/* Desktop (1000px ou mais): estados em grade responsiva
+   ======================================================================== */
+@media (min-width: 1000px) {
+  .siage-states {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 50px;
+  }
+
+  .siage-state {
+    flex: none;
+    min-width: 0;
+  }
+
+  .siage-state__title,
+  .siage-state__text {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Tablet estreito (500px a 850px): High fidelity em coluna
+   ======================================================================== */
+@media (min-width: 500px) and (max-width: 850px) {
+  .siage-hifi__card {
+    flex: 0 0 100%;
+  }
+
+  .siage-hifi__shot,
+  .siage-hifi__card:nth-child(2) .siage-hifi__shot,
+  .siage-hifi__card:nth-child(3) .siage-hifi__shot {
+    height: auto;
+    aspect-ratio: auto !important;
+  }
+
+  .siage-hifi__shot picture {
+    position: static;
+    display: block;
+  }
+
+  .siage-hifi__img {
+    position: static;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}

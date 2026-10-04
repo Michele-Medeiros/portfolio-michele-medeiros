@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIAGE — Case Study | Michele Medeiros</title>
+  <meta name="description" content="SIAGE: experiência digital para jornadas acadêmicas e administrativas da rede estadual de ensino da Paraíba.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=24">
+  <link rel="stylesheet" href="../css/case-study.css?v=50">
+  <link rel="stylesheet" href="../css/siage.css?v=4">
+</head>
+<body class="page-siage">
+
+  <header class="navbar-wrap">
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a href="../index.html" class="navbar__brand">Michele Medeiros</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="navbar__links" id="navLinks">
+        <a href="../index.html">Home</a>
+        <a href="../sobre-mim.html">Sobre mim</a>
+        <a href="../projetos.html" class="is-active">Projetos</a>
+        <a href="../index.html#contato">Contatos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="cs-page">
+
+    <!-- Hero -->
+    <section class="cs-section siage-hero-section" id="contexto">
+      <div class="siage-hero">
+        <div class="siage-hero__main">
+          <p class="siage-hero__kicker">UX/UI · Web Design · Design System · Responsive Design</p>
+          <h1 class="siage-hero__title">SIAGE.<br>Educação em escala.</h1>
+          <p class="siage-hero__desc">Uma experiência digital para jornadas acadêmicas e administrativas da rede estadual de ensino da Paraíba.</p>
+          <p class="siage-hero__quote">Meu trabalho foi organizar fluxos, estados e componentes para tornar diferentes jornadas do ecossistema mais claras, consistentes e adaptáveis entre desktop e mobile.</p>
+          <div class="siage-facts">
+            <div class="siage-fact">
+              <p class="siage-fact__label">Produto</p>
+              <p class="siage-fact__text">Plataforma educacional para o estado da Paraíba</p>
+            </div>
+            <div class="siage-fact">
+              <p class="siage-fact__label">Usuários</p>
+              <p class="siage-fact__text">Estudantes, Famílias, Professores, Gestão</p>
+            </div>
+            <div class="siage-fact">
+              <p class="siage-fact__label">Contexto</p>
+              <p class="siage-fact__text">Pandemia COVID-19. Alunos e responsáveis em isolamento</p>
+            </div>
+          </div>
+        </div>
+        <div class="siage-hero__aside">
+          <div class="siage-hero__frame">
+            <picture>
+              <source media="(min-width: 500px) and (max-width: 999px)" srcset="../assets/images/siage/hero-tablet.png">
+              <source media="(max-width: 499px)" srcset="../assets/images/siage/hero-mobile.png">
+              <img class="siage-hero__img" src="../assets/images/siage/usuarios-novo.png" alt="Tela de matrícula do SIAGE com a seção de dúvidas frequentes">
+            </picture>
+          </div>
+          <div class="siage-hero__badge">
+            <p class="siage-hero__badge-title">Experiência multicanal</p>
+            <p class="siage-hero__badge-text">Fluxos pensados para diferentes perfis e contextos de uso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O projeto em 30 segundos -->
+    <section class="cs-section">
+      <div class="cs-section__inner siage-intro">
+        <div class="cs-section__head">
+          <h2 class="siage-section-title">O projeto em 30 segundos</h2>
+          <p class="siage-section-desc">O SIAGE reúne processos acadêmicos e administrativos como matrícula, acompanhamento escolar, registros docentes e operações de gestão. Além da complexidade funcional, o projeto precisava considerar um público muito diverso em familiaridade com tecnologia — um contexto que investiguei diretamente em conversas com alunos e responsáveis.</p>
+        </div>
+        <div class="siage-cards">
+          <article class="siage-card">
+            <span class="siage-pill">Contexto</span>
+            <h3 class="siage-card__title">Um ecossistema com públicos muito diferentes</h3>
+            <p class="siage-card__text">Estudantes, famílias, professores e equipes administrativas acessam o sistema com objetivos, frequência de uso e níveis de familiaridade digital distintos, em meio a pandemia do COVID-19.</p>
+          </article>
+          <article class="siage-card siage-card--dark">
+            <span class="siage-pill">Desafio</span>
+            <h3 class="siage-card__title">Consistência sem apagar as particularidades</h3>
+            <p class="siage-card__text">A experiência precisava manter padrões visuais e de interação, mas respeitar jornadas que variam de uma matrícula pontual a rotinas administrativas recorrentes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meu papel no projeto -->
+    <section class="cs-section">
+      <div class="cs-section__inner siage-role">
+        <div class="siage-role__head">
+          <h2 class="siage-role__title">Meu papel no projeto</h2>
+          <p class="siage-role__desc">Atuei desde a compreensão do público até a construção e refinamento das interfaces, conectando pesquisa qualitativa, arquitetura de informação, UX e UI.</p>
+        </div>
+        <div class="siage-role__grid">
+          <article class="siage-role__card">
+            <h3 class="siage-role__card-title">Pesquisa com usuários</h3>
+            <p class="siage-role__card-text">Conversas com alunos e responsáveis para entender dificuldades, expectativas e barreiras de uso no cotidiano.</p>
+          </article>
+          <article class="siage-role__card">
+            <h3 class="siage-role__card-title">Contexto de uso</h3>
+            <p class="siage-role__card-text">Análise de um público com níveis muito diferentes de letramento digital e familiaridade com serviços on-line.</p>
+          </article>
+          <article class="siage-role__card">
+            <h3 class="siage-role__card-title">Arquitetura &amp; Fluxos</h3>
+            <p class="siage-role__card-text">Organização das jornadas para estudantes, famílias, professores e administração.</p>
+          </article>
+          <article class="siage-role__card">
+            <h3 class="siage-role__card-title">UX Design</h3>
+            <p class="siage-role__card-text">Etapas, estados, mensagens e comportamentos necessários para fluxos críticos.</p>
+          </article>
+          <article class="siage-role__card">
+            <h3 class="siage-role__card-title">UI Design</h3>
+            <p class="siage-role__card-text">Interfaces de alta fidelidade com hierarquia e legibilidade consistentes.</p>
+          </article>
+          <article class="siage-role__card">
+            <h3 class="siage-role__card-title">Design System</h3>
+            <p class="siage-role__card-text">Componentes para formulários, feedbacks, tabelas e cartões de informação.</p>
+          </article>
+          <article class="siage-role__card">
+            <h3 class="siage-role__card-title">Responsive Design</h3>
+            <p class="siage-role__card-text">Adaptação das telas-chave entre desktop e dispositivos móveis.</p>
+          </article>
+          <article class="siage-role__card">
+            <h3 class="siage-role__card-title">Handoff</h3>
+            <p class="siage-role__card-text">Organização de componentes e protótipos para implementação.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetando para múltiplos contextos -->
+    <section class="cs-section">
+      <div class="cs-section__inner siage-intro">
+        <div class="cs-section__head">
+          <h2 class="siage-section-title">Projetando para múltiplos contextos</h2>
+          <p class="siage-section-desc">A experiência precisava acomodar desde uma ação esporádica de matrícula até o acompanhamento frequente de informações escolares e rotinas de gestão.</p>
+        </div>
+        <div class="siage-steps">
+          <article class="siage-step">
+            <div class="siage-step__head">
+              <span class="siage-step__num">01</span>
+              <h3 class="siage-step__title siage-step__title--lg">Estudante &amp; família</h3>
+            </div>
+            <p class="siage-step__text">Jornadas diretas para matrícula, confirmação e acompanhamento de informações escolares.</p>
+          </article>
+          <article class="siage-step">
+            <div class="siage-step__head">
+              <span class="siage-step__num">02</span>
+              <h3 class="siage-step__title siage-step__title--lg">Professor</h3>
+            </div>
+            <p class="siage-step__text">Rotinas recorrentes relacionadas a cadastro, lotação, aulas, frequência e avaliação.</p>
+          </article>
+          <article class="siage-step">
+            <div class="siage-step__head">
+              <span class="siage-step__num">03</span>
+              <h3 class="siage-step__title siage-step__title--lg">Gestor</h3>
+            </div>
+            <p class="siage-step__text">Maior volume de informações, cadastros, calendários, painéis e processos administrativos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Entendendo quem usaria o sistema -->
+    <section class="cs-section">
+      <div class="cs-section__inner siage-intro">
+        <div class="cs-section__head">
+          <h2 class="siage-section-title">Entendendo quem usaria o sistema</h2>
+          <p class="siage-section-desc">Antes de definir parte das jornadas, conversei com alunos e responsáveis para compreender como lidavam com processos escolares no dia a dia e como um sistema digital poderia ser recebido por públicos com níveis muito diferentes de familiaridade com tecnologia.</p>
+        </div>
+        <div class="siage-steps">
+          <article class="siage-step">
+            <div class="siage-step__head">
+              <span class="siage-step__num">01</span>
+              <h3 class="siage-step__title">Letramento digital diverso</h3>
+            </div>
+            <p class="siage-step__text">O público não podia ser tratado como homogêneo. Algumas pessoas já possuíam familiaridade com o on-line, enquanto outras não</p>
+          </article>
+          <article class="siage-step">
+            <div class="siage-step__head">
+              <span class="siage-step__num">02</span>
+              <h3 class="siage-step__title">Ações de peso e pouco frequentes</h3>
+            </div>
+            <p class="siage-step__text">Ações como matrícula ou renovação não acontecem todos os dias, reduzindo a possibilidade de aprender o sistema apenas pela repetição.</p>
+          </article>
+          <article class="siage-step">
+            <div class="siage-step__head">
+              <span class="siage-step__num">03</span>
+              <h3 class="siage-step__title">Clareza de interface acima de tudo</h3>
+            </div>
+            <p class="siage-step__text">Em jornadas críticas, etapas, estados e próximos passos precisavam ficar explícitos, mesmo quando isso significava mostrar mais orientação na tela.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Definindo a experiência -->
+    <section class="cs-section">
+      <div class="cs-section__inner siage-intro">
+        <div class="cs-section__head">
+          <h2 class="siage-section-title">Definindo a experiência</h2>
+          <p class="siage-section-desc">Os aprendizados das conversas com alunos e responsáveis ajudaram a transformar necessidades de uso em princípios concretos de experiência.</p>
+        </div>
+        <div class="siage-steps siage-steps--grid">
+          <article class="siage-step">
+            <div class="siage-step__head">
+              <span class="siage-step__num">01</span>
+              <h3 class="siage-step__title">Linguagem direta</h3>
+            </div>
+            <p class="siage-step__text">Rótulos em linguagem cidadã, ilustrações, instruções e etapas explícitas para apoiar diferentes níveis de letramento digital.</p>
+          </article>
+          <article class="siage-step">
+            <div class="siage-step__head">
+              <span class="siage-step__num">02</span>
+              <h3 class="siage-step__title">Jornadas guiadas</h3>
+            </div>
+            <p class="siage-step__text">Processos pouco frequentes precisam indicar o que está acontecendo e qual é o próximo passo, sem depender da memória do usuário.</p>
+          </article>
+          <article class="siage-step">
+            <div class="siage-step__head">
+              <span class="siage-step__num">03</span>
+              <h3 class="siage-step__title">Feedback visível</h3>
+            </div>
+            <p class="siage-step__text">Confirmações, pendências e estados claramente identificados para reduzir dúvidas sobre o andamento de cada processo.</p>
+          </article>
+          <article class="siage-step">
+            <div class="siage-step__head">
+              <span class="siage-step__num">04</span>
+              <h3 class="siage-step__title">Múltiplos dispositivos</h3>
+            </div>
+            <p class="siage-step__text">Fluxos adaptados para desktop e mobile, preservando hierarquia, leitura e ação principal em telas menores.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Uma jornada em destaque -->
+    <section class="cs-section">
+      <div class="cs-section__inner siage-intro">
+        <div class="cs-section__head">
+          <h2 class="siage-section-title">Uma jornada em destaque</h2>
+          <p class="siage-journey__lead">Em vez de apresentar telas isoladas, o case conecta os principais momentos da experiência de matrícula e acompanhamento.</p>
+        </div>
+
+        <div class="siage-journey">
+          <article class="siage-journey__step">
+            <div class="siage-journey__text">
+              <p class="siage-journey__label">01 · Orientação</p>
+              <h3 class="siage-journey__title">Começar com contexto</h3>
+              <p class="siage-journey__desc">A entrada do fluxo apresenta o serviço e concentra dúvidas frequentes antes de levar o usuário para a ação principal.</p>
+            </div>
+            <div class="siage-journey__screen" style="aspect-ratio: 1023 / 908;">
+              <picture>
+                <source media="(min-width: 500px) and (max-width: 999px)" srcset="../assets/images/siage/jornada-tablet-01-orientacao.png">
+              <source media="(max-width: 499px)" srcset="../assets/images/siage/jornada-mobile-01-orientacao.png">
+                <img class="siage-journey__img" src="../assets/images/siage/jornada-01-orientacao.png" alt="Tela inicial da matrícula no e-Saber, com a seção de dúvidas frequentes">
+              </picture>
+            </div>
+          </article>
+
+          <article class="siage-journey__step">
+            <div class="siage-journey__text">
+              <p class="siage-journey__label">02 · Decisão</p>
+              <h3 class="siage-journey__title">Dividir uma tarefa grande em etapas</h3>
+              <p class="siage-journey__desc">A renovação organiza informações e escolhas em uma sequência previsível, reduzindo o volume de decisões simultâneas.</p>
+            </div>
+            <div class="siage-journey__screen" style="aspect-ratio: 1023 / 633;">
+              <picture>
+                <source media="(min-width: 500px) and (max-width: 999px)" srcset="../assets/images/siage/jornada-tablet-02-decisao.png">
+              <source media="(max-width: 499px)" srcset="../assets/images/siage/jornada-mobile-02-decisao.png">
+                <img class="siage-journey__img" src="../assets/images/siage/jornada-02-decisao.png" alt="Tela de renovação de matrícula dividida em etapas, nas versões desktop e mobile">
+              </picture>
+            </div>
+          </article>
+
+          <article class="siage-journey__step">
+            <div class="siage-journey__text">
+              <p class="siage-journey__label">03 · Confirmação</p>
+              <h3 class="siage-journey__title">Encerrar o fluxo sem ambiguidade</h3>
+              <p class="siage-journey__desc">Após a ação principal, a interface confirma o resultado e orienta o próximo passo, evitando que o usuário precise inferir se a operação foi concluída.</p>
+            </div>
+            <div class="siage-journey__screen" style="aspect-ratio: 1023 / 564;">
+              <picture>
+                <source media="(min-width: 500px) and (max-width: 999px)" srcset="../assets/images/siage/jornada-tablet-03-confirmacao.png">
+              <source media="(max-width: 499px)" srcset="../assets/images/siage/jornada-mobile-03-confirmacao.png">
+                <img class="siage-journey__img" src="../assets/images/siage/jornada-03-confirmacao.png" alt="Tela de confirmação de matrícula renovada, nas versões desktop e mobile">
+              </picture>
+            </div>
+          </article>
+
+          <article class="siage-journey__step">
+            <div class="siage-journey__text">
+              <p class="siage-journey__label">04 · Continuidade</p>
+              <h3 class="siage-journey__title">Transformar matrícula em acompanhamento</h3>
+              <p class="siage-journey__desc">Depois da etapa transacional, o sistema passa a concentrar informações como notas, frequência, horários e avisos.</p>
+            </div>
+            <div class="siage-journey__screen" style="aspect-ratio: 1023 / 666;">
+              <picture>
+                <source media="(min-width: 500px) and (max-width: 999px)" srcset="../assets/images/siage/jornada-tablet-04-continuidade.png">
+              <source media="(max-width: 499px)" srcset="../assets/images/siage/jornada-mobile-04-continuidade.png">
+                <img class="siage-journey__img siage-journey__img--top" src="../assets/images/siage/jornada-04-continuidade.png" alt="Tela da turma com acesso a notas, frequência, horários e avisos, nas versões desktop e mobile">
+              </picture>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design orientado por estados -->
+    <section class="cs-section">
+      <div class="cs-section__inner siage-intro">
+        <div class="cs-section__head">
+          <h2 class="siage-section-title">Design orientado por estados</h2>
+          <p class="siage-section-desc">Mais do que desenhar páginas, a experiência precisava comunicar claramente o status de cada etapa e o que o usuário poderia fazer a seguir.</p>
+        </div>
+
+        <div class="siage-solution">
+          <div class="cs-section__head">
+            <h3 class="siage-section-title">A solução</h3>
+            <p class="siage-solution-lead">A experiência final foi construída em torno de um princípio:</p>
+          </div>
+          <div class="siage-states">
+            <article class="siage-state">
+              <img class="siage-state__dot" src="../assets/images/siage/estado-disponivel.svg" alt="">
+              <h4 class="siage-state__title">Disponível</h4>
+              <p class="siage-state__text">Ação principal liberada e pronta para uso.</p>
+            </article>
+            <article class="siage-state">
+              <img class="siage-state__dot" src="../assets/images/siage/estado-indisponivel.svg" alt="">
+              <h4 class="siage-state__title">Indisponível</h4>
+              <p class="siage-state__text">Etapa futura ou ação temporariamente bloqueada.</p>
+            </article>
+            <article class="siage-state">
+              <img class="siage-state__dot" src="../assets/images/siage/estado-atencao.svg" alt="">
+              <h4 class="siage-state__title">Atenção</h4>
+              <p class="siage-state__text">Prazo, pendência ou informação que exige leitura imediata.</p>
+            </article>
+            <article class="siage-state">
+              <img class="siage-state__dot" src="../assets/images/siage/estado-concluido.svg" alt="">
+              <h4 class="siage-state__title">Concluído</h4>
+              <p class="siage-state__text">Confirmação explícita de uma ação finalizada.</p>
+            </article>
+            <article class="siage-state">
+              <img class="siage-state__dot" src="../assets/images/siage/estado-erro.svg" alt="">
+              <h4 class="siage-state__title">Erro/pendência</h4>
+              <p class="siage-state__text">Orientação para situações que impedem continuidade.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- High fidelity -->
+    <section class="cs-section">
+      <div class="cs-section__inner siage-intro">
+        <div class="cs-section__head">
+          <h2 class="siage-section-title">High fidelity</h2>
+          <p class="siage-hifi__lead">As interfaces finais consolidam arquitetura, estados e padrões visuais em áreas centrais da experiência escolar.</p>
+        </div>
+
+        <div class="siage-hifi">
+          <article class="siage-hifi__card">
+            <div class="siage-hifi__shot" style="aspect-ratio: 1742 / 2048;">
+              <picture>
+                <source media="(min-width: 500px) and (max-width: 999px)" srcset="../assets/images/siage/hifi-tablet-frequencia.png">
+              <source media="(max-width: 499px)" srcset="../assets/images/siage/hifi-mobile-frequencia.png">
+                <img class="siage-hifi__img" src="../assets/images/siage/hifi-frequencia.png" alt="Tela de acompanhamento de frequência do aluno no e-Saber">
+              </picture>
+            </div>
+            <div class="siage-hifi__caption">
+              <h3 class="siage-hifi__title">Acompanhamento</h3>
+              <p class="siage-hifi__text">Status e etapas apresentados em uma sequência temporal compreensível.</p>
+            </div>
+          </article>
+
+          <article class="siage-hifi__card">
+            <div class="siage-hifi__shot" style="aspect-ratio: 1909 / 1667;">
+              <picture>
+                <source media="(min-width: 500px) and (max-width: 999px)" srcset="../assets/images/siage/hifi-tablet-notas.png">
+              <source media="(max-width: 499px)" srcset="../assets/images/siage/hifi-mobile-notas.png">
+                <img class="siage-hifi__img" src="../assets/images/siage/hifi-notas.png" alt="Tela de acompanhamento de notas do aluno no e-Saber">
+              </picture>
+            </div>
+            <div class="siage-hifi__caption">
+              <h3 class="siage-hifi__title">Acompanhamento</h3>
+              <p class="siage-hifi__text">Status e etapas apresentados em uma sequência temporal compreensível.</p>
+            </div>
+          </article>
+
+          <article class="siage-hifi__card">
+            <div class="siage-hifi__shot" style="aspect-ratio: 1909 / 1027;">
+              <picture>
+                <source media="(min-width: 500px) and (max-width: 999px)" srcset="../assets/images/siage/hifi-tablet-acompanhamento-matricula.png">
+              <source media="(max-width: 499px)" srcset="../assets/images/siage/hifi-mobile-acompanhamento-matricula.png">
+                <img class="siage-hifi__img" src="../assets/images/siage/hifi-acompanhamento-matricula.png" alt="Tela de acompanhamento da matrícula do aluno no e-Saber">
+              </picture>
+            </div>
+            <div class="siage-hifi__caption">
+              <h3 class="siage-hifi__title">Acompanhamento</h3>
+              <p class="siage-hifi__text">Status e etapas apresentados em uma sequência temporal compreensível.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contato">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">2026 MICHELE MEDEIROS | Entre em contato: <a href="mailto:michelefmedeiros@gmail.com?subject=Contato%20via%20portf%C3%B3lio">michelefmedeiros@gmail.com</a></p>
+      <a href="https://www.linkedin.com/in/michele-franca-medeiros/" target="_blank" rel="noopener"><img class="site-footer__icon" src="../assets/images/icons/linkedin-box-fill.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
