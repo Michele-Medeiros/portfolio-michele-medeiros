@@ -1739,4 +1739,87 @@ body {
     line-height: 1.5;
     color: #56565a;
   }
+
+  /* Seção 4 (tablet): Um sistema, múltiplas camadas
+     Mesmo padrão de grade da seção anterior, com número em pílula lilás
+     ao lado do título de cada card. */
+  .seplag-tablet__layers {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__layers-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__layers-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__layers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__layer-card {
+    flex: 1 1 328px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-tablet__layer-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .seplag-tablet__layer-number {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 4px 10px;
+    border-radius: 100px;
+    background: #edebfc;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #5029de;
+    white-space: nowrap;
+  }
+
+  .seplag-tablet__layer-title {
+    flex: 1 0 0;
+    min-width: 0;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-tablet__layer-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
 }
