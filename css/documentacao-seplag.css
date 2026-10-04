@@ -3129,4 +3129,61 @@ body {
     line-height: 1.5;
     color: #252628;
   }
+
+  /* Seção 6 (mobile): Princípios de design
+     Cinco cards brancos empilhados com gap de 12px e padding de 20px. */
+  .seplag-mobile__principles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__principles-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__principles-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__principles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__principle-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__principle-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__principle-text-small {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
 }
