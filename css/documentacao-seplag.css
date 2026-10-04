@@ -3417,4 +3417,82 @@ body {
   .seplag-mobile__showcase-media--reveal {
     height: 243px;
   }
+
+  /* Seção 11 (mobile): Um fluxo, diferentes caminhos
+     Dois cards brancos empilhados, cada um com título, descrição e captura
+     (250px e 248px de altura). */
+  .seplag-mobile__paths {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__paths-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__paths-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__paths-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__paths-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__paths-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__paths-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__paths-media {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .seplag-mobile__paths-media--first {
+    height: 250px;
+  }
+
+  .seplag-mobile__paths-media--second {
+    height: 248px;
+  }
+
+  .seplag-mobile__paths-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
