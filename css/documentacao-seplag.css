@@ -2975,4 +2975,85 @@ body {
     line-height: 1.5;
     color: #56565a;
   }
+
+  /* Seção 4 (mobile): Um sistema, múltiplas camadas
+     Seis cards brancos empilhados com gap de 12px, cada um com número em
+     pílula lilás e título em caixa-alta. */
+  .seplag-mobile__layers {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__layers-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__layers-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__layers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__layer-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__layer-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .seplag-mobile__layer-number {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 4px 10px;
+    border-radius: 100px;
+    background: #edebfc;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #5029de;
+    white-space: nowrap;
+  }
+
+  .seplag-mobile__layer-title {
+    flex: 1 0 0;
+    min-width: 0;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-mobile__layer-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
 }
