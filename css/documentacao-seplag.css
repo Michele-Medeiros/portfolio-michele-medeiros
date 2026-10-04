@@ -3495,4 +3495,33 @@ body {
     height: 100%;
     object-fit: contain;
   }
+
+  /* Seção 12 (mobile): Dados sem perder contexto
+     Mesmo card da seção de vitrine, com a captura do dashboard em 367px. */
+  .seplag-mobile__data {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__data-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__data-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__showcase-media--campaign {
+    height: 367px;
+  }
 }
