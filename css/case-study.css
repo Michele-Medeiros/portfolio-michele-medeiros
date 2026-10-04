@@ -3366,23 +3366,8 @@
 }
 
 /* Aprova Quest — mobile: Dos insights às decisões de produto */
-.cs-kicker-mobile {
-  display: none;
-}
 
 @media (max-width: 499px) {
-  .page-aprova-quest .cs-page .cs-kicker-mobile {
-    display: block;
-    background: #ebe8f7;
-    color: #5029de;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.4;
-    border-radius: 12px;
-    padding: 10px 14px;
-    margin: 0;
-  }
-
   .page-aprova-quest .cs-page #track-insights {
     gap: 16px;
   }
@@ -3570,7 +3555,7 @@
 /* ========================================================================
    Sintonize — mobile (<500px), matching the dedicated Figma "Mobile" frame
    ======================================================================== */
-@media (max-width: 499px) {
+@media (max-width: 3000px) {
   .page-sintonize .cs-chapter-nav {
     display: flex;
     padding-inline: 20px;
@@ -3696,6 +3681,8 @@
   }
 
   .page-sintonize .cs-cards-row .cs-card {
+    flex: none;
+    width: 100%;
     padding: 20px;
   }
 
@@ -3709,6 +3696,36 @@
 
   .page-sintonize .cs-cards-row .cs-card__text {
     font-size: 15px;
+  }
+
+  /* "Antes de desenhar" numbered steps — matching Figma mobile */
+  .page-sintonize .cs-cards-row .cs-step {
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    height: auto;
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(59, 59, 62, 0.12);
+    border-radius: 16px;
+  }
+
+  .page-sintonize .cs-cards-row .cs-step .cs-pill {
+    flex: none;
+    align-self: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 16px;
+    background: #122f5d;
+    color: #fff;
+    text-transform: none;
+  }
+
+  .page-sintonize .cs-cards-row .cs-step .cs-card__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cs-text);
   }
 
   .page-sintonize .cs-cards-row--intro {
