@@ -399,3 +399,76 @@
     flex-direction: column;
   }
 }
+
+/* Design orientado por estados (A solução)
+   ======================================================================== */
+.siage-solution {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.siage-solution-lead {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: var(--cs-text);
+}
+
+.siage-states {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+}
+
+.siage-state {
+  flex: 1 0 0;
+  min-width: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.siage-state__dot {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.siage-state__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+.siage-state__text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: var(--cs-text-secondary);
+}
+
+@media (max-width: 1000px) {
+  .siage-states {
+    flex-wrap: wrap;
+  }
+
+  .siage-state {
+    flex: 1 1 calc(50% - 25px);
+  }
+}
+
+@media (max-width: 800px) {
+  .siage-states {
+    flex-direction: column;
+  }
+
+  .siage-state {
+    flex: none;
+  }
+}
