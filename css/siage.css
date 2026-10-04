@@ -1077,9 +1077,10 @@
    ======================================================================== */
 @media (min-width: 500px) and (max-width: 999px) {
   .siage-hifi {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 16px;
   }
 
@@ -1094,14 +1095,10 @@
     flex: 0 0 calc(50% - 8px);
     max-width: none;
     padding: 16px;
-    gap: 10px;
+    gap: 16px;
     border: 1px solid #e4e4e8;
     border-radius: 20px;
     background: #fff;
-  }
-
-  .siage-hifi__card:nth-child(2) {
-    height: 484px;
   }
 
   .siage-hifi__shot {
@@ -1125,8 +1122,8 @@
   }
 
   .siage-hifi__img {
-    object-fit: contain;
-    object-position: center;
+    object-fit: cover;
+    object-position: top;
     border-radius: 8px;
   }
 
@@ -1598,5 +1595,56 @@
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0;
+  }
+}
+
+/* Desktop (1000px ou mais): textos de corpo em 18px
+   ======================================================================== */
+@media (min-width: 1000px) {
+  .siage-hero__desc,
+  .siage-hero__quote,
+  .siage-section-desc,
+  .siage-solution-lead,
+  .siage-journey__lead,
+  .siage-hifi__lead,
+  .siage-role__desc,
+  .siage-fact__text,
+  .siage-card__text,
+  .siage-role__card-text,
+  .siage-step__text,
+  .siage-journey__desc,
+  .siage-state__text,
+  .siage-hifi__text {
+    font-size: 18px;
+  }
+
+  .siage-hero__desc,
+  .siage-hero__quote,
+  .siage-section-desc,
+  .siage-solution-lead,
+  .siage-journey__lead,
+  .siage-hifi__lead,
+  .siage-role__desc {
+    line-height: 1.6;
+  }
+}
+
+/* Desktop (1000px ou mais): estados em grade responsiva
+   ======================================================================== */
+@media (min-width: 1000px) {
+  .siage-states {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 50px;
+  }
+
+  .siage-state {
+    flex: none;
+    min-width: 0;
+  }
+
+  .siage-state__title,
+  .siage-state__text {
+    overflow-wrap: anywhere;
   }
 }
