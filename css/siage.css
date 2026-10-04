@@ -337,3 +337,65 @@
     font-size: 18px;
   }
 }
+
+/* Cards numerados (Projetando para múltiplos contextos e Entendendo quem usaria o sistema)
+   ======================================================================== */
+.siage-steps {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+}
+
+.siage-step {
+  flex: 1 0 0;
+  min-width: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.siage-step__head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.siage-step__num {
+  flex-shrink: 0;
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: var(--cs-pill-bg);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  color: var(--cs-text);
+}
+
+.siage-step__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: var(--cs-text);
+}
+
+.siage-step__title--lg {
+  font-size: 20px;
+}
+
+.siage-step__text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: var(--cs-text-secondary);
+}
+
+@media (max-width: 800px) {
+  .siage-steps {
+    flex-direction: column;
+  }
+}
