@@ -349,4 +349,76 @@ body {
   .seplag-summary__box--dark .seplag-summary__body {
     color: #fff;
   }
+
+  /* Seção 4: Meu papel no projeto
+     Figma: frame 1728 × 658, padding lateral 65px.
+     Grade de 3 colunas: gap horizontal 50px, vertical 32px. */
+  .seplag-role {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-role__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-role__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-role__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 55px;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-role__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 32px;
+  }
+
+  .seplag-role__card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-role__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-role__card-text {
+    text-align: justify;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
 }
