@@ -3258,4 +3258,29 @@ body {
     height: 100%;
     object-fit: contain;
   }
+
+  /* Seção 8 (mobile): Densidade não é necessariamente um problema
+     Mesmo card da seção anterior, com a captura de cadastro em 214px. */
+  .seplag-mobile__density {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__density-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__density-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
 }
