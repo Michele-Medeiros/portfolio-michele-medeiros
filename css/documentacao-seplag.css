@@ -244,4 +244,109 @@ body {
     color: #5b207a;
     white-space: nowrap;
   }
+
+  /* Seção 3: O projeto em 30 segundos
+     Figma: frame 1728 × 628, padding lateral 54px, gap vertical 50px.
+     Caixas: Contexto 685px (branca) e Desafio flexível (azul #122f5d). */
+  .seplag-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 54px;
+  }
+
+  .seplag-summary__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-summary__text {
+    width: 100%;
+    padding-left: 12px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    color: #262626;
+  }
+
+  .seplag-summary__cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .seplag-summary__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 32px;
+    border-radius: 24px;
+  }
+
+  .seplag-summary__box--light {
+    width: 685px;
+    flex-shrink: 0;
+    background: #fff;
+  }
+
+  .seplag-summary__box--dark {
+    flex: 1 0 0;
+    min-width: 0;
+    background: #122f5d;
+  }
+
+  .seplag-summary__pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: 900px;
+    background: #e6ecff;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-summary__heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-summary__box--dark .seplag-summary__heading {
+    color: #fff;
+  }
+
+  .seplag-summary__body {
+    width: 100%;
+    text-align: justify;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #252628;
+  }
+
+  .seplag-summary__box--dark .seplag-summary__body {
+    color: #fff;
+  }
 }
