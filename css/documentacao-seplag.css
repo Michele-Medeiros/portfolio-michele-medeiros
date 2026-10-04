@@ -2049,4 +2049,112 @@ body {
     line-height: 1.5;
     color: #56565a;
   }
+
+  /* Seção 9 (tablet): Quando deveríamos fundir ou não fluxos
+     Dois cards de 328px com altura de 453px que quebram linha em telas menores.
+     Os marcadores são os SVGs de 8 × 16px do Figma. */
+  .seplag-tablet__flows {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__flows-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__flows-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__flows-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__flows-card {
+    flex: 0 1 328px;
+    max-width: 328px;
+    min-height: 453px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .seplag-tablet__flows-card--light {
+    background: #fff;
+    border: 1px solid #e4e4e8;
+  }
+
+  .seplag-tablet__flows-card--dark {
+    background: #122f5d;
+  }
+
+  .seplag-tablet__flows-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .seplag-tablet__flows-label--light {
+    color: #5029de;
+  }
+
+  .seplag-tablet__flows-label--dark {
+    color: #f79c05;
+  }
+
+  .seplag-tablet__flows-heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__flows-heading--light {
+    color: #fff;
+  }
+
+  .seplag-tablet__flows-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-tablet__flows-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .seplag-tablet__flows-list img {
+    width: 8px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+  .seplag-tablet__flows-list--light {
+    color: #dce2f0;
+  }
 }
