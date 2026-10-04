@@ -1679,4 +1679,64 @@ body {
   .seplag-tablet__summary-body--light {
     color: #dce2f0;
   }
+
+  /* Seção 3 (tablet): Meu papel no projeto
+     Mesmo padrão da seção anterior: padding de 48px, gap de 16px e cards
+     de 328px com altura de 119px que quebram linha em telas menores. */
+  .seplag-tablet__role {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__role-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__role-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__role-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__role-card {
+    flex: 1 1 328px;
+    min-height: 119px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-tablet__role-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__role-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
 }
