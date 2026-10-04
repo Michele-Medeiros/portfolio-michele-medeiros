@@ -2291,4 +2291,78 @@ body {
   .seplag-tablet__showcase-media--campaign {
     height: 761px;
   }
+
+  /* Seção 13 (tablet): Feedback e acompanhamento
+     Dois cards brancos de 328px com altura de 340px e captura de 288 × 210px.
+     Quebram linha em telas menores. */
+  .seplag-tablet__feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__feedback-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__feedback-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__feedback-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__feedback-card {
+    flex: 0 1 328px;
+    max-width: 328px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-tablet__feedback-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__feedback-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__feedback-media {
+    width: 100%;
+    height: 210px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .seplag-tablet__feedback-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
