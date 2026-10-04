@@ -1151,6 +1151,207 @@ body {
     width: 638px;
     height: 466px;
   }
+
+  /* Seção 15: Design System para escalar
+     Figma: frame 1728 × 1348, padding lateral 65px, gap vertical 50px.
+     Cartão branco de 1598px (padding 32px, raio 24px) com blocos separados
+     por divisores #efefef e gap interno de 24px. */
+  .seplag-ds {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-ds__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-ds__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-ds__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-ds__card {
+    width: 100%;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-ds__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-ds__block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-ds__heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-ds__body {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  .seplag-ds__label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.32px;
+    color: #3b3b3e;
+    white-space: nowrap;
+  }
+
+  .seplag-ds__value {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  .seplag-ds__swatches {
+    display: flex;
+    gap: 15px;
+  }
+
+  .seplag-ds__swatch {
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+  }
+
+  .seplag-ds__divider {
+    height: 1px;
+    border: 0;
+    background: #efefef;
+  }
+
+  .seplag-ds__specimen {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 247px;
+    padding: 10px 6px;
+    background: #f6f1f5;
+    border-radius: 6px;
+    color: #56565a;
+    line-height: 18px;
+  }
+
+  .seplag-ds__specimen-line--semibold {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .seplag-ds__specimen-line--medium {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .seplag-ds__specimen-line--regular {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .seplag-ds__status-row {
+    display: flex;
+    gap: 50px;
+  }
+
+  .seplag-ds__status {
+    flex: 1 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #fefefe;
+    white-space: nowrap;
+  }
+
+  .seplag-ds__status--review {
+    background: #311e3b;
+  }
+
+  .seplag-ds__status--fix {
+    background: #9e76b3;
+  }
+
+  .seplag-ds__status--approved {
+    background: #0b7816;
+  }
+
+  .seplag-ds__chips {
+    display: flex;
+    gap: 32px;
+  }
+
+  .seplag-ds__chip-col {
+    flex: 1 0 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-ds__chip {
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: #f6f1f5;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #56565a;
+  }
 }
 
 /* ========================================================================
