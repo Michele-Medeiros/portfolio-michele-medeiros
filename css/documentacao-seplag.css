@@ -2823,4 +2823,99 @@ body {
     color: #5b207a;
     white-space: nowrap;
   }
+
+  .seplag-mobile__accent {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #f79c05;
+  }
+
+  /* Seção 2 (mobile): O projeto em 30 segundos
+     Padding de 40px vertical e 20px lateral, com os dois cards empilhados. */
+  .seplag-mobile__summary {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__summary-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__summary-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__summary-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-mobile__summary-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__summary-box--light {
+    background: #fff;
+    border: 1px solid #e4e4e8;
+  }
+
+  .seplag-mobile__summary-box--dark {
+    background: #122f5d;
+  }
+
+  .seplag-mobile__summary-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .seplag-mobile__summary-label--light {
+    color: #5029de;
+  }
+
+  .seplag-mobile__summary-label--dark {
+    color: #f79c05;
+  }
+
+  .seplag-mobile__summary-heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__summary-heading--light {
+    color: #fff;
+  }
+
+  .seplag-mobile__summary-body {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-mobile__summary-body--light {
+    color: #dce2f0;
+  }
 }
