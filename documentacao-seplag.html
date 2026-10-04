@@ -13,23 +13,23 @@
 </head>
 <body>
 
-  <div class="seplag-doc">
+  <!-- Seção 1: Cabeçalho -->
+  <header class="navbar-wrap">
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a href="index.html" class="navbar__brand">Michele Medeiros</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="sobre-mim.html">Sobre mim</a>
+        <a href="projetos.html" class="is-active">Projetos</a>
+        <a href="index.html#contato">Contatos</a>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Seção 1: Cabeçalho -->
-    <header class="navbar-wrap">
-      <nav class="navbar container" aria-label="Navegação principal">
-        <a href="index.html" class="navbar__brand">Michele Medeiros</a>
-        <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
-          <span></span><span></span><span></span>
-        </button>
-        <div class="navbar__links" id="navLinks">
-          <a href="index.html">Home</a>
-          <a href="sobre-mim.html">Sobre mim</a>
-          <a href="projetos.html" class="is-active">Projetos</a>
-          <a href="index.html#contato">Contatos</a>
-        </div>
-      </nav>
-    </header>
+  <div class="seplag-doc">
 
     <!-- Seção 2: Apresentação do projeto -->
     <section class="seplag-hero">
@@ -545,6 +545,44 @@
             <p class="seplag-hifi__step-text">Tabelas, status e detalhe progressivo.</p>
           </figcaption>
         </figure>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Versão tablet (500px a 999px) -->
+  <div class="seplag-tablet">
+
+    <!-- Seção 1: Apresentação -->
+    <section class="seplag-tablet__hero">
+      <p class="seplag-tablet__tags">UX/UI · Web Design · Design System · Data-heavy Interfaces</p>
+      <h1 class="seplag-tablet__name">SEPLAG.</h1>
+      <p class="seplag-tablet__headline">Gestão pública em uma experiência digital.</p>
+      <p class="seplag-tablet__desc">Um portal para organizar ações governamentais, órgãos, instalações, campanhas e indicadores em uma experiência consistente e escalável.</p>
+
+      <blockquote class="seplag-tablet__quote">O projeto exigiu transformar rotinas administrativas e grandes volumes de informação em interfaces claras, reutilizáveis e preparadas para crescer junto com novos módulos.</blockquote>
+
+      <div class="seplag-tablet__cards">
+        <div class="seplag-tablet__card">
+          <p class="seplag-tablet__card-title">Produto</p>
+          <p class="seplag-tablet__card-text">Portal institucional e de gestão</p>
+        </div>
+        <div class="seplag-tablet__card">
+          <p class="seplag-tablet__card-title">Execução</p>
+          <p class="seplag-tablet__card-text">Duração do projeto</p>
+        </div>
+        <div class="seplag-tablet__card">
+          <p class="seplag-tablet__card-title">Equipe</p>
+          <p class="seplag-tablet__card-text">Trabalho em co-criação</p>
+        </div>
+      </div>
+
+      <div class="seplag-tablet__art">
+        <img class="seplag-tablet__art-image" src="assets/images/seplag/camada-18-art.svg" alt="" aria-hidden="true">
+        <div class="seplag-tablet__badge">
+          <img src="assets/images/seplag/governo-paraiba-logo.png" alt="Governo da Paraíba">
+          <p>Plataforma de gestão estadual</p>
+        </div>
       </div>
     </section>
 
