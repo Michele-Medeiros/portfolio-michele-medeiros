@@ -1090,6 +1090,51 @@ body {
   .seplag-paths__arrow {
     flex-shrink: 0;
   }
+
+  /* Seção 13: Dados sem perder contexto
+     Figma: frame 1728 × 1467, padding lateral 65px, gap vertical 50px.
+     Mesma vitrine das seções 8, 9 e 11, com captura mais alta (1440 / 1755). */
+  .seplag-data {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-data__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-data__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-data__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-showcase__frame--campaign .seplag-showcase__panel {
+    height: auto;
+  }
+
+  .seplag-showcase__frame--campaign .seplag-showcase__image {
+    aspect-ratio: 1440 / 1755;
+  }
 }
 
 /* ========================================================================
