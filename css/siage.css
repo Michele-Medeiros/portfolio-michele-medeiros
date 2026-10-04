@@ -1648,3 +1648,30 @@
     overflow-wrap: anywhere;
   }
 }
+
+/* Tablet estreito (500px a 850px): High fidelity em coluna
+   ======================================================================== */
+@media (min-width: 500px) and (max-width: 850px) {
+  .siage-hifi__card {
+    flex: 0 0 100%;
+  }
+
+  .siage-hifi__shot,
+  .siage-hifi__card:nth-child(2) .siage-hifi__shot,
+  .siage-hifi__card:nth-child(3) .siage-hifi__shot {
+    height: auto;
+    aspect-ratio: auto !important;
+  }
+
+  .siage-hifi__shot picture {
+    position: static;
+    display: block;
+  }
+
+  .siage-hifi__img {
+    position: static;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
