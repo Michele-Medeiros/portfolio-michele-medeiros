@@ -2365,4 +2365,64 @@ body {
     height: 100%;
     object-fit: contain;
   }
+
+  /* Seção 14 (tablet): Design orientado por estados
+     Cards brancos de 328 × 155px com padding de 32px, ícone de 32px e
+     rótulo em caixa-alta. Quebram linha em telas menores. */
+  .seplag-tablet__states {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__states-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__states-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__states-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__state-card {
+    flex: 0 1 328px;
+    max-width: 328px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-tablet__state-card img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .seplag-tablet__state-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
 }
