@@ -3555,7 +3555,7 @@
 /* ========================================================================
    Sintonize — mobile (<500px), matching the dedicated Figma "Mobile" frame
    ======================================================================== */
-@media (max-width: 3000px) {
+@media (max-width: 499px) {
   .page-sintonize .cs-chapter-nav {
     display: flex;
     padding-inline: 20px;
