@@ -3882,6 +3882,112 @@
     font-weight: 400;
     color: #dce2f0;
   }
+
+  /* Design System — stacked panels, matching Figma mobile */
+  .page-sintonize .cs-ds-meta {
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 16px;
+    padding: 16px;
+  }
+
+  .page-sintonize .cs-ds-meta strong {
+    font-size: 12px;
+    font-weight: 600;
+    color: #5029de;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .page-sintonize .cs-ds-row {
+    flex-direction: column;
+  }
+
+  .page-sintonize .cs-ds-card {
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    padding: 16px;
+  }
+
+  .page-sintonize .cs-ds-card__title,
+  .page-sintonize .cs-ds-components__title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #5029de;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .page-sintonize .cs-ds-card--typography {
+    flex: none;
+  }
+
+  .page-sintonize .cs-ds-typo-tablet-img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 12px;
+  }
+
+  .page-sintonize .cs-typo-box,
+  .page-sintonize .cs-typo-row {
+    display: none;
+  }
+
+  .page-sintonize .cs-ds-col-right {
+    flex: none;
+    max-width: none;
+    width: 100%;
+  }
+
+  .page-sintonize .cs-ds-card--mascotes {
+    display: none;
+  }
+
+  .page-sintonize .cs-palette-slider {
+    border: none;
+    padding: 12px 0 0;
+  }
+
+  .page-sintonize .cs-palette-dots {
+    display: none;
+  }
+
+  .page-sintonize .cs-palette-slider__panel {
+    display: none !important;
+  }
+
+  .page-sintonize .cs-palette-slider__panel:first-child {
+    display: flex !important;
+  }
+
+  .page-sintonize .cs-palette-slider__panel > .cs-swatch-group__title {
+    display: none;
+  }
+
+  .page-sintonize .cs-swatch__dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+
+  .page-sintonize .cs-ds-components {
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 16px;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .page-sintonize .cs-ds-components__img--desktop {
+    display: none;
+  }
+
+  .page-sintonize .cs-ds-components__img--tablet {
+    display: block;
+    height: 260px;
+    object-fit: contain;
+  }
 }
 
 /* Aprova Quest — mobile: Criando consistência */
