@@ -1,0 +1,247 @@
+/* ========================================================================
+   Documentação SEPLAG — versão web
+   Exibida apenas em telas a partir de 1000px.
+   ======================================================================== */
+
+body {
+  background: #f7f7f7;
+}
+
+.seplag-doc {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .seplag-doc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  /* Seção 1: Cabeçalho
+     Figma: frame 1598px centralizado, padding 56px topo / 32px base,
+     barra de 100px com borda #d7d7d7, raio 10px e sombra suave. */
+  .seplag-doc__header {
+    width: 1598px;
+    max-width: 100%;
+    padding: 56px 0 32px;
+  }
+
+  .seplag-doc__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding-inline: 16px;
+    background: rgba(254, 254, 254, 0.75);
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 2px rgba(141, 141, 141, 0.25);
+  }
+
+  .seplag-doc__brand {
+    padding: 10px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: normal;
+    color: #3b3b3e;
+    white-space: nowrap;
+  }
+
+  .seplag-doc__links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .seplag-doc__link {
+    padding: 10px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: normal;
+    color: #3b3b3e;
+    white-space: nowrap;
+  }
+
+  .seplag-doc__link.is-active {
+    font-weight: 600;
+    color: #5029de;
+    filter: drop-shadow(0 0 6px #9ab9ef);
+  }
+
+  /* Seção 2: Apresentação
+     Figma: frame 1728 × 925, conteúdo com padding lateral 65px.
+     Coluna de texto 816px com gap de 50px; painel laranja 595 × 907. */
+  .seplag-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1728px;
+    max-width: 100%;
+    height: 925px;
+    padding-inline: 65px;
+  }
+
+  .seplag-hero__info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    width: 816px;
+    flex-shrink: 0;
+  }
+
+  .seplag-hero__tags {
+    padding-left: 12px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    color: #122f5d;
+    white-space: nowrap;
+  }
+
+  .seplag-hero__title {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-hero__name {
+    padding-left: 12px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 1.45;
+    color: #151414;
+  }
+
+  .seplag-hero__headline {
+    width: 749px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.45;
+    color: #252628;
+  }
+
+  .seplag-hero__desc {
+    padding-left: 12px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    color: #262626;
+    text-align: justify;
+  }
+
+  .seplag-hero__quote {
+    padding-left: 12px;
+    border-left: 4px solid #eb8a19;
+    font-family: "Kufam", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.55;
+    color: #262626;
+    text-align: justify;
+  }
+
+  .seplag-hero__cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .seplag-hero__card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 231px;
+    padding: 32px;
+    background: #fff;
+    border: 1px solid #e4e3e3;
+    border-radius: 24px;
+  }
+
+  .seplag-hero__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-hero__card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.32px;
+    color: #56565a;
+  }
+
+  /* Painel laranja com a arte e o selo */
+  .seplag-hero__visual {
+    position: relative;
+    width: 595px;
+    height: 907px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #eb8a19;
+    border-radius: 24px;
+  }
+
+  .seplag-hero__art {
+    position: absolute;
+    left: -23px;
+    top: -162px;
+    width: 811px;
+    height: 1256px;
+    opacity: 0.8;
+  }
+
+  .seplag-hero__art img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    transform: scaleX(-1);
+  }
+
+  .seplag-hero__badge {
+    position: absolute;
+    left: 57px;
+    top: 644px;
+    width: 481px;
+    padding: 16px 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-hero__badge img {
+    width: 313px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .seplag-hero__badge p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.65;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5b207a;
+    white-space: nowrap;
+  }
+}
