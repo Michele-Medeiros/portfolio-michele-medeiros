@@ -421,4 +421,96 @@ body {
     letter-spacing: 0.4px;
     color: #56565a;
   }
+
+  /* Seção 5: Um sistema, múltiplas camadas
+     Figma: frame 1728 × 652, padding lateral 65px, gap vertical 32px.
+     Grade de 3 colunas com gap horizontal 50px e vertical 32px.
+     Cada card tem número em pílula azul-claro e título em caixa-alta. */
+  .seplag-layers {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-layers__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-layers__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-layers__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-layers__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 32px;
+  }
+
+  .seplag-layers__card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-layers__head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .seplag-layers__number {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: 900px;
+    background: #e6ecff;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.95;
+    color: #151414;
+  }
+
+  .seplag-layers__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-layers__card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
 }
