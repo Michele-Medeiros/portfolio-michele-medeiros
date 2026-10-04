@@ -1135,6 +1135,22 @@ body {
   .seplag-showcase__frame--campaign .seplag-showcase__image {
     aspect-ratio: 1440 / 1755;
   }
+
+  /* Seção 14: Feedback e acompanhamento
+     Reutiliza a estrutura de cards com seta da seção 12; as capturas
+     têm 638 × 466px, então o item e a mídia são mais estreitos. */
+  .seplag-paths--feedback {
+    height: auto;
+  }
+
+  .seplag-paths--feedback .seplag-paths__item {
+    width: 686px;
+  }
+
+  .seplag-paths--feedback .seplag-paths__media {
+    width: 638px;
+    height: 466px;
+  }
 }
 
 /* ========================================================================
