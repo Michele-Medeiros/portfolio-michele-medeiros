@@ -2157,4 +2157,34 @@ body {
   .seplag-tablet__flows-list--light {
     color: #dce2f0;
   }
+
+  /* Seção 10 (tablet): Revelar complexidade apenas quando necessária
+     Mesmo padrão de card da seção de densidade, com a captura mais alta
+     (503px de altura). */
+  .seplag-tablet__reveal {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__reveal-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__reveal-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__showcase-media--tall {
+    height: 503px;
+  }
 }
