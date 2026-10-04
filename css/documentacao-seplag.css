@@ -15,9 +15,14 @@ body {
   .seplag-doc {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
     min-height: 100vh;
+  }
+
+  /* Centraliza sem cortar o conteúdo que for mais largo que a tela */
+  .seplag-doc > * {
+    margin-inline: auto;
   }
 
   /* Seção 1: Cabeçalho
@@ -983,5 +988,130 @@ body {
 
   .seplag-showcase__frame--tall .seplag-showcase__image {
     aspect-ratio: 1440 / 1160;
+  }
+
+  /* Seção 12: Um fluxo, diferentes caminhos
+     Figma: frame 1728 × 904, padding lateral 65px, gap vertical 50px.
+     Dois cards de 680px (padding 24px, raio 12px) com seta entre eles. */
+  .seplag-paths {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-paths__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-paths__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-paths__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-paths__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .seplag-paths__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    width: 680px;
+    background: #fefefe;
+    border-radius: 12px;
+  }
+
+  .seplag-paths__media {
+    width: 632px;
+    height: 509px;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .seplag-paths__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .seplag-paths__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    padding: 0 0 0;
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .seplag-paths__step {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-paths__step-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  .seplag-paths__arrow {
+    flex-shrink: 0;
+  }
+}
+
+/* ========================================================================
+   Escala da página
+   O design foi medido no canvas do Figma (1728px). Para caber em telas
+   menores que isso, o conteúdo inteiro é reduzido proporcionalmente, sem
+   alterar medidas nem espaçamentos entre as seções.
+   ======================================================================== */
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .seplag-doc {
+    zoom: 0.57;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .seplag-doc {
+    zoom: 0.69;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1727px) {
+  .seplag-doc {
+    zoom: 0.83;
   }
 }
