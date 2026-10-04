@@ -1549,3 +1549,54 @@
     height: 192px;
   }
 }
+
+/* Mobile (até 499px): High fidelity
+   ======================================================================== */
+@media (max-width: 499px) {
+  .siage-hifi {
+    gap: 16px;
+  }
+
+  .siage-hifi__lead {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #56565a;
+  }
+
+  .siage-hifi__card {
+    flex: 0 0 100%;
+    padding: 16px;
+    gap: 10px;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  .siage-hifi__card:nth-child(2) {
+    height: auto;
+  }
+
+  .siage-hifi__shot {
+    height: 374px;
+  }
+
+  .siage-hifi__card:nth-child(2) .siage-hifi__shot {
+    height: 278px;
+  }
+
+  .siage-hifi__card:nth-child(3) .siage-hifi__shot {
+    height: 171px;
+  }
+
+  .siage-hifi__title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .siage-hifi__text {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+}
