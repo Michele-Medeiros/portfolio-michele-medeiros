@@ -2918,4 +2918,61 @@ body {
   .seplag-mobile__summary-body--light {
     color: #dce2f0;
   }
+
+  /* Seção 3 (mobile): Meu papel no projeto
+     Seis cards brancos empilhados com gap de 12px, padding de 20px. */
+  .seplag-mobile__role {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__role-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__role-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__role-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__role-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__role-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__role-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
 }
