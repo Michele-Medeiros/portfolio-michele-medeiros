@@ -1352,6 +1352,106 @@ body {
     text-align: center;
     color: #56565a;
   }
+
+  /* Seção 16: High fidelity
+     Figma: frame 1728 × 727, padding lateral 65px, gap vertical 80px.
+     Três cards de 500px (padding 24px, raio 12px) com legenda branca. */
+  .seplag-hifi {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-hifi__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-hifi__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-hifi__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-hifi__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .seplag-hifi__card {
+    width: 500px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    background: #fefefe;
+    border-radius: 12px;
+  }
+
+  .seplag-hifi__media {
+    width: 100%;
+    aspect-ratio: 1440 / 1024;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .seplag-hifi__media--home {
+    aspect-ratio: 1440 / 1050;
+  }
+
+  .seplag-hifi__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .seplag-hifi__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .seplag-hifi__step {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-hifi__step-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
 }
 
 /* ========================================================================
