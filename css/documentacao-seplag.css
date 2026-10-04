@@ -2261,4 +2261,34 @@ body {
     height: 100%;
     object-fit: contain;
   }
+
+  /* Seção 12 (tablet): Dados sem perder contexto
+     Mesmo card da seção de densidade, com a captura do dashboard em 761px
+     de altura. */
+  .seplag-tablet__data {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__data-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__data-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__showcase-media--campaign {
+    height: 761px;
+  }
 }
