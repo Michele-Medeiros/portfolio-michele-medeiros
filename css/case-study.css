@@ -4096,6 +4096,33 @@
     width: 20px;
     background: var(--cs-orange-cta);
   }
+
+  /* "Documentação como parte do design" — single-column stacked cards, matching Figma mobile */
+  .page-sintonize .cs-cards-row--docs {
+    gap: 16px;
+  }
+
+  .page-sintonize .cs-cards-row--docs .cs-card {
+    gap: 8px;
+    border-radius: 20px;
+  }
+
+  .page-sintonize .cs-cards-row--docs .cs-pill {
+    align-self: flex-start;
+    padding: 0;
+    background: transparent;
+    color: #5029de;
+    font-size: 12px;
+  }
+
+  .page-sintonize .cs-cards-row--docs .cs-card__title {
+    font-size: 20px;
+    text-transform: none;
+  }
+
+  .page-sintonize .cs-cards-row--docs .cs-card__text {
+    font-size: 15px;
+  }
 }
 
 /* Aprova Quest — mobile: Criando consistência */
