@@ -3388,4 +3388,33 @@ body {
   .seplag-mobile__flows-items--light {
     color: #dce2f0;
   }
+
+  /* Seção 10 (mobile): Revelar complexidade apenas quando necessária
+     Mesmo card da seção de densidade, com a captura de órgãos em 243px. */
+  .seplag-mobile__reveal {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__reveal-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__reveal-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__showcase-media--reveal {
+    height: 243px;
+  }
 }
