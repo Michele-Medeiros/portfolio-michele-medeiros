@@ -557,7 +557,14 @@
 
   .siage-journey__screen {
     aspect-ratio: auto !important;
-    min-height: 320px;
+    padding: 24px 32px;
+  }
+
+  .siage-journey__img {
+    position: static;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 }
 
@@ -906,5 +913,77 @@
     letter-spacing: 0;
     text-align: left;
     color: #56565a;
+  }
+}
+
+/* Tablet (500px a 999px): Definindo a experiência e A solução
+   ======================================================================== */
+@media (min-width: 500px) and (max-width: 999px) {
+  .siage-steps--grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .siage-steps--grid .siage-step {
+    flex: 1 1 calc(50% - 8px);
+  }
+
+  .siage-solution > .cs-section__head {
+    position: relative;
+    padding-top: 20px;
+    gap: 16px;
+  }
+
+  .siage-solution > .cs-section__head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    background: #f79c05;
+  }
+
+  .siage-solution-lead {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    color: #56565a;
+  }
+
+  .siage-solution {
+    gap: 16px;
+  }
+
+  .siage-states {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .siage-state {
+    flex: 1 1 calc(50% - 8px);
+    padding: 20px;
+    gap: 10px;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-state__dot {
+    width: 18px;
+    height: 18px;
+  }
+
+  .siage-state__title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .siage-state__text {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0;
   }
 }
