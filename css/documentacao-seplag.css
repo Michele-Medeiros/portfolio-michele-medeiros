@@ -740,7 +740,7 @@ body {
     color: #151414;
   }
 
-  .seplag-journey__frame {
+  .seplag-showcase__frame {
     display: flex;
     align-items: stretch;
     width: 100%;
@@ -748,7 +748,7 @@ body {
     border-radius: 24px;
   }
 
-  .seplag-journey__panel {
+  .seplag-showcase__panel {
     flex: 1 0 0;
     min-width: 0;
     height: 730px;
@@ -760,7 +760,7 @@ body {
     border-radius: 24px 0 0 24px;
   }
 
-  .seplag-journey__label {
+  .seplag-showcase__label {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -770,7 +770,7 @@ body {
     white-space: nowrap;
   }
 
-  .seplag-journey__heading {
+  .seplag-showcase__heading {
     width: 499px;
     max-width: 100%;
     font-family: "Kufam", sans-serif;
@@ -781,7 +781,7 @@ body {
     color: #000;
   }
 
-  .seplag-journey__body {
+  .seplag-showcase__body {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -790,7 +790,7 @@ body {
     color: #56565a;
   }
 
-  .seplag-journey__preview {
+  .seplag-showcase__preview {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -801,10 +801,47 @@ body {
     border-radius: 0 24px 24px 0;
   }
 
-  .seplag-journey__image {
+  .seplag-showcase__image {
     width: 100%;
     aspect-ratio: 1440 / 1024;
     object-fit: cover;
     box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Seção 9: Densidade não é necessariamente um problema
+     Figma: frame 1728 × 1076, padding lateral 65px, gap vertical 50px.
+     Reutiliza a moldura de vitrine (seplag-showcase) da seção anterior. */
+  .seplag-density {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-density__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-density__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-density__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+    color: #151414;
   }
 }
