@@ -1,0 +1,3920 @@
+/* ========================================================================
+   Documentação SEPLAG — versão web
+   Exibida apenas em telas a partir de 1000px.
+   ======================================================================== */
+
+body {
+  background: #f7f7f7;
+}
+
+.seplag-doc {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .seplag-doc {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  /* Centraliza sem cortar o conteúdo que for mais largo que a tela */
+  .seplag-doc > * {
+    margin-inline: auto;
+  }
+
+  /* Seção 1: Cabeçalho
+     Usa a mesma navbar compartilhada de style.css (navbar-wrap / navbar),
+     igual à das páginas de case. */
+
+  /* Seção 2: Apresentação
+     Figma: frame 1728 × 925, conteúdo com padding lateral 65px.
+     Coluna de texto 816px com gap de 50px; painel laranja 595 × 907. */
+  /* Primeira seção: 65px abaixo da navbar, como nas outras páginas
+     (.hero em home.css e .projects-header em projetos.css). */
+  .seplag-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1728px;
+    max-width: 100%;
+    height: 925px;
+    margin-top: 65px;
+    padding-inline: 65px;
+  }
+
+  .seplag-hero__info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    width: 816px;
+    flex-shrink: 0;
+  }
+
+  .seplag-hero__tags {
+    padding-left: 12px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    color: #122f5d;
+    white-space: nowrap;
+  }
+
+  .seplag-hero__title {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-hero__name {
+    padding-left: 12px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 1.45;
+    color: #151414;
+  }
+
+  .seplag-hero__headline {
+    width: 749px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.45;
+    color: #252628;
+  }
+
+  .seplag-hero__desc {
+    padding-left: 12px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    color: #262626;
+    text-align: justify;
+  }
+
+  .seplag-hero__quote {
+    padding-left: 12px;
+    border-left: 4px solid #eb8a19;
+    font-family: "Kufam", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.55;
+    color: #262626;
+    text-align: justify;
+  }
+
+  .seplag-hero__cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .seplag-hero__card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 231px;
+    padding: 32px;
+    background: #fff;
+    border: 1px solid #e4e3e3;
+    border-radius: 24px;
+  }
+
+  .seplag-hero__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-hero__card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.32px;
+    color: #56565a;
+  }
+
+  /* Painel laranja com a arte e o selo */
+  .seplag-hero__visual {
+    position: relative;
+    width: 595px;
+    height: 907px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #eb8a19;
+    border-radius: 24px;
+  }
+
+  .seplag-hero__art {
+    position: absolute;
+    left: -23px;
+    top: -162px;
+    width: 811px;
+    height: 1256px;
+    opacity: 0.8;
+  }
+
+  .seplag-hero__art img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    transform: scaleX(-1);
+  }
+
+  .seplag-hero__badge {
+    position: absolute;
+    left: 57px;
+    top: 644px;
+    width: 481px;
+    padding: 16px 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-hero__badge img {
+    width: 313px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .seplag-hero__badge p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.65;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5b207a;
+    white-space: nowrap;
+  }
+
+  /* Seção 3: O projeto em 30 segundos
+     Figma: frame 1728 × 628, padding lateral 54px, gap vertical 50px.
+     Caixas: Contexto 685px (branca) e Desafio flexível (azul #122f5d). */
+  .seplag-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 54px;
+  }
+
+  .seplag-summary__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-summary__text {
+    width: 100%;
+    padding-left: 12px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    color: #262626;
+  }
+
+  .seplag-summary__cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .seplag-summary__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 32px;
+    border-radius: 24px;
+  }
+
+  .seplag-summary__box--light {
+    width: 685px;
+    flex-shrink: 0;
+    background: #fff;
+  }
+
+  .seplag-summary__box--dark {
+    flex: 1 0 0;
+    min-width: 0;
+    background: #122f5d;
+  }
+
+  .seplag-summary__pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: 900px;
+    background: #e6ecff;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-summary__heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-summary__box--dark .seplag-summary__heading {
+    color: #fff;
+  }
+
+  .seplag-summary__body {
+    width: 100%;
+    text-align: justify;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #252628;
+  }
+
+  .seplag-summary__box--dark .seplag-summary__body {
+    color: #fff;
+  }
+
+  /* Seção 4: Meu papel no projeto
+     Figma: frame 1728 × 658, padding lateral 65px.
+     Grade de 3 colunas: gap horizontal 50px, vertical 32px. */
+  .seplag-role {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-role__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-role__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-role__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 55px;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-role__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 32px;
+  }
+
+  .seplag-role__card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-role__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-role__card-text {
+    text-align: justify;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  /* Seção 5: Um sistema, múltiplas camadas
+     Figma: frame 1728 × 652, padding lateral 65px, gap vertical 32px.
+     Grade de 3 colunas com gap horizontal 50px e vertical 32px.
+     Cada card tem número em pílula azul-claro e título em caixa-alta. */
+  .seplag-layers {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-layers__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-layers__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-layers__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-layers__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 32px;
+  }
+
+  .seplag-layers__card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-layers__head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .seplag-layers__number {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: 900px;
+    background: #e6ecff;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.95;
+    color: #151414;
+  }
+
+  .seplag-layers__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-layers__card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  /* Seção 6: Projetando para quem já tinha uma forma de trabalhar
+     Figma: frame 1728 × 732, padding lateral 65px, gap vertical 32px.
+     Três cards em linha com gap de 50px. */
+  .seplag-people {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-people__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-people__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-people__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-people__grid {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+  }
+
+  .seplag-people__card {
+    flex: 1 0 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-people__head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .seplag-people__number {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: 900px;
+    background: #e6ecff;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.95;
+    color: #151414;
+  }
+
+  .seplag-people__label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #122f5d;
+    white-space: nowrap;
+  }
+
+  .seplag-people__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-people__card-text {
+    text-align: justify;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  /* Seção 7: Princípios de design
+     Figma: frame 1728 × 744, padding lateral 65px, gap vertical 50px.
+     Linha 1 com 3 cards; linha 2 com 2 cards centralizados (largura 1049px). */
+  .seplag-principles {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-principles__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-principles__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-principles__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-principles__rows {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .seplag-principles__row {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+  }
+
+  .seplag-principles__row--centered {
+    justify-content: center;
+    width: 1049px;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .seplag-principles__card {
+    flex: 1 0 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-principles__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-principles__card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  /* Seção 8: Uma jornada em destaque
+     Figma: frame 1728 × 920, padding lateral 65px, gap vertical 50px.
+     Moldura com borda #c3c3c4: painel de texto (flex) + painel com a
+     captura de tela de 1023px, sombra e proporção 1440/1024. */
+  .seplag-journey {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-journey__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-journey__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-journey__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #151414;
+  }
+
+  .seplag-showcase__frame {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    border: 1px solid #c3c3c4;
+    border-radius: 24px;
+  }
+
+  .seplag-showcase__panel {
+    flex: 1 0 0;
+    min-width: 0;
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px 0 0 24px;
+  }
+
+  .seplag-showcase__label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #022859;
+    white-space: nowrap;
+  }
+
+  .seplag-showcase__heading {
+    width: 499px;
+    max-width: 100%;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+  .seplag-showcase__body {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  .seplag-showcase__preview {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 1023px;
+    flex-shrink: 0;
+    padding: 24px 32px;
+    background: #fff;
+    border-radius: 0 24px 24px 0;
+  }
+
+  .seplag-showcase__image {
+    width: 100%;
+    aspect-ratio: 1440 / 1024;
+    object-fit: cover;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Seção 9: Densidade não é necessariamente um problema
+     Figma: frame 1728 × 1076, padding lateral 65px, gap vertical 50px.
+     Reutiliza a moldura de vitrine (seplag-showcase) da seção anterior. */
+  .seplag-density {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-density__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-density__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-density__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+    color: #151414;
+  }
+
+  /* Seção 10: Quando deveríamos fundir ou não fluxos
+     Figma: frame 1728 × 788, padding lateral 65px, gap vertical 80px.
+     Dois cards brancos de largura igual, com gap horizontal de 50px. */
+  .seplag-flows {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-flows__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-flows__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-flows__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-flows__grid {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+  }
+
+  .seplag-flows__card {
+    flex: 1 0 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-flows__pill {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: 900px;
+    background: #e6ecff;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-flows__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-flows__list {
+    list-style: disc;
+    padding-left: 30px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    text-align: justify;
+    color: #252628;
+  }
+
+  .seplag-flows__list li + li {
+    margin-top: 12px;
+  }
+
+  /* Seção 11: Revelar complexidade apenas quando necessária
+     Figma: frame 1728 × 1070, padding lateral 65px, gap vertical 50px.
+     Mesma vitrine da seção 8, com a captura mais alta (1440 / 1160). */
+  .seplag-reveal {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-reveal__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-reveal__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-reveal__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-showcase__frame--tall .seplag-showcase__panel {
+    height: auto;
+  }
+
+  .seplag-showcase__frame--tall .seplag-showcase__image {
+    aspect-ratio: 1440 / 1160;
+  }
+
+  /* Seção 12: Um fluxo, diferentes caminhos
+     Figma: frame 1728 × 904, padding lateral 65px, gap vertical 50px.
+     Dois cards de 680px (padding 24px, raio 12px) com seta entre eles. */
+  .seplag-paths {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-paths__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-paths__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-paths__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-paths__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .seplag-paths__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    width: 680px;
+    background: #fefefe;
+    border-radius: 12px;
+  }
+
+  .seplag-paths__media {
+    width: 632px;
+    height: 509px;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .seplag-paths__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .seplag-paths__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    padding: 0 0 0;
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .seplag-paths__step {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-paths__step-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  .seplag-paths__arrow {
+    flex-shrink: 0;
+  }
+
+  /* Seção 13: Dados sem perder contexto
+     Figma: frame 1728 × 1467, padding lateral 65px, gap vertical 50px.
+     Mesma vitrine das seções 8, 9 e 11, com captura mais alta (1440 / 1755). */
+  .seplag-data {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-data__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-data__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-data__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-showcase__frame--campaign .seplag-showcase__panel {
+    height: auto;
+  }
+
+  .seplag-showcase__frame--campaign .seplag-showcase__image {
+    aspect-ratio: 1440 / 1755;
+  }
+
+  /* Seção 14: Feedback e acompanhamento
+     Reutiliza a estrutura de cards com seta da seção 12; as capturas
+     têm 638 × 466px, então o item e a mídia são mais estreitos. */
+  .seplag-paths--feedback {
+    height: auto;
+  }
+
+  .seplag-paths--feedback .seplag-paths__item {
+    width: 686px;
+  }
+
+  .seplag-paths--feedback .seplag-paths__media {
+    width: 638px;
+    height: 466px;
+  }
+
+  /* Seção 15: Design System para escalar
+     Figma: frame 1728 × 1348, padding lateral 65px, gap vertical 50px.
+     Cartão branco de 1598px (padding 32px, raio 24px) com blocos separados
+     por divisores #efefef e gap interno de 24px. */
+  .seplag-ds {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-ds__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-ds__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-ds__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-ds__card {
+    width: 100%;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-ds__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-ds__block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-ds__heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-ds__body {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  .seplag-ds__label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.32px;
+    color: #3b3b3e;
+    white-space: nowrap;
+  }
+
+  .seplag-ds__value {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  .seplag-ds__swatches {
+    display: flex;
+    gap: 15px;
+  }
+
+  .seplag-ds__swatch {
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+  }
+
+  .seplag-ds__divider {
+    height: 1px;
+    border: 0;
+    background: #efefef;
+  }
+
+  .seplag-ds__specimen {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 247px;
+    padding: 10px 6px;
+    background: #f6f1f5;
+    border-radius: 6px;
+    color: #56565a;
+    line-height: 18px;
+  }
+
+  .seplag-ds__specimen-line--semibold {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .seplag-ds__specimen-line--medium {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .seplag-ds__specimen-line--regular {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .seplag-ds__status-row {
+    display: flex;
+    gap: 50px;
+  }
+
+  .seplag-ds__status {
+    flex: 1 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #fefefe;
+    white-space: nowrap;
+  }
+
+  .seplag-ds__status--review {
+    background: #311e3b;
+  }
+
+  .seplag-ds__status--fix {
+    background: #9e76b3;
+  }
+
+  .seplag-ds__status--approved {
+    background: #0b7816;
+  }
+
+  .seplag-ds__chips {
+    display: flex;
+    gap: 32px;
+  }
+
+  .seplag-ds__chip-col {
+    flex: 1 0 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-ds__chip {
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: #f6f1f5;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #56565a;
+  }
+
+  /* Seção 16: High fidelity
+     Figma: frame 1728 × 727, padding lateral 65px, gap vertical 80px.
+     Três cards de 500px (padding 24px, raio 12px) com legenda branca. */
+  .seplag-hifi {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 206px;
+    padding-inline: 65px;
+  }
+
+  .seplag-hifi__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-hifi__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .seplag-hifi__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #151414;
+  }
+
+  .seplag-hifi__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .seplag-hifi__card {
+    width: 500px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    background: #fefefe;
+    border-radius: 12px;
+  }
+
+  .seplag-hifi__media {
+    width: 100%;
+    aspect-ratio: 1440 / 1024;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .seplag-hifi__media--home {
+    aspect-ratio: 1440 / 1050;
+  }
+
+  .seplag-hifi__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .seplag-hifi__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .seplag-hifi__step {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-hifi__step-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+}
+
+/* ========================================================================
+   Escala da página
+   O design foi medido no canvas do Figma (1728px). Para caber em telas
+   menores que isso, o conteúdo inteiro é reduzido proporcionalmente, sem
+   alterar medidas nem espaçamentos entre as seções.
+   ======================================================================== */
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .seplag-doc {
+    zoom: 0.57;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .seplag-doc {
+    zoom: 0.69;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1727px) {
+  .seplag-doc {
+    zoom: 0.83;
+  }
+}
+
+/* ========================================================================
+   Versão tablet (500px a 999px)
+   Medidas do frame "SEPLAG | Tablet 500→999" (768px de largura),
+   com margens laterais de 48px.
+   ======================================================================== */
+.seplag-tablet {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  .seplag-tablet {
+    display: block;
+    width: 100%;
+    max-width: 768px;
+    margin-inline: auto;
+  }
+
+  .seplag-tablet__hero {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 48px 48px;
+  }
+
+  .seplag-tablet__tags {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #122f5d;
+  }
+
+  .seplag-tablet__name {
+    font-family: "Kufam", sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.05;
+    color: #151414;
+  }
+
+  .seplag-tablet__headline {
+    font-family: "Kufam", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__desc {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-tablet__quote {
+    padding-left: 14px;
+    border-left: 4px solid #f79c05;
+    font-family: "Kufam", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-tablet__cards {
+    display: flex;
+    gap: 12px;
+  }
+
+  .seplag-tablet__card {
+    flex: 1 0 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 16px;
+  }
+
+  .seplag-tablet__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  /* Arte laranja de 672 × 276px com o selo do governo */
+  .seplag-tablet__art {
+    position: relative;
+    width: 100%;
+    height: 276px;
+    overflow: hidden;
+    background: #eb8a19;
+    border-radius: 14px;
+  }
+
+  .seplag-tablet__art-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+
+  .seplag-tablet__badge {
+    position: absolute;
+    left: 4.9%;
+    top: 27.5%;
+    width: 90%;
+    padding: 9px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    background: #fff;
+    border-radius: 14px;
+  }
+
+  .seplag-tablet__badge img {
+    width: 179px;
+    height: 57px;
+    object-fit: cover;
+  }
+
+  .seplag-tablet__badge p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 11.5px;
+    line-height: 1.65;
+    text-transform: uppercase;
+    color: #5b207a;
+    white-space: nowrap;
+  }
+
+  /* Seção 2 (tablet): O projeto em 30 segundos
+     Frame de 768px com padding de 48px e gap de 16px. Os dois cards
+     dividem a largura (328px cada); em telas menores eles quebram linha. */
+  .seplag-tablet__summary {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__accent {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #f79c05;
+  }
+
+  .seplag-tablet__summary-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__summary-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__summary-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__summary-box {
+    flex: 1 1 328px;
+    min-height: 335px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .seplag-tablet__summary-box--light {
+    background: #fff;
+    border: 1px solid #e4e4e8;
+  }
+
+  .seplag-tablet__summary-box--dark {
+    background: #122f5d;
+  }
+
+  .seplag-tablet__summary-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .seplag-tablet__summary-label--light {
+    color: #5029de;
+  }
+
+  .seplag-tablet__summary-label--dark {
+    color: #f79c05;
+  }
+
+  .seplag-tablet__summary-heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__summary-heading--light {
+    color: #fff;
+  }
+
+  .seplag-tablet__summary-body {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-tablet__summary-body--light {
+    color: #dce2f0;
+  }
+
+  /* Seção 3 (tablet): Meu papel no projeto
+     Mesmo padrão da seção anterior: padding de 48px, gap de 16px e cards
+     de 328px com altura de 119px que quebram linha em telas menores. */
+  .seplag-tablet__role {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__role-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__role-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__role-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__role-card {
+    flex: 1 1 328px;
+    min-height: 119px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-tablet__role-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__role-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  /* Seção 4 (tablet): Um sistema, múltiplas camadas
+     Mesmo padrão de grade da seção anterior, com número em pílula lilás
+     ao lado do título de cada card. */
+  .seplag-tablet__layers {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__layers-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__layers-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__layers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__layer-card {
+    flex: 1 1 328px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-tablet__layer-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .seplag-tablet__layer-number {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 4px 10px;
+    border-radius: 100px;
+    background: #edebfc;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #5029de;
+    white-space: nowrap;
+  }
+
+  .seplag-tablet__layer-title {
+    flex: 1 0 0;
+    min-width: 0;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-tablet__layer-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  /* Seção 5 (tablet): Projetando para quem já tinha uma forma de trabalhar
+     Padding de 48px, gap de 16px e três cards em coluna, com largura total. */
+  .seplag-tablet__people {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__people-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__people-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__people-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-tablet__people-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .seplag-tablet__people-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #56565a;
+    white-space: nowrap;
+  }
+
+  .seplag-tablet__people-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__people-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  /* Seção 6 (tablet): Princípios de design
+     Cards de 328px com altura de 142px em grade que quebra linha; o último
+     card da grade fica na primeira coluna, como no frame. */
+  .seplag-tablet__principles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__principles-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__principles-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__principles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__principle-card {
+    flex: 0 1 328px;
+    max-width: 328px;
+    min-height: 142px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-tablet__principle-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__principle-text-small {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  /* Seção 7 (tablet): Uma jornada em destaque
+     Card branco de largura total (padding 24px, raio 24px). A captura fica
+     em 672 × 444px, com a imagem contida e cantos arredondados de 16px. */
+  .seplag-tablet__journey {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__journey-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__journey-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__showcase-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 24px;
+  }
+
+  .seplag-tablet__showcase-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #5029de;
+  }
+
+  .seplag-tablet__showcase-heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__showcase-body {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-tablet__showcase-media {
+    width: 100%;
+    height: 444px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .seplag-tablet__showcase-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Seção 8 (tablet): Densidade não é necessariamente um problema
+     Mesmo padrão de card da seção anterior, com o título e a introdução
+     da seção no estilo das demais. */
+  .seplag-tablet__density {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__density-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__density-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  /* Seção 9 (tablet): Quando deveríamos fundir ou não fluxos
+     Dois cards de 328px com altura de 453px que quebram linha em telas menores.
+     Os marcadores são os SVGs de 8 × 16px do Figma. */
+  .seplag-tablet__flows {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__flows-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__flows-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__flows-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__flows-card {
+    flex: 0 1 328px;
+    max-width: 328px;
+    min-height: 453px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .seplag-tablet__flows-card--light {
+    background: #fff;
+    border: 1px solid #e4e4e8;
+  }
+
+  .seplag-tablet__flows-card--dark {
+    background: #122f5d;
+  }
+
+  .seplag-tablet__flows-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .seplag-tablet__flows-label--light {
+    color: #5029de;
+  }
+
+  .seplag-tablet__flows-label--dark {
+    color: #f79c05;
+  }
+
+  .seplag-tablet__flows-heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__flows-heading--light {
+    color: #fff;
+  }
+
+  .seplag-tablet__flows-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-tablet__flows-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .seplag-tablet__flows-list img {
+    width: 8px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+  .seplag-tablet__flows-list--light {
+    color: #dce2f0;
+  }
+
+  /* Seção 10 (tablet): Revelar complexidade apenas quando necessária
+     Mesmo padrão de card da seção de densidade, com a captura mais alta
+     (503px de altura). */
+  .seplag-tablet__reveal {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__reveal-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__reveal-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__showcase-media--tall {
+    height: 503px;
+  }
+
+  /* Seção 11 (tablet): Um fluxo, diferentes caminhos
+     Dois cards brancos de 328px com altura de 362px, cada um com título,
+     descrição e captura de 288 × 232px. Quebram linha em telas menores. */
+  .seplag-tablet__paths {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__paths-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__paths-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__paths-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__paths-card {
+    flex: 0 1 328px;
+    max-width: 328px;
+    min-height: 362px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-tablet__paths-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__paths-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__paths-media {
+    width: 100%;
+    height: 232px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .seplag-tablet__paths-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Seção 12 (tablet): Dados sem perder contexto
+     Mesmo card da seção de densidade, com a captura do dashboard em 761px
+     de altura. */
+  .seplag-tablet__data {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__data-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__data-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__showcase-media--campaign {
+    height: 761px;
+  }
+
+  /* Seção 13 (tablet): Feedback e acompanhamento
+     Dois cards brancos de 328px com altura de 340px e captura de 288 × 210px.
+     Quebram linha em telas menores. */
+  .seplag-tablet__feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__feedback-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__feedback-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__feedback-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__feedback-card {
+    flex: 0 1 328px;
+    max-width: 328px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-tablet__feedback-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__feedback-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__feedback-media {
+    width: 100%;
+    height: 210px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .seplag-tablet__feedback-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Seção 14 (tablet): Design orientado por estados
+     Cards brancos de 328 × 155px com padding de 32px, ícone de 32px e
+     rótulo em caixa-alta. Quebram linha em telas menores. */
+  .seplag-tablet__states {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__states-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__states-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__states-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .seplag-tablet__state-card {
+    flex: 0 1 328px;
+    max-width: 328px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-tablet__state-card img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .seplag-tablet__state-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  /* Seção 15 (tablet): Design System para escalar
+     Cartão branco (padding 24px, raio 24px) com blocos separados por divisores
+     de 1px e gap de 16px. Os chips de componentes formam duas colunas de 304px. */
+  .seplag-tablet__ds {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__ds-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__ds-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__ds-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 24px;
+  }
+
+  .seplag-tablet__ds-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-tablet__ds-heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-tablet__ds-body {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-tablet__ds-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.32px;
+    color: #3b3b3e;
+    white-space: nowrap;
+  }
+
+  .seplag-tablet__ds-value {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  .seplag-tablet__ds-swatches {
+    display: flex;
+    gap: 15px;
+  }
+
+  .seplag-tablet__ds-swatch {
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+  }
+
+  .seplag-tablet__ds-divider {
+    height: 1px;
+    border: 0;
+    background: #e4e4e8;
+  }
+
+  .seplag-tablet__ds-specimen {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 247px;
+    padding: 10px 6px;
+    background: #f6f1f5;
+    border-radius: 6px;
+    color: #56565a;
+    line-height: 18px;
+  }
+
+  .seplag-tablet__ds-specimen-line--semibold {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .seplag-tablet__ds-specimen-line--medium {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .seplag-tablet__ds-specimen-line--regular {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .seplag-tablet__ds-status-row {
+    display: flex;
+    gap: 50px;
+  }
+
+  .seplag-tablet__ds-status {
+    flex: 1 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #fefefe;
+    white-space: nowrap;
+  }
+
+  .seplag-tablet__ds-status--review {
+    background: #311e3b;
+  }
+
+  .seplag-tablet__ds-status--fix {
+    background: #9e76b3;
+  }
+
+  .seplag-tablet__ds-status--approved {
+    background: #0b7816;
+  }
+
+  .seplag-tablet__ds-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .seplag-tablet__ds-chip {
+    flex: 0 1 304px;
+    min-width: 0;
+    padding: 10px 0;
+    border-radius: 8px;
+    background: #f5f0f5;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.3;
+    text-align: center;
+    color: #56565a;
+  }
+
+  /* Seção 16 (tablet): High fidelity
+     Três cards de largura total com padding de 24px. Capturas com 1440 / 1024
+     e altura de 443px (a da tela de início, 456px). */
+  .seplag-tablet__hifi {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .seplag-tablet__hifi-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-tablet__hifi-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__hifi-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 24px;
+  }
+
+  .seplag-tablet__hifi-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-tablet__hifi-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-tablet__hifi-media {
+    width: 100%;
+    height: 443px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .seplag-tablet__hifi-media--home {
+    height: 456px;
+  }
+
+  .seplag-tablet__hifi-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/* ========================================================================
+   Versão mobile (até 499px)
+   Medidas do frame "SEPLAG | Mobile 390", com margem lateral de 20px.
+   O menu e o rodapé vêm do código compartilhado (navbar-wrap e site-footer).
+   ======================================================================== */
+.seplag-mobile {
+  display: none;
+}
+
+@media (max-width: 499px) {
+  .seplag-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .seplag-mobile__hero {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__tags {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #122f5d;
+  }
+
+  .seplag-mobile__name {
+    font-family: "Kufam", sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 1.05;
+    color: #151414;
+  }
+
+  .seplag-mobile__headline {
+    font-family: "Kufam", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__desc {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-mobile__quote {
+    padding-left: 14px;
+    border-left: 4px solid #f79c05;
+    font-family: "Kufam", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-mobile__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .seplag-mobile__card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 16px;
+  }
+
+  .seplag-mobile__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  /* Arte laranja de 300 × 225px centralizada, com o selo do governo */
+  .seplag-mobile__art {
+    position: relative;
+    width: 300px;
+    height: 225px;
+    max-width: 100%;
+    align-self: center;
+    overflow: hidden;
+    background: #eb8a19;
+    border-radius: 12px;
+  }
+
+  .seplag-mobile__art-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+
+  .seplag-mobile__badge {
+    position: absolute;
+    left: 29px;
+    top: 54px;
+    width: 242.5px;
+    max-width: calc(100% - 58px);
+    padding: 8px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background: #fff;
+    border-radius: 12px;
+  }
+
+  .seplag-mobile__badge img {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+  }
+
+  .seplag-mobile__badge p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.65;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5b207a;
+    white-space: nowrap;
+  }
+
+  .seplag-mobile__accent {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #f79c05;
+  }
+
+  /* Seção 2 (mobile): O projeto em 30 segundos
+     Padding de 40px vertical e 20px lateral, com os dois cards empilhados. */
+  .seplag-mobile__summary {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__summary-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__summary-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__summary-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .seplag-mobile__summary-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__summary-box--light {
+    background: #fff;
+    border: 1px solid #e4e4e8;
+  }
+
+  .seplag-mobile__summary-box--dark {
+    background: #122f5d;
+  }
+
+  .seplag-mobile__summary-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .seplag-mobile__summary-label--light {
+    color: #5029de;
+  }
+
+  .seplag-mobile__summary-label--dark {
+    color: #f79c05;
+  }
+
+  .seplag-mobile__summary-heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__summary-heading--light {
+    color: #fff;
+  }
+
+  .seplag-mobile__summary-body {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-mobile__summary-body--light {
+    color: #dce2f0;
+  }
+
+  /* Seção 3 (mobile): Meu papel no projeto
+     Seis cards brancos empilhados com gap de 12px, padding de 20px. */
+  .seplag-mobile__role {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__role-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__role-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__role-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__role-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__role-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__role-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  /* Seção 4 (mobile): Um sistema, múltiplas camadas
+     Seis cards brancos empilhados com gap de 12px, cada um com número em
+     pílula lilás e título em caixa-alta. */
+  .seplag-mobile__layers {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__layers-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__layers-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__layers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__layer-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__layer-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .seplag-mobile__layer-number {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 4px 10px;
+    border-radius: 100px;
+    background: #edebfc;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #5029de;
+    white-space: nowrap;
+  }
+
+  .seplag-mobile__layer-title {
+    flex: 1 0 0;
+    min-width: 0;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-mobile__layer-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  /* Seção 5 (mobile): Projetando para quem já tinha uma forma de trabalhar
+     Três cards brancos empilhados, com padding de 16px e gap de 12px. */
+  .seplag-mobile__people {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__people-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__people-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__people-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__people-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__people-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .seplag-mobile__people-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #56565a;
+    white-space: nowrap;
+  }
+
+  .seplag-mobile__people-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__people-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  /* Seção 6 (mobile): Princípios de design
+     Cinco cards brancos empilhados com gap de 12px e padding de 20px. */
+  .seplag-mobile__principles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__principles-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__principles-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__principles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__principle-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__principle-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__principle-text-small {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  /* Seção 7 (mobile): Uma jornada em destaque
+     Card branco com padding de 16px, raio de 24px e captura de 318 × 214px. */
+  .seplag-mobile__journey {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__journey-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__journey-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__showcase-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 24px;
+  }
+
+  .seplag-mobile__showcase-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #5029de;
+  }
+
+  .seplag-mobile__showcase-heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__showcase-body {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-mobile__showcase-media {
+    width: 100%;
+    height: 214px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .seplag-mobile__showcase-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Seção 8 (mobile): Densidade não é necessariamente um problema
+     Mesmo card da seção anterior, com a captura de cadastro em 214px. */
+  .seplag-mobile__density {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__density-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__density-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  /* Seção 9 (mobile): Quando deveríamos fundir ou não fluxos
+     Dois cards empilhados com padding de 20px, listas com marcadores SVG
+     de 8 × 16px e gap de 12px entre os cards. */
+  .seplag-mobile__flows {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__flows-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__flows-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__flows-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__flows-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__flows-card--light {
+    background: #fff;
+    border: 1px solid #e4e4e8;
+  }
+
+  .seplag-mobile__flows-card--dark {
+    background: #122f5d;
+  }
+
+  .seplag-mobile__flows-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .seplag-mobile__flows-label--light {
+    color: #5029de;
+  }
+
+  .seplag-mobile__flows-label--dark {
+    color: #f79c05;
+  }
+
+  .seplag-mobile__flows-heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__flows-heading--light {
+    color: #fff;
+  }
+
+  .seplag-mobile__flows-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-mobile__flows-items li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .seplag-mobile__flows-items img {
+    width: 8px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+  .seplag-mobile__flows-items--light {
+    color: #dce2f0;
+  }
+
+  /* Seção 10 (mobile): Revelar complexidade apenas quando necessária
+     Mesmo card da seção de densidade, com a captura de órgãos em 243px. */
+  .seplag-mobile__reveal {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__reveal-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__reveal-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__showcase-media--reveal {
+    height: 243px;
+  }
+
+  /* Seção 11 (mobile): Um fluxo, diferentes caminhos
+     Dois cards brancos empilhados, cada um com título, descrição e captura
+     (250px e 248px de altura). */
+  .seplag-mobile__paths {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__paths-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__paths-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__paths-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__paths-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__paths-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__paths-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__paths-media {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .seplag-mobile__paths-media--first {
+    height: 250px;
+  }
+
+  .seplag-mobile__paths-media--second {
+    height: 248px;
+  }
+
+  .seplag-mobile__paths-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Seção 12 (mobile): Dados sem perder contexto
+     Mesmo card da seção de vitrine, com a captura do dashboard em 367px. */
+  .seplag-mobile__data {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__data-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__data-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__showcase-media--campaign {
+    height: 367px;
+  }
+
+  /* Seção 13 (mobile): Feedback e acompanhamento
+     Dois cards brancos empilhados, cada um com título, descrição e captura
+     de 226px de altura. */
+  .seplag-mobile__feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__feedback-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__feedback-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__feedback-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__feedback-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .seplag-mobile__feedback-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__feedback-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__feedback-media {
+    width: 100%;
+    height: 226px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .seplag-mobile__feedback-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Seção 14 (mobile): Design orientado por estados
+     Cards brancos de 169 × 135px em grade de duas colunas, com ícone de
+     32px e rótulo em caixa-alta centralizados. */
+  .seplag-mobile__states {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__states-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__states-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__states-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .seplag-mobile__state-card {
+    flex: 0 0 calc(50% - 6px);
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 24px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .seplag-mobile__state-card img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .seplag-mobile__state-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  /* Seção 15 (mobile): Design System para escalar
+     Cartão branco com padding de 16px e blocos separados por divisores. Os
+     chips de componentes dividem a largura em duas colunas. */
+  .seplag-mobile__ds {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__ds-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__ds-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__ds-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 24px;
+  }
+
+  .seplag-mobile__ds-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__ds-heading {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #151414;
+  }
+
+  .seplag-mobile__ds-body {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #252628;
+  }
+
+  .seplag-mobile__ds-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: 0.26px;
+    color: #3b3b3e;
+    white-space: nowrap;
+  }
+
+  .seplag-mobile__ds-label--large {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+  }
+
+  .seplag-mobile__ds-value {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.36px;
+    color: #56565a;
+  }
+
+  .seplag-mobile__ds-swatches {
+    display: flex;
+    gap: 12px;
+  }
+
+  .seplag-mobile__ds-swatch {
+    width: 53px;
+    height: 53px;
+    border-radius: 10px;
+  }
+
+  .seplag-mobile__ds-divider {
+    height: 1px;
+    border: 0;
+    background: #e4e4e8;
+  }
+
+  .seplag-mobile__ds-specimen {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 247px;
+    max-width: 100%;
+    padding: 10px 6px;
+    background: #f6f1f5;
+    border-radius: 6px;
+    color: #56565a;
+    line-height: 18px;
+  }
+
+  .seplag-mobile__ds-specimen-line--semibold {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .seplag-mobile__ds-specimen-line--medium {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .seplag-mobile__ds-specimen-line--regular {
+    font-family: "Rawline", "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .seplag-mobile__ds-status-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .seplag-mobile__ds-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.95;
+    text-transform: uppercase;
+    color: #fefefe;
+    white-space: nowrap;
+  }
+
+  .seplag-mobile__ds-status--review {
+    background: #311e3b;
+  }
+
+  .seplag-mobile__ds-status--fix {
+    background: #9e76b3;
+  }
+
+  .seplag-mobile__ds-status--approved {
+    background: #0b7816;
+  }
+
+  .seplag-mobile__ds-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .seplag-mobile__ds-chip {
+    flex: 0 0 calc(50% - 6px);
+    padding: 10px 0;
+    border-radius: 8px;
+    background: #f5f0f5;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.3;
+    text-align: center;
+    color: #56565a;
+  }
+
+  /* Seção 16 (mobile): High fidelity
+     Três cards brancos empilhados (padding de 16px) com capturas de 220px
+     e 214px de altura, em largura total. */
+  .seplag-mobile__hifi {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 20px;
+  }
+
+  .seplag-mobile__hifi-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .seplag-mobile__hifi-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__hifi-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .seplag-mobile__hifi-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    border-radius: 24px;
+  }
+
+  .seplag-mobile__hifi-card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #151414;
+  }
+
+  .seplag-mobile__hifi-card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #56565a;
+  }
+
+  .seplag-mobile__hifi-media {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .seplag-mobile__hifi-media--home {
+    height: 220px;
+  }
+
+  .seplag-mobile__hifi-media--installs,
+  .seplag-mobile__hifi-media--actions {
+    height: 214px;
+  }
+
+  .seplag-mobile__hifi-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
