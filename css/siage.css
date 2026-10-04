@@ -636,3 +636,122 @@
     max-width: none;
   }
 }
+
+/* Tablet (500px a 999px)
+   ======================================================================== */
+@media (min-width: 500px) and (max-width: 999px) {
+  .siage-hero-section {
+    padding: 0;
+  }
+
+  .siage-hero {
+    padding: 40px 48px 48px;
+    gap: 16px;
+  }
+
+  .siage-hero__main {
+    gap: 16px;
+  }
+
+  .siage-hero__kicker {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #022859;
+  }
+
+  .siage-hero__title {
+    font-size: 52px;
+    line-height: 1.1;
+  }
+
+  .siage-hero__title br {
+    display: none;
+  }
+
+  .siage-hero__desc {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .siage-hero__quote {
+    font-size: 17px;
+    line-height: 1.5;
+    padding-left: 14px;
+    border-left-color: #f79c05;
+    text-align: left;
+  }
+
+  .siage-facts {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .siage-fact {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    padding: 18px 16px;
+    gap: 8px;
+    border-color: #e4e4e8;
+    border-radius: 20px;
+  }
+
+  .siage-fact__label {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .siage-fact__text {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+
+  .siage-hero__aside {
+    flex: none;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .siage-hero__frame {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .siage-hero__img {
+    height: 605px;
+    aspect-ratio: auto;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  .siage-hero__badge {
+    position: static;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    margin-top: 16px;
+    padding: 18px 24px;
+    gap: 6px;
+    align-items: flex-start;
+    text-align: left;
+    border-radius: 20px;
+  }
+
+  .siage-hero__badge-title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .siage-hero__badge-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #e1e6f5;
+  }
+}
