@@ -237,6 +237,42 @@
   background: #013f05;
 }
 
+/* Seção Meu papel no projeto */
+.ecoar-section--role {
+  padding: 0 65px;
+  gap: 32px;
+}
+
+.ecoar-role__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ecoar-role__lead {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 55px;
+  color: #151414;
+  text-align: justify;
+}
+
+.ecoar-role__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.ecoar-role__row {
+  display: flex;
+  gap: 50px;
+}
+
+.ecoar-card--plain .ecoar-card__text {
+  color: #56565a;
+}
+
 .ecoar-card--dark .ecoar-card__tag {
   background: #ff6d00;
 }
