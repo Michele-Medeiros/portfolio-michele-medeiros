@@ -1108,6 +1108,60 @@
   object-fit: contain;
 }
 
+/* Seção 6 (mobile): Aprender sem sair do ecossistema */
+.pbedu-mobile__journey {
+  padding: 36px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pbedu-mobile__panel-frame {
+  background: #fff;
+  border-radius: 24px;
+  padding: 8px;
+}
+
+.pbedu-mobile__panel-inner {
+  background: #eee;
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pbedu-mobile__panel-inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.pbedu-mobile__label {
+  margin: 0;
+  padding: 14px 16px;
+  background: #3af;
+  border-radius: 14px;
+  text-align: center;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.pbedu-mobile__classes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.pbedu-mobile__classes img {
+  width: 230px;
+}
+
 /* Divisor entre seções */
 .pbedu-divider {
   flex-shrink: 0;
