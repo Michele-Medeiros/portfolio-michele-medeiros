@@ -1007,6 +1007,44 @@
   color: #e1e6f5;
 }
 
+/* Seção 3 (mobile): O estudante no centro da arquitetura */
+.pbedu-mobile__architecture {
+  padding: 36px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pbedu-mobile__step {
+  background: #fff;
+  border: 1px solid #e4e4e8;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.pbedu-mobile__step-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.pbedu-mobile__step-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #56565a;
+}
+
 /* Divisor entre seções */
 .pbedu-divider {
   flex-shrink: 0;
