@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentação PB EDU — Michele Medeiros</title>
+  <meta name="description" content="Documentação do case PB EDU: aplicativo do estudante da rede estadual da Paraíba.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Inter:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=24">
+  <link rel="stylesheet" href="css/pb-edu.css?v=15">
+</head>
+<body>
+
+  <!-- Cabeçalho compartilhado -->
+  <header class="navbar-wrap">
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a href="index.html" class="navbar__brand">Michele Medeiros</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="sobre-mim.html">Sobre mim</a>
+        <a href="projetos.html" class="is-active">Projetos</a>
+        <a href="index.html#contato">Contatos</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="pbedu-doc">
+
+    <!-- Seção 1: Apresentação -->
+    <section class="pbedu-hero">
+      <div class="pbedu-hero__info">
+        <p class="pbedu-hero__tags">UX/UI · Mobile-first · Product Design · Design System</p>
+
+        <div class="pbedu-hero__title">
+          <h1 class="pbedu-hero__name">PB EDU</h1>
+          <p class="pbedu-hero__subtitle">A vida escolar em um único lugar.</p>
+        </div>
+
+        <p class="pbedu-hero__text">Um aplicativo criado para reunir rotina escolar, conteúdos educacionais, desempenho, comunicação e processos de matrícula em uma experiência simples para estudantes da rede estadual da Paraíba.</p>
+
+        <blockquote class="pbedu-hero__quote">O produto conecta diferentes momentos da vida escolar — aprender, acompanhar, se informar e resolver — dentro de uma experiência mobile contínua.</blockquote>
+
+        <div class="pbedu-hero__cards">
+          <div class="pbedu-hero__card">
+            <p class="pbedu-hero__card-title">Produto</p>
+            <p class="pbedu-hero__card-desc">Aplicativo educacional</p>
+          </div>
+          <div class="pbedu-hero__card">
+            <p class="pbedu-hero__card-title">público</p>
+            <p class="pbedu-hero__card-desc">Estudantes da rede estadual</p>
+          </div>
+          <div class="pbedu-hero__card">
+            <p class="pbedu-hero__card-title">Plataforma</p>
+            <p class="pbedu-hero__card-desc">Mobile + web responsiva</p>
+          </div>
+          <div class="pbedu-hero__card">
+            <p class="pbedu-hero__card-title">ecossistema</p>
+            <p class="pbedu-hero__card-desc">PB Educa · SIAGE · SEECT</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pbedu-hero__media">
+        <img src="assets/images/pb-edu/inicio-2.png" alt="Tela de início do aplicativo PB EDU">
+      </div>
+    </section>
+
+    <div class="pbedu-divider"></div>
+
+    <!-- Seção 2: O produto em 30 segundos -->
+    <section class="pbedu-overview">
+      <h2 class="pbedu-overview__title">O produto em 30 segundos</h2>
+
+      <p class="pbedu-overview__text">O PB-EDU integra comunicação, acompanhamento escolar e conteúdos educacionais, conectando-se ao SIAGE para matrícula e renovação.</p>
+
+      <div class="pbedu-overview__cards">
+        <article class="pbedu-overview__card">
+          <span class="pbedu-overview__tag">PROBLEMA</span>
+          <h3 class="pbedu-overview__card-title">A vida escolar estava distribuída entre diferentes canais</h3>
+          <p class="pbedu-overview__card-text">Conteúdos, notícias, desempenho e serviços acadêmicos faziam parte de experiências distintas. O estudante precisava de um ponto central para acessar aquilo que importa no dia a dia.</p>
+        </article>
+
+        <article class="pbedu-overview__card pbedu-overview__card--dark">
+          <span class="pbedu-overview__tag">DESAFIO</span>
+          <h3 class="pbedu-overview__card-title">Ser simples sem ser limitado</h3>
+          <p class="pbedu-overview__card-text">O app precisava ser direto para uso recorrente no celular, mas completo o suficiente para reunir conteúdo, desempenho, comunicação e processos acadêmicos importantes.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="pbedu-divider"></div>
+
+    <!-- Seção 3: O estudante no centro da arquitetura -->
+    <section class="pbedu-architecture">
+      <h2 class="pbedu-architecture__title">O estudante no centro da arquitetura</h2>
+
+      <p class="pbedu-architecture__text">Em vez de organizar o produto apenas pelos módulos internos, a arquitetura foi pensada a partir das principais coisas que o estudante precisava fazer.</p>
+
+      <div class="pbedu-architecture__cards">
+        <article class="pbedu-architecture__card">
+          <span class="pbedu-architecture__tag">01</span>
+          <h3 class="pbedu-architecture__card-title">Aprender</h3>
+          <p class="pbedu-architecture__card-text">Aulas gravadas e materiais.</p>
+        </article>
+
+        <article class="pbedu-architecture__card">
+          <span class="pbedu-architecture__tag">02</span>
+          <h3 class="pbedu-architecture__card-title">Acompanhar</h3>
+          <p class="pbedu-architecture__card-text">Notas, frequência e vida escolar.</p>
+        </article>
+
+        <article class="pbedu-architecture__card">
+          <span class="pbedu-architecture__tag">03</span>
+          <h3 class="pbedu-architecture__card-title">Se organizar</h3>
+          <p class="pbedu-architecture__card-text">Cronograma e aula atual.</p>
+        </article>
+
+        <article class="pbedu-architecture__card">
+          <span class="pbedu-architecture__tag">04</span>
+          <h3 class="pbedu-architecture__card-title">Se informar</h3>
+          <p class="pbedu-architecture__card-text">Notícias, comunicados e pesquisas.</p>
+        </article>
+
+        <article class="pbedu-architecture__card">
+          <span class="pbedu-architecture__tag">05</span>
+          <h3 class="pbedu-architecture__card-title">Resolver</h3>
+          <p class="pbedu-architecture__card-text">Renovação e transferência.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="pbedu-divider"></div>
+
+    <!-- Seção 4: Meu papel no projeto -->
+    <section class="pbedu-role">
+      <div class="pbedu-role__intro">
+        <h2 class="pbedu-role__title">MEU PAPEL NO PROJETO</h2>
+        <p class="pbedu-role__text">Atuei na estruturação das jornadas, wireflows, prototipação, sistema visual, microcopy e acompanhamento da implementação.</p>
+      </div>
+
+      <div class="pbedu-role__cards">
+        <article class="pbedu-role__card">
+          <h3 class="pbedu-role__card-title">Arquitetura &amp; fluxos</h3>
+          <p class="pbedu-role__card-text">Login, aulas, desempenho, notícias, pesquisas e matrícula.</p>
+        </article>
+
+        <article class="pbedu-role__card">
+          <h3 class="pbedu-role__card-title">Wireflows</h3>
+          <p class="pbedu-role__card-text">Estruturação das jornadas antes da alta fidelidade.</p>
+        </article>
+
+        <article class="pbedu-role__card">
+          <h3 class="pbedu-role__card-title">UX/UI Design</h3>
+          <p class="pbedu-role__card-text">Interfaces mobile e web responsiva.</p>
+        </article>
+
+        <article class="pbedu-role__card">
+          <h3 class="pbedu-role__card-title">Design System</h3>
+          <p class="pbedu-role__card-text">Cards, listas, filtros, modais, formulários e estados.</p>
+        </article>
+
+        <article class="pbedu-role__card">
+          <h3 class="pbedu-role__card-title">Microcopy</h3>
+          <p class="pbedu-role__card-text">Mensagens de confirmação, instrução e status.</p>
+        </article>
+
+        <article class="pbedu-role__card">
+          <h3 class="pbedu-role__card-title">Handoff &amp; QA</h3>
+          <p class="pbedu-role__card-text">Acompanhamento de implementação e consistência visual.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="pbedu-divider"></div>
+
+    <!-- Seção 5: A pesquisa de domínio virou produto -->
+    <section class="pbedu-research">
+      <div class="pbedu-research__intro">
+        <h2 class="pbedu-research__title">A pesquisa de domínio virou produto</h2>
+        <p class="pbedu-research__text">Antes de desenhar dashboards, precisei entender o que cada indicador significava e em quais situações ele realmente deveria aparecer.</p>
+      </div>
+
+      <div class="pbedu-research__row">
+        <div class="pbedu-research__panel">
+          <h3 class="pbedu-research__panel-title">A Home precisava responder: “o que importa agora?”</h3>
+          <p class="pbedu-research__panel-text">Em vez de ser apenas um menu, a Home apresenta cronograma, destaca a aula atual, oferece atalhos para gravações e desempenho e mantém notícias próximas da rotina do estudante.</p>
+        </div>
+
+        <div class="pbedu-research__media">
+          <div class="pbedu-research__screen">
+            <img src="assets/images/pb-edu/home-inicio-1.png" alt="Tela Home do aplicativo PB EDU">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="pbedu-divider"></div>
+
+    <!-- Seção 6: Aprender sem sair do ecossistema -->
+    <section class="pbedu-journey">
+      <div class="pbedu-journey__intro">
+        <h2 class="pbedu-journey__title">Aprender sem sair do ecossistema</h2>
+        <p class="pbedu-journey__text">A jornada de aulas gravadas organiza a descoberta em uma sequência simples: disciplina, conteúdo, reprodução e material complementar.</p>
+      </div>
+
+      <div class="pbedu-journey__steps">
+        <article class="pbedu-journey__step">
+          <span class="pbedu-journey__tag">01</span>
+          <h3 class="pbedu-journey__step-title">Encontrar disciplina</h3>
+          <p class="pbedu-journey__step-text">Lista por área de estudo.</p>
+        </article>
+
+        <article class="pbedu-journey__step">
+          <span class="pbedu-journey__tag">02</span>
+          <h3 class="pbedu-journey__step-title">Localizar conteúdo</h3>
+          <p class="pbedu-journey__step-text">Busca e listagem de aulas.</p>
+        </article>
+
+        <article class="pbedu-journey__step">
+          <span class="pbedu-journey__tag">03</span>
+          <h3 class="pbedu-journey__step-title">Assistir</h3>
+          <p class="pbedu-journey__step-text">Player dentro do contexto da disciplina.</p>
+        </article>
+
+        <article class="pbedu-journey__step">
+          <span class="pbedu-journey__tag">04</span>
+          <h3 class="pbedu-journey__step-title">Aprofundar</h3>
+          <p class="pbedu-journey__step-text">Materiais de apoio em PDF ou links.</p>
+        </article>
+      </div>
+
+      <div class="pbedu-journey__showcases">
+        <div class="pbedu-journey__frame">
+          <div class="pbedu-journey__canvas">
+            <div class="pbedu-journey__header">Aulas Gravadas</div>
+            <div class="pbedu-journey__gallery">
+              <img src="assets/images/pb-edu/aulas-gravadas-1.png" alt="Tela de aulas gravadas">
+              <img src="assets/images/pb-edu/aulas-gravadas-ciencias-1.png" alt="Tela de aulas gravadas de Ciências">
+              <img src="assets/images/pb-edu/aulas-gravadas-quimica-1.png" alt="Tela de aulas gravadas de Química inorgânica">
+            </div>
+          </div>
+        </div>
+
+        <div class="pbedu-journey__frame">
+          <div class="pbedu-journey__canvas pbedu-journey__canvas--wide">
+            <img src="assets/images/pb-edu/desempenho-1.png" alt="Tela de desempenho do estudante">
+          </div>
+        </div>
+
+        <div class="pbedu-journey__frame">
+          <div class="pbedu-journey__canvas pbedu-journey__canvas--wide">
+            <img src="assets/images/pb-edu/noticias-3.png" alt="Tela de notícias">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="pbedu-divider"></div>
+
+    <!-- Seção 7: PB EDU & SIAGE -->
+    <section class="pbedu-ecosystem">
+      <div class="pbedu-ecosystem__intro">
+        <h2 class="pbedu-ecosystem__title">PB EDU &amp; SIAGE</h2>
+        <p class="pbedu-ecosystem__text">Os dois produtos atuam em camadas diferentes do mesmo ecossistema.</p>
+      </div>
+
+      <div class="pbedu-ecosystem__bar">
+        <div class="pbedu-ecosystem__half pbedu-ecosystem__half--pb">
+          <p class="pbedu-ecosystem__name">PB EDU</p>
+          <p class="pbedu-ecosystem__desc">Conteúdo, rotina, notícias, desempenho e experiência do estudante.</p>
+        </div>
+        <div class="pbedu-ecosystem__half pbedu-ecosystem__half--siage">
+          <p class="pbedu-ecosystem__name">SIAGE</p>
+          <p class="pbedu-ecosystem__desc">Matrícula, renovação e serviços acadêmicos.</p>
+        </div>
+      </div>
+
+      <div class="pbedu-ecosystem__status">
+        <p class="pbedu-ecosystem__text">Mensagens de status ajudam o estudante a entender o que aconteceu e o que ainda precisa acontecer.</p>
+
+        <div class="pbedu-ecosystem__cards">
+          <article class="pbedu-ecosystem__card">
+            <h3 class="pbedu-ecosystem__card-title">Matrícula renovada</h3>
+            <p class="pbedu-ecosystem__card-text">Confirmação explícita de conclusão.</p>
+          </article>
+
+          <article class="pbedu-ecosystem__card">
+            <h3 class="pbedu-ecosystem__card-title">Transferência solicitada</h3>
+            <p class="pbedu-ecosystem__card-text">Solicitação registrada sem sugerir conclusão.</p>
+          </article>
+
+          <article class="pbedu-ecosystem__card">
+            <h3 class="pbedu-ecosystem__card-title">Aguardando</h3>
+            <p class="pbedu-ecosystem__card-text">Feedback para processamento ou análise.</p>
+          </article>
+
+          <article class="pbedu-ecosystem__card">
+            <h3 class="pbedu-ecosystem__card-title">Sem conteúdo</h3>
+            <p class="pbedu-ecosystem__card-text">Orientação em vez de tela vazia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="pbedu-divider"></div>
+
+    <!-- Seção 8: Resultado -->
+    <section class="pbedu-result">
+      <div class="pbedu-result__intro">
+        <h2 class="pbedu-result__title">Resultado</h2>
+        <p class="pbedu-result__text">O projeto consolidou em um único produto áreas que antes faziam parte de diferentes experiências e canais do ecossistema educacional.</p>
+      </div>
+
+      <div class="pbedu-result__row">
+        <div class="pbedu-result__summary">
+          <p class="pbedu-result__summary-title">Uma experiência unificada para o estudante.</p>
+          <p class="pbedu-result__summary-text">Conteúdo, desempenho, comunicação e serviços acadêmicos passam a coexistir em uma mesma experiência mobile.</p>
+        </div>
+
+        <div class="pbedu-result__list">
+          <div class="pbedu-result__box">
+            <div class="pbedu-result__item">
+              <p class="pbedu-result__label">Experiência centralizada</p>
+              <p class="pbedu-result__value">Rotina escolar e conteúdo no mesmo produto.</p>
+            </div>
+            <div class="pbedu-result__divider"></div>
+            <div class="pbedu-result__item">
+              <p class="pbedu-result__label">Integração com SIAGE</p>
+              <p class="pbedu-result__value">Continuidade com serviços acadêmicos.</p>
+            </div>
+            <div class="pbedu-result__divider"></div>
+            <div class="pbedu-result__item">
+              <p class="pbedu-result__label">Comunicação oficial</p>
+              <p class="pbedu-result__value">Feed conectado ao ecossistema PB Educa.</p>
+            </div>
+            <div class="pbedu-result__divider"></div>
+            <div class="pbedu-result__item">
+              <p class="pbedu-result__label">Identidade coerente</p>
+              <p class="pbedu-result__value">Alinhamento com iniciativas institucionais.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Versão tablet (500px a 999px) -->
+  <div class="pbedu-tablet">
+
+    <!-- Seção 1: Apresentação -->
+    <section class="pbedu-tablet__hero">
+      <div class="pbedu-tablet__hero-row">
+        <div class="pbedu-tablet__hero-text">
+          <p class="pbedu-tablet__tags">UX/UI · Mobile-first · Product Design · Design System</p>
+          <h1 class="pbedu-tablet__name">PB EDU</h1>
+          <p class="pbedu-tablet__subtitle">A vida escolar em um único lugar.</p>
+          <p class="pbedu-tablet__text">Um aplicativo criado para reunir rotina escolar, conteúdos educacionais, desempenho, comunicação e processos de matrícula em uma experiência simples para estudantes da rede estadual da Paraíba.</p>
+          <blockquote class="pbedu-tablet__quote">O produto conecta diferentes momentos da vida escolar — aprender, acompanhar, se informar e resolver — dentro de uma experiência mobile contínua.</blockquote>
+        </div>
+
+        <div class="pbedu-tablet__media">
+          <img src="assets/images/pb-edu/inicio-2.png" alt="Tela de início do aplicativo PB EDU">
+        </div>
+      </div>
+
+      <div class="pbedu-tablet__cards">
+        <div class="pbedu-tablet__card">
+          <p class="pbedu-tablet__card-title">Produto</p>
+          <p class="pbedu-tablet__card-desc">Aplicativo educacional</p>
+        </div>
+        <div class="pbedu-tablet__card">
+          <p class="pbedu-tablet__card-title">público</p>
+          <p class="pbedu-tablet__card-desc">Estudantes da rede estadual</p>
+        </div>
+        <div class="pbedu-tablet__card">
+          <p class="pbedu-tablet__card-title">Plataforma</p>
+          <p class="pbedu-tablet__card-desc">Mobile + web responsiva</p>
+        </div>
+        <div class="pbedu-tablet__card">
+          <p class="pbedu-tablet__card-title">ecossistema</p>
+          <p class="pbedu-tablet__card-desc">PB Educa · SIAGE · SEECT</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 2: O produto em 30 segundos -->
+    <section class="pbedu-tablet__overview">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-tablet__section-title">O produto em 30 segundos</h2>
+      <p class="pbedu-tablet__lead">O PB-EDU integra comunicação, acompanhamento escolar e conteúdos educacionais, conectando-se ao SIAGE para matrícula e renovação.</p>
+
+      <div class="pbedu-tablet__overview-cards">
+        <article class="pbedu-tablet__overview-card">
+          <span class="pbedu-tablet__tag">PROBLEMA</span>
+          <h3 class="pbedu-tablet__overview-title">A vida escolar estava distribuída entre diferentes canais</h3>
+          <p class="pbedu-tablet__overview-text">Conteúdos, notícias, desempenho e serviços acadêmicos faziam parte de experiências distintas. O estudante precisava de um ponto central para acessar aquilo que importa no dia a dia.</p>
+        </article>
+
+        <article class="pbedu-tablet__overview-card pbedu-tablet__overview-card--dark">
+          <span class="pbedu-tablet__tag">DESAFIO</span>
+          <h3 class="pbedu-tablet__overview-title">Ser simples sem ser limitado</h3>
+          <p class="pbedu-tablet__overview-text">O app precisava ser direto para uso recorrente no celular, mas completo o suficiente para reunir conteúdo, desempenho, comunicação e processos acadêmicos importantes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 3: O estudante no centro da arquitetura -->
+    <section class="pbedu-tablet__architecture">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-tablet__section-title">O estudante no centro da arquitetura</h2>
+      <p class="pbedu-tablet__lead">Em vez de organizar o produto apenas pelos módulos internos, a arquitetura foi pensada a partir das principais coisas que o estudante precisava fazer.</p>
+
+      <div class="pbedu-tablet__architecture-cards">
+        <article class="pbedu-tablet__arch-card">
+          <span class="pbedu-tablet__tag">01</span>
+          <h3 class="pbedu-tablet__arch-title">Aprender</h3>
+          <p class="pbedu-tablet__arch-text">Aulas gravadas e materiais.</p>
+        </article>
+
+        <article class="pbedu-tablet__arch-card">
+          <span class="pbedu-tablet__tag">02</span>
+          <h3 class="pbedu-tablet__arch-title">Acompanhar</h3>
+          <p class="pbedu-tablet__arch-text">Notas, frequência e vida escolar.</p>
+        </article>
+
+        <article class="pbedu-tablet__arch-card">
+          <span class="pbedu-tablet__tag">03</span>
+          <h3 class="pbedu-tablet__arch-title">Se organizar</h3>
+          <p class="pbedu-tablet__arch-text">Cronograma e aula atual.</p>
+        </article>
+
+        <article class="pbedu-tablet__arch-card">
+          <span class="pbedu-tablet__tag">04</span>
+          <h3 class="pbedu-tablet__arch-title">Se informar</h3>
+          <p class="pbedu-tablet__arch-text">Notícias, comunicados e pesquisas.</p>
+        </article>
+
+        <article class="pbedu-tablet__arch-card pbedu-tablet__arch-card--wide">
+          <span class="pbedu-tablet__tag">05</span>
+          <h3 class="pbedu-tablet__arch-title">Resolver</h3>
+          <p class="pbedu-tablet__arch-text">Renovação e transferência.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 4: Meu papel no projeto -->
+    <section class="pbedu-tablet__role">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-tablet__section-title">MEU PAPEL NO PROJETO</h2>
+      <p class="pbedu-tablet__lead">Atuei na estruturação das jornadas, wireflows, prototipação, sistema visual, microcopy e acompanhamento da implementação.</p>
+
+      <div class="pbedu-tablet__role-cards">
+        <article class="pbedu-tablet__role-card">
+          <h3 class="pbedu-tablet__role-title">Arquitetura &amp; fluxos</h3>
+          <p class="pbedu-tablet__role-text">Login, aulas, desempenho, notícias, pesquisas e matrícula.</p>
+        </article>
+
+        <article class="pbedu-tablet__role-card">
+          <h3 class="pbedu-tablet__role-title">Wireflows</h3>
+          <p class="pbedu-tablet__role-text">Estruturação das jornadas antes da alta fidelidade.</p>
+        </article>
+
+        <article class="pbedu-tablet__role-card">
+          <h3 class="pbedu-tablet__role-title">UX/UI Design</h3>
+          <p class="pbedu-tablet__role-text">Interfaces mobile e web responsiva.</p>
+        </article>
+
+        <article class="pbedu-tablet__role-card">
+          <h3 class="pbedu-tablet__role-title">Design System</h3>
+          <p class="pbedu-tablet__role-text">Cards, listas, filtros, modais, formulários e estados.</p>
+        </article>
+
+        <article class="pbedu-tablet__role-card">
+          <h3 class="pbedu-tablet__role-title">Microcopy</h3>
+          <p class="pbedu-tablet__role-text">Mensagens de confirmação, instrução e status.</p>
+        </article>
+
+        <article class="pbedu-tablet__role-card">
+          <h3 class="pbedu-tablet__role-title">Handoff &amp; QA</h3>
+          <p class="pbedu-tablet__role-text">Acompanhamento de implementação e consistência visual.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 5: A pesquisa de domínio virou produto -->
+    <section class="pbedu-tablet__research">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-tablet__section-title">A pesquisa de domínio virou produto</h2>
+      <p class="pbedu-tablet__lead">Antes de desenhar dashboards, precisei entender o que cada indicador significava e em quais situações ele realmente deveria aparecer.</p>
+
+      <div class="pbedu-tablet__research-panel">
+        <h3 class="pbedu-tablet__research-title">A Home precisava responder: “o que importa agora?”</h3>
+        <p class="pbedu-tablet__research-text">Em vez de ser apenas um menu, a Home apresenta cronograma, destaca a aula atual, oferece atalhos para gravações e desempenho e mantém notícias próximas da rotina do estudante.</p>
+      </div>
+
+      <div class="pbedu-tablet__research-screen">
+        <div class="pbedu-tablet__research-inner">
+          <img src="assets/images/pb-edu/home-inicio-1.png" alt="Telas de login e Home do aplicativo PB EDU">
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 6: Aprender sem sair do ecossistema -->
+    <section class="pbedu-tablet__journey">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-tablet__section-title">Aprender sem sair do ecossistema</h2>
+      <p class="pbedu-tablet__lead">A jornada de aulas gravadas organiza a descoberta em uma sequência simples: disciplina, conteúdo, reprodução e material complementar.</p>
+
+      <div class="pbedu-tablet__steps">
+        <article class="pbedu-tablet__step">
+          <span class="pbedu-tablet__tag">01</span>
+          <h3 class="pbedu-tablet__step-title">Encontrar disciplina</h3>
+          <p class="pbedu-tablet__step-text">Lista por área de estudo.</p>
+        </article>
+
+        <article class="pbedu-tablet__step">
+          <span class="pbedu-tablet__tag">02</span>
+          <h3 class="pbedu-tablet__step-title">Localizar conteúdo</h3>
+          <p class="pbedu-tablet__step-text">Busca e listagem de aulas.</p>
+        </article>
+
+        <article class="pbedu-tablet__step">
+          <span class="pbedu-tablet__tag">03</span>
+          <h3 class="pbedu-tablet__step-title">Assistir</h3>
+          <p class="pbedu-tablet__step-text">Player dentro do contexto da disciplina.</p>
+        </article>
+
+        <article class="pbedu-tablet__step">
+          <span class="pbedu-tablet__tag">04</span>
+          <h3 class="pbedu-tablet__step-title">Aprofundar</h3>
+          <p class="pbedu-tablet__step-text">Materiais de apoio em PDF ou links.</p>
+        </article>
+      </div>
+
+      <div class="pbedu-tablet__panel">
+        <div class="pbedu-tablet__panel-inner pbedu-tablet__panel-inner--classes">
+          <p class="pbedu-tablet__label">Aulas Gravadas</p>
+          <div class="pbedu-tablet__classes">
+            <img src="assets/images/pb-edu/aulas-gravadas-1.png" alt="Tela de aulas gravadas">
+            <img src="assets/images/pb-edu/aulas-gravadas-ciencias-1.png" alt="Tela de aulas gravadas de Ciências">
+            <img src="assets/images/pb-edu/aulas-gravadas-quimica-1.png" alt="Tela de aulas gravadas de Química inorgânica">
+          </div>
+        </div>
+      </div>
+
+      <div class="pbedu-tablet__panel">
+        <div class="pbedu-tablet__panel-inner">
+          <img src="assets/images/pb-edu/desempenho-1.png" alt="Tela de desempenho do estudante">
+        </div>
+      </div>
+
+      <div class="pbedu-tablet__panel">
+        <div class="pbedu-tablet__panel-inner">
+          <img src="assets/images/pb-edu/noticias-3.png" alt="Tela de notícias">
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 7: PB EDU & SIAGE -->
+    <section class="pbedu-tablet__ecosystem">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-tablet__section-title">PB EDU &amp; SIAGE</h2>
+      <p class="pbedu-tablet__lead">Os dois produtos atuam em camadas diferentes do mesmo ecossistema.</p>
+
+      <div class="pbedu-tablet__compare">
+        <div class="pbedu-tablet__compare-half">
+          <p class="pbedu-tablet__compare-name">PB EDU</p>
+          <p class="pbedu-tablet__compare-text">Conteúdo, rotina, notícias, desempenho e experiência do estudante.</p>
+        </div>
+        <div class="pbedu-tablet__compare-divider"></div>
+        <div class="pbedu-tablet__compare-half pbedu-tablet__compare-half--siage">
+          <p class="pbedu-tablet__compare-name">SIAGE</p>
+          <p class="pbedu-tablet__compare-text">Matrícula, renovação e serviços acadêmicos.</p>
+        </div>
+      </div>
+
+      <p class="pbedu-tablet__lead">Mensagens de status ajudam o estudante a entender o que aconteceu e o que ainda precisa acontecer.</p>
+
+      <div class="pbedu-tablet__states">
+        <article class="pbedu-tablet__state">
+          <h3 class="pbedu-tablet__state-title">Matrícula renovada</h3>
+          <p class="pbedu-tablet__state-text">Confirmação explícita de conclusão.</p>
+        </article>
+
+        <article class="pbedu-tablet__state">
+          <h3 class="pbedu-tablet__state-title">Transferência solicitada</h3>
+          <p class="pbedu-tablet__state-text">Solicitação registrada sem sugerir conclusão.</p>
+        </article>
+
+        <article class="pbedu-tablet__state">
+          <h3 class="pbedu-tablet__state-title">Aguardando</h3>
+          <p class="pbedu-tablet__state-text">Feedback para processamento ou análise.</p>
+        </article>
+
+        <article class="pbedu-tablet__state">
+          <h3 class="pbedu-tablet__state-title">Sem conteúdo</h3>
+          <p class="pbedu-tablet__state-text">Orientação em vez de tela vazia.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 8: Resultado -->
+    <section class="pbedu-tablet__result">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-tablet__section-title">Resultado</h2>
+      <p class="pbedu-tablet__lead">O projeto consolidou em um único produto áreas que antes faziam parte de diferentes experiências e canais do ecossistema educacional.</p>
+
+      <div class="pbedu-tablet__result-highlight">
+        <p class="pbedu-tablet__result-title">Uma experiência unificada para o estudante.</p>
+        <p class="pbedu-tablet__result-text">Conteúdo, desempenho, comunicação e serviços acadêmicos passam a coexistir em uma mesma experiência mobile.</p>
+      </div>
+
+      <div class="pbedu-tablet__result-panel">
+        <div class="pbedu-tablet__result-list">
+          <div class="pbedu-tablet__result-item">
+            <p class="pbedu-tablet__result-label">Experiência centralizada</p>
+            <p class="pbedu-tablet__result-value">Rotina escolar e conteúdo no mesmo produto.</p>
+          </div>
+          <div class="pbedu-tablet__result-divider"></div>
+          <div class="pbedu-tablet__result-item">
+            <p class="pbedu-tablet__result-label">Integração com SIAGE</p>
+            <p class="pbedu-tablet__result-value">Continuidade com serviços acadêmicos.</p>
+          </div>
+          <div class="pbedu-tablet__result-divider"></div>
+          <div class="pbedu-tablet__result-item">
+            <p class="pbedu-tablet__result-label">Comunicação oficial</p>
+            <p class="pbedu-tablet__result-value">Feed conectado ao ecossistema PB Educa.</p>
+          </div>
+          <div class="pbedu-tablet__result-divider"></div>
+          <div class="pbedu-tablet__result-item">
+            <p class="pbedu-tablet__result-label">Identidade coerente</p>
+            <p class="pbedu-tablet__result-value">Alinhamento com iniciativas institucionais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Versão mobile (menos de 500px) -->
+  <div class="pbedu-mobile">
+
+    <!-- Seção 1: Apresentação -->
+    <section class="pbedu-mobile__hero">
+      <div class="pbedu-mobile__hero-text">
+        <p class="pbedu-mobile__tags">UX/UI · Mobile-first · Product Design · Design System</p>
+        <h1 class="pbedu-mobile__name">PB EDU</h1>
+        <p class="pbedu-mobile__subtitle">A vida escolar em um único lugar.</p>
+        <p class="pbedu-mobile__text">Um aplicativo criado para reunir rotina escolar, conteúdos educacionais, desempenho, comunicação e processos de matrícula em uma experiência simples para estudantes da rede estadual da Paraíba.</p>
+        <blockquote class="pbedu-mobile__quote">O produto conecta diferentes momentos da vida escolar — aprender, acompanhar, se informar e resolver — dentro de uma experiência mobile contínua.</blockquote>
+      </div>
+
+      <div class="pbedu-mobile__media">
+        <img src="assets/images/pb-edu/inicio-2.png" alt="Tela de início do aplicativo PB EDU">
+      </div>
+
+      <div class="pbedu-mobile__cards">
+        <div class="pbedu-mobile__card">
+          <p class="pbedu-mobile__card-title">Produto</p>
+          <p class="pbedu-mobile__card-desc">Aplicativo educacional</p>
+        </div>
+        <div class="pbedu-mobile__card">
+          <p class="pbedu-mobile__card-title">público</p>
+          <p class="pbedu-mobile__card-desc">Estudantes da rede estadual</p>
+        </div>
+        <div class="pbedu-mobile__card">
+          <p class="pbedu-mobile__card-title">Plataforma</p>
+          <p class="pbedu-mobile__card-desc">Mobile + web responsiva</p>
+        </div>
+        <div class="pbedu-mobile__card">
+          <p class="pbedu-mobile__card-title">ecossistema</p>
+          <p class="pbedu-mobile__card-desc">PB Educa · SIAGE · SEECT</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 2: O produto em 30 segundos -->
+    <section class="pbedu-mobile__overview">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-mobile__section-title">O produto em 30 segundos</h2>
+      <p class="pbedu-mobile__lead">O PB-EDU integra comunicação, acompanhamento escolar e conteúdos educacionais, conectando-se ao SIAGE para matrícula e renovação.</p>
+
+      <div class="pbedu-mobile__stack">
+        <article class="pbedu-mobile__panel">
+          <span class="pbedu-tablet__tag">PROBLEMA</span>
+          <h3 class="pbedu-mobile__panel-title">A vida escolar estava distribuída entre diferentes canais</h3>
+          <p class="pbedu-mobile__panel-text">Conteúdos, notícias, desempenho e serviços acadêmicos faziam parte de experiências distintas. O estudante precisava de um ponto central para acessar aquilo que importa no dia a dia.</p>
+        </article>
+
+        <article class="pbedu-mobile__panel pbedu-mobile__panel--dark">
+          <span class="pbedu-tablet__tag">DESAFIO</span>
+          <h3 class="pbedu-mobile__panel-title">Ser simples sem ser limitado</h3>
+          <p class="pbedu-mobile__panel-text">O app precisava ser direto para uso recorrente no celular, mas completo o suficiente para reunir conteúdo, desempenho, comunicação e processos acadêmicos importantes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 3: O estudante no centro da arquitetura -->
+    <section class="pbedu-mobile__architecture">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-mobile__section-title">O estudante no centro da arquitetura</h2>
+      <p class="pbedu-mobile__lead">Em vez de organizar o produto apenas pelos módulos internos, a arquitetura foi pensada a partir das principais coisas que o estudante precisava fazer.</p>
+
+      <div class="pbedu-mobile__stack">
+        <article class="pbedu-mobile__step">
+          <span class="pbedu-tablet__tag">01</span>
+          <h3 class="pbedu-mobile__step-title">Aprender</h3>
+          <p class="pbedu-mobile__step-text">Aulas gravadas e materiais.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <span class="pbedu-tablet__tag">02</span>
+          <h3 class="pbedu-mobile__step-title">Acompanhar</h3>
+          <p class="pbedu-mobile__step-text">Notas, frequência e vida escolar.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <span class="pbedu-tablet__tag">03</span>
+          <h3 class="pbedu-mobile__step-title">Se organizar</h3>
+          <p class="pbedu-mobile__step-text">Cronograma e aula atual.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <span class="pbedu-tablet__tag">04</span>
+          <h3 class="pbedu-mobile__step-title">Se informar</h3>
+          <p class="pbedu-mobile__step-text">Notícias, comunicados e pesquisas.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <span class="pbedu-tablet__tag">05</span>
+          <h3 class="pbedu-mobile__step-title">Resolver</h3>
+          <p class="pbedu-mobile__step-text">Renovação e transferência.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 4: Meu papel no projeto -->
+    <section class="pbedu-mobile__role">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-mobile__section-title">MEU PAPEL NO PROJETO</h2>
+      <p class="pbedu-mobile__lead">Atuei na estruturação das jornadas, wireflows, prototipação, sistema visual, microcopy e acompanhamento da implementação.</p>
+
+      <div class="pbedu-mobile__stack">
+        <article class="pbedu-mobile__step">
+          <h3 class="pbedu-mobile__step-title">Arquitetura &amp; fluxos</h3>
+          <p class="pbedu-mobile__step-text">Login, aulas, desempenho, notícias, pesquisas e matrícula.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <h3 class="pbedu-mobile__step-title">Wireflows</h3>
+          <p class="pbedu-mobile__step-text">Estruturação das jornadas antes da alta fidelidade.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <h3 class="pbedu-mobile__step-title">UX/UI Design</h3>
+          <p class="pbedu-mobile__step-text">Interfaces mobile e web responsiva.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <h3 class="pbedu-mobile__step-title">Design System</h3>
+          <p class="pbedu-mobile__step-text">Cards, listas, filtros, modais, formulários e estados.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <h3 class="pbedu-mobile__step-title">Microcopy</h3>
+          <p class="pbedu-mobile__step-text">Mensagens de confirmação, instrução e status.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <h3 class="pbedu-mobile__step-title">Handoff &amp; QA</h3>
+          <p class="pbedu-mobile__step-text">Acompanhamento de implementação e consistência visual.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 5: A pesquisa de domínio virou produto -->
+    <section class="pbedu-mobile__research">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-mobile__section-title">A pesquisa de domínio virou produto</h2>
+      <p class="pbedu-mobile__lead">Antes de desenhar dashboards, precisei entender o que cada indicador significava e em quais situações ele realmente deveria aparecer.</p>
+
+      <div class="pbedu-mobile__research-panel">
+        <h3 class="pbedu-mobile__research-title">A Home precisava responder: “o que importa agora?”</h3>
+        <p class="pbedu-mobile__research-text">Em vez de ser apenas um menu, a Home apresenta cronograma, destaca a aula atual, oferece atalhos para gravações e desempenho e mantém notícias próximas da rotina do estudante.</p>
+      </div>
+
+      <div class="pbedu-mobile__research-screen">
+        <div class="pbedu-mobile__research-inner">
+          <img src="assets/images/pb-edu/home-inicio-1.png" alt="Telas de login e Home do aplicativo PB EDU">
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 6: Aprender sem sair do ecossistema -->
+    <section class="pbedu-mobile__journey">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-mobile__section-title">Aprender sem sair do ecossistema</h2>
+      <p class="pbedu-mobile__lead">A jornada de aulas gravadas organiza a descoberta em uma sequência simples: disciplina, conteúdo, reprodução e material complementar.</p>
+
+      <div class="pbedu-mobile__stack">
+        <article class="pbedu-mobile__step">
+          <span class="pbedu-tablet__tag">01</span>
+          <h3 class="pbedu-mobile__step-title">Encontrar disciplina</h3>
+          <p class="pbedu-mobile__step-text">Lista por área de estudo.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <span class="pbedu-tablet__tag">02</span>
+          <h3 class="pbedu-mobile__step-title">Localizar conteúdo</h3>
+          <p class="pbedu-mobile__step-text">Busca e listagem de aulas.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <span class="pbedu-tablet__tag">03</span>
+          <h3 class="pbedu-mobile__step-title">Assistir</h3>
+          <p class="pbedu-mobile__step-text">Player dentro do contexto da disciplina.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <span class="pbedu-tablet__tag">04</span>
+          <h3 class="pbedu-mobile__step-title">Aprofundar</h3>
+          <p class="pbedu-mobile__step-text">Materiais de apoio em PDF ou links.</p>
+        </article>
+      </div>
+
+      <div class="pbedu-mobile__panel-frame">
+        <div class="pbedu-mobile__panel-inner">
+          <p class="pbedu-mobile__label">Aulas Gravadas</p>
+          <div class="pbedu-mobile__classes">
+            <img src="assets/images/pb-edu/aulas-gravadas-1.png" alt="Tela de aulas gravadas">
+            <img src="assets/images/pb-edu/aulas-gravadas-ciencias-1.png" alt="Tela de aulas gravadas de Ciências">
+            <img src="assets/images/pb-edu/aulas-gravadas-quimica-1.png" alt="Tela de aulas gravadas de Química inorgânica">
+          </div>
+        </div>
+      </div>
+
+      <div class="pbedu-mobile__panel-frame">
+        <div class="pbedu-mobile__panel-inner">
+          <img src="assets/images/pb-edu/desempenho-1.png" alt="Tela de desempenho do estudante">
+        </div>
+      </div>
+
+      <div class="pbedu-mobile__panel-frame">
+        <div class="pbedu-mobile__panel-inner">
+          <img src="assets/images/pb-edu/noticias-3.png" alt="Tela de notícias">
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 7: PB EDU & SIAGE -->
+    <section class="pbedu-mobile__ecosystem">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-mobile__section-title">PB EDU &amp; SIAGE</h2>
+      <p class="pbedu-mobile__lead">Os dois produtos atuam em camadas diferentes do mesmo ecossistema.</p>
+
+      <div class="pbedu-mobile__compare">
+        <div class="pbedu-mobile__compare-half">
+          <p class="pbedu-mobile__compare-name">PB EDU</p>
+          <p class="pbedu-mobile__compare-text">Conteúdo, rotina, notícias, desempenho e experiência do estudante.</p>
+        </div>
+        <div class="pbedu-mobile__compare-divider"></div>
+        <div class="pbedu-mobile__compare-half pbedu-mobile__compare-half--siage">
+          <p class="pbedu-mobile__compare-name">SIAGE</p>
+          <p class="pbedu-mobile__compare-text">Matrícula, renovação e serviços acadêmicos.</p>
+        </div>
+      </div>
+
+      <p class="pbedu-mobile__lead">Mensagens de status ajudam o estudante a entender o que aconteceu e o que ainda precisa acontecer.</p>
+
+      <div class="pbedu-mobile__stack">
+        <article class="pbedu-mobile__step">
+          <h3 class="pbedu-mobile__step-title">Matrícula renovada</h3>
+          <p class="pbedu-mobile__step-text">Confirmação explícita de conclusão.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <h3 class="pbedu-mobile__step-title">Transferência solicitada</h3>
+          <p class="pbedu-mobile__step-text">Solicitação registrada sem sugerir conclusão.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <h3 class="pbedu-mobile__step-title">Aguardando</h3>
+          <p class="pbedu-mobile__step-text">Feedback para processamento ou análise.</p>
+        </article>
+
+        <article class="pbedu-mobile__step">
+          <h3 class="pbedu-mobile__step-title">Sem conteúdo</h3>
+          <p class="pbedu-mobile__step-text">Orientação em vez de tela vazia.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 8: Resultado -->
+    <section class="pbedu-mobile__result">
+      <span class="pbedu-tablet__accent"></span>
+      <h2 class="pbedu-mobile__section-title">Resultado</h2>
+      <p class="pbedu-mobile__lead">O projeto consolidou em um único produto áreas que antes faziam parte de diferentes experiências e canais do ecossistema educacional.</p>
+
+      <div class="pbedu-mobile__result-highlight">
+        <p class="pbedu-mobile__result-title">Uma experiência unificada para o estudante.</p>
+        <p class="pbedu-mobile__result-text">Conteúdo, desempenho, comunicação e serviços acadêmicos passam a coexistir em uma mesma experiência mobile.</p>
+      </div>
+
+      <div class="pbedu-mobile__result-panel">
+        <div class="pbedu-mobile__result-list">
+          <div class="pbedu-mobile__result-item">
+            <p class="pbedu-mobile__result-label">Experiência centralizada</p>
+            <p class="pbedu-mobile__result-value">Rotina escolar e conteúdo no mesmo produto.</p>
+          </div>
+          <div class="pbedu-mobile__result-divider"></div>
+          <div class="pbedu-mobile__result-item">
+            <p class="pbedu-mobile__result-label">Integração com SIAGE</p>
+            <p class="pbedu-mobile__result-value">Continuidade com serviços acadêmicos.</p>
+          </div>
+          <div class="pbedu-mobile__result-divider"></div>
+          <div class="pbedu-mobile__result-item">
+            <p class="pbedu-mobile__result-label">Comunicação oficial</p>
+            <p class="pbedu-mobile__result-value">Feed conectado ao ecossistema PB Educa.</p>
+          </div>
+          <div class="pbedu-mobile__result-divider"></div>
+          <div class="pbedu-mobile__result-item">
+            <p class="pbedu-mobile__result-label">Identidade coerente</p>
+            <p class="pbedu-mobile__result-value">Alinhamento com iniciativas institucionais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Rodapé compartilhado -->
+  <footer class="site-footer" id="contato">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">2026 MICHELE MEDEIROS | Entre em contato: <a href="mailto:michelefmedeiros@gmail.com?subject=Contato%20via%20portf%C3%B3lio">michelefmedeiros@gmail.com</a></p>
+      <a href="https://www.linkedin.com/in/michele-franca-medeiros/" target="_blank" rel="noopener"><img class="site-footer__icon" src="assets/images/icons/linkedin-box-fill.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
