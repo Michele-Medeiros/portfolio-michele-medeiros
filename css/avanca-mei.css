@@ -231,6 +231,73 @@
   color: #fff;
 }
 
+/* Seção Dois públicos, um mesmo processo */
+.avanca-section--publics {
+  padding: 0 65px;
+  gap: 32px;
+}
+
+.avanca-publics__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.avanca-publics__lead {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 55px;
+  color: #151414;
+  text-align: justify;
+}
+
+.avanca-publics__lead-strong {
+  font-weight: 500;
+  color: #054946;
+}
+
+/* Passos numerados dentro dos cards */
+.avanca-steps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.avanca-step {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  background: #e6ecff;
+  border-radius: 12px;
+}
+
+.avanca-step__num {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99px;
+  background: #122f5d;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fefefe;
+}
+
+.avanca-step__text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #252628;
+}
+
 /* Tela do app, preenchendo a área de 400×810 */
 .avanca-hero__media {
   width: 400px;
