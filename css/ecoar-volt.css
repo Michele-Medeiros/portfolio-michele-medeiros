@@ -1113,3 +1113,153 @@
 .ecoar-tablet__roadmap-text--light {
   color: #dce8de;
 }
+
+/* ==========================================================================
+   Versão mobile (<500px) — mesma estrutura do tablet, com ajustes de escala
+   ========================================================================== */
+
+.ecoar-mobile {
+  display: none;
+}
+
+@media (max-width: 499px) {
+  .ecoar-mobile {
+    display: block;
+    max-width: 390px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #f8f8f8, #ebebeb);
+  }
+
+  /* Apresentação */
+  .ecoar-mobile .ecoar-tablet__hero {
+    padding: 28px 20px 36px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__name {
+    font-size: 48px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__subtitle {
+    font-size: 28px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__text,
+  .ecoar-mobile .ecoar-tablet__quote p {
+    font-size: 16px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__highlight {
+    flex-basis: calc(50% - 8px);
+    padding: 16px 20px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__highlight-label {
+    font-size: 16px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__highlight-text {
+    font-size: 14px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__logo {
+    padding: 12px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__logo-box {
+    width: 200px;
+    height: 200px;
+    border-width: 4.949px;
+    border-radius: 19.795px;
+  }
+
+  /* Seções */
+  .ecoar-mobile .ecoar-tablet__section {
+    padding: 36px 20px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__title {
+    font-size: 26px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__title--sm {
+    font-size: 22px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__lead {
+    font-size: 16px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__card-title--lg {
+    font-size: 18px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__card-title--md,
+  .ecoar-mobile .ecoar-tablet__card-title--caps {
+    font-size: 16px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__shot .ecoar-tablet__card-title {
+    font-size: 16px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__step {
+    font-size: 12px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__flow {
+    gap: 12px 8px;
+  }
+
+  /* Arquitetura: fluxo vertical, com seta para baixo */
+  .ecoar-mobile .ecoar-tablet__pipeline {
+    gap: 16px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__pipeline-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__pipeline-arrow {
+    align-self: center;
+    transform: rotate(90deg);
+  }
+
+  .ecoar-mobile .ecoar-tablet__step-text {
+    font-size: 14px;
+  }
+
+  /* Decisões e roadmap */
+  .ecoar-mobile .ecoar-tablet__principle {
+    padding: 24px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__principle-quote {
+    font-size: 24px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__roadmap-title {
+    font-size: 20px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__roadmap-text {
+    font-size: 15px;
+  }
+}
+
+/* Mobile: espaçamento maior entre cards */
+@media (max-width: 499px) {
+  .ecoar-mobile .ecoar-tablet__highlights,
+  .ecoar-mobile .ecoar-tablet__grid,
+  .ecoar-mobile .ecoar-tablet__stack {
+    gap: 24px;
+  }
+}
+
+/* Mobile: mais respiro entre o último card (roadmap) e o rodapé */
+@media (max-width: 499px) {
+  .ecoar-mobile .ecoar-tablet__section:last-child {
+    padding-bottom: 64px;
+  }
+}
