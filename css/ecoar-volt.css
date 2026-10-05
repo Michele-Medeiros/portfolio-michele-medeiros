@@ -1,0 +1,1265 @@
+/* Documentação EcoarVolt — versão web (≥1000px) */
+
+.ecoar-doc {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .ecoar-doc {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: linear-gradient(to bottom, #f8f8f8, #ebebeb);
+    padding-bottom: 115px;
+  }
+  .ecoar-doc > * {
+    margin-inline: auto;
+  }
+  .ecoar-doc > * + * {
+    margin-top: 100px;
+  }
+}
+
+/* Escala do frame de 1728px para larguras menores */
+@media (min-width: 1000px) and (max-width: 1199px) { .ecoar-doc { zoom: 0.57; } }
+@media (min-width: 1200px) and (max-width: 1439px) { .ecoar-doc { zoom: 0.69; } }
+@media (min-width: 1440px) and (max-width: 1727px) { .ecoar-doc { zoom: 0.83; } }
+
+/* Seção 1: Apresentação */
+.ecoar-hero {
+  flex-shrink: 0;
+  width: 1728px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 56px 90px 0 65px;
+}
+
+.ecoar-hero__info {
+  width: 919px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.ecoar-hero__tags {
+  padding-left: 12px;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  color: #122f5d;
+}
+
+.ecoar-hero__title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ecoar-hero__name {
+  padding-left: 12px;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 1.45;
+  color: #151414;
+}
+
+.ecoar-hero__subtitle {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.45;
+  color: #252628;
+}
+
+.ecoar-hero__text {
+  padding-left: 12px;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+  color: #262626;
+  text-align: justify;
+}
+
+.ecoar-hero__quote {
+  margin: 0;
+  padding-left: 12px;
+  border-left: 4px solid #eb8a19;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.55;
+  color: #262626;
+  text-align: justify;
+}
+
+.ecoar-hero__cards {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.ecoar-hero__card {
+  width: 231px;
+  flex-shrink: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  text-align: left;
+}
+
+.ecoar-hero__card-label {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  color: #151414;
+  text-transform: uppercase;
+}
+
+.ecoar-hero__card-text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #56565a;
+}
+
+/* Frame do mockup inclinado (449×477) com a tela do EcoarVolt */
+.ecoar-hero__media {
+  width: 485px;
+  height: 511px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Separador roxo entre seções */
+.ecoar-divider {
+  flex-shrink: 0;
+  width: 1680px;
+  height: 6px;
+  background: #5029de;
+}
+
+/* Seções de conteúdo (largura total 1728px, padding lateral 54px) */
+.ecoar-section {
+  flex-shrink: 0;
+  width: 1728px;
+  padding: 0 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.ecoar-section__title {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.ecoar-section__lead {
+  padding-left: 12px;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+  color: #262626;
+  text-align: justify;
+}
+
+/* Cards de conteúdo */
+.ecoar-challenge__cards {
+  display: flex;
+  gap: 50px;
+}
+
+.ecoar-card {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.ecoar-card__tag {
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: rgba(1, 63, 5, 0.1);
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.ecoar-card__title {
+  width: 100%;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.ecoar-card__text {
+  width: 100%;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #252628;
+  text-align: left;
+}
+
+.ecoar-card--dark {
+  background: #013f05;
+}
+
+/* Seção Meu papel no projeto */
+.ecoar-section--role {
+  padding: 0 65px;
+  gap: 32px;
+}
+
+.ecoar-role__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ecoar-role__lead {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 55px;
+  color: #151414;
+  text-align: justify;
+}
+
+.ecoar-role__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.ecoar-role__row {
+  display: flex;
+  gap: 50px;
+}
+
+.ecoar-card--plain .ecoar-card__text {
+  color: #56565a;
+}
+
+/* Seção A pesquisa de domínio virou produto */
+.ecoar-section--research {
+  padding: 0 65px;
+  gap: 65px;
+}
+
+.ecoar-research__block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.ecoar-research__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ecoar-research__lead {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+  color: #151414;
+  text-align: justify;
+}
+
+.ecoar-research__row {
+  display: flex;
+  gap: 50px;
+}
+
+.ecoar-research__row .ecoar-card {
+  gap: 24px;
+}
+
+/* Chips de fluxo dentro dos cards */
+.ecoar-chip-flow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.ecoar-chip-flow--between {
+  justify-content: space-between;
+}
+
+.ecoar-chip {
+  padding: 8px 18px;
+  border-radius: 12px;
+  background: #efefef;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #252628;
+  white-space: nowrap;
+}
+
+.ecoar-chip-flow__arrow {
+  width: 28px;
+  height: 21px;
+  flex-shrink: 0;
+}
+
+/* Seção Um domínio enorme exigia priorização */
+.ecoar-section--priority {
+  padding: 0 65px;
+  gap: 65px;
+}
+
+.ecoar-research__row--center {
+  justify-content: center;
+}
+
+/* Seção Arquitetura por perfil */
+.ecoar-section--profiles {
+  padding: 0 65px;
+  gap: 50px;
+}
+
+.ecoar-profiles__row {
+  display: flex;
+  gap: 50px;
+}
+
+.ecoar-chip-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ecoar-chip-list .ecoar-chip {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Seção As telas abaixo são recortes reais */
+.ecoar-section--screens {
+  padding: 0 65px;
+  gap: 50px;
+}
+
+.ecoar-screens__list {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #151414;
+  text-align: justify;
+}
+
+.ecoar-gallery {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.ecoar-gallery__col {
+  width: 774px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.ecoar-shot {
+  padding: 32px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.ecoar-shot__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ecoar-shot__caption {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ecoar-shot__title {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.ecoar-shot__text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+/* Rótulo de card sem fundo (Problema, V1 · FUNDAMENTOS) */
+.ecoar-card__label {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.ecoar-card__text--medium {
+  font-weight: 500;
+}
+
+.ecoar-card__text strong {
+  font-weight: 500;
+}
+
+/* Seção Decisões de UX */
+.ecoar-section--decisions,
+.ecoar-section--roadmap {
+  padding: 0 65px;
+  gap: 80px;
+}
+
+.ecoar-section--roadmap {
+  gap: 50px;
+}
+
+.ecoar-decisions__main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.ecoar-principle {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 32px;
+  background: #1e4d2b;
+  border-radius: 24px;
+}
+
+.ecoar-principle__label {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.ecoar-principle__quote {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 1.6;
+  letter-spacing: 0.64px;
+  color: #fff;
+}
+
+/* Linha de etapas com setas (Entrada → Valores) */
+.ecoar-flow {
+  display: flex;
+  align-items: stretch;
+  gap: 50px;
+}
+
+.ecoar-flow__card {
+  flex: 1 1 0;
+  min-width: 0;
+  gap: 24px;
+}
+
+.ecoar-flow__arrow {
+  width: 28px;
+  height: 21px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.ecoar-card--dark .ecoar-card__tag {
+  background: #ff6d00;
+}
+
+.ecoar-card--dark .ecoar-card__title,
+.ecoar-card--dark .ecoar-card__text {
+  color: #fff;
+}
+
+.ecoar-hero__frame {
+  width: 449px;
+  height: 477px;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border: 8px solid #3b3b3e;
+  border-radius: 32px;
+  transform: rotate(4.49deg);
+}
+
+.ecoar-hero__logo {
+  position: absolute;
+  inset: 10.9% 12.94% 11.16% 12.68%;
+}
+
+.ecoar-hero__screen {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ==========================================================================
+   Versão tablet (500–999px) — frame de 768px, centralizado
+   ========================================================================== */
+
+.ecoar-tablet {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  .ecoar-tablet {
+    display: block;
+    max-width: 768px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #f8f8f8, #ebebeb);
+  }
+}
+
+/* Apresentação */
+.ecoar-tablet__hero {
+  padding: 40px 48px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ecoar-tablet__tags {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #122f5d;
+}
+
+.ecoar-tablet__name {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 1.05;
+  color: #151414;
+}
+
+.ecoar-tablet__subtitle {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.ecoar-tablet__text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.ecoar-tablet__quote {
+  margin: 0;
+  display: flex;
+  gap: 14px;
+  align-items: stretch;
+}
+
+.ecoar-tablet__quote-bar {
+  width: 4px;
+  flex-shrink: 0;
+  background: #ff6d00;
+}
+
+.ecoar-tablet__quote p {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.ecoar-tablet__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.ecoar-tablet__highlight {
+  flex: 0 0 calc(50% - 8px);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid #e4e4e8;
+  border-radius: 20px;
+}
+
+.ecoar-tablet__highlight-label {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.ecoar-tablet__highlight-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #56565a;
+}
+
+.ecoar-tablet__logo {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+.ecoar-tablet__logo-box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #fff;
+  border: 6.598px solid #3b3b3e;
+  border-radius: 26.393px;
+}
+
+.ecoar-tablet__logo-art {
+  position: absolute;
+  inset: 10.9% 12.94% 11.16% 12.68%;
+}
+
+.ecoar-tablet__logo-art img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Seções de conteúdo */
+.ecoar-tablet__section {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ecoar-tablet__accent {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #ff6d00;
+}
+
+.ecoar-tablet__title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.ecoar-tablet__title--sm {
+  font-size: 28px;
+}
+
+.ecoar-tablet__lead {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #56565a;
+}
+
+.ecoar-tablet__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.ecoar-tablet__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ecoar-tablet__stack > .ecoar-tablet__card {
+  flex: none;
+}
+
+.ecoar-tablet__card {
+  flex: 0 0 calc(50% - 8px);
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #e4e4e8;
+  border-radius: 20px;
+}
+
+.ecoar-tablet__card--wide,
+.ecoar-tablet__card--roadmap {
+  flex-basis: 100%;
+  width: 100%;
+}
+
+/* Abaixo de 640px as colunas empilham, mantendo a largura do conteúdo */
+@media (max-width: 639px) {
+  .ecoar-tablet__hero,
+  .ecoar-tablet__section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .ecoar-tablet__highlight,
+  .ecoar-tablet__card {
+    flex-basis: 100%;
+  }
+
+}
+
+.ecoar-tablet__card--roadmap {
+  padding: 24px;
+  gap: 8px;
+}
+
+.ecoar-tablet__card--dark,
+.ecoar-tablet__card--challenge.ecoar-tablet__card--dark {
+  background: #013f05;
+  border-color: #013f05;
+}
+
+.ecoar-tablet__card--decision .ecoar-tablet__card-title {
+  font-size: 18px;
+}
+
+.ecoar-tablet__card--wide {
+  padding: 24px;
+  gap: 12px;
+}
+
+.ecoar-tablet__pill {
+  padding: 5px 12px;
+  border-radius: 100px;
+  background: #e2ece4;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #013f05;
+  white-space: nowrap;
+}
+
+.ecoar-tablet__pill--orange {
+  background: #ff6d00;
+  color: #fff;
+}
+
+.ecoar-tablet__card-title {
+  width: 100%;
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #151414;
+}
+
+.ecoar-tablet__card-title--lg {
+  font-size: 20px;
+}
+
+.ecoar-tablet__card-title--md {
+  font-size: 17px;
+}
+
+.ecoar-tablet__card-title--caps {
+  text-transform: uppercase;
+}
+
+.ecoar-tablet__card-title--light {
+  color: #fff;
+}
+
+.ecoar-tablet__card-text {
+  width: 100%;
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #56565a;
+}
+
+.ecoar-tablet__card-text--ink {
+  color: #262626;
+}
+
+.ecoar-tablet__card-text--16 {
+  font-size: 16px;
+}
+
+.ecoar-tablet__card-text--15 {
+  font-size: 15px;
+}
+
+.ecoar-tablet__card-text--light {
+  color: #dce8de;
+}
+
+/* Pesquisa de domínio: fluxo e pipeline */
+.ecoar-tablet__flow {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.ecoar-tablet__step {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #f0f0f0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #262626;
+  white-space: nowrap;
+}
+
+.ecoar-tablet__flow-arrow {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #56565a;
+}
+
+.ecoar-tablet__pipeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ecoar-tablet__pipeline-row {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.ecoar-tablet__step-card {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid #e4e4e8;
+  border-radius: 16px;
+}
+
+.ecoar-tablet__step-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.ecoar-tablet__step-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #56565a;
+}
+
+.ecoar-tablet__pipeline-arrow {
+  align-self: center;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+  color: #56565a;
+}
+
+/* Telas reais */
+.ecoar-tablet__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Galeria: uma tela por vez, na largura total, com altura natural da imagem */
+.ecoar-tablet__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ecoar-tablet__shots {
+  display: block;
+}
+
+.ecoar-tablet__gallery-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.ecoar-tablet__counter {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #56565a;
+}
+
+.ecoar-tablet__nav-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.ecoar-tablet__nav:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.ecoar-tablet__nav {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 50%;
+  background: #fff;
+  font-family: 'Kufam', sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  color: #013f05;
+  cursor: pointer;
+}
+
+.ecoar-tablet__nav:hover {
+  border-color: #013f05;
+}
+
+.ecoar-tablet__shot {
+  display: none;
+  box-sizing: border-box;
+  padding: 16px;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #e4e4e8;
+  border-radius: 20px;
+}
+
+.ecoar-tablet__shot .ecoar-tablet__card-title {
+  font-size: 17px;
+}
+
+.ecoar-tablet__shot .ecoar-tablet__card-text {
+  font-size: 14px;
+}
+
+.ecoar-tablet__shot.is-active {
+  display: flex;
+}
+
+.ecoar-tablet__shot-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Decisões de UX e princípio */
+.ecoar-tablet__principle {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #1e4d2b;
+  border-radius: 24px;
+}
+
+.ecoar-tablet__principle-label {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #bed6c4;
+}
+
+.ecoar-tablet__principle-quote {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.25;
+  color: #fff;
+}
+
+/* Roadmap */
+.ecoar-tablet__roadmap-title {
+  width: 100%;
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.ecoar-tablet__roadmap-title--light {
+  color: #fff;
+}
+
+.ecoar-tablet__roadmap-text {
+  width: 100%;
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.ecoar-tablet__roadmap-text--light {
+  color: #dce8de;
+}
+
+/* ==========================================================================
+   Versão mobile (<500px) — mesma estrutura do tablet, com ajustes de escala
+   ========================================================================== */
+
+.ecoar-mobile {
+  display: none;
+}
+
+@media (max-width: 499px) {
+  .ecoar-mobile {
+    display: block;
+    max-width: 390px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #f8f8f8, #ebebeb);
+  }
+
+  /* Apresentação */
+  .ecoar-mobile .ecoar-tablet__hero {
+    padding: 28px 20px 36px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__name {
+    font-size: 48px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__subtitle {
+    font-size: 28px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__text,
+  .ecoar-mobile .ecoar-tablet__quote p {
+    font-size: 16px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__highlight {
+    flex-basis: calc(50% - 8px);
+    padding: 16px 20px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__highlight-label {
+    font-size: 16px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__highlight-text {
+    font-size: 14px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__logo {
+    padding: 12px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__logo-box {
+    width: 200px;
+    height: 200px;
+    border-width: 4.949px;
+    border-radius: 19.795px;
+  }
+
+  /* Seções */
+  .ecoar-mobile .ecoar-tablet__section {
+    padding: 36px 20px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__title {
+    font-size: 26px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__title--sm {
+    font-size: 22px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__lead {
+    font-size: 16px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__card-title--lg {
+    font-size: 18px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__card-title--md,
+  .ecoar-mobile .ecoar-tablet__card-title--caps {
+    font-size: 16px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__shot .ecoar-tablet__card-title {
+    font-size: 16px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__step {
+    font-size: 12px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__flow {
+    gap: 12px 8px;
+  }
+
+  /* Arquitetura: fluxo vertical, com seta para baixo */
+  .ecoar-mobile .ecoar-tablet__pipeline {
+    gap: 16px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__pipeline-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__pipeline-arrow {
+    align-self: center;
+    transform: rotate(90deg);
+  }
+
+  .ecoar-mobile .ecoar-tablet__step-text {
+    font-size: 14px;
+  }
+
+  /* Decisões e roadmap */
+  .ecoar-mobile .ecoar-tablet__principle {
+    padding: 24px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__principle-quote {
+    font-size: 24px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__roadmap-title {
+    font-size: 20px;
+  }
+
+  .ecoar-mobile .ecoar-tablet__roadmap-text {
+    font-size: 15px;
+  }
+}
+
+/* Mobile: espaçamento maior entre cards */
+@media (max-width: 499px) {
+  .ecoar-mobile .ecoar-tablet__highlights,
+  .ecoar-mobile .ecoar-tablet__grid,
+  .ecoar-mobile .ecoar-tablet__stack {
+    gap: 24px;
+  }
+}
+
+/* Mobile: mais respiro entre o último card (roadmap) e o rodapé */
+@media (max-width: 499px) {
+  .ecoar-mobile .ecoar-tablet__section:last-child {
+    padding-bottom: 64px;
+  }
+}

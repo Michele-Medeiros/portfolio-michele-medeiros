@@ -1,0 +1,1109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentação EcoarVolt — Michele Medeiros</title>
+  <meta name="description" content="Documentação do case EcoarVolt: plataforma B2G para diagnóstico de faturas e eficiência energética em prefeituras.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Inter:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=24">
+  <link rel="stylesheet" href="css/ecoar-volt.css?v=21">
+</head>
+<body>
+
+  <!-- Cabeçalho compartilhado -->
+  <header class="navbar-wrap">
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a href="index.html" class="navbar__brand">Michele Medeiros</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="sobre-mim.html">Sobre mim</a>
+        <a href="projetos.html" class="is-active">Projetos</a>
+        <a href="index.html#contato">Contatos</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="ecoar-doc">
+
+    <!-- Seção 1: Apresentação -->
+    <section class="ecoar-hero">
+      <div class="ecoar-hero__info">
+        <p class="ecoar-hero__tags">Product Strategy · Domain Research · UX/UI · Design System</p>
+
+        <div class="ecoar-hero__title">
+          <h1 class="ecoar-hero__name">EcoarVolt</h1>
+          <p class="ecoar-hero__subtitle">Energia pública transformada em decisão.</p>
+        </div>
+
+        <p class="ecoar-hero__text">Concepção end-to-end de uma plataforma B2G para consolidar faturas, diagnosticar desperdícios e apoiar decisões de eficiência energética em prefeituras.</p>
+
+        <blockquote class="ecoar-hero__quote">Um projeto 0→1 criado de forma independente: da compreensão do mercado e das regras do setor elétrico à arquitetura, interface, documentação e estratégia de evolução do produto.</blockquote>
+
+        <div class="ecoar-hero__cards">
+          <div class="ecoar-hero__card">
+            <p class="ecoar-hero__card-label">0 → 3</p>
+            <p class="ecoar-hero__card-text">produto concebido do zero</p>
+          </div>
+          <div class="ecoar-hero__card">
+            <p class="ecoar-hero__card-label">B2G</p>
+            <p class="ecoar-hero__card-text">foco em prefeituras e autarquias</p>
+          </div>
+          <div class="ecoar-hero__card">
+            <p class="ecoar-hero__card-label">V1 - V3</p>
+            <p class="ecoar-hero__card-text">roadmap estruturado</p>
+          </div>
+          <div class="ecoar-hero__card">
+            <p class="ecoar-hero__card-label">SOLO PROJECT</p>
+            <p class="ecoar-hero__card-text">estratégia, UX/UI e documentação</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ecoar-hero__media">
+        <div class="ecoar-hero__frame">
+          <div class="ecoar-hero__logo">
+            <img class="ecoar-hero__screen" src="assets/images/ecoar-volt/hero-screen.svg" alt="Logo EcoarVolt">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ecoar-divider"></div>
+
+    <!-- Seção 2: O desafio -->
+    <section class="ecoar-section">
+      <h2 class="ecoar-section__title">O desafio</h2>
+      <p class="ecoar-section__lead">Prefeituras administram unidades consumidoras espalhadas por secretarias, fundos, autarquias e equipamentos públicos. O dado existe, mas está fragmentado entre faturas, contratos, planilhas e sistemas das distribuidoras.</p>
+
+      <div class="ecoar-challenge__cards">
+        <article class="ecoar-card">
+          <span class="ecoar-card__tag">Fragmentação</span>
+          <h3 class="ecoar-card__title">Informação distribuída</h3>
+          <p class="ecoar-card__text">Diários longos exigem esforço. Trackers simples demais guardam pouco contexto. O desafio era encontrar profundidade sem sacrificar recorrência.</p>
+        </article>
+        <article class="ecoar-card">
+          <span class="ecoar-card__tag">Diagnóstico</span>
+          <h3 class="ecoar-card__title">Planilhas mostram valor, não necessariamente causa</h3>
+          <p class="ecoar-card__text">Diários longos exigem esforço. Trackers simples demais guardam pouco contexto. O desafio era encontrar profundidade sem sacrificar recorrência.</p>
+        </article>
+        <article class="ecoar-card ecoar-card--dark">
+          <span class="ecoar-card__tag">Decisão</span>
+          <h3 class="ecoar-card__title">Dados técnicos precisam virar ação</h3>
+          <p class="ecoar-card__text">O registro precisava caber na rotina e, ao mesmo tempo, acumular informação suficiente para gerar histórico e padrões compreensíveis.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="ecoar-divider"></div>
+
+    <!-- Seção 3: Meu papel no projeto -->
+    <section class="ecoar-section ecoar-section--role">
+      <div class="ecoar-role__intro">
+        <h2 class="ecoar-section__title">MEU PAPEL NO PROJETO</h2>
+        <p class="ecoar-role__lead">O EcoarVolt foi desenvolvido individualmente, do problema inicial à proposta de produto e protótipo de alta fidelidade.</p>
+      </div>
+
+      <div class="ecoar-role__grid">
+        <div class="ecoar-role__row">
+          <article class="ecoar-card ecoar-card--plain">
+            <h3 class="ecoar-card__title">Product Strategy</h3>
+            <p class="ecoar-card__text">Pesquisa do problema, mercado, setor público e contexto energético.</p>
+          </article>
+          <article class="ecoar-card ecoar-card--plain">
+            <h3 class="ecoar-card__title">Product Strategy</h3>
+            <p class="ecoar-card__text">Proposta de valor, público, MVP, monetização e roadmap.</p>
+          </article>
+          <article class="ecoar-card ecoar-card--plain">
+            <h3 class="ecoar-card__title">Domain Research</h3>
+            <p class="ecoar-card__text">ANEEL, modalidades tarifárias, demanda, penalidades e qualidade de energia.</p>
+          </article>
+        </div>
+        <div class="ecoar-role__row">
+          <article class="ecoar-card ecoar-card--plain">
+            <h3 class="ecoar-card__title">UX Architecture</h3>
+            <p class="ecoar-card__text">Perfis, navegação, cenários, estados e regras de exibição.</p>
+          </article>
+          <article class="ecoar-card ecoar-card--plain">
+            <h3 class="ecoar-card__title">UI / Design System</h3>
+            <p class="ecoar-card__text">Dashboards, tabelas, filtros, componentes e alta fidelidade.</p>
+          </article>
+          <article class="ecoar-card ecoar-card--plain">
+            <h3 class="ecoar-card__title">Product Documentation</h3>
+            <p class="ecoar-card__text">POC, MVP, fontes de dados, regras e roadmap V1–V3.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="ecoar-divider"></div>
+
+    <!-- Seção 4: A pesquisa de domínio virou produto -->
+    <section class="ecoar-section ecoar-section--research">
+      <div class="ecoar-research__block">
+        <div class="ecoar-research__intro">
+          <h2 class="ecoar-section__title">A pesquisa de domínio virou produto</h2>
+          <p class="ecoar-research__lead">Antes de desenhar dashboards, precisei entender o que cada indicador significava e em quais situações ele realmente deveria aparecer.</p>
+        </div>
+
+        <div class="ecoar-research__row">
+          <article class="ecoar-card">
+            <span class="ecoar-card__tag">Demanda contratada</span>
+            <h3 class="ecoar-card__title">O que significa pagar por capacidade que quase nunca é usada?</h3>
+            <p class="ecoar-card__text">O produto precisa combinar histórico e demanda medida para evidenciar ociosidade e risco de ultrapassagem.</p>
+            <div class="ecoar-chip-flow">
+              <span class="ecoar-chip">Dado técnico</span>
+              <img class="ecoar-chip-flow__arrow" src="assets/images/ecoar-volt/arrow.svg" alt="">
+              <span class="ecoar-chip">Diagnóstico</span>
+              <img class="ecoar-chip-flow__arrow" src="assets/images/ecoar-volt/arrow.svg" alt="">
+              <span class="ecoar-chip">Ação sugerida</span>
+            </div>
+          </article>
+          <article class="ecoar-card">
+            <span class="ecoar-card__tag">Aplicabilidade</span>
+            <h3 class="ecoar-card__title">Nem todo KPI se aplica a toda unidade</h3>
+            <p class="ecoar-card__text">Demanda, P95, ponta/fora de ponta e penalidades dependem do grupo e modalidade tarifária da UC.</p>
+            <div class="ecoar-chip-flow ecoar-chip-flow--between">
+              <span class="ecoar-chip">Grupo / modalidade</span>
+              <img class="ecoar-chip-flow__arrow" src="assets/images/ecoar-volt/arrow.svg" alt="">
+              <span class="ecoar-chip">Regra de exibição</span>
+              <img class="ecoar-chip-flow__arrow" src="assets/images/ecoar-volt/arrow.svg" alt="">
+              <span class="ecoar-chip">Interface contextual</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="ecoar-research__block">
+        <p class="ecoar-research__lead">A principal arquitetura conceitual do produto transforma documentos operacionais em inteligência acionável.</p>
+
+        <div class="ecoar-flow">
+          <article class="ecoar-card ecoar-flow__card">
+            <h3 class="ecoar-card__title">Entrada</h3>
+            <p class="ecoar-card__text">PDF / CSV de faturas</p>
+          </article>
+          <img class="ecoar-flow__arrow" src="assets/images/ecoar-volt/arrow.svg" alt="">
+          <article class="ecoar-card ecoar-flow__card">
+            <h3 class="ecoar-card__title">ESTRUTURA</h3>
+            <p class="ecoar-card__text">Unidades consumidoras</p>
+          </article>
+          <img class="ecoar-flow__arrow" src="assets/images/ecoar-volt/arrow.svg" alt="">
+          <article class="ecoar-card ecoar-flow__card">
+            <h3 class="ecoar-card__title">TRATAMENTO</h3>
+            <p class="ecoar-card__text">Normalização de dados</p>
+          </article>
+          <img class="ecoar-flow__arrow" src="assets/images/ecoar-volt/arrow.svg" alt="">
+          <article class="ecoar-card ecoar-flow__card">
+            <h3 class="ecoar-card__title">VALORES</h3>
+            <p class="ecoar-card__text">KPIs · alertas · ações</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="ecoar-divider"></div>
+
+    <!-- Seção 5: Um domínio enorme exigia priorização -->
+    <section class="ecoar-section ecoar-section--priority">
+      <div class="ecoar-research__block">
+        <div class="ecoar-research__intro">
+          <h2 class="ecoar-section__title">Um domínio enorme exigia priorização</h2>
+          <p class="ecoar-research__lead">Para a primeira versão, a estratégia foi concentrar o produto nas decisões que poderiam gerar valor usando dados acessíveis às prefeituras.</p>
+        </div>
+
+        <div class="ecoar-research__row">
+          <article class="ecoar-card">
+            <span class="ecoar-card__tag">01</span>
+            <h3 class="ecoar-card__title">monitorar</h3>
+            <p class="ecoar-card__text">Consumo, custo, R$/kWh, séries históricas e ranking de UCs.</p>
+          </article>
+          <article class="ecoar-card">
+            <span class="ecoar-card__tag">02</span>
+            <h3 class="ecoar-card__title">diagnosticar</h3>
+            <p class="ecoar-card__text">Tarifa, demanda, modalidade, penalidades e anomalias.</p>
+          </article>
+          <article class="ecoar-card">
+            <span class="ecoar-card__tag">03</span>
+            <h3 class="ecoar-card__title">comprovar</h3>
+            <p class="ecoar-card__text">Qualidade DEC/FEC, evidências e apoio a tratativas com distribuidoras.</p>
+          </article>
+          <article class="ecoar-card">
+            <span class="ecoar-card__tag">04</span>
+            <h3 class="ecoar-card__title">planejar</h3>
+            <p class="ecoar-card__text">Emissões, eficiência, LED, solar e oportunidades futuras.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="ecoar-research__block">
+        <p class="ecoar-research__lead">Uma mesma prefeitura pode ter unidades com características muito diferentes. A interface foi pensada para adaptar informação e diagnóstico ao contexto de cada UC.</p>
+
+        <div class="ecoar-research__row ecoar-research__row--center">
+          <article class="ecoar-card ecoar-card--plain">
+            <h3 class="ecoar-card__title">CONVENCIONAL</h3>
+            <p class="ecoar-card__text">Grupo B: consumo sem divisão horária.</p>
+          </article>
+          <article class="ecoar-card ecoar-card--plain">
+            <h3 class="ecoar-card__title">BRANCA</h3>
+            <p class="ecoar-card__text">Grupo B: consumo por postos tarifários.</p>
+          </article>
+          <article class="ecoar-card ecoar-card--plain">
+            <h3 class="ecoar-card__title">AZUL</h3>
+            <p class="ecoar-card__text">Grupo A: demanda e energia por ponta/fora.</p>
+          </article>
+          <article class="ecoar-card ecoar-card--plain">
+            <h3 class="ecoar-card__title">VERDE</h3>
+            <p class="ecoar-card__text">KPIs · alertas · ações</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="ecoar-divider"></div>
+
+    <!-- Seção 6: Arquitetura por perfil -->
+    <section class="ecoar-section ecoar-section--profiles">
+      <div class="ecoar-research__intro">
+        <h2 class="ecoar-section__title">Arquitetura por perfil</h2>
+        <p class="ecoar-research__lead">O sistema separa responsabilidade operacional e tomada de decisão, evitando expor a todos o mesmo nível de controle.</p>
+      </div>
+
+      <div class="ecoar-profiles__row">
+        <article class="ecoar-card">
+          <span class="ecoar-card__tag">gestor</span>
+          <h3 class="ecoar-card__title">Visão orientada à decisão</h3>
+          <div class="ecoar-chip-list">
+            <span class="ecoar-chip">Resumo executivo</span>
+            <span class="ecoar-chip">Diagnosticar contas</span>
+            <span class="ecoar-chip">Gerenciar faturas</span>
+            <span class="ecoar-chip">Perfil</span>
+          </div>
+        </article>
+        <article class="ecoar-card">
+          <span class="ecoar-card__tag">administrador</span>
+          <h3 class="ecoar-card__title">Visão orientada à operação e governança</h3>
+          <div class="ecoar-chip-list">
+            <span class="ecoar-chip">Resumo e qualidade de energia</span>
+            <span class="ecoar-chip">Gerenciar unidades consumidoras</span>
+            <span class="ecoar-chip">Submeter e gerenciar faturas</span>
+            <span class="ecoar-chip">Cadastrar e editar usuários</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="ecoar-divider"></div>
+
+    <!-- Seção 7: Telas reais -->
+    <section class="ecoar-section ecoar-section--screens">
+      <div class="ecoar-research__intro">
+        <h2 class="ecoar-section__title">As telas abaixo são recortes reais do arquivo de alta fidelidade do EcoarVolt.</h2>
+        <p class="ecoar-screens__list">Resumo | Diagnosticar Contas | Qualidade de Energia | Gerenciar UCs | Gerenciar Faturas | Auditar &amp; Simular Tarifas</p>
+      </div>
+
+      <div class="ecoar-gallery">
+        <div class="ecoar-gallery__col">
+          <article class="ecoar-shot">
+            <img class="ecoar-shot__img" src="assets/images/ecoar-volt/resumo-1.png" alt="Tela Resumo executivo do EcoarVolt">
+            <div class="ecoar-shot__caption">
+              <h3 class="ecoar-shot__title">Resumo executivo</h3>
+              <p class="ecoar-shot__text">Visão consolidada de consumo, custo, indicadores e ranking.</p>
+            </div>
+          </article>
+          <article class="ecoar-shot">
+            <img class="ecoar-shot__img" src="assets/images/ecoar-volt/diagnosticar-contas-grupo-a-1.png" alt="Tela Diagnosticar contas do EcoarVolt">
+            <div class="ecoar-shot__caption">
+              <h3 class="ecoar-shot__title">Diagnosticar contas</h3>
+              <p class="ecoar-shot__text">Panorama de contas processadas, atrasos, faturas ausentes e oportunidades de ajuste.</p>
+            </div>
+          </article>
+          <article class="ecoar-shot">
+            <img class="ecoar-shot__img" src="assets/images/ecoar-volt/gerenciar-faturas-1.png" alt="Tela Gerenciar faturas do EcoarVolt">
+            <div class="ecoar-shot__caption">
+              <h3 class="ecoar-shot__title">Diagnosticar contas</h3>
+              <p class="ecoar-shot__text">Panorama de contas processadas, atrasos, faturas ausentes e oportunidades de ajuste.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="ecoar-gallery__col">
+          <article class="ecoar-shot">
+            <img class="ecoar-shot__img" src="assets/images/ecoar-volt/qualidade-de-energia-1.png" alt="Tela Qualidade de energia do EcoarVolt">
+            <div class="ecoar-shot__caption">
+              <h3 class="ecoar-shot__title">Qualidade de energia</h3>
+              <p class="ecoar-shot__text">Penalidades, fator de potência, ultrapassagem e glossário contextual para Grupo A.</p>
+            </div>
+          </article>
+          <article class="ecoar-shot">
+            <img class="ecoar-shot__img" src="assets/images/ecoar-volt/gerenciar-faturas-1.png" alt="Tela Gerenciar UCs do EcoarVolt">
+            <div class="ecoar-shot__caption">
+              <h3 class="ecoar-shot__title">Gerenciar UCs</h3>
+              <p class="ecoar-shot__text">Inventário e gestão operacional das unidades consumidoras do município.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="ecoar-divider"></div>
+
+    <!-- Seção 8: Decisões de UX -->
+    <section class="ecoar-section ecoar-section--decisions">
+      <div class="ecoar-decisions__main">
+        <div class="ecoar-research__intro">
+          <h2 class="ecoar-section__title">Decisões de UX</h2>
+          <p class="ecoar-research__lead">Algumas escolhas foram essenciais para traduzir conhecimento técnico em uma experiência compreensível.</p>
+        </div>
+
+        <div class="ecoar-research__row">
+          <article class="ecoar-card">
+            <span class="ecoar-card__label">Problema</span>
+            <h3 class="ecoar-card__title">P95 é técnico demais para muitos gestores</h3>
+            <p class="ecoar-card__text"><strong>Decisão:</strong> aprofundamento progressivo, deixando contexto adicional para quando fizer sentido.</p>
+          </article>
+          <article class="ecoar-card">
+            <span class="ecoar-card__label">Problema</span>
+            <h3 class="ecoar-card__title">Nem todos os indicadores se aplicam a todas as UCs</h3>
+            <p class="ecoar-card__text"><strong>Decisão:</strong> preservar registros por períodos e manter os momentos separados.</p>
+          </article>
+        </div>
+
+        <div class="ecoar-research__row">
+          <article class="ecoar-card">
+            <span class="ecoar-card__label">Problema</span>
+            <h3 class="ecoar-card__title">Muitas UCs tornam a análise difusa</h3>
+            <p class="ecoar-card__text"><strong>Decisão:</strong> aprofundamento progressivo, deixando contexto adicional para quando fizer sentido.</p>
+          </article>
+          <article class="ecoar-card">
+            <span class="ecoar-card__label">Problema</span>
+            <h3 class="ecoar-card__title">Gráfico sem ação vira observação passiva</h3>
+            <p class="ecoar-card__text"><strong>Decisão:</strong> preservar registros por períodos e manter os momentos separados.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="ecoar-principle">
+        <p class="ecoar-principle__label">Princípio de produto que orienta o EcoarVolt</p>
+        <p class="ecoar-principle__quote">“O dashboard era a interface. A decisão era o produto.”</p>
+      </div>
+    </section>
+
+    <div class="ecoar-divider"></div>
+
+    <!-- Seção 9: Roadmap de evolução -->
+    <section class="ecoar-section ecoar-section--roadmap">
+      <div class="ecoar-research__intro">
+        <h2 class="ecoar-section__title">Roadmap de evolução</h2>
+        <p class="ecoar-research__lead">A arquitetura foi pensada para começar com problemas acionáveis e ampliar profundidade à medida que a maturidade de dados aumenta.</p>
+      </div>
+
+      <div class="ecoar-research__row">
+        <article class="ecoar-card">
+          <span class="ecoar-card__label">V1 · FUNDAMENTOS</span>
+          <h3 class="ecoar-card__title">Auditoria &amp; diagnóstico</h3>
+          <p class="ecoar-card__text ecoar-card__text--medium">Faturas, KPIs, demanda, tarifas, qualidade, emissões, alertas e dados municipais.</p>
+        </article>
+        <article class="ecoar-card">
+          <span class="ecoar-card__label">V2 · EXPANSÃO</span>
+          <h3 class="ecoar-card__title">Compras &amp; eficiência</h3>
+          <p class="ecoar-card__text ecoar-card__text--medium">ACL, GD municipal, solar, metas, relatórios avançados e APIs.</p>
+        </article>
+        <article class="ecoar-card">
+          <span class="ecoar-card__label">V3 · MATURIDADE</span>
+          <h3 class="ecoar-card__title">Operação avançada</h3>
+          <p class="ecoar-card__text ecoar-card__text--medium">PLD, cenários, priorização multicritério, SSO e conformidade.</p>
+        </article>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Versão tablet (500–999px) -->
+  <div class="ecoar-tablet">
+
+    <!-- Apresentação -->
+    <section class="ecoar-tablet__hero">
+      <p class="ecoar-tablet__tags">Product Strategy · Domain Research · UX/UI · Design System</p>
+      <h1 class="ecoar-tablet__name">EcoarVolt</h1>
+      <p class="ecoar-tablet__subtitle">Energia pública transformada em decisão.</p>
+      <p class="ecoar-tablet__text">Concepção end-to-end de uma plataforma B2G para consolidar faturas, diagnosticar desperdícios e apoiar decisões de eficiência energética em prefeituras.</p>
+      <blockquote class="ecoar-tablet__quote">
+        <span class="ecoar-tablet__quote-bar"></span>
+        <p>Um projeto 0→1 criado de forma independente: da compreensão do mercado e das regras do setor elétrico à arquitetura, interface, documentação e estratégia de evolução do produto.</p>
+      </blockquote>
+      <div class="ecoar-tablet__highlights">
+        <div class="ecoar-tablet__highlight">
+          <p class="ecoar-tablet__highlight-label">0 → 3</p>
+          <p class="ecoar-tablet__highlight-text">produto concebido do zero</p>
+        </div>
+        <div class="ecoar-tablet__highlight">
+          <p class="ecoar-tablet__highlight-label">B2G</p>
+          <p class="ecoar-tablet__highlight-text">foco em prefeituras e autarquias</p>
+        </div>
+        <div class="ecoar-tablet__highlight">
+          <p class="ecoar-tablet__highlight-label">V1 - V3</p>
+          <p class="ecoar-tablet__highlight-text">roadmap estruturado</p>
+        </div>
+        <div class="ecoar-tablet__highlight">
+          <p class="ecoar-tablet__highlight-label">SOLO PROJECT</p>
+          <p class="ecoar-tablet__highlight-text">estratégia, UX/UI e documentação</p>
+        </div>
+      </div>
+      <div class="ecoar-tablet__logo">
+        <div class="ecoar-tablet__logo-box">
+          <div class="ecoar-tablet__logo-art">
+            <img src="assets/images/ecoar-volt/tablet-logo.svg" alt="Logo EcoarVolt">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O desafio -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title">O desafio</h2>
+      <p class="ecoar-tablet__lead">Prefeituras administram unidades consumidoras espalhadas por secretarias, fundos, autarquias e equipamentos públicos. O dado existe, mas está fragmentado entre faturas, contratos, planilhas e sistemas das distribuidoras.</p>
+      <div class="ecoar-tablet__grid">
+        <article class="ecoar-tablet__card ecoar-tablet__card--challenge">
+          <span class="ecoar-tablet__pill">Fragmentação</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--lg">Informação distribuída</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Diários longos exigem esforço. Trackers simples demais guardam pouco contexto. O desafio era encontrar profundidade sem sacrificar recorrência.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--challenge">
+          <span class="ecoar-tablet__pill">Diagnóstico</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--lg">Planilhas mostram valor, não necessariamente causa</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Diários longos exigem esforço. Trackers simples demais guardam pouco contexto. O desafio era encontrar profundidade sem sacrificar recorrência.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--dark ecoar-tablet__card--wide">
+          <span class="ecoar-tablet__pill ecoar-tablet__pill--orange">Decisão</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--lg ecoar-tablet__card-title--light">Dados técnicos precisam virar ação</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--light">O registro precisava caber na rotina e, ao mesmo tempo, acumular informação suficiente para gerar histórico e padrões compreensíveis.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Meu papel no projeto -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title">Meu papel no projeto</h2>
+      <p class="ecoar-tablet__lead">O EcoarVolt foi desenvolvido individualmente, do problema inicial à proposta de produto e protótipo de alta fidelidade.</p>
+      <div class="ecoar-tablet__grid">
+        <article class="ecoar-tablet__card">
+          <h3 class="ecoar-tablet__card-title">Product Strategy</h3>
+          <p class="ecoar-tablet__card-text">Pesquisa do problema, mercado, setor público e contexto energético.</p>
+        </article>
+        <article class="ecoar-tablet__card">
+          <h3 class="ecoar-tablet__card-title">Product Strategy</h3>
+          <p class="ecoar-tablet__card-text">Proposta de valor, público, MVP, monetização e roadmap.</p>
+        </article>
+        <article class="ecoar-tablet__card">
+          <h3 class="ecoar-tablet__card-title">Domain Research</h3>
+          <p class="ecoar-tablet__card-text">ANEEL, modalidades tarifárias, demanda, penalidades e qualidade de energia.</p>
+        </article>
+        <article class="ecoar-tablet__card">
+          <h3 class="ecoar-tablet__card-title">UX Architecture</h3>
+          <p class="ecoar-tablet__card-text">Perfis, navegação, cenários, estados e regras de exibição.</p>
+        </article>
+        <article class="ecoar-tablet__card">
+          <h3 class="ecoar-tablet__card-title">UI / Design System</h3>
+          <p class="ecoar-tablet__card-text">Dashboards, tabelas, filtros, componentes e alta fidelidade.</p>
+        </article>
+        <article class="ecoar-tablet__card">
+          <h3 class="ecoar-tablet__card-title">Product Documentation</h3>
+          <p class="ecoar-tablet__card-text">POC, MVP, fontes de dados, regras e roadmap V1–V3.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- A pesquisa de domínio virou produto -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title">A pesquisa de domínio virou produto</h2>
+      <p class="ecoar-tablet__lead">Antes de desenhar dashboards, precisei entender o que cada indicador significava e em quais situações ele realmente deveria aparecer.</p>
+      <div class="ecoar-tablet__stack">
+        <article class="ecoar-tablet__card ecoar-tablet__card--wide">
+          <span class="ecoar-tablet__pill">Demanda contratada</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps">O que significa pagar por capacidade que quase nunca é usada?</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink ecoar-tablet__card-text--16">O produto precisa combinar histórico e demanda medida para evidenciar ociosidade e risco de ultrapassagem.</p>
+          <div class="ecoar-tablet__flow">
+            <span class="ecoar-tablet__step">Dado técnico</span>
+            <span class="ecoar-tablet__flow-arrow">→</span>
+            <span class="ecoar-tablet__step">Diagnóstico</span>
+            <span class="ecoar-tablet__flow-arrow">→</span>
+            <span class="ecoar-tablet__step">Ação sugerida</span>
+          </div>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--wide">
+          <span class="ecoar-tablet__pill">Aplicabilidade</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps">Nem todo KPI se aplica a toda unidade</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink ecoar-tablet__card-text--16">Demanda, P95, ponta/fora de ponta e penalidades dependem do grupo e modalidade tarifária da UC.</p>
+          <div class="ecoar-tablet__flow">
+            <span class="ecoar-tablet__step">Grupo / modalidade</span>
+            <span class="ecoar-tablet__flow-arrow">→</span>
+            <span class="ecoar-tablet__step">Regra de exibição</span>
+            <span class="ecoar-tablet__flow-arrow">→</span>
+            <span class="ecoar-tablet__step">Interface contextual</span>
+          </div>
+        </article>
+      </div>
+      <p class="ecoar-tablet__lead">A principal arquitetura conceitual do produto transforma documentos operacionais em inteligência acionável.</p>
+      <div class="ecoar-tablet__pipeline">
+        <div class="ecoar-tablet__pipeline-row">
+          <div class="ecoar-tablet__step-card">
+            <p class="ecoar-tablet__step-title">ENTRADA</p>
+            <p class="ecoar-tablet__step-text">PDF / CSV de faturas</p>
+          </div>
+          <span class="ecoar-tablet__pipeline-arrow">→</span>
+          <div class="ecoar-tablet__step-card">
+            <p class="ecoar-tablet__step-title">ESTRUTURA</p>
+            <p class="ecoar-tablet__step-text">Unidades consumidoras</p>
+          </div>
+        </div>
+        <div class="ecoar-tablet__pipeline-row">
+          <div class="ecoar-tablet__step-card">
+            <p class="ecoar-tablet__step-title">TRATAMENTO</p>
+            <p class="ecoar-tablet__step-text">Normalização de dados</p>
+          </div>
+          <span class="ecoar-tablet__pipeline-arrow">→</span>
+          <div class="ecoar-tablet__step-card">
+            <p class="ecoar-tablet__step-title">VALORES</p>
+            <p class="ecoar-tablet__step-text">KPIs · alertas · ações</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Um domínio enorme exigia priorização -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title">Um domínio enorme exigia priorização</h2>
+      <p class="ecoar-tablet__lead">Para a primeira versão, a estratégia foi concentrar o produto nas decisões que poderiam gerar valor usando dados acessíveis às prefeituras.</p>
+      <div class="ecoar-tablet__grid">
+        <article class="ecoar-tablet__card ecoar-tablet__card--priority">
+          <span class="ecoar-tablet__pill">01</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">MONITORAR</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Consumo, custo, R$/kWh, séries históricas e ranking de UCs.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--priority">
+          <span class="ecoar-tablet__pill">02</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">DIAGNOSTICAR</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Tarifa, demanda, modalidade, penalidades e anomalias.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--priority">
+          <span class="ecoar-tablet__pill">03</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">COMPROVAR</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Qualidade DEC/FEC, evidências e apoio a tratativas com distribuidoras.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--priority">
+          <span class="ecoar-tablet__pill">04</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">PLANEJAR</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Emissões, eficiência, LED, solar e oportunidades futuras.</p>
+        </article>
+      </div>
+      <p class="ecoar-tablet__lead">Uma mesma prefeitura pode ter unidades com características muito diferentes. A interface foi pensada para adaptar informação e diagnóstico ao contexto de cada UC.</p>
+      <div class="ecoar-tablet__grid">
+        <article class="ecoar-tablet__card ecoar-tablet__card--mode">
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">CONVENCIONAL</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Grupo B: consumo sem divisão horária.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--mode">
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">BRANCA</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Grupo B: consumo por postos tarifários.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--mode">
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">AZUL</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Grupo A: demanda e energia por ponta/fora.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--mode">
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">VERDE</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">KPIs · alertas · ações</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- As telas abaixo são recortes reais -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title ecoar-tablet__title--sm">As telas abaixo são recortes reais do arquivo de alta fidelidade do EcoarVolt.</h2>
+      <div class="ecoar-tablet__tabs">
+        <span class="ecoar-tablet__pill">Resumo</span>
+        <span class="ecoar-tablet__pill">Diagnosticar Contas</span>
+        <span class="ecoar-tablet__pill">Qualidade de Energia</span>
+        <span class="ecoar-tablet__pill">Gerenciar UCs</span>
+        <span class="ecoar-tablet__pill">Gerenciar Faturas</span>
+        <span class="ecoar-tablet__pill">Auditar &amp; Simular Tarifas</span>
+      </div>
+      <div class="ecoar-tablet__gallery">
+      <div class="ecoar-tablet__shots" aria-label="Galeria de telas do EcoarVolt">
+        <article class="ecoar-tablet__shot is-active">
+          <div class="ecoar-tablet__shot-img ecoar-tablet__shot-img--resumo">
+            <img src="assets/images/ecoar-volt/resumo-1.png" alt="Tela Resumo executivo do EcoarVolt">
+          </div>
+          <h3 class="ecoar-tablet__card-title">Resumo executivo</h3>
+          <p class="ecoar-tablet__card-text">Visão consolidada de consumo, custo, indicadores e ranking.</p>
+        </article>
+        <article class="ecoar-tablet__shot">
+          <div class="ecoar-tablet__shot-img ecoar-tablet__shot-img--grupo-a">
+            <img src="assets/images/ecoar-volt/diagnosticar-contas-grupo-a-1.png" alt="Tela Diagnosticar contas do EcoarVolt">
+          </div>
+          <h3 class="ecoar-tablet__card-title">Diagnosticar contas</h3>
+          <p class="ecoar-tablet__card-text">Panorama de contas processadas, atrasos, faturas ausentes e oportunidades de ajuste.</p>
+        </article>
+        <article class="ecoar-tablet__shot">
+          <div class="ecoar-tablet__shot-img ecoar-tablet__shot-img--faturas">
+            <img src="assets/images/ecoar-volt/gerenciar-faturas-1.png" alt="Tela Gerenciar faturas do EcoarVolt">
+          </div>
+          <h3 class="ecoar-tablet__card-title">Diagnosticar contas</h3>
+          <p class="ecoar-tablet__card-text">Panorama de contas processadas, atrasos, faturas ausentes e oportunidades de ajuste.</p>
+        </article>
+        <article class="ecoar-tablet__shot">
+          <div class="ecoar-tablet__shot-img ecoar-tablet__shot-img--qualidade">
+            <img src="assets/images/ecoar-volt/qualidade-de-energia-1.png" alt="Tela Qualidade de energia do EcoarVolt">
+          </div>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps">QUALIDADE DE ENERGIA</h3>
+          <p class="ecoar-tablet__card-text">Penalidades, fator de potência, ultrapassagem e glossário contextual para Grupo A.</p>
+        </article>
+        <article class="ecoar-tablet__shot">
+          <div class="ecoar-tablet__shot-img ecoar-tablet__shot-img--faturas">
+            <img src="assets/images/ecoar-volt/gerenciar-faturas-1.png" alt="Tela Gerenciar UCs do EcoarVolt">
+          </div>
+          <h3 class="ecoar-tablet__card-title">Gerenciar UCs</h3>
+          <p class="ecoar-tablet__card-text">Inventário e gestão operacional das unidades consumidoras do município.</p>
+        </article>
+      </div>
+      <div class="ecoar-tablet__gallery-nav">
+        <span class="ecoar-tablet__counter" aria-live="polite">1 / 5</span>
+        <div class="ecoar-tablet__nav-buttons">
+          <button type="button" class="ecoar-tablet__nav" data-gallery-dir="-1" aria-label="Tela anterior">←</button>
+          <button type="button" class="ecoar-tablet__nav" data-gallery-dir="1" aria-label="Próxima tela">→</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Decisões de UX -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title">Decisões de UX</h2>
+      <p class="ecoar-tablet__lead">Algumas escolhas foram essenciais para traduzir conhecimento técnico em uma experiência compreensível.</p>
+      <div class="ecoar-tablet__grid">
+        <article class="ecoar-tablet__card ecoar-tablet__card--decision">
+          <span class="ecoar-tablet__pill">Problema</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--md">P95 é técnico demais para muitos gestores</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--15">Decisão: aprofundamento progressivo, deixando contexto adicional para quando fizer sentido.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--decision">
+          <span class="ecoar-tablet__pill">Problema</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--md">Nem todos os indicadores se aplicam a todas as UCs</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--15">Decisão: preservar registros por períodos e manter os momentos separados.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--decision">
+          <span class="ecoar-tablet__pill">Problema</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--md">Muitas UCs tornam a análise difusa</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--15">Decisão: aprofundamento progressivo, deixando contexto adicional para quando fizer sentido.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--decision">
+          <span class="ecoar-tablet__pill">Problema</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--md">Gráfico sem ação vira observação passiva</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--15">Decisão: preservar registros por períodos e manter os momentos separados.</p>
+        </article>
+      </div>
+      <div class="ecoar-tablet__principle">
+        <p class="ecoar-tablet__principle-label">Princípio de produto que orienta o EcoarVolt</p>
+        <p class="ecoar-tablet__principle-quote">“O dashboard era a interface. A decisão era o produto.”</p>
+      </div>
+    </section>
+
+    <!-- Roadmap de evolução -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title">Roadmap de evolução</h2>
+      <p class="ecoar-tablet__lead">A arquitetura foi pensada para começar com problemas acionáveis e ampliar profundidade à medida que a maturidade de dados aumenta.</p>
+      <div class="ecoar-tablet__stack">
+        <article class="ecoar-tablet__card ecoar-tablet__card--roadmap">
+          <span class="ecoar-tablet__pill">V1 · FUNDAMENTOS</span>
+          <h3 class="ecoar-tablet__roadmap-title">Auditoria &amp; diagnóstico</h3>
+          <p class="ecoar-tablet__roadmap-text">Faturas, KPIs, demanda, tarifas, qualidade, emissões, alertas e dados municipais.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--roadmap">
+          <span class="ecoar-tablet__pill">V2 · EXPANSÃO</span>
+          <h3 class="ecoar-tablet__roadmap-title">Compras &amp; eficiência</h3>
+          <p class="ecoar-tablet__roadmap-text">ACL, GD municipal, solar, metas, relatórios avançados e APIs.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--roadmap ecoar-tablet__card--dark">
+          <span class="ecoar-tablet__pill ecoar-tablet__pill--orange">V3 · MATURIDADE</span>
+          <h3 class="ecoar-tablet__roadmap-title ecoar-tablet__roadmap-title--light">Operação avançada</h3>
+          <p class="ecoar-tablet__roadmap-text ecoar-tablet__roadmap-text--light">PLD, cenários, priorização multicritério, SSO e conformidade.</p>
+        </article>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Versão mobile (<500px): mesma estrutura, ajustes de tamanho em css/ecoar-volt.css -->
+  <div class="ecoar-mobile">
+
+    <!-- Apresentação -->
+    <section class="ecoar-tablet__hero">
+      <p class="ecoar-tablet__tags">Product Strategy · Domain Research · UX/UI · Design System</p>
+      <h1 class="ecoar-tablet__name">EcoarVolt</h1>
+      <p class="ecoar-tablet__subtitle">Energia pública transformada em decisão.</p>
+      <p class="ecoar-tablet__text">Concepção end-to-end de uma plataforma B2G para consolidar faturas, diagnosticar desperdícios e apoiar decisões de eficiência energética em prefeituras.</p>
+      <blockquote class="ecoar-tablet__quote">
+        <span class="ecoar-tablet__quote-bar"></span>
+        <p>Um projeto 0→1 criado de forma independente: da compreensão do mercado e das regras do setor elétrico à arquitetura, interface, documentação e estratégia de evolução do produto.</p>
+      </blockquote>
+      <div class="ecoar-tablet__highlights">
+        <div class="ecoar-tablet__highlight">
+          <p class="ecoar-tablet__highlight-label">0 → 3</p>
+          <p class="ecoar-tablet__highlight-text">produto concebido do zero</p>
+        </div>
+        <div class="ecoar-tablet__highlight">
+          <p class="ecoar-tablet__highlight-label">B2G</p>
+          <p class="ecoar-tablet__highlight-text">foco em prefeituras e autarquias</p>
+        </div>
+        <div class="ecoar-tablet__highlight">
+          <p class="ecoar-tablet__highlight-label">V1 - V3</p>
+          <p class="ecoar-tablet__highlight-text">roadmap estruturado</p>
+        </div>
+        <div class="ecoar-tablet__highlight">
+          <p class="ecoar-tablet__highlight-label">SOLO PROJECT</p>
+          <p class="ecoar-tablet__highlight-text">estratégia, UX/UI e documentação</p>
+        </div>
+      </div>
+      <div class="ecoar-tablet__logo">
+        <div class="ecoar-tablet__logo-box">
+          <div class="ecoar-tablet__logo-art">
+            <img src="assets/images/ecoar-volt/tablet-logo.svg" alt="Logo EcoarVolt">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O desafio -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title">O desafio</h2>
+      <p class="ecoar-tablet__lead">Prefeituras administram unidades consumidoras espalhadas por secretarias, fundos, autarquias e equipamentos públicos. O dado existe, mas está fragmentado entre faturas, contratos, planilhas e sistemas das distribuidoras.</p>
+      <div class="ecoar-tablet__grid">
+        <article class="ecoar-tablet__card ecoar-tablet__card--challenge">
+          <span class="ecoar-tablet__pill">Fragmentação</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--lg">Informação distribuída</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Diários longos exigem esforço. Trackers simples demais guardam pouco contexto. O desafio era encontrar profundidade sem sacrificar recorrência.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--challenge">
+          <span class="ecoar-tablet__pill">Diagnóstico</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--lg">Planilhas mostram valor, não necessariamente causa</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Diários longos exigem esforço. Trackers simples demais guardam pouco contexto. O desafio era encontrar profundidade sem sacrificar recorrência.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--dark ecoar-tablet__card--wide">
+          <span class="ecoar-tablet__pill ecoar-tablet__pill--orange">Decisão</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--lg ecoar-tablet__card-title--light">Dados técnicos precisam virar ação</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--light">O registro precisava caber na rotina e, ao mesmo tempo, acumular informação suficiente para gerar histórico e padrões compreensíveis.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Meu papel no projeto -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title">Meu papel no projeto</h2>
+      <p class="ecoar-tablet__lead">O EcoarVolt foi desenvolvido individualmente, do problema inicial à proposta de produto e protótipo de alta fidelidade.</p>
+      <div class="ecoar-tablet__grid">
+        <article class="ecoar-tablet__card">
+          <h3 class="ecoar-tablet__card-title">Product Strategy</h3>
+          <p class="ecoar-tablet__card-text">Pesquisa do problema, mercado, setor público e contexto energético.</p>
+        </article>
+        <article class="ecoar-tablet__card">
+          <h3 class="ecoar-tablet__card-title">Product Strategy</h3>
+          <p class="ecoar-tablet__card-text">Proposta de valor, público, MVP, monetização e roadmap.</p>
+        </article>
+        <article class="ecoar-tablet__card">
+          <h3 class="ecoar-tablet__card-title">Domain Research</h3>
+          <p class="ecoar-tablet__card-text">ANEEL, modalidades tarifárias, demanda, penalidades e qualidade de energia.</p>
+        </article>
+        <article class="ecoar-tablet__card">
+          <h3 class="ecoar-tablet__card-title">UX Architecture</h3>
+          <p class="ecoar-tablet__card-text">Perfis, navegação, cenários, estados e regras de exibição.</p>
+        </article>
+        <article class="ecoar-tablet__card">
+          <h3 class="ecoar-tablet__card-title">UI / Design System</h3>
+          <p class="ecoar-tablet__card-text">Dashboards, tabelas, filtros, componentes e alta fidelidade.</p>
+        </article>
+        <article class="ecoar-tablet__card">
+          <h3 class="ecoar-tablet__card-title">Product Documentation</h3>
+          <p class="ecoar-tablet__card-text">POC, MVP, fontes de dados, regras e roadmap V1–V3.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- A pesquisa de domínio virou produto -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title">A pesquisa de domínio virou produto</h2>
+      <p class="ecoar-tablet__lead">Antes de desenhar dashboards, precisei entender o que cada indicador significava e em quais situações ele realmente deveria aparecer.</p>
+      <div class="ecoar-tablet__stack">
+        <article class="ecoar-tablet__card ecoar-tablet__card--wide">
+          <span class="ecoar-tablet__pill">Demanda contratada</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps">O que significa pagar por capacidade que quase nunca é usada?</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink ecoar-tablet__card-text--16">O produto precisa combinar histórico e demanda medida para evidenciar ociosidade e risco de ultrapassagem.</p>
+          <div class="ecoar-tablet__flow">
+            <span class="ecoar-tablet__step">Dado técnico</span>
+            <span class="ecoar-tablet__flow-arrow">→</span>
+            <span class="ecoar-tablet__step">Diagnóstico</span>
+            <span class="ecoar-tablet__flow-arrow">→</span>
+            <span class="ecoar-tablet__step">Ação sugerida</span>
+          </div>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--wide">
+          <span class="ecoar-tablet__pill">Aplicabilidade</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps">Nem todo KPI se aplica a toda unidade</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink ecoar-tablet__card-text--16">Demanda, P95, ponta/fora de ponta e penalidades dependem do grupo e modalidade tarifária da UC.</p>
+          <div class="ecoar-tablet__flow">
+            <span class="ecoar-tablet__step">Grupo / modalidade</span>
+            <span class="ecoar-tablet__flow-arrow">→</span>
+            <span class="ecoar-tablet__step">Regra de exibição</span>
+            <span class="ecoar-tablet__flow-arrow">→</span>
+            <span class="ecoar-tablet__step">Interface contextual</span>
+          </div>
+        </article>
+      </div>
+      <p class="ecoar-tablet__lead">A principal arquitetura conceitual do produto transforma documentos operacionais em inteligência acionável.</p>
+      <div class="ecoar-tablet__pipeline">
+        <div class="ecoar-tablet__pipeline-row">
+          <div class="ecoar-tablet__step-card">
+            <p class="ecoar-tablet__step-title">ENTRADA</p>
+            <p class="ecoar-tablet__step-text">PDF / CSV de faturas</p>
+          </div>
+          <span class="ecoar-tablet__pipeline-arrow">→</span>
+          <div class="ecoar-tablet__step-card">
+            <p class="ecoar-tablet__step-title">ESTRUTURA</p>
+            <p class="ecoar-tablet__step-text">Unidades consumidoras</p>
+          </div>
+        </div>
+        <div class="ecoar-tablet__pipeline-row">
+          <div class="ecoar-tablet__step-card">
+            <p class="ecoar-tablet__step-title">TRATAMENTO</p>
+            <p class="ecoar-tablet__step-text">Normalização de dados</p>
+          </div>
+          <span class="ecoar-tablet__pipeline-arrow">→</span>
+          <div class="ecoar-tablet__step-card">
+            <p class="ecoar-tablet__step-title">VALORES</p>
+            <p class="ecoar-tablet__step-text">KPIs · alertas · ações</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Um domínio enorme exigia priorização -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title">Um domínio enorme exigia priorização</h2>
+      <p class="ecoar-tablet__lead">Para a primeira versão, a estratégia foi concentrar o produto nas decisões que poderiam gerar valor usando dados acessíveis às prefeituras.</p>
+      <div class="ecoar-tablet__grid">
+        <article class="ecoar-tablet__card ecoar-tablet__card--priority">
+          <span class="ecoar-tablet__pill">01</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">MONITORAR</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Consumo, custo, R$/kWh, séries históricas e ranking de UCs.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--priority">
+          <span class="ecoar-tablet__pill">02</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">DIAGNOSTICAR</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Tarifa, demanda, modalidade, penalidades e anomalias.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--priority">
+          <span class="ecoar-tablet__pill">03</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">COMPROVAR</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Qualidade DEC/FEC, evidências e apoio a tratativas com distribuidoras.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--priority">
+          <span class="ecoar-tablet__pill">04</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">PLANEJAR</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Emissões, eficiência, LED, solar e oportunidades futuras.</p>
+        </article>
+      </div>
+      <p class="ecoar-tablet__lead">Uma mesma prefeitura pode ter unidades com características muito diferentes. A interface foi pensada para adaptar informação e diagnóstico ao contexto de cada UC.</p>
+      <div class="ecoar-tablet__grid">
+        <article class="ecoar-tablet__card ecoar-tablet__card--mode">
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">CONVENCIONAL</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Grupo B: consumo sem divisão horária.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--mode">
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">BRANCA</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Grupo B: consumo por postos tarifários.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--mode">
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">AZUL</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">Grupo A: demanda e energia por ponta/fora.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--mode">
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps ecoar-tablet__card-title--md">VERDE</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--ink">KPIs · alertas · ações</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- As telas abaixo são recortes reais -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title ecoar-tablet__title--sm">As telas abaixo são recortes reais do arquivo de alta fidelidade do EcoarVolt.</h2>
+      <div class="ecoar-tablet__tabs">
+        <span class="ecoar-tablet__pill">Resumo</span>
+        <span class="ecoar-tablet__pill">Diagnosticar Contas</span>
+        <span class="ecoar-tablet__pill">Qualidade de Energia</span>
+        <span class="ecoar-tablet__pill">Gerenciar UCs</span>
+        <span class="ecoar-tablet__pill">Gerenciar Faturas</span>
+        <span class="ecoar-tablet__pill">Auditar &amp; Simular Tarifas</span>
+      </div>
+      <div class="ecoar-tablet__gallery">
+      <div class="ecoar-tablet__shots" aria-label="Galeria de telas do EcoarVolt">
+        <article class="ecoar-tablet__shot is-active">
+          <div class="ecoar-tablet__shot-img ecoar-tablet__shot-img--resumo">
+            <img src="assets/images/ecoar-volt/resumo-1.png" alt="Tela Resumo executivo do EcoarVolt">
+          </div>
+          <h3 class="ecoar-tablet__card-title">Resumo executivo</h3>
+          <p class="ecoar-tablet__card-text">Visão consolidada de consumo, custo, indicadores e ranking.</p>
+        </article>
+        <article class="ecoar-tablet__shot">
+          <div class="ecoar-tablet__shot-img ecoar-tablet__shot-img--grupo-a">
+            <img src="assets/images/ecoar-volt/diagnosticar-contas-grupo-a-1.png" alt="Tela Diagnosticar contas do EcoarVolt">
+          </div>
+          <h3 class="ecoar-tablet__card-title">Diagnosticar contas</h3>
+          <p class="ecoar-tablet__card-text">Panorama de contas processadas, atrasos, faturas ausentes e oportunidades de ajuste.</p>
+        </article>
+        <article class="ecoar-tablet__shot">
+          <div class="ecoar-tablet__shot-img ecoar-tablet__shot-img--faturas">
+            <img src="assets/images/ecoar-volt/gerenciar-faturas-1.png" alt="Tela Gerenciar faturas do EcoarVolt">
+          </div>
+          <h3 class="ecoar-tablet__card-title">Diagnosticar contas</h3>
+          <p class="ecoar-tablet__card-text">Panorama de contas processadas, atrasos, faturas ausentes e oportunidades de ajuste.</p>
+        </article>
+        <article class="ecoar-tablet__shot">
+          <div class="ecoar-tablet__shot-img ecoar-tablet__shot-img--qualidade">
+            <img src="assets/images/ecoar-volt/qualidade-de-energia-1.png" alt="Tela Qualidade de energia do EcoarVolt">
+          </div>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--caps">QUALIDADE DE ENERGIA</h3>
+          <p class="ecoar-tablet__card-text">Penalidades, fator de potência, ultrapassagem e glossário contextual para Grupo A.</p>
+        </article>
+        <article class="ecoar-tablet__shot">
+          <div class="ecoar-tablet__shot-img ecoar-tablet__shot-img--faturas">
+            <img src="assets/images/ecoar-volt/gerenciar-faturas-1.png" alt="Tela Gerenciar UCs do EcoarVolt">
+          </div>
+          <h3 class="ecoar-tablet__card-title">Gerenciar UCs</h3>
+          <p class="ecoar-tablet__card-text">Inventário e gestão operacional das unidades consumidoras do município.</p>
+        </article>
+      </div>
+      <div class="ecoar-tablet__gallery-nav">
+        <span class="ecoar-tablet__counter" aria-live="polite">1 / 5</span>
+        <div class="ecoar-tablet__nav-buttons">
+          <button type="button" class="ecoar-tablet__nav" data-gallery-dir="-1" aria-label="Tela anterior">←</button>
+          <button type="button" class="ecoar-tablet__nav" data-gallery-dir="1" aria-label="Próxima tela">→</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Decisões de UX -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title">Decisões de UX</h2>
+      <p class="ecoar-tablet__lead">Algumas escolhas foram essenciais para traduzir conhecimento técnico em uma experiência compreensível.</p>
+      <div class="ecoar-tablet__grid">
+        <article class="ecoar-tablet__card ecoar-tablet__card--decision">
+          <span class="ecoar-tablet__pill">Problema</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--md">P95 é técnico demais para muitos gestores</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--15">Decisão: aprofundamento progressivo, deixando contexto adicional para quando fizer sentido.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--decision">
+          <span class="ecoar-tablet__pill">Problema</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--md">Nem todos os indicadores se aplicam a todas as UCs</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--15">Decisão: preservar registros por períodos e manter os momentos separados.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--decision">
+          <span class="ecoar-tablet__pill">Problema</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--md">Muitas UCs tornam a análise difusa</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--15">Decisão: aprofundamento progressivo, deixando contexto adicional para quando fizer sentido.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--decision">
+          <span class="ecoar-tablet__pill">Problema</span>
+          <h3 class="ecoar-tablet__card-title ecoar-tablet__card-title--md">Gráfico sem ação vira observação passiva</h3>
+          <p class="ecoar-tablet__card-text ecoar-tablet__card-text--15">Decisão: preservar registros por períodos e manter os momentos separados.</p>
+        </article>
+      </div>
+      <div class="ecoar-tablet__principle">
+        <p class="ecoar-tablet__principle-label">Princípio de produto que orienta o EcoarVolt</p>
+        <p class="ecoar-tablet__principle-quote">“O dashboard era a interface. A decisão era o produto.”</p>
+      </div>
+    </section>
+
+    <!-- Roadmap de evolução -->
+    <section class="ecoar-tablet__section">
+      <span class="ecoar-tablet__accent"></span>
+      <h2 class="ecoar-tablet__title">Roadmap de evolução</h2>
+      <p class="ecoar-tablet__lead">A arquitetura foi pensada para começar com problemas acionáveis e ampliar profundidade à medida que a maturidade de dados aumenta.</p>
+      <div class="ecoar-tablet__stack">
+        <article class="ecoar-tablet__card ecoar-tablet__card--roadmap">
+          <span class="ecoar-tablet__pill">V1 · FUNDAMENTOS</span>
+          <h3 class="ecoar-tablet__roadmap-title">Auditoria &amp; diagnóstico</h3>
+          <p class="ecoar-tablet__roadmap-text">Faturas, KPIs, demanda, tarifas, qualidade, emissões, alertas e dados municipais.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--roadmap">
+          <span class="ecoar-tablet__pill">V2 · EXPANSÃO</span>
+          <h3 class="ecoar-tablet__roadmap-title">Compras &amp; eficiência</h3>
+          <p class="ecoar-tablet__roadmap-text">ACL, GD municipal, solar, metas, relatórios avançados e APIs.</p>
+        </article>
+        <article class="ecoar-tablet__card ecoar-tablet__card--roadmap ecoar-tablet__card--dark">
+          <span class="ecoar-tablet__pill ecoar-tablet__pill--orange">V3 · MATURIDADE</span>
+          <h3 class="ecoar-tablet__roadmap-title ecoar-tablet__roadmap-title--light">Operação avançada</h3>
+          <p class="ecoar-tablet__roadmap-text ecoar-tablet__roadmap-text--light">PLD, cenários, priorização multicritério, SSO e conformidade.</p>
+        </article>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Rodapé compartilhado -->
+  <footer class="site-footer" id="contato">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">2026 MICHELE MEDEIROS | Entre em contato: <a href="mailto:michelefmedeiros@gmail.com?subject=Contato%20via%20portf%C3%B3lio">michelefmedeiros@gmail.com</a></p>
+      <a href="https://www.linkedin.com/in/michele-franca-medeiros/" target="_blank" rel="noopener"><img class="site-footer__icon" src="assets/images/icons/linkedin-box-fill.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Galeria de telas (tablet): uma tela por vez, com anterior/próximo
+    (function () {
+      document.querySelectorAll('.ecoar-tablet__gallery').forEach(initGallery);
+
+      function initGallery(gallery) {
+      var shots = gallery.querySelectorAll('.ecoar-tablet__shot');
+      var counter = gallery.querySelector('.ecoar-tablet__counter');
+      var buttons = gallery.querySelectorAll('[data-gallery-dir]');
+      var current = 0;
+
+      function show(index) {
+        current = Math.min(Math.max(index, 0), shots.length - 1);
+        shots.forEach(function (shot, i) { shot.classList.toggle('is-active', i === current); });
+        counter.textContent = (current + 1) + ' / ' + shots.length;
+        buttons[0].disabled = current === 0;
+        buttons[1].disabled = current === shots.length - 1;
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          show(current + Number(btn.dataset.galleryDir));
+        });
+      });
+
+      show(0);
+      }
+    })();
+  </script>
+</body>
+</html>
