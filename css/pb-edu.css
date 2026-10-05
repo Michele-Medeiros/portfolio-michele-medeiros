@@ -434,10 +434,54 @@
   color: #56565a;
 }
 
+/* Seção 4 (tablet): Meu papel no projeto */
+.pbedu-tablet__role {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pbedu-tablet__role-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.pbedu-tablet__role-card {
+  background: #fff;
+  border: 1px solid #e4e4e8;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pbedu-tablet__role-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.pbedu-tablet__role-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #56565a;
+}
+
 /* Em telas mais estreitas os cards empilham */
 @media (max-width: 639px) {
   .pbedu-tablet__overview-cards,
-  .pbedu-tablet__architecture-cards {
+  .pbedu-tablet__architecture-cards,
+  .pbedu-tablet__role-cards {
     grid-template-columns: 1fr;
   }
 }
