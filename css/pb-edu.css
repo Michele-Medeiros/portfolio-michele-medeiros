@@ -1045,6 +1045,14 @@
   color: #56565a;
 }
 
+/* Seção 4 (mobile): Meu papel no projeto */
+.pbedu-mobile__role {
+  padding: 36px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 /* Divisor entre seções */
 .pbedu-divider {
   flex-shrink: 0;
