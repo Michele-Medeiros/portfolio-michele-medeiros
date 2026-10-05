@@ -1162,6 +1162,57 @@
   width: 230px;
 }
 
+/* Seção 7 (mobile): PB EDU & SIAGE */
+.pbedu-mobile__ecosystem {
+  padding: 36px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pbedu-mobile__compare {
+  background: #fff;
+  border: 2px solid #122f5d;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.pbedu-mobile__compare-half {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #151414;
+}
+
+.pbedu-mobile__compare-half--siage {
+  color: #122f5d;
+}
+
+.pbedu-mobile__compare-divider {
+  height: 2px;
+  background: #122f5d;
+}
+
+.pbedu-mobile__compare-name {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pbedu-mobile__compare-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
 /* Divisor entre seções */
 .pbedu-divider {
   flex-shrink: 0;
