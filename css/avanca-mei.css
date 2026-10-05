@@ -271,6 +271,65 @@
   color: #56565a;
 }
 
+/* Seção O MEI precisava conseguir resolver pelo celular */
+.avanca-section--mobile-flow {
+  padding: 0 65px;
+  gap: 50px;
+}
+
+.avanca-feature.avanca-feature--wide {
+  width: 100%;
+}
+
+.avanca-phones {
+  display: flex;
+  gap: 24px;
+  padding-top: 45px;
+}
+
+.avanca-phone {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 12px 16px 24px;
+  background: #fefefe;
+  border-radius: 6px;
+}
+
+.avanca-phone img {
+  width: 100%;
+  aspect-ratio: 440 / 890;
+  object-fit: cover;
+  display: block;
+}
+
+.avanca-phone__caption {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 12px;
+}
+
+.avanca-phone__title {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.avanca-phone__text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
 /* Seção Revelar complexidade apenas quando necessária */
 .avanca-section--depth {
   padding: 0 65px;
