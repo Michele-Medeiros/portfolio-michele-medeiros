@@ -713,6 +713,87 @@
   color: #56565a;
 }
 
+/* Seção 8 (tablet): Resultado */
+.pbedu-tablet__result {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pbedu-tablet__result-highlight {
+  background: #122f5d;
+  border-radius: 24px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #fff;
+}
+
+.pbedu-tablet__result-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.pbedu-tablet__result-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.pbedu-tablet__result-panel {
+  background: #fff;
+  border-radius: 24px;
+  padding: 16px;
+}
+
+.pbedu-tablet__result-list {
+  background: #eee;
+  border-radius: 12px;
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pbedu-tablet__result-item {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pbedu-tablet__result-label {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.pbedu-tablet__result-value {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #56565a;
+}
+
+.pbedu-tablet__result-divider {
+  height: 1px;
+  background: #d2d2d6;
+}
+
 /* Em telas mais estreitas os cards empilham */
 @media (max-width: 639px) {
   .pbedu-tablet__overview-cards,
