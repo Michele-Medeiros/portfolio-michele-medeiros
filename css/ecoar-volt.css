@@ -273,6 +273,94 @@
   color: #56565a;
 }
 
+/* Seção A pesquisa de domínio virou produto */
+.ecoar-section--research {
+  padding: 0 65px;
+  gap: 65px;
+}
+
+.ecoar-research__block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.ecoar-research__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ecoar-research__lead {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+  color: #151414;
+  text-align: justify;
+}
+
+.ecoar-research__row {
+  display: flex;
+  gap: 50px;
+}
+
+.ecoar-research__row .ecoar-card {
+  gap: 24px;
+}
+
+/* Chips de fluxo dentro dos cards */
+.ecoar-chip-flow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.ecoar-chip-flow--between {
+  justify-content: space-between;
+}
+
+.ecoar-chip {
+  padding: 8px 18px;
+  border-radius: 12px;
+  background: #efefef;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #252628;
+  white-space: nowrap;
+}
+
+.ecoar-chip-flow__arrow {
+  width: 28px;
+  height: 21px;
+  flex-shrink: 0;
+}
+
+/* Linha de etapas com setas (Entrada → Valores) */
+.ecoar-flow {
+  display: flex;
+  align-items: stretch;
+  gap: 50px;
+}
+
+.ecoar-flow__card {
+  flex: 1 1 0;
+  min-width: 0;
+  gap: 24px;
+}
+
+.ecoar-flow__arrow {
+  width: 28px;
+  height: 21px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
 .ecoar-card--dark .ecoar-card__tag {
   background: #ff6d00;
 }
