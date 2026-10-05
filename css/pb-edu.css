@@ -774,3 +774,132 @@
   letter-spacing: 0.4px;
   color: #252628;
 }
+
+/* Seção 8: Resultado */
+.pbedu-result {
+  flex-shrink: 0;
+  width: 1598px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 115px auto;
+}
+
+.pbedu-result__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pbedu-result__title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: #151414;
+  white-space: nowrap;
+}
+
+.pbedu-result__text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+  color: #151414;
+  text-align: justify;
+}
+
+.pbedu-result__row {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+}
+
+.pbedu-result__summary {
+  flex: 0 0 435px;
+  background: #122f5d;
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.pbedu-result__summary-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.pbedu-result__summary-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: 0.48px;
+  color: #fff;
+}
+
+.pbedu-result__list {
+  flex: 1 0 0;
+  min-width: 0;
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pbedu-result__box {
+  background: #efefef;
+  border: 1px solid #d7d7d7;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pbedu-result__item {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 10px 0;
+}
+
+.pbedu-result__divider {
+  height: 2px;
+  background: #d7d7d7;
+}
+
+.pbedu-result__label {
+  flex: 0 0 310px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.pbedu-result__value {
+  flex: 1 0 0;
+  min-width: 0;
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #252628;
+}
