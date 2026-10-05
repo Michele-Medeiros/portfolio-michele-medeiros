@@ -230,7 +230,7 @@
   line-height: 1.6;
   letter-spacing: 0.4px;
   color: #252628;
-  text-align: justify;
+  text-align: left;
 }
 
 .ecoar-card--dark {
@@ -339,6 +339,16 @@
   width: 28px;
   height: 21px;
   flex-shrink: 0;
+}
+
+/* Seção Um domínio enorme exigia priorização */
+.ecoar-section--priority {
+  padding: 0 65px;
+  gap: 65px;
+}
+
+.ecoar-research__row--center {
+  justify-content: center;
 }
 
 /* Linha de etapas com setas (Entrada → Valores) */
