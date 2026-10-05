@@ -625,12 +625,101 @@
   border-radius: 4px;
 }
 
+/* Seção 7 (tablet): PB EDU & SIAGE */
+.pbedu-tablet__ecosystem {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pbedu-tablet__compare {
+  background: #fff;
+  border: 2px solid #122f5d;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+
+.pbedu-tablet__compare-half {
+  flex: 1 0 0;
+  min-width: 0;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #151414;
+}
+
+.pbedu-tablet__compare-half--siage {
+  color: #122f5d;
+}
+
+.pbedu-tablet__compare-divider {
+  width: 2px;
+  background: #122f5d;
+}
+
+.pbedu-tablet__compare-name {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pbedu-tablet__compare-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.pbedu-tablet__states {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.pbedu-tablet__state {
+  background: #fff;
+  border: 1px solid #e4e4e8;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pbedu-tablet__state-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.pbedu-tablet__state-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #56565a;
+}
+
 /* Em telas mais estreitas os cards empilham */
 @media (max-width: 639px) {
   .pbedu-tablet__overview-cards,
   .pbedu-tablet__architecture-cards,
   .pbedu-tablet__role-cards,
-  .pbedu-tablet__steps {
+  .pbedu-tablet__steps,
+  .pbedu-tablet__states {
     grid-template-columns: 1fr;
   }
 }
