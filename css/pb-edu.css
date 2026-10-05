@@ -337,3 +337,74 @@
   letter-spacing: 0.4px;
   color: #56565a;
 }
+
+/* Seção 4: Meu papel no projeto */
+.pbedu-role {
+  flex-shrink: 0;
+  width: 1468px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 115px auto;
+}
+
+.pbedu-role__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pbedu-role__title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: #151414;
+  white-space: nowrap;
+}
+
+.pbedu-role__text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 55px;
+  color: #151414;
+  text-align: justify;
+}
+
+.pbedu-role__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.pbedu-role__card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pbedu-role__card-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.pbedu-role__card-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
