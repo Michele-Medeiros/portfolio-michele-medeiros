@@ -375,6 +375,78 @@
   text-align: left;
 }
 
+/* Seção As telas abaixo são recortes reais */
+.ecoar-section--screens {
+  padding: 0 65px;
+  gap: 50px;
+}
+
+.ecoar-screens__list {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #151414;
+  text-align: justify;
+}
+
+.ecoar-gallery {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.ecoar-gallery__col {
+  width: 774px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.ecoar-shot {
+  padding: 32px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.ecoar-shot__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ecoar-shot__caption {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ecoar-shot__title {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.ecoar-shot__text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
 /* Linha de etapas com setas (Entrada → Valores) */
 .ecoar-flow {
   display: flex;
