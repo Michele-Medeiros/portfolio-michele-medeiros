@@ -506,3 +506,143 @@
   width: 877px;
   height: auto;
 }
+
+/* Seção 6: Aprender sem sair do ecossistema */
+.pbedu-journey {
+  flex-shrink: 0;
+  width: 1598px;
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+  margin: 115px auto;
+}
+
+.pbedu-journey__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pbedu-journey__title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: #151414;
+  white-space: nowrap;
+}
+
+.pbedu-journey__text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+  color: #151414;
+  text-align: justify;
+}
+
+.pbedu-journey__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.pbedu-journey__step {
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.pbedu-journey__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.pbedu-journey__step-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.pbedu-journey__step-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #252628;
+}
+
+.pbedu-journey__showcases {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+
+.pbedu-journey__frame {
+  background: #fefefe;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.pbedu-journey__canvas {
+  background: #efefef;
+  border-radius: 18px;
+  padding: 44px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+}
+
+.pbedu-journey__canvas--wide {
+  gap: 0;
+}
+
+.pbedu-journey__header {
+  background: #33abff;
+  border-radius: 24px;
+  padding: 32px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: normal;
+  color: #fff;
+}
+
+.pbedu-journey__gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pbedu-journey__gallery img {
+  display: block;
+  height: 717px;
+  width: auto;
+}
+
+.pbedu-journey__canvas--wide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
