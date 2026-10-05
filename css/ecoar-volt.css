@@ -797,15 +797,6 @@
     flex-basis: 100%;
   }
 
-  .ecoar-tablet__pipeline-row {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .ecoar-tablet__pipeline-arrow {
-    align-self: center;
-    transform: rotate(90deg);
-  }
 }
 
 .ecoar-tablet__card--roadmap {
