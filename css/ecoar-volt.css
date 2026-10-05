@@ -925,7 +925,7 @@
 
 .ecoar-tablet__pipeline-row {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 10px;
 }
 
@@ -960,6 +960,7 @@
 }
 
 .ecoar-tablet__pipeline-arrow {
+  align-self: center;
   font-family: 'Kufam', sans-serif;
   font-weight: 700;
   font-size: 22px;
