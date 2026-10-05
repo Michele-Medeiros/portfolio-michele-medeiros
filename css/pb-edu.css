@@ -254,3 +254,86 @@
 .pbedu-overview__card--dark .pbedu-overview__card-text {
   color: #fff;
 }
+
+/* Seção 3: O estudante no centro da arquitetura */
+.pbedu-architecture {
+  flex-shrink: 0;
+  width: 1598px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 65px;
+  box-sizing: content-box;
+  margin: 115px auto;
+}
+
+.pbedu-architecture__title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: #151414;
+  white-space: nowrap;
+}
+
+.pbedu-architecture__text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 55px;
+  color: #151414;
+  text-align: justify;
+}
+
+.pbedu-architecture__cards {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+}
+
+.pbedu-architecture__card {
+  flex: 1 0 0;
+  min-width: 0;
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.pbedu-architecture__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.pbedu-architecture__card-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.pbedu-architecture__card-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
