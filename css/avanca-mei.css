@@ -271,6 +271,36 @@
   color: #56565a;
 }
 
+/* Seção O ciclo da oportunidade */
+.avanca-section--cycle {
+  padding: 0 65px;
+  gap: 32px;
+}
+
+.avanca-cycle {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.avanca-cycle__row--short {
+  width: 1186px;
+  margin: 0 auto;
+}
+
+.avanca-card--compact {
+  gap: 14px;
+}
+
+.avanca-card__num {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #122f5d;
+}
+
 /* Seção Dois públicos, um mesmo processo */
 .avanca-section--publics {
   padding: 0 65px;
