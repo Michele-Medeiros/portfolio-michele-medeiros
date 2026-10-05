@@ -1,0 +1,146 @@
+/* Documentação Avança MEI — versão web (≥1000px) */
+
+.avanca-doc {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .avanca-doc {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: linear-gradient(to bottom, #f8f8f8, #ebebeb);
+    padding-bottom: 115px;
+  }
+  .avanca-doc > * {
+    margin-inline: auto;
+  }
+}
+
+/* Escala do frame de 1728px para larguras menores */
+@media (min-width: 1000px) and (max-width: 1199px) { .avanca-doc { zoom: 0.57; } }
+@media (min-width: 1200px) and (max-width: 1439px) { .avanca-doc { zoom: 0.69; } }
+@media (min-width: 1440px) and (max-width: 1727px) { .avanca-doc { zoom: 0.83; } }
+
+/* Seção 1: Apresentação */
+.avanca-hero {
+  flex-shrink: 0;
+  width: 1728px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 90px 0 65px;
+}
+
+.avanca-hero__info {
+  width: 999px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.avanca-hero__tags {
+  padding-left: 12px;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  color: #122f5d;
+}
+
+.avanca-hero__title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.avanca-hero__name {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 1.45;
+  color: #151414;
+}
+
+.avanca-hero__subtitle {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.45;
+  color: #252628;
+}
+
+.avanca-hero__text {
+  padding-left: 12px;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+  color: #262626;
+  text-align: justify;
+}
+
+.avanca-hero__quote {
+  margin: 0;
+  padding-left: 12px;
+  border-left: 4px solid #5029de;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.55;
+  color: #262626;
+  text-align: justify;
+}
+
+.avanca-hero__cards {
+  display: flex;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.avanca-hero__card {
+  width: 231px;
+  flex-shrink: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.avanca-hero__card-label {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  color: #151414;
+  text-transform: uppercase;
+}
+
+.avanca-hero__card-text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #56565a;
+}
+
+/* Tela do app, preenchendo a área de 400×810 */
+.avanca-hero__media {
+  width: 400px;
+  height: 810px;
+  flex-shrink: 0;
+}
+
+.avanca-hero__screen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
