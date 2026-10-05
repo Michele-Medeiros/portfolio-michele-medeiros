@@ -1053,6 +1053,61 @@
   gap: 16px;
 }
 
+/* Seção 5 (mobile): A pesquisa de domínio virou produto */
+.pbedu-mobile__research {
+  padding: 36px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pbedu-mobile__research-panel {
+  background: #122f5d;
+  border-radius: 24px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pbedu-mobile__research-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.pbedu-mobile__research-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e1e6f5;
+}
+
+.pbedu-mobile__research-screen {
+  background: #fff;
+  border-radius: 24px;
+  padding: 8px;
+}
+
+.pbedu-mobile__research-inner {
+  background: #eee;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.pbedu-mobile__research-inner img {
+  display: block;
+  width: 100%;
+  height: 405px;
+  object-fit: contain;
+}
+
 /* Divisor entre seções */
 .pbedu-divider {
   flex-shrink: 0;
