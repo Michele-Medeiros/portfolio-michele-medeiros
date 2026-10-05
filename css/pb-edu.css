@@ -289,6 +289,110 @@
   color: #56565a;
 }
 
+/* Blocos de seção (tablet) */
+.pbedu-tablet__accent {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #5029de;
+}
+
+.pbedu-tablet__section-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.pbedu-tablet__lead {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #56565a;
+}
+
+/* Seção 2 (tablet): O produto em 30 segundos */
+.pbedu-tablet__overview {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pbedu-tablet__overview-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.pbedu-tablet__overview-card {
+  background: #fff;
+  border: 1px solid #e4e4e8;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.pbedu-tablet__overview-card--dark {
+  background: #122f5d;
+  border-color: #122f5d;
+}
+
+.pbedu-tablet__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 100px;
+  background: #e1e8fc;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #122f5d;
+}
+
+.pbedu-tablet__overview-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.pbedu-tablet__overview-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.pbedu-tablet__overview-card--dark .pbedu-tablet__overview-title {
+  color: #fff;
+}
+
+.pbedu-tablet__overview-card--dark .pbedu-tablet__overview-text {
+  color: #e1e6f5;
+}
+
+/* Em telas mais estreitas os cards empilham */
+@media (max-width: 639px) {
+  .pbedu-tablet__overview-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Divisor entre seções */
 .pbedu-divider {
   flex-shrink: 0;
