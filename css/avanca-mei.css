@@ -271,6 +271,16 @@
   color: #56565a;
 }
 
+/* Seção Da oportunidade à proposta */
+.avanca-section--journey {
+  padding: 0 65px;
+  gap: 80px;
+}
+
+.avanca-role__lead--tight {
+  line-height: 1.5;
+}
+
 /* Seção O MEI precisava conseguir resolver pelo celular */
 .avanca-section--mobile-flow {
   padding: 0 65px;
