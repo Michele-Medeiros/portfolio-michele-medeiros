@@ -351,6 +351,30 @@
   justify-content: center;
 }
 
+/* Seção Arquitetura por perfil */
+.ecoar-section--profiles {
+  padding: 0 65px;
+  gap: 50px;
+}
+
+.ecoar-profiles__row {
+  display: flex;
+  gap: 50px;
+}
+
+.ecoar-chip-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ecoar-chip-list .ecoar-chip {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
 /* Linha de etapas com setas (Entrada → Valores) */
 .ecoar-flow {
   display: flex;
