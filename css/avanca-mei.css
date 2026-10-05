@@ -15,6 +15,9 @@
   .avanca-doc > * {
     margin-inline: auto;
   }
+  .avanca-doc > * + * {
+    margin-top: 100px;
+  }
 }
 
 /* Escala do frame de 1728px para larguras menores */
@@ -129,6 +132,103 @@
   line-height: 1.6;
   letter-spacing: 0.32px;
   color: #56565a;
+}
+
+/* Separador roxo entre seções */
+.avanca-divider {
+  flex-shrink: 0;
+  width: 1680px;
+  height: 6px;
+  background: #5029de;
+}
+
+/* Seções de conteúdo (largura 1728px, padding lateral 54px) */
+.avanca-section {
+  flex-shrink: 0;
+  width: 1728px;
+  padding: 0 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.avanca-section__title {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.avanca-section__lead {
+  padding-left: 12px;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+  color: #262626;
+  text-align: justify;
+}
+
+/* Cards */
+.avanca-cards {
+  display: flex;
+  gap: 50px;
+}
+
+.avanca-card {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.avanca-card--dark {
+  background: #122f5d;
+}
+
+.avanca-card__tag {
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.avanca-card__title {
+  width: 100%;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.avanca-card__text {
+  width: 100%;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #252628;
+  text-align: left;
+}
+
+.avanca-card--dark .avanca-card__title,
+.avanca-card--dark .avanca-card__text {
+  color: #fff;
 }
 
 /* Tela do app, preenchendo a área de 400×810 */
