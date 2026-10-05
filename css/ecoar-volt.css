@@ -447,6 +447,69 @@
   color: #56565a;
 }
 
+/* Rótulo de card sem fundo (Problema, V1 · FUNDAMENTOS) */
+.ecoar-card__label {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.ecoar-card__text--medium {
+  font-weight: 500;
+}
+
+.ecoar-card__text strong {
+  font-weight: 500;
+}
+
+/* Seção Decisões de UX */
+.ecoar-section--decisions,
+.ecoar-section--roadmap {
+  padding: 0 65px;
+  gap: 80px;
+}
+
+.ecoar-section--roadmap {
+  gap: 50px;
+}
+
+.ecoar-decisions__main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.ecoar-principle {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 32px;
+  background: #1e4d2b;
+  border-radius: 24px;
+}
+
+.ecoar-principle__label {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.ecoar-principle__quote {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 1.6;
+  letter-spacing: 0.64px;
+  color: #fff;
+}
+
 /* Linha de etapas com setas (Entrada → Valores) */
 .ecoar-flow {
   display: flex;
