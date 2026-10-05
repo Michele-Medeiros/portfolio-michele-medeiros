@@ -153,6 +153,142 @@
   object-fit: contain;
 }
 
+/* ===== Versão tablet (500px a 999px) — frame de 768px ===== */
+
+.pbedu-tablet {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  .pbedu-tablet {
+    display: block;
+    max-width: 768px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+  }
+}
+
+/* Seção 1: Apresentação (tablet) */
+.pbedu-tablet__hero {
+  padding: 40px 48px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pbedu-tablet__hero-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.pbedu-tablet__hero-text {
+  flex: 1 1 360px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pbedu-tablet__tags {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #122f5d;
+}
+
+.pbedu-tablet__name {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.pbedu-tablet__subtitle {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.pbedu-tablet__text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.pbedu-tablet__quote {
+  margin: 0;
+  padding-left: 12px;
+  border-left: 4px solid #5029de;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.pbedu-tablet__media {
+  width: 240px;
+  height: 493px;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+.pbedu-tablet__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pbedu-tablet__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.pbedu-tablet__card {
+  background: #fff;
+  border: 1px solid #e4e4e8;
+  border-radius: 20px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pbedu-tablet__card-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.pbedu-tablet__card-desc {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #56565a;
+}
+
 /* Divisor entre seções */
 .pbedu-divider {
   flex-shrink: 0;
