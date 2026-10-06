@@ -429,6 +429,33 @@ body {
     height: 22px;
     margin-inline: -0.75px;
   }
+
+  /* Seção 6: Chamada de transição
+     Figma: frame 1598 × 184, padding de 32px, bloco azul com texto centralizado. */
+  .citrus-callout {
+    width: 1598px;
+    max-width: 100%;
+    margin-top: 100px;
+    padding: 32px;
+    background: #122f5d;
+    border-radius: 24px;
+    text-align: center;
+  }
+
+  .citrus-callout__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.95;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .citrus-callout__text span {
+    display: block;
+    font-size: 32px;
+    color: #fd8285;
+  }
 }
 
 /* ========================================================================
