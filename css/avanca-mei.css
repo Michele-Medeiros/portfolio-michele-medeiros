@@ -1217,3 +1217,62 @@
 .avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h386 { width: 190px; height: 386px; object-fit: contain; }
 .avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h621 { width: 600px; height: 621px; object-fit: contain; }
 .avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h677 { width: 600px; height: 677px; object-fit: contain; }
+
+/* ==========================================================================
+   Versão mobile (<500px) — frame de 390px
+   ========================================================================== */
+
+.avanca-mobile {
+  display: none;
+}
+
+@media (max-width: 499px) {
+  .avanca-mobile {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to bottom, #f8f8f8, #ebebeb);
+  }
+
+  /* Hero */
+  .avanca-mobile .avanca-tablet__hero {
+    padding: 28px 20px 36px;
+  }
+
+  .avanca-mobile .avanca-tablet__name {
+    font-size: 40px;
+  }
+
+  .avanca-mobile .avanca-tablet__subtitle {
+    font-size: 26px;
+  }
+
+  .avanca-mobile .avanca-tablet__text,
+  .avanca-mobile .avanca-tablet__quote p {
+    font-size: 14px;
+  }
+
+  .avanca-mobile .avanca-tablet__media {
+    width: 194px;
+    height: 399px;
+  }
+
+  .avanca-mobile .avanca-tablet__numbers {
+    flex-wrap: wrap;
+  }
+
+  .avanca-mobile .avanca-tablet__number {
+    flex: 0 0 calc(50% - 6px);
+  }
+
+  .avanca-mobile .avanca-tablet__number:last-child {
+    flex-basis: 100%;
+  }
+
+  .avanca-mobile .avanca-tablet__number-label {
+    font-size: 15px;
+  }
+
+  .avanca-mobile .avanca-tablet__number-text {
+    font-size: 14px;
+  }
+}
