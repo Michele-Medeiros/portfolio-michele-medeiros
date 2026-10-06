@@ -1308,6 +1308,15 @@
     gap: 6px;
   }
 
+  /* Cards de passos em duas colunas (jornada e estados) */
+  .avanca-mobile .avanca-tablet__grid:has(> .avanca-tablet__card--step) {
+    gap: 12px;
+  }
+
+  .avanca-mobile .avanca-tablet__grid:has(> .avanca-tablet__card--step) > .avanca-tablet__card {
+    flex-basis: calc(50% - 6px);
+  }
+
   .avanca-mobile .avanca-tablet__phone-img {
     width: 100%;
     height: auto;
