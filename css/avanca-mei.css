@@ -347,6 +347,15 @@
   flex: 1 1 100%;
 }
 
+.avanca-shot__frame--tall {
+  aspect-ratio: 1356 / 1529;
+  flex: 1 1 100%;
+}
+
+.avanca-shot__frame--tall img {
+  object-position: center;
+}
+
 .avanca-shot__frame--mobile {
   flex-shrink: 0;
   width: 436px;
