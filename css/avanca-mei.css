@@ -271,6 +271,28 @@
   color: #56565a;
 }
 
+/* Seção Estado é parte da lógica de negócio */
+.avanca-section--status {
+  padding: 0 65px;
+  gap: 50px;
+}
+
+.avanca-status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avanca-status__card {
+  flex: 0 0 325px;
+  gap: 24px;
+}
+
+.avanca-status__icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
 /* Seção Em um processo novo, suporte também faz parte da experiência */
 .avanca-section--support {
   padding: 0 65px;
