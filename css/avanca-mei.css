@@ -1,0 +1,1357 @@
+/* Documentação Avança MEI — versão web (≥1000px) */
+
+.avanca-doc {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .avanca-doc {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: linear-gradient(to bottom, #f8f8f8, #ebebeb);
+    padding-bottom: 115px;
+  }
+  .avanca-doc > * {
+    margin-inline: auto;
+  }
+  .avanca-doc > * + * {
+    margin-top: 100px;
+  }
+}
+
+/* Escala do frame de 1728px para larguras menores */
+@media (min-width: 1000px) and (max-width: 1199px) { .avanca-doc { zoom: 0.57; } }
+@media (min-width: 1200px) and (max-width: 1439px) { .avanca-doc { zoom: 0.69; } }
+@media (min-width: 1440px) and (max-width: 1727px) { .avanca-doc { zoom: 0.83; } }
+
+/* Seção 1: Apresentação */
+.avanca-hero {
+  flex-shrink: 0;
+  width: 1728px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 90px 0 65px;
+}
+
+.avanca-hero__info {
+  width: 999px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.avanca-hero__tags {
+  padding-left: 12px;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  color: #122f5d;
+}
+
+.avanca-hero__title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.avanca-hero__name {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 1.45;
+  color: #151414;
+}
+
+.avanca-hero__subtitle {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.45;
+  color: #252628;
+}
+
+.avanca-hero__text {
+  padding-left: 12px;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+  color: #262626;
+  text-align: justify;
+}
+
+.avanca-hero__quote {
+  margin: 0;
+  padding-left: 12px;
+  border-left: 4px solid #5029de;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.55;
+  color: #262626;
+  text-align: justify;
+}
+
+.avanca-hero__cards {
+  display: flex;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.avanca-hero__card {
+  width: 231px;
+  flex-shrink: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.avanca-hero__card-label {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  color: #151414;
+  text-transform: uppercase;
+}
+
+.avanca-hero__card-text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #56565a;
+}
+
+/* Separador roxo entre seções */
+.avanca-divider {
+  flex-shrink: 0;
+  width: 1680px;
+  height: 6px;
+  background: #5029de;
+}
+
+/* Seções de conteúdo (largura 1728px, padding lateral 54px) */
+.avanca-section {
+  flex-shrink: 0;
+  width: 1728px;
+  padding: 0 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.avanca-section__title {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.avanca-section__lead {
+  padding-left: 12px;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+  color: #262626;
+  text-align: justify;
+}
+
+/* Cards */
+.avanca-cards {
+  display: flex;
+  gap: 50px;
+}
+
+.avanca-card {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.avanca-card--dark {
+  background: #122f5d;
+}
+
+.avanca-card__tag {
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.avanca-card__title {
+  width: 100%;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.avanca-card__text {
+  width: 100%;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #252628;
+  text-align: left;
+}
+
+.avanca-card--dark .avanca-card__title,
+.avanca-card--dark .avanca-card__text {
+  color: #fff;
+}
+
+/* Seção Meu papel no projeto */
+.avanca-section--role {
+  padding: 0 65px;
+  gap: 32px;
+}
+
+.avanca-role__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.avanca-role__lead {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+  color: #151414;
+  text-align: justify;
+}
+
+.avanca-role__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.avanca-role__row {
+  display: flex;
+  gap: 50px;
+}
+
+.avanca-card__title--sm {
+  font-size: 18px;
+}
+
+.avanca-card__text--muted {
+  color: #56565a;
+}
+
+/* Seção High fidelity com telas reais do projeto */
+.avanca-section--shots {
+  padding: 0 65px;
+  gap: 50px;
+}
+
+.avanca-shots__lead {
+  padding-left: 12px;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #151414;
+  text-align: justify;
+}
+
+.avanca-shots {
+  width: 1468px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.avanca-shot {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #fefefe;
+  border-radius: 12px;
+}
+
+.avanca-shot__well {
+  padding: 32px;
+  background: #efefef;
+  border-radius: 6px;
+}
+
+.avanca-shot__well img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.avanca-shot__well--dual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 105px;
+}
+
+.avanca-shot__frame {
+  overflow: hidden;
+}
+
+.avanca-shot__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.avanca-shot__frame--desk {
+  flex: 1 1 0;
+  min-width: 0;
+  aspect-ratio: 1440 / 1630;
+}
+
+.avanca-shot__frame--wide {
+  aspect-ratio: 1440 / 1492;
+  flex: 1 1 100%;
+}
+
+.avanca-shot__frame--tall {
+  aspect-ratio: 1356 / 1529;
+  flex: 1 1 100%;
+}
+
+.avanca-shot__frame--tall img {
+  object-position: center;
+}
+
+.avanca-shot__frame--mobile {
+  flex-shrink: 0;
+  width: 436px;
+  height: 886px;
+}
+
+.avanca-shot__caption {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+  border-radius: 0 0 24px 24px;
+}
+
+.avanca-shot__tag {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.avanca-shot__text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+/* Seção 47 telas não podiam ser 47 soluções diferentes */
+.avanca-section--system {
+  padding: 0 65px;
+  gap: 50px;
+}
+
+.avanca-card__text--ink {
+  color: #252628;
+}
+
+.avanca-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.avanca-chip {
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.95;
+  color: #122f5d;
+  white-space: nowrap;
+}
+
+/* Seção Estado é parte da lógica de negócio */
+.avanca-section--status {
+  padding: 0 65px;
+  gap: 50px;
+}
+
+.avanca-status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avanca-status__card {
+  flex: 0 0 325px;
+  gap: 24px;
+}
+
+.avanca-status__icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+/* Seção Em um processo novo, suporte também faz parte da experiência */
+.avanca-section--support {
+  padding: 0 65px;
+  gap: 80px;
+}
+
+/* Seção Da oportunidade à proposta */
+
+.avanca-section--journey {
+  padding: 0 65px;
+  gap: 80px;
+}
+
+.avanca-role__lead--tight {
+  line-height: 1.5;
+}
+
+/* Seção O MEI precisava conseguir resolver pelo celular */
+.avanca-section--mobile-flow {
+  padding: 0 65px;
+  gap: 50px;
+}
+
+.avanca-feature.avanca-feature--wide {
+  width: 100%;
+}
+
+.avanca-phones {
+  display: flex;
+  gap: 24px;
+  padding-top: 45px;
+}
+
+.avanca-phone {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 12px 16px 24px;
+  background: #fefefe;
+  border-radius: 6px;
+}
+
+.avanca-phone img {
+  width: 100%;
+  aspect-ratio: 440 / 890;
+  object-fit: cover;
+  display: block;
+}
+
+.avanca-phone__caption {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 12px;
+}
+
+.avanca-phone__title {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.avanca-phone__text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+/* Seção Revelar complexidade apenas quando necessária */
+.avanca-section--depth {
+  padding: 0 65px;
+  gap: 50px;
+}
+
+.avanca-feature {
+  width: 1468px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.avanca-feature__row {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #c3c3c4;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.avanca-feature__panel {
+  width: 400px;
+  flex-shrink: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #122f5d;
+}
+
+.avanca-feature__tag {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #efefef;
+}
+
+.avanca-feature__title {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #fefefe;
+}
+
+.avanca-feature__text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #fefefe;
+}
+
+.avanca-feature__media {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 24px 32px;
+  background: #fff;
+}
+
+.avanca-feature__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Seção O ciclo da oportunidade */
+.avanca-section--cycle {
+  padding: 0 65px;
+  gap: 32px;
+}
+
+.avanca-cycle {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.avanca-cycle__row--short {
+  width: 1186px;
+  margin: 0 auto;
+}
+
+.avanca-card--compact {
+  gap: 14px;
+}
+
+.avanca-card__num {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #122f5d;
+}
+
+/* Seção Dois públicos, um mesmo processo */
+.avanca-section--publics {
+  padding: 0 65px;
+  gap: 32px;
+}
+
+.avanca-publics__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.avanca-publics__lead {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 55px;
+  color: #151414;
+  text-align: justify;
+}
+
+.avanca-publics__lead-strong {
+  font-weight: 500;
+  color: #054946;
+}
+
+/* Passos numerados dentro dos cards */
+.avanca-steps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.avanca-step {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  background: #e6ecff;
+  border-radius: 12px;
+}
+
+.avanca-step__num {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99px;
+  background: #122f5d;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fefefe;
+}
+
+.avanca-step__text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #252628;
+}
+
+/* Tela do app, preenchendo a área de 400×810 */
+.avanca-hero__media {
+  width: 400px;
+  height: 810px;
+  flex-shrink: 0;
+}
+
+.avanca-hero__screen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   Versão tablet (500–999px) — frame de 768px, centralizado
+   ========================================================================== */
+
+.avanca-tablet {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  .avanca-tablet {
+    display: block;
+    max-width: 768px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #f8f8f8, #ebebeb);
+  }
+}
+
+/* Hero */
+.avanca-tablet__hero {
+  padding: 40px 48px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.avanca-tablet__hero-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.avanca-tablet__hero-text {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.avanca-tablet__tags {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #122f5d;
+}
+
+.avanca-tablet__name {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 1.05;
+  color: #151414;
+}
+
+.avanca-tablet__subtitle {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.avanca-tablet__text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.avanca-tablet__quote {
+  margin: 0;
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.avanca-tablet__quote-bar {
+  width: 4px;
+  flex-shrink: 0;
+  background: #5029de;
+}
+
+.avanca-tablet__quote p {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.avanca-tablet__media {
+  width: 218px;
+  height: 448px;
+  flex-shrink: 0;
+}
+
+.avanca-tablet__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.avanca-tablet__numbers {
+  display: flex;
+  gap: 12px;
+}
+
+.avanca-tablet__number {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid #e4e4e8;
+  border-radius: 18px;
+}
+
+.avanca-tablet__number-label {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.avanca-tablet__number-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #56565a;
+}
+
+/* Seções de conteúdo */
+.avanca-tablet__section {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.avanca-tablet__accent {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #5029de;
+}
+
+.avanca-tablet__title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.avanca-tablet__lead {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #56565a;
+}
+
+.avanca-tablet__pair {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.avanca-tablet__card {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #e4e4e8;
+  border-radius: 18px;
+}
+
+.avanca-tablet__card--dark {
+  background: #122f5d;
+  border-color: #122f5d;
+}
+
+.avanca-tablet__pill {
+  align-self: flex-start;
+  padding: 5px 12px;
+  border-radius: 100px;
+  background: #e1e8fc;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #122f5d;
+  white-space: nowrap;
+}
+
+.avanca-tablet__card-title {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.avanca-tablet__card-title--light {
+  color: #fff;
+}
+
+.avanca-tablet__card-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.avanca-tablet__card-text--light {
+  color: #e1e6f5;
+}
+
+/* Seção O MEI precisava resolver pelo celular (tablet) */
+.avanca-tablet__card--compact {
+  padding: 14px;
+  gap: 6px;
+}
+
+.avanca-tablet__card--phone {
+  padding: 12px;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.avanca-tablet__phone-img {
+  width: 200px;
+  height: 404px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.avanca-tablet__card-title--phone {
+  font-size: 15px;
+  text-align: center;
+}
+
+.avanca-tablet__card-title--lg {
+  font-size: 20px;
+}
+
+/* Seção High fidelity com telas reais (tablet) */
+.avanca-tablet__card--shot {
+  gap: 10px;
+  padding: 16px;
+}
+
+.avanca-tablet__card--shot .avanca-tablet__panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  background: #eee;
+  border-radius: 12px;
+}
+
+.avanca-tablet__card--shot .avanca-tablet__panel img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__panel-img--desk {
+  width: 380px;
+  max-width: calc(100% - 206px);
+}
+
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__panel-img--mobile {
+  width: 190px;
+}
+
+.avanca-tablet__card--shot .avanca-tablet__panel > img:only-child {
+  width: 600px;
+  max-width: 100%;
+}
+
+.avanca-tablet__shot-tag {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+/* Seção 47 telas não podiam ser 47 soluções diferentes (tablet) */
+.avanca-tablet__card--patterns {
+  padding: 20px;
+  gap: 16px;
+}
+
+.avanca-tablet__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.avanca-tablet__chip {
+  padding: 6px 14px;
+  border-radius: 100px;
+  background: #e6ecff;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #122f5d;
+  white-space: nowrap;
+}
+
+/* Seção Estado é parte da lógica de negócio (tablet) */
+.avanca-tablet__status-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+/* Seção Revelar complexidade (tablet) */
+.avanca-tablet__card--roomy {
+  gap: 10px;
+  padding: 24px;
+}
+
+.avanca-tablet__panel {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  background: #c3c3c4;
+  border-radius: 12px;
+}
+
+.avanca-tablet__panel img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Seção O ciclo da oportunidade (tablet): três colunas, último card ocupa a linha */
+.avanca-tablet__cycle {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.avanca-tablet__card--step {
+  padding: 16px;
+  gap: 8px;
+}
+
+.avanca-tablet__card--span {
+  grid-column: 1 / -1;
+}
+
+.avanca-tablet__card-num {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #122f5d;
+}
+
+.avanca-tablet__card-title--sm {
+  font-size: 16px;
+}
+
+@media (max-width: 639px) {
+  .avanca-tablet__cycle {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Grade de cards em duas colunas (tablet) — cards de passos e telas */
+.avanca-tablet__grid + .avanca-tablet__card--full {
+  margin-top: 0;
+}
+
+/* Grade de cards em duas colunas (tablet) */
+.avanca-tablet__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.avanca-tablet__grid .avanca-tablet__card {
+  flex: 0 0 calc(50% - 8px);
+}
+
+@media (max-width: 639px) {
+  .avanca-tablet__grid .avanca-tablet__card {
+    flex-basis: 100%;
+  }
+}
+
+/* Seção Dois públicos (tablet) */
+.avanca-tablet__card--full {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 22px;
+}
+
+.avanca-tablet__card-text--muted {
+  color: #56565a;
+}
+
+.avanca-tablet__steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.avanca-tablet__step {
+  flex: 0 0 calc(50% - 5px);
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #e6ecff;
+  border-radius: 10px;
+}
+
+.avanca-tablet__step-num {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background: #122f5d;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #fff;
+}
+
+.avanca-tablet__step-text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #151414;
+}
+
+/* Tablet estreito (500–639px): hero empilhado, tela centralizada */
+@media (max-width: 639px) {
+  .avanca-tablet__hero-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .avanca-tablet__media {
+    margin: 0 auto;
+  }
+
+  .avanca-tablet__hero {
+    padding: 36px 24px 40px;
+  }
+
+  .avanca-tablet__pair {
+    flex-direction: column;
+  }
+
+  .avanca-tablet__step {
+    flex-basis: 100%;
+  }
+
+  .avanca-tablet__section {
+    padding: 36px 24px;
+  }
+}
+
+/* Caixas de altura fixa das telas da galeria (tablet), com a tela contida */
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h215 { width: 600px; height: 215px; object-fit: contain; }
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h430 { width: 380px; height: 430px; object-fit: contain; }
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h386 { width: 190px; height: 386px; object-fit: contain; }
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h621 { width: 600px; height: 621px; object-fit: contain; }
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h677 { width: 600px; height: 677px; object-fit: contain; }
+
+/* ==========================================================================
+   Versão mobile (<500px) — frame de 390px
+   ========================================================================== */
+
+.avanca-mobile {
+  display: none;
+}
+
+@media (max-width: 499px) {
+  .avanca-mobile {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to bottom, #f8f8f8, #ebebeb);
+  }
+
+  /* Hero */
+  .avanca-mobile .avanca-tablet__hero {
+    padding: 28px 20px 36px;
+  }
+
+  .avanca-mobile .avanca-tablet__name {
+    font-size: 40px;
+  }
+
+  .avanca-mobile .avanca-tablet__subtitle {
+    font-size: 26px;
+  }
+
+  .avanca-mobile .avanca-tablet__text,
+  .avanca-mobile .avanca-tablet__quote p {
+    font-size: 14px;
+  }
+
+  .avanca-mobile .avanca-tablet__media {
+    width: 194px;
+    height: 399px;
+  }
+
+  .avanca-mobile .avanca-tablet__numbers {
+    flex-wrap: wrap;
+  }
+
+  .avanca-mobile .avanca-tablet__number {
+    flex: 0 0 calc(50% - 6px);
+  }
+
+  .avanca-mobile .avanca-tablet__number:last-child {
+    flex-basis: 100%;
+  }
+
+  .avanca-mobile .avanca-tablet__number-label {
+    font-size: 15px;
+  }
+
+  .avanca-mobile .avanca-tablet__number-text {
+    font-size: 14px;
+  }
+
+  /* Seções de conteúdo */
+  .avanca-mobile .avanca-tablet__section {
+    padding: 36px 20px;
+  }
+
+  .avanca-mobile .avanca-tablet__card-title {
+    font-size: 16px;
+  }
+
+  .avanca-mobile .avanca-tablet__card-text {
+    font-size: 14px;
+  }
+
+  .avanca-mobile .avanca-tablet__step-text {
+    font-size: 14px;
+  }
+
+  .avanca-mobile .avanca-tablet__grid .avanca-tablet__card {
+    padding: 16px;
+    gap: 6px;
+  }
+
+  .avanca-mobile .avanca-tablet__cycle {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  /* Seção de suporte: cards em uma coluna */
+  .avanca-mobile .avanca-tablet__cycle:not(:has(.avanca-tablet__card--span)) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .avanca-mobile .avanca-tablet__cycle .avanca-tablet__card {
+    padding: 16px;
+    gap: 6px;
+  }
+
+  /* Galeria de telas (mobile): telas na largura do painel */
+  .avanca-mobile .avanca-tablet__panel--pair {
+    flex-direction: column;
+  }
+
+  .avanca-mobile .avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h215 { width: 100%; height: 111px; }
+  .avanca-mobile .avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h430 { width: 100%; height: 352px; }
+  .avanca-mobile .avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h621 { width: 100%; height: 321px; }
+  .avanca-mobile .avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h677 { width: 100%; height: 350px; }
+
+  /* Cards compactos (princípios e estados) em duas colunas */
+  .avanca-mobile .avanca-tablet__grid:has(> .avanca-tablet__card--compact) {
+    gap: 12px;
+  }
+
+  .avanca-mobile .avanca-tablet__grid:has(> .avanca-tablet__card--compact) > .avanca-tablet__card {
+    flex-basis: calc(50% - 6px);
+  }
+
+  /* Cards de passos em duas colunas (jornada e estados) */
+  .avanca-mobile .avanca-tablet__grid:has(> .avanca-tablet__card--step) {
+    gap: 12px;
+  }
+
+  .avanca-mobile .avanca-tablet__grid:has(> .avanca-tablet__card--step) > .avanca-tablet__card {
+    flex-basis: calc(50% - 6px);
+  }
+
+  .avanca-mobile .avanca-tablet__phone-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 440 / 890;
+  }
+
+  .avanca-mobile .avanca-tablet__title {
+    font-size: 26px;
+  }
+
+  .avanca-mobile .avanca-tablet__lead {
+    font-size: 16px;
+  }
+}
