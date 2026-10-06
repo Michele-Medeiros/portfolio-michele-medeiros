@@ -1704,4 +1704,48 @@ body {
     height: 400px;
     object-fit: contain;
   }
+
+  /* Seção 8 (tablet): Antes e nova abordagem — Figma 768 × 469 */
+  .citrus-tablet__before {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .citrus-tablet__before-row {
+    display: flex;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .citrus-tablet__before-card {
+    flex: 1 0 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #e4e3e3;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .citrus-tablet__before-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-tablet__before-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #56565a;
+  }
 }
