@@ -328,6 +328,84 @@
       </div>
     </section>
 
+    <!-- Divisor entre seções -->
+    <div class="citrus-divider"></div>
+
+    <!-- Seção 11: Componentes como comportamento -->
+    <section class="citrus-showcase">
+      <div class="citrus-showcase__header">
+        <h2 class="citrus-showcase__title">Componentes foram desenhados como comportamento</h2>
+        <p class="citrus-showcase__text">O objetivo não era documentar uma aparência estática. O sistema precisava formalizar estados, variações, feedback e contextos de uso.</p>
+      </div>
+
+      <div class="citrus-showcase__steps">
+        <article class="citrus-showcase__step">
+          <span class="citrus-showcase__step-num">01</span>
+          <h3 class="citrus-showcase__step-title">Descobrir</h3>
+          <p class="citrus-showcase__step-text">Buscar oportunidades compatíveis com o perfil do usuário.</p>
+        </article>
+        <article class="citrus-showcase__step">
+          <span class="citrus-showcase__step-num">02</span>
+          <h3 class="citrus-showcase__step-title">Entender</h3>
+          <p class="citrus-showcase__step-text">Ver detalhes, requisitos e compatibilidades antes de agir.</p>
+        </article>
+        <article class="citrus-showcase__step">
+          <span class="citrus-showcase__step-num">03</span>
+          <h3 class="citrus-showcase__step-title">Propor</h3>
+          <p class="citrus-showcase__step-text">Enviar valores e condições dentro do contexto da oportunidade.</p>
+        </article>
+        <article class="citrus-showcase__step">
+          <span class="citrus-showcase__step-num">04</span>
+          <h3 class="citrus-showcase__step-title">Acompanhar</h3>
+          <p class="citrus-showcase__step-text">Consultar status, editar rascunhos e voltar para a oportunidade relacionada.</p>
+        </article>
+      </div>
+
+      <div class="citrus-gallery">
+        <div class="citrus-gallery__slides">
+          <div class="citrus-gallery__slide is-active" data-slide="1">
+            <img class="citrus-gallery__img" src="assets/images/citrus/galeria/buttons.png" alt="Tela Design System Citrus com componentes Buttons">
+            <div class="citrus-gallery__caption">
+              <span class="citrus-gallery__caption-label">Interação</span>
+              <span class="citrus-gallery__caption-title">Buttons</span>
+              <p class="citrus-gallery__caption-text">Default, Hover, Pressed, Focused e Disabled, além de variações de tamanho, cor e uso contextual.</p>
+            </div>
+          </div>
+          <div class="citrus-gallery__slide" data-slide="2">
+            <img class="citrus-gallery__img" src="assets/images/citrus/galeria/dropdown.png" alt="Tela Design System Citrus com componentes Dropdown">
+            <div class="citrus-gallery__caption">
+              <span class="citrus-gallery__caption-label">Seleção</span>
+              <span class="citrus-gallery__caption-title">Dropdown e Multiselect</span>
+              <p class="citrus-gallery__caption-text">Busca, seleção simples, radio, múltiplas escolhas e tags dentro da mesma família.</p>
+            </div>
+            <img class="citrus-gallery__img" src="assets/images/citrus/galeria/input.png" alt="Tela Design System Citrus com componentes Input">
+            <div class="citrus-gallery__caption">
+              <span class="citrus-gallery__caption-label">Formulários</span>
+              <span class="citrus-gallery__caption-title">Inputs do genérico ao específico</span>
+              <p class="citrus-gallery__caption-text">Telefone, moeda, validação, erro, helper text e tipos numéricos formalizados em uma única lógica.</p>
+            </div>
+          </div>
+          <div class="citrus-gallery__slide" data-slide="3">
+            <div class="citrus-gallery__slide-row">
+              <img class="citrus-gallery__img" src="assets/images/citrus/galeria/sidebar.png" alt="Side-Bar do Design System Citrus" style="width:37.7%">
+              <img class="citrus-gallery__img" src="assets/images/citrus/galeria/datepicker.png" alt="Date Picker do Design System Citrus" style="width:57.9%">
+            </div>
+            <img class="citrus-gallery__img" src="assets/images/citrus/galeria/filtro-status.png" alt="Filtro de status do Design System Citrus">
+            <div class="citrus-gallery__caption">
+              <span class="citrus-gallery__caption-label">diversos</span>
+              <span class="citrus-gallery__caption-title">COMPONENTES PARA DIFERENTES CONTEXTOS</span>
+              <p class="citrus-gallery__caption-text">Navegação, filtros, status, datas e controles compartilham a mesma lógica visual e comportamental, permitindo que o produto cresça sem voltar à fragmentação que existia no legado.</p>
+            </div>
+          </div>
+        </div>
+        <div class="citrus-gallery__dots">
+          <button class="citrus-gallery__dot is-active" type="button" aria-label="Slide 1" data-target="1"></button>
+          <button class="citrus-gallery__dot" type="button" aria-label="Slide 2" data-target="2"></button>
+          <button class="citrus-gallery__dot" type="button" aria-label="Slide 3" data-target="3"></button>
+        </div>
+      </div>
+    </section>
+
   </div>
 
   <footer class="site-footer" id="contato">
@@ -337,6 +415,19 @@
     </div>
   </footer>
 
+  <script>
+    (function () {
+      var slides = document.querySelectorAll('.citrus-gallery__slide');
+      var dots = document.querySelectorAll('.citrus-gallery__dot');
+      dots.forEach(function (dot) {
+        dot.addEventListener('click', function () {
+          var target = dot.getAttribute('data-target');
+          slides.forEach(function (s) { s.classList.toggle('is-active', s.getAttribute('data-slide') === target); });
+          dots.forEach(function (d) { d.classList.toggle('is-active', d === dot); });
+        });
+      });
+    })();
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>

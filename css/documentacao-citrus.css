@@ -824,6 +824,200 @@ body {
   .citrus-ds__card--dark .citrus-ds__list {
     color: #fefefe;
   }
+
+  /* Seção 11: Componentes como comportamento + galeria
+     Figma: cabeçalho e quatro cards, galeria de 1240px com legenda e bolinhas.
+     Cada slide aparece por vez; as bolinhas trocam o slide visível. */
+  .citrus-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 100px;
+    padding-inline: 65px;
+  }
+
+  .citrus-showcase__header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .citrus-showcase__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .citrus-showcase__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #151414;
+    text-align: justify;
+  }
+
+  .citrus-showcase__steps {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .citrus-showcase__step {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+    min-width: 0;
+  }
+
+  .citrus-showcase__step-num {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    color: #122f5d;
+  }
+
+  .citrus-showcase__step-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    color: #151414;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .citrus-showcase__step-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  .citrus-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 1240px;
+    max-width: 100%;
+  }
+
+  .citrus-gallery__slides {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .citrus-gallery__slide {
+    display: none;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .citrus-gallery__slide.is-active {
+    display: flex;
+  }
+
+  .citrus-gallery__slide-row {
+    display: flex;
+    gap: 4.5%;
+    width: 100%;
+  }
+
+  .citrus-gallery__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .citrus-gallery__caption {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .citrus-gallery__caption-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.95;
+    color: #c5595c;
+    text-transform: uppercase;
+  }
+
+  .citrus-gallery__caption-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-gallery__caption-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  .citrus-gallery__dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 318px;
+    height: 76px;
+    padding-inline: 50px;
+    background: #fff;
+    border-radius: 999px;
+    box-shadow: 0 0 12px 2px rgba(141, 141, 141, 0.25);
+  }
+
+  .citrus-gallery__dot {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #c3c3c4;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .citrus-gallery__dot.is-active {
+    border-color: #5029de;
+  }
+
+  .citrus-gallery__dot.is-active::after {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border-radius: 50%;
+    background: #5029de;
+  }
 }
 
 /* ========================================================================
