@@ -2973,4 +2973,26 @@ body {
     line-height: 1.4;
     color: #56565a;
   }
+
+  /* Seção (mobile): Modernizar — grade 2 × 2 com cards de 200px, último em azul escuro */
+  .citrus-mobile__pair-card--200 {
+    min-height: 200px;
+  }
+
+  .citrus-mobile__pair-card--dark {
+    background: #122f5d;
+    border-color: #122f5d;
+  }
+
+  .citrus-mobile__pair-card--dark .citrus-mobile__cost-num {
+    color: #fd8285;
+  }
+
+  .citrus-mobile__pair-card--dark .citrus-mobile__card-title {
+    color: #efefef;
+  }
+
+  .citrus-mobile__pair-card--dark .citrus-mobile__cost-text {
+    color: #fefefe;
+  }
 }
