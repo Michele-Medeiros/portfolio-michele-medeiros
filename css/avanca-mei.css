@@ -342,6 +342,11 @@
   aspect-ratio: 1440 / 1630;
 }
 
+.avanca-shot__frame--wide {
+  aspect-ratio: 1440 / 1492;
+  flex: 1 1 100%;
+}
+
 .avanca-shot__frame--mobile {
   flex-shrink: 0;
   width: 436px;
