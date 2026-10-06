@@ -2694,4 +2694,144 @@ body {
   .citrus-mobile__ds-card--dark .citrus-mobile__ds-list {
     color: #fefefe;
   }
+
+  /* Seção 9 (mobile): Componentes como comportamento — galeria empilhada (sem bolinhas no Figma mobile) */
+  .citrus-mobile__showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 36px 20px;
+  }
+
+  .citrus-mobile__showcase-head {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .citrus-mobile__pair-card--tall {
+    min-height: 201px;
+  }
+
+  .citrus-mobile__gallery-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .citrus-mobile__gallery-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    background: #efefef;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .citrus-mobile__gallery-img {
+    display: block;
+    width: 334px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .citrus-mobile__gallery-caption {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px;
+    background: #fff;
+    border: 1px solid #e4e3e3;
+    border-radius: 24px;
+  }
+
+  .citrus-mobile__gallery-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #c5595c;
+    text-transform: uppercase;
+  }
+
+  .citrus-mobile__gallery-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-mobile__gallery-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #56565a;
+    text-align: justify;
+  }
+
+  /* Galeria mobile: slides com bolinhas, igual às versões web e tablet */
+  .citrus-mobile__slide {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .citrus-mobile__slide.is-active {
+    display: flex;
+  }
+
+  .citrus-mobile__dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 294px;
+    max-width: 100%;
+    height: 50px;
+    padding-inline: 50px;
+    background: #fff;
+    border-radius: 999px;
+    box-shadow: 0 0 12px 2px rgba(141, 141, 141, 0.25);
+    align-self: center;
+  }
+
+  .citrus-mobile__dot {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #c3c3c4;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .citrus-mobile__dot.is-active {
+    border-color: #5029de;
+  }
+
+  .citrus-mobile__dot.is-active::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border-radius: 50%;
+    background: #5029de;
+  }
+
+  .citrus-mobile__gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .citrus-mobile__slides {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
