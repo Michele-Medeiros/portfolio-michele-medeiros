@@ -317,6 +317,37 @@
   border-radius: 12px;
 }
 
+.avanca-shot__well--dual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 105px;
+}
+
+.avanca-shot__frame {
+  overflow: hidden;
+}
+
+.avanca-shot__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.avanca-shot__frame--desk {
+  flex: 1 1 0;
+  min-width: 0;
+  aspect-ratio: 1440 / 1630;
+}
+
+.avanca-shot__frame--mobile {
+  flex-shrink: 0;
+  width: 436px;
+  height: 886px;
+}
+
 .avanca-shot__caption {
   display: flex;
   flex-direction: column;
