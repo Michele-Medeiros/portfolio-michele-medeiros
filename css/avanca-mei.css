@@ -1303,6 +1303,11 @@
     gap: 12px;
   }
 
+  /* Seção de suporte: cards em uma coluna */
+  .avanca-mobile .avanca-tablet__cycle:not(:has(.avanca-tablet__card--span)) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .avanca-mobile .avanca-tablet__cycle .avanca-tablet__card {
     padding: 16px;
     gap: 6px;
