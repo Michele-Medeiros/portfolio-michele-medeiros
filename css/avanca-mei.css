@@ -1293,6 +1293,11 @@
     font-size: 14px;
   }
 
+  .avanca-mobile .avanca-tablet__grid .avanca-tablet__card {
+    padding: 16px;
+    gap: 6px;
+  }
+
   .avanca-mobile .avanca-tablet__title {
     font-size: 26px;
   }
