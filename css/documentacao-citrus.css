@@ -1551,4 +1551,26 @@ body {
     line-height: 1.4;
     color: #252628;
   }
+
+  /* Seção 3 (tablet): Canais — Figma 768 × 718, cards 328 × 189 em duas colunas */
+  .citrus-tablet__channels {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .citrus-tablet__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .citrus-tablet__grid .citrus-tablet__card {
+    flex: 0 0 328px;
+    height: 189px;
+    gap: 10px;
+    overflow: hidden;
+  }
 }
