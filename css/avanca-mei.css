@@ -1308,6 +1308,12 @@
     gap: 6px;
   }
 
+  .avanca-mobile .avanca-tablet__phone-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 440 / 890;
+  }
+
   .avanca-mobile .avanca-tablet__title {
     font-size: 26px;
   }
