@@ -1030,11 +1030,11 @@
 .avanca-tablet__chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 12px;
 }
 
 .avanca-tablet__chip {
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: 100px;
   background: #e6ecff;
   font-family: 'Kufam', sans-serif;
