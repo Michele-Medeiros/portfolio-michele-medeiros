@@ -944,6 +944,27 @@
   color: #e1e6f5;
 }
 
+/* Seção Revelar complexidade (tablet) */
+.avanca-tablet__card--roomy {
+  gap: 10px;
+  padding: 24px;
+}
+
+.avanca-tablet__panel {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  background: #c3c3c4;
+  border-radius: 12px;
+}
+
+.avanca-tablet__panel img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
 /* Seção O ciclo da oportunidade (tablet): três colunas, último card ocupa a linha */
 .avanca-tablet__cycle {
   display: grid;
