@@ -198,6 +198,30 @@ main {
   flex-shrink: 0;
 }
 
+/* Mobile (<500px): texto e ícone centralizados em coluna */
+@media (max-width: 499px) {
+  .site-footer {
+    padding: 32px 20px;
+  }
+
+  .site-footer__inner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .site-footer__text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .site-footer__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* ========================================================================
    Buttons / badges
    ======================================================================== */
@@ -371,16 +395,4 @@ main {
     padding-inline: 16px;
   }
 
-  .site-footer {
-    padding: 14px 16px;
-  }
-
-  .site-footer__text {
-    font-size: 11px;
-  }
-
-  .site-footer__icon {
-    width: 18px;
-    height: 18px;
-  }
 }
