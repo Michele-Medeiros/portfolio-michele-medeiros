@@ -1183,14 +1183,22 @@
   color: #151414;
 }
 
-/* Tablet estreito (500–639px): hero empilhado, tela centralizada */
+/* Tablet estreito (500–639px): hero empilhado na ordem texto → cards → tela */
 @media (max-width: 639px) {
   .avanca-tablet__hero-row {
-    flex-direction: column;
-    align-items: stretch;
+    display: contents;
+  }
+
+  .avanca-tablet__hero-text {
+    order: 1;
+  }
+
+  .avanca-tablet__numbers {
+    order: 2;
   }
 
   .avanca-tablet__media {
+    order: 3;
     margin: 0 auto;
   }
 
