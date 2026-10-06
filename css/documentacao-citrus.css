@@ -2033,4 +2033,22 @@ body {
     line-height: 1.4;
     color: #56565a;
   }
+
+  /* Seção (tablet): card azul escuro da grade */
+  .citrus-tablet__cost-card--dark {
+    background: #122f5d;
+    border-color: #122f5d;
+  }
+
+  .citrus-tablet__cost-card--dark .citrus-tablet__cost-num {
+    color: #fd8285;
+  }
+
+  .citrus-tablet__cost-card--dark .citrus-tablet__card-title {
+    color: #efefef;
+  }
+
+  .citrus-tablet__cost-card--dark .citrus-tablet__card-text {
+    color: #fefefe;
+  }
 }
