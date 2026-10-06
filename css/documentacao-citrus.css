@@ -1748,4 +1748,224 @@ body {
     line-height: 1.4;
     color: #56565a;
   }
+
+  /* Seção 9 (tablet): Design System — Figma 768 × 1192, três cards empilhados */
+  .citrus-tablet__ds {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .citrus-tablet__ds-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .citrus-tablet__ds-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #9b9b9d;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .citrus-tablet__ds-card--light {
+    background: #eef2f9;
+  }
+
+  .citrus-tablet__ds-card--dark {
+    background: #122f5d;
+    border-color: #122f5d;
+  }
+
+  .citrus-tablet__ds-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #122f5d;
+    text-transform: uppercase;
+  }
+
+  .citrus-tablet__ds-card--dark .citrus-tablet__ds-label {
+    color: #fd8285;
+  }
+
+  .citrus-tablet__ds-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.25;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-tablet__ds-card--dark .citrus-tablet__ds-title {
+    color: #efefef;
+  }
+
+  .citrus-tablet__ds-list {
+    padding-left: 24px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.32px;
+    color: #56565a;
+    list-style: disc;
+  }
+
+  .citrus-tablet__ds-list li {
+    margin-bottom: 12px;
+  }
+
+  .citrus-tablet__ds-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .citrus-tablet__ds-card--dark .citrus-tablet__ds-list {
+    color: #fefefe;
+  }
+
+  /* Seção 10 (tablet): Componentes como comportamento + galeria
+     Figma: princípios em 2 colunas, painel 506 × 700, legenda 672 e bolinhas 294 × 50. */
+  .citrus-tablet__showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .citrus-tablet__cost-card--tall {
+    height: 179px;
+  }
+
+  .citrus-tablet__gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .citrus-tablet__slides {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .citrus-tablet__slide {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .citrus-tablet__slide.is-active {
+    display: flex;
+  }
+
+  .citrus-tablet__slide-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: #efefef;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .citrus-tablet__slide-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .citrus-tablet__slide-img--tall {
+    width: 506px;
+    height: 700px;
+    object-fit: contain;
+  }
+
+  .citrus-tablet__slide-row {
+    display: flex;
+    gap: 4.5%;
+    width: 100%;
+  }
+
+  .citrus-tablet__caption {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 24px;
+    background: #fff;
+    border: 1px solid #e4e3e3;
+    border-radius: 24px;
+  }
+
+  .citrus-tablet__caption-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #c5595c;
+    text-transform: uppercase;
+  }
+
+  .citrus-tablet__caption-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.25;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-tablet__caption-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #56565a;
+  }
+
+  .citrus-tablet__dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 294px;
+    height: 50px;
+    padding-inline: 50px;
+    background: #fff;
+    border-radius: 999px;
+    box-shadow: 0 0 12px 2px rgba(141, 141, 141, 0.25);
+  }
+
+  .citrus-tablet__dot {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #c3c3c4;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .citrus-tablet__dot.is-active {
+    border-color: #5029de;
+  }
+
+  .citrus-tablet__dot.is-active::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border-radius: 50%;
+    background: #5029de;
+  }
 }
