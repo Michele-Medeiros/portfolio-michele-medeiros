@@ -271,6 +271,12 @@
   color: #56565a;
 }
 
+/* Seção Em um processo novo, suporte também faz parte da experiência */
+.avanca-section--support {
+  padding: 0 65px;
+  gap: 80px;
+}
+
 /* Seção Da oportunidade à proposta */
 .avanca-section--journey {
   padding: 0 65px;
