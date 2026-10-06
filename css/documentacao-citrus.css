@@ -2495,4 +2495,78 @@ body {
     border-radius: 24px;
     overflow: hidden;
   }
+
+  /* Seção 6 (mobile): Produtividade — Figma 390 × 574, card verde e painel com imagem */
+  .citrus-mobile__eff {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 36px 20px;
+  }
+
+  .citrus-mobile__eff-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .citrus-mobile__eff-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 22px 20px;
+    background: #154f34;
+    border-radius: 24px;
+  }
+
+  .citrus-mobile__eff-chip {
+    padding: 6px 14px;
+    background: #ffe8e3;
+    border-radius: 900px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #c5595c;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .citrus-mobile__eff-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fefefe;
+    text-transform: uppercase;
+  }
+
+  .citrus-mobile__eff-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #fefefe;
+    text-align: justify;
+  }
+
+  .citrus-mobile__panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    background: #efefef;
+    border: 1px solid #9b9b9d;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .citrus-mobile__panel-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1920 / 1185;
+    object-fit: contain;
+  }
 }
