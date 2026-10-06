@@ -271,6 +271,34 @@
   color: #56565a;
 }
 
+/* Seção 47 telas não podiam ser 47 soluções diferentes */
+.avanca-section--system {
+  padding: 0 65px;
+  gap: 50px;
+}
+
+.avanca-card__text--ink {
+  color: #252628;
+}
+
+.avanca-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.avanca-chip {
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.95;
+  color: #122f5d;
+  white-space: nowrap;
+}
+
 /* Seção Estado é parte da lógica de negócio */
 .avanca-section--status {
   padding: 0 65px;
