@@ -944,6 +944,58 @@
   color: #e1e6f5;
 }
 
+/* Seção Dois públicos (tablet) */
+.avanca-tablet__card--full {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 22px;
+}
+
+.avanca-tablet__card-text--muted {
+  color: #56565a;
+}
+
+.avanca-tablet__steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.avanca-tablet__step {
+  flex: 0 0 calc(50% - 5px);
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #e6ecff;
+  border-radius: 10px;
+}
+
+.avanca-tablet__step-num {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background: #122f5d;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #fff;
+}
+
+.avanca-tablet__step-text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #151414;
+}
+
 /* Tablet estreito (500–639px): hero empilhado, tela centralizada */
 @media (max-width: 639px) {
   .avanca-tablet__hero-row {
@@ -961,6 +1013,10 @@
 
   .avanca-tablet__pair {
     flex-direction: column;
+  }
+
+  .avanca-tablet__step {
+    flex-basis: 100%;
   }
 
   .avanca-tablet__section {
