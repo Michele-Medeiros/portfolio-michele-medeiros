@@ -1215,6 +1215,120 @@ body {
   .citrus-migration__card--dark .citrus-migration__card-text {
     color: #fefefe;
   }
+
+  /* Seção 16: Resultados já observáveis
+     Figma: frame 1598 de conteúdo, gap de 80px entre cabeçalho e linhas.
+     Duas linhas de cards brancos (gap 50px) e uma linha de cards azuis (gap 32px). */
+  .citrus-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 100px;
+    padding-inline: 65px;
+  }
+
+  .citrus-results__header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .citrus-results__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .citrus-results__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #151414;
+    text-align: justify;
+  }
+
+  .citrus-results__row {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .citrus-results__row--dark {
+    gap: 32px;
+  }
+
+  .citrus-results__card {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+    min-width: 0;
+  }
+
+  .citrus-results__before {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.95;
+    color: #636262;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .citrus-results__change {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.95;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-results__card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  .citrus-results__card--dark {
+    gap: 12px;
+    align-items: flex-start;
+    background: #122f5d;
+  }
+
+  .citrus-results__dark-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    color: #efefef;
+    text-transform: uppercase;
+  }
+
+  .citrus-results__dark-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.32px;
+    color: #fefefe;
+  }
 }
 
 /* ========================================================================
