@@ -1352,3 +1352,114 @@ body {
     zoom: 0.83;
   }
 }
+
+/* ========================================================================
+   Versão tablet (500px a 999px)
+   Medidas do frame "Citrus | Tablet 768" do Figma (768px de largura).
+   ======================================================================== */
+.citrus-tablet {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  body {
+    background: #f7f7f7;
+  }
+
+  .citrus-tablet {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  /* Seção 1: Apresentação */
+  .citrus-tablet__hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 48px 48px;
+  }
+
+  .citrus-tablet__tags {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #122f5d;
+  }
+
+  .citrus-tablet__name {
+    font-family: "Kufam", sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 1.1;
+    color: #151414;
+  }
+
+  .citrus-tablet__desc {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #262626;
+  }
+
+  .citrus-tablet__quote {
+    position: relative;
+    padding-left: 16px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.4;
+    color: #262626;
+  }
+
+  .citrus-tablet__quote::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    background: #5029de;
+  }
+
+  .citrus-tablet__numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .citrus-tablet__number {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 328px;
+    height: 118px;
+    padding: 22px;
+    background: #fff;
+    border: 1px solid #e4e3e3;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .citrus-tablet__number-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.4;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-tablet__number-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #56565a;
+  }
+}
