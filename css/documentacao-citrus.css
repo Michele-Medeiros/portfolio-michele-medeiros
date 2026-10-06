@@ -141,6 +141,102 @@ body {
     height: 6px;
     background: #5029de;
   }
+
+  /* Seção 3: Problema
+     Figma: frame 1728 × 644, padding lateral 54px, gap de 50px.
+     Dois cards de 785px: o da esquerda branco, o da direita azul. */
+  .citrus-problem {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 100px;
+    padding-inline: 54px;
+  }
+
+  .citrus-problem__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .citrus-problem__text {
+    padding-left: 12px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    color: #262626;
+    text-align: justify;
+  }
+
+  .citrus-problem__cards {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .citrus-problem__card {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+
+  .citrus-problem__card--dark {
+    background: #122f5d;
+  }
+
+  .citrus-problem__pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
+    background: #e6ecff;
+    border-radius: 900px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.95;
+    color: #151414;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .citrus-problem__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-problem__card--dark .citrus-problem__card-title,
+  .citrus-problem__card--dark .citrus-problem__card-text {
+    color: #fff;
+  }
+
+  .citrus-problem__card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #252628;
+    text-align: justify;
+  }
 }
 
 /* ========================================================================
