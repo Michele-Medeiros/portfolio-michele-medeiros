@@ -944,6 +944,24 @@
   color: #e1e6f5;
 }
 
+/* Grade de cards em duas colunas (tablet) */
+.avanca-tablet__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.avanca-tablet__grid .avanca-tablet__card {
+  flex: 0 0 calc(50% - 8px);
+}
+
+@media (max-width: 639px) {
+  .avanca-tablet__grid .avanca-tablet__card {
+    flex-basis: 100%;
+  }
+}
+
 /* Seção Dois públicos (tablet) */
 .avanca-tablet__card--full {
   width: 100%;
