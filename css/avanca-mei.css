@@ -1275,4 +1275,25 @@
   .avanca-mobile .avanca-tablet__number-text {
     font-size: 14px;
   }
+
+  /* Seções de conteúdo */
+  .avanca-mobile .avanca-tablet__section {
+    padding: 36px 20px;
+  }
+
+  .avanca-mobile .avanca-tablet__card-title {
+    font-size: 16px;
+  }
+
+  .avanca-mobile .avanca-tablet__card-text {
+    font-size: 14px;
+  }
+
+  .avanca-mobile .avanca-tablet__title {
+    font-size: 26px;
+  }
+
+  .avanca-mobile .avanca-tablet__lead {
+    font-size: 16px;
+  }
 }
