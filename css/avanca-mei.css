@@ -1298,6 +1298,16 @@
     gap: 6px;
   }
 
+  .avanca-mobile .avanca-tablet__cycle {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .avanca-mobile .avanca-tablet__cycle .avanca-tablet__card {
+    padding: 16px;
+    gap: 6px;
+  }
+
   .avanca-mobile .avanca-tablet__title {
     font-size: 26px;
   }
