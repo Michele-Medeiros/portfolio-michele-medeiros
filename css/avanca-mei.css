@@ -445,6 +445,7 @@
 }
 
 /* Seção Da oportunidade à proposta */
+
 .avanca-section--journey {
   padding: 0 65px;
   gap: 80px;
@@ -699,4 +700,166 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* ==========================================================================
+   Versão tablet (500–999px) — frame de 768px, centralizado
+   ========================================================================== */
+
+.avanca-tablet {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  .avanca-tablet {
+    display: block;
+    max-width: 768px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #f8f8f8, #ebebeb);
+  }
+}
+
+/* Hero */
+.avanca-tablet__hero {
+  padding: 40px 48px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.avanca-tablet__hero-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.avanca-tablet__hero-text {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.avanca-tablet__tags {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #122f5d;
+}
+
+.avanca-tablet__name {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 1.05;
+  color: #151414;
+}
+
+.avanca-tablet__subtitle {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.avanca-tablet__text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.avanca-tablet__quote {
+  margin: 0;
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.avanca-tablet__quote-bar {
+  width: 4px;
+  flex-shrink: 0;
+  background: #5029de;
+}
+
+.avanca-tablet__quote p {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.avanca-tablet__media {
+  width: 218px;
+  height: 448px;
+  flex-shrink: 0;
+}
+
+.avanca-tablet__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.avanca-tablet__numbers {
+  display: flex;
+  gap: 12px;
+}
+
+.avanca-tablet__number {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid #e4e4e8;
+  border-radius: 18px;
+}
+
+.avanca-tablet__number-label {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.avanca-tablet__number-text {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #56565a;
+}
+
+/* Tablet estreito (500–639px): hero empilhado, tela centralizada */
+@media (max-width: 639px) {
+  .avanca-tablet__hero-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .avanca-tablet__media {
+    margin: 0 auto;
+  }
+
+  .avanca-tablet__hero {
+    padding: 36px 24px 40px;
+  }
 }
