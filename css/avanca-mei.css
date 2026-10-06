@@ -271,6 +271,78 @@
   color: #56565a;
 }
 
+/* Seção High fidelity com telas reais do projeto */
+.avanca-section--shots {
+  padding: 0 65px;
+  gap: 50px;
+}
+
+.avanca-shots__lead {
+  padding-left: 12px;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #151414;
+  text-align: justify;
+}
+
+.avanca-shots {
+  width: 1468px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.avanca-shot {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #fefefe;
+  border-radius: 12px;
+}
+
+.avanca-shot__well {
+  padding: 32px;
+  background: #efefef;
+  border-radius: 6px;
+}
+
+.avanca-shot__well img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.avanca-shot__caption {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+  border-radius: 0 0 24px 24px;
+}
+
+.avanca-shot__tag {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.avanca-shot__text {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
 /* Seção 47 telas não podiam ser 47 soluções diferentes */
 .avanca-section--system {
   padding: 0 65px;
