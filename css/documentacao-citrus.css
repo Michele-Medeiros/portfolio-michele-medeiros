@@ -1607,4 +1607,36 @@ body {
     line-height: 1.4;
     color: #c5595c;
   }
+
+  /* Seção 5 (tablet): Chamada de transição — Figma 768 × 242, padding 48px */
+  .citrus-tablet__callout {
+    padding: 48px;
+  }
+
+  .citrus-tablet__callout-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    background: #122f5d;
+    border-radius: 24px;
+    text-align: center;
+  }
+
+  .citrus-tablet__callout-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.95;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .citrus-tablet__callout-text span {
+    display: block;
+    margin-top: 8px;
+    font-size: 24px;
+    color: #fd8285;
+  }
 }
