@@ -944,6 +944,35 @@
   color: #e1e6f5;
 }
 
+/* Seção O MEI precisava resolver pelo celular (tablet) */
+.avanca-tablet__card--compact {
+  padding: 14px;
+  gap: 6px;
+}
+
+.avanca-tablet__card--phone {
+  padding: 12px;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.avanca-tablet__phone-img {
+  width: 200px;
+  height: 404px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.avanca-tablet__card-title--phone {
+  font-size: 15px;
+  text-align: center;
+}
+
+.avanca-tablet__card-title--lg {
+  font-size: 20px;
+}
+
 /* Seção Revelar complexidade (tablet) */
 .avanca-tablet__card--roomy {
   gap: 10px;
@@ -998,6 +1027,11 @@
   .avanca-tablet__cycle {
     grid-template-columns: minmax(0, 1fr);
   }
+}
+
+/* Grade de cards em duas colunas (tablet) — cards de passos e telas */
+.avanca-tablet__grid + .avanca-tablet__card--full {
+  margin-top: 0;
 }
 
 /* Grade de cards em duas colunas (tablet) */
