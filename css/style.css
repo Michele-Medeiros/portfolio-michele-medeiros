@@ -198,6 +198,18 @@ main {
   flex-shrink: 0;
 }
 
+/* Título "No que trabalhei recentemente": centralizado só no mobile */
+.section-title--recent {
+  text-align: left;
+}
+
+@media (max-width: 499px) {
+  .section-title--recent {
+    align-self: stretch;
+    text-align: center;
+  }
+}
+
 /* Mobile (<500px): texto e ícone centralizados em coluna */
 @media (max-width: 499px) {
   .site-footer {
