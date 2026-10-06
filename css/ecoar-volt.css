@@ -1148,7 +1148,7 @@
   }
 
   .ecoar-mobile .ecoar-tablet__highlight {
-    flex-basis: calc(50% - 8px);
+    flex-basis: 100%;
     padding: 16px 20px;
   }
 
