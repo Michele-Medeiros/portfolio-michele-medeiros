@@ -2611,4 +2611,87 @@ body {
     line-height: 1.4;
     color: #56565a;
   }
+
+  /* Seção 8 (mobile): Design System — Figma 390 × 1180, três cards empilhados */
+  .citrus-mobile__ds {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 36px 20px;
+  }
+
+  .citrus-mobile__ds-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .citrus-mobile__ds-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #9b9b9d;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .citrus-mobile__ds-card--light {
+    background: #eef2f9;
+  }
+
+  .citrus-mobile__ds-card--dark {
+    background: #122f5d;
+    border-color: #122f5d;
+  }
+
+  .citrus-mobile__ds-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #122f5d;
+    text-transform: uppercase;
+  }
+
+  .citrus-mobile__ds-card--dark .citrus-mobile__ds-label {
+    color: #fd8285;
+  }
+
+  .citrus-mobile__ds-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-mobile__ds-card--dark .citrus-mobile__ds-title {
+    color: #efefef;
+  }
+
+  .citrus-mobile__ds-list {
+    padding-left: 22.5px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    color: #56565a;
+    list-style: disc;
+  }
+
+  .citrus-mobile__ds-list li {
+    margin-bottom: 12px;
+  }
+
+  .citrus-mobile__ds-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .citrus-mobile__ds-card--dark .citrus-mobile__ds-list {
+    color: #fefefe;
+  }
 }
