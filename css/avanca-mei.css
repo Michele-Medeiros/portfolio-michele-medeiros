@@ -944,6 +944,41 @@
   color: #e1e6f5;
 }
 
+/* Seção O ciclo da oportunidade (tablet): três colunas, último card ocupa a linha */
+.avanca-tablet__cycle {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.avanca-tablet__card--step {
+  padding: 16px;
+  gap: 8px;
+}
+
+.avanca-tablet__card--span {
+  grid-column: 1 / -1;
+}
+
+.avanca-tablet__card-num {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #122f5d;
+}
+
+.avanca-tablet__card-title--sm {
+  font-size: 16px;
+}
+
+@media (max-width: 639px) {
+  .avanca-tablet__cycle {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 /* Grade de cards em duas colunas (tablet) */
 .avanca-tablet__grid {
   display: flex;
