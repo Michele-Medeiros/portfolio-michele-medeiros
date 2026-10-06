@@ -2569,4 +2569,46 @@ body {
     aspect-ratio: 1920 / 1185;
     object-fit: contain;
   }
+
+  /* Seção 7 (mobile): Antes e nova abordagem — Figma 390 × 668, cards empilhados */
+  .citrus-mobile__before {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 36px 20px;
+  }
+
+  .citrus-mobile__before-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .citrus-mobile__before-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px 20px;
+    background: #fff;
+    border: 1px solid #e4e3e3;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .citrus-mobile__before-label {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-mobile__before-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #56565a;
+  }
 }
