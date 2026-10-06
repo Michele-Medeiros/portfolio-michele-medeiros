@@ -1462,4 +1462,93 @@ body {
     line-height: 1.4;
     color: #56565a;
   }
+
+  /* Seção 2 (tablet): Problema — Figma 768 × 594, padding 48px, gap 16px */
+  .citrus-tablet__problem {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px;
+  }
+
+  .citrus-tablet__accent {
+    width: 40px;
+    height: 4px;
+    background: #5029de;
+  }
+
+  .citrus-tablet__section-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #151414;
+  }
+
+  .citrus-tablet__section-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #56565a;
+  }
+
+  .citrus-tablet__cards {
+    display: flex;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .citrus-tablet__card {
+    flex: 1 0 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #e4e3e3;
+    border-radius: 24px;
+  }
+
+  .citrus-tablet__card--dark {
+    background: #122f5d;
+    border-color: #122f5d;
+  }
+
+  .citrus-tablet__chip {
+    align-self: flex-start;
+    padding: 6px 14px;
+    background: #e6ecff;
+    border-radius: 900px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #151414;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .citrus-tablet__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.25;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-tablet__card--dark .citrus-tablet__card-title,
+  .citrus-tablet__card--dark .citrus-tablet__card-text {
+    color: #fff;
+  }
+
+  .citrus-tablet__card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #252628;
+  }
 }
