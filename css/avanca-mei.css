@@ -973,6 +973,54 @@
   font-size: 20px;
 }
 
+/* Seção High fidelity com telas reais (tablet) */
+.avanca-tablet__card--shot {
+  gap: 10px;
+  padding: 16px;
+}
+
+.avanca-tablet__card--shot .avanca-tablet__panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  background: #eee;
+  border-radius: 12px;
+}
+
+.avanca-tablet__card--shot .avanca-tablet__panel img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__panel-img--desk {
+  width: 380px;
+  max-width: calc(100% - 206px);
+}
+
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__panel-img--mobile {
+  width: 190px;
+}
+
+.avanca-tablet__card--shot .avanca-tablet__panel > img:only-child {
+  width: 600px;
+  max-width: 100%;
+}
+
+.avanca-tablet__shot-tag {
+  margin: 0;
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #151414;
+}
+
 /* Seção 47 telas não podiam ser 47 soluções diferentes (tablet) */
 .avanca-tablet__card--patterns {
   padding: 20px;
@@ -1162,3 +1210,10 @@
     padding: 36px 24px;
   }
 }
+
+/* Caixas de altura fixa das telas da galeria (tablet), com a tela contida */
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h215 { width: 600px; height: 215px; object-fit: contain; }
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h430 { width: 380px; height: 430px; object-fit: contain; }
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h386 { width: 190px; height: 386px; object-fit: contain; }
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h621 { width: 600px; height: 621px; object-fit: contain; }
+.avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h677 { width: 600px; height: 677px; object-fit: contain; }
