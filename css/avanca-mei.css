@@ -973,6 +973,13 @@
   font-size: 20px;
 }
 
+/* Seção Estado é parte da lógica de negócio (tablet) */
+.avanca-tablet__status-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
 /* Seção Revelar complexidade (tablet) */
 .avanca-tablet__card--roomy {
   gap: 10px;
