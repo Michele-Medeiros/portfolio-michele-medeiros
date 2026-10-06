@@ -2901,4 +2901,76 @@ body {
     height: 567px;
     object-fit: contain;
   }
+
+  /* Seção (mobile): Feedback e orientação — cards empilhados, imagens 318px de largura */
+  .citrus-mobile__fb {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 36px 20px;
+  }
+
+  .citrus-mobile__fb-head {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .citrus-mobile__fb-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .citrus-mobile__fb-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px 8px 18px;
+    background: #fff;
+    border: 1px solid #e4e3e3;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .citrus-mobile__fb-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    background: #efefef;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .citrus-mobile__fb-img {
+    display: block;
+    width: 318px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .citrus-mobile__fb-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 4px 10px 0;
+  }
+
+  .citrus-mobile__fb-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-mobile__fb-desc {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #56565a;
+  }
 }
