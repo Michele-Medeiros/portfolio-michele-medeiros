@@ -323,6 +323,112 @@ body {
     letter-spacing: 0.36px;
     color: #252628;
   }
+
+  /* Seção 5: Complexidade
+     Figma: frame 1728 × 666, padding lateral 65px, gap de 32px.
+     Fluxo de cinco cards de 415px ligados por setas vermelhas
+     (3 na primeira linha, 2 na segunda). */
+  .citrus-cost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 100px;
+    padding-inline: 65px;
+  }
+
+  .citrus-cost__header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .citrus-cost__title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.95;
+    color: #151414;
+    white-space: nowrap;
+  }
+
+  .citrus-cost__text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    color: #151414;
+    text-align: justify;
+  }
+
+  .citrus-cost__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+  }
+
+  .citrus-cost__row--second {
+    width: 1058px;
+    max-width: 100%;
+  }
+
+  .citrus-cost__card {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 24px;
+    min-width: 0;
+  }
+
+  .citrus-cost__row--second .citrus-cost__card {
+    flex: 0 0 415px;
+  }
+
+  .citrus-cost__labels {
+    display: flex;
+    flex-direction: column;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .citrus-cost__num {
+    font-size: 14px;
+    line-height: 1.95;
+    color: #c5595c;
+  }
+
+  .citrus-cost__card-title {
+    font-size: 18px;
+    line-height: 1.95;
+    color: #151414;
+  }
+
+  .citrus-cost__card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: #56565a;
+  }
+
+  .citrus-cost__arrow {
+    display: block;
+    flex-shrink: 0;
+    width: 35px;
+    height: 22px;
+    margin-inline: -0.75px;
+  }
 }
 
 /* ========================================================================
