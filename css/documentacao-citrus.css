@@ -1,0 +1,165 @@
+/* ========================================================================
+   Documentação Citrus — versão web
+   Exibida apenas em telas a partir de 1000px.
+   Medidas do frame "Citrus" do Figma (1728px de largura).
+   ======================================================================== */
+
+body {
+  background: #f7f7f7;
+}
+
+.citrus-doc {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .citrus-doc {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  /* Centraliza sem cortar o conteúdo que for mais largo que a tela */
+  .citrus-doc > * {
+    margin-inline: auto;
+  }
+
+  /* Seção 1: Cabeçalho
+     Usa a mesma navbar compartilhada de style.css, igual às demais
+     páginas de documentação. */
+
+  /* Seção 2: Apresentação
+     Figma: conteúdo a partir de 188px (navbar), padding lateral 65px.
+     Coluna de texto 1407px com gap de 50px; barra roxa 1680 × 6px. */
+  .citrus-hero {
+    width: 1728px;
+    max-width: 100%;
+    margin-top: 65px;
+  }
+
+  .citrus-hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+  }
+
+  .citrus-hero__info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    width: 1407px;
+    max-width: 100%;
+    padding-inline: 65px;
+  }
+
+  .citrus-hero__tags {
+    padding-left: 12px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    color: #122f5d;
+  }
+
+  .citrus-hero__name {
+    width: 749px;
+    max-width: 100%;
+    padding-left: 12px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 1.45;
+    color: #151414;
+  }
+
+  .citrus-hero__desc {
+    padding-left: 12px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    color: #262626;
+    text-align: justify;
+  }
+
+  .citrus-hero__quote {
+    padding-left: 12px;
+    border-left: 4px solid #5029de;
+    font-family: "Kufam", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.55;
+    color: #262626;
+    text-align: justify;
+  }
+
+  .citrus-hero__cards {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .citrus-hero__card {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 32px;
+    background: #fff;
+    border: 1px solid #e4e3e3;
+    border-radius: 24px;
+  }
+
+  .citrus-hero__card-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.95;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-hero__card-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.32px;
+    color: #56565a;
+  }
+
+  .citrus-hero__bar {
+    width: 1680px;
+    max-width: 100%;
+    height: 6px;
+    background: #5029de;
+  }
+}
+
+/* ========================================================================
+   Zoom para telas menores que 1728px (mesma escala das outras documentações)
+   ======================================================================== */
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .citrus-doc {
+    zoom: 0.57;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .citrus-doc {
+    zoom: 0.69;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1727px) {
+  .citrus-doc {
+    zoom: 0.83;
+  }
+}
