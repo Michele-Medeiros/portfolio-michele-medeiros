@@ -1313,6 +1313,16 @@
     gap: 6px;
   }
 
+  /* Galeria de telas (mobile): telas na largura do painel */
+  .avanca-mobile .avanca-tablet__panel--pair {
+    flex-direction: column;
+  }
+
+  .avanca-mobile .avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h215 { width: 100%; height: 111px; }
+  .avanca-mobile .avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h430 { width: 100%; height: 352px; }
+  .avanca-mobile .avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h621 { width: 100%; height: 321px; }
+  .avanca-mobile .avanca-tablet__card--shot .avanca-tablet__panel img.avanca-tablet__shot-img--h677 { width: 100%; height: 350px; }
+
   /* Cards compactos (princípios e estados) em duas colunas */
   .avanca-mobile .avanca-tablet__grid:has(> .avanca-tablet__card--compact) {
     gap: 12px;
