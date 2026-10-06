@@ -2391,4 +2391,38 @@ body {
   .citrus-mobile__card--dark .citrus-mobile__card-text {
     color: #fff;
   }
+
+  /* Seção 3 (mobile): Canais — Figma 390 × 966, cards empilhados com gap 12px */
+  .citrus-mobile__channels {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 36px 20px;
+  }
+
+  .citrus-mobile__channel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .citrus-mobile__channel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e3e3;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .citrus-mobile__channel-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #252628;
+  }
 }
