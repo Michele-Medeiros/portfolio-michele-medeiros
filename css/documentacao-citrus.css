@@ -2995,4 +2995,96 @@ body {
   .citrus-mobile__pair-card--dark .citrus-mobile__cost-text {
     color: #fefefe;
   }
+
+  /* Seção (mobile): Resultados — cards brancos empilhados e indicadores azuis empilhados */
+  .citrus-mobile__results {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 36px 20px;
+  }
+
+  .citrus-mobile__results-head {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .citrus-mobile__results-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .citrus-mobile__result {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e3e3;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .citrus-mobile__result-tag {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.4;
+    color: #636262;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .citrus-mobile__result-tag span {
+    margin-right: 6px;
+  }
+
+  .citrus-mobile__result-change {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #151414;
+    text-transform: uppercase;
+  }
+
+  .citrus-mobile__result-change span {
+    display: block;
+  }
+
+  .citrus-mobile__result-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #56565a;
+  }
+
+  .citrus-mobile__indicator {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #122f5d;
+    border-radius: 24px;
+  }
+
+  .citrus-mobile__indicator-title {
+    font-family: "Kufam", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #efefef;
+    text-transform: uppercase;
+  }
+
+  .citrus-mobile__indicator-text {
+    font-family: "Kufam", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #fefefe;
+  }
 }
