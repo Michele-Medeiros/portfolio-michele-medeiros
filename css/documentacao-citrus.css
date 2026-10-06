@@ -1564,12 +1564,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .citrus-tablet__grid .citrus-tablet__card {
     flex: 0 0 328px;
-    height: 189px;
+    min-height: 189px;
     gap: 10px;
     overflow: hidden;
   }
@@ -1584,7 +1584,7 @@ body {
 
   .citrus-tablet__cost-card {
     flex: 0 0 328px;
-    height: 157px;
+    min-height: 157px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1597,7 +1597,7 @@ body {
 
   .citrus-tablet__cost-card--wide {
     flex-basis: 100%;
-    height: 135px;
+    min-height: 135px;
   }
 
   .citrus-tablet__cost-num {
@@ -1842,7 +1842,7 @@ body {
   }
 
   .citrus-tablet__cost-card--tall {
-    height: 179px;
+    min-height: 179px;
   }
 
   .citrus-tablet__gallery {
@@ -2068,7 +2068,7 @@ body {
 
   .citrus-tablet__result-card {
     flex: 0 0 328px;
-    height: 173px;
+    min-height: 173px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -2136,5 +2136,60 @@ body {
     font-size: 13px;
     line-height: 1.4;
     color: #fefefe;
+  }
+
+  /* Telas abaixo de 768px: cards e imagens ocupam a largura disponível */
+  @media (max-width: 767px) {
+    .citrus-tablet .citrus-tablet__grid > *,
+    .citrus-tablet .citrus-tablet__numbers > *,
+    .citrus-tablet .citrus-tablet__cards > *,
+    .citrus-tablet .citrus-tablet__before-row > * {
+      flex: 0 0 calc(50% - 8px);
+      width: calc(50% - 8px);
+      min-width: 0;
+      height: auto;
+    }
+
+    .citrus-tablet .citrus-tablet__grid > .citrus-tablet__cost-card--wide {
+      flex: 0 0 100%;
+      width: 100%;
+    }
+
+    .citrus-tablet img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .citrus-tablet__panel-img,
+    .citrus-tablet__slide-img--tall,
+    .citrus-tablet__fb-img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: auto;
+    }
+
+    .citrus-tablet__panel-img,
+    .citrus-tablet__fb-img,
+    .citrus-tablet__slide-img--tall {
+      object-fit: initial;
+    }
+  }
+
+  /* Telas abaixo de 646px: cards empilhados, cada um com a largura total */
+  @media (max-width: 645px) {
+    .citrus-tablet .citrus-tablet__grid > *,
+    .citrus-tablet .citrus-tablet__numbers > *,
+    .citrus-tablet .citrus-tablet__cards > *,
+    .citrus-tablet .citrus-tablet__before-row > *,
+    .citrus-tablet .citrus-tablet__indicators > * {
+      flex: 0 0 100%;
+      width: 100%;
+    }
+
+    .citrus-tablet__before-row,
+    .citrus-tablet__cards,
+    .citrus-tablet__indicators {
+      flex-direction: column;
+    }
   }
 }
