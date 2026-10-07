@@ -210,44 +210,42 @@
       </div>
     </section>
 
-    <div class="partner-divider"></div>
-
     <!-- Seção 7: Fluxos do MVP (diagramas em carrossel: um por vez) -->
-    <section class="partner-flows">
+    <section class="partner-flows" data-carousel>
       <div class="partner-flows__stage">
         <button class="partner-flows__btn" type="button" data-dir="-1" aria-label="Diagrama anterior">&larr;</button>
-        <div class="partner-flows__track" id="partnerFlows">
-      <figure class="partner-flow is-active">
+        <div class="partner-flows__track" data-carousel-track>
+      <figure class="partner-flow is-active" data-carousel-slide>
         <div class="partner-flow__inner partner-flow__inner--crop">
           <img src="assets/images/partner/flow-1.png" alt="Diagrama de fluxo 1 do MVP do Portal do Parceiro" width="4096" height="2738">
         </div>
       </figure>
-      <figure class="partner-flow">
+      <figure class="partner-flow" data-carousel-slide>
         <div class="partner-flow__inner">
           <img src="assets/images/partner/flow-2.png" alt="Diagrama de fluxo 2 do MVP do Portal do Parceiro" width="2368" height="2784">
         </div>
       </figure>
-      <figure class="partner-flow">
+      <figure class="partner-flow" data-carousel-slide>
         <div class="partner-flow__inner">
           <img src="assets/images/partner/flow-3.png" alt="Diagrama de fluxo 3 do MVP do Portal do Parceiro" width="3488" height="2976">
         </div>
       </figure>
-      <figure class="partner-flow">
+      <figure class="partner-flow" data-carousel-slide>
         <div class="partner-flow__inner">
           <img src="assets/images/partner/flow-4.png" alt="Diagrama de fluxo 4 do MVP do Portal do Parceiro" width="3136" height="2656">
         </div>
       </figure>
-      <figure class="partner-flow">
+      <figure class="partner-flow" data-carousel-slide>
         <div class="partner-flow__inner">
           <img src="assets/images/partner/flow-5.png" alt="Diagrama de fluxo 5 do MVP do Portal do Parceiro" width="3616" height="3136">
         </div>
       </figure>
-      <figure class="partner-flow">
+      <figure class="partner-flow" data-carousel-slide>
         <div class="partner-flow__inner">
           <img src="assets/images/partner/flow-6.png" alt="Diagrama de fluxo 6 do MVP do Portal do Parceiro" width="2016" height="2560">
         </div>
       </figure>
-      <figure class="partner-flow">
+      <figure class="partner-flow" data-carousel-slide>
         <div class="partner-flow__inner">
           <img src="assets/images/partner/flow-7.png" alt="Diagrama de fluxo 7 do MVP do Portal do Parceiro" width="2624" height="3584">
         </div>
@@ -255,7 +253,7 @@
         </div>
         <button class="partner-flows__btn" type="button" data-dir="1" aria-label="Próximo diagrama">&rarr;</button>
       </div>
-      <div class="partner-flows__dots" id="partnerFlowsDots">
+      <div class="partner-flows__dots" data-carousel-dots>
           <button class="partner-flows__dot is-active" type="button" data-index="0" aria-label="Diagrama 1 de 7"></button>
           <button class="partner-flows__dot" type="button" data-index="1" aria-label="Diagrama 2 de 7"></button>
           <button class="partner-flows__dot" type="button" data-index="2" aria-label="Diagrama 3 de 7"></button>
@@ -504,6 +502,822 @@
 
   </div>
 
+  <!-- ======================================================================
+       Versão tablet (500px a 999px)
+       ====================================================================== -->
+  <div class="partner-tablet">
+
+    <!-- Seção 1: Apresentação do projeto -->
+    <section class="partner-tablet__hero">
+      <div class="partner-tablet__text">
+        <p class="partner-tablet__tags">Product Design · Information Architecture · UX/UI · B2B Platform</p>
+        <h1 class="partner-tablet__name">Portal do Parceiro.</h1>
+        <p class="partner-tablet__subtitle">Uma visão única para acompanhar sua operação comercial</p>
+        <p class="partner-tablet__desc">Um portal B2B criado para resolver uma lacuna que nem Smartspace nem Citrus atendiam: permitir que vendedores acompanhassem, com clareza, sua carteira, suas oportunidades e a evolução das vendas em um único ambiente.</p>
+        <blockquote class="partner-tablet__quote">O produto não cria novos dados. Ele permite ao usuário uma forma de enxergar sua operação.</blockquote>
+      </div>
+
+      <div class="partner-tablet__cards">
+        <div class="partner-tablet__card">
+          <p class="partner-tablet__card-title">Produto</p>
+          <p class="partner-tablet__card-text">PORTAL DO PARCEIRO</p>
+        </div>
+        <div class="partner-tablet__card">
+          <p class="partner-tablet__card-title">Contexto</p>
+          <p class="partner-tablet__card-text">VENDEDORES SMARTPACE E CITRUS</p>
+        </div>
+        <div class="partner-tablet__card">
+          <p class="partner-tablet__card-title">Escopo</p>
+          <p class="partner-tablet__card-text">6 módulos para MVP</p>
+        </div>
+        <div class="partner-tablet__card">
+          <p class="partner-tablet__card-title">Implementação</p>
+          <p class="partner-tablet__card-text">Q4</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 2: O projeto em 30 segundos -->
+    <section class="partner-tablet__section">
+      <span class="partner-tablet__accent"></span>
+      <h2 class="partner-tablet__section-title">O projeto em 30 segundos</h2>
+      <p class="partner-tablet__section-text">Os vendedores não conseguiam acompanhar adequadamente seu desempenho, suas oportunidades e a evolução das vendas em nenhum dos sistemas existentes. Smartspace e Citrus sustentavam partes da operação, mas nenhum deles entregava uma visão comercial consolidada para o parceiro</p>
+
+      <div class="partner-tablet__pairs">
+        <article class="partner-tablet__pair">
+          <span class="partner-tablet__chip">Problema</span>
+          <h3 class="partner-tablet__pair-title">Faltava visibilidade da própria operação</h3>
+          <p class="partner-tablet__pair-text">O vendedor precisava entender o que estava em andamento, quais contas exigiam atenção e como sua carteira evoluía — sem encontrar essa leitura pronta em Smartspace ou Citrus.</p>
+        </article>
+        <article class="partner-tablet__pair partner-tablet__pair--dark">
+          <span class="partner-tablet__chip">Desafio</span>
+          <h3 class="partner-tablet__pair-title">Entregar rápido sem gerar dívida de produto</h3>
+          <p class="partner-tablet__pair-text">Antes de desenhar, validei como os dois sistemas já tratavam dados e funcionalidades. Isso permitiu apoiar a nova experiência em estruturas reais, reduzir incertezas e antecipar problemas de implementação.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 3: O problema era falta de visão -->
+    <section class="partner-tablet__section">
+      <span class="partner-tablet__accent"></span>
+      <h2 class="partner-tablet__section-title">O problema era falta de visão.</h2>
+
+      <article class="partner-tablet__anchor">
+        <p class="partner-tablet__anchor-label">O achado que ancorou o case</p>
+        <h3 class="partner-tablet__anchor-title">O vendedor precisava enxergar sua operação.</h3>
+        <p class="partner-tablet__anchor-text">O Portal do Parceiro nasceu para preencher uma lacuna que Smartspace e Citrus não resolviam: transformar dados e capacidades já existentes em uma visão comercial realmente acompanhável.</p>
+      </article>
+
+      <div class="partner-tablet__compare">
+        <article class="partner-tablet__compare-card">
+          <h3 class="partner-tablet__compare-title">Citrus atual</h3>
+          <p class="partner-tablet__compare-text">Sem uma visão única de carteira e vendas, o acompanhamento dependia de navegar entre sistemas e informações fragmentadas que os próprios parceiros tentavam documentar de forma agrupada.</p>
+        </article>
+        <span class="partner-tablet__arrow" aria-hidden="true">&rarr;</span>
+        <article class="partner-tablet__compare-card">
+          <h3 class="partner-tablet__compare-title">Portal do parceiro</h3>
+          <p class="partner-tablet__compare-text">Carteira, oportunidades, contas, materiais e indicadores passam a compor uma única leitura operacional para o vendedor.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 4: Meu papel no projeto -->
+    <section class="partner-tablet__section">
+      <span class="partner-tablet__accent"></span>
+      <h2 class="partner-tablet__section-title">Meu papel no projeto</h2>
+      <p class="partner-tablet__section-text">A demanda veio do time Comercial, e o trabalho começou antes da interface: estruturação do problema, arquitetura, fluxos e cenários do MVP.</p>
+
+      <div class="partner-tablet__roles">
+        <article class="partner-tablet__role">
+          <h3 class="partner-tablet__role-title">Product framing</h3>
+          <p class="partner-tablet__role-text">Entendimento da demanda e definição do problema real.</p>
+        </article>
+        <article class="partner-tablet__role">
+          <h3 class="partner-tablet__role-title">Arquitetura de informação</h3>
+          <p class="partner-tablet__role-text">Estrutura dos módulos e navegação do portal.</p>
+        </article>
+        <article class="partner-tablet__role">
+          <h3 class="partner-tablet__role-title">Fluxos &amp; cenários</h3>
+          <p class="partner-tablet__role-text">Happy paths, exceções e estados do MVP.</p>
+        </article>
+        <article class="partner-tablet__role">
+          <h3 class="partner-tablet__role-title">Pesquisa com parceiros</h3>
+          <p class="partner-tablet__role-text">Validação de aderência com usuários reais.</p>
+        </article>
+        <article class="partner-tablet__role partner-tablet__role--wide">
+          <h3 class="partner-tablet__role-title">Design System</h3>
+          <p class="partner-tablet__role-text">Criação de um novo sistema visual capaz de dialogar com Smartspace e Citrus, preservando coerência sem copiar integralmente nenhum dos dois.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 5: Pesquisa com parceiros reais -->
+    <section class="partner-tablet__section">
+      <span class="partner-tablet__accent"></span>
+      <h2 class="partner-tablet__section-title">Pesquisa com parceiros reais</h2>
+      <p class="partner-tablet__section-text">A estrutura do produto foi validada com parceiros para verificar aderência às rotinas e necessidades do público. O case mantém espaço para documentar futuramente um achado específico da pesquisa que tenha alterado uma decisão de tela.</p>
+    </section>
+
+    <!-- Seção 6: Antes de desenhar telas, desenhei o sistema -->
+    <section class="partner-tablet__section">
+      <span class="partner-tablet__accent"></span>
+      <h2 class="partner-tablet__section-title">Antes de desenhar telas, desenhei o sistema</h2>
+      <p class="partner-tablet__section-text">O MVP foi estruturado em módulos conectados por uma navegação persistente e fluxos definidos antes da alta fidelidade. Explorei cenários, analisei contextos e levantei os que tínhamos ou não de dados</p>
+
+      <div class="partner-tablet__steps">
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">01</span>
+          <h3 class="partner-tablet__step-title">login</h3>
+          <p class="partner-tablet__step-text">Acesso e recuperação de senha.</p>
+        </article>
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">02</span>
+          <h3 class="partner-tablet__step-title">dashboard</h3>
+          <p class="partner-tablet__step-text">Visão consolidada da operação.</p>
+        </article>
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">03</span>
+          <h3 class="partner-tablet__step-title">oportunidades</h3>
+          <p class="partner-tablet__step-text">Pipeline, etapas e detalhes.</p>
+        </article>
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">04</span>
+          <h3 class="partner-tablet__step-title">contas</h3>
+          <p class="partner-tablet__step-text">Carteira e histórico.</p>
+        </article>
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">05</span>
+          <h3 class="partner-tablet__step-title">materiais</h3>
+          <p class="partner-tablet__step-text">Catálogo, busca e download.</p>
+        </article>
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">06</span>
+          <h3 class="partner-tablet__step-title">Perfil</h3>
+          <p class="partner-tablet__step-text">Dados, permissões e segurança.</p>
+        </article>
+      </div>
+
+      <div class="partner-tablet__flows" data-carousel>
+        <div class="partner-tablet__flows-stage">
+          <button class="partner-tablet__flows-btn" type="button" data-dir="-1" aria-label="Diagrama anterior">&larr;</button>
+          <div class="partner-tablet__flows-track" data-carousel-track>
+            <figure class="partner-tablet__flow is-active" data-carousel-slide>
+              <div class="partner-tablet__panel partner-tablet__panel--crop">
+                <img src="assets/images/partner/flow-1.png" alt="Diagrama de fluxo 1 do MVP do Portal do Parceiro" width="4096" height="2738">
+              </div>
+            </figure>
+            <figure class="partner-tablet__flow" data-carousel-slide>
+              <div class="partner-tablet__panel">
+                <img src="assets/images/partner/flow-2.png" alt="Diagrama de fluxo 2 do MVP do Portal do Parceiro" width="2368" height="2784">
+              </div>
+            </figure>
+            <figure class="partner-tablet__flow" data-carousel-slide>
+              <div class="partner-tablet__panel">
+                <img src="assets/images/partner/flow-3.png" alt="Diagrama de fluxo 3 do MVP do Portal do Parceiro" width="3488" height="2976">
+              </div>
+            </figure>
+            <figure class="partner-tablet__flow" data-carousel-slide>
+              <div class="partner-tablet__panel">
+                <img src="assets/images/partner/flow-4.png" alt="Diagrama de fluxo 4 do MVP do Portal do Parceiro" width="3136" height="2656">
+              </div>
+            </figure>
+            <figure class="partner-tablet__flow" data-carousel-slide>
+              <div class="partner-tablet__panel">
+                <img src="assets/images/partner/flow-5.png" alt="Diagrama de fluxo 5 do MVP do Portal do Parceiro" width="3616" height="3136">
+              </div>
+            </figure>
+            <figure class="partner-tablet__flow" data-carousel-slide>
+              <div class="partner-tablet__panel">
+                <img src="assets/images/partner/flow-6.png" alt="Diagrama de fluxo 6 do MVP do Portal do Parceiro" width="2016" height="2560">
+              </div>
+            </figure>
+            <figure class="partner-tablet__flow" data-carousel-slide>
+              <div class="partner-tablet__panel">
+                <img src="assets/images/partner/flow-7.png" alt="Diagrama de fluxo 7 do MVP do Portal do Parceiro" width="2624" height="3584">
+              </div>
+            </figure>
+          </div>
+          <button class="partner-tablet__flows-btn" type="button" data-dir="1" aria-label="Próximo diagrama">&rarr;</button>
+        </div>
+        <div class="partner-tablet__flows-dots" data-carousel-dots>
+          <button class="partner-tablet__flows-dot is-active" type="button" data-index="0" aria-label="Diagrama 1 de 7"></button>
+          <button class="partner-tablet__flows-dot" type="button" data-index="1" aria-label="Diagrama 2 de 7"></button>
+          <button class="partner-tablet__flows-dot" type="button" data-index="2" aria-label="Diagrama 3 de 7"></button>
+          <button class="partner-tablet__flows-dot" type="button" data-index="3" aria-label="Diagrama 4 de 7"></button>
+          <button class="partner-tablet__flows-dot" type="button" data-index="4" aria-label="Diagrama 5 de 7"></button>
+          <button class="partner-tablet__flows-dot" type="button" data-index="5" aria-label="Diagrama 6 de 7"></button>
+          <button class="partner-tablet__flows-dot" type="button" data-index="6" aria-label="Diagrama 7 de 7"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 7: Dashboard como cama de síntese -->
+    <section class="partner-tablet__section">
+      <span class="partner-tablet__accent"></span>
+      <h2 class="partner-tablet__section-title">Dashboard como cama de síntese</h2>
+      <p class="partner-tablet__section-text">O dashboard não nasceu para “mostrar tudo”. Ele foi pensado para concentrar os principais sinais da operação comercial e permitir que o parceiro entenda rapidamente o que exige atenção.</p>
+
+      <article class="partner-tablet__info-card">
+        <h3 class="partner-tablet__info-title">Dashboard como camada de síntese</h3>
+        <p class="partner-tablet__info-text">O dashboard não nasceu para “mostrar KPIs”. Ele é o ponto onde informações antes fragmentadas passam a fazer sentido juntas: oportunidades, valor em pipeline, contas, materiais, atividades e comunicados.</p>
+      </article>
+
+      <div class="partner-tablet__panel">
+        <img src="assets/images/partner/dashboard.png" alt="Tela do dashboard do Portal do Parceiro" width="1920" height="1650">
+      </div>
+    </section>
+
+    <!-- Seção 8: Da visão macro ao detalhe -->
+    <section class="partner-tablet__section">
+      <span class="partner-tablet__accent"></span>
+      <h2 class="partner-tablet__section-title">Da visão macro ao detalhe</h2>
+      <p class="partner-tablet__section-text">O fluxo de oportunidades permite partir do pipeline, entrar em uma etapa, consultar a lista correspondente e aprofundar em uma oportunidade específica sem perder o contexto da carteira.</p>
+
+      <div class="partner-tablet__steps">
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">01</span>
+          <h3 class="partner-tablet__step-title">Pipeline</h3>
+          <p class="partner-tablet__step-text">Visão geral por etapa.</p>
+        </article>
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">02</span>
+          <h3 class="partner-tablet__step-title">Etapa</h3>
+          <p class="partner-tablet__step-text">Recorte do funil selecionado.</p>
+        </article>
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">03</span>
+          <h3 class="partner-tablet__step-title">Lista</h3>
+          <p class="partner-tablet__step-text">Oportunidades relacionadas.</p>
+        </article>
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">04</span>
+          <h3 class="partner-tablet__step-title">Detalhe</h3>
+          <p class="partner-tablet__step-text">Informações e histórico da oportunidade.</p>
+        </article>
+      </div>
+
+      <div class="partner-tablet__panel">
+        <img src="assets/images/partner/oportunidades.png" alt="Tela de oportunidades do Portal do Parceiro" width="1920" height="1720">
+      </div>
+    </section>
+
+    <!-- Seção 9: Encontrar, não apenas armazenar -->
+    <section class="partner-tablet__section">
+      <span class="partner-tablet__accent"></span>
+      <h2 class="partner-tablet__section-title">Encontrar, não apenas armazenar</h2>
+      <p class="partner-tablet__section-text">A área de Materiais de Marketing foi organizada para ajudar o parceiro a localizar o conteúdo certo por contexto, produto e necessidade, em vez de funcionar apenas como um repositório de arquivos.</p>
+
+      <div class="partner-tablet__steps">
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">01</span>
+          <h3 class="partner-tablet__step-title">Descobrir</h3>
+          <p class="partner-tablet__step-text">Buscar oportunidades compatíveis com o perfil do usuário.</p>
+        </article>
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">02</span>
+          <h3 class="partner-tablet__step-title">Entender</h3>
+          <p class="partner-tablet__step-text">Ver detalhes, requisitos e compatibilidades antes de agir.</p>
+        </article>
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">03</span>
+          <h3 class="partner-tablet__step-title">Propor</h3>
+          <p class="partner-tablet__step-text">Enviar valores e condições dentro do contexto da oportunidade.</p>
+        </article>
+        <article class="partner-tablet__step">
+          <span class="partner-tablet__step-number">04</span>
+          <h3 class="partner-tablet__step-title">Acompanhar</h3>
+          <p class="partner-tablet__step-text">Consultar status, editar rascunhos e voltar para a oportunidade relacionada.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 10: Em um processo novo, suporte também faz parte da experiência -->
+    <section class="partner-tablet__section">
+      <span class="partner-tablet__accent"></span>
+      <h2 class="partner-tablet__section-title">Em um processo novo, suporte também faz parte da experiência</h2>
+      <p class="partner-tablet__section-text">As perguntas frequentes mostram que o produto não precisava explicar apenas a interface, mas o próprio funcionamento do processo: alertas, tipos de serviços, propostas, comparação de preços, pagamentos e exigências cadastrais.</p>
+
+      <div class="partner-tablet__panel">
+        <img src="assets/images/partner/marketing-1.png" alt="Tela de materiais de marketing do Portal do Parceiro" width="1920" height="1080">
+      </div>
+      <div class="partner-tablet__panel">
+        <img src="assets/images/partner/marketing-2.png" alt="Tela de apresentações comerciais do Portal do Parceiro" width="1920" height="1424">
+      </div>
+    </section>
+
+    <!-- Seção 11: Da carteira à visão detalhada de cada conta -->
+    <section class="partner-tablet__section">
+      <span class="partner-tablet__accent"></span>
+      <h2 class="partner-tablet__section-title">Da carteira à visão detalhada de cada conta</h2>
+      <p class="partner-tablet__section-text">O módulo de Contas conecta a visão consolidada da carteira ao contexto de cada empresa, reunindo dados cadastrais, contatos, histórico de movimentações e oportunidades relacionadas.</p>
+
+      <div class="partner-tablet__panel">
+        <img src="assets/images/partner/contas-1.png" alt="Tela da lista de contas do Portal do Parceiro" width="1920" height="1080">
+      </div>
+      <div class="partner-tablet__panel">
+        <img src="assets/images/partner/contas-2.png" alt="Tela de detalhe de uma conta do Portal do Parceiro" width="1920" height="1080">
+      </div>
+    </section>
+
+    <!-- Seção 12: O produto também precisava funcionar quando "não havia nada" -->
+    <section class="partner-tablet__section">
+      <span class="partner-tablet__accent"></span>
+      <h2 class="partner-tablet__section-title">O produto também precisava funcionar quando “não havia nada”</h2>
+      <p class="partner-tablet__section-text">Os fluxos foram pensados com estados alternativos e exceções, não apenas com o cenário ideal.</p>
+
+      <div class="partner-tablet__states">
+        <article class="partner-tablet__state">
+          <div class="partner-tablet__state-head">
+            <img class="partner-tablet__dot" src="assets/images/partner/status-1.svg" alt="" width="24" height="24">
+            <h3 class="partner-tablet__state-title">Disponível</h3>
+          </div>
+          <p class="partner-tablet__state-text">Orientação para cadastrar a primeira oportunidade.</p>
+        </article>
+        <article class="partner-tablet__state">
+          <div class="partner-tablet__state-head">
+            <img class="partner-tablet__dot" src="assets/images/partner/status-2.svg" alt="" width="24" height="24">
+            <h3 class="partner-tablet__state-title">Indisponível</h3>
+          </div>
+          <p class="partner-tablet__state-text">Mensagem clara sem interromper o fluxo de recuperação.</p>
+        </article>
+        <article class="partner-tablet__state">
+          <div class="partner-tablet__state-head">
+            <img class="partner-tablet__dot" src="assets/images/partner/status-3.svg" alt="" width="24" height="24">
+            <h3 class="partner-tablet__state-title">Atenção</h3>
+          </div>
+          <p class="partner-tablet__state-text">Direcionamento para suporte em vez de bloqueio silencioso.</p>
+        </article>
+        <article class="partner-tablet__state">
+          <div class="partner-tablet__state-head">
+            <img class="partner-tablet__dot" src="assets/images/partner/status-4.svg" alt="" width="24" height="24">
+            <h3 class="partner-tablet__state-title">Erro/pendência</h3>
+          </div>
+          <p class="partner-tablet__state-text">Estado vazio explícito para reduzir incerteza.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 13: Design ancorado no produto real -->
+    <section class="partner-tablet__section">
+      <span class="partner-tablet__accent"></span>
+      <h2 class="partner-tablet__section-title">Design ancorado no produto real</h2>
+      <p class="partner-tablet__section-text">Cada interface foi desenhada a partir das capacidades e dados que o sistema de fato poderia entregar. A intenção não era produzir uma visão idealizada para apresentação, mas um produto confiável e implementável.</p>
+
+      <div class="partner-tablet__pairs partner-tablet__pairs--anchor">
+        <article class="partner-tablet__pair">
+          <span class="partner-tablet__chip">Princípio</span>
+          <h3 class="partner-tablet__pair-title">Dados reais antes de layout ideal</h3>
+          <p class="partner-tablet__pair-text">A estrutura das telas acompanha informações existentes na base e funcionalidades reais do Citrus.</p>
+        </article>
+        <article class="partner-tablet__pair partner-tablet__pair--dark">
+          <span class="partner-tablet__chip">Consequência</span>
+          <h3 class="partner-tablet__pair-title">Menor distância entre design e implementação</h3>
+          <p class="partner-tablet__pair-text">Os fluxos já nasciam considerando limitações e possibilidades do produto, reduzindo decisões que precisariam ser descartadas depois.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 14: Resultado -->
+    <section class="partner-tablet__section">
+      <span class="partner-tablet__accent"></span>
+      <h2 class="partner-tablet__section-title">Resultado</h2>
+      <p class="partner-tablet__section-text">O Portal do Parceiro resolveu uma lacuna operacional concreta: os vendedores passaram a ter uma visão clara de sua carteira, oportunidades e evolução comercial, algo que nem Smartspace nem Citrus entregavam até então. A urgência da entrega exigia velocidade, mas não permitia decisões desconectadas da realidade técnica dos sistemas existentes.</p>
+
+      <article class="partner-tablet__highlight">
+        <h3 class="partner-tablet__highlight-title">Uma nova camada de acesso sobre dados que já existiam.</h3>
+        <p class="partner-tablet__highlight-text">Ao validar primeiro como Smartspace e Citrus já tratavam dados, regras e funcionalidades, foi possível construir uma experiência útil para o vendedor sem inventar estruturas paralelas, e acelerar a implementação com menos incerteza e menos retrabalho.</p>
+      </article>
+
+      <div class="partner-tablet__results">
+        <article class="partner-tablet__result">
+          <h3 class="partner-tablet__result-title">Uma dor real resolvida</h3>
+          <p class="partner-tablet__result-text">Carteira, oportunidades, contas e materiais passaram a compor uma visão operacional que os vendedores não tinham em nenhum dos sistemas anteriores.</p>
+        </article>
+        <article class="partner-tablet__result">
+          <h3 class="partner-tablet__result-title">Validar antes de desenhar</h3>
+          <p class="partner-tablet__result-text">Mapear como os sistemas já estruturavam informações permitiu projetar sobre uma base real e antecipar riscos de implementação.</p>
+        </article>
+        <article class="partner-tablet__result">
+          <h3 class="partner-tablet__result-title">Agilidade sem atalhos</h3>
+          <p class="partner-tablet__result-text">A análise prévia reduziu decisões incompatíveis, retrabalho e problemas que poderiam aparecer apenas durante o desenvolvimento.</p>
+        </article>
+        <article class="partner-tablet__result">
+          <h3 class="partner-tablet__result-title">Um Design System entre dois ecossistemas</h3>
+          <p class="partner-tablet__result-text">Como Smartspace não possuía um DS e o sistema criado para Citrus tinha outra linguagem, foi necessário desenhar um novo sistema que conversasse visualmente com ambos.</p>
+        </article>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ======================================================================
+       Versão mobile (até 499px)
+       ====================================================================== -->
+  <div class="partner-mobile">
+
+    <!-- Seção 1: Apresentação do projeto -->
+    <section class="partner-mobile__hero">
+      <div class="partner-mobile__text">
+        <p class="partner-mobile__tags">Product Design · Information Architecture · UX/UI · B2B Platform</p>
+        <h1 class="partner-mobile__name">Portal do Parceiro.</h1>
+        <p class="partner-mobile__subtitle">Uma visão única para acompanhar sua operação comercial</p>
+        <p class="partner-mobile__desc">Um portal B2B criado para resolver uma lacuna que nem Smartspace nem Citrus atendiam: permitir que vendedores acompanhassem, com clareza, sua carteira, suas oportunidades e a evolução das vendas em um único ambiente.</p>
+        <blockquote class="partner-mobile__quote">O produto não cria novos dados. Ele permite ao usuário uma forma de enxergar sua operação.</blockquote>
+      </div>
+
+      <div class="partner-mobile__cards">
+        <div class="partner-mobile__card">
+          <p class="partner-mobile__card-title">Produto</p>
+          <p class="partner-mobile__card-text">PORTAL DO PARCEIRO</p>
+        </div>
+        <div class="partner-mobile__card">
+          <p class="partner-mobile__card-title">Contexto</p>
+          <p class="partner-mobile__card-text">VENDEDORES SMARTPACE E CITRUS</p>
+        </div>
+        <div class="partner-mobile__card">
+          <p class="partner-mobile__card-title">Escopo</p>
+          <p class="partner-mobile__card-text">6 módulos para MVP</p>
+        </div>
+        <div class="partner-mobile__card">
+          <p class="partner-mobile__card-title">Implementação</p>
+          <p class="partner-mobile__card-text">Q4</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 2: O projeto em 30 segundos -->
+    <section class="partner-mobile__section partner-mobile__section--first">
+      <span class="partner-mobile__accent"></span>
+      <h2 class="partner-mobile__section-title">O projeto em 30 segundos</h2>
+      <p class="partner-mobile__section-text">Os vendedores não conseguiam acompanhar adequadamente seu desempenho, suas oportunidades e a evolução das vendas em nenhum dos sistemas existentes. Smartspace e Citrus sustentavam partes da operação, mas nenhum deles entregava uma visão comercial consolidada para o parceiro</p>
+
+      <div class="partner-mobile__pairs">
+        <article class="partner-mobile__pair">
+          <span class="partner-mobile__chip">Problema</span>
+          <h3 class="partner-mobile__pair-title">Faltava visibilidade da própria operação</h3>
+          <p class="partner-mobile__pair-text">O vendedor precisava entender o que estava em andamento, quais contas exigiam atenção e como sua carteira evoluía — sem encontrar essa leitura pronta em Smartspace ou Citrus.</p>
+        </article>
+        <article class="partner-mobile__pair partner-mobile__pair--dark">
+          <span class="partner-mobile__chip">Desafio</span>
+          <h3 class="partner-mobile__pair-title">Entregar rápido sem gerar dívida de produto</h3>
+          <p class="partner-mobile__pair-text">Antes de desenhar, validei como os dois sistemas já tratavam dados e funcionalidades. Isso permitiu apoiar a nova experiência em estruturas reais, reduzir incertezas e antecipar problemas de implementação.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 3: Ausência de visibilidade -->
+    <section class="partner-mobile__section">
+      <span class="partner-mobile__accent"></span>
+      <h2 class="partner-mobile__section-title">Ausência de visibilidade</h2>
+
+      <article class="partner-mobile__anchor">
+        <p class="partner-mobile__anchor-label">O achado que ancorou o case</p>
+        <h3 class="partner-mobile__anchor-title">O vendedor precisava enxergar sua operação.</h3>
+        <p class="partner-mobile__anchor-text">O Portal do Parceiro nasceu para preencher uma lacuna que Smartspace e Citrus não resolviam: transformar dados e capacidades já existentes em uma visão comercial realmente acompanhável.</p>
+      </article>
+
+      <div class="partner-mobile__compare">
+        <article class="partner-mobile__compare-card">
+          <h3 class="partner-mobile__compare-title">Citrus atual</h3>
+          <p class="partner-mobile__compare-text">Sem uma visão única de carteira e vendas, o acompanhamento dependia de navegar entre sistemas e informações fragmentadas que os próprios parceiros tentavam documentar de forma agrupada.</p>
+        </article>
+        <span class="partner-mobile__arrow" aria-hidden="true">↓</span>
+        <article class="partner-mobile__compare-card">
+          <h3 class="partner-mobile__compare-title">Portal do parceiro</h3>
+          <p class="partner-mobile__compare-text">Carteira, oportunidades, contas, materiais e indicadores passam a compor uma única leitura operacional para o vendedor.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 4: Meu papel no projeto -->
+    <section class="partner-mobile__section">
+      <span class="partner-mobile__accent"></span>
+      <h2 class="partner-mobile__section-title">Meu papel no projeto</h2>
+      <p class="partner-mobile__section-text">A demanda veio do time Comercial, e o trabalho começou antes da interface: estruturação do problema, arquitetura, fluxos e cenários do MVP.</p>
+
+      <div class="partner-mobile__roles">
+        <article class="partner-mobile__role">
+          <h3 class="partner-mobile__role-title">Product framing</h3>
+          <p class="partner-mobile__role-text">Entendimento da demanda e definição do problema real.</p>
+        </article>
+        <article class="partner-mobile__role">
+          <h3 class="partner-mobile__role-title">Arquitetura de informação</h3>
+          <p class="partner-mobile__role-text">Estrutura dos módulos e navegação do portal.</p>
+        </article>
+        <article class="partner-mobile__role">
+          <h3 class="partner-mobile__role-title">Fluxos &amp; cenários</h3>
+          <p class="partner-mobile__role-text">Happy paths, exceções e estados do MVP.</p>
+        </article>
+        <article class="partner-mobile__role">
+          <h3 class="partner-mobile__role-title">Pesquisa com parceiros</h3>
+          <p class="partner-mobile__role-text">Validação de aderência com usuários reais.</p>
+        </article>
+        <article class="partner-mobile__role">
+          <h3 class="partner-mobile__role-title">Design System</h3>
+          <p class="partner-mobile__role-text">Criação de um novo sistema visual capaz de dialogar com Smartspace e Citrus, preservando coerência sem copiar integralmente nenhum dos dois.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 5: Pesquisa com parceiros reais -->
+    <section class="partner-mobile__section">
+      <span class="partner-mobile__accent"></span>
+      <h2 class="partner-mobile__section-title">Pesquisa com parceiros reais</h2>
+      <p class="partner-mobile__section-text">A estrutura do produto foi validada com parceiros para verificar aderência às rotinas e necessidades do público. O case mantém espaço para documentar futuramente um achado específico da pesquisa que tenha alterado uma decisão de tela.</p>
+    </section>
+
+    <!-- Seção 6: Antes de desenhar telas, desenhei o sistema -->
+    <section class="partner-mobile__section">
+      <span class="partner-mobile__accent"></span>
+      <h2 class="partner-mobile__section-title">Antes de desenhar telas, desenhei o sistema</h2>
+      <p class="partner-mobile__section-text">O MVP foi estruturado em módulos conectados por uma navegação persistente e fluxos definidos antes da alta fidelidade. Explorei cenários, analisei contextos e levantei os que tínhamos ou não de dados</p>
+
+      <div class="partner-mobile__steps">
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">01</span>
+          <h3 class="partner-mobile__step-title">login</h3>
+          <p class="partner-mobile__step-text">Acesso e recuperação de senha.</p>
+        </article>
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">02</span>
+          <h3 class="partner-mobile__step-title">dashboard</h3>
+          <p class="partner-mobile__step-text">Visão consolidada da operação.</p>
+        </article>
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">03</span>
+          <h3 class="partner-mobile__step-title">oportunidades</h3>
+          <p class="partner-mobile__step-text">Pipeline, etapas e detalhes.</p>
+        </article>
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">04</span>
+          <h3 class="partner-mobile__step-title">contas</h3>
+          <p class="partner-mobile__step-text">Carteira e histórico.</p>
+        </article>
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">05</span>
+          <h3 class="partner-mobile__step-title">materiais</h3>
+          <p class="partner-mobile__step-text">Catálogo, busca e download.</p>
+        </article>
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">06</span>
+          <h3 class="partner-mobile__step-title">Perfil</h3>
+          <p class="partner-mobile__step-text">Dados, permissões e segurança.</p>
+        </article>
+      </div>
+
+      <div class="partner-mobile__flows" data-carousel>
+        <div class="partner-mobile__flows-stage">
+          <button class="partner-mobile__flows-btn" type="button" data-dir="-1" aria-label="Diagrama anterior">&larr;</button>
+          <div class="partner-mobile__flows-track" data-carousel-track>
+            <figure class="partner-mobile__flow is-active" data-carousel-slide>
+              <div class="partner-mobile__panel partner-mobile__panel--crop">
+                <img src="assets/images/partner/flow-1.png" alt="Diagrama de fluxo 1 do MVP do Portal do Parceiro" width="4096" height="2738">
+              </div>
+            </figure>
+            <figure class="partner-mobile__flow" data-carousel-slide>
+              <div class="partner-mobile__panel">
+                <img src="assets/images/partner/flow-2.png" alt="Diagrama de fluxo 2 do MVP do Portal do Parceiro" width="2368" height="2784">
+              </div>
+            </figure>
+            <figure class="partner-mobile__flow" data-carousel-slide>
+              <div class="partner-mobile__panel">
+                <img src="assets/images/partner/flow-3.png" alt="Diagrama de fluxo 3 do MVP do Portal do Parceiro" width="3488" height="2976">
+              </div>
+            </figure>
+            <figure class="partner-mobile__flow" data-carousel-slide>
+              <div class="partner-mobile__panel">
+                <img src="assets/images/partner/flow-4.png" alt="Diagrama de fluxo 4 do MVP do Portal do Parceiro" width="3136" height="2656">
+              </div>
+            </figure>
+            <figure class="partner-mobile__flow" data-carousel-slide>
+              <div class="partner-mobile__panel">
+                <img src="assets/images/partner/flow-5.png" alt="Diagrama de fluxo 5 do MVP do Portal do Parceiro" width="3616" height="3136">
+              </div>
+            </figure>
+            <figure class="partner-mobile__flow" data-carousel-slide>
+              <div class="partner-mobile__panel">
+                <img src="assets/images/partner/flow-6.png" alt="Diagrama de fluxo 6 do MVP do Portal do Parceiro" width="2016" height="2560">
+              </div>
+            </figure>
+            <figure class="partner-mobile__flow" data-carousel-slide>
+              <div class="partner-mobile__panel">
+                <img src="assets/images/partner/flow-7.png" alt="Diagrama de fluxo 7 do MVP do Portal do Parceiro" width="2624" height="3584">
+              </div>
+            </figure>
+          </div>
+          <button class="partner-mobile__flows-btn" type="button" data-dir="1" aria-label="Próximo diagrama">&rarr;</button>
+        </div>
+        <div class="partner-mobile__flows-dots" data-carousel-dots>
+          <button class="partner-mobile__flows-dot is-active" type="button" data-index="0" aria-label="Diagrama 1 de 7"></button>
+          <button class="partner-mobile__flows-dot" type="button" data-index="1" aria-label="Diagrama 2 de 7"></button>
+          <button class="partner-mobile__flows-dot" type="button" data-index="2" aria-label="Diagrama 3 de 7"></button>
+          <button class="partner-mobile__flows-dot" type="button" data-index="3" aria-label="Diagrama 4 de 7"></button>
+          <button class="partner-mobile__flows-dot" type="button" data-index="4" aria-label="Diagrama 5 de 7"></button>
+          <button class="partner-mobile__flows-dot" type="button" data-index="5" aria-label="Diagrama 6 de 7"></button>
+          <button class="partner-mobile__flows-dot" type="button" data-index="6" aria-label="Diagrama 7 de 7"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 7: Dashboard como cama de síntese -->
+    <section class="partner-mobile__section">
+      <span class="partner-mobile__accent"></span>
+      <h2 class="partner-mobile__section-title">Dashboard como cama de síntese</h2>
+      <p class="partner-mobile__section-text">O dashboard não nasceu para “mostrar tudo”. Ele foi pensado para concentrar os principais sinais da operação comercial e permitir que o parceiro entenda rapidamente o que exige atenção.</p>
+
+      <article class="partner-mobile__info-card">
+        <h3 class="partner-mobile__info-title">Dashboard como camada de síntese</h3>
+        <p class="partner-mobile__info-text">O dashboard não nasceu para “mostrar KPIs”. Ele é o ponto onde informações antes fragmentadas passam a fazer sentido juntas: oportunidades, valor em pipeline, contas, materiais, atividades e comunicados.</p>
+      </article>
+
+      <div class="partner-mobile__panel">
+        <img src="assets/images/partner/dashboard.png" alt="Tela do dashboard do Portal do Parceiro" width="1920" height="1650">
+      </div>
+    </section>
+
+    <!-- Seção 8: Da visão macro ao detalhe -->
+    <section class="partner-mobile__section">
+      <span class="partner-mobile__accent"></span>
+      <h2 class="partner-mobile__section-title">Da visão macro ao detalhe</h2>
+      <p class="partner-mobile__section-text">O fluxo de oportunidades permite partir do pipeline, entrar em uma etapa, consultar a lista correspondente e aprofundar em uma oportunidade específica sem perder o contexto da carteira.</p>
+
+      <div class="partner-mobile__steps">
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">01</span>
+          <h3 class="partner-mobile__step-title">Pipeline</h3>
+          <p class="partner-mobile__step-text">Visão geral por etapa.</p>
+        </article>
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">02</span>
+          <h3 class="partner-mobile__step-title">Etapa</h3>
+          <p class="partner-mobile__step-text">Recorte do funil selecionado.</p>
+        </article>
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">03</span>
+          <h3 class="partner-mobile__step-title">Lista</h3>
+          <p class="partner-mobile__step-text">Oportunidades relacionadas.</p>
+        </article>
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">04</span>
+          <h3 class="partner-mobile__step-title">Detalhe</h3>
+          <p class="partner-mobile__step-text">Informações e histórico da oportunidade.</p>
+        </article>
+      </div>
+
+      <div class="partner-mobile__panel">
+        <img src="assets/images/partner/oportunidades.png" alt="Tela de oportunidades do Portal do Parceiro" width="1920" height="1720">
+      </div>
+    </section>
+
+    <!-- Seção 9: Encontrar, não apenas armazenar -->
+    <section class="partner-mobile__section">
+      <span class="partner-mobile__accent"></span>
+      <h2 class="partner-mobile__section-title">Encontrar, não apenas armazenar</h2>
+      <p class="partner-mobile__section-text">A área de Materiais de Marketing foi organizada para ajudar o parceiro a localizar o conteúdo certo por contexto, produto e necessidade, em vez de funcionar apenas como um repositório de arquivos.</p>
+
+      <div class="partner-mobile__steps">
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">01</span>
+          <h3 class="partner-mobile__step-title">Descobrir</h3>
+          <p class="partner-mobile__step-text">Buscar oportunidades compatíveis com o perfil do usuário.</p>
+        </article>
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">02</span>
+          <h3 class="partner-mobile__step-title">Entender</h3>
+          <p class="partner-mobile__step-text">Ver detalhes, requisitos e compatibilidades antes de agir.</p>
+        </article>
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">03</span>
+          <h3 class="partner-mobile__step-title">Propor</h3>
+          <p class="partner-mobile__step-text">Enviar valores e condições dentro do contexto da oportunidade.</p>
+        </article>
+        <article class="partner-mobile__step">
+          <span class="partner-mobile__step-number">04</span>
+          <h3 class="partner-mobile__step-title">Acompanhar</h3>
+          <p class="partner-mobile__step-text">Consultar status, editar rascunhos e voltar para a oportunidade relacionada.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 10: Em um processo novo, suporte também faz parte da experiência -->
+    <section class="partner-mobile__section">
+      <span class="partner-mobile__accent"></span>
+      <h2 class="partner-mobile__section-title">Em um processo novo, suporte também faz parte da experiência</h2>
+      <p class="partner-mobile__section-text">As perguntas frequentes mostram que o produto não precisava explicar apenas a interface, mas o próprio funcionamento do processo: alertas, tipos de serviços, propostas, comparação de preços, pagamentos e exigências cadastrais.</p>
+
+      <div class="partner-mobile__panel">
+        <img src="assets/images/partner/marketing-1.png" alt="Tela de materiais de marketing do Portal do Parceiro" width="1920" height="1080">
+      </div>
+      <div class="partner-mobile__panel">
+        <img src="assets/images/partner/marketing-2.png" alt="Tela de apresentações comerciais do Portal do Parceiro" width="1920" height="1424">
+      </div>
+    </section>
+
+    <!-- Seção 11: Da carteira à visão detalhada de cada conta -->
+    <section class="partner-mobile__section">
+      <span class="partner-mobile__accent"></span>
+      <h2 class="partner-mobile__section-title">Da carteira à visão detalhada de cada conta</h2>
+      <p class="partner-mobile__section-text">O módulo de Contas conecta a visão consolidada da carteira ao contexto de cada empresa, reunindo dados cadastrais, contatos, histórico de movimentações e oportunidades relacionadas.</p>
+
+      <div class="partner-mobile__panel">
+        <img src="assets/images/partner/contas-1.png" alt="Tela da lista de contas do Portal do Parceiro" width="1920" height="1080">
+      </div>
+      <div class="partner-mobile__panel">
+        <img src="assets/images/partner/contas-2.png" alt="Tela de detalhe de uma conta do Portal do Parceiro" width="1920" height="1080">
+      </div>
+    </section>
+
+    <!-- Seção 12: O produto também precisava funcionar quando "não havia nada" -->
+    <section class="partner-mobile__section">
+      <span class="partner-mobile__accent"></span>
+      <h2 class="partner-mobile__section-title">O produto também precisava funcionar quando “não havia nada”</h2>
+      <p class="partner-mobile__section-text">Os fluxos foram pensados com estados alternativos e exceções, não apenas com o cenário ideal.</p>
+
+      <div class="partner-mobile__states">
+        <article class="partner-mobile__state">
+          <div class="partner-mobile__state-head">
+            <img class="partner-mobile__dot" src="assets/images/partner/status-1.svg" alt="" width="24" height="24">
+            <h3 class="partner-mobile__state-title">Disponível</h3>
+          </div>
+          <p class="partner-mobile__state-text">Orientação para cadastrar a primeira oportunidade.</p>
+        </article>
+        <article class="partner-mobile__state">
+          <div class="partner-mobile__state-head">
+            <img class="partner-mobile__dot" src="assets/images/partner/status-2.svg" alt="" width="24" height="24">
+            <h3 class="partner-mobile__state-title">Indisponível</h3>
+          </div>
+          <p class="partner-mobile__state-text">Mensagem clara sem interromper o fluxo de recuperação.</p>
+        </article>
+        <article class="partner-mobile__state">
+          <div class="partner-mobile__state-head">
+            <img class="partner-mobile__dot" src="assets/images/partner/status-3.svg" alt="" width="24" height="24">
+            <h3 class="partner-mobile__state-title">Atenção</h3>
+          </div>
+          <p class="partner-mobile__state-text">Direcionamento para suporte em vez de bloqueio silencioso.</p>
+        </article>
+        <article class="partner-mobile__state">
+          <div class="partner-mobile__state-head">
+            <img class="partner-mobile__dot" src="assets/images/partner/status-4.svg" alt="" width="24" height="24">
+            <h3 class="partner-mobile__state-title">Erro/pendência</h3>
+          </div>
+          <p class="partner-mobile__state-text">Estado vazio explícito para reduzir incerteza.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 13: Design ancorado no produto real -->
+    <section class="partner-mobile__section">
+      <span class="partner-mobile__accent"></span>
+      <h2 class="partner-mobile__section-title">Design ancorado no produto real</h2>
+      <p class="partner-mobile__section-text">Cada interface foi desenhada a partir das capacidades e dados que o sistema de fato poderia entregar. A intenção não era produzir uma visão idealizada para apresentação, mas um produto confiável e implementável.</p>
+
+      <div class="partner-mobile__pairs">
+        <article class="partner-mobile__pair">
+          <span class="partner-mobile__chip">Princípio</span>
+          <h3 class="partner-mobile__pair-title">Dados reais antes de layout ideal</h3>
+          <p class="partner-mobile__pair-text">A estrutura das telas acompanha informações existentes na base e funcionalidades reais do Citrus.</p>
+        </article>
+        <article class="partner-mobile__pair partner-mobile__pair--dark">
+          <span class="partner-mobile__chip">Consequência</span>
+          <h3 class="partner-mobile__pair-title">Menor distância entre design e implementação</h3>
+          <p class="partner-mobile__pair-text">Os fluxos já nasciam considerando limitações e possibilidades do produto, reduzindo decisões que precisariam ser descartadas depois.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 14: Resultado -->
+    <section class="partner-mobile__section">
+      <span class="partner-mobile__accent"></span>
+      <h2 class="partner-mobile__section-title">Resultado</h2>
+      <p class="partner-mobile__section-text">O Portal do Parceiro resolveu uma lacuna operacional concreta: os vendedores passaram a ter uma visão clara de sua carteira, oportunidades e evolução comercial, algo que nem Smartspace nem Citrus entregavam até então. A urgência da entrega exigia velocidade, mas não permitia decisões desconectadas da realidade técnica dos sistemas existentes.</p>
+
+      <article class="partner-mobile__highlight">
+        <h3 class="partner-mobile__highlight-title">Uma nova camada de acesso sobre dados que já existiam.</h3>
+        <p class="partner-mobile__highlight-text">Ao validar primeiro como Smartspace e Citrus já tratavam dados, regras e funcionalidades, foi possível construir uma experiência útil para o vendedor sem inventar estruturas paralelas, e acelerar a implementação com menos incerteza e menos retrabalho.</p>
+      </article>
+
+      <div class="partner-mobile__results">
+        <article class="partner-mobile__result">
+          <h3 class="partner-mobile__result-title">Uma dor real resolvida</h3>
+          <p class="partner-mobile__result-text">Carteira, oportunidades, contas e materiais passaram a compor uma visão operacional que os vendedores não tinham em nenhum dos sistemas anteriores.</p>
+        </article>
+        <article class="partner-mobile__result">
+          <h3 class="partner-mobile__result-title">Validar antes de desenhar</h3>
+          <p class="partner-mobile__result-text">Mapear como os sistemas já estruturavam informações permitiu projetar sobre uma base real e antecipar riscos de implementação.</p>
+        </article>
+        <article class="partner-mobile__result">
+          <h3 class="partner-mobile__result-title">Agilidade sem atalhos</h3>
+          <p class="partner-mobile__result-text">A análise prévia reduziu decisões incompatíveis, retrabalho e problemas que poderiam aparecer apenas durante o desenvolvimento.</p>
+        </article>
+        <article class="partner-mobile__result">
+          <h3 class="partner-mobile__result-title">Um Design System entre dois ecossistemas</h3>
+          <p class="partner-mobile__result-text">Como Smartspace não possuía um DS e o sistema criado para Citrus tinha outra linguagem, foi necessário desenhar um novo sistema que conversasse visualmente com ambos.</p>
+        </article>
+      </div>
+    </section>
+
+  </div>
+
   <footer class="site-footer" id="contato">
     <div class="site-footer__inner">
       <p class="site-footer__text">2026 MICHELE MEDEIROS | Entre em contato: <a href="mailto:michelefmedeiros@gmail.com?subject=Contato%20via%20portf%C3%B3lio">michelefmedeiros@gmail.com</a></p>
@@ -513,19 +1327,21 @@
 
   <script>
     (function () {
-      var slides = document.querySelectorAll('#partnerFlows .partner-flow');
-      var dots = document.querySelectorAll('#partnerFlowsDots .partner-flows__dot');
-      var current = 0;
-      function show(index) {
-        current = (index + slides.length) % slides.length;
-        slides.forEach(function (slide, i) { slide.classList.toggle('is-active', i === current); });
-        dots.forEach(function (dot, i) { dot.classList.toggle('is-active', i === current); });
-      }
-      document.querySelectorAll('.partner-flows__btn').forEach(function (btn) {
-        btn.addEventListener('click', function () { show(current + Number(btn.getAttribute('data-dir'))); });
-      });
-      dots.forEach(function (dot) {
-        dot.addEventListener('click', function () { show(Number(dot.getAttribute('data-index'))); });
+      document.querySelectorAll('[data-carousel]').forEach(function (carousel) {
+        var slides = carousel.querySelectorAll('[data-carousel-slide]');
+        var dots = carousel.querySelectorAll('[data-carousel-dots] [data-index]');
+        var current = 0;
+        function show(index) {
+          current = (index + slides.length) % slides.length;
+          slides.forEach(function (slide, i) { slide.classList.toggle('is-active', i === current); });
+          dots.forEach(function (dot, i) { dot.classList.toggle('is-active', i === current); });
+        }
+        carousel.querySelectorAll('[data-dir]').forEach(function (btn) {
+          btn.addEventListener('click', function () { show(current + Number(btn.getAttribute('data-dir'))); });
+        });
+        dots.forEach(function (dot) {
+          dot.addEventListener('click', function () { show(Number(dot.getAttribute('data-index'))); });
+        });
       });
     })();
   </script>

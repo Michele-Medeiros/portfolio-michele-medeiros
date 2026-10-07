@@ -186,7 +186,7 @@ body {
   font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.4px;
-  text-align: justify;
+  text-align: left;
   color: #252628;
 }
 
@@ -242,7 +242,7 @@ body {
   font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.4px;
-  text-align: justify;
+  text-align: left;
   color: #fff;
 }
 
@@ -275,7 +275,7 @@ body {
   font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.4px;
-  text-align: justify;
+  text-align: left;
   color: #252628;
 }
 
@@ -1003,7 +1003,7 @@ body {
   font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.4px;
-  text-align: justify;
+  text-align: left;
   color: #252628;
 }
 
@@ -1131,4 +1131,1139 @@ body {
   line-height: 2;
   text-align: justify;
   color: #151414;
+}
+
+/* ==========================================================================
+   Versão tablet (500px a 999px)
+   Medidas do frame "Portal do Parceiro | Tablet 768" do Figma (768px de largura).
+   ========================================================================== */
+.partner-tablet {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  .partner-tablet {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 48px;
+  }
+}
+
+/* ---------- Hero ---------- */
+.partner-tablet__hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 48px 48px;
+}
+
+.partner-tablet__text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.partner-tablet__tags {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #122f5d;
+}
+
+.partner-tablet__name {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 1.1;
+  color: #151414;
+}
+
+.partner-tablet__subtitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #252628;
+}
+
+.partner-tablet__desc {
+  font-size: 17px;
+  line-height: 1.4;
+  color: #262626;
+}
+
+.partner-tablet__quote {
+  padding-left: 16px;
+  border-left: 4px solid #122f5d;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.4;
+  color: #262626;
+}
+
+.partner-tablet__cards {
+  display: flex;
+  gap: 12px;
+}
+
+.partner-tablet__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 14px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-tablet__card-title {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-tablet__card-text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Estrutura comum das seções ---------- */
+.partner-tablet__section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 48px;
+}
+
+.partner-tablet__accent {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #5029de;
+}
+
+.partner-tablet__section-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.partner-tablet__section-text {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Pares (Problema/Desafio, Princípio/Consequência) ---------- */
+.partner-tablet__pairs {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.partner-tablet__pair {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-tablet__pair--dark {
+  background: #122f5d;
+}
+
+.partner-tablet__chip {
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #122f5d;
+}
+
+.partner-tablet__pair-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-tablet__pair-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+.partner-tablet__pair--dark .partner-tablet__pair-title,
+.partner-tablet__pair--dark .partner-tablet__pair-text {
+  color: #fff;
+}
+
+/* Até 630px, os cards de "Design ancorado no produto real" empilham */
+@media (min-width: 500px) and (max-width: 630px) {
+  .partner-tablet__pairs--anchor {
+    flex-direction: column;
+  }
+}
+
+/* ---------- O problema era falta de visão ---------- */
+.partner-tablet__anchor {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.partner-tablet__anchor-label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #e6ecff;
+}
+
+.partner-tablet__anchor-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.partner-tablet__anchor-text {
+  font-size: 17px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.partner-tablet__compare {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.partner-tablet__compare-card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px 22px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-tablet__compare-title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-tablet__compare-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #262626;
+}
+
+.partner-tablet__arrow {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.4;
+  color: #122f5d;
+}
+
+/* Abaixo de 680px, os cards de comparação empilham e a seta vira vertical */
+@media (min-width: 500px) and (max-width: 680px) {
+  .partner-tablet__compare {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .partner-tablet__compare-card {
+    flex: 1 1 auto;
+  }
+
+  .partner-tablet__arrow {
+    align-self: center;
+    transform: rotate(90deg);
+  }
+}
+
+/* ---------- Meu papel no projeto ---------- */
+.partner-tablet__roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.partner-tablet__role {
+  flex: 1 1 calc(50% - 8px);
+  min-width: 0;
+  min-height: 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-tablet__role--wide {
+  flex: 1 1 100%;
+  min-height: 0;
+}
+
+.partner-tablet__role-title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-tablet__role-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Passos (sistema, funil, materiais) ---------- */
+.partner-tablet__steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.partner-tablet__step {
+  flex: 1 1 calc(50% - 8px);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 24px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-tablet__step-number {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #5029de;
+}
+
+.partner-tablet__step-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-tablet__step-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Painéis de imagem ---------- */
+.partner-tablet__panel {
+  padding: 12px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.partner-tablet__panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- Fluxos do MVP (carrossel, mesmo mecanismo da versão web) ---------- */
+.partner-tablet__flows {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.partner-tablet__flows-stage {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.partner-tablet__flows-btn {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #122f5d;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 18px;
+  line-height: 1;
+  color: #122f5d;
+  cursor: pointer;
+}
+
+.partner-tablet__flows-btn:hover {
+  background: #122f5d;
+  color: #fff;
+}
+
+.partner-tablet__flows-track {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.partner-tablet__flows-track > .partner-tablet__flow {
+  display: none;
+  margin: 0;
+}
+
+.partner-tablet__flows-track > .partner-tablet__flow.is-active {
+  display: block;
+}
+
+.partner-tablet__flows-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.partner-tablet__flows-dot {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 1px solid #122f5d;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.partner-tablet__flows-dot.is-active {
+  background: #122f5d;
+}
+
+/* O primeiro diagrama de fluxo aparece recortado, como na versão web */
+.partner-tablet__panel--crop {
+  position: relative;
+  aspect-ratio: 1945 / 1229;
+  overflow: hidden;
+}
+
+.partner-tablet__panel--crop img {
+  position: absolute;
+  left: -2.78%;
+  top: -7.65%;
+  width: 105.3%;
+  height: 111.39%;
+  max-width: none;
+}
+
+/* ---------- Dashboard / card de síntese ---------- */
+.partner-tablet__info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.partner-tablet__info-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.partner-tablet__info-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+/* ---------- Estados do produto ---------- */
+.partner-tablet__states {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.partner-tablet__state {
+  flex: 1 1 calc(50% - 8px);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-tablet__state-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.partner-tablet__dot {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.partner-tablet__state-title {
+  flex: 1 1 0;
+  min-width: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-tablet__state-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* Até 630px, os cards de estado empilham em uma coluna */
+@media (min-width: 500px) and (max-width: 630px) {
+  .partner-tablet__state {
+    flex: 1 1 100%;
+  }
+}
+
+/* ---------- Resultado ---------- */
+.partner-tablet__highlight {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.partner-tablet__highlight-title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.partner-tablet__highlight-text {
+  font-size: 17px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.partner-tablet__results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.partner-tablet__result {
+  flex: 1 1 calc(50% - 8px);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-tablet__result-title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-tablet__result-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* Até 630px, os cards de resultado empilham em uma coluna */
+@media (min-width: 500px) and (max-width: 630px) {
+  .partner-tablet__result {
+    flex: 1 1 100%;
+  }
+}
+
+/* ==========================================================================
+   Versão mobile (até 499px)
+   Medidas do frame "Portal do Parceiro | Mobile 390" do Figma (390px de largura).
+   ========================================================================== */
+.partner-mobile {
+  display: none;
+}
+
+@media (max-width: 499px) {
+  .partner-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 36px;
+  }
+}
+
+/* ---------- Hero ---------- */
+.partner-mobile__hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px 20px 36px;
+}
+
+.partner-mobile__text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.partner-mobile__tags {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #122f5d;
+}
+
+.partner-mobile__name {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.1;
+  color: #151414;
+}
+
+.partner-mobile__subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #252628;
+}
+
+.partner-mobile__desc {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #262626;
+}
+
+.partner-mobile__quote {
+  padding-left: 16px;
+  border-left: 4px solid #122f5d;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #262626;
+}
+
+.partner-mobile__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.partner-mobile__card {
+  flex: 1 1 calc(50% - 6px);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 14px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-mobile__card-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-mobile__card-text {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Estrutura comum das seções ---------- */
+.partner-mobile__section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 36px 20px;
+}
+
+.partner-mobile__section--first {
+  padding-top: 28px;
+}
+
+.partner-mobile__accent {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #5029de;
+}
+
+.partner-mobile__section-title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.partner-mobile__section-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Pares (Problema/Desafio, Princípio/Consequência) ---------- */
+.partner-mobile__pairs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.partner-mobile__pair {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-mobile__pair--dark {
+  background: #122f5d;
+}
+
+.partner-mobile__chip {
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #122f5d;
+}
+
+.partner-mobile__pair-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-mobile__pair-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+.partner-mobile__pair--dark .partner-mobile__pair-title,
+.partner-mobile__pair--dark .partner-mobile__pair-text {
+  color: #fff;
+}
+
+/* ---------- Ausência de visibilidade ---------- */
+.partner-mobile__anchor {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.partner-mobile__anchor-label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #e6ecff;
+}
+
+.partner-mobile__anchor-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.partner-mobile__anchor-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.partner-mobile__compare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.partner-mobile__compare-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 24px 22px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-mobile__compare-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-mobile__compare-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #262626;
+}
+
+.partner-mobile__arrow {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #122f5d;
+}
+
+/* ---------- Meu papel no projeto ---------- */
+.partner-mobile__roles {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.partner-mobile__role {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-mobile__role-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-mobile__role-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Passos (sistema, funil, materiais) ---------- */
+.partner-mobile__steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.partner-mobile__step {
+  flex: 1 1 calc(50% - 6px);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 16px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-mobile__step-number {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #5029de;
+}
+
+.partner-mobile__step-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-mobile__step-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Painéis de imagem ---------- */
+.partner-mobile__panel {
+  padding: 8px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.partner-mobile__panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* O primeiro diagrama de fluxo aparece recortado, como na versão web */
+.partner-mobile__panel--crop {
+  position: relative;
+  aspect-ratio: 1945 / 1229;
+  overflow: hidden;
+}
+
+.partner-mobile__panel--crop img {
+  position: absolute;
+  left: -2.78%;
+  top: -7.65%;
+  width: 105.3%;
+  height: 111.39%;
+  max-width: none;
+}
+
+/* ---------- Fluxos do MVP (carrossel, mesmo mecanismo da versão web) ---------- */
+.partner-mobile__flows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.partner-mobile__flows-stage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.partner-mobile__flows-btn {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #122f5d;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1;
+  color: #122f5d;
+  cursor: pointer;
+}
+
+.partner-mobile__flows-btn:active {
+  background: #122f5d;
+  color: #fff;
+}
+
+.partner-mobile__flows-track {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.partner-mobile__flows-track > .partner-mobile__flow {
+  display: none;
+  margin: 0;
+}
+
+.partner-mobile__flows-track > .partner-mobile__flow.is-active {
+  display: block;
+}
+
+.partner-mobile__flows-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.partner-mobile__flows-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 1px solid #122f5d;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.partner-mobile__flows-dot.is-active {
+  background: #122f5d;
+}
+
+/* ---------- Dashboard / card de síntese ---------- */
+.partner-mobile__info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.partner-mobile__info-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.partner-mobile__info-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+/* ---------- Estados do produto ---------- */
+.partner-mobile__states {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.partner-mobile__state {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-mobile__state-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.partner-mobile__dot {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.partner-mobile__state-title {
+  flex: 1 1 0;
+  min-width: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-mobile__state-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Resultado ---------- */
+.partner-mobile__highlight {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.partner-mobile__highlight-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.partner-mobile__highlight-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.partner-mobile__results {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.partner-mobile__result {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-mobile__result-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-mobile__result-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #56565a;
 }
