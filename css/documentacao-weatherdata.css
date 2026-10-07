@@ -300,3 +300,87 @@ body {
   text-align: justify;
   color: #56565a;
 }
+
+/* ---------- Dois painéis, dois tipos de decisão ---------- */
+.weatherdata-panels {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 80px 65px;
+}
+
+.weatherdata-panels__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weatherdata-panels__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-panels__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.weatherdata-panels__cards {
+  display: flex;
+  gap: 50px;
+}
+
+.weatherdata-panels__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+}
+
+.weatherdata-panels__card--climate {
+  background-image: linear-gradient(107.97deg, rgb(23, 64, 112) 1.87%, rgb(34, 93, 176) 98.97%);
+}
+
+.weatherdata-panels__card--renewable {
+  background-image: linear-gradient(107.97deg, rgb(201, 102, 23) 1.87%, rgb(242, 136, 39) 98.97%);
+}
+
+.weatherdata-panels__label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #d7d7d7;
+}
+
+.weatherdata-panels__card--renewable .weatherdata-panels__label {
+  color: #fefefe;
+}
+
+.weatherdata-panels__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #efefef;
+}
+
+.weatherdata-panels__card--renewable .weatherdata-panels__card-title {
+  color: #fefefe;
+}
+
+.weatherdata-panels__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: #fefefe;
+}
