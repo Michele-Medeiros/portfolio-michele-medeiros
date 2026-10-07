@@ -705,3 +705,51 @@ body {
   letter-spacing: 0.4px;
   color: #56565a;
 }
+
+/* ---------- Em um processo novo, suporte também faz parte da experiência ---------- */
+.partner-support {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 80px 65px;
+}
+
+.partner-support__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-support__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.partner-support__text {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-support__screen {
+  margin: 0;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fefefe;
+}
+
+.partner-support__screen-inner {
+  padding: 32px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.partner-support__screen-inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
