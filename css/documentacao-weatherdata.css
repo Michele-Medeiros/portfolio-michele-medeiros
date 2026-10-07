@@ -1888,3 +1888,57 @@ body {
   line-height: 1.4;
   color: #56565a;
 }
+
+/* ---------- Mobile: Dois painéis, dois tipos de decisão ---------- */
+.weatherdata-mobile__panels {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.weatherdata-mobile__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px 20px;
+  border-radius: 24px;
+  color: #fefefe;
+}
+
+.weatherdata-mobile__panel--climate {
+  background-image: linear-gradient(103.08deg, rgb(23, 64, 112) 1.87%, rgb(34, 93, 176) 98.97%);
+}
+
+.weatherdata-mobile__panel--renewable {
+  background-image: linear-gradient(101.7deg, rgb(201, 102, 23) 1.87%, rgb(242, 136, 39) 98.97%);
+}
+
+.weatherdata-mobile__panel-label {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #d7d7d7;
+}
+
+.weatherdata-mobile__panel--renewable .weatherdata-mobile__panel-label {
+  color: #fefefe;
+}
+
+.weatherdata-mobile__panel-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #efefef;
+}
+
+.weatherdata-mobile__panel--renewable .weatherdata-mobile__panel-title {
+  color: #fefefe;
+}
+
+.weatherdata-mobile__panel-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #fefefe;
+}
