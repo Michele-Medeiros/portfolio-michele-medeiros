@@ -158,7 +158,7 @@
 
 .siage-card__title {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.95;
   text-transform: uppercase;
   color: var(--cs-text);
@@ -309,7 +309,7 @@
 
 .siage-role__card-title {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.95;
   text-transform: uppercase;
   color: var(--cs-text);
@@ -319,11 +319,11 @@
   font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.4px;
-  text-align: justify;
+  text-align: left;
   color: var(--cs-text-secondary);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
   .siage-role__grid {
     grid-template-columns: 1fr;
   }
@@ -376,21 +376,21 @@
 
 .siage-step__title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.95;
   text-transform: uppercase;
   color: var(--cs-text);
 }
 
 .siage-step__title--lg {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .siage-step__text {
   font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.4px;
-  text-align: justify;
+  text-align: left;
   color: var(--cs-text-secondary);
 }
 
@@ -440,7 +440,7 @@
 
 .siage-state__title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.95;
   text-transform: uppercase;
   color: var(--cs-text);
@@ -453,7 +453,7 @@
   color: var(--cs-text-secondary);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
   .siage-states {
     flex-wrap: wrap;
   }
@@ -515,7 +515,7 @@
 
 .siage-journey__title {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.95;
   text-transform: uppercase;
   color: #000;
@@ -546,7 +546,7 @@
   border-radius: 8px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
   .siage-journey__step {
     flex-direction: column;
   }
@@ -620,7 +620,7 @@
 
 .siage-hifi__title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.95;
   text-transform: uppercase;
   color: var(--cs-text);
@@ -633,7 +633,7 @@
   color: var(--cs-text-secondary);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1250px) {
   .siage-hifi {
     flex-direction: column;
     align-items: stretch;
@@ -644,9 +644,9 @@
   }
 }
 
-/* Tablet (500px a 999px)
+/* Tablet (500px a 1250px)
    ======================================================================== */
-@media (min-width: 500px) and (max-width: 999px) {
+@media (min-width: 500px) and (max-width: 1250px) {
   .siage-hero-section {
     padding: 0;
   }
@@ -763,9 +763,9 @@
   }
 }
 
-/* Tablet (500px a 999px): seções de texto e cards
+/* Tablet (500px a 1250px): seções de texto e cards
    ======================================================================== */
-@media (min-width: 500px) and (max-width: 999px) {
+@media (min-width: 500px) and (max-width: 1250px) {
   .cs-section:not(.siage-hero-section) {
     padding: 48px;
   }
@@ -832,7 +832,7 @@
   }
 
   .siage-card__title {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.3;
   }
 
@@ -861,7 +861,7 @@
   }
 
   .siage-role__card-title {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.3;
   }
 
@@ -874,9 +874,9 @@
   }
 }
 
-/* Tablet (500px a 999px): cards numerados em coluna
+/* Tablet (500px a 1250px): cards numerados em coluna
    ======================================================================== */
-@media (min-width: 500px) and (max-width: 999px) {
+@media (min-width: 500px) and (max-width: 1250px) {
   .siage-steps {
     flex-direction: column;
     gap: 16px;
@@ -903,7 +903,7 @@
 
   .siage-step__title,
   .siage-step__title--lg {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.3;
   }
 
@@ -916,9 +916,9 @@
   }
 }
 
-/* Tablet (500px a 999px): Definindo a experiência e A solução
+/* Tablet (500px a 1250px): Definindo a experiência e A solução
    ======================================================================== */
-@media (min-width: 500px) and (max-width: 999px) {
+@media (min-width: 500px) and (max-width: 1250px) {
   .siage-steps--grid {
     display: flex;
     flex-wrap: wrap;
@@ -977,7 +977,7 @@
   }
 
   .siage-state__title {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.2;
   }
 
@@ -988,9 +988,9 @@
   }
 }
 
-/* Tablet (500px a 999px): Uma jornada em destaque
+/* Tablet (500px a 1250px): Uma jornada em destaque
    ======================================================================== */
-@media (min-width: 500px) and (max-width: 999px) {
+@media (min-width: 500px) and (max-width: 1250px) {
   .siage-journey {
     gap: 16px;
   }
@@ -1028,7 +1028,7 @@
   }
 
   .siage-journey__title {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.3;
   }
 
@@ -1073,9 +1073,9 @@
   }
 }
 
-/* Tablet (500px a 999px): High fidelity
+/* Tablet (500px a 1250px): High fidelity
    ======================================================================== */
-@media (min-width: 500px) and (max-width: 999px) {
+@media (min-width: 500px) and (max-width: 1250px) {
   .siage-hifi {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1133,7 +1133,7 @@
   }
 
   .siage-hifi__title {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.2;
   }
 
@@ -1338,7 +1338,7 @@
   }
 
   .siage-card__title {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.3;
   }
 
@@ -1367,7 +1367,7 @@
   }
 
   .siage-role__card-title {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.3;
   }
 
@@ -1409,7 +1409,7 @@
 
   .siage-step__title,
   .siage-step__title--lg {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.3;
   }
 
@@ -1472,7 +1472,7 @@
   }
 
   .siage-state__title {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.2;
   }
 
@@ -1514,7 +1514,7 @@
   }
 
   .siage-journey__title {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.3;
   }
 
@@ -1587,7 +1587,7 @@
   }
 
   .siage-hifi__title {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.2;
   }
 
@@ -1598,9 +1598,9 @@
   }
 }
 
-/* Desktop (1000px ou mais): textos de corpo em 18px
+/* Desktop (1251px ou mais): textos de corpo em 18px
    ======================================================================== */
-@media (min-width: 1000px) {
+@media (min-width: 1251px) {
   .siage-hero__desc,
   .siage-hero__quote,
   .siage-section-desc,
@@ -1629,9 +1629,9 @@
   }
 }
 
-/* Desktop (1000px ou mais): estados em grade responsiva
+/* Desktop (1251px ou mais): estados em grade responsiva
    ======================================================================== */
-@media (min-width: 1000px) {
+@media (min-width: 1251px) {
   .siage-states {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1673,5 +1673,58 @@
     width: 100%;
     height: auto;
     object-fit: contain;
+  }
+}
+
+/* Web: três primeiros cards de "Meu papel" com títulos e textos menores */
+@media (min-width: 1251px) {
+  .siage-role__card:nth-child(-n+3) .siage-role__card-title {
+    font-size: 16px;
+  }
+
+  .siage-role__card:nth-child(-n+3) .siage-role__card-text {
+    font-size: 16px;
+  }
+}
+
+/* Web: primeira imagem do High fidelity reduzida proporcionalmente para ampliar o espaço entre os cards */
+@media (min-width: 1251px) {
+  .siage-hifi__card:nth-child(1) .siage-hifi__shot {
+    width: 85%;
+    margin-inline: auto;
+  }
+}
+
+/* Web: imagem principal (hero) reduzida proporcionalmente */
+@media (min-width: 1251px) {
+  .siage-hero__frame picture {
+    display: block;
+  }
+
+  .siage-hero__img {
+    width: 85%;
+    margin-inline: auto;
+  }
+}
+
+/* Web: cards do hero com espaçamento entre si (fontes reduzidas em 2px) */
+@media (min-width: 1251px) {
+  .siage-facts {
+    gap: 16px;
+  }
+
+  .siage-fact {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    padding: 24px;
+  }
+
+  .siage-fact__label {
+    font-size: 18px;
+  }
+
+  .siage-fact__text {
+    font-size: 16px;
   }
 }
