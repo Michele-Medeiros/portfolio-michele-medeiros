@@ -1197,3 +1197,37 @@ body {
 .weatherdata-tablet__pair--dark .weatherdata-tablet__pair-text {
   color: #fff;
 }
+
+/* ---------- Tablet: Meu papel no projeto ---------- */
+.weatherdata-tablet__roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.weatherdata-tablet__role {
+  flex: 1 1 calc(50% - 8px);
+  min-width: 0;
+  min-height: 127px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-tablet__role-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-tablet__role-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #56565a;
+}
