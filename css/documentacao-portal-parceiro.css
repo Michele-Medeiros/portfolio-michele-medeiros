@@ -1,0 +1,1134 @@
+/* ========================================================================
+   Documentação Portal do Parceiro — versão web
+   Exibida apenas em telas a partir de 1000px.
+   Medidas do frame "Portal do parceiro" do Figma (1728px de largura).
+   ======================================================================== */
+
+body {
+  background: #f7f7f7;
+}
+
+.partner-doc {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .partner-doc {
+    display: block;
+    padding-bottom: 80px;
+  }
+}
+
+/* ---------- Hero ---------- */
+.partner-hero {
+  padding: 56px 90px 0 65px;
+}
+
+.partner-hero__info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1410px;
+}
+
+.partner-hero__tags {
+  padding-left: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  color: #122f5d;
+}
+
+.partner-hero__title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 12px;
+}
+
+.partner-hero__name {
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 1.45;
+  color: #151414;
+}
+
+.partner-hero__subtitle {
+  max-width: 749px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.45;
+  color: #252628;
+}
+
+.partner-hero__desc {
+  padding-left: 12px;
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #262626;
+}
+
+.partner-hero__quote {
+  padding-left: 12px;
+  border-left: 4px solid #122f5d;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.55;
+  text-align: justify;
+  color: #262626;
+}
+
+.partner-hero__cards {
+  display: flex;
+  gap: 24px;
+}
+
+.partner-hero__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-hero__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-hero__card-text {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #56565a;
+}
+
+/* Divisor roxo entre seções */
+.partner-divider {
+  height: 6px;
+  background: #5029de;
+}
+
+/* ---------- O projeto em 30 segundos ---------- */
+.partner-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 54px;
+}
+
+.partner-summary__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.partner-summary__text {
+  padding-left: 12px;
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #262626;
+}
+
+.partner-summary__cards {
+  display: flex;
+  gap: 50px;
+}
+
+.partner-summary__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-summary__card--dark {
+  background: #122f5d;
+}
+
+.partner-summary__pill {
+  align-self: flex-start;
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-summary__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-summary__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: #252628;
+}
+
+.partner-summary__card--dark .partner-summary__card-title,
+.partner-summary__card--dark .partner-summary__card-text {
+  color: #fff;
+}
+
+/* ---------- O problema não era falta de dados. Era falta de visão. ---------- */
+.partner-vision {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 80px 65px;
+}
+
+.partner-vision__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.partner-vision__anchor {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.partner-vision__label {
+  align-self: flex-start;
+  padding: 6px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #e6ecff;
+}
+
+.partner-vision__anchor-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.partner-vision__anchor-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: #fff;
+}
+
+.partner-vision__compare {
+  display: flex;
+  align-items: stretch;
+  gap: 50px;
+}
+
+.partner-vision__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-vision__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-vision__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: #252628;
+}
+
+.partner-vision__arrow {
+  display: block;
+  align-self: center;
+  flex: 0 0 118px;
+  width: 118px;
+  height: auto;
+}
+
+/* ---------- Meu papel no projeto ---------- */
+.partner-role {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 80px 65px;
+}
+
+.partner-role__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-role__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.partner-role__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-role__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 50px;
+}
+
+.partner-role__card--wide {
+  grid-column: span 2;
+}
+
+.partner-role__card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-role__card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-role__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+/* ---------- Antes de desenhar telas, desenhei o sistema ---------- */
+.partner-system {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 80px 65px;
+}
+
+.partner-system__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-system__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.partner-system__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-system__modules {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 50px;
+}
+
+.partner-system__module {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-system__module-head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.partner-system__module-number {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  color: #122f5d;
+}
+
+.partner-system__module-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.partner-system__module-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+/* ---------- Fluxos do MVP (diagramas) ---------- */
+.partner-flows {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 65px 80px;
+}
+
+.partner-flows__stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.partner-flows__btn {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #122f5d;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 20px;
+  color: #122f5d;
+  cursor: pointer;
+}
+
+.partner-flows__btn:hover {
+  background: #122f5d;
+  color: #fff;
+}
+
+.partner-flows__track {
+  flex: 0 1 860px;
+  min-width: 0;
+}
+
+.partner-flows__track > .partner-flow {
+  display: none;
+  margin: 0;
+}
+
+.partner-flows__track > .partner-flow.is-active {
+  display: block;
+}
+
+.partner-flows__dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.partner-flows__dot {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 1px solid #122f5d;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.partner-flows__dot.is-active {
+  background: #122f5d;
+}
+
+.partner-flow {
+  flex: 0 0 860px;
+  scroll-snap-align: start;
+}
+
+.partner-flow {
+  margin: 0;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fefefe;
+}
+
+.partner-flow__inner {
+  padding: 32px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.partner-flow__inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* O primeiro diagrama aparece recortado dentro do painel, como no Figma */
+.partner-flow__inner--crop {
+  position: relative;
+  aspect-ratio: 1945 / 1229;
+  overflow: hidden;
+}
+
+.partner-flow__inner--crop img {
+  position: absolute;
+  left: -2.78%;
+  top: -7.65%;
+  width: 105.3%;
+  height: 111.39%;
+  max-width: none;
+}
+
+/* ---------- Dashboard como cama de síntese ---------- */
+.partner-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.partner-dashboard__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-dashboard__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.partner-dashboard__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-dashboard__panel {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #c3c3c4;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.partner-dashboard__info {
+  flex: 0 0 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  background: #122f5d;
+}
+
+.partner-dashboard__info-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #fefefe;
+}
+
+.partner-dashboard__info-text {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #fefefe;
+}
+
+.partner-dashboard__visual {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 32px 32px 32px 32px;
+  background: #fff;
+}
+
+.partner-dashboard__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920 / 1650;
+  object-fit: cover;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Da visão macro ao detalhe ---------- */
+.partner-funnel {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.partner-funnel__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-funnel__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.partner-funnel__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-funnel__steps {
+  display: flex;
+  gap: 50px;
+}
+
+.partner-funnel__step {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-funnel__step-head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.partner-funnel__step-number {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  color: #122f5d;
+}
+
+.partner-funnel__step-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.partner-funnel__step-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+.partner-funnel__screen {
+  padding: 24px;
+  border-radius: 12px;
+  background: #fefefe;
+}
+
+.partner-funnel__screen-inner {
+  padding: 32px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.partner-funnel__screen-inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920 / 1720;
+  object-fit: cover;
+}
+
+/* ---------- Encontrar, não apenas armazenar ---------- */
+.partner-find {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 65px;
+}
+
+.partner-find__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-find__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.partner-find__text {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-find__steps {
+  display: flex;
+  gap: 50px;
+}
+
+.partner-find__step {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-find__number {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #054946;
+}
+
+.partner-find__step-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-find__step-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+/* ---------- Em um processo novo, suporte também faz parte da experiência ---------- */
+.partner-support {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 80px 65px;
+}
+
+.partner-support__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-support__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.partner-support__text {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-support__screen {
+  margin: 0;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fefefe;
+}
+
+.partner-support__screen-inner {
+  padding: 32px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.partner-support__screen-inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ---------- Da carteira à visão detalhada de cada conta ---------- */
+.partner-accounts {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.partner-accounts__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-accounts__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.partner-accounts__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-accounts__screen {
+  margin: 0;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fefefe;
+}
+
+.partner-accounts__screen-inner {
+  padding: 32px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.partner-accounts__screen-inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920 / 1080;
+  object-fit: cover;
+}
+
+/* ---------- O produto também precisava funcionar quando "não havia nada" ---------- */
+.partner-states {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.partner-states__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-states__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.partner-states__text {
+  font-size: 24px;
+  line-height: 2;
+  color: #151414;
+}
+
+.partner-states__cards {
+  display: flex;
+  gap: 50px;
+}
+
+.partner-states__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-states__dot {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.partner-states__card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-states__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+/* ---------- Design ancorado no produto real ---------- */
+.partner-anchor {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.partner-anchor__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-anchor__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.partner-anchor__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-anchor__cards {
+  display: flex;
+  gap: 50px;
+}
+
+.partner-anchor__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-anchor__card--dark {
+  background: #122f5d;
+}
+
+.partner-anchor__pill {
+  align-self: flex-start;
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-anchor__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-anchor__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: #252628;
+}
+
+.partner-anchor__card--dark .partner-anchor__card-title,
+.partner-anchor__card--dark .partner-anchor__card-text {
+  color: #fff;
+}
+
+/* ---------- Resultado ---------- */
+.partner-result {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.partner-result__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-result__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.partner-result__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-result__body {
+  display: flex;
+  align-items: stretch;
+  gap: 50px;
+}
+
+.partner-result__highlight {
+  flex: 0 0 419px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.partner-result__highlight-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.partner-result__highlight-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #fff;
+}
+
+.partner-result__list {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.partner-result__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-result__item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-result__item-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+/* ---------- Pesquisa com parceiros reais ---------- */
+.partner-research {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 65px;
+}
+
+.partner-research__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-research__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.partner-research__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
