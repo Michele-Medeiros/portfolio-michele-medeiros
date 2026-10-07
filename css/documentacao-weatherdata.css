@@ -1558,3 +1558,92 @@ body {
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
+
+/* ==========================================================================
+   Hero da versão web entre 1000px e 1650px
+   Texto à esquerda, ilustração à direita com o botão logo abaixo dela e os
+   quatro cards em grade 2×2 ocupando a largura inteira.
+   ========================================================================== */
+.weatherdata-hero__cta--inline {
+  display: none;
+}
+
+@media (min-width: 1000px) and (max-width: 1650px) {
+  .weatherdata-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 400px;
+    align-items: start;
+    column-gap: 48px;
+    row-gap: 40px;
+    padding: 56px 65px 32px;
+  }
+
+  .weatherdata-hero__info {
+    display: contents;
+  }
+
+  .weatherdata-hero__tags {
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 0;
+  }
+
+  .weatherdata-hero__title {
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 0;
+  }
+
+  .weatherdata-hero__desc {
+    grid-column: 1;
+    grid-row: 3;
+    padding-left: 0;
+    text-align: left;
+    line-height: 1.6;
+  }
+
+  .weatherdata-hero__visual {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    align-self: start;
+    height: auto;
+    gap: 24px;
+    justify-content: flex-start;
+  }
+
+  .weatherdata-hero__objects {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .weatherdata-hero__logo {
+    display: none;
+  }
+
+  .weatherdata-hero__cta:not(.weatherdata-hero__cta--inline) {
+    display: none;
+  }
+
+  .weatherdata-hero__cta--inline {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 0;
+    padding: 24px;
+    justify-content: center;
+  }
+
+  .weatherdata-hero__cards {
+    grid-column: 1 / -1;
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .weatherdata-hero__card {
+    flex: none;
+    min-width: 0;
+  }
+}
