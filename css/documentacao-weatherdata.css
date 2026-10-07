@@ -1942,3 +1942,43 @@ body {
   line-height: 1.4;
   color: #fefefe;
 }
+
+/* ---------- Mobile: Fluxo do usuário ---------- */
+.weatherdata-mobile__steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.weatherdata-mobile__step {
+  flex: 1 1 calc(50% - 6px);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 16px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-mobile__step-number {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #122f5d;
+}
+
+.weatherdata-mobile__step-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-mobile__step-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #56565a;
+}
