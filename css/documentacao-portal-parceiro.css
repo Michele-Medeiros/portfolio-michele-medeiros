@@ -802,3 +802,67 @@ body {
   aspect-ratio: 1920 / 1080;
   object-fit: cover;
 }
+
+/* ---------- O produto também precisava funcionar quando "não havia nada" ---------- */
+.partner-states {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.partner-states__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-states__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.partner-states__text {
+  font-size: 24px;
+  line-height: 2;
+  color: #151414;
+}
+
+.partner-states__cards {
+  display: flex;
+  gap: 50px;
+}
+
+.partner-states__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-states__dot {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.partner-states__card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-states__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
