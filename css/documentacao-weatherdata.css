@@ -1996,3 +1996,8 @@ body {
   flex: 1 1 100%;
   padding: 20px;
 }
+
+/* ---------- Mobile: Quando o tempo é curto ---------- */
+.weatherdata-mobile__step--fixed {
+  min-height: 158px;
+}
