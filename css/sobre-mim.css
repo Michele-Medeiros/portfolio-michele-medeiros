@@ -256,3 +256,112 @@
     transform: none;
   }
 }
+
+/* ========================================================================
+   Tablet (500px a 1250px): intro com texto e foto, medidas do frame
+   "Sobre-Mim - TABLET" do Figma (texto 466px, foto 430 × 488px)
+   ======================================================================== */
+@media (min-width: 920px) and (max-width: 1250px) {
+  .about-intro {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: clamp(32px, 4vw, 64px);
+    padding-top: 56px;
+  }
+
+  .about-intro__text {
+    flex: 0 1 540px;
+    min-width: 0;
+    gap: 48px;
+  }
+
+  .about-intro__title {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+
+  .about-intro__body p {
+    font-size: 16px;
+    line-height: 1.95;
+  }
+
+  .about-intro__photo-wrap {
+    flex: 1 1 430px;
+    max-width: none;
+    justify-content: flex-end;
+  }
+
+  .about-intro__photo {
+    width: 430px;
+    height: 488px;
+    padding: 10px;
+    border: 4px solid #bfbfbf;
+    border-radius: 16px;
+    background: transparent;
+    transform: none;
+  }
+
+  .about-intro__photo img {
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 919px) {
+  .about-intro {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 40px;
+    padding-top: 40px;
+  }
+
+  .about-intro__title {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+
+  .about-intro__body p {
+    font-size: 16px;
+    line-height: 1.95;
+  }
+
+  .about-intro__photo-wrap {
+    flex: none;
+    max-width: 430px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-intro__photo {
+    height: auto;
+    padding: 10px;
+    border: 4px solid #bfbfbf;
+    border-radius: 16px;
+    background: transparent;
+    transform: none;
+  }
+
+  .about-intro__photo img {
+    aspect-ratio: 430 / 488;
+    height: auto;
+  }
+}
+
+/* Texto específico da versão tablet (500px a 1250px) */
+.about-intro__body--tablet {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 1250px) {
+  .about-intro__body--web {
+    display: none;
+  }
+
+  .about-intro__body--tablet {
+    display: block;
+  }
+}
