@@ -1104,3 +1104,31 @@ body {
   letter-spacing: 0.4px;
   color: #56565a;
 }
+
+/* ---------- Pesquisa com parceiros reais ---------- */
+.partner-research {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 65px;
+}
+
+.partner-research__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-research__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.partner-research__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
