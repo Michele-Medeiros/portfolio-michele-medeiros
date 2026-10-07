@@ -1,0 +1,113 @@
+/* ========================================================================
+   Documentação Portal do Parceiro — versão web
+   Exibida apenas em telas a partir de 1000px.
+   Medidas do frame "Portal do parceiro" do Figma (1728px de largura).
+   ======================================================================== */
+
+body {
+  background: #f7f7f7;
+}
+
+.partner-doc {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .partner-doc {
+    display: block;
+    padding-bottom: 80px;
+  }
+}
+
+/* ---------- Hero ---------- */
+.partner-hero {
+  padding: 56px 90px 0 65px;
+}
+
+.partner-hero__info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1410px;
+}
+
+.partner-hero__tags {
+  padding-left: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  color: #122f5d;
+}
+
+.partner-hero__title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 12px;
+}
+
+.partner-hero__name {
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 1.45;
+  color: #151414;
+}
+
+.partner-hero__subtitle {
+  max-width: 749px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.45;
+  color: #252628;
+}
+
+.partner-hero__desc {
+  padding-left: 12px;
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #262626;
+}
+
+.partner-hero__quote {
+  padding-left: 12px;
+  border-left: 4px solid #122f5d;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.55;
+  text-align: justify;
+  color: #262626;
+}
+
+.partner-hero__cards {
+  display: flex;
+  gap: 24px;
+}
+
+.partner-hero__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-hero__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-hero__card-text {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #56565a;
+}
