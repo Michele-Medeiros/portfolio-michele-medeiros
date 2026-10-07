@@ -426,8 +426,71 @@ body {
 .partner-flows {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
   padding: 0 65px 80px;
+}
+
+.partner-flows__stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.partner-flows__btn {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #122f5d;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 20px;
+  color: #122f5d;
+  cursor: pointer;
+}
+
+.partner-flows__btn:hover {
+  background: #122f5d;
+  color: #fff;
+}
+
+.partner-flows__track {
+  flex: 0 1 860px;
+  min-width: 0;
+}
+
+.partner-flows__track > .partner-flow {
+  display: none;
+  margin: 0;
+}
+
+.partner-flows__track > .partner-flow.is-active {
+  display: block;
+}
+
+.partner-flows__dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.partner-flows__dot {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 1px solid #122f5d;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.partner-flows__dot.is-active {
+  background: #122f5d;
+}
+
+.partner-flow {
+  flex: 0 0 860px;
+  scroll-snap-align: start;
 }
 
 .partner-flow {
@@ -948,3 +1011,4 @@ body {
 .partner-anchor__card--dark .partner-anchor__card-text {
   color: #fff;
 }
+

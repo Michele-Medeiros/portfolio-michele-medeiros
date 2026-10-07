@@ -202,9 +202,12 @@
 
     <div class="partner-divider"></div>
 
-    <!-- Seção 7: Fluxos do MVP (diagramas) -->
+    <!-- Seção 7: Fluxos do MVP (diagramas em carrossel: um por vez) -->
     <section class="partner-flows">
-      <figure class="partner-flow">
+      <div class="partner-flows__stage">
+        <button class="partner-flows__btn" type="button" data-dir="-1" aria-label="Diagrama anterior">&larr;</button>
+        <div class="partner-flows__track" id="partnerFlows">
+      <figure class="partner-flow is-active">
         <div class="partner-flow__inner partner-flow__inner--crop">
           <img src="assets/images/partner/flow-1.png" alt="Diagrama de fluxo 1 do MVP do Portal do Parceiro" width="4096" height="2738">
         </div>
@@ -239,6 +242,18 @@
           <img src="assets/images/partner/flow-7.png" alt="Diagrama de fluxo 7 do MVP do Portal do Parceiro" width="2624" height="3584">
         </div>
       </figure>
+        </div>
+        <button class="partner-flows__btn" type="button" data-dir="1" aria-label="Próximo diagrama">&rarr;</button>
+      </div>
+      <div class="partner-flows__dots" id="partnerFlowsDots">
+          <button class="partner-flows__dot is-active" type="button" data-index="0" aria-label="Diagrama 1 de 7"></button>
+          <button class="partner-flows__dot" type="button" data-index="1" aria-label="Diagrama 2 de 7"></button>
+          <button class="partner-flows__dot" type="button" data-index="2" aria-label="Diagrama 3 de 7"></button>
+          <button class="partner-flows__dot" type="button" data-index="3" aria-label="Diagrama 4 de 7"></button>
+          <button class="partner-flows__dot" type="button" data-index="4" aria-label="Diagrama 5 de 7"></button>
+          <button class="partner-flows__dot" type="button" data-index="5" aria-label="Diagrama 6 de 7"></button>
+          <button class="partner-flows__dot" type="button" data-index="6" aria-label="Diagrama 7 de 7"></button>
+      </div>
     </section>
 
     <div class="partner-divider"></div>
@@ -452,6 +467,24 @@
     </div>
   </footer>
 
+  <script>
+    (function () {
+      var slides = document.querySelectorAll('#partnerFlows .partner-flow');
+      var dots = document.querySelectorAll('#partnerFlowsDots .partner-flows__dot');
+      var current = 0;
+      function show(index) {
+        current = (index + slides.length) % slides.length;
+        slides.forEach(function (slide, i) { slide.classList.toggle('is-active', i === current); });
+        dots.forEach(function (dot, i) { dot.classList.toggle('is-active', i === current); });
+      }
+      document.querySelectorAll('.partner-flows__btn').forEach(function (btn) {
+        btn.addEventListener('click', function () { show(current + Number(btn.getAttribute('data-dir'))); });
+      });
+      dots.forEach(function (dot) {
+        dot.addEventListener('click', function () { show(Number(dot.getAttribute('data-index'))); });
+      });
+    })();
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>
