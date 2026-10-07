@@ -322,6 +322,10 @@ body {
   gap: 50px;
 }
 
+.partner-role__card--wide {
+  grid-column: span 2;
+}
+
 .partner-role__card {
   display: flex;
   flex-direction: column;
