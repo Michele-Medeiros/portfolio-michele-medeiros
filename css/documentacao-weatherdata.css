@@ -1654,3 +1654,123 @@ body {
     flex-direction: column;
   }
 }
+
+/* ==========================================================================
+   Versão mobile (até 499px)
+   Medidas do frame "Weather Data | Mobile 390" do Figma (390px de largura).
+   ========================================================================== */
+.weatherdata-mobile {
+  display: none;
+}
+
+@media (max-width: 499px) {
+  .weatherdata-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 36px;
+  }
+}
+
+/* ---------- Hero ---------- */
+.weatherdata-mobile__hero {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 28px 20px 0;
+}
+
+.weatherdata-mobile__text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.weatherdata-mobile__tags {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #122f5d;
+}
+
+.weatherdata-mobile__name {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.1;
+  color: #151414;
+}
+
+.weatherdata-mobile__subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #252628;
+}
+
+.weatherdata-mobile__desc {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #262626;
+}
+
+.weatherdata-mobile__visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.weatherdata-mobile__objects {
+  display: block;
+  width: 230px;
+  height: auto;
+}
+
+.weatherdata-mobile__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8px 28px;
+  border-radius: 6px;
+  background: #003187;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.weatherdata-mobile__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.weatherdata-mobile__card {
+  flex: 1 1 calc(50% - 6px);
+  min-width: 0;
+  min-height: 144px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 16px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-mobile__card-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-mobile__card-text {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #56565a;
+}
