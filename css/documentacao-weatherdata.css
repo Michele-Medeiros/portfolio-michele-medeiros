@@ -452,3 +452,95 @@ body {
   letter-spacing: 0.4px;
   color: #56565a;
 }
+
+/* ---------- Os dados já existiam ---------- */
+.weatherdata-data {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 65px;
+}
+
+.weatherdata-data__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weatherdata-data__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-data__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.weatherdata-data__flow {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.weatherdata-data__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.weatherdata-data__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-data__card--wide {
+  flex: 0 0 416px;
+}
+
+.weatherdata-data__card-head {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.weatherdata-data__card-number {
+  font-size: 14px;
+  line-height: 1.95;
+  color: #c5595c;
+}
+
+.weatherdata-data__card-title {
+  font-size: 18px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.weatherdata-data__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+.weatherdata-data__arrow {
+  display: block;
+  flex: 0 0 34px;
+  width: 34px;
+  height: auto;
+}
