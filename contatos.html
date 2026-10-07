@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatos — Michele Medeiros</title>
+  <meta name="description" content="Entre em contato com Michele Medeiros, Product Designer. Produto, design de interface e design systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=27">
+  <link rel="stylesheet" href="css/contatos.css?v=3">
+</head>
+<body>
+
+  <header class="navbar-wrap">
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a href="index.html" class="navbar__brand">Michele Medeiros</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="sobre-mim.html">Sobre mim</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="contatos.html" class="is-active">Contatos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contatos">
+
+    <!-- Apresentação -->
+    <section class="contatos-hero">
+      <p class="contatos-hero__status"><img src="assets/images/contatos/ellipse.svg" alt="" class="contatos-hero__dot">DISPONÍVEL PARA NOVOS PROJETOS</p>
+      <h1 class="contatos-hero__title">Vamos <span>conversar.</span></h1>
+      <p class="contatos-hero__text">Produto, design de interface e design systems. Se você tem um desafio por aí, me conta. Respondo rápido.</p>
+    </section>
+
+    <div class="contatos-body">
+
+      <!-- Canais -->
+      <div class="contatos-channels">
+        <div class="contatos-channel">
+          <div class="contatos-channel__info">
+            <span class="contatos-channel__icon"><img src="assets/images/contatos/icon-email.svg" alt=""></span>
+            <div class="contatos-channel__text">
+              <p class="contatos-channel__label">E-MAIL</p>
+              <p class="contatos-channel__value">michelefmedeiros@gmail.com</p>
+            </div>
+          </div>
+          <button class="contatos-channel__copy" type="button" data-copy="michelefmedeiros@gmail.com">Copiar</button>
+        </div>
+
+        <div class="contatos-channel">
+          <div class="contatos-channel__info">
+            <span class="contatos-channel__icon"><img src="assets/images/contatos/icon-linkedin.svg" alt=""></span>
+            <div class="contatos-channel__text">
+              <p class="contatos-channel__label">LINKEDIN</p>
+              <a class="contatos-channel__value" href="https://www.linkedin.com/in/michele-franca-medeiros/" target="_blank" rel="noopener">/in/michelefmedeiros</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contatos-channel">
+          <div class="contatos-channel__info">
+            <span class="contatos-channel__icon"><img src="assets/images/contatos/icon-portfolio.svg" alt=""></span>
+            <div class="contatos-channel__text">
+              <p class="contatos-channel__label">PORTFÓLIO</p>
+              <a class="contatos-channel__value" href="https://www.behance.net/michelefrana1" target="_blank" rel="noopener">Michele França</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contatos-channel">
+          <div class="contatos-channel__info">
+            <span class="contatos-channel__icon"><img src="assets/images/contatos/icon-location.svg" alt=""></span>
+            <div class="contatos-channel__text">
+              <p class="contatos-channel__label">LOCALIZAÇÃO</p>
+              <p class="contatos-channel__value">João Pessoa, PB | São Paulo Sp - Brasil | Remoto, híbrido e presencial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulário -->
+      <form class="contatos-form" id="contatosForm">
+        <p class="contatos-form__intro">Escreva aqui e eu monto o e-mail pronto pra você enviar.</p>
+
+        <div class="contatos-form__row">
+          <label class="contatos-field">
+            <span class="contatos-field__label">NOME</span>
+            <input class="contatos-field__input" type="text" name="nome" placeholder="Seu nome">
+          </label>
+          <label class="contatos-field">
+            <span class="contatos-field__label">SEU E-MAIL</span>
+            <input class="contatos-field__input" type="email" name="email" placeholder="voce@empresa.com">
+          </label>
+        </div>
+
+        <label class="contatos-field">
+          <span class="contatos-field__label">ASSUNTO</span>
+          <input class="contatos-field__input" type="text" name="assunto" placeholder="Sobre o que é">
+        </label>
+
+        <label class="contatos-field">
+          <span class="contatos-field__label">MENSAGEM</span>
+          <textarea class="contatos-field__input contatos-field__input--area" name="mensagem" placeholder="Me conta o contexto, o prazo e o que você precisa."></textarea>
+        </label>
+
+        <button class="contatos-form__submit" type="submit">Montar meu e-mail</button>
+        <p class="contatos-form__note">Abre seu aplicativo de e-mail já preenchido.</p>
+      </form>
+
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contato">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">2026 MICHELE MEDEIROS | Entre em contato: <a href="mailto:michelefmedeiros@gmail.com">michelefmedeiros@gmail.com</a></p>
+      <a href="https://www.linkedin.com/in/michele-franca-medeiros/" target="_blank" rel="noopener"><img class="site-footer__icon" src="assets/images/icons/linkedin-box-fill.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      document.querySelectorAll('[data-copy]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var text = btn.getAttribute('data-copy');
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(text).then(function () {
+              btn.textContent = 'Copiado';
+            });
+          }
+        });
+      });
+
+      var form = document.getElementById('contatosForm');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var data = new FormData(form);
+        var subject = data.get('assunto') || '';
+        var body = 'Nome: ' + (data.get('nome') || '') + '\n' +
+                   'E-mail: ' + (data.get('email') || '') + '\n\n' +
+                   (data.get('mensagem') || '');
+        window.location.href = 'mailto:michelefmedeiros@gmail.com?subject=' +
+          encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      });
+    })();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
