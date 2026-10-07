@@ -838,3 +838,127 @@ body {
   text-transform: uppercase;
   color: #000;
 }
+
+/* ---------- Resultado ---------- */
+.weatherdata-result {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.weatherdata-result__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weatherdata-result__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-result__text {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #151414;
+}
+
+.weatherdata-result__stats {
+  display: flex;
+  align-items: stretch;
+  gap: 50px;
+}
+
+.weatherdata-result__stat {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-result__number {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #a24a04;
+}
+
+.weatherdata-result__stat-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #252628;
+}
+
+.weatherdata-result__demo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 44px 32px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.weatherdata-result__demo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  max-width: 813px;
+}
+
+.weatherdata-result__demo-pill {
+  align-self: flex-start;
+  padding: 4px 16px;
+  border-radius: 99px;
+  background: #fefefe;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #122f5d;
+}
+
+.weatherdata-result__demo-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.6;
+  letter-spacing: 0.96px;
+  color: #fff;
+}
+
+.weatherdata-result__demo-text {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #efefef;
+}
+
+.weatherdata-result__demo-text p + p {
+  margin-top: 14px;
+}
+
+.weatherdata-result__demo-link {
+  flex: 0 0 auto;
+  padding: 24px 40px;
+  border-radius: 24px;
+  background: #ffa300;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.56px;
+  white-space: nowrap;
+  color: #151414;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
