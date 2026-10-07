@@ -1,0 +1,156 @@
+/* ========================================================================
+   Documentação WeatherData — versão web
+   Exibida apenas em telas a partir de 1000px.
+   Medidas do frame "WeatherData" do Figma (1728px de largura).
+   ======================================================================== */
+
+body {
+  background: #f7f7f7;
+}
+
+.weatherdata-doc {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .weatherdata-doc {
+    display: block;
+    padding-bottom: 80px;
+  }
+}
+
+/* ---------- Hero ---------- */
+.weatherdata-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 56px 90px 32px 65px;
+}
+
+.weatherdata-hero__info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  flex: 0 1 999px;
+  min-width: 0;
+}
+
+.weatherdata-hero__tags {
+  padding-left: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  color: #122f5d;
+}
+
+.weatherdata-hero__title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 12px;
+}
+
+.weatherdata-hero__name {
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 1.45;
+  color: #151414;
+}
+
+.weatherdata-hero__subtitle {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.45;
+  color: #252628;
+}
+
+.weatherdata-hero__desc {
+  padding-left: 12px;
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #262626;
+}
+
+.weatherdata-hero__cta {
+  align-self: flex-start;
+  width: 226px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #003187;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.weatherdata-hero__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.weatherdata-hero__card {
+  flex: 1 1 0;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 32px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+  text-align: left;
+}
+
+.weatherdata-hero__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-hero__card-text {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #56565a;
+}
+
+.weatherdata-hero__visual {
+  flex: 0 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  height: 678px;
+}
+
+.weatherdata-hero__objects {
+  display: block;
+  width: 418px;
+  height: auto;
+}
+
+.weatherdata-hero__logo {
+  display: block;
+  width: 370px;
+  height: 44px;
+}
+
+.weatherdata-divider {
+  height: 6px;
+  background: #5029de;
+}
