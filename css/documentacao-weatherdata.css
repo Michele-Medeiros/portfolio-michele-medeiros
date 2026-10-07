@@ -1982,3 +1982,17 @@ body {
   line-height: 1.4;
   color: #56565a;
 }
+
+/* ---------- Mobile: Os dados já existiam ---------- */
+.weatherdata-mobile__step--data {
+  min-height: 158px;
+}
+
+.weatherdata-mobile__step--data .weatherdata-mobile__step-number {
+  color: #c5595c;
+}
+
+.weatherdata-mobile__step--wide {
+  flex: 1 1 100%;
+  padding: 20px;
+}
