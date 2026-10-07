@@ -1231,3 +1231,66 @@ body {
   line-height: 1.4;
   color: #56565a;
 }
+
+/* ---------- Tablet: Dois painéis, dois tipos de decisão ---------- */
+.weatherdata-tablet__panels {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.weatherdata-tablet__panel {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  border-radius: 24px;
+  color: #fefefe;
+}
+
+.weatherdata-tablet__panel--climate {
+  background-image: linear-gradient(98.63deg, rgb(23, 64, 112) 1.87%, rgb(34, 93, 176) 98.97%);
+}
+
+.weatherdata-tablet__panel--renewable {
+  background-image: linear-gradient(98.63deg, rgb(201, 102, 23) 1.87%, rgb(242, 136, 39) 98.97%);
+}
+
+.weatherdata-tablet__panel-label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #d7d7d7;
+}
+
+.weatherdata-tablet__panel--renewable .weatherdata-tablet__panel-label {
+  color: #fefefe;
+}
+
+.weatherdata-tablet__panel-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #efefef;
+}
+
+.weatherdata-tablet__panel--renewable .weatherdata-tablet__panel-title {
+  color: #fefefe;
+}
+
+.weatherdata-tablet__panel-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fefefe;
+}
+
+/* Abaixo de 650px, os painéis ficam um abaixo do outro */
+@media (min-width: 500px) and (max-width: 650px) {
+  .weatherdata-tablet__panels {
+    flex-direction: column;
+  }
+}
