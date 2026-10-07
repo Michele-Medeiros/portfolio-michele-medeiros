@@ -194,3 +194,95 @@ body {
 .partner-summary__card--dark .partner-summary__card-text {
   color: #fff;
 }
+
+/* ---------- O problema não era falta de dados. Era falta de visão. ---------- */
+.partner-vision {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 80px 65px;
+}
+
+.partner-vision__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.partner-vision__anchor {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.partner-vision__label {
+  align-self: flex-start;
+  padding: 6px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #e6ecff;
+}
+
+.partner-vision__anchor-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.partner-vision__anchor-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: #fff;
+}
+
+.partner-vision__compare {
+  display: flex;
+  align-items: stretch;
+  gap: 50px;
+}
+
+.partner-vision__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-vision__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-vision__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: #252628;
+}
+
+.partner-vision__arrow {
+  display: block;
+  align-self: center;
+  flex: 0 0 118px;
+  width: 118px;
+  height: auto;
+}
