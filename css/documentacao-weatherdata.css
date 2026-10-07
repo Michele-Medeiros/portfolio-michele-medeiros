@@ -2120,3 +2120,75 @@ body {
   text-transform: uppercase;
   color: #000;
 }
+
+/* ---------- Mobile: Resultado ---------- */
+.weatherdata-mobile__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.weatherdata-mobile__stat {
+  flex: 1 1 calc(50% - 6px);
+  min-width: 0;
+  min-height: 143px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 16px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-mobile__stat-number {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #a24a04;
+}
+
+.weatherdata-mobile__stat-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #252628;
+}
+
+.weatherdata-mobile__demo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px 20px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.weatherdata-mobile__demo-chip {
+  padding: 6px 14px;
+  border-radius: 900px;
+  background: #fefefe;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #122f5d;
+}
+
+.weatherdata-mobile__demo-title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.25;
+  color: #fff;
+}
+
+.weatherdata-mobile__demo-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #efefef;
+}
+
+.weatherdata-mobile__demo-text p + p {
+  margin-top: 0;
+}
