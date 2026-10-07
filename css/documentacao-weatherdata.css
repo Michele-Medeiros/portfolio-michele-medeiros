@@ -1,0 +1,2194 @@
+/* ========================================================================
+   Documentação WeatherData — versão web
+   Exibida apenas em telas a partir de 1000px.
+   Medidas do frame "WeatherData" do Figma (1728px de largura).
+   ======================================================================== */
+
+body {
+  background: #f7f7f7;
+}
+
+.weatherdata-doc {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .weatherdata-doc {
+    display: block;
+    padding-bottom: 80px;
+  }
+}
+
+/* ---------- Hero ---------- */
+.weatherdata-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 56px 90px 32px 65px;
+}
+
+.weatherdata-hero__info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  flex: 0 1 999px;
+  min-width: 0;
+}
+
+.weatherdata-hero__tags {
+  padding-left: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  color: #122f5d;
+}
+
+.weatherdata-hero__title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 12px;
+}
+
+.weatherdata-hero__name {
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 1.45;
+  color: #151414;
+}
+
+.weatherdata-hero__subtitle {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.45;
+  color: #252628;
+}
+
+.weatherdata-hero__desc {
+  padding-left: 12px;
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #262626;
+}
+
+.weatherdata-hero__cta {
+  align-self: flex-start;
+  width: 226px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #003187;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.weatherdata-hero__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.weatherdata-hero__card {
+  flex: 1 1 0;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 32px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+  text-align: left;
+}
+
+.weatherdata-hero__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-hero__card-text {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #56565a;
+}
+
+.weatherdata-hero__visual {
+  flex: 0 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  height: 678px;
+}
+
+.weatherdata-hero__objects {
+  display: block;
+  width: 418px;
+  height: auto;
+}
+
+.weatherdata-hero__logo {
+  display: block;
+  width: 370px;
+  height: 44px;
+}
+
+.weatherdata-divider {
+  height: 6px;
+  background: #5029de;
+}
+
+/* ---------- O projeto em 30 segundos ---------- */
+.weatherdata-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 54px;
+}
+
+.weatherdata-summary__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-summary__text {
+  padding-left: 12px;
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #262626;
+}
+
+.weatherdata-summary__cards {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 50px;
+}
+
+.weatherdata-summary__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-summary__card--dark {
+  background: #122f5d;
+}
+
+.weatherdata-summary__pill {
+  align-self: flex-start;
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-summary__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-summary__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: #252628;
+}
+
+.weatherdata-summary__card--dark .weatherdata-summary__card-title,
+.weatherdata-summary__card--dark .weatherdata-summary__card-text {
+  color: #fff;
+}
+
+/* ---------- Meu papel no projeto ---------- */
+.weatherdata-role {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 80px 65px;
+}
+
+.weatherdata-role__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weatherdata-role__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-role__text {
+  font-size: 24px;
+  line-height: 55px;
+  text-align: justify;
+  color: #151414;
+}
+
+.weatherdata-role__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.weatherdata-role__row {
+  display: flex;
+  gap: 50px;
+}
+
+.weatherdata-role__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-role__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-role__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: #56565a;
+}
+
+/* ---------- Dois painéis, dois tipos de decisão ---------- */
+.weatherdata-panels {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 80px 65px;
+}
+
+.weatherdata-panels__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weatherdata-panels__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-panels__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.weatherdata-panels__cards {
+  display: flex;
+  gap: 50px;
+}
+
+.weatherdata-panels__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+}
+
+.weatherdata-panels__card--climate {
+  background-image: linear-gradient(107.97deg, rgb(23, 64, 112) 1.87%, rgb(34, 93, 176) 98.97%);
+}
+
+.weatherdata-panels__card--renewable {
+  background-image: linear-gradient(107.97deg, rgb(201, 102, 23) 1.87%, rgb(242, 136, 39) 98.97%);
+}
+
+.weatherdata-panels__label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #d7d7d7;
+}
+
+.weatherdata-panels__card--renewable .weatherdata-panels__label {
+  color: #fefefe;
+}
+
+.weatherdata-panels__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #efefef;
+}
+
+.weatherdata-panels__card--renewable .weatherdata-panels__card-title {
+  color: #fefefe;
+}
+
+.weatherdata-panels__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  color: #fefefe;
+}
+
+/* ---------- Fluxo do usuário ---------- */
+.weatherdata-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 65px;
+}
+
+.weatherdata-flow__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weatherdata-flow__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-flow__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.weatherdata-flow__steps {
+  display: flex;
+  gap: 50px;
+}
+
+.weatherdata-flow__step {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-flow__number {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #122f5d;
+}
+
+.weatherdata-flow__step-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-flow__step-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+/* ---------- Os dados já existiam ---------- */
+.weatherdata-data {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 65px;
+}
+
+.weatherdata-data__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weatherdata-data__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-data__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.weatherdata-data__flow {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.weatherdata-data__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.weatherdata-data__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-data__card--wide {
+  flex: 0 0 416px;
+}
+
+.weatherdata-data__card-head {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.weatherdata-data__card-number {
+  font-size: 14px;
+  line-height: 1.95;
+  color: #c5595c;
+}
+
+.weatherdata-data__card-title {
+  font-size: 18px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.weatherdata-data__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+.weatherdata-data__arrow {
+  display: block;
+  flex: 0 0 34px;
+  width: 34px;
+  height: auto;
+}
+
+/* ---------- Quando o tempo é curto, clareza vira estratégia ---------- */
+.weatherdata-clarity {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.weatherdata-clarity__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weatherdata-clarity__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-clarity__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.weatherdata-clarity__cards {
+  display: flex;
+  gap: 50px;
+}
+
+.weatherdata-clarity__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-clarity__number {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  color: #122f5d;
+}
+
+.weatherdata-clarity__card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-clarity__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+/* ---------- Primeiro, a hierarquia. Depois, a estética. ---------- */
+.weatherdata-hierarchy {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 65px;
+}
+
+.weatherdata-hierarchy__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weatherdata-hierarchy__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-hierarchy__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.weatherdata-hierarchy__panel {
+  display: flex;
+  border: 1px solid #122f5d;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.weatherdata-hierarchy__info {
+  flex: 0 0 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  background: #122f5d;
+}
+
+.weatherdata-hierarchy__pill {
+  align-self: flex-start;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #c3c3c4;
+}
+
+.weatherdata-hierarchy__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #fefefe;
+}
+
+.weatherdata-hierarchy__card-text {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #fefefe;
+}
+
+.weatherdata-hierarchy__wireframes {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 32px;
+  background: #f7f7f7;
+}
+
+.weatherdata-hierarchy__wireframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 1024;
+  object-fit: cover;
+}
+
+/* ---------- Do sistema para a interface ---------- */
+.weatherdata-system {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 65px;
+}
+
+.weatherdata-system__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weatherdata-system__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-system__text {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #151414;
+}
+
+.weatherdata-system__row {
+  display: flex;
+  align-items: stretch;
+  gap: 50px;
+}
+
+.weatherdata-system__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-system__pill {
+  align-self: flex-start;
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-system__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-system__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #252628;
+}
+
+.weatherdata-system__connector {
+  display: block;
+  align-self: center;
+  flex: 0 0 124px;
+  width: 124px;
+  height: auto;
+}
+
+/* ---------- High fidelity ---------- */
+.weatherdata-fidelity {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 65px;
+}
+
+.weatherdata-fidelity__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weatherdata-fidelity__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-fidelity__text {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #151414;
+}
+
+.weatherdata-fidelity__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin: 0;
+  padding: 32px 32px 24px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-fidelity__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 1024;
+  object-fit: cover;
+}
+
+.weatherdata-fidelity__caption {
+  align-self: flex-start;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* ---------- Resultado ---------- */
+.weatherdata-result {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.weatherdata-result__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weatherdata-result__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-result__text {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #151414;
+}
+
+.weatherdata-result__stats {
+  display: flex;
+  align-items: stretch;
+  gap: 50px;
+}
+
+.weatherdata-result__stat {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-result__number {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #a24a04;
+}
+
+.weatherdata-result__stat-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #252628;
+}
+
+.weatherdata-result__demo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 44px 32px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.weatherdata-result__demo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  max-width: 813px;
+}
+
+.weatherdata-result__demo-pill {
+  align-self: flex-start;
+  padding: 4px 16px;
+  border-radius: 99px;
+  background: #fefefe;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #122f5d;
+}
+
+.weatherdata-result__demo-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.6;
+  letter-spacing: 0.96px;
+  color: #fff;
+}
+
+.weatherdata-result__demo-text {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #efefef;
+}
+
+.weatherdata-result__demo-text p + p {
+  margin-top: 14px;
+}
+
+.weatherdata-result__demo-link {
+  flex: 0 0 auto;
+  padding: 24px 40px;
+  border-radius: 24px;
+  background: #ffa300;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.56px;
+  white-space: nowrap;
+  color: #151414;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* ==========================================================================
+   Versão tablet (500px a 999px)
+   Medidas do frame "Weather Data | Tablet 768" do Figma (768px de largura).
+   ========================================================================== */
+.weatherdata-tablet {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  .weatherdata-tablet {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 48px;
+  }
+}
+
+/* ---------- Hero ---------- */
+.weatherdata-tablet__hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 48px 48px;
+}
+
+.weatherdata-tablet__row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.weatherdata-tablet__info {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.weatherdata-tablet__tags {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #122f5d;
+}
+
+.weatherdata-tablet__name {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 1.1;
+  color: #151414;
+}
+
+.weatherdata-tablet__subtitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #252628;
+}
+
+.weatherdata-tablet__desc {
+  font-size: 17px;
+  line-height: 1.4;
+  color: #262626;
+}
+
+.weatherdata-tablet__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 16px 0;
+  border-radius: 16px;
+  background: #003187;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.4;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.weatherdata-tablet__visual {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.weatherdata-tablet__objects {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.weatherdata-tablet__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.weatherdata-tablet__card {
+  flex: 1 1 calc(50% - 8px);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-tablet__card-title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-tablet__card-text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* Até 700px, a ilustração e o logo descem para baixo dos cards do hero */
+@media (min-width: 500px) and (max-width: 700px) {
+  .weatherdata-tablet__row {
+    display: contents;
+  }
+
+  .weatherdata-tablet__info {
+    order: 1;
+  }
+
+  .weatherdata-tablet__visual {
+    order: 2;
+    flex: 0 0 auto;
+    align-self: center;
+  }
+
+  .weatherdata-tablet__cards {
+    order: 3;
+  }
+}
+
+/* ---------- Tablet: O projeto em 30 segundos ---------- */
+.weatherdata-tablet__section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 48px;
+}
+
+.weatherdata-tablet__accent {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #5029de;
+}
+
+.weatherdata-tablet__section-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.weatherdata-tablet__section-text {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+.weatherdata-tablet__pairs {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.weatherdata-tablet__pair {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-tablet__pair--dark {
+  border-color: #122f5d;
+  background: #122f5d;
+}
+
+.weatherdata-tablet__chip {
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-tablet__pair-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-tablet__pair-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #252628;
+}
+
+.weatherdata-tablet__pair--dark .weatherdata-tablet__pair-title,
+.weatherdata-tablet__pair--dark .weatherdata-tablet__pair-text {
+  color: #fff;
+}
+
+/* ---------- Tablet: Meu papel no projeto ---------- */
+.weatherdata-tablet__roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.weatherdata-tablet__role {
+  flex: 1 1 calc(50% - 8px);
+  min-width: 0;
+  min-height: 127px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-tablet__role-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-tablet__role-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Tablet: Dois painéis, dois tipos de decisão ---------- */
+.weatherdata-tablet__panels {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.weatherdata-tablet__panel {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  border-radius: 24px;
+  color: #fefefe;
+}
+
+.weatherdata-tablet__panel--climate {
+  background-image: linear-gradient(98.63deg, rgb(23, 64, 112) 1.87%, rgb(34, 93, 176) 98.97%);
+}
+
+.weatherdata-tablet__panel--renewable {
+  background-image: linear-gradient(98.63deg, rgb(201, 102, 23) 1.87%, rgb(242, 136, 39) 98.97%);
+}
+
+.weatherdata-tablet__panel-label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #d7d7d7;
+}
+
+.weatherdata-tablet__panel--renewable .weatherdata-tablet__panel-label {
+  color: #fefefe;
+}
+
+.weatherdata-tablet__panel-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #efefef;
+}
+
+.weatherdata-tablet__panel--renewable .weatherdata-tablet__panel-title {
+  color: #fefefe;
+}
+
+.weatherdata-tablet__panel-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fefefe;
+}
+
+/* Abaixo de 650px, os painéis ficam um abaixo do outro */
+@media (min-width: 500px) and (max-width: 650px) {
+  .weatherdata-tablet__panels {
+    flex-direction: column;
+  }
+}
+
+/* ---------- Tablet: Fluxo do usuário ---------- */
+.weatherdata-tablet__steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.weatherdata-tablet__step {
+  flex: 1 1 calc(50% - 8px);
+  min-width: 0;
+  min-height: 135px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-tablet__step-number {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #122f5d;
+}
+
+.weatherdata-tablet__step-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-tablet__step-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Tablet: Os dados já existiam ---------- */
+.weatherdata-tablet__step--data .weatherdata-tablet__step-number {
+  color: #c5595c;
+}
+
+.weatherdata-tablet__step--wide {
+  flex: 1 1 100%;
+}
+
+/* ---------- Tablet: Primeiro, a hierarquia. Depois, a estética. ---------- */
+.weatherdata-tablet__info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.weatherdata-tablet__info-label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #c3c3c4;
+}
+
+.weatherdata-tablet__info-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #fefefe;
+}
+
+.weatherdata-tablet__info-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fefefe;
+}
+
+.weatherdata-tablet__wireframe {
+  padding: 12px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.weatherdata-tablet__wireframe img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 1024;
+  object-fit: contain;
+}
+
+/* ---------- Tablet: Do sistema para a interface ---------- */
+.weatherdata-tablet__links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.weatherdata-tablet__link-row {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.weatherdata-tablet__link-card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-tablet__chip {
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-tablet__arrow {
+  align-self: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.4;
+  color: #122f5d;
+}
+
+.weatherdata-tablet__pair-text--dark-ink {
+  color: #252628;
+}
+
+/* ---------- Tablet: High fidelity ---------- */
+.weatherdata-tablet__screen {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 12px 12px 20px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-tablet__screen-frame {
+  padding: 12px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.weatherdata-tablet__screen-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 1024;
+  object-fit: contain;
+}
+
+.weatherdata-tablet__screen-caption {
+  padding: 4px 12px 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* ---------- Tablet: Resultado ---------- */
+.weatherdata-tablet__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.weatherdata-tablet__stat {
+  flex: 1 1 calc(50% - 8px);
+  min-width: 0;
+  min-height: 142px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 24px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-tablet__stat-number {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #a24a04;
+}
+
+.weatherdata-tablet__stat-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #252628;
+}
+
+.weatherdata-tablet__demo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 32px 28px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.weatherdata-tablet__demo-chip {
+  padding: 6px 14px;
+  border-radius: 900px;
+  background: #fefefe;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #122f5d;
+}
+
+.weatherdata-tablet__demo-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  color: #fff;
+}
+
+.weatherdata-tablet__demo-text {
+  font-size: 17px;
+  line-height: 1.4;
+  color: #efefef;
+}
+
+.weatherdata-tablet__demo-text p + p {
+  margin-top: 0;
+}
+
+.weatherdata-tablet__demo-link {
+  padding: 16px 28px;
+  border-radius: 16px;
+  background: #ffa300;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #151414;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* ==========================================================================
+   Hero da versão web entre 1000px e 1650px
+   Texto à esquerda, ilustração à direita com o botão logo abaixo dela e os
+   quatro cards em grade 2×2 ocupando a largura inteira.
+   ========================================================================== */
+.weatherdata-hero__cta--inline {
+  display: none;
+}
+
+@media (min-width: 1000px) and (max-width: 1650px) {
+  .weatherdata-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 400px;
+    align-items: start;
+    column-gap: 48px;
+    row-gap: 40px;
+    padding: 56px 65px 32px;
+  }
+
+  .weatherdata-hero__info {
+    display: contents;
+  }
+
+  .weatherdata-hero__tags {
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 0;
+  }
+
+  .weatherdata-hero__title {
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 0;
+  }
+
+  .weatherdata-hero__desc {
+    grid-column: 1;
+    grid-row: 3;
+    padding-left: 0;
+    text-align: left;
+    line-height: 1.6;
+  }
+
+  .weatherdata-hero__visual {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    align-self: start;
+    height: auto;
+    gap: 24px;
+    justify-content: flex-start;
+  }
+
+  .weatherdata-hero__objects {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .weatherdata-hero__logo {
+    display: none;
+  }
+
+  .weatherdata-hero__cta:not(.weatherdata-hero__cta--inline) {
+    display: none;
+  }
+
+  .weatherdata-hero__cta--inline {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 0;
+    padding: 24px;
+    justify-content: center;
+  }
+
+  .weatherdata-hero__cards {
+    grid-column: 1 / -1;
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .weatherdata-hero__card {
+    flex: none;
+    min-width: 0;
+  }
+}
+
+/* Abaixo de 640px, os cards "Problema" e "Oportunidade" ficam um abaixo do outro */
+@media (min-width: 500px) and (max-width: 640px) {
+  .weatherdata-tablet__pairs {
+    flex-direction: column;
+  }
+}
+
+/* ==========================================================================
+   Versão mobile (até 499px)
+   Medidas do frame "Weather Data | Mobile 390" do Figma (390px de largura).
+   ========================================================================== */
+.weatherdata-mobile {
+  display: none;
+}
+
+@media (max-width: 499px) {
+  .weatherdata-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 36px;
+  }
+}
+
+/* ---------- Hero ---------- */
+.weatherdata-mobile__hero {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 28px 20px 0;
+}
+
+.weatherdata-mobile__text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.weatherdata-mobile__tags {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #122f5d;
+}
+
+.weatherdata-mobile__name {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.1;
+  color: #151414;
+}
+
+.weatherdata-mobile__subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #252628;
+}
+
+.weatherdata-mobile__desc {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #262626;
+}
+
+.weatherdata-mobile__visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.weatherdata-mobile__objects {
+  display: block;
+  width: 230px;
+  height: auto;
+}
+
+.weatherdata-mobile__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8px 28px;
+  border-radius: 6px;
+  background: #003187;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.weatherdata-mobile__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.weatherdata-mobile__card {
+  flex: 1 1 calc(50% - 6px);
+  min-width: 0;
+  min-height: 144px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 16px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-mobile__card-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-mobile__card-text {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Mobile: O projeto em 30 segundos ---------- */
+.weatherdata-mobile__section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 36px 20px;
+}
+
+.weatherdata-mobile__accent {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #5029de;
+}
+
+.weatherdata-mobile__section-title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.weatherdata-mobile__section-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+.weatherdata-mobile__pairs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.weatherdata-mobile__pair {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px 20px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-mobile__pair--dark {
+  border-color: #122f5d;
+  background: #122f5d;
+}
+
+.weatherdata-mobile__chip {
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-mobile__pair-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-mobile__pair-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #252628;
+}
+
+.weatherdata-mobile__pair--dark .weatherdata-mobile__pair-title,
+.weatherdata-mobile__pair--dark .weatherdata-mobile__pair-text {
+  color: #fff;
+}
+
+/* ---------- Mobile: Meu papel no projeto ---------- */
+.weatherdata-mobile__roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.weatherdata-mobile__role {
+  flex: 1 1 calc(50% - 6px);
+  min-width: 0;
+  min-height: 172px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 16px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-mobile__role-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-mobile__role-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Mobile: Dois painéis, dois tipos de decisão ---------- */
+.weatherdata-mobile__panels {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.weatherdata-mobile__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px 20px;
+  border-radius: 24px;
+  color: #fefefe;
+}
+
+.weatherdata-mobile__panel--climate {
+  background-image: linear-gradient(103.08deg, rgb(23, 64, 112) 1.87%, rgb(34, 93, 176) 98.97%);
+}
+
+.weatherdata-mobile__panel--renewable {
+  background-image: linear-gradient(101.7deg, rgb(201, 102, 23) 1.87%, rgb(242, 136, 39) 98.97%);
+}
+
+.weatherdata-mobile__panel-label {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #d7d7d7;
+}
+
+.weatherdata-mobile__panel--renewable .weatherdata-mobile__panel-label {
+  color: #fefefe;
+}
+
+.weatherdata-mobile__panel-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #efefef;
+}
+
+.weatherdata-mobile__panel--renewable .weatherdata-mobile__panel-title {
+  color: #fefefe;
+}
+
+.weatherdata-mobile__panel-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #fefefe;
+}
+
+/* ---------- Mobile: Fluxo do usuário ---------- */
+.weatherdata-mobile__steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.weatherdata-mobile__step {
+  flex: 1 1 calc(50% - 6px);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 16px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-mobile__step-number {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #122f5d;
+}
+
+.weatherdata-mobile__step-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-mobile__step-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+/* ---------- Mobile: Os dados já existiam ---------- */
+.weatherdata-mobile__step--data {
+  min-height: 158px;
+}
+
+.weatherdata-mobile__step--data .weatherdata-mobile__step-number {
+  color: #c5595c;
+}
+
+.weatherdata-mobile__step--wide {
+  flex: 1 1 100%;
+  padding: 20px;
+}
+
+/* ---------- Mobile: Quando o tempo é curto ---------- */
+.weatherdata-mobile__step--fixed {
+  min-height: 158px;
+}
+
+/* ---------- Mobile: Primeiro, a hierarquia. Depois, a estética. ---------- */
+.weatherdata-mobile__info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 22px 20px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.weatherdata-mobile__info-label {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #c3c3c4;
+}
+
+.weatherdata-mobile__info-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #fefefe;
+}
+
+.weatherdata-mobile__info-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #fefefe;
+}
+
+.weatherdata-mobile__wireframe {
+  padding: 8px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.weatherdata-mobile__wireframe img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 1024;
+  object-fit: contain;
+}
+
+/* ---------- Mobile: Do sistema para a interface ---------- */
+.weatherdata-mobile__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.weatherdata-mobile__link-card {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  gap: 12px;
+  padding: 24px 20px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-mobile__chip {
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-mobile__arrow {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #122f5d;
+}
+
+/* ---------- Mobile: High fidelity ---------- */
+.weatherdata-mobile__screen {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 8px 8px 18px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-mobile__screen-frame {
+  padding: 8px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.weatherdata-mobile__screen-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 1024;
+  object-fit: contain;
+}
+
+.weatherdata-mobile__screen-caption {
+  padding: 4px 10px 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* ---------- Mobile: Resultado ---------- */
+.weatherdata-mobile__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.weatherdata-mobile__stat {
+  flex: 1 1 calc(50% - 6px);
+  min-width: 0;
+  min-height: 143px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 16px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-mobile__stat-number {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #a24a04;
+}
+
+.weatherdata-mobile__stat-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #252628;
+}
+
+.weatherdata-mobile__demo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px 20px;
+  border-radius: 24px;
+  background: #122f5d;
+}
+
+.weatherdata-mobile__demo-chip {
+  padding: 6px 14px;
+  border-radius: 900px;
+  background: #fefefe;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #122f5d;
+}
+
+.weatherdata-mobile__demo-title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.25;
+  color: #fff;
+}
+
+.weatherdata-mobile__demo-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #efefef;
+}
+
+.weatherdata-mobile__demo-text p + p {
+  margin-top: 0;
+}

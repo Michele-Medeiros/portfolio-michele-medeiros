@@ -1,0 +1,1045 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherData — Michele Medeiros</title>
+  <meta name="description" content="Documentação do case WeatherData: produto criado no NASA Space Apps para transformar dados climáticos e energéticos em decisões práticas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=27">
+  <link rel="stylesheet" href="css/documentacao-weatherdata.css">
+</head>
+<body>
+
+  <!-- Seção 1: Cabeçalho -->
+  <header class="navbar-wrap">
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a href="index.html" class="navbar__brand">Michele Medeiros</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="sobre-mim.html">Sobre mim</a>
+        <a href="projetos.html" class="is-active">Projetos</a>
+        <a href="contatos.html">Contatos</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="weatherdata-doc">
+
+    <!-- Seção 2: Apresentação do projeto -->
+    <section class="weatherdata-hero">
+      <div class="weatherdata-hero__info">
+        <p class="weatherdata-hero__tags">Product Design · Data Visualization · UX/UI · NASA Space Apps</p>
+
+        <div class="weatherdata-hero__title">
+          <h1 class="weatherdata-hero__name">WeatherData.</h1>
+          <p class="weatherdata-hero__subtitle">Dados que viram decisão.</p>
+        </div>
+
+        <p class="weatherdata-hero__desc">Uma plataforma criada durante o NASA Space Apps para traduzir dados climáticos e energéticos em respostas práticas, da escolha do melhor horário para um evento à comparação do potencial renovável entre cidades.</p>
+
+        <a class="weatherdata-hero__cta" href="https://weather-data-nasa-hackaton-2025.vercel.app/" target="_blank" rel="noopener">Explorar demo</a>
+
+        <div class="weatherdata-hero__cards">
+          <div class="weatherdata-hero__card">
+            <p class="weatherdata-hero__card-title">2º lugar Estadual</p>
+            <p class="weatherdata-hero__card-text">Presença no pódio do estado da Paraíba</p>
+          </div>
+          <div class="weatherdata-hero__card">
+            <p class="weatherdata-hero__card-title">Indicação global</p>
+            <p class="weatherdata-hero__card-text">Nomeação no Global Nominees no NASA Space Apps 2025</p>
+          </div>
+          <div class="weatherdata-hero__card">
+            <p class="weatherdata-hero__card-title">Gerente de produto</p>
+            <p class="weatherdata-hero__card-text">Responsável também pelo design e apresentação</p>
+          </div>
+          <div class="weatherdata-hero__card">
+            <p class="weatherdata-hero__card-title">implementado em 48h</p>
+            <p class="weatherdata-hero__card-text">Produto funcional com deploy no Vercel</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="weatherdata-hero__visual">
+        <img class="weatherdata-hero__objects" src="assets/images/weatherdata/objects.svg" alt="" width="418" height="390">
+        <img class="weatherdata-hero__logo" src="assets/images/weatherdata/logo.svg" alt="WeatherData" width="370" height="44">
+        <a class="weatherdata-hero__cta weatherdata-hero__cta--inline" href="https://weather-data-nasa-hackaton-2025.vercel.app/" target="_blank" rel="noopener">Explorar demo</a>
+      </div>
+    </section>
+
+    <div class="weatherdata-divider"></div>
+
+    <!-- Seção 3: O projeto em 30 segundos -->
+    <section class="weatherdata-summary">
+      <h2 class="weatherdata-summary__title">O projeto em 30 segundos</h2>
+
+      <p class="weatherdata-summary__text">O desafio não era mostrar dados. Era transformar informações técnicas em uma experiência que ajudasse pessoas a responder perguntas práticas e tomar decisões.</p>
+
+      <div class="weatherdata-summary__cards">
+        <article class="weatherdata-summary__card">
+          <span class="weatherdata-summary__pill">Problema</span>
+          <h3 class="weatherdata-summary__card-title">Dados precisos não são necessariamente dados úteis</h3>
+          <p class="weatherdata-summary__card-text">Chuva, vento, umidade, irradiação e densidade do ar podem ser relevantes, mas perdem valor quando chegam ao usuário sem contexto ou hierarquia.</p>
+        </article>
+
+        <article class="weatherdata-summary__card weatherdata-summary__card--dark">
+          <span class="weatherdata-summary__pill">Oportunidade</span>
+          <h3 class="weatherdata-summary__card-title">Traduzir ciência sem simplificar demais</h3>
+          <p class="weatherdata-summary__card-text">O produto precisava preservar a qualidade da informação e, ao mesmo tempo, torná-la escaneável, comparável e acionável.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="weatherdata-divider"></div>
+
+    <!-- Seção 4: Meu papel no projeto -->
+    <section class="weatherdata-role">
+      <div class="weatherdata-role__intro">
+        <h2 class="weatherdata-role__title">MEU PAPEL NO PROJETO</h2>
+        <p class="weatherdata-role__text">Atuei como Product Designer &amp; Líder, definindo visão, escopo, arquitetura, fluxos, UI, microcopy, priorização dos indicadores e validações rápidas com o time.</p>
+      </div>
+
+      <div class="weatherdata-role__grid">
+        <div class="weatherdata-role__row">
+          <article class="weatherdata-role__card">
+            <h3 class="weatherdata-role__card-title">Product Strategy</h3>
+            <p class="weatherdata-role__card-text">Recorte do problema e priorização no hackathon.</p>
+          </article>
+          <article class="weatherdata-role__card">
+            <h3 class="weatherdata-role__card-title">Information Architecture</h3>
+            <p class="weatherdata-role__card-text">Organização entre Painel Climático e Renovável.</p>
+          </article>
+          <article class="weatherdata-role__card">
+            <h3 class="weatherdata-role__card-title">Data UX</h3>
+            <p class="weatherdata-role__card-text">Seleção de métricas e formas de comparação.</p>
+          </article>
+        </div>
+
+        <div class="weatherdata-role__row">
+          <article class="weatherdata-role__card">
+            <h3 class="weatherdata-role__card-title">UX Writing</h3>
+            <p class="weatherdata-role__card-text">Tradução de termos técnicos.</p>
+          </article>
+          <article class="weatherdata-role__card">
+            <h3 class="weatherdata-role__card-title">UI Design</h3>
+            <p class="weatherdata-role__card-text">Visualização e hierarquia das telas.</p>
+          </article>
+          <article class="weatherdata-role__card">
+            <h3 class="weatherdata-role__card-title">Product leadership</h3>
+            <p class="weatherdata-role__card-text">Alinhamento entre design, dev e dados.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="weatherdata-divider"></div>
+
+    <!-- Seção 5: Dois painéis, dois tipos de decisão -->
+    <section class="weatherdata-panels">
+      <div class="weatherdata-panels__intro">
+        <h2 class="weatherdata-panels__title">Dois painéis, dois tipos de decisão</h2>
+        <p class="weatherdata-panels__text">A interface foi consequência de decisões anteriores. O produto foi primeiro decomposto em problema, escopo, regras, estados, prioridades e comportamento esperado.</p>
+      </div>
+
+      <div class="weatherdata-panels__cards">
+        <article class="weatherdata-panels__card weatherdata-panels__card--climate">
+          <span class="weatherdata-panels__label">Painel Climático</span>
+          <h3 class="weatherdata-panels__card-title">O que acontece hoje?</h3>
+          <p class="weatherdata-panels__card-text">Cidade, data e horário viram leitura de chuva, vento forte, calor extremo, umidade e céu encoberto.</p>
+        </article>
+
+        <article class="weatherdata-panels__card weatherdata-panels__card--renewable">
+          <span class="weatherdata-panels__label">Painel Renovável</span>
+          <h3 class="weatherdata-panels__card-title">Onde existe maior potencial?</h3>
+          <p class="weatherdata-panels__card-text">Comparação entre cidades por potencial solar e eólico, apoiada por métricas como irradiação, ângulo solar, densidade do ar e velocidade do vento.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="weatherdata-divider"></div>
+
+    <!-- Seção 6: Fluxo do usuário -->
+    <section class="weatherdata-flow">
+      <div class="weatherdata-flow__intro">
+        <h2 class="weatherdata-flow__title">Fluxo do usuário</h2>
+        <p class="weatherdata-flow__text">O caminho parte de uma pergunta simples e termina em uma decisão compreensível.</p>
+      </div>
+
+      <div class="weatherdata-flow__steps">
+        <article class="weatherdata-flow__step">
+          <span class="weatherdata-flow__number">01</span>
+          <h3 class="weatherdata-flow__step-title">Selecionar</h3>
+          <p class="weatherdata-flow__step-text">Cidade, data e horário.</p>
+        </article>
+        <article class="weatherdata-flow__step">
+          <span class="weatherdata-flow__number">02</span>
+          <h3 class="weatherdata-flow__step-title">Interpretar</h3>
+          <p class="weatherdata-flow__step-text">Condições e probabilidades.</p>
+        </article>
+        <article class="weatherdata-flow__step">
+          <span class="weatherdata-flow__number">03</span>
+          <h3 class="weatherdata-flow__step-title">Comparar</h3>
+          <p class="weatherdata-flow__step-text">Cidades e potenciais.</p>
+        </article>
+        <article class="weatherdata-flow__step">
+          <span class="weatherdata-flow__number">04</span>
+          <h3 class="weatherdata-flow__step-title">Entender</h3>
+          <p class="weatherdata-flow__step-text">Métricas locais e conceitos.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="weatherdata-divider"></div>
+
+    <!-- Seção 7: Os dados já existiam -->
+    <section class="weatherdata-data">
+      <div class="weatherdata-data__intro">
+        <h2 class="weatherdata-data__title">Os dados já existiam. O desafio era torná-los compreensíveis.</h2>
+        <p class="weatherdata-data__text">A NASA POWER disponibiliza uma grande quantidade de dados climáticos e energéticos. O trabalho de produto foi selecionar o que realmente apoiava a decisão e definir como isso deveria aparecer.</p>
+      </div>
+
+      <div class="weatherdata-data__flow">
+        <div class="weatherdata-data__row">
+          <article class="weatherdata-data__card">
+            <p class="weatherdata-data__card-head"><span class="weatherdata-data__card-number">01</span><span class="weatherdata-data__card-title">NASA POWER</span></p>
+            <p class="weatherdata-data__card-text">Fonte de dados.</p>
+          </article>
+          <img class="weatherdata-data__arrow" src="assets/images/weatherdata/arrow.svg" alt="" width="34" height="22">
+          <article class="weatherdata-data__card">
+            <p class="weatherdata-data__card-head"><span class="weatherdata-data__card-number">02</span><span class="weatherdata-data__card-title">Selecionar indicadores</span></p>
+            <p class="weatherdata-data__card-text">O que é relevante.</p>
+          </article>
+          <img class="weatherdata-data__arrow" src="assets/images/weatherdata/arrow.svg" alt="" width="34" height="22">
+          <article class="weatherdata-data__card">
+            <p class="weatherdata-data__card-head"><span class="weatherdata-data__card-number">03</span><span class="weatherdata-data__card-title">Traduzir conceitos</span></p>
+            <p class="weatherdata-data__card-text">Contexto para termos técnicos.</p>
+          </article>
+        </div>
+
+        <div class="weatherdata-data__row weatherdata-data__row--short">
+          <article class="weatherdata-data__card weatherdata-data__card--wide">
+            <p class="weatherdata-data__card-head"><span class="weatherdata-data__card-number">01</span><span class="weatherdata-data__card-title">Visualizar</span></p>
+            <p class="weatherdata-data__card-text">Fonte de dados.</p>
+          </article>
+          <img class="weatherdata-data__arrow" src="assets/images/weatherdata/arrow.svg" alt="" width="34" height="22">
+          <article class="weatherdata-data__card weatherdata-data__card--wide">
+            <p class="weatherdata-data__card-head"><span class="weatherdata-data__card-number">02</span><span class="weatherdata-data__card-title">Decidir</span></p>
+            <p class="weatherdata-data__card-text">O que é relevante.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="weatherdata-divider"></div>
+
+    <!-- Seção 8: Quando o tempo é curto, clareza vira estratégia -->
+    <section class="weatherdata-clarity">
+      <div class="weatherdata-clarity__intro">
+        <h2 class="weatherdata-clarity__title">Quando o tempo é curto, clareza vira estratégia</h2>
+        <p class="weatherdata-clarity__text">O hackathon exigia decisões rápidas. Em vez de mostrar tudo, o recorte priorizou leitura rápida, linguagem simples e consistência entre os painéis.</p>
+      </div>
+
+      <div class="weatherdata-clarity__cards">
+        <article class="weatherdata-clarity__card">
+          <span class="weatherdata-clarity__number">01</span>
+          <h3 class="weatherdata-clarity__card-title">Um objetivo por tela</h3>
+          <p class="weatherdata-clarity__card-text">Evitar competição entre decisões.</p>
+        </article>
+        <article class="weatherdata-clarity__card">
+          <span class="weatherdata-clarity__number">02</span>
+          <h3 class="weatherdata-clarity__card-title">Chips e barras</h3>
+          <p class="weatherdata-clarity__card-text">Leitura feita em poucos segundos.</p>
+        </article>
+        <article class="weatherdata-clarity__card">
+          <span class="weatherdata-clarity__number">03</span>
+          <h3 class="weatherdata-clarity__card-title">Tooltips educativos</h3>
+          <p class="weatherdata-clarity__card-text">Jargão traduzido no contexto certo.</p>
+        </article>
+        <article class="weatherdata-clarity__card">
+          <span class="weatherdata-clarity__number">04</span>
+          <h3 class="weatherdata-clarity__card-title">Consistência visual</h3>
+          <p class="weatherdata-clarity__card-text">Mesma lógica entre os painéis.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="weatherdata-divider"></div>
+
+    <!-- Seção 9: Primeiro, a hierarquia. Depois, a estética. -->
+    <section class="weatherdata-hierarchy">
+      <div class="weatherdata-hierarchy__intro">
+        <h2 class="weatherdata-hierarchy__title">Primeiro, a hierarquia. Depois, a estética.</h2>
+        <p class="weatherdata-hierarchy__text">O wireframe já organizava clima do dia, calendário, precipitação, energia renovável, gráficos e rankings antes da camada visual final.</p>
+      </div>
+
+      <div class="weatherdata-hierarchy__panel">
+        <div class="weatherdata-hierarchy__info">
+          <span class="weatherdata-hierarchy__pill">Data UX</span>
+          <h3 class="weatherdata-hierarchy__card-title">Traduzindo ciência sem empobrecer a informação</h3>
+          <p class="weatherdata-hierarchy__card-text">Termos técnicos como kWh/m², irradiação e densidade do ar não precisavam desaparecer. Eles precisavam de contexto. Tooltips e microcopy ajudaram o usuário a entender o significado dos dados antes de interpretá-los.</p>
+        </div>
+
+        <div class="weatherdata-hierarchy__wireframes">
+          <img class="weatherdata-hierarchy__wireframe" src="assets/images/weatherdata/wireframe-2.png" alt="Wireframe de baixa fidelidade da tela de painel climático" width="1440" height="1024">
+          <img class="weatherdata-hierarchy__wireframe" src="assets/images/weatherdata/wireframe-1.png" alt="Wireframe de baixa fidelidade da tela de painel renovável" width="1440" height="1024">
+        </div>
+      </div>
+    </section>
+
+    <div class="weatherdata-divider"></div>
+
+    <!-- Seção 10: Do sistema para a interface -->
+    <section class="weatherdata-system">
+      <div class="weatherdata-system__intro">
+        <h2 class="weatherdata-system__title">Do sistema para a interface</h2>
+        <p class="weatherdata-system__text">O case conecta componente, estado e aplicação real, em vez de mostrar uma prancha isolada de UI kit.</p>
+      </div>
+
+      <div class="weatherdata-system__row">
+        <article class="weatherdata-system__card">
+          <span class="weatherdata-system__pill">Componente</span>
+          <h3 class="weatherdata-system__card-title">Escala de Humor</h3>
+          <p class="weatherdata-system__card-text">Default + cinco estados documentados.</p>
+        </article>
+        <img class="weatherdata-system__connector" src="assets/images/weatherdata/connector.svg" alt="" width="124" height="44">
+        <article class="weatherdata-system__card">
+          <span class="weatherdata-system__pill">Aplicação</span>
+          <h3 class="weatherdata-system__card-title">Registro na Home</h3>
+          <p class="weatherdata-system__card-text">O mesmo componente sustenta o core flow em diferentes estados.</p>
+        </article>
+      </div>
+
+      <div class="weatherdata-system__row">
+        <article class="weatherdata-system__card">
+          <span class="weatherdata-system__pill">Componente</span>
+          <h3 class="weatherdata-system__card-title">Input</h3>
+          <p class="weatherdata-system__card-text">Default → Focus → Filled → Error.</p>
+        </article>
+        <img class="weatherdata-system__connector" src="assets/images/weatherdata/connector.svg" alt="" width="124" height="44">
+        <article class="weatherdata-system__card">
+          <span class="weatherdata-system__pill">Aplicação</span>
+          <h3 class="weatherdata-system__card-title">Login &amp; Criar conta</h3>
+          <p class="weatherdata-system__card-text">Estados previsíveis facilitam implementação e QA.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="weatherdata-divider"></div>
+
+    <!-- Seção 11: High fidelity -->
+    <section class="weatherdata-fidelity">
+      <div class="weatherdata-fidelity__intro">
+        <h2 class="weatherdata-fidelity__title">High fidelity</h2>
+        <p class="weatherdata-fidelity__text">Os protótipos finais cobrem registro de humor, histórico, insights e conta, com os estados definidos no sistema.</p>
+      </div>
+
+      <figure class="weatherdata-fidelity__card">
+        <img class="weatherdata-fidelity__image" src="assets/images/weatherdata/dashboard-home.png" alt="Tela de dashboard do WeatherData em alta fidelidade" width="1440" height="1024">
+        <figcaption class="weatherdata-fidelity__caption">dashboard</figcaption>
+      </figure>
+
+      <figure class="weatherdata-fidelity__card">
+        <img class="weatherdata-fidelity__image" src="assets/images/weatherdata/painel-renovavel.png" alt="Tela do painel renovável do WeatherData em alta fidelidade" width="1440" height="1024">
+        <figcaption class="weatherdata-fidelity__caption">painel administrativo</figcaption>
+      </figure>
+    </section>
+
+    <div class="weatherdata-divider"></div>
+
+    <!-- Seção 12: Resultado -->
+    <section class="weatherdata-result">
+      <div class="weatherdata-result__intro">
+        <h2 class="weatherdata-result__title">Resultado</h2>
+        <p class="weatherdata-result__text">O WeatherData mostrou que uma interface não precisa reduzir a informação até ela perder valor. Ela precisa criar contexto suficiente para que o usuário consiga interpretar e agir.</p>
+      </div>
+
+      <div class="weatherdata-result__stats">
+        <div class="weatherdata-result__stat">
+          <p class="weatherdata-result__number">2º</p>
+          <p class="weatherdata-result__stat-text">lugar na etapa local</p>
+        </div>
+        <div class="weatherdata-result__stat">
+          <p class="weatherdata-result__number">1</p>
+          <p class="weatherdata-result__stat-text">produto funcional integrado à NASA POWER</p>
+        </div>
+        <div class="weatherdata-result__stat">
+          <p class="weatherdata-result__number">2</p>
+          <p class="weatherdata-result__stat-text">contextos: clima + energia renovável</p>
+        </div>
+        <div class="weatherdata-result__stat">
+          <p class="weatherdata-result__number">4</p>
+          <p class="weatherdata-result__stat-text">pessoas no time multidisciplinar</p>
+        </div>
+      </div>
+
+      <div class="weatherdata-result__demo">
+        <div class="weatherdata-result__demo-info">
+          <span class="weatherdata-result__demo-pill">Interactive demo</span>
+          <h3 class="weatherdata-result__demo-title">Não terminou no Figma</h3>
+          <div class="weatherdata-result__demo-text">
+            <p>O projeto chegou a uma aplicação funcional integrada à NASA POWER API, com gráficos em Chart.js e deploy público na Vercel.</p>
+            <p>A demo permite navegar pelo resultado desenvolvido durante o hackathon.</p>
+          </div>
+        </div>
+        <a class="weatherdata-result__demo-link" href="https://weather-data-nasa-hackaton-2025.vercel.app/" target="_blank" rel="noopener">Experimente o WeatherData</a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Versão tablet (500px a 999px), frame "Weather Data | Tablet 768" do Figma -->
+  <div class="weatherdata-tablet">
+
+    <!-- Seção 1: Apresentação do projeto -->
+    <section class="weatherdata-tablet__hero">
+      <div class="weatherdata-tablet__row">
+        <div class="weatherdata-tablet__info">
+          <p class="weatherdata-tablet__tags">Product Design · Data Visualization · UX/UI · NASA Space Apps</p>
+          <h1 class="weatherdata-tablet__name">WeatherData.</h1>
+          <p class="weatherdata-tablet__subtitle">Dados que viram decisão.</p>
+          <p class="weatherdata-tablet__desc">Uma plataforma criada durante o NASA Space Apps para traduzir dados climáticos e energéticos em respostas práticas, da escolha do melhor horário para um evento à comparação do potencial renovável entre cidades.</p>
+        </div>
+
+        <div class="weatherdata-tablet__visual">
+          <img class="weatherdata-tablet__objects" src="assets/images/weatherdata/objects-tablet.png" alt="" width="250" height="233">
+          <a class="weatherdata-tablet__cta" href="https://weather-data-nasa-hackaton-2025.vercel.app/" target="_blank" rel="noopener">Explorar demo</a>
+        </div>
+      </div>
+
+      <div class="weatherdata-tablet__cards">
+        <div class="weatherdata-tablet__card">
+          <p class="weatherdata-tablet__card-title">2º lugar Estadual</p>
+          <p class="weatherdata-tablet__card-text">Presença no pódio do estado da Paraíba</p>
+        </div>
+        <div class="weatherdata-tablet__card">
+          <p class="weatherdata-tablet__card-title">Indicação global</p>
+          <p class="weatherdata-tablet__card-text">Nomeação no Global Nominees no NASA Space Apps 2025</p>
+        </div>
+        <div class="weatherdata-tablet__card">
+          <p class="weatherdata-tablet__card-title">Gerente de produto</p>
+          <p class="weatherdata-tablet__card-text">Responsável também pelo design e apresentação</p>
+        </div>
+        <div class="weatherdata-tablet__card">
+          <p class="weatherdata-tablet__card-title">implementado em 48h</p>
+          <p class="weatherdata-tablet__card-text">Produto funcional com deploy no Vercel</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 2: O projeto em 30 segundos -->
+    <section class="weatherdata-tablet__section">
+      <span class="weatherdata-tablet__accent"></span>
+      <h2 class="weatherdata-tablet__section-title">O projeto em 30 segundos</h2>
+      <p class="weatherdata-tablet__section-text">O desafio não era mostrar dados. Era transformar informações técnicas em uma experiência que ajudasse pessoas a responder perguntas práticas e tomar decisões.</p>
+
+      <div class="weatherdata-tablet__pairs">
+        <article class="weatherdata-tablet__pair">
+          <span class="weatherdata-tablet__chip">Problema</span>
+          <h3 class="weatherdata-tablet__pair-title">Dados precisos não são necessariamente dados úteis</h3>
+          <p class="weatherdata-tablet__pair-text">Chuva, vento, umidade, irradiação e densidade do ar podem ser relevantes, mas perdem valor quando chegam ao usuário sem contexto ou hierarquia.</p>
+        </article>
+        <article class="weatherdata-tablet__pair weatherdata-tablet__pair--dark">
+          <span class="weatherdata-tablet__chip">Oportunidade</span>
+          <h3 class="weatherdata-tablet__pair-title">Traduzir ciência sem simplificar demais</h3>
+          <p class="weatherdata-tablet__pair-text">O produto precisava preservar a qualidade da informação e, ao mesmo tempo, torná-la escaneável, comparável e acionável.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 3: Meu papel no projeto -->
+    <section class="weatherdata-tablet__section">
+      <span class="weatherdata-tablet__accent"></span>
+      <h2 class="weatherdata-tablet__section-title">MEU PAPEL NO PROJETO</h2>
+      <p class="weatherdata-tablet__section-text">Atuei como Product Designer &amp; Líder, definindo visão, escopo, arquitetura, fluxos, UI, microcopy, priorização dos indicadores e validações rápidas com o time.</p>
+
+      <div class="weatherdata-tablet__roles">
+        <article class="weatherdata-tablet__role">
+          <h3 class="weatherdata-tablet__role-title">Product Strategy</h3>
+          <p class="weatherdata-tablet__role-text">Recorte do problema e priorização no hackathon.</p>
+        </article>
+        <article class="weatherdata-tablet__role">
+          <h3 class="weatherdata-tablet__role-title">Information Architecture</h3>
+          <p class="weatherdata-tablet__role-text">Organização entre Painel Climático e Renovável.</p>
+        </article>
+        <article class="weatherdata-tablet__role">
+          <h3 class="weatherdata-tablet__role-title">Data UX</h3>
+          <p class="weatherdata-tablet__role-text">Seleção de métricas e formas de comparação.</p>
+        </article>
+        <article class="weatherdata-tablet__role">
+          <h3 class="weatherdata-tablet__role-title">UX Writing</h3>
+          <p class="weatherdata-tablet__role-text">Tradução de termos técnicos.</p>
+        </article>
+        <article class="weatherdata-tablet__role">
+          <h3 class="weatherdata-tablet__role-title">UI Design</h3>
+          <p class="weatherdata-tablet__role-text">Visualização e hierarquia das telas.</p>
+        </article>
+        <article class="weatherdata-tablet__role">
+          <h3 class="weatherdata-tablet__role-title">Product leadership</h3>
+          <p class="weatherdata-tablet__role-text">Alinhamento entre design, dev e dados.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 4: Dois painéis, dois tipos de decisão -->
+    <section class="weatherdata-tablet__section">
+      <span class="weatherdata-tablet__accent"></span>
+      <h2 class="weatherdata-tablet__section-title">Dois painéis, dois tipos de decisão</h2>
+      <p class="weatherdata-tablet__section-text">A interface foi consequência de decisões anteriores. O produto foi primeiro decomposto em problema, escopo, regras, estados, prioridades e comportamento esperado.</p>
+
+      <div class="weatherdata-tablet__panels">
+        <article class="weatherdata-tablet__panel weatherdata-tablet__panel--climate">
+          <span class="weatherdata-tablet__panel-label">Painel Climático</span>
+          <h3 class="weatherdata-tablet__panel-title">O que acontece hoje?</h3>
+          <p class="weatherdata-tablet__panel-text">Cidade, data e horário viram leitura de chuva, vento forte, calor extremo, umidade e céu encoberto.</p>
+        </article>
+        <article class="weatherdata-tablet__panel weatherdata-tablet__panel--renewable">
+          <span class="weatherdata-tablet__panel-label">Painel Renovável</span>
+          <h3 class="weatherdata-tablet__panel-title">Onde existe maior potencial?</h3>
+          <p class="weatherdata-tablet__panel-text">Comparação entre cidades por potencial solar e eólico, apoiada por métricas como irradiação, ângulo solar, densidade do ar e velocidade do vento.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 5: Fluxo do usuário -->
+    <section class="weatherdata-tablet__section">
+      <span class="weatherdata-tablet__accent"></span>
+      <h2 class="weatherdata-tablet__section-title">Fluxo do usuário</h2>
+      <p class="weatherdata-tablet__section-text">O caminho parte de uma pergunta simples e termina em uma decisão compreensível.</p>
+
+      <div class="weatherdata-tablet__steps">
+        <article class="weatherdata-tablet__step">
+          <span class="weatherdata-tablet__step-number">01</span>
+          <h3 class="weatherdata-tablet__step-title">Selecionar</h3>
+          <p class="weatherdata-tablet__step-text">Cidade, data e horário.</p>
+        </article>
+        <article class="weatherdata-tablet__step">
+          <span class="weatherdata-tablet__step-number">02</span>
+          <h3 class="weatherdata-tablet__step-title">Interpretar</h3>
+          <p class="weatherdata-tablet__step-text">Condições e probabilidades.</p>
+        </article>
+        <article class="weatherdata-tablet__step">
+          <span class="weatherdata-tablet__step-number">03</span>
+          <h3 class="weatherdata-tablet__step-title">Comparar</h3>
+          <p class="weatherdata-tablet__step-text">Cidades e potenciais.</p>
+        </article>
+        <article class="weatherdata-tablet__step">
+          <span class="weatherdata-tablet__step-number">04</span>
+          <h3 class="weatherdata-tablet__step-title">Entender</h3>
+          <p class="weatherdata-tablet__step-text">Métricas locais e conceitos.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 6: Os dados já existiam -->
+    <section class="weatherdata-tablet__section">
+      <span class="weatherdata-tablet__accent"></span>
+      <h2 class="weatherdata-tablet__section-title">Os dados já existiam. O desafio era torná-los compreensíveis.</h2>
+      <p class="weatherdata-tablet__section-text">A NASA POWER disponibiliza uma grande quantidade de dados climáticos e energéticos. O trabalho de produto foi selecionar o que realmente apoiava a decisão e definir como isso deveria aparecer.</p>
+
+      <div class="weatherdata-tablet__steps">
+        <article class="weatherdata-tablet__step weatherdata-tablet__step--data">
+          <span class="weatherdata-tablet__step-number">01</span>
+          <h3 class="weatherdata-tablet__step-title">NASA POWER</h3>
+          <p class="weatherdata-tablet__step-text">Fonte de dados.</p>
+        </article>
+        <article class="weatherdata-tablet__step weatherdata-tablet__step--data">
+          <span class="weatherdata-tablet__step-number">02</span>
+          <h3 class="weatherdata-tablet__step-title">Selecionar indicadores</h3>
+          <p class="weatherdata-tablet__step-text">O que é relevante.</p>
+        </article>
+        <article class="weatherdata-tablet__step weatherdata-tablet__step--data">
+          <span class="weatherdata-tablet__step-number">03</span>
+          <h3 class="weatherdata-tablet__step-title">Traduzir conceitos</h3>
+          <p class="weatherdata-tablet__step-text">Contexto para termos técnicos.</p>
+        </article>
+        <article class="weatherdata-tablet__step weatherdata-tablet__step--data">
+          <span class="weatherdata-tablet__step-number">01</span>
+          <h3 class="weatherdata-tablet__step-title">Visualizar</h3>
+          <p class="weatherdata-tablet__step-text">Fonte de dados.</p>
+        </article>
+        <article class="weatherdata-tablet__step weatherdata-tablet__step--data weatherdata-tablet__step--wide">
+          <span class="weatherdata-tablet__step-number">02</span>
+          <h3 class="weatherdata-tablet__step-title">Decidir</h3>
+          <p class="weatherdata-tablet__step-text">O que é relevante.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 7: Quando o tempo é curto, clareza vira estratégia -->
+    <section class="weatherdata-tablet__section">
+      <span class="weatherdata-tablet__accent"></span>
+      <h2 class="weatherdata-tablet__section-title">Quando o tempo é curto, clareza vira estratégia</h2>
+      <p class="weatherdata-tablet__section-text">O hackathon exigia decisões rápidas. Em vez de mostrar tudo, o recorte priorizou leitura rápida, linguagem simples e consistência entre os painéis.</p>
+
+      <div class="weatherdata-tablet__steps">
+        <article class="weatherdata-tablet__step">
+          <span class="weatherdata-tablet__step-number">01</span>
+          <h3 class="weatherdata-tablet__step-title">Um objetivo por tela</h3>
+          <p class="weatherdata-tablet__step-text">Evitar competição entre decisões.</p>
+        </article>
+        <article class="weatherdata-tablet__step">
+          <span class="weatherdata-tablet__step-number">02</span>
+          <h3 class="weatherdata-tablet__step-title">Chips e barras</h3>
+          <p class="weatherdata-tablet__step-text">Leitura feita em poucos segundos.</p>
+        </article>
+        <article class="weatherdata-tablet__step">
+          <span class="weatherdata-tablet__step-number">03</span>
+          <h3 class="weatherdata-tablet__step-title">Tooltips educativos</h3>
+          <p class="weatherdata-tablet__step-text">Jargão traduzido no contexto certo.</p>
+        </article>
+        <article class="weatherdata-tablet__step">
+          <span class="weatherdata-tablet__step-number">04</span>
+          <h3 class="weatherdata-tablet__step-title">Consistência visual</h3>
+          <p class="weatherdata-tablet__step-text">Mesma lógica entre os painéis.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 8: Primeiro, a hierarquia. Depois, a estética. -->
+    <section class="weatherdata-tablet__section">
+      <span class="weatherdata-tablet__accent"></span>
+      <h2 class="weatherdata-tablet__section-title">Primeiro, a hierarquia. Depois, a estética.</h2>
+      <p class="weatherdata-tablet__section-text">O wireframe já organizava clima do dia, calendário, precipitação, energia renovável, gráficos e rankings antes da camada visual final.</p>
+
+      <article class="weatherdata-tablet__info-card">
+        <p class="weatherdata-tablet__info-label">Data UX</p>
+        <h3 class="weatherdata-tablet__info-title">Traduzindo ciência sem empobrecer a informação</h3>
+        <p class="weatherdata-tablet__info-text">Termos técnicos como kWh/m², irradiação e densidade do ar não precisavam desaparecer. Eles precisavam de contexto. Tooltips e microcopy ajudaram o usuário a entender o significado dos dados antes de interpretá-los.</p>
+      </article>
+
+      <div class="weatherdata-tablet__wireframe">
+        <img src="assets/images/weatherdata/tablet-wireframe-1.png" alt="Wireframe de baixa fidelidade da tela de painel climático" width="1440" height="1024">
+      </div>
+      <div class="weatherdata-tablet__wireframe">
+        <img src="assets/images/weatherdata/tablet-wireframe-2.png" alt="Wireframe de baixa fidelidade da tela de painel renovável" width="1440" height="1024">
+      </div>
+    </section>
+
+    <!-- Seção 9: Do sistema para a interface -->
+    <section class="weatherdata-tablet__section">
+      <span class="weatherdata-tablet__accent"></span>
+      <h2 class="weatherdata-tablet__section-title">Do sistema para a interface</h2>
+      <p class="weatherdata-tablet__section-text">O case conecta componente, estado e aplicação real, em vez de mostrar uma prancha isolada de UI kit.</p>
+
+      <div class="weatherdata-tablet__links">
+        <div class="weatherdata-tablet__link-row">
+          <article class="weatherdata-tablet__link-card">
+            <span class="weatherdata-tablet__chip">Componente</span>
+            <h3 class="weatherdata-tablet__pair-title">Escala de Humor</h3>
+            <p class="weatherdata-tablet__pair-text weatherdata-tablet__pair-text--dark-ink">Default + cinco estados documentados.</p>
+          </article>
+          <span class="weatherdata-tablet__arrow" aria-hidden="true">→</span>
+          <article class="weatherdata-tablet__link-card">
+            <span class="weatherdata-tablet__chip">Aplicação</span>
+            <h3 class="weatherdata-tablet__pair-title">Registro na Home</h3>
+            <p class="weatherdata-tablet__pair-text weatherdata-tablet__pair-text--dark-ink">O mesmo componente sustenta o core flow em diferentes estados.</p>
+          </article>
+        </div>
+
+        <div class="weatherdata-tablet__link-row">
+          <article class="weatherdata-tablet__link-card">
+            <span class="weatherdata-tablet__chip">Componente</span>
+            <h3 class="weatherdata-tablet__pair-title">Input</h3>
+            <p class="weatherdata-tablet__pair-text weatherdata-tablet__pair-text--dark-ink">Default → Focus → Filled → Error.</p>
+          </article>
+          <span class="weatherdata-tablet__arrow" aria-hidden="true">→</span>
+          <article class="weatherdata-tablet__link-card">
+            <span class="weatherdata-tablet__chip">Aplicação</span>
+            <h3 class="weatherdata-tablet__pair-title">Login &amp; Criar conta</h3>
+            <p class="weatherdata-tablet__pair-text weatherdata-tablet__pair-text--dark-ink">Estados previsíveis facilitam implementação e QA.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 10: High fidelity -->
+    <section class="weatherdata-tablet__section">
+      <span class="weatherdata-tablet__accent"></span>
+      <h2 class="weatherdata-tablet__section-title">High fidelity</h2>
+      <p class="weatherdata-tablet__section-text">Os protótipos finais cobrem registro de humor, histórico, insights e conta, com os estados definidos no sistema.</p>
+
+      <figure class="weatherdata-tablet__screen">
+        <div class="weatherdata-tablet__screen-frame">
+          <img src="assets/images/weatherdata/tablet-dashboard.png" alt="Tela de dashboard do WeatherData em alta fidelidade" width="1440" height="1024">
+        </div>
+        <figcaption class="weatherdata-tablet__screen-caption">dashboard</figcaption>
+      </figure>
+
+      <figure class="weatherdata-tablet__screen">
+        <div class="weatherdata-tablet__screen-frame">
+          <img src="assets/images/weatherdata/tablet-painel.png" alt="Tela do painel administrativo do WeatherData em alta fidelidade" width="1440" height="1024">
+        </div>
+        <figcaption class="weatherdata-tablet__screen-caption">painel administrativo</figcaption>
+      </figure>
+    </section>
+
+    <!-- Seção 11: Resultado -->
+    <section class="weatherdata-tablet__section">
+      <span class="weatherdata-tablet__accent"></span>
+      <h2 class="weatherdata-tablet__section-title">Resultado</h2>
+      <p class="weatherdata-tablet__section-text">O WeatherData mostrou que uma interface não precisa reduzir a informação até ela perder valor. Ela precisa criar contexto suficiente para que o usuário consiga interpretar e agir.</p>
+
+      <div class="weatherdata-tablet__stats">
+        <div class="weatherdata-tablet__stat">
+          <p class="weatherdata-tablet__stat-number">2º</p>
+          <p class="weatherdata-tablet__stat-text">lugar na etapa local</p>
+        </div>
+        <div class="weatherdata-tablet__stat">
+          <p class="weatherdata-tablet__stat-number">1</p>
+          <p class="weatherdata-tablet__stat-text">produto funcional integrado à NASA POWER</p>
+        </div>
+        <div class="weatherdata-tablet__stat">
+          <p class="weatherdata-tablet__stat-number">2</p>
+          <p class="weatherdata-tablet__stat-text">contextos: clima + energia renovável</p>
+        </div>
+        <div class="weatherdata-tablet__stat">
+          <p class="weatherdata-tablet__stat-number">4</p>
+          <p class="weatherdata-tablet__stat-text">pessoas no time multidisciplinar</p>
+        </div>
+      </div>
+
+      <div class="weatherdata-tablet__demo">
+        <span class="weatherdata-tablet__demo-chip">Interactive demo</span>
+        <h3 class="weatherdata-tablet__demo-title">Não terminou no Figma</h3>
+        <div class="weatherdata-tablet__demo-text">
+          <p>O projeto chegou a uma aplicação funcional integrada à NASA POWER API, com gráficos em Chart.js e deploy público na Vercel.</p>
+          <p>A demo permite navegar pelo resultado desenvolvido durante o hackathon.</p>
+        </div>
+        <a class="weatherdata-tablet__demo-link" href="https://weather-data-nasa-hackaton-2025.vercel.app/" target="_blank" rel="noopener">Experimente o WeatherData</a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Versão mobile (até 499px), frame "Weather Data | Mobile 390" do Figma -->
+  <div class="weatherdata-mobile">
+
+    <!-- Seção 1: Apresentação do projeto -->
+    <section class="weatherdata-mobile__hero">
+      <div class="weatherdata-mobile__text">
+        <p class="weatherdata-mobile__tags">Product Design · Data Visualization · UX/UI · NASA Space Apps</p>
+        <h1 class="weatherdata-mobile__name">WeatherData.</h1>
+        <p class="weatherdata-mobile__subtitle">Dados que viram decisão.</p>
+        <p class="weatherdata-mobile__desc">Uma plataforma criada durante o NASA Space Apps para traduzir dados climáticos e energéticos em respostas práticas, da escolha do melhor horário para um evento à comparação do potencial renovável entre cidades.</p>
+      </div>
+
+      <div class="weatherdata-mobile__visual">
+        <img class="weatherdata-mobile__objects" src="assets/images/weatherdata/objects-tablet.png" alt="" width="250" height="233">
+        <a class="weatherdata-mobile__cta" href="https://weather-data-nasa-hackaton-2025.vercel.app/" target="_blank" rel="noopener">Explorar demo</a>
+      </div>
+
+      <div class="weatherdata-mobile__cards">
+        <div class="weatherdata-mobile__card">
+          <p class="weatherdata-mobile__card-title">2º lugar Estadual</p>
+          <p class="weatherdata-mobile__card-text">Presença no pódio do estado da Paraíba</p>
+        </div>
+        <div class="weatherdata-mobile__card">
+          <p class="weatherdata-mobile__card-title">Indicação global</p>
+          <p class="weatherdata-mobile__card-text">Nomeação no Global Nominees no NASA Space Apps 2025</p>
+        </div>
+        <div class="weatherdata-mobile__card">
+          <p class="weatherdata-mobile__card-title">Gerente de produto</p>
+          <p class="weatherdata-mobile__card-text">Responsável também pelo design e apresentação</p>
+        </div>
+        <div class="weatherdata-mobile__card">
+          <p class="weatherdata-mobile__card-title">implementado em 48h</p>
+          <p class="weatherdata-mobile__card-text">Produto funcional com deploy no Vercel</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 2: O projeto em 30 segundos -->
+    <section class="weatherdata-mobile__section">
+      <span class="weatherdata-mobile__accent"></span>
+      <h2 class="weatherdata-mobile__section-title">O projeto em 30 segundos</h2>
+      <p class="weatherdata-mobile__section-text">O desafio não era mostrar dados. Era transformar informações técnicas em uma experiência que ajudasse pessoas a responder perguntas práticas e tomar decisões.</p>
+
+      <div class="weatherdata-mobile__pairs">
+        <article class="weatherdata-mobile__pair">
+          <span class="weatherdata-mobile__chip">Problema</span>
+          <h3 class="weatherdata-mobile__pair-title">Dados precisos não são necessariamente dados úteis</h3>
+          <p class="weatherdata-mobile__pair-text">Chuva, vento, umidade, irradiação e densidade do ar podem ser relevantes, mas perdem valor quando chegam ao usuário sem contexto ou hierarquia.</p>
+        </article>
+        <article class="weatherdata-mobile__pair weatherdata-mobile__pair--dark">
+          <span class="weatherdata-mobile__chip">Oportunidade</span>
+          <h3 class="weatherdata-mobile__pair-title">Traduzir ciência sem simplificar demais</h3>
+          <p class="weatherdata-mobile__pair-text">O produto precisava preservar a qualidade da informação e, ao mesmo tempo, torná-la escaneável, comparável e acionável.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 3: Meu papel no projeto -->
+    <section class="weatherdata-mobile__section">
+      <span class="weatherdata-mobile__accent"></span>
+      <h2 class="weatherdata-mobile__section-title">MEU PAPEL NO PROJETO</h2>
+      <p class="weatherdata-mobile__section-text">Atuei como Product Designer &amp; Líder, definindo visão, escopo, arquitetura, fluxos, UI, microcopy, priorização dos indicadores e validações rápidas com o time.</p>
+
+      <div class="weatherdata-mobile__roles">
+        <article class="weatherdata-mobile__role">
+          <h3 class="weatherdata-mobile__role-title">Product Strategy</h3>
+          <p class="weatherdata-mobile__role-text">Recorte do problema e priorização no hackathon.</p>
+        </article>
+        <article class="weatherdata-mobile__role">
+          <h3 class="weatherdata-mobile__role-title">Information Architecture</h3>
+          <p class="weatherdata-mobile__role-text">Organização entre Painel Climático e Renovável.</p>
+        </article>
+        <article class="weatherdata-mobile__role">
+          <h3 class="weatherdata-mobile__role-title">Data UX</h3>
+          <p class="weatherdata-mobile__role-text">Seleção de métricas e formas de comparação.</p>
+        </article>
+        <article class="weatherdata-mobile__role">
+          <h3 class="weatherdata-mobile__role-title">UX Writing</h3>
+          <p class="weatherdata-mobile__role-text">Tradução de termos técnicos.</p>
+        </article>
+        <article class="weatherdata-mobile__role">
+          <h3 class="weatherdata-mobile__role-title">UI Design</h3>
+          <p class="weatherdata-mobile__role-text">Visualização e hierarquia das telas.</p>
+        </article>
+        <article class="weatherdata-mobile__role">
+          <h3 class="weatherdata-mobile__role-title">Product leadership</h3>
+          <p class="weatherdata-mobile__role-text">Alinhamento entre design, dev e dados.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 4: Dois painéis, dois tipos de decisão -->
+    <section class="weatherdata-mobile__section">
+      <span class="weatherdata-mobile__accent"></span>
+      <h2 class="weatherdata-mobile__section-title">Dois painéis, dois tipos de decisão</h2>
+      <p class="weatherdata-mobile__section-text">A interface foi consequência de decisões anteriores. O produto foi primeiro decomposto em problema, escopo, regras, estados, prioridades e comportamento esperado.</p>
+
+      <div class="weatherdata-mobile__panels">
+        <article class="weatherdata-mobile__panel weatherdata-mobile__panel--climate">
+          <span class="weatherdata-mobile__panel-label">Painel Climático</span>
+          <h3 class="weatherdata-mobile__panel-title">O que acontece hoje?</h3>
+          <p class="weatherdata-mobile__panel-text">Cidade, data e horário viram leitura de chuva, vento forte, calor extremo, umidade e céu encoberto.</p>
+        </article>
+        <article class="weatherdata-mobile__panel weatherdata-mobile__panel--renewable">
+          <span class="weatherdata-mobile__panel-label">Painel Renovável</span>
+          <h3 class="weatherdata-mobile__panel-title">Onde existe maior potencial?</h3>
+          <p class="weatherdata-mobile__panel-text">Comparação entre cidades por potencial solar e eólico, apoiada por métricas como irradiação, ângulo solar, densidade do ar e velocidade do vento.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 5: Fluxo do usuário -->
+    <section class="weatherdata-mobile__section">
+      <span class="weatherdata-mobile__accent"></span>
+      <h2 class="weatherdata-mobile__section-title">Fluxo do usuário</h2>
+      <p class="weatherdata-mobile__section-text">O caminho parte de uma pergunta simples e termina em uma decisão compreensível.</p>
+
+      <div class="weatherdata-mobile__steps">
+        <article class="weatherdata-mobile__step">
+          <span class="weatherdata-mobile__step-number">01</span>
+          <h3 class="weatherdata-mobile__step-title">Selecionar</h3>
+          <p class="weatherdata-mobile__step-text">Cidade, data e horário.</p>
+        </article>
+        <article class="weatherdata-mobile__step">
+          <span class="weatherdata-mobile__step-number">02</span>
+          <h3 class="weatherdata-mobile__step-title">Interpretar</h3>
+          <p class="weatherdata-mobile__step-text">Condições e probabilidades.</p>
+        </article>
+        <article class="weatherdata-mobile__step">
+          <span class="weatherdata-mobile__step-number">03</span>
+          <h3 class="weatherdata-mobile__step-title">Comparar</h3>
+          <p class="weatherdata-mobile__step-text">Cidades e potenciais.</p>
+        </article>
+        <article class="weatherdata-mobile__step">
+          <span class="weatherdata-mobile__step-number">04</span>
+          <h3 class="weatherdata-mobile__step-title">Entender</h3>
+          <p class="weatherdata-mobile__step-text">Métricas locais e conceitos.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 6: Os dados já existiam -->
+    <section class="weatherdata-mobile__section">
+      <span class="weatherdata-mobile__accent"></span>
+      <h2 class="weatherdata-mobile__section-title">Os dados já existiam. O desafio era torná-los compreensíveis.</h2>
+      <p class="weatherdata-mobile__section-text">A NASA POWER disponibiliza uma grande quantidade de dados climáticos e energéticos. O trabalho de produto foi selecionar o que realmente apoiava a decisão e definir como isso deveria aparecer.</p>
+
+      <div class="weatherdata-mobile__steps">
+        <article class="weatherdata-mobile__step weatherdata-mobile__step--data">
+          <span class="weatherdata-mobile__step-number">01</span>
+          <h3 class="weatherdata-mobile__step-title">NASA POWER</h3>
+          <p class="weatherdata-mobile__step-text">Fonte de dados.</p>
+        </article>
+        <article class="weatherdata-mobile__step weatherdata-mobile__step--data">
+          <span class="weatherdata-mobile__step-number">02</span>
+          <h3 class="weatherdata-mobile__step-title">Selecionar indicadores</h3>
+          <p class="weatherdata-mobile__step-text">O que é relevante.</p>
+        </article>
+        <article class="weatherdata-mobile__step weatherdata-mobile__step--data">
+          <span class="weatherdata-mobile__step-number">03</span>
+          <h3 class="weatherdata-mobile__step-title">Traduzir conceitos</h3>
+          <p class="weatherdata-mobile__step-text">Contexto para termos técnicos.</p>
+        </article>
+        <article class="weatherdata-mobile__step weatherdata-mobile__step--data">
+          <span class="weatherdata-mobile__step-number">01</span>
+          <h3 class="weatherdata-mobile__step-title">Visualizar</h3>
+          <p class="weatherdata-mobile__step-text">Fonte de dados.</p>
+        </article>
+        <article class="weatherdata-mobile__step weatherdata-mobile__step--data weatherdata-mobile__step--wide">
+          <span class="weatherdata-mobile__step-number">02</span>
+          <h3 class="weatherdata-mobile__step-title">Decidir</h3>
+          <p class="weatherdata-mobile__step-text">O que é relevante.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 7: Quando o tempo é curto, clareza vira estratégia -->
+    <section class="weatherdata-mobile__section">
+      <span class="weatherdata-mobile__accent"></span>
+      <h2 class="weatherdata-mobile__section-title">Quando o tempo é curto, clareza vira estratégia</h2>
+      <p class="weatherdata-mobile__section-text">O hackathon exigia decisões rápidas. Em vez de mostrar tudo, o recorte priorizou leitura rápida, linguagem simples e consistência entre os painéis.</p>
+
+      <div class="weatherdata-mobile__steps">
+        <article class="weatherdata-mobile__step weatherdata-mobile__step--fixed">
+          <span class="weatherdata-mobile__step-number">01</span>
+          <h3 class="weatherdata-mobile__step-title">Um objetivo por tela</h3>
+          <p class="weatherdata-mobile__step-text">Evitar competição entre decisões.</p>
+        </article>
+        <article class="weatherdata-mobile__step weatherdata-mobile__step--fixed">
+          <span class="weatherdata-mobile__step-number">02</span>
+          <h3 class="weatherdata-mobile__step-title">Chips e barras</h3>
+          <p class="weatherdata-mobile__step-text">Leitura feita em poucos segundos.</p>
+        </article>
+        <article class="weatherdata-mobile__step weatherdata-mobile__step--fixed">
+          <span class="weatherdata-mobile__step-number">03</span>
+          <h3 class="weatherdata-mobile__step-title">Tooltips educativos</h3>
+          <p class="weatherdata-mobile__step-text">Jargão traduzido no contexto certo.</p>
+        </article>
+        <article class="weatherdata-mobile__step weatherdata-mobile__step--fixed">
+          <span class="weatherdata-mobile__step-number">04</span>
+          <h3 class="weatherdata-mobile__step-title">Consistência visual</h3>
+          <p class="weatherdata-mobile__step-text">Mesma lógica entre os painéis.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 8: Primeiro, a hierarquia. Depois, a estética. -->
+    <section class="weatherdata-mobile__section">
+      <span class="weatherdata-mobile__accent"></span>
+      <h2 class="weatherdata-mobile__section-title">Primeiro, a hierarquia. Depois, a estética.</h2>
+      <p class="weatherdata-mobile__section-text">O wireframe já organizava clima do dia, calendário, precipitação, energia renovável, gráficos e rankings antes da camada visual final.</p>
+
+      <article class="weatherdata-mobile__info-card">
+        <p class="weatherdata-mobile__info-label">Data UX</p>
+        <h3 class="weatherdata-mobile__info-title">Traduzindo ciência sem empobrecer a informação</h3>
+        <p class="weatherdata-mobile__info-text">Termos técnicos como kWh/m², irradiação e densidade do ar não precisavam desaparecer. Eles precisavam de contexto. Tooltips e microcopy ajudaram o usuário a entender o significado dos dados antes de interpretá-los.</p>
+      </article>
+
+      <div class="weatherdata-mobile__wireframe">
+        <img src="assets/images/weatherdata/mobile-wireframe-1.png" alt="Wireframe de baixa fidelidade da tela de painel climático" width="1440" height="1024">
+      </div>
+      <div class="weatherdata-mobile__wireframe">
+        <img src="assets/images/weatherdata/mobile-wireframe-2.png" alt="Wireframe de baixa fidelidade da tela de painel renovável" width="1440" height="1024">
+      </div>
+    </section>
+
+    <!-- Seção 9: Do sistema para a interface -->
+    <section class="weatherdata-mobile__section">
+      <span class="weatherdata-mobile__accent"></span>
+      <h2 class="weatherdata-mobile__section-title">Do sistema para a interface</h2>
+      <p class="weatherdata-mobile__section-text">O case conecta componente, estado e aplicação real, em vez de mostrar uma prancha isolada de UI kit.</p>
+
+      <div class="weatherdata-mobile__links">
+        <article class="weatherdata-mobile__link-card">
+          <span class="weatherdata-mobile__chip">Componente</span>
+          <h3 class="weatherdata-mobile__pair-title">Escala de Humor</h3>
+          <p class="weatherdata-mobile__pair-text">Default + cinco estados documentados.</p>
+        </article>
+        <span class="weatherdata-mobile__arrow" aria-hidden="true">↓</span>
+        <article class="weatherdata-mobile__link-card">
+          <span class="weatherdata-mobile__chip">Aplicação</span>
+          <h3 class="weatherdata-mobile__pair-title">Registro na Home</h3>
+          <p class="weatherdata-mobile__pair-text">O mesmo componente sustenta o core flow em diferentes estados.</p>
+        </article>
+        <span class="weatherdata-mobile__arrow" aria-hidden="true">↓</span>
+        <article class="weatherdata-mobile__link-card">
+          <span class="weatherdata-mobile__chip">Componente</span>
+          <h3 class="weatherdata-mobile__pair-title">Input</h3>
+          <p class="weatherdata-mobile__pair-text">Default → Focus → Filled → Error.</p>
+        </article>
+        <span class="weatherdata-mobile__arrow" aria-hidden="true">↓</span>
+        <article class="weatherdata-mobile__link-card">
+          <span class="weatherdata-mobile__chip">Aplicação</span>
+          <h3 class="weatherdata-mobile__pair-title">Login &amp; Criar conta</h3>
+          <p class="weatherdata-mobile__pair-text">Estados previsíveis facilitam implementação e QA.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 10: High fidelity -->
+    <section class="weatherdata-mobile__section">
+      <span class="weatherdata-mobile__accent"></span>
+      <h2 class="weatherdata-mobile__section-title">High fidelity</h2>
+      <p class="weatherdata-mobile__section-text">Os protótipos finais cobrem registro de humor, histórico, insights e conta, com os estados definidos no sistema.</p>
+
+      <figure class="weatherdata-mobile__screen">
+        <div class="weatherdata-mobile__screen-frame">
+          <img src="assets/images/weatherdata/mobile-dashboard.png" alt="Tela de dashboard do WeatherData em alta fidelidade" width="1440" height="1024">
+        </div>
+        <figcaption class="weatherdata-mobile__screen-caption">dashboard</figcaption>
+      </figure>
+
+      <figure class="weatherdata-mobile__screen">
+        <div class="weatherdata-mobile__screen-frame">
+          <img src="assets/images/weatherdata/mobile-painel.png" alt="Tela do painel administrativo do WeatherData em alta fidelidade" width="1440" height="1024">
+        </div>
+        <figcaption class="weatherdata-mobile__screen-caption">painel administrativo</figcaption>
+      </figure>
+    </section>
+
+    <!-- Seção 11: Resultado -->
+    <section class="weatherdata-mobile__section">
+      <span class="weatherdata-mobile__accent"></span>
+      <h2 class="weatherdata-mobile__section-title">Resultado</h2>
+      <p class="weatherdata-mobile__section-text">O WeatherData mostrou que uma interface não precisa reduzir a informação até ela perder valor. Ela precisa criar contexto suficiente para que o usuário consiga interpretar e agir.</p>
+
+      <div class="weatherdata-mobile__stats">
+        <div class="weatherdata-mobile__stat">
+          <p class="weatherdata-mobile__stat-number">2º</p>
+          <p class="weatherdata-mobile__stat-text">lugar na etapa local</p>
+        </div>
+        <div class="weatherdata-mobile__stat">
+          <p class="weatherdata-mobile__stat-number">1</p>
+          <p class="weatherdata-mobile__stat-text">produto funcional integrado à NASA POWER</p>
+        </div>
+        <div class="weatherdata-mobile__stat">
+          <p class="weatherdata-mobile__stat-number">2</p>
+          <p class="weatherdata-mobile__stat-text">contextos: clima + energia renovável</p>
+        </div>
+        <div class="weatherdata-mobile__stat">
+          <p class="weatherdata-mobile__stat-number">4</p>
+          <p class="weatherdata-mobile__stat-text">pessoas no time multidisciplinar</p>
+        </div>
+      </div>
+
+      <div class="weatherdata-mobile__demo">
+        <span class="weatherdata-mobile__demo-chip">Interactive demo</span>
+        <h3 class="weatherdata-mobile__demo-title">Não terminou no Figma</h3>
+        <div class="weatherdata-mobile__demo-text">
+          <p>O projeto chegou a uma aplicação funcional integrada à NASA POWER API, com gráficos em Chart.js e deploy público na Vercel.</p>
+          <p>A demo permite navegar pelo resultado desenvolvido durante o hackathon.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="site-footer" id="contato">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">2026 MICHELE MEDEIROS | Entre em contato: <a href="mailto:michelefmedeiros@gmail.com?subject=Contato%20via%20portf%C3%B3lio">michelefmedeiros@gmail.com</a></p>
+      <a href="https://www.linkedin.com/in/michele-franca-medeiros/" target="_blank" rel="noopener"><img class="site-footer__icon" src="assets/images/icons/linkedin-box-fill.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
