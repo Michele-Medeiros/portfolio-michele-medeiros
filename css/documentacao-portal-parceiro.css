@@ -464,3 +464,83 @@ body {
   height: 111.39%;
   max-width: none;
 }
+
+/* ---------- Dashboard como cama de síntese ---------- */
+.partner-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.partner-dashboard__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-dashboard__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.partner-dashboard__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-dashboard__panel {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #c3c3c4;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.partner-dashboard__info {
+  flex: 0 0 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  background: #122f5d;
+}
+
+.partner-dashboard__info-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #fefefe;
+}
+
+.partner-dashboard__info-text {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  color: #fefefe;
+}
+
+.partner-dashboard__visual {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 32px 32px 32px 32px;
+  background: #fff;
+}
+
+.partner-dashboard__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920 / 1650;
+  object-fit: cover;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.25);
+}
