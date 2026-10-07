@@ -1774,3 +1774,83 @@ body {
   line-height: 1.4;
   color: #56565a;
 }
+
+/* ---------- Mobile: O projeto em 30 segundos ---------- */
+.weatherdata-mobile__section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 36px 20px;
+}
+
+.weatherdata-mobile__accent {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #5029de;
+}
+
+.weatherdata-mobile__section-title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #151414;
+}
+
+.weatherdata-mobile__section-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #56565a;
+}
+
+.weatherdata-mobile__pairs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.weatherdata-mobile__pair {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px 20px;
+  border: 1px solid #e4e3e3;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-mobile__pair--dark {
+  border-color: #122f5d;
+  background: #122f5d;
+}
+
+.weatherdata-mobile__chip {
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-mobile__pair-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-mobile__pair-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #252628;
+}
+
+.weatherdata-mobile__pair--dark .weatherdata-mobile__pair-title,
+.weatherdata-mobile__pair--dark .weatherdata-mobile__pair-text {
+  color: #fff;
+}
