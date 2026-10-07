@@ -669,7 +669,6 @@ body {
 }
 
 .weatherdata-hierarchy__card-title {
-  flex: 1 0 0;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.95;
@@ -700,4 +699,85 @@ body {
   height: auto;
   aspect-ratio: 1440 / 1024;
   object-fit: cover;
+}
+
+/* ---------- Do sistema para a interface ---------- */
+.weatherdata-system {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 65px;
+}
+
+.weatherdata-system__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.weatherdata-system__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  white-space: nowrap;
+  color: #151414;
+}
+
+.weatherdata-system__text {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #151414;
+}
+
+.weatherdata-system__row {
+  display: flex;
+  align-items: stretch;
+  gap: 50px;
+}
+
+.weatherdata-system__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.weatherdata-system__pill {
+  align-self: flex-start;
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-system__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.weatherdata-system__card-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #252628;
+}
+
+.weatherdata-system__connector {
+  display: block;
+  align-self: center;
+  flex: 0 0 124px;
+  width: 124px;
+  height: auto;
 }
