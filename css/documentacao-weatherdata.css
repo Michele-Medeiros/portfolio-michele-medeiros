@@ -1647,3 +1647,10 @@ body {
     min-width: 0;
   }
 }
+
+/* Abaixo de 640px, os cards "Problema" e "Oportunidade" ficam um abaixo do outro */
+@media (min-width: 500px) and (max-width: 640px) {
+  .weatherdata-tablet__pairs {
+    flex-direction: column;
+  }
+}
