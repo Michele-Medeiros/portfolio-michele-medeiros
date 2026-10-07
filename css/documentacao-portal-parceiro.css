@@ -753,3 +753,52 @@ body {
   height: auto;
   object-fit: cover;
 }
+
+/* ---------- Da carteira à visão detalhada de cada conta ---------- */
+.partner-accounts {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.partner-accounts__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-accounts__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.95;
+  color: #151414;
+}
+
+.partner-accounts__text {
+  font-size: 24px;
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-accounts__screen {
+  margin: 0;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fefefe;
+}
+
+.partner-accounts__screen-inner {
+  padding: 32px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.partner-accounts__screen-inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920 / 1080;
+  object-fit: cover;
+}
