@@ -1335,3 +1335,12 @@ body {
   line-height: 1.4;
   color: #56565a;
 }
+
+/* ---------- Tablet: Os dados já existiam ---------- */
+.weatherdata-tablet__step--data .weatherdata-tablet__step-number {
+  color: #c5595c;
+}
+
+.weatherdata-tablet__step--wide {
+  flex: 1 1 100%;
+}
