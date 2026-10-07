@@ -421,3 +421,46 @@ body {
   letter-spacing: 0.4px;
   color: #56565a;
 }
+
+/* ---------- Fluxos do MVP (diagramas) ---------- */
+.partner-flows {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0 65px 80px;
+}
+
+.partner-flow {
+  margin: 0;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fefefe;
+}
+
+.partner-flow__inner {
+  padding: 32px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.partner-flow__inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* O primeiro diagrama aparece recortado dentro do painel, como no Figma */
+.partner-flow__inner--crop {
+  position: relative;
+  aspect-ratio: 1945 / 1229;
+  overflow: hidden;
+}
+
+.partner-flow__inner--crop img {
+  position: absolute;
+  left: -2.78%;
+  top: -7.65%;
+  width: 105.3%;
+  height: 111.39%;
+  max-width: none;
+}
