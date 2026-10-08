@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salesforce × Citrus — Michele Medeiros</title>
+  <meta name="description" content="Documentação do case Salesforce × Citrus: experiência de atendimento embarcada no Salesforce para reduzir a troca de contexto do operador.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=27">
+  <link rel="stylesheet" href="css/documentacao-salesforce-citrus.css">
+</head>
+<body>
+
+  <!-- Seção 1: Cabeçalho -->
+  <header class="navbar-wrap">
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a href="index.html" class="navbar__brand">Michele Medeiros</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="sobre-mim.html">Sobre mim</a>
+        <a href="projetos.html" class="is-active">Projetos</a>
+        <a href="contatos.html">Contatos</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="sfc-doc">
+
+    <!-- Seção 2: Apresentação do projeto -->
+    <section class="sfc-hero">
+      <div class="sfc-hero__info">
+        <p class="sfc-hero__tags">Product Design · Embedded Experience · Omnichannel</p>
+
+        <div class="sfc-hero__title">
+          <h1 class="sfc-hero__name">Salesforce × Citrus.</h1>
+          <p class="sfc-hero__subtitle">Dados que viram decisão.</p>
+        </div>
+
+        <p class="sfc-hero__desc">Uma experiência de atendimento embarcada no Salesforce para reduzir a troca de contexto e manter o operador próximo das informações da conta enquanto utiliza recursos essenciais do Citrus.</p>
+
+        <blockquote class="sfc-hero__quote">A decisão não foi levar o Citrus inteiro para dentro do Salesforce. Foi identificar qual parte da operação precisava acompanhar o usuário.</blockquote>
+
+        <div class="sfc-hero__pills">
+          <span class="sfc-hero__pill">Embedded Service Console</span>
+          <span class="sfc-hero__pill">Salesforce</span>
+          <span class="sfc-hero__pill">Citrus Design System</span>
+          <span class="sfc-hero__pill">Voz + canais digitais</span>
+        </div>
+      </div>
+
+      <div class="sfc-hero__visual">
+        <img src="assets/images/salesforce-citrus/hero.png" alt="Mockup do console de atendimento Salesforce × Citrus" width="484" height="635">
+      </div>
+    </section>
+
+    <div class="sfc-divider"></div>
+
+    <!-- Seção 3: O projeto em 30 segundos -->
+    <section class="sfc-section">
+      <h2 class="sfc-section__title">O projeto em 30 segundos</h2>
+      <p class="sfc-section__text">O atendente precisava alternar entre o Citrus, onde acontecia o atendimento, e o Salesforce, onde estavam informações importantes da conta. Essa troca constante de contexto tornava a operação menos fluida.</p>
+
+      <div class="sfc-pairs">
+        <article class="sfc-pair">
+          <span class="sfc-pair__chip">Antes</span>
+          <h3 class="sfc-pair__title">Atendimento e contexto estavam separados</h3>
+          <p class="sfc-pair__text">Para conduzir uma interação e consultar dados relacionados ao cliente, o operador precisava navegar entre plataformas.</p>
+        </article>
+        <article class="sfc-pair sfc-pair--dark">
+          <span class="sfc-pair__chip">Depois</span>
+          <h3 class="sfc-pair__title">Concentrar o essencial sem reproduzir o sistema inteiro</h3>
+          <p class="sfc-pair__text">A solução precisava caber dentro das restrições do Salesforce e ainda preservar as ações essenciais do atendimento.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="sfc-divider"></div>
+
+    <!-- Seção 4: Levar a operação essencial -->
+    <section class="sfc-section">
+      <h2 class="sfc-section__title">Levar a operação essencial</h2>
+      <p class="sfc-section__text sfc-section__text--tight">O console foi estruturado em torno do que o operador realmente precisava fazer durante o atendimento, e não em torno da arquitetura completa do Citrus.</p>
+
+      <div class="sfc-steps">
+        <article class="sfc-step">
+          <span class="sfc-step__number">01</span>
+          <h3 class="sfc-step__title">Localizar</h3>
+          <p class="sfc-step__text">Meus, Todos, busca e filtros.</p>
+        </article>
+        <img class="sfc-steps__arrow" src="assets/images/salesforce-citrus/arrow.svg" alt="" width="35" height="22">
+        <article class="sfc-step">
+          <span class="sfc-step__number">02</span>
+          <h3 class="sfc-step__title">Abrir</h3>
+          <p class="sfc-step__text">Cliente, canal, protocolo e fila.</p>
+        </article>
+        <img class="sfc-steps__arrow" src="assets/images/salesforce-citrus/arrow.svg" alt="" width="35" height="22">
+        <article class="sfc-step">
+          <span class="sfc-step__number">03</span>
+          <h3 class="sfc-step__title">Interagir</h3>
+          <p class="sfc-step__text">Responder dentro do console.</p>
+        </article>
+      </div>
+
+      <div class="sfc-steps">
+        <article class="sfc-step">
+          <span class="sfc-step__number">04</span>
+          <h3 class="sfc-step__title">Atender voz</h3>
+          <p class="sfc-step__text">Ações essenciais da chamada.</p>
+        </article>
+        <img class="sfc-steps__arrow" src="assets/images/salesforce-citrus/arrow.svg" alt="" width="35" height="22">
+        <article class="sfc-step">
+          <span class="sfc-step__number">05</span>
+          <h3 class="sfc-step__title">Finalizar</h3>
+          <p class="sfc-step__text">Encerrar atendimento com segurança.</p>
+        </article>
+        <img class="sfc-steps__arrow" src="assets/images/salesforce-citrus/arrow.svg" alt="" width="35" height="22">
+        <article class="sfc-step">
+          <span class="sfc-step__number">06</span>
+          <h3 class="sfc-step__title">Consultar</h3>
+          <p class="sfc-step__text">Histórico e contexto posterior.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="sfc-divider"></div>
+
+    <!-- Seção 5: Superfície compacta -->
+    <section class="sfc-highlight-wrap">
+      <article class="sfc-highlight">
+        <div class="sfc-highlight__info">
+          <span class="sfc-highlight__label">Superfície compacta</span>
+          <h3 class="sfc-highlight__title">Uma fila única para diferentes tipos de interação</h3>
+          <p class="sfc-highlight__text">O console concentra atendimentos por canal, protocolo, horário, fila e status em uma estrutura reduzida, permitindo que o operador reconheça rapidamente o contexto antes de abrir uma interação.</p>
+        </div>
+        <div class="sfc-highlight__visual sfc-highlight__visual--queue">
+          <img src="assets/images/salesforce-citrus/queue.png" alt="Widget de atendimento do console Citrus com chamada de voz ativa" width="484" height="634">
+        </div>
+      </article>
+    </section>
+
+    <div class="sfc-divider"></div>
+
+    <!-- Seção 6: Voz também precisava caber na experiência -->
+    <section class="sfc-section">
+      <h2 class="sfc-section__title">Voz também precisava caber na experiência</h2>
+      <p class="sfc-section__text">O fluxo não foi pensado apenas para mensagens. O Figma inclui atendimento de voz e ações como pausar, transferir e finalizar, mantendo o operador dentro da mesma superfície.</p>
+
+      <div class="sfc-voice">
+        <article class="sfc-voice__card">
+          <div class="sfc-voice__card-head">
+            <span class="sfc-voice__chip">Voz</span>
+            <h3 class="sfc-voice__card-title">Pausar</h3>
+          </div>
+          <p class="sfc-voice__card-text">Controlar a chamada sem abandonar o contexto da conta.</p>
+        </article>
+        <article class="sfc-voice__card">
+          <div class="sfc-voice__card-head">
+            <span class="sfc-voice__chip">Voz</span>
+            <h3 class="sfc-voice__card-title">Transferir</h3>
+          </div>
+          <p class="sfc-voice__card-text">Encaminhar o atendimento dentro do fluxo operacional.</p>
+        </article>
+        <article class="sfc-voice__card">
+          <div class="sfc-voice__card-head">
+            <span class="sfc-voice__chip">Atendimento</span>
+            <h3 class="sfc-voice__card-title">Finalizar</h3>
+          </div>
+          <p class="sfc-voice__card-text">Encerramento com confirmação para reduzir ações irreversíveis.</p>
+        </article>
+        <article class="sfc-voice__card">
+          <div class="sfc-voice__card-head">
+            <span class="sfc-voice__chip">Contexto</span>
+            <h3 class="sfc-voice__card-title">Protocolo</h3>
+          </div>
+          <p class="sfc-voice__card-text">Identificação do atendimento preservada durante a interação.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="sfc-divider"></div>
+
+    <!-- Seção 7: Continuidade -->
+    <section class="sfc-highlight-wrap">
+      <article class="sfc-highlight">
+        <div class="sfc-highlight__info">
+          <span class="sfc-highlight__label">Continuidade</span>
+          <h3 class="sfc-highlight__title">O atendimento não termina quando a conversa fecha</h3>
+          <p class="sfc-highlight__text">Histórico, contatos e resumo do dia ajudam a recuperar interações anteriores e manter contexto, em vez de tratar cada contato como uma ocorrência isolada.</p>
+        </div>
+        <div class="sfc-highlight__visual sfc-highlight__visual--continuity">
+          <img src="assets/images/salesforce-citrus/continuity.png" alt="Lista de atendimentos do console Citrus com fila de atendimento" width="1920" height="1459">
+        </div>
+      </article>
+    </section>
+
+    <div class="sfc-divider"></div>
+
+    <!-- Seção 8: O Design System precisava funcionar fora do Citrus -->
+    <section class="sfc-section">
+      <h2 class="sfc-section__title">O Design System precisava funcionar fora do Citrus</h2>
+      <p class="sfc-section__text sfc-section__text--tight">O console reaproveita padrões e componentes do Design System Citrus, adaptados ao espaço e às restrições de uma experiência embarcada no Salesforce.</p>
+
+      <div class="sfc-design">
+        <article class="sfc-design__card">
+          <h3 class="sfc-design__card-title">Busca e filtros</h3>
+          <p class="sfc-design__card-text">Componentes conhecidos reduzem a necessidade de reaprender a interação.</p>
+        </article>
+        <article class="sfc-design__card">
+          <h3 class="sfc-design__card-title">Badges e canais</h3>
+          <p class="sfc-design__card-text">Informação compacta ajuda a identificar rapidamente contexto e origem da conversa.</p>
+        </article>
+        <article class="sfc-design__card">
+          <h3 class="sfc-design__card-title">Cards de atendimento</h3>
+          <p class="sfc-design__card-text">Nome, protocolo, mensagem, fila e horário são condensados sem perder hierarquia.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="sfc-divider"></div>
+
+    <!-- Seção 9: Integração, não duplicação -->
+    <section class="sfc-section">
+      <h2 class="sfc-section__title">Integração, não duplicação</h2>
+      <p class="sfc-section__text sfc-section__text--tight">O valor do projeto está justamente em não tentar recriar uma segunda versão completa do Citrus. O console leva para o Salesforce apenas o que é necessário para conduzir o atendimento com continuidade.</p>
+
+      <div class="sfc-pairs">
+        <article class="sfc-pair">
+          <span class="sfc-pair__chip">Citrus</span>
+          <h3 class="sfc-pair__title">Operação de atendimento</h3>
+          <p class="sfc-pair__text">Fluxos, canais, protocolos, filas e ações essenciais.</p>
+        </article>
+        <article class="sfc-pair sfc-pair--dark">
+          <span class="sfc-pair__chip">Salesforce</span>
+          <h3 class="sfc-pair__title">Contexto da conta</h3>
+          <p class="sfc-pair__text">O operador continua no ambiente onde consulta e navega pelas informações relacionadas ao cliente.</p>
+        </article>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ======================================================================
+       Versão tablet (500px a 999px)
+       ====================================================================== -->
+  <div class="sfc-tablet">
+
+    <!-- Seção 1: Apresentação do projeto -->
+    <section class="sfc-tablet__hero">
+      <p class="sfc-tablet__tags">Product Design · Embedded Experience · Omnichannel</p>
+      <h1 class="sfc-tablet__name">Salesforce × Citrus.</h1>
+      <p class="sfc-tablet__subtitle">Dados que viram decisão.</p>
+      <p class="sfc-tablet__desc">Uma experiência de atendimento embarcada no Salesforce para reduzir a troca de contexto e manter o operador próximo das informações da conta enquanto utiliza recursos essenciais do Citrus.</p>
+
+      <blockquote class="sfc-tablet__quote">A decisão não foi levar o Citrus inteiro para dentro do Salesforce. Foi identificar qual parte da operação precisava acompanhar o usuário.</blockquote>
+
+      <div class="sfc-tablet__pills">
+        <span class="sfc-tablet__pill">Embedded Service Console</span>
+        <span class="sfc-tablet__pill">Salesforce</span>
+        <span class="sfc-tablet__pill">Citrus Design System</span>
+        <span class="sfc-tablet__pill">Voz + canais digitais</span>
+      </div>
+
+      <div class="sfc-tablet__panel">
+        <img src="assets/images/salesforce-citrus/hero.png" alt="Mockup do console de atendimento Salesforce × Citrus" width="427" height="560">
+      </div>
+    </section>
+
+    <!-- Seção 2: O projeto em 30 segundos -->
+    <section class="sfc-tablet__section">
+      <span class="sfc-tablet__accent"></span>
+      <h2 class="sfc-tablet__section-title">O projeto em 30 segundos</h2>
+      <p class="sfc-tablet__section-text">O atendente precisava alternar entre o Citrus, onde acontecia o atendimento, e o Salesforce, onde estavam informações importantes da conta. Essa troca constante de contexto tornava a operação menos fluida.</p>
+
+      <div class="sfc-tablet__pairs">
+        <article class="sfc-tablet__pair">
+          <span class="sfc-tablet__chip">Antes</span>
+          <h3 class="sfc-tablet__pair-title">Atendimento e contexto estavam separados</h3>
+          <p class="sfc-tablet__pair-text">Para conduzir uma interação e consultar dados relacionados ao cliente, o operador precisava navegar entre plataformas.</p>
+        </article>
+        <article class="sfc-tablet__pair sfc-tablet__pair--dark">
+          <span class="sfc-tablet__chip">Depois</span>
+          <h3 class="sfc-tablet__pair-title">Concentrar o essencial sem reproduzir o sistema inteiro</h3>
+          <p class="sfc-tablet__pair-text">A solução precisava caber dentro das restrições do Salesforce e ainda preservar as ações essenciais do atendimento.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 3: Levar a operação essencial -->
+    <section class="sfc-tablet__section">
+      <span class="sfc-tablet__accent"></span>
+      <h2 class="sfc-tablet__section-title">Levar a operação essencial</h2>
+      <p class="sfc-tablet__section-text">O console foi estruturado em torno do que o operador realmente precisava fazer durante o atendimento, e não em torno da arquitetura completa do Citrus.</p>
+
+      <div class="sfc-tablet__steps">
+        <article class="sfc-tablet__step">
+          <span class="sfc-tablet__step-number">01</span>
+          <h3 class="sfc-tablet__step-title">Localizar</h3>
+          <p class="sfc-tablet__step-text">Meus, Todos, busca e filtros.</p>
+        </article>
+        <article class="sfc-tablet__step">
+          <span class="sfc-tablet__step-number">02</span>
+          <h3 class="sfc-tablet__step-title">Abrir</h3>
+          <p class="sfc-tablet__step-text">Cliente, canal, protocolo e fila.</p>
+        </article>
+        <article class="sfc-tablet__step">
+          <span class="sfc-tablet__step-number">03</span>
+          <h3 class="sfc-tablet__step-title">Interagir</h3>
+          <p class="sfc-tablet__step-text">Responder dentro do console.</p>
+        </article>
+        <article class="sfc-tablet__step">
+          <span class="sfc-tablet__step-number">04</span>
+          <h3 class="sfc-tablet__step-title">Atender voz</h3>
+          <p class="sfc-tablet__step-text">Ações essenciais da chamada.</p>
+        </article>
+        <article class="sfc-tablet__step">
+          <span class="sfc-tablet__step-number">05</span>
+          <h3 class="sfc-tablet__step-title">Finalizar</h3>
+          <p class="sfc-tablet__step-text">Encerrar atendimento com segurança.</p>
+        </article>
+        <article class="sfc-tablet__step">
+          <span class="sfc-tablet__step-number">06</span>
+          <h3 class="sfc-tablet__step-title">Consultar</h3>
+          <p class="sfc-tablet__step-text">Histórico e contexto posterior.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 4: Superfície compacta -->
+    <section class="sfc-tablet__highlight-wrap">
+      <article class="sfc-tablet__highlight">
+        <span class="sfc-tablet__highlight-label">Superfície compacta</span>
+        <h3 class="sfc-tablet__highlight-title">Uma fila única para diferentes tipos de interação</h3>
+        <p class="sfc-tablet__highlight-text">O console concentra atendimentos por canal, protocolo, horário, fila e status em uma estrutura reduzida, permitindo que o operador reconheça rapidamente o contexto antes de abrir uma interação.</p>
+      </article>
+      <div class="sfc-tablet__panel sfc-tablet__panel--queue">
+        <img src="assets/images/salesforce-citrus/queue.png" alt="Widget de atendimento do console Citrus com chamada de voz ativa" width="484" height="634">
+      </div>
+    </section>
+
+    <!-- Seção 5: Voz também precisava caber na experiência -->
+    <section class="sfc-tablet__section">
+      <span class="sfc-tablet__accent"></span>
+      <h2 class="sfc-tablet__section-title">Voz também precisava caber na experiência</h2>
+      <p class="sfc-tablet__section-text">O fluxo não foi pensado apenas para mensagens. O Figma inclui atendimento de voz e ações como pausar, transferir e finalizar, mantendo o operador dentro da mesma superfície.</p>
+
+      <div class="sfc-tablet__voice">
+        <article class="sfc-tablet__voice-card">
+          <span class="sfc-tablet__chip">Voz</span>
+          <h3 class="sfc-tablet__pair-title">Pausar</h3>
+          <p class="sfc-tablet__pair-text">Controlar a chamada sem abandonar o contexto da conta.</p>
+        </article>
+        <article class="sfc-tablet__voice-card">
+          <span class="sfc-tablet__chip">Voz</span>
+          <h3 class="sfc-tablet__pair-title">Transferir</h3>
+          <p class="sfc-tablet__pair-text">Encaminhar o atendimento dentro do fluxo operacional.</p>
+        </article>
+        <article class="sfc-tablet__voice-card">
+          <span class="sfc-tablet__chip">Atendimento</span>
+          <h3 class="sfc-tablet__pair-title">Finalizar</h3>
+          <p class="sfc-tablet__pair-text">Encerramento com confirmação para reduzir ações irreversíveis.</p>
+        </article>
+        <article class="sfc-tablet__voice-card">
+          <span class="sfc-tablet__chip">Contexto</span>
+          <h3 class="sfc-tablet__pair-title">Protocolo</h3>
+          <p class="sfc-tablet__pair-text">Identificação do atendimento preservada durante a interação.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 6: Continuidade -->
+    <section class="sfc-tablet__highlight-wrap">
+      <article class="sfc-tablet__highlight">
+        <span class="sfc-tablet__highlight-label">Continuidade</span>
+        <h3 class="sfc-tablet__highlight-title">O atendimento não termina quando a conversa fecha</h3>
+        <p class="sfc-tablet__highlight-text">Histórico, contatos e resumo do dia ajudam a recuperar interações anteriores e manter contexto, em vez de tratar cada contato como uma ocorrência isolada.</p>
+      </article>
+      <div class="sfc-tablet__panel">
+        <img src="assets/images/salesforce-citrus/continuity.png" alt="Lista de atendimentos do console Citrus com fila de atendimento" width="648" height="492">
+      </div>
+    </section>
+
+    <!-- Seção 7: O Design System precisava funcionar fora do Citrus -->
+    <section class="sfc-tablet__section">
+      <span class="sfc-tablet__accent"></span>
+      <h2 class="sfc-tablet__section-title">O Design System precisava funcionar fora do Citrus</h2>
+      <p class="sfc-tablet__section-text">O console reaproveita padrões e componentes do Design System Citrus, adaptados ao espaço e às restrições de uma experiência embarcada no Salesforce.</p>
+
+      <div class="sfc-tablet__design">
+        <article class="sfc-tablet__design-card">
+          <h3 class="sfc-tablet__pair-title">Busca e filtros</h3>
+          <p class="sfc-tablet__pair-text">Componentes conhecidos reduzem a necessidade de reaprender a interação.</p>
+        </article>
+        <article class="sfc-tablet__design-card">
+          <h3 class="sfc-tablet__pair-title">Badges e canais</h3>
+          <p class="sfc-tablet__pair-text">Informação compacta ajuda a identificar rapidamente contexto e origem da conversa.</p>
+        </article>
+        <article class="sfc-tablet__design-card sfc-tablet__design-card--wide">
+          <h3 class="sfc-tablet__pair-title">Cards de atendimento</h3>
+          <p class="sfc-tablet__pair-text">Nome, protocolo, mensagem, fila e horário são condensados sem perder hierarquia.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 8: Integração, não duplicação -->
+    <section class="sfc-tablet__section">
+      <span class="sfc-tablet__accent"></span>
+      <h2 class="sfc-tablet__section-title">Integração, não duplicação</h2>
+      <p class="sfc-tablet__section-text">O valor do projeto está justamente em não tentar recriar uma segunda versão completa do Citrus. O console leva para o Salesforce apenas o que é necessário para conduzir o atendimento com continuidade.</p>
+
+      <div class="sfc-tablet__pairs">
+        <article class="sfc-tablet__pair">
+          <span class="sfc-tablet__chip">Citrus</span>
+          <h3 class="sfc-tablet__pair-title">Operação de atendimento</h3>
+          <p class="sfc-tablet__pair-text">Fluxos, canais, protocolos, filas e ações essenciais.</p>
+        </article>
+        <article class="sfc-tablet__pair sfc-tablet__pair--dark">
+          <span class="sfc-tablet__chip">Salesforce</span>
+          <h3 class="sfc-tablet__pair-title">Contexto da conta</h3>
+          <p class="sfc-tablet__pair-text">O operador continua no ambiente onde consulta e navega pelas informações relacionadas ao cliente.</p>
+        </article>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ======================================================================
+       Versão mobile (até 499px)
+       ====================================================================== -->
+  <div class="sfc-mobile">
+
+    <!-- Seção 1: Apresentação do projeto -->
+    <section class="sfc-mobile__hero">
+      <div class="sfc-mobile__text">
+        <p class="sfc-mobile__tags">Product Design · Embedded Experience · Omnichannel</p>
+        <h1 class="sfc-mobile__name">Salesforce × Citrus.</h1>
+        <p class="sfc-mobile__subtitle">Dados que viram decisão.</p>
+        <p class="sfc-mobile__desc">Uma experiência de atendimento embarcada no Salesforce para reduzir a troca de contexto e manter o operador próximo das informações da conta enquanto utiliza recursos essenciais do Citrus.</p>
+        <blockquote class="sfc-mobile__quote">A decisão não foi levar o Citrus inteiro para dentro do Salesforce. Foi identificar qual parte da operação precisava acompanhar o usuário.</blockquote>
+      </div>
+
+      <div class="sfc-mobile__pills">
+        <span class="sfc-mobile__pill">Embedded Service Console</span>
+        <span class="sfc-mobile__pill">Salesforce</span>
+        <span class="sfc-mobile__pill">Citrus Design System</span>
+        <span class="sfc-mobile__pill">Voz + canais digitais</span>
+      </div>
+
+      <div class="sfc-mobile__panel">
+        <img src="assets/images/salesforce-citrus/hero.png" alt="Mockup do console de atendimento Salesforce × Citrus" width="484" height="635">
+      </div>
+    </section>
+
+    <!-- Seção 2: O projeto em 30 segundos -->
+    <section class="sfc-mobile__section sfc-mobile__section--first">
+      <span class="sfc-mobile__accent"></span>
+      <h2 class="sfc-mobile__section-title">O projeto em 30 segundos</h2>
+      <p class="sfc-mobile__section-text">O atendente precisava alternar entre o Citrus, onde acontecia o atendimento, e o Salesforce, onde estavam informações importantes da conta. Essa troca constante de contexto tornava a operação menos fluida.</p>
+
+      <div class="sfc-mobile__pairs">
+        <article class="sfc-mobile__pair">
+          <span class="sfc-mobile__chip">Antes</span>
+          <h3 class="sfc-mobile__pair-title">Atendimento e contexto estavam separados</h3>
+          <p class="sfc-mobile__pair-text">Para conduzir uma interação e consultar dados relacionados ao cliente, o operador precisava navegar entre plataformas.</p>
+        </article>
+        <article class="sfc-mobile__pair sfc-mobile__pair--dark">
+          <span class="sfc-mobile__chip">Depois</span>
+          <h3 class="sfc-mobile__pair-title">Concentrar o essencial sem reproduzir o sistema inteiro</h3>
+          <p class="sfc-mobile__pair-text">A solução precisava caber dentro das restrições do Salesforce e ainda preservar as ações essenciais do atendimento.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 3: Levar a operação essencial -->
+    <section class="sfc-mobile__section">
+      <span class="sfc-mobile__accent"></span>
+      <h2 class="sfc-mobile__section-title">Levar a operação essencial</h2>
+      <p class="sfc-mobile__section-text">O console foi estruturado em torno do que o operador realmente precisava fazer durante o atendimento, e não em torno da arquitetura completa do Citrus.</p>
+
+      <div class="sfc-mobile__steps">
+        <article class="sfc-mobile__step">
+          <span class="sfc-mobile__step-number">01</span>
+          <h3 class="sfc-mobile__step-title">Localizar</h3>
+          <p class="sfc-mobile__step-text">Meus, Todos, busca e filtros.</p>
+        </article>
+        <article class="sfc-mobile__step">
+          <span class="sfc-mobile__step-number">02</span>
+          <h3 class="sfc-mobile__step-title">Abrir</h3>
+          <p class="sfc-mobile__step-text">Cliente, canal, protocolo e fila.</p>
+        </article>
+        <article class="sfc-mobile__step">
+          <span class="sfc-mobile__step-number">03</span>
+          <h3 class="sfc-mobile__step-title">Interagir</h3>
+          <p class="sfc-mobile__step-text">Responder dentro do console.</p>
+        </article>
+        <article class="sfc-mobile__step">
+          <span class="sfc-mobile__step-number">04</span>
+          <h3 class="sfc-mobile__step-title">Atender voz</h3>
+          <p class="sfc-mobile__step-text">Ações essenciais da chamada.</p>
+        </article>
+        <article class="sfc-mobile__step">
+          <span class="sfc-mobile__step-number">05</span>
+          <h3 class="sfc-mobile__step-title">Finalizar</h3>
+          <p class="sfc-mobile__step-text">Encerrar atendimento com segurança.</p>
+        </article>
+        <article class="sfc-mobile__step">
+          <span class="sfc-mobile__step-number">06</span>
+          <h3 class="sfc-mobile__step-title">Consultar</h3>
+          <p class="sfc-mobile__step-text">Histórico e contexto posterior.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 4: Superfície compacta -->
+    <section class="sfc-mobile__section">
+      <article class="sfc-mobile__highlight">
+        <span class="sfc-mobile__highlight-label">Superfície compacta</span>
+        <h3 class="sfc-mobile__highlight-title">Uma fila única para diferentes tipos de interação</h3>
+        <p class="sfc-mobile__highlight-text">O console concentra atendimentos por canal, protocolo, horário, fila e status em uma estrutura reduzida, permitindo que o operador reconheça rapidamente o contexto antes de abrir uma interação.</p>
+      </article>
+      <div class="sfc-mobile__panel sfc-mobile__panel--queue">
+        <img src="assets/images/salesforce-citrus/queue.png" alt="Widget de atendimento do console Citrus com chamada de voz ativa" width="484" height="634">
+      </div>
+    </section>
+
+    <!-- Seção 5: Voz também precisava caber na experiência -->
+    <section class="sfc-mobile__section">
+      <span class="sfc-mobile__accent"></span>
+      <h2 class="sfc-mobile__section-title">Voz também precisava caber na experiência</h2>
+      <p class="sfc-mobile__section-text">O fluxo não foi pensado apenas para mensagens. O Figma inclui atendimento de voz e ações como pausar, transferir e finalizar, mantendo o operador dentro da mesma superfície.</p>
+
+      <div class="sfc-mobile__voice">
+        <article class="sfc-mobile__voice-card">
+          <span class="sfc-mobile__chip">Voz</span>
+          <h3 class="sfc-mobile__pair-title">Pausar</h3>
+          <p class="sfc-mobile__pair-text">Controlar a chamada sem abandonar o contexto da conta.</p>
+        </article>
+        <article class="sfc-mobile__voice-card">
+          <span class="sfc-mobile__chip">Voz</span>
+          <h3 class="sfc-mobile__pair-title">Transferir</h3>
+          <p class="sfc-mobile__pair-text">Encaminhar o atendimento dentro do fluxo operacional.</p>
+        </article>
+        <article class="sfc-mobile__voice-card">
+          <span class="sfc-mobile__chip">Atendimento</span>
+          <h3 class="sfc-mobile__pair-title">Finalizar</h3>
+          <p class="sfc-mobile__pair-text">Encerramento com confirmação para reduzir ações irreversíveis.</p>
+        </article>
+        <article class="sfc-mobile__voice-card">
+          <span class="sfc-mobile__chip">Contexto</span>
+          <h3 class="sfc-mobile__pair-title">Protocolo</h3>
+          <p class="sfc-mobile__pair-text">Identificação do atendimento preservada durante a interação.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 6: Continuidade -->
+    <section class="sfc-mobile__section">
+      <article class="sfc-mobile__highlight">
+        <span class="sfc-mobile__highlight-label">Continuidade</span>
+        <h3 class="sfc-mobile__highlight-title">O atendimento não termina quando a conversa fecha</h3>
+        <p class="sfc-mobile__highlight-text">Histórico, contatos e resumo do dia ajudam a recuperar interações anteriores e manter contexto, em vez de tratar cada contato como uma ocorrência isolada.</p>
+      </article>
+      <div class="sfc-mobile__panel">
+        <img src="assets/images/salesforce-citrus/continuity.png" alt="Lista de atendimentos do console Citrus com fila de atendimento" width="1920" height="1459">
+      </div>
+    </section>
+
+    <!-- Seção 7: O Design System precisava funcionar fora do Citrus -->
+    <section class="sfc-mobile__section">
+      <span class="sfc-mobile__accent"></span>
+      <h2 class="sfc-mobile__section-title">O Design System precisava funcionar fora do Citrus</h2>
+      <p class="sfc-mobile__section-text">O console reaproveita padrões e componentes do Design System Citrus, adaptados ao espaço e às restrições de uma experiência embarcada no Salesforce.</p>
+
+      <div class="sfc-mobile__design">
+        <article class="sfc-mobile__design-card">
+          <h3 class="sfc-mobile__pair-title">Busca e filtros</h3>
+          <p class="sfc-mobile__pair-text">Componentes conhecidos reduzem a necessidade de reaprender a interação.</p>
+        </article>
+        <article class="sfc-mobile__design-card">
+          <h3 class="sfc-mobile__pair-title">Badges e canais</h3>
+          <p class="sfc-mobile__pair-text">Informação compacta ajuda a identificar rapidamente contexto e origem da conversa.</p>
+        </article>
+        <article class="sfc-mobile__design-card">
+          <h3 class="sfc-mobile__pair-title">Cards de atendimento</h3>
+          <p class="sfc-mobile__pair-text">Nome, protocolo, mensagem, fila e horário são condensados sem perder hierarquia.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 8: Integração, não duplicação -->
+    <section class="sfc-mobile__section">
+      <span class="sfc-mobile__accent"></span>
+      <h2 class="sfc-mobile__section-title">Integração, não duplicação</h2>
+      <p class="sfc-mobile__section-text">O valor do projeto está justamente em não tentar recriar uma segunda versão completa do Citrus. O console leva para o Salesforce apenas o que é necessário para conduzir o atendimento com continuidade.</p>
+
+      <div class="sfc-mobile__pairs">
+        <article class="sfc-mobile__pair">
+          <span class="sfc-mobile__chip">Citrus</span>
+          <h3 class="sfc-mobile__pair-title">Operação de atendimento</h3>
+          <p class="sfc-mobile__pair-text">Fluxos, canais, protocolos, filas e ações essenciais.</p>
+        </article>
+        <article class="sfc-mobile__pair sfc-mobile__pair--dark">
+          <span class="sfc-mobile__chip">Salesforce</span>
+          <h3 class="sfc-mobile__pair-title">Contexto da conta</h3>
+          <p class="sfc-mobile__pair-text">O operador continua no ambiente onde consulta e navega pelas informações relacionadas ao cliente.</p>
+        </article>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="site-footer" id="contato">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">2026 MICHELE MEDEIROS | Entre em contato: <a href="mailto:michelefmedeiros@gmail.com?subject=Contato%20via%20portf%C3%B3lio">michelefmedeiros@gmail.com</a></p>
+      <a href="https://www.linkedin.com/in/michele-franca-medeiros/" target="_blank" rel="noopener"><img class="site-footer__icon" src="assets/images/icons/linkedin-box-fill.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
