@@ -2172,6 +2172,14 @@
   object-fit: contain;
 }
 
+/* Aprova Quest — cards cinza de "O projeto em 30 segundos" usam a mesma
+   cor roxa clara do tablet/mobile também na web */
+.page-aprova-quest .cs-card[style*="#dfdfdf"] {
+  background: #ebe8f7 !important;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+}
+
 /* Aprova Quest — tablet (768px do Figma) */
 @media (max-width: 1023px) {
   .page-aprova-quest .cs-hero__phone {
@@ -2184,6 +2192,19 @@
     max-width: none;
   }
 
+  .cs-ds-desktop {
+    display: none;
+  }
+
+  .cs-ds-accordion {
+    display: flex;
+  }
+}
+
+/* O site considera "web" a partir de 1000px: o carrossel (tablet/mobile)
+   só deve valer abaixo disso, senão 1000–1023px fica preso no modo
+   tablet/mobile (cards fixos em 300px + scroll-snap). */
+@media (max-width: 999px) {
   .cs-carousel-tablet {
     display: flex;
     flex-wrap: nowrap;
@@ -2201,14 +2222,6 @@
     flex: 0 0 300px !important;
     min-width: 0;
     scroll-snap-align: start;
-  }
-
-  .cs-ds-desktop {
-    display: none;
-  }
-
-  .cs-ds-accordion {
-    display: flex;
   }
 }
 
