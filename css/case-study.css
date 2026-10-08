@@ -2180,6 +2180,50 @@
   box-sizing: border-box;
 }
 
+/* Aprova Quest — "Visão geral": metadados usam o mesmo estilo de cards
+   (grid 2 colunas, cada item como card branco) do tablet/mobile também na web */
+.page-aprova-quest .cs-ds-row {
+  flex-direction: column;
+  gap: 24px;
+}
+
+.page-aprova-quest .cs-ds-row > * {
+  flex: none !important;
+  height: auto !important;
+}
+
+.page-aprova-quest .cs-meta-panel--plain {
+  order: -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+  flex: none !important;
+  max-width: none !important;
+}
+
+.page-aprova-quest .cs-meta-panel--plain .cs-meta-panel__item {
+  background: rgba(255, 255, 255, 0.75);
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 16px 18px;
+}
+
+.page-aprova-quest .cs-meta-panel--plain .cs-meta-panel__item:nth-child(n + 3) {
+  grid-column: 1 / -1;
+}
+
+.page-aprova-quest .cs-meta-panel--plain .cs-meta-panel__label {
+  color: #5029de;
+  font-size: var(--fs-label);
+  margin-bottom: 4px;
+}
+
+.page-aprova-quest .cs-meta-panel--plain .cs-meta-panel__value {
+  color: #151414;
+  font-size: var(--fs-body-sm);
+}
+
 /* Aprova Quest — tablet (768px do Figma) */
 @media (max-width: 1023px) {
   .page-aprova-quest .cs-hero__phone {
