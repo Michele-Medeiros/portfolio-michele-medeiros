@@ -2172,6 +2172,58 @@
   object-fit: contain;
 }
 
+/* Aprova Quest — cards cinza de "O projeto em 30 segundos" usam a mesma
+   cor roxa clara do tablet/mobile também na web */
+.page-aprova-quest .cs-card[style*="#dfdfdf"] {
+  background: #ebe8f7 !important;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+}
+
+/* Aprova Quest — "Visão geral": metadados usam o mesmo estilo de cards
+   (grid 2 colunas, cada item como card branco) do tablet/mobile também na web */
+.page-aprova-quest .cs-ds-row {
+  flex-direction: column;
+  gap: 24px;
+}
+
+.page-aprova-quest .cs-ds-row > * {
+  flex: none !important;
+  height: auto !important;
+}
+
+.page-aprova-quest .cs-meta-panel--plain {
+  order: -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+  flex: none !important;
+  max-width: none !important;
+}
+
+.page-aprova-quest .cs-meta-panel--plain .cs-meta-panel__item {
+  background: rgba(255, 255, 255, 0.75);
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 16px 18px;
+}
+
+.page-aprova-quest .cs-meta-panel--plain .cs-meta-panel__item:nth-child(n + 3) {
+  grid-column: 1 / -1;
+}
+
+.page-aprova-quest .cs-meta-panel--plain .cs-meta-panel__label {
+  color: #5029de;
+  font-size: var(--fs-label);
+  margin-bottom: 4px;
+}
+
+.page-aprova-quest .cs-meta-panel--plain .cs-meta-panel__value {
+  color: #151414;
+  font-size: var(--fs-body-sm);
+}
+
 /* Aprova Quest — tablet (768px do Figma) */
 @media (max-width: 1023px) {
   .page-aprova-quest .cs-hero__phone {
@@ -2184,6 +2236,19 @@
     max-width: none;
   }
 
+  .cs-ds-desktop {
+    display: none;
+  }
+
+  .cs-ds-accordion {
+    display: flex;
+  }
+}
+
+/* O site considera "web" a partir de 1000px: o carrossel (tablet/mobile)
+   só deve valer abaixo disso, senão 1000–1023px fica preso no modo
+   tablet/mobile (cards fixos em 300px + scroll-snap). */
+@media (max-width: 999px) {
   .cs-carousel-tablet {
     display: flex;
     flex-wrap: nowrap;
@@ -2201,14 +2266,6 @@
     flex: 0 0 300px !important;
     min-width: 0;
     scroll-snap-align: start;
-  }
-
-  .cs-ds-desktop {
-    display: none;
-  }
-
-  .cs-ds-accordion {
-    display: flex;
   }
 }
 
@@ -2374,13 +2431,13 @@
     font-size: var(--fs-body-sm);
   }
 
-  /* O projeto em 30 segundos */
+  /* O projeto em 30 segundos — um card por vez, arrasta para o lado para ver o outro (mesmo comportamento do mobile) */
   .page-aprova-quest .cs-page #track-30s {
     gap: 20px;
   }
 
   .page-aprova-quest .cs-page #track-30s > * {
-    flex: 0 0 calc(50% - 10px) !important;
+    flex: 0 0 85% !important;
     min-width: 0 !important;
   }
 
