@@ -23,20 +23,20 @@
 
 .siage-hero__kicker {
   font-weight: 600;
-  font-size: 20px;
+  font-size: var(--fs-body-sm);
   line-height: 1.95;
   color: var(--cs-navy);
 }
 
 .siage-hero__title {
   font-weight: 700;
-  font-size: 65px;
+  font-size: var(--fs-display);
   line-height: 1.45;
   color: var(--cs-text-body);
 }
 
 .siage-hero__desc {
-  font-size: 24px;
+  font-size: var(--fs-body);
   line-height: 2;
   text-align: justify;
   color: var(--cs-text-body);
@@ -47,7 +47,7 @@
   border-left: 4px solid var(--cs-orange);
   font-style: italic;
   font-weight: 500;
-  font-size: 24px;
+  font-size: var(--fs-body);
   line-height: 1.55;
   text-align: justify;
   color: var(--cs-text-body);
@@ -72,14 +72,14 @@
 
 .siage-fact__label {
   font-weight: 600;
-  font-size: 20px;
+  font-size: var(--fs-label);
   line-height: 1.95;
   text-transform: uppercase;
   color: var(--cs-text);
 }
 
 .siage-fact__text {
-  font-size: 16px;
+  font-size: var(--fs-body-sm);
   line-height: 1.6;
   letter-spacing: 0.32px;
   color: var(--cs-text-secondary);
@@ -124,12 +124,12 @@
 
 .siage-hero__badge-title {
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--fs-title-sm);
   line-height: 2;
 }
 
 .siage-hero__badge-text {
-  font-size: 14px;
+  font-size: var(--fs-body-sm);
   line-height: 2;
 }
 
@@ -158,7 +158,7 @@
 
 .siage-card__title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: var(--fs-title-sm);
   line-height: 1.95;
   text-transform: uppercase;
   color: var(--cs-text);
@@ -169,7 +169,7 @@
 }
 
 .siage-card__text {
-  font-size: 20px;
+  font-size: var(--fs-body-sm);
   line-height: 1.6;
   letter-spacing: 0.4px;
   text-align: justify;
@@ -189,7 +189,7 @@
   border-radius: 900px;
   background: var(--cs-pill-bg);
   font-weight: 600;
-  font-size: 16px;
+  font-size: var(--fs-label);
   line-height: 1.95;
   text-transform: uppercase;
   color: var(--cs-text);
@@ -210,7 +210,7 @@
   }
 
   .siage-hero__title {
-    font-size: 48px;
+    font-size: var(--fs-display);
   }
 
   .siage-hero__aside {
@@ -229,7 +229,7 @@
   }
 
   .siage-hero__title {
-    font-size: 40px;
+    font-size: var(--fs-display);
   }
 
   .siage-hero__badge {
@@ -241,7 +241,7 @@
 
   .siage-hero__desc,
   .siage-hero__quote {
-    font-size: 18px;
+    font-size: var(--fs-body);
   }
 }
 
@@ -253,13 +253,13 @@
 
 .siage-section-title {
   font-weight: 600;
-  font-size: 40px;
+  font-size: var(--fs-title);
   line-height: 1.95;
   color: var(--cs-text);
 }
 
 .siage-section-desc {
-  font-size: 24px;
+  font-size: var(--fs-body);
   line-height: 2;
   text-align: justify;
   color: var(--cs-text-body);
@@ -279,14 +279,14 @@
 
 .siage-role__title {
   font-weight: 600;
-  font-size: 40px;
+  font-size: var(--fs-title);
   line-height: 1.95;
   text-transform: uppercase;
   color: var(--cs-text);
 }
 
 .siage-role__desc {
-  font-size: 24px;
+  font-size: var(--fs-body);
   line-height: 55px;
   text-align: justify;
   color: var(--cs-text);
@@ -309,14 +309,14 @@
 
 .siage-role__card-title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: var(--fs-title-sm);
   line-height: 1.95;
   text-transform: uppercase;
   color: var(--cs-text);
 }
 
 .siage-role__card-text {
-  font-size: 20px;
+  font-size: var(--fs-body-sm);
   line-height: 1.6;
   letter-spacing: 0.4px;
   text-align: left;
@@ -329,12 +329,12 @@
   }
 
   .siage-role__title {
-    font-size: 32px;
+    font-size: var(--fs-title);
   }
 
   .siage-role__desc {
     line-height: 1.8;
-    font-size: 18px;
+    font-size: var(--fs-body);
   }
 }
 
@@ -369,25 +369,25 @@
   border-radius: 900px;
   background: var(--cs-pill-bg);
   font-weight: 600;
-  font-size: 16px;
+  font-size: var(--fs-label);
   line-height: 1.95;
   color: var(--cs-text);
 }
 
 .siage-step__title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: var(--fs-title-sm);
   line-height: 1.95;
   text-transform: uppercase;
   color: var(--cs-text);
 }
 
 .siage-step__title--lg {
-  font-size: 18px;
+  font-size: var(--fs-title-sm);
 }
 
 .siage-step__text {
-  font-size: 20px;
+  font-size: var(--fs-body-sm);
   line-height: 1.6;
   letter-spacing: 0.4px;
   text-align: left;
@@ -409,7 +409,7 @@
 }
 
 .siage-solution-lead {
-  font-size: 24px;
+  font-size: var(--fs-body);
   line-height: 1.5;
   text-align: justify;
   color: var(--cs-text);
@@ -440,14 +440,14 @@
 
 .siage-state__title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: var(--fs-title-sm);
   line-height: 1.95;
   text-transform: uppercase;
   color: var(--cs-text);
 }
 
 .siage-state__text {
-  font-size: 20px;
+  font-size: var(--fs-body-sm);
   line-height: 1.6;
   letter-spacing: 0.4px;
   color: var(--cs-text-secondary);
@@ -476,7 +476,7 @@
 /* Uma jornada em destaque
    ======================================================================== */
 .siage-journey__lead {
-  font-size: 24px;
+  font-size: var(--fs-body);
   line-height: 1.5;
   text-align: justify;
   color: var(--cs-text);
@@ -507,7 +507,7 @@
 
 .siage-journey__label {
   font-weight: 600;
-  font-size: 16px;
+  font-size: var(--fs-label);
   line-height: 1.95;
   text-transform: uppercase;
   color: #022859;
@@ -515,14 +515,14 @@
 
 .siage-journey__title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: var(--fs-title-sm);
   line-height: 1.95;
   text-transform: uppercase;
   color: #000;
 }
 
 .siage-journey__desc {
-  font-size: 20px;
+  font-size: var(--fs-body);
   line-height: 1.6;
   letter-spacing: 0.4px;
   color: var(--cs-text-secondary);
@@ -571,7 +571,7 @@
 /* High fidelity
    ======================================================================== */
 .siage-hifi__lead {
-  font-size: 24px;
+  font-size: var(--fs-body);
   line-height: 1.5;
   text-align: justify;
   color: var(--cs-text);
@@ -620,14 +620,14 @@
 
 .siage-hifi__title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: var(--fs-title-sm);
   line-height: 1.95;
   text-transform: uppercase;
   color: var(--cs-text);
 }
 
 .siage-hifi__text {
-  font-size: 20px;
+  font-size: var(--fs-body-sm);
   line-height: 1.6;
   letter-spacing: 0.4px;
   color: var(--cs-text-secondary);
@@ -647,6 +647,16 @@
 /* Tablet (500px a 1250px)
    ======================================================================== */
 @media (min-width: 500px) and (max-width: 1250px) {
+  :root {
+    --fs-display: 34px;
+    --fs-title-lg: 24px;
+    --fs-title: 22px;
+    --fs-title-sm: 16px;
+    --fs-body: 16px;
+    --fs-body-sm: 15px;
+    --fs-label: 13px;
+  }
+
   .siage-hero-section {
     padding: 0;
   }
@@ -661,13 +671,13 @@
   }
 
   .siage-hero__kicker {
-    font-size: 14px;
+    font-size: var(--fs-body-sm);
     line-height: 1.3;
     color: #022859;
   }
 
   .siage-hero__title {
-    font-size: 52px;
+    font-size: var(--fs-display);
     line-height: 1.1;
   }
 
@@ -676,13 +686,13 @@
   }
 
   .siage-hero__desc {
-    font-size: 20px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     text-align: left;
   }
 
   .siage-hero__quote {
-    font-size: 17px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     padding-left: 14px;
     border-left-color: #f79c05;
@@ -705,12 +715,12 @@
   }
 
   .siage-fact__label {
-    font-size: 16px;
+    font-size: var(--fs-label);
     line-height: 1.2;
   }
 
   .siage-fact__text {
-    font-size: 14px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     letter-spacing: 0;
   }
@@ -752,12 +762,12 @@
   }
 
   .siage-hero__badge-title {
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.2;
   }
 
   .siage-hero__badge-text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #e1e6f5;
   }
@@ -795,13 +805,13 @@
 
   .siage-section-title,
   .siage-role__title {
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
   }
 
   .siage-section-desc,
   .siage-role__desc {
-    font-size: 18px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     text-align: left;
     color: #56565a;
@@ -827,17 +837,17 @@
 
   .siage-pill {
     padding: 5px 12px;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
   }
 
   .siage-card__title {
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
   }
 
   .siage-card__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     letter-spacing: 0;
     text-align: left;
@@ -861,12 +871,12 @@
   }
 
   .siage-role__card-title {
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
   }
 
   .siage-role__card-text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     letter-spacing: 0;
     text-align: left;
@@ -897,18 +907,18 @@
 
   .siage-step__num {
     padding: 5px 12px;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
   }
 
   .siage-step__title,
   .siage-step__title--lg {
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
   }
 
   .siage-step__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     letter-spacing: 0;
     text-align: left;
@@ -947,7 +957,7 @@
   }
 
   .siage-solution-lead {
-    font-size: 18px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     text-align: left;
     color: #56565a;
@@ -977,12 +987,12 @@
   }
 
   .siage-state__title {
-    font-size: 14px;
+    font-size: var(--fs-title-sm);
     line-height: 1.2;
   }
 
   .siage-state__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     letter-spacing: 0;
   }
@@ -996,7 +1006,7 @@
   }
 
   .siage-journey__lead {
-    font-size: 18px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     text-align: left;
     color: #56565a;
@@ -1023,17 +1033,17 @@
     padding: 5px 12px;
     border-radius: 100px;
     background: #e1e8fc;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
   }
 
   .siage-journey__title {
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
   }
 
   .siage-journey__desc {
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     letter-spacing: 0;
     color: #56565a;
@@ -1085,7 +1095,7 @@
   }
 
   .siage-hifi__lead {
-    font-size: 18px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     text-align: left;
     color: #56565a;
@@ -1133,12 +1143,12 @@
   }
 
   .siage-hifi__title {
-    font-size: 14px;
+    font-size: var(--fs-title-sm);
     line-height: 1.2;
   }
 
   .siage-hifi__text {
-    font-size: 14px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     letter-spacing: 0;
     color: #56565a;
@@ -1146,6 +1156,16 @@
 }
 
 @media (max-width: 499px) {
+  :root {
+    --fs-display: 28px;
+    --fs-title-lg: 18px;
+    --fs-title: 20px;
+    --fs-title-sm: 15px;
+    --fs-body: 15px;
+    --fs-body-sm: 14px;
+    --fs-label: 12px;
+  }
+
   .siage-hifi__card {
     flex: 1 1 100%;
   }
@@ -1168,13 +1188,13 @@
   }
 
   .siage-hero__kicker {
-    font-size: 14px;
+    font-size: var(--fs-body-sm);
     line-height: 1.3;
     color: #022859;
   }
 
   .siage-hero__title {
-    font-size: 40px;
+    font-size: var(--fs-display);
     line-height: 1.1;
   }
 
@@ -1183,13 +1203,13 @@
   }
 
   .siage-hero__desc {
-    font-size: 18px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     text-align: left;
   }
 
   .siage-hero__quote {
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     padding-left: 14px;
     border-left-color: #f79c05;
@@ -1210,12 +1230,12 @@
   }
 
   .siage-fact__label {
-    font-size: 16px;
+    font-size: var(--fs-label);
     line-height: 1.2;
   }
 
   .siage-fact__text {
-    font-size: 14px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     letter-spacing: 0;
   }
@@ -1257,12 +1277,12 @@
   }
 
   .siage-hero__badge-title {
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.2;
   }
 
   .siage-hero__badge-text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #e1e6f5;
   }
@@ -1300,13 +1320,13 @@
 
   .siage-section-title,
   .siage-role__title {
-    font-size: 26px;
+    font-size: var(--fs-title);
     line-height: 1.2;
   }
 
   .siage-section-desc,
   .siage-role__desc {
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     text-align: left;
     color: #56565a;
@@ -1333,17 +1353,17 @@
 
   .siage-pill {
     padding: 5px 12px;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
   }
 
   .siage-card__title {
-    font-size: 14px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
   }
 
   .siage-card__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     letter-spacing: 0;
     text-align: left;
@@ -1367,12 +1387,12 @@
   }
 
   .siage-role__card-title {
-    font-size: 14px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
   }
 
   .siage-role__card-text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     letter-spacing: 0;
     text-align: left;
@@ -1403,18 +1423,18 @@
 
   .siage-step__num {
     padding: 5px 12px;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
   }
 
   .siage-step__title,
   .siage-step__title--lg {
-    font-size: 14px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
   }
 
   .siage-step__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     letter-spacing: 0;
     text-align: left;
@@ -1446,7 +1466,7 @@
   }
 
   .siage-solution-lead {
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     text-align: left;
     color: #56565a;
@@ -1472,12 +1492,12 @@
   }
 
   .siage-state__title {
-    font-size: 14px;
+    font-size: var(--fs-title-sm);
     line-height: 1.2;
   }
 
   .siage-state__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     letter-spacing: 0;
   }
@@ -1491,7 +1511,7 @@
   }
 
   .siage-journey__lead {
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     text-align: left;
     color: #56565a;
@@ -1509,17 +1529,17 @@
     padding: 5px 12px;
     border-radius: 100px;
     background: #e1e8fc;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
   }
 
   .siage-journey__title {
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
   }
 
   .siage-journey__desc {
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     letter-spacing: 0;
   }
@@ -1555,7 +1575,7 @@
   }
 
   .siage-hifi__lead {
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     text-align: left;
     color: #56565a;
@@ -1587,12 +1607,12 @@
   }
 
   .siage-hifi__title {
-    font-size: 14px;
+    font-size: var(--fs-title-sm);
     line-height: 1.2;
   }
 
   .siage-hifi__text {
-    font-size: 14px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     letter-spacing: 0;
   }
@@ -1615,7 +1635,7 @@
   .siage-journey__desc,
   .siage-state__text,
   .siage-hifi__text {
-    font-size: 18px;
+    font-size: var(--fs-body);
   }
 
   .siage-hero__desc,
@@ -1679,11 +1699,11 @@
 /* Web: três primeiros cards de "Meu papel" com títulos e textos menores */
 @media (min-width: 1251px) {
   .siage-role__card:nth-child(-n+3) .siage-role__card-title {
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
   }
 
   .siage-role__card:nth-child(-n+3) .siage-role__card-text {
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
   }
 }
 
@@ -1721,10 +1741,10 @@
   }
 
   .siage-fact__label {
-    font-size: 18px;
+    font-size: var(--fs-label);
   }
 
   .siage-fact__text {
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
   }
 }
