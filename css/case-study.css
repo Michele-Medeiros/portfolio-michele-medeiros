@@ -145,7 +145,7 @@
 }
 
 .cs-stat__label {
-  font-size: 12px;
+  font-size: var(--fs-label);
   letter-spacing: 0.32px;
   color: var(--cs-text-secondary);
 }
@@ -211,7 +211,7 @@
   border-radius: 900px;
   background: var(--cs-pill-bg);
   font-weight: 600;
-  font-size: 13px;
+  font-size: var(--fs-label);
   text-transform: uppercase;
   color: var(--cs-text);
 }
@@ -250,7 +250,7 @@
    Numbered step cards
    ======================================================================== */
 .cs-step .cs-pill {
-  font-size: 13px;
+  font-size: var(--fs-body-sm);
   padding: 6px 16px;
 }
 
@@ -315,7 +315,7 @@
 .cs-ds-meta strong {
   display: block;
   font-weight: 600;
-  font-size: 15px;
+  font-size: var(--fs-label);
   color: var(--cs-text);
   margin-bottom: 8px;
 }
@@ -409,7 +409,7 @@
 
 .cs-typo-box__title {
   font-weight: 600;
-  font-size: 15px;
+  font-size: var(--fs-title-sm);
   color: var(--cs-text);
   margin-bottom: 16px;
 }
@@ -436,7 +436,7 @@
 
 .cs-swatch-group__title {
   font-weight: 600;
-  font-size: 15px;
+  font-size: var(--fs-title-sm);
   color: var(--cs-text);
   margin-bottom: 16px;
 }
@@ -463,12 +463,12 @@
 
 .cs-swatch__name {
   font-weight: 500;
-  font-size: 13px;
+  font-size: var(--fs-label);
   color: var(--cs-text);
 }
 
 .cs-swatch__hex {
-  font-size: 11px;
+  font-size: var(--fs-label);
   color: var(--cs-text-secondary);
 }
 
@@ -547,7 +547,7 @@
 }
 
 .cs-type-spec__label {
-  font-size: 11px;
+  font-size: var(--fs-label);
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--cs-text-secondary);
@@ -560,7 +560,7 @@
 }
 
 .cs-type-spec__meta {
-  font-size: 13px;
+  font-size: var(--fs-label);
   color: var(--cs-text-secondary);
 }
 
@@ -572,7 +572,7 @@
 
 .cs-ds-components__title {
   font-weight: 600;
-  font-size: 15px;
+  font-size: var(--fs-title-sm);
   text-transform: uppercase;
   color: var(--cs-text);
 }
@@ -642,7 +642,7 @@
 
 .cs-principle__label {
   font-weight: 600;
-  font-size: 15px;
+  font-size: var(--fs-label);
   text-transform: uppercase;
 }
 
@@ -729,7 +729,7 @@
 
 .cs-screen-card__title {
   font-weight: 600;
-  font-size: 15px;
+  font-size: var(--fs-title-sm);
   text-transform: uppercase;
   color: var(--cs-text);
 }
@@ -767,7 +767,7 @@
   padding: 4px 16px;
   border-radius: 99px;
   font-weight: 600;
-  font-size: 13px;
+  font-size: var(--fs-label);
   text-transform: uppercase;
 }
 
@@ -836,7 +836,7 @@
   padding: 8px 16px;
   border-radius: 20px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--fs-label);
   color: #3b3b3e;
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(59, 59, 62, 0.18);
@@ -1131,7 +1131,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: var(--fs-label);
 }
 
 .cs-stage__body {
@@ -1156,7 +1156,7 @@
   align-self: flex-start;
   padding: 4px 10px;
   border-radius: 8px;
-  font-size: 12px;
+  font-size: var(--fs-label);
   font-weight: 600;
 }
 
@@ -1294,7 +1294,7 @@
 
 .cs-showcase__title {
   font-weight: 600;
-  font-size: 15px;
+  font-size: var(--fs-title-sm);
   text-transform: uppercase;
   color: var(--cs-text);
 }
@@ -1360,6 +1360,16 @@
 }
 
 @media (min-width: 500px) and (max-width: 1250px) {
+  :root {
+    --fs-display: 34px;
+    --fs-title-lg: 24px;
+    --fs-title: 22px;
+    --fs-title-sm: 16px;
+    --fs-body: 16px;
+    --fs-body-sm: 15px;
+    --fs-label: 13px;
+  }
+
   .page-sintonize .cs-chapter-nav {
     display: flex;
     padding-inline: 48px;
@@ -1383,11 +1393,11 @@
   }
 
   .page-sintonize .cs-section__title {
-    font-size: 28px;
+    font-size: var(--fs-title);
   }
 
   .page-sintonize .cs-section__desc {
-    font-size: 16px;
+    font-size: var(--fs-body);
   }
 
   .page-sintonize .cs-section {
@@ -1432,7 +1442,7 @@
   }
 
   .page-sintonize .cs-step .cs-card__text {
-    font-size: 14px;
+    font-size: var(--fs-body-sm);
     font-weight: 500;
     color: var(--cs-text);
   }
@@ -1452,7 +1462,7 @@
   }
 
   .page-sintonize .cs-cards-row--exp .cs-card__title {
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     text-transform: none;
   }
 
@@ -1469,7 +1479,7 @@
     background: #edebfc;
     color: #5029de;
     font-weight: 500;
-    font-size: 14px;
+    font-size: var(--fs-body-sm);
     line-height: 1.2;
     padding: 6px 12px;
     border-radius: 100px;
@@ -1494,22 +1504,22 @@
   }
 
   .page-sintonize .cs-hero__title {
-    font-size: 52px;
+    font-size: var(--fs-display);
     line-height: 55px;
   }
 
   .page-sintonize .cs-hero__subtitle {
-    font-size: 30px;
+    font-size: var(--fs-title-lg);
     line-height: 35px;
   }
 
   .page-sintonize .cs-hero__desc {
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 26px;
   }
 
   .page-sintonize .cs-hero__quote {
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 25px;
     border-left-color: var(--cs-orange-cta);
   }
@@ -1530,12 +1540,12 @@
   }
 
   .page-sintonize .cs-stat__value {
-    font-size: 19px;
+    font-size: var(--fs-label);
     line-height: 23px;
   }
 
   .page-sintonize .cs-stat__label {
-    font-size: 14px;
+    font-size: var(--fs-label);
     letter-spacing: normal;
   }
 
@@ -1551,7 +1561,7 @@
     color: #151414;
     text-decoration: none;
     font-weight: 600;
-    font-size: 17px;
+    font-size: var(--fs-body-sm);
     line-height: 20px;
     padding: 15px 24px;
     border-radius: 16px;
@@ -1627,12 +1637,12 @@
 
   .page-sintonize .cs-table__cell--area {
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     color: var(--cs-text);
   }
 
   .page-sintonize .cs-table__cell--states {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     color: #252628;
     padding-bottom: 10px;
     border-bottom: 1px solid #e4e4e8;
@@ -1642,13 +1652,13 @@
     content: 'ESTADOS CONSIDERADOS';
     display: block;
     font-weight: 600;
-    font-size: 12px;
+    font-size: var(--fs-body-sm);
     color: #5029de;
     margin-bottom: 6px;
   }
 
   .page-sintonize .cs-table__cell--why {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     color: var(--cs-text);
   }
 
@@ -1656,7 +1666,7 @@
     content: 'PORQUE IMPORTA';
     display: block;
     font-weight: 600;
-    font-size: 12px;
+    font-size: var(--fs-body-sm);
     color: var(--cs-orange-cta);
     margin-bottom: 10px;
   }
@@ -1680,17 +1690,17 @@
     padding: 0;
     background: transparent;
     color: var(--cs-orange-cta);
-    font-size: 12px;
+    font-size: var(--fs-label);
   }
 
   .page-sintonize .cs-cards-row--decisions .cs-card__title {
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     text-transform: none;
     color: #fff;
   }
 
   .page-sintonize .cs-cards-row--decisions .cs-card__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     color: #dce2f0;
   }
 
@@ -1708,7 +1718,7 @@
   }
 
   .page-sintonize .cs-ds-meta strong {
-    font-size: 12px;
+    font-size: var(--fs-label);
     font-weight: 600;
     color: #5029de;
     text-transform: uppercase;
@@ -1727,7 +1737,7 @@
 
   .page-sintonize .cs-ds-card__title,
   .page-sintonize .cs-ds-components__title {
-    font-size: 12px;
+    font-size: var(--fs-title-sm);
     font-weight: 600;
     color: #5029de;
     text-transform: uppercase;
@@ -1834,7 +1844,7 @@
     align-self: flex-start;
     padding: 0;
     background: transparent;
-    font-size: 12px;
+    font-size: var(--fs-label);
   }
 
   .page-sintonize .cs-pair-row .cs-card:first-child .cs-pill {
@@ -1846,12 +1856,12 @@
   }
 
   .page-sintonize .cs-pair-row .cs-card__title {
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     text-transform: none;
   }
 
   .page-sintonize .cs-pair-row .cs-card__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   .page-sintonize .cs-pair-arrow {
@@ -1894,16 +1904,16 @@
     padding: 0;
     background: transparent;
     color: #5029de;
-    font-size: 12px;
+    font-size: var(--fs-label);
   }
 
   .page-sintonize .cs-cards-row--docs .cs-card__title {
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     text-transform: none;
   }
 
   .page-sintonize .cs-cards-row--docs .cs-card__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   /* "Design → software" — principle card, steps grid and phases grid, matching Figma */
@@ -1921,14 +1931,14 @@
   }
 
   .page-sintonize .cs-principle__label {
-    font-size: 12px;
+    font-size: var(--fs-label);
     color: var(--cs-orange-cta);
   }
 
   .page-sintonize .cs-principle__quote {
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.35;
   }
 
@@ -1962,13 +1972,13 @@
 
   .page-sintonize .cs-decomp__term {
     flex: none;
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     text-transform: none;
   }
 
   .page-sintonize .cs-decomp__def {
     flex: none;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   .page-sintonize .cs-cards-row--phases .cs-card {
@@ -1992,21 +2002,21 @@
     border-radius: 20px;
     background: #122f5d;
     color: #fff;
-    font-size: 14px;
+    font-size: var(--fs-label);
     text-transform: none;
   }
 
   .page-sintonize .cs-cards-row--phases .cs-card__title {
     grid-column: 2;
     grid-row: 1;
-    font-size: 17px;
+    font-size: var(--fs-title-sm);
     text-transform: none;
   }
 
   .page-sintonize .cs-cards-row--phases .cs-card__text {
     grid-column: 2;
     grid-row: 2;
-    font-size: 14px;
+    font-size: var(--fs-body-sm);
   }
 }
 
@@ -2088,7 +2098,7 @@
 
 .cs-ds-item .cs-stage__head {
   padding: 16px 18px;
-  font-size: 18px;
+  font-size: var(--fs-title-sm);
 }
 
 .cs-ds-swatches {
@@ -2103,7 +2113,7 @@
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
+  font-size: var(--fs-label);
   font-weight: 500;
   color: #3b3b3e;
 }
@@ -2262,12 +2272,12 @@
   }
 
   .page-aprova-quest .cs-hero__title {
-    font-size: 32px;
+    font-size: var(--fs-display);
     font-weight: 800;
   }
 
   .page-aprova-quest .cs-hero__desc {
-    font-size: 15px;
+    font-size: var(--fs-body);
   }
 
   .page-aprova-quest .cs-hero__aside {
@@ -2309,7 +2319,7 @@
   }
 
   .page-aprova-quest .cs-page .cs-card__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   .page-aprova-quest .cs-page .cs-ds-row > * {
@@ -2326,7 +2336,7 @@
   }
 
   .page-aprova-quest .cs-feature-list__title {
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
   }
 
   .page-aprova-quest .cs-card[style*="#dfdfdf"] p[style*="italic"] {
@@ -2355,13 +2365,13 @@
 
   .page-aprova-quest .cs-page .cs-meta-panel--plain .cs-meta-panel__label {
     color: #5029de;
-    font-size: 13px;
+    font-size: var(--fs-label);
     margin-bottom: 4px;
   }
 
   .page-aprova-quest .cs-page .cs-meta-panel--plain .cs-meta-panel__value {
     color: #151414;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   /* O projeto em 30 segundos */
@@ -2381,20 +2391,20 @@
   }
 
   .page-aprova-quest .cs-card[style*="#dfdfdf"] .cs-card__title {
-    font-size: 20px !important;
+    font-size: var(--fs-title-sm) !important;
     text-transform: none;
     font-weight: 600;
     color: #151414;
   }
 
   .page-aprova-quest .cs-card[style*="#dfdfdf"] p[style*="italic"] {
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.4;
   }
 
   .page-aprova-quest .cs-feature-list__title {
     color: #5029de;
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     font-weight: 500;
   }
 
@@ -2418,25 +2428,25 @@
   }
 
   .page-aprova-quest .cs-fact__num {
-    font-size: 48px;
+    font-size: var(--fs-display);
     font-weight: 700;
     line-height: 1;
     color: #5029de;
   }
 
   .page-aprova-quest .cs-fact__value {
-    font-size: 22px;
+    font-size: var(--fs-title-sm);
     color: #151414;
     margin-bottom: 8px;
   }
 
   .page-aprova-quest .cs-fact:last-child .cs-fact__value {
     color: #5029de;
-    font-size: 26px;
+    font-size: var(--fs-title-sm);
   }
 
   .page-aprova-quest .cs-fact__label {
-    font-size: 15px;
+    font-size: var(--fs-label);
   }
 
   /* O que descobri */
@@ -2454,13 +2464,13 @@
   .page-aprova-quest .cs-num {
     display: block;
     color: #5029de;
-    font-size: 16px;
+    font-size: var(--fs-label);
     font-weight: 600;
     margin-bottom: 4px;
   }
 
   .page-aprova-quest .cs-page .cs-grid-2 .cs-card__title {
-    font-size: 20px !important;
+    font-size: var(--fs-title-sm) !important;
     line-height: 1.3;
     text-transform: none;
     font-weight: 600;
@@ -2525,7 +2535,7 @@
 
   .page-aprova-quest .cs-persona__name {
     grid-column: 2;
-    font-size: 20px !important;
+    font-size: var(--fs-title-sm) !important;
     text-transform: none;
     margin-bottom: 0 !important;
   }
@@ -2542,7 +2552,7 @@
   .page-aprova-quest .cs-persona strong {
     display: block;
     color: #5029de;
-    font-size: 13px;
+    font-size: var(--fs-label);
     font-weight: 600;
   }
 
@@ -2558,13 +2568,13 @@
 
   .page-aprova-quest .cs-scenario .cs-card__title {
     color: #5029de;
-    font-size: 14px !important;
+    font-size: var(--fs-title-sm) !important;
     text-transform: none;
   }
 
   .page-aprova-quest .cs-journey-title {
     display: block;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     font-weight: 600;
     color: #151414;
     margin-top: 8px;
@@ -2580,11 +2590,11 @@
   }
 
   .page-aprova-quest .cs-stage__head {
-    font-size: 17px;
+    font-size: var(--fs-title-sm);
   }
 
   .page-aprova-quest .cs-stage__body p {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   /* Para o usuário / produto */
@@ -2610,14 +2620,14 @@
 
   .page-aprova-quest .cs-arrow-col__title {
     color: #5029de;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     margin-bottom: 4px;
   }
 
   .page-aprova-quest .cs-arrow-item {
     position: relative;
     padding-left: 22px;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
   }
 
@@ -2652,7 +2662,7 @@
   }
 
   .page-aprova-quest .cs-page #track-insights .cs-card__title {
-    font-size: 20px !important;
+    font-size: var(--fs-title-sm) !important;
     text-transform: none;
     text-align: left;
     line-height: 1.3;
@@ -2678,13 +2688,13 @@
     border-radius: 999px;
     background: #e9e6f6;
     color: #5029de;
-    font-size: 14px;
+    font-size: var(--fs-label);
     font-weight: 600;
   }
 
   .page-aprova-quest .cs-chips-title {
     color: #5029de;
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     font-weight: 600;
     margin: 24px 0 12px;
   }
@@ -2700,7 +2710,7 @@
     border: 1px solid #dcdae3;
     border-radius: 999px;
     background: #fff;
-    font-size: 14px;
+    font-size: var(--fs-label);
     color: #151414;
   }
 
@@ -2719,7 +2729,7 @@
     background: #fbfbfb;
     border: 2px solid #fff;
     border-radius: 20px;
-    font-size: 17px;
+    font-size: var(--fs-body-sm);
     font-weight: 500;
   }
 
@@ -2733,7 +2743,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: var(--fs-label);
   }
 
   .page-aprova-quest .cs-step--active {
@@ -2749,7 +2759,7 @@
   .page-aprova-quest .cs-step-arrow {
     align-self: center;
     color: #5029de;
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     line-height: 1;
   }
 
@@ -2778,7 +2788,7 @@
 
   .page-aprova-quest .cs-goals__title {
     color: #5029de !important;
-    font-size: 17px !important;
+    font-size: var(--fs-title-sm) !important;
     font-weight: 600;
     margin-bottom: 12px;
   }
@@ -2793,7 +2803,7 @@
   .page-aprova-quest .cs-goals .cs-card__list li {
     position: relative;
     padding-left: 22px;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   .page-aprova-quest .cs-goals .cs-card__list li::before {
@@ -2870,7 +2880,7 @@
     padding: 6px 14px;
     border-radius: 999px;
     background: #fff;
-    font-size: 13px;
+    font-size: var(--fs-label);
     font-weight: 600;
     color: #151414;
   }
@@ -2893,7 +2903,7 @@
   }
 
   .page-aprova-quest .cs-page .cs-section__desc[style*="#5029de"] {
-    font-size: 20px;
+    font-size: var(--fs-body);
     font-weight: 500;
   }
 
@@ -2928,6 +2938,16 @@
    Aprova Quest — mobile fiel ao Figma (telas abaixo de 500px, frame 390px)
    ======================================================================== */
 @media (max-width: 499px) {
+  :root {
+    --fs-display: 28px;
+    --fs-title-lg: 18px;
+    --fs-title: 20px;
+    --fs-title-sm: 15px;
+    --fs-body: 15px;
+    --fs-body-sm: 14px;
+    --fs-label: 12px;
+  }
+
   .page-aprova-quest .cs-page .cs-section {
     padding-inline: 20px;
     padding-block: 40px;
@@ -2955,14 +2975,14 @@
   }
 
   .page-aprova-quest .cs-hero__title {
-    font-size: 36px;
+    font-size: var(--fs-display);
     line-height: 1.1;
     font-weight: 800;
     color: #262626;
   }
 
   .page-aprova-quest .cs-hero__desc {
-    font-size: 15px;
+    font-size: var(--fs-body);
     line-height: 1.5;
   }
 
@@ -3017,13 +3037,13 @@
 
   .page-aprova-quest .cs-page .cs-meta-panel--plain .cs-meta-panel__label {
     color: #5029de;
-    font-size: 13px;
+    font-size: var(--fs-label);
     margin-bottom: 4px;
   }
 
   .page-aprova-quest .cs-page .cs-meta-panel--plain .cs-meta-panel__value {
     color: #151414;
-    font-size: 17px;
+    font-size: var(--fs-body-sm);
     line-height: 1.4;
   }
 
@@ -3039,11 +3059,11 @@
   }
 
   .page-aprova-quest .cs-page .cs-section__title {
-    font-size: 28px;
+    font-size: var(--fs-title);
   }
 
   .page-aprova-quest .cs-page .cs-section__desc {
-    font-size: 15px;
+    font-size: var(--fs-body);
     line-height: 1.6;
   }
 }
@@ -3071,21 +3091,21 @@
   }
 
   .page-aprova-quest .cs-card[style*="#dfdfdf"] .cs-card__title {
-    font-size: 20px !important;
+    font-size: var(--fs-title-sm) !important;
     text-transform: none;
     font-weight: 600;
     color: #151414;
   }
 
   .page-aprova-quest .cs-card[style*="#dfdfdf"] p[style*="italic"] {
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     font-style: normal;
     line-height: 1.4;
   }
 
   .page-aprova-quest .cs-feature-list__title {
     color: #5029de;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     font-weight: 500;
   }
 
@@ -3130,25 +3150,25 @@
   }
 
   .page-aprova-quest .cs-fact__num {
-    font-size: 40px;
+    font-size: var(--fs-display);
     font-weight: 700;
     line-height: 1;
     color: #5029de;
   }
 
   .page-aprova-quest .cs-fact__value {
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     color: #151414;
     margin-bottom: 8px;
   }
 
   .page-aprova-quest .cs-fact:last-child .cs-fact__value {
     color: #5029de;
-    font-size: 28px;
+    font-size: var(--fs-title-sm);
   }
 
   .page-aprova-quest .cs-fact__label {
-    font-size: 15px;
+    font-size: var(--fs-label);
     line-height: 1.5;
   }
 }
@@ -3170,13 +3190,13 @@
   .page-aprova-quest .cs-num {
     display: block;
     color: #5029de;
-    font-size: 14px;
+    font-size: var(--fs-label);
     font-weight: 600;
     margin-bottom: 4px;
   }
 
   .page-aprova-quest .cs-page .cs-grid-2 .cs-card__title {
-    font-size: 20px !important;
+    font-size: var(--fs-title-sm) !important;
     line-height: 1.3;
     text-transform: none;
     font-weight: 600;
@@ -3184,7 +3204,7 @@
   }
 
   .page-aprova-quest .cs-page .cs-grid-2 .cs-card__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   .page-aprova-quest .cs-opp {
@@ -3198,13 +3218,13 @@
 
   .page-aprova-quest .cs-opp > p:first-child {
     color: #5029de !important;
-    font-size: 13px !important;
+    font-size: var(--fs-title-sm) !important;
     font-weight: 600 !important;
   }
 
   .page-aprova-quest .cs-opp .cs-card__text {
     color: #151414;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 }
 
@@ -3249,7 +3269,7 @@
 
   .page-aprova-quest .cs-persona__name {
     grid-column: 2;
-    font-size: 20px !important;
+    font-size: var(--fs-title-sm) !important;
     text-transform: none;
     margin-bottom: 0 !important;
   }
@@ -3266,7 +3286,7 @@
   .page-aprova-quest .cs-persona strong {
     display: block;
     color: #5029de;
-    font-size: 13px;
+    font-size: var(--fs-label);
     font-weight: 600;
   }
 
@@ -3282,13 +3302,13 @@
 
   .page-aprova-quest .cs-scenario .cs-card__title {
     color: #5029de;
-    font-size: 14px !important;
+    font-size: var(--fs-title-sm) !important;
     text-transform: none;
   }
 
   .page-aprova-quest .cs-journey-title {
     display: block;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     font-weight: 600;
     color: #151414;
     margin-top: 8px;
@@ -3304,7 +3324,7 @@
   }
 
   .page-aprova-quest .cs-stage__head {
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     padding: 16px 18px;
   }
 
@@ -3313,7 +3333,7 @@
   }
 
   .page-aprova-quest .cs-stage__body p {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   .page-aprova-quest .cs-page .cs-arrow-row {
@@ -3338,14 +3358,14 @@
 
   .page-aprova-quest .cs-arrow-col__title {
     color: #5029de;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     margin-bottom: 4px;
   }
 
   .page-aprova-quest .cs-arrow-item {
     position: relative;
     padding-left: 22px;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
   }
 
@@ -3383,7 +3403,7 @@
   }
 
   .page-aprova-quest .cs-page #track-insights .cs-card__title {
-    font-size: 20px !important;
+    font-size: var(--fs-title-sm) !important;
     text-transform: none;
     text-align: left;
     line-height: 1.3;
@@ -3393,7 +3413,7 @@
 
   .page-aprova-quest .cs-page #track-insights .cs-card__text {
     text-align: left !important;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   .page-aprova-quest .cs-page #track-insights img {
@@ -3420,13 +3440,13 @@
     border-radius: 999px;
     background: #e9e6f6;
     color: #5029de;
-    font-size: 14px;
+    font-size: var(--fs-label);
     font-weight: 600;
   }
 
   .page-aprova-quest .cs-chips-title {
     color: #5029de;
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     font-weight: 600;
     margin: 24px 0 12px;
   }
@@ -3442,7 +3462,7 @@
     border: 1px solid #dcdae3;
     border-radius: 999px;
     background: #fff;
-    font-size: 14px;
+    font-size: var(--fs-label);
     color: #151414;
   }
 
@@ -3461,7 +3481,7 @@
     background: #fbfbfb;
     border: 2px solid #fff;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     font-weight: 500;
   }
 
@@ -3475,7 +3495,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: var(--fs-label);
   }
 
   .page-aprova-quest .cs-step--active {
@@ -3491,7 +3511,7 @@
   .page-aprova-quest .cs-step-arrow {
     align-self: center;
     color: #5029de;
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     line-height: 1;
   }
 }
@@ -3522,7 +3542,7 @@
 
   .page-aprova-quest .cs-goals__title {
     color: #5029de !important;
-    font-size: 16px !important;
+    font-size: var(--fs-title-sm) !important;
     font-weight: 600;
     margin-bottom: 12px;
   }
@@ -3537,7 +3557,7 @@
   .page-aprova-quest .cs-goals .cs-card__list li {
     position: relative;
     padding-left: 22px;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   .page-aprova-quest .cs-goals .cs-card__list li::before {
@@ -3584,11 +3604,11 @@
   }
 
   .page-sintonize .cs-section__title {
-    font-size: 28px;
+    font-size: var(--fs-title);
   }
 
   .page-sintonize .cs-section__desc {
-    font-size: 16px;
+    font-size: var(--fs-body);
   }
 
   .page-sintonize #contexto.cs-section {
@@ -3621,18 +3641,18 @@
   }
 
   .page-sintonize .cs-hero__title {
-    font-size: 52px;
+    font-size: var(--fs-display);
     line-height: 55px;
   }
 
   .page-sintonize .cs-hero__subtitle {
-    font-size: 30px;
+    font-size: var(--fs-title-lg);
     line-height: 35px;
   }
 
   .page-sintonize .cs-hero__desc {
     order: 3;
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 26px;
   }
 
@@ -3643,7 +3663,7 @@
     color: #151414;
     text-decoration: none;
     font-weight: 600;
-    font-size: 17px;
+    font-size: var(--fs-body-sm);
     line-height: 20px;
     padding: 15px 24px;
     border-radius: 16px;
@@ -3660,7 +3680,7 @@
 
   .page-sintonize .cs-hero__quote {
     order: 6;
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 25px;
     border-left-color: var(--cs-orange-cta);
   }
@@ -3682,12 +3702,12 @@
   }
 
   .page-sintonize .cs-stat__value {
-    font-size: 19px;
+    font-size: var(--fs-label);
     line-height: 23px;
   }
 
   .page-sintonize .cs-stat__label {
-    font-size: 14px;
+    font-size: var(--fs-label);
     letter-spacing: normal;
   }
 
@@ -3708,11 +3728,11 @@
   }
 
   .page-sintonize .cs-cards-row .cs-card__title {
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
   }
 
   .page-sintonize .cs-cards-row .cs-card__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   /* "Antes de desenhar" numbered steps — matching Figma mobile */
@@ -3740,7 +3760,7 @@
   }
 
   .page-sintonize .cs-cards-row .cs-step .cs-card__text {
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     font-weight: 500;
     color: var(--cs-text);
   }
@@ -3754,7 +3774,7 @@
   }
 
   .page-sintonize .cs-cards-row--intro .cs-card__title {
-    font-size: 21px;
+    font-size: var(--fs-title-sm);
     line-height: 1.25;
     text-transform: none;
   }
@@ -3762,7 +3782,7 @@
   .page-sintonize .cs-cards-row--intro .cs-pill {
     background: transparent;
     padding: 0;
-    font-size: 13px;
+    font-size: var(--fs-label);
     color: var(--cs-navy);
   }
 
@@ -3772,7 +3792,7 @@
 
   /* "Projetando a experiência completa" — chip-tag cards, matching Figma mobile */
   .page-sintonize .cs-cards-row--exp .cs-card__title {
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     text-transform: none;
   }
 
@@ -3789,7 +3809,7 @@
     background: #edebfc;
     color: #5029de;
     font-weight: 500;
-    font-size: 14px;
+    font-size: var(--fs-body-sm);
     line-height: 1.2;
     padding: 6px 12px;
     border-radius: 100px;
@@ -3828,12 +3848,12 @@
 
   .page-sintonize .cs-table__cell--area {
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     color: var(--cs-text);
   }
 
   .page-sintonize .cs-table__cell--states {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     color: #252628;
     padding-bottom: 10px;
     border-bottom: 1px solid #e4e4e8;
@@ -3843,13 +3863,13 @@
     content: 'ESTADOS CONSIDERADOS';
     display: block;
     font-weight: 600;
-    font-size: 12px;
+    font-size: var(--fs-body-sm);
     color: #5029de;
     margin-bottom: 6px;
   }
 
   .page-sintonize .cs-table__cell--why {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     color: var(--cs-text);
   }
 
@@ -3857,7 +3877,7 @@
     content: 'PORQUE IMPORTA';
     display: block;
     font-weight: 600;
-    font-size: 12px;
+    font-size: var(--fs-body-sm);
     color: var(--cs-orange-cta);
     margin-bottom: 10px;
   }
@@ -3881,17 +3901,17 @@
     padding: 0;
     background: transparent;
     color: var(--cs-orange-cta);
-    font-size: 12px;
+    font-size: var(--fs-label);
   }
 
   .page-sintonize .cs-cards-row--decisions .cs-card__title {
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     text-transform: none;
     color: #fff;
   }
 
   .page-sintonize .cs-cards-row--decisions .cs-card__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     color: #dce2f0;
   }
 
@@ -3909,7 +3929,7 @@
   }
 
   .page-sintonize .cs-ds-meta strong {
-    font-size: 12px;
+    font-size: var(--fs-label);
     font-weight: 600;
     color: #5029de;
     text-transform: uppercase;
@@ -3928,7 +3948,7 @@
 
   .page-sintonize .cs-ds-card__title,
   .page-sintonize .cs-ds-components__title {
-    font-size: 12px;
+    font-size: var(--fs-title-sm);
     font-weight: 600;
     color: #5029de;
     text-transform: uppercase;
@@ -4035,7 +4055,7 @@
     align-self: flex-start;
     padding: 0;
     background: transparent;
-    font-size: 12px;
+    font-size: var(--fs-label);
   }
 
   .page-sintonize .cs-pair-row .cs-card:first-child .cs-pill {
@@ -4047,12 +4067,12 @@
   }
 
   .page-sintonize .cs-pair-row .cs-card__title {
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     text-transform: none;
   }
 
   .page-sintonize .cs-pair-row .cs-card__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   .page-sintonize .cs-pair-arrow {
@@ -4129,16 +4149,16 @@
     padding: 0;
     background: transparent;
     color: #5029de;
-    font-size: 12px;
+    font-size: var(--fs-label);
   }
 
   .page-sintonize .cs-cards-row--docs .cs-card__title {
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     text-transform: none;
   }
 
   .page-sintonize .cs-cards-row--docs .cs-card__text {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   /* "Design → software" — principle card, steps and phases, matching Figma mobile */
@@ -4152,14 +4172,14 @@
   }
 
   .page-sintonize .cs-principle__label {
-    font-size: 12px;
+    font-size: var(--fs-label);
     color: var(--cs-orange-cta);
   }
 
   .page-sintonize .cs-principle__quote {
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.35;
   }
 
@@ -4192,13 +4212,13 @@
 
   .page-sintonize .cs-decomp__term {
     flex: none;
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     text-transform: none;
   }
 
   .page-sintonize .cs-decomp__def {
     flex: none;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
   }
 
   .page-sintonize .cs-cards-row--phases .cs-card {
@@ -4222,21 +4242,21 @@
     border-radius: 20px;
     background: #122f5d;
     color: #fff;
-    font-size: 14px;
+    font-size: var(--fs-label);
     text-transform: none;
   }
 
   .page-sintonize .cs-cards-row--phases .cs-card__title {
     grid-column: 2;
     grid-row: 1;
-    font-size: 17px;
+    font-size: var(--fs-title-sm);
     text-transform: none;
   }
 
   .page-sintonize .cs-cards-row--phases .cs-card__text {
     grid-column: 2;
     grid-row: 2;
-    font-size: 14px;
+    font-size: var(--fs-body-sm);
   }
 
   /* "Experimente o Sintonize" — simplified CTA box, matching Figma mobile */
@@ -4259,16 +4279,16 @@
     background: transparent;
     color: var(--cs-orange-cta);
     padding: 0;
-    font-size: 12px;
+    font-size: var(--fs-label);
   }
 
   .page-sintonize .cs-cta__title {
-    font-size: 26px;
+    font-size: var(--fs-title);
     line-height: 1.2;
   }
 
   .page-sintonize .cs-cta__desc {
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     color: #dce2f0;
     max-width: none;
   }
@@ -4279,7 +4299,7 @@
     color: #151414;
     text-decoration: none;
     text-align: center;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     padding: 14px 24px;
     border-radius: 100px;
   }
@@ -4347,7 +4367,7 @@
     padding: 6px 14px;
     border-radius: 999px;
     background: #fff;
-    font-size: 13px;
+    font-size: var(--fs-label);
     font-weight: 600;
     color: #151414;
   }
@@ -4370,7 +4390,7 @@
   }
 
   .page-aprova-quest .cs-page .cs-section__desc[style*="#5029de"] {
-    font-size: 20px;
+    font-size: var(--fs-body);
     font-weight: 500;
   }
 }
@@ -4382,7 +4402,7 @@
 
 @media (max-width: 499px) {
   .page-aprova-quest .cs-page .cs-section__desc[style*="#5029de"] {
-    font-size: 20px;
+    font-size: var(--fs-body);
     font-weight: 500;
   }
 

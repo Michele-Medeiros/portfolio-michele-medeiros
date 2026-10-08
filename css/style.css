@@ -27,6 +27,17 @@
   /* type */
   --font-main: "Kufam", sans-serif;
 
+  /* type scale — documentação de projetos (case studies)
+     valores padrão = versão web (≥1000px); páginas com versão tablet/mobile
+     redefinem estes mesmos tokens dentro de suas próprias media queries */
+  --fs-display: 48px;    /* H1 / nome do projeto no hero */
+  --fs-title-lg: 30px;   /* subtítulo do hero */
+  --fs-title: 26px;      /* H2 / título de seção */
+  --fs-title-sm: 18px;   /* títulos de card, par, passo, destaque */
+  --fs-body: 17px;       /* parágrafo, citação */
+  --fs-body-sm: 15px;    /* texto secundário de card, eyebrow */
+  --fs-label: 13px;      /* chip, pill, badge, número de passo */
+
   /* layout */
   --container-width: 1598px;
   --container-padding: 65px;

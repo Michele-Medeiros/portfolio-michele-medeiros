@@ -58,7 +58,7 @@ body {
     padding-left: 12px;
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.95;
     color: #122f5d;
     white-space: nowrap;
@@ -74,7 +74,7 @@ body {
     padding-left: 12px;
     font-family: "Kufam", sans-serif;
     font-weight: 900;
-    font-size: 65px;
+    font-size: var(--fs-display);
     line-height: 1.45;
     color: #151414;
   }
@@ -83,7 +83,7 @@ body {
     width: 749px;
     font-family: "Kufam", sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: var(--fs-title-lg);
     line-height: 1.45;
     color: #252628;
   }
@@ -92,7 +92,7 @@ body {
     padding-left: 12px;
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body);
     line-height: 2;
     color: #262626;
     text-align: justify;
@@ -104,7 +104,7 @@ body {
     font-family: "Kufam", sans-serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 24px;
+    font-size: var(--fs-body);
     line-height: 1.55;
     color: #262626;
     text-align: justify;
@@ -131,7 +131,7 @@ body {
   .seplag-hero__card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -140,7 +140,7 @@ body {
   .seplag-hero__card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.32px;
     color: #56565a;
@@ -196,7 +196,7 @@ body {
   .seplag-hero__badge p {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: var(--fs-label);
     line-height: 1.65;
     text-transform: uppercase;
     text-align: center;
@@ -221,7 +221,7 @@ body {
   .seplag-summary__title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--fs-title);
     line-height: 1.95;
     color: #151414;
     white-space: nowrap;
@@ -232,7 +232,7 @@ body {
     padding-left: 12px;
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body-sm);
     line-height: 2;
     color: #262626;
   }
@@ -274,7 +274,7 @@ body {
     background: #e6ecff;
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-label);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -284,7 +284,7 @@ body {
   .seplag-summary__heading {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -299,7 +299,7 @@ body {
     text-align: justify;
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.4px;
     color: #252628;
@@ -331,7 +331,7 @@ body {
   .seplag-role__title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--fs-title);
     line-height: 1.95;
     color: #151414;
     white-space: nowrap;
@@ -340,7 +340,7 @@ body {
   .seplag-role__text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body-sm);
     line-height: 55px;
     text-align: justify;
     color: #151414;
@@ -365,7 +365,7 @@ body {
   .seplag-role__card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -375,7 +375,7 @@ body {
     text-align: justify;
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.4px;
     color: #56565a;
@@ -404,7 +404,7 @@ body {
   .seplag-layers__title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--fs-title);
     line-height: 1.95;
     color: #151414;
     white-space: nowrap;
@@ -413,7 +413,7 @@ body {
   .seplag-layers__text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body-sm);
     line-height: 2;
     text-align: justify;
     color: #151414;
@@ -449,7 +449,7 @@ body {
     background: #e6ecff;
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-label);
     line-height: 1.95;
     color: #151414;
   }
@@ -457,7 +457,7 @@ body {
   .seplag-layers__card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -467,7 +467,7 @@ body {
   .seplag-layers__card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.4px;
     color: #56565a;
@@ -495,7 +495,7 @@ body {
   .seplag-people__title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--fs-title);
     line-height: 1.95;
     color: #151414;
     white-space: nowrap;
@@ -504,7 +504,7 @@ body {
   .seplag-people__text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body-sm);
     line-height: 2;
     text-align: justify;
     color: #151414;
@@ -541,7 +541,7 @@ body {
     background: #e6ecff;
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-label);
     line-height: 1.95;
     color: #151414;
   }
@@ -549,7 +549,7 @@ body {
   .seplag-people__label {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-label);
     line-height: 1.95;
     text-transform: uppercase;
     color: #122f5d;
@@ -559,7 +559,7 @@ body {
   .seplag-people__card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -570,7 +570,7 @@ body {
     text-align: justify;
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.4px;
     color: #56565a;
@@ -598,7 +598,7 @@ body {
   .seplag-principles__title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--fs-title);
     line-height: 1.95;
     color: #151414;
     white-space: nowrap;
@@ -607,7 +607,7 @@ body {
   .seplag-principles__text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body-sm);
     line-height: 2;
     text-align: justify;
     color: #151414;
@@ -646,7 +646,7 @@ body {
   .seplag-principles__card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -656,7 +656,7 @@ body {
   .seplag-principles__card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.4px;
     color: #56565a;
@@ -685,7 +685,7 @@ body {
   .seplag-journey__title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--fs-title);
     line-height: 1.95;
     color: #151414;
     white-space: nowrap;
@@ -694,7 +694,7 @@ body {
   .seplag-journey__text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #151414;
   }
@@ -722,7 +722,7 @@ body {
   .seplag-showcase__label {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-label);
     line-height: 1.95;
     text-transform: uppercase;
     color: #022859;
@@ -734,7 +734,7 @@ body {
     max-width: 100%;
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.95;
     text-transform: uppercase;
     color: #000;
@@ -743,7 +743,7 @@ body {
   .seplag-showcase__body {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.4px;
     color: #56565a;
@@ -789,7 +789,7 @@ body {
   .seplag-density__title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--fs-title);
     line-height: 1.95;
     color: #151414;
     white-space: nowrap;
@@ -798,7 +798,7 @@ body {
   .seplag-density__text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body-sm);
     line-height: 2;
     text-align: justify;
     color: #151414;
@@ -826,7 +826,7 @@ body {
   .seplag-flows__title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--fs-title);
     line-height: 1.95;
     color: #151414;
     white-space: nowrap;
@@ -835,7 +835,7 @@ body {
   .seplag-flows__text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     text-align: justify;
     color: #151414;
@@ -867,7 +867,7 @@ body {
     background: #e6ecff;
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-label);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -877,7 +877,7 @@ body {
   .seplag-flows__card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -888,7 +888,7 @@ body {
     padding-left: 30px;
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.4px;
     text-align: justify;
@@ -921,7 +921,7 @@ body {
   .seplag-reveal__title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--fs-title);
     line-height: 1.95;
     color: #151414;
     white-space: nowrap;
@@ -930,7 +930,7 @@ body {
   .seplag-reveal__text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body-sm);
     line-height: 2;
     text-align: justify;
     color: #151414;
@@ -966,7 +966,7 @@ body {
   .seplag-paths__title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--fs-title);
     line-height: 1.95;
     color: #151414;
     white-space: nowrap;
@@ -975,7 +975,7 @@ body {
   .seplag-paths__text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body-sm);
     line-height: 2;
     text-align: justify;
     color: #151414;
@@ -1025,7 +1025,7 @@ body {
   .seplag-paths__step {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -1035,7 +1035,7 @@ body {
   .seplag-paths__step-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.4px;
     color: #56565a;
@@ -1067,7 +1067,7 @@ body {
   .seplag-data__title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--fs-title);
     line-height: 1.95;
     color: #151414;
     white-space: nowrap;
@@ -1076,7 +1076,7 @@ body {
   .seplag-data__text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body-sm);
     line-height: 2;
     text-align: justify;
     color: #151414;
@@ -1129,7 +1129,7 @@ body {
   .seplag-ds__title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--fs-title);
     line-height: 1.95;
     color: #151414;
     white-space: nowrap;
@@ -1138,7 +1138,7 @@ body {
   .seplag-ds__text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     text-align: justify;
     color: #151414;
@@ -1166,7 +1166,7 @@ body {
   .seplag-ds__heading {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -1176,7 +1176,7 @@ body {
   .seplag-ds__body {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.4px;
     color: #56565a;
@@ -1185,7 +1185,7 @@ body {
   .seplag-ds__label {
     font-family: "Kufam", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--fs-label);
     line-height: 1.6;
     letter-spacing: 0.32px;
     color: #3b3b3e;
@@ -1195,7 +1195,7 @@ body {
   .seplag-ds__value {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.4px;
     color: #56565a;
@@ -1262,7 +1262,7 @@ body {
     border-radius: 8px;
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--fs-label);
     line-height: 1.95;
     text-transform: uppercase;
     color: #fefefe;
@@ -1300,7 +1300,7 @@ body {
     background: #f6f1f5;
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fs-label);
     line-height: 1.6;
     letter-spacing: 0.4px;
     text-align: center;
@@ -1329,7 +1329,7 @@ body {
   .seplag-hifi__title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--fs-title);
     line-height: 1.95;
     color: #151414;
     white-space: nowrap;
@@ -1338,7 +1338,7 @@ body {
   .seplag-hifi__text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     text-align: justify;
     color: #151414;
@@ -1392,7 +1392,7 @@ body {
   .seplag-hifi__step {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -1401,7 +1401,7 @@ body {
   .seplag-hifi__step-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.4px;
     color: #56565a;
@@ -1443,6 +1443,16 @@ body {
 }
 
 @media (min-width: 500px) and (max-width: 999px) {
+  :root {
+    --fs-display: 34px;
+    --fs-title-lg: 24px;
+    --fs-title: 22px;
+    --fs-title-sm: 16px;
+    --fs-body: 16px;
+    --fs-body-sm: 15px;
+    --fs-label: 13px;
+  }
+
   .seplag-tablet {
     display: block;
     width: 100%;
@@ -1460,7 +1470,7 @@ body {
   .seplag-tablet__tags {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--fs-body-sm);
     line-height: 1.3;
     color: #122f5d;
   }
@@ -1468,7 +1478,7 @@ body {
   .seplag-tablet__name {
     font-family: "Kufam", sans-serif;
     font-weight: 900;
-    font-size: 64px;
+    font-size: var(--fs-display);
     line-height: 1.05;
     color: #151414;
   }
@@ -1476,7 +1486,7 @@ body {
   .seplag-tablet__headline {
     font-family: "Kufam", sans-serif;
     font-weight: 700;
-    font-size: 36px;
+    font-size: var(--fs-title-lg);
     line-height: 1.2;
     color: #151414;
   }
@@ -1484,7 +1494,7 @@ body {
   .seplag-tablet__desc {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     color: #252628;
   }
@@ -1495,7 +1505,7 @@ body {
     font-family: "Kufam", sans-serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 17px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     color: #252628;
   }
@@ -1520,7 +1530,7 @@ body {
   .seplag-tablet__card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--fs-title-sm);
     line-height: 1.2;
     color: #151414;
   }
@@ -1528,7 +1538,7 @@ body {
   .seplag-tablet__card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -1602,7 +1612,7 @@ body {
   .seplag-tablet__summary-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -1610,7 +1620,7 @@ body {
   .seplag-tablet__summary-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -1643,7 +1653,7 @@ body {
   .seplag-tablet__summary-label {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
     text-transform: uppercase;
   }
@@ -1659,7 +1669,7 @@ body {
   .seplag-tablet__summary-heading {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -1671,7 +1681,7 @@ body {
   .seplag-tablet__summary-body {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #252628;
   }
@@ -1693,7 +1703,7 @@ body {
   .seplag-tablet__role-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -1701,7 +1711,7 @@ body {
   .seplag-tablet__role-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -1727,7 +1737,7 @@ body {
   .seplag-tablet__role-card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -1735,7 +1745,7 @@ body {
   .seplag-tablet__role-card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -1753,7 +1763,7 @@ body {
   .seplag-tablet__layers-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -1761,7 +1771,7 @@ body {
   .seplag-tablet__layers-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -1798,7 +1808,7 @@ body {
     background: #edebfc;
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
     color: #5029de;
     white-space: nowrap;
@@ -1809,7 +1819,7 @@ body {
     min-width: 0;
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.2;
     text-transform: uppercase;
     color: #151414;
@@ -1818,7 +1828,7 @@ body {
   .seplag-tablet__layer-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -1835,7 +1845,7 @@ body {
   .seplag-tablet__people-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -1843,7 +1853,7 @@ body {
   .seplag-tablet__people-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -1867,7 +1877,7 @@ body {
   .seplag-tablet__people-label {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--fs-label);
     line-height: 1.2;
     text-transform: uppercase;
     color: #56565a;
@@ -1877,7 +1887,7 @@ body {
   .seplag-tablet__people-card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 22px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -1885,7 +1895,7 @@ body {
   .seplag-tablet__people-card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #252628;
   }
@@ -1903,7 +1913,7 @@ body {
   .seplag-tablet__principles-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -1911,7 +1921,7 @@ body {
   .seplag-tablet__principles-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -1938,7 +1948,7 @@ body {
   .seplag-tablet__principle-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -1946,7 +1956,7 @@ body {
   .seplag-tablet__principle-text-small {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -1964,7 +1974,7 @@ body {
   .seplag-tablet__journey-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -1972,7 +1982,7 @@ body {
   .seplag-tablet__journey-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -1990,7 +2000,7 @@ body {
   .seplag-tablet__showcase-label {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
     color: #5029de;
   }
@@ -1998,7 +2008,7 @@ body {
   .seplag-tablet__showcase-heading {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 22px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -2006,7 +2016,7 @@ body {
   .seplag-tablet__showcase-body {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #252628;
   }
@@ -2037,7 +2047,7 @@ body {
   .seplag-tablet__density-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -2045,7 +2055,7 @@ body {
   .seplag-tablet__density-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2063,7 +2073,7 @@ body {
   .seplag-tablet__flows-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -2071,7 +2081,7 @@ body {
   .seplag-tablet__flows-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2105,7 +2115,7 @@ body {
   .seplag-tablet__flows-label {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
     text-transform: uppercase;
   }
@@ -2121,7 +2131,7 @@ body {
   .seplag-tablet__flows-heading {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -2137,7 +2147,7 @@ body {
     list-style: none;
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #252628;
   }
@@ -2171,7 +2181,7 @@ body {
   .seplag-tablet__reveal-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -2179,7 +2189,7 @@ body {
   .seplag-tablet__reveal-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2201,7 +2211,7 @@ body {
   .seplag-tablet__paths-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -2209,7 +2219,7 @@ body {
   .seplag-tablet__paths-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2236,7 +2246,7 @@ body {
   .seplag-tablet__paths-card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 17px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -2244,7 +2254,7 @@ body {
   .seplag-tablet__paths-card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2275,7 +2285,7 @@ body {
   .seplag-tablet__data-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -2283,7 +2293,7 @@ body {
   .seplag-tablet__data-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2305,7 +2315,7 @@ body {
   .seplag-tablet__feedback-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -2313,7 +2323,7 @@ body {
   .seplag-tablet__feedback-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2340,7 +2350,7 @@ body {
   .seplag-tablet__feedback-card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 17px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -2348,7 +2358,7 @@ body {
   .seplag-tablet__feedback-card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2379,7 +2389,7 @@ body {
   .seplag-tablet__states-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -2387,7 +2397,7 @@ body {
   .seplag-tablet__states-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2419,7 +2429,7 @@ body {
   .seplag-tablet__state-label {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--fs-label);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -2439,7 +2449,7 @@ body {
   .seplag-tablet__ds-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -2447,7 +2457,7 @@ body {
   .seplag-tablet__ds-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2471,7 +2481,7 @@ body {
   .seplag-tablet__ds-heading {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.2;
     text-transform: uppercase;
     color: #151414;
@@ -2480,7 +2490,7 @@ body {
   .seplag-tablet__ds-body {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #252628;
   }
@@ -2488,7 +2498,7 @@ body {
   .seplag-tablet__ds-label {
     font-family: "Kufam", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--fs-label);
     line-height: 1.6;
     letter-spacing: 0.32px;
     color: #3b3b3e;
@@ -2498,7 +2508,7 @@ body {
   .seplag-tablet__ds-value {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.4px;
     color: #56565a;
@@ -2565,7 +2575,7 @@ body {
     border-radius: 8px;
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--fs-label);
     line-height: 1.95;
     text-transform: uppercase;
     color: #fefefe;
@@ -2598,7 +2608,7 @@ body {
     background: #f5f0f5;
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-label);
     line-height: 1.3;
     text-align: center;
     color: #56565a;
@@ -2617,7 +2627,7 @@ body {
   .seplag-tablet__hifi-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -2625,7 +2635,7 @@ body {
   .seplag-tablet__hifi-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2643,7 +2653,7 @@ body {
   .seplag-tablet__hifi-card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -2651,7 +2661,7 @@ body {
   .seplag-tablet__hifi-card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2684,6 +2694,16 @@ body {
 }
 
 @media (max-width: 499px) {
+  :root {
+    --fs-display: 28px;
+    --fs-title-lg: 18px;
+    --fs-title: 20px;
+    --fs-title-sm: 15px;
+    --fs-body: 15px;
+    --fs-body-sm: 14px;
+    --fs-label: 12px;
+  }
+
   .seplag-mobile {
     display: block;
     width: 100%;
@@ -2699,7 +2719,7 @@ body {
   .seplag-mobile__tags {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--fs-body-sm);
     line-height: 1.3;
     color: #122f5d;
   }
@@ -2707,7 +2727,7 @@ body {
   .seplag-mobile__name {
     font-family: "Kufam", sans-serif;
     font-weight: 900;
-    font-size: 52px;
+    font-size: var(--fs-display);
     line-height: 1.05;
     color: #151414;
   }
@@ -2715,7 +2735,7 @@ body {
   .seplag-mobile__headline {
     font-family: "Kufam", sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: var(--fs-title-lg);
     line-height: 1.2;
     color: #151414;
   }
@@ -2723,7 +2743,7 @@ body {
   .seplag-mobile__desc {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     color: #252628;
   }
@@ -2734,7 +2754,7 @@ body {
     font-family: "Kufam", sans-serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     color: #252628;
   }
@@ -2758,7 +2778,7 @@ body {
   .seplag-mobile__card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--fs-title-sm);
     line-height: 1.2;
     color: #151414;
   }
@@ -2766,7 +2786,7 @@ body {
   .seplag-mobile__card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2816,7 +2836,7 @@ body {
   .seplag-mobile__badge p {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 10px;
+    font-size: var(--fs-label);
     line-height: 1.65;
     text-transform: uppercase;
     text-align: center;
@@ -2843,7 +2863,7 @@ body {
   .seplag-mobile__summary-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -2851,7 +2871,7 @@ body {
   .seplag-mobile__summary-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2882,7 +2902,7 @@ body {
   .seplag-mobile__summary-label {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
     text-transform: uppercase;
   }
@@ -2898,7 +2918,7 @@ body {
   .seplag-mobile__summary-heading {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -2910,7 +2930,7 @@ body {
   .seplag-mobile__summary-body {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #252628;
   }
@@ -2931,7 +2951,7 @@ body {
   .seplag-mobile__role-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -2939,7 +2959,7 @@ body {
   .seplag-mobile__role-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2963,7 +2983,7 @@ body {
   .seplag-mobile__role-card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -2971,7 +2991,7 @@ body {
   .seplag-mobile__role-card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -2989,7 +3009,7 @@ body {
   .seplag-mobile__layers-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -2997,7 +3017,7 @@ body {
   .seplag-mobile__layers-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3032,7 +3052,7 @@ body {
     background: #edebfc;
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
     color: #5029de;
     white-space: nowrap;
@@ -3043,7 +3063,7 @@ body {
     min-width: 0;
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.2;
     text-transform: uppercase;
     color: #151414;
@@ -3052,7 +3072,7 @@ body {
   .seplag-mobile__layer-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3069,7 +3089,7 @@ body {
   .seplag-mobile__people-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -3077,7 +3097,7 @@ body {
   .seplag-mobile__people-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3107,7 +3127,7 @@ body {
   .seplag-mobile__people-label {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--fs-label);
     line-height: 1.2;
     text-transform: uppercase;
     color: #56565a;
@@ -3117,7 +3137,7 @@ body {
   .seplag-mobile__people-card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -3125,7 +3145,7 @@ body {
   .seplag-mobile__people-card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #252628;
   }
@@ -3142,7 +3162,7 @@ body {
   .seplag-mobile__principles-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -3150,7 +3170,7 @@ body {
   .seplag-mobile__principles-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3174,7 +3194,7 @@ body {
   .seplag-mobile__principle-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -3182,7 +3202,7 @@ body {
   .seplag-mobile__principle-text-small {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3199,7 +3219,7 @@ body {
   .seplag-mobile__journey-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -3207,7 +3227,7 @@ body {
   .seplag-mobile__journey-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3225,7 +3245,7 @@ body {
   .seplag-mobile__showcase-label {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
     color: #5029de;
   }
@@ -3233,7 +3253,7 @@ body {
   .seplag-mobile__showcase-heading {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -3241,7 +3261,7 @@ body {
   .seplag-mobile__showcase-body {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #252628;
   }
@@ -3271,7 +3291,7 @@ body {
   .seplag-mobile__density-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -3279,7 +3299,7 @@ body {
   .seplag-mobile__density-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3297,7 +3317,7 @@ body {
   .seplag-mobile__flows-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -3305,7 +3325,7 @@ body {
   .seplag-mobile__flows-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3336,7 +3356,7 @@ body {
   .seplag-mobile__flows-label {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.2;
     text-transform: uppercase;
   }
@@ -3352,7 +3372,7 @@ body {
   .seplag-mobile__flows-heading {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -3368,7 +3388,7 @@ body {
     list-style: none;
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #252628;
   }
@@ -3401,7 +3421,7 @@ body {
   .seplag-mobile__reveal-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -3409,7 +3429,7 @@ body {
   .seplag-mobile__reveal-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3431,7 +3451,7 @@ body {
   .seplag-mobile__paths-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -3439,7 +3459,7 @@ body {
   .seplag-mobile__paths-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3463,7 +3483,7 @@ body {
   .seplag-mobile__paths-card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -3471,7 +3491,7 @@ body {
   .seplag-mobile__paths-card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3508,7 +3528,7 @@ body {
   .seplag-mobile__data-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -3516,7 +3536,7 @@ body {
   .seplag-mobile__data-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3538,7 +3558,7 @@ body {
   .seplag-mobile__feedback-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -3546,7 +3566,7 @@ body {
   .seplag-mobile__feedback-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3570,7 +3590,7 @@ body {
   .seplag-mobile__feedback-card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -3578,7 +3598,7 @@ body {
   .seplag-mobile__feedback-card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3609,7 +3629,7 @@ body {
   .seplag-mobile__states-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -3617,7 +3637,7 @@ body {
   .seplag-mobile__states-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3649,7 +3669,7 @@ body {
   .seplag-mobile__state-label {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--fs-label);
     line-height: 1.95;
     text-transform: uppercase;
     color: #151414;
@@ -3669,7 +3689,7 @@ body {
   .seplag-mobile__ds-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -3677,7 +3697,7 @@ body {
   .seplag-mobile__ds-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3701,7 +3721,7 @@ body {
   .seplag-mobile__ds-heading {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-title-sm);
     line-height: 1.2;
     text-transform: uppercase;
     color: #151414;
@@ -3710,7 +3730,7 @@ body {
   .seplag-mobile__ds-body {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #252628;
   }
@@ -3718,7 +3738,7 @@ body {
   .seplag-mobile__ds-label {
     font-family: "Kufam", sans-serif;
     font-weight: 500;
-    font-size: 13px;
+    font-size: var(--fs-label);
     line-height: 1.6;
     letter-spacing: 0.26px;
     color: #3b3b3e;
@@ -3726,14 +3746,14 @@ body {
   }
 
   .seplag-mobile__ds-label--large {
-    font-size: 16px;
+    font-size: var(--fs-label);
     letter-spacing: 0.32px;
   }
 
   .seplag-mobile__ds-value {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--fs-body-sm);
     line-height: 1.6;
     letter-spacing: 0.36px;
     color: #56565a;
@@ -3801,7 +3821,7 @@ body {
     border-radius: 8px;
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-label);
     line-height: 1.95;
     text-transform: uppercase;
     color: #fefefe;
@@ -3833,7 +3853,7 @@ body {
     background: #f5f0f5;
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--fs-label);
     line-height: 1.3;
     text-align: center;
     color: #56565a;
@@ -3852,7 +3872,7 @@ body {
   .seplag-mobile__hifi-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--fs-title);
     line-height: 1.2;
     color: #151414;
   }
@@ -3860,7 +3880,7 @@ body {
   .seplag-mobile__hifi-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
@@ -3884,7 +3904,7 @@ body {
   .seplag-mobile__hifi-card-title {
     font-family: "Kufam", sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--fs-title-sm);
     line-height: 1.3;
     color: #151414;
   }
@@ -3892,7 +3912,7 @@ body {
   .seplag-mobile__hifi-card-text {
     font-family: "Kufam", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fs-body-sm);
     line-height: 1.5;
     color: #56565a;
   }
