@@ -328,7 +328,11 @@ body {
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.12);
 }
 
-.sfc-highlight__visual--queue img,
+.sfc-highlight__visual--queue img {
+  aspect-ratio: 1920 / 1459;
+  object-fit: contain;
+}
+
 .sfc-highlight__visual--continuity img {
   aspect-ratio: 1920 / 1185;
   object-fit: contain;
