@@ -2374,13 +2374,13 @@
     font-size: var(--fs-body-sm);
   }
 
-  /* O projeto em 30 segundos */
+  /* O projeto em 30 segundos — um card por vez, arrasta para o lado para ver o outro (mesmo comportamento do mobile) */
   .page-aprova-quest .cs-page #track-30s {
     gap: 20px;
   }
 
   .page-aprova-quest .cs-page #track-30s > * {
-    flex: 0 0 calc(50% - 10px) !important;
+    flex: 0 0 85% !important;
     min-width: 0 !important;
   }
 
