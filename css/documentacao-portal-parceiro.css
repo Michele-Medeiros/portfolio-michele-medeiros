@@ -1232,7 +1232,7 @@ body {
 }
 
 .partner-aiscreens__track {
-  flex: 0 1 640px;
+  flex: 0 1 860px;
   min-width: 0;
 }
 
@@ -2600,8 +2600,8 @@ body {
   color: #56565a;
 }
 
-/* Abaixo de 550px, os carrosséis perdem as setas: a navegação passa a ser por arraste */
-@media (max-width: 549px) {
+/* Abaixo de 650px, os carrosséis perdem as setas: a navegação passa a ser por arraste */
+@media (max-width: 649px) {
   [data-dir] {
     display: none;
   }
