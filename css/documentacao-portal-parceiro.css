@@ -449,9 +449,16 @@ body {
   cursor: pointer;
 }
 
-.partner-flows__btn:hover {
+.partner-flows__btn:active {
   background: #122f5d;
   color: #fff;
+}
+
+@media (hover: hover) {
+  .partner-flows__btn:hover {
+    background: #122f5d;
+    color: #fff;
+  }
 }
 
 .partner-flows__track {
@@ -1012,6 +1019,279 @@ body {
   color: #fff;
 }
 
+/* ---------- v2.1: fluxo Explicar / Priorizar / Agir ---------- */
+.partner-aiflow {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.partner-aiflow__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-aiflow__title {
+  font-weight: 600;
+  font-size: var(--fs-title);
+  line-height: 1.5;
+  color: #151414;
+}
+
+.partner-aiflow__text {
+  font-size: var(--fs-body-sm);
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-aiflow__steps {
+  display: flex;
+  gap: 50px;
+}
+
+.partner-aiflow__step {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-aiflow__step-head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.partner-aiflow__step-number {
+  font-weight: 600;
+  font-size: var(--fs-label);
+  line-height: 1.95;
+  color: #122f5d;
+}
+
+.partner-aiflow__step-title {
+  font-weight: 600;
+  font-size: var(--fs-title-sm);
+  line-height: 1.95;
+  color: #151414;
+}
+
+.partner-aiflow__step-text {
+  font-size: var(--fs-body-sm);
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #56565a;
+}
+
+/* ---------- IA com critério ---------- */
+.partner-aiprinciples {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 65px;
+}
+
+.partner-aiprinciples__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-aiprinciples__title {
+  font-weight: 600;
+  font-size: var(--fs-title);
+  line-height: 1.95;
+  color: #151414;
+}
+
+.partner-aiprinciples__text {
+  font-size: var(--fs-body-sm);
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-aiprinciples__cards {
+  display: flex;
+  gap: 50px;
+}
+
+.partner-aiprinciples__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.partner-aiprinciples__card--dark {
+  background: #122f5d;
+}
+
+.partner-aiprinciples__pill {
+  align-self: flex-start;
+  padding: 6px 16px;
+  border-radius: 900px;
+  background: #e6ecff;
+  font-weight: 600;
+  font-size: var(--fs-label);
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-aiprinciples__card-title {
+  font-weight: 600;
+  font-size: var(--fs-title-sm);
+  line-height: 1.95;
+  text-transform: uppercase;
+  color: #151414;
+}
+
+.partner-aiprinciples__card-text {
+  font-size: var(--fs-body-sm);
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #252628;
+}
+
+.partner-aiprinciples__card--dark .partner-aiprinciples__card-title,
+.partner-aiprinciples__card--dark .partner-aiprinciples__card-text {
+  color: #fff;
+}
+
+/* ---------- Como a IA aparece nas telas (carrossel) ---------- */
+.partner-aiscreens {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 80px 65px;
+}
+
+.partner-aiscreens__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.partner-aiscreens__title {
+  font-weight: 600;
+  font-size: var(--fs-title);
+  line-height: 1.95;
+  color: #151414;
+}
+
+.partner-aiscreens__text {
+  font-size: var(--fs-body-sm);
+  line-height: 2;
+  text-align: justify;
+  color: #151414;
+}
+
+.partner-aiscreens__stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.partner-aiscreens__btn {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #122f5d;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 20px;
+  color: #122f5d;
+  cursor: pointer;
+}
+
+.partner-aiscreens__btn:active {
+  background: #122f5d;
+  color: #fff;
+}
+
+@media (hover: hover) {
+  .partner-aiscreens__btn:hover {
+    background: #122f5d;
+    color: #fff;
+  }
+}
+
+.partner-aiscreens__track {
+  flex: 0 1 860px;
+  min-width: 0;
+}
+
+.partner-aiscreens__track > .partner-aiscreen {
+  display: none;
+  margin: 0;
+}
+
+.partner-aiscreens__track > .partner-aiscreen.is-active {
+  display: block;
+}
+
+.partner-aiscreens__dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.partner-aiscreens__dot {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 1px solid #122f5d;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.partner-aiscreens__dot.is-active {
+  background: #122f5d;
+}
+
+.partner-aiscreen {
+  margin: 0;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fefefe;
+}
+
+.partner-aiscreen__title {
+  margin: 0 0 16px;
+  font-weight: 600;
+  font-size: var(--fs-title-sm);
+  line-height: 1.4;
+  color: #151414;
+}
+
+.partner-aiscreen__inner {
+  padding: 32px;
+  border-radius: 12px;
+  background: #efefef;
+}
+
+.partner-aiscreen__inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* ---------- Resultado ---------- */
 .partner-result {
   display: flex;
@@ -1330,6 +1610,13 @@ body {
   }
 }
 
+/* Os 3 cards de "IA com critério" empilham até 850px, por serem mais apertados */
+@media (min-width: 500px) and (max-width: 850px) {
+  .partner-tablet__pairs--ai {
+    flex-direction: column;
+  }
+}
+
 /* ---------- O problema era falta de visão ---------- */
 .partner-tablet__anchor {
   display: flex;
@@ -1539,9 +1826,16 @@ body {
   cursor: pointer;
 }
 
-.partner-tablet__flows-btn:hover {
+.partner-tablet__flows-btn:active {
   background: #122f5d;
   color: #fff;
+}
+
+@media (hover: hover) {
+  .partner-tablet__flows-btn:hover {
+    background: #122f5d;
+    color: #fff;
+  }
 }
 
 .partner-tablet__flows-track {
@@ -1592,6 +1886,15 @@ body {
   width: 105.3%;
   height: 111.39%;
   max-width: none;
+}
+
+/* Legenda por slide no carrossel de telas da IA */
+.partner-tablet__flow-caption {
+  margin: 0 0 12px;
+  font-weight: 600;
+  font-size: var(--fs-title-sm);
+  line-height: 1.25;
+  color: #151414;
 }
 
 /* ---------- Dashboard / card de síntese ---------- */
@@ -2100,6 +2403,15 @@ body {
   max-width: none;
 }
 
+/* Legenda por slide no carrossel de telas da IA */
+.partner-mobile__flow-caption {
+  margin: 0 0 12px;
+  font-weight: 600;
+  font-size: var(--fs-title-sm);
+  line-height: 1.25;
+  color: #151414;
+}
+
 /* ---------- Fluxos do MVP (carrossel, mesmo mecanismo da versão web) ---------- */
 .partner-mobile__flows {
   display: flex;
@@ -2286,4 +2598,15 @@ body {
   font-size: var(--fs-body-sm);
   line-height: 1.4;
   color: #56565a;
+}
+
+/* Abaixo de 650px, os carrosséis perdem as setas: a navegação passa a ser por arraste */
+@media (max-width: 649px) {
+  [data-dir] {
+    display: none;
+  }
+
+  [data-carousel-track] {
+    touch-action: pan-y;
+  }
 }
